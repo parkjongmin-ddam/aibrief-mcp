@@ -8,17 +8,25 @@
 비공개)가 만든 **정본 JSON**(`CuratedItem` 배열, 하루 1파일)을 그대로 서빙한다. 요약이 이미
 계산돼 있어 **요청당 LLM 호출·과금 0** — stateless·read-only.
 
-## 툴
+## 툴 (7, 전부 read-only)
 
+**조회**
 | 툴 | 설명 |
 |----|------|
 | `list_briefs(from?, to?, limit?)` | 발행된 브리핑 날짜 목록(최신순) + 섹션별 건수 |
 | `get_brief(date="latest")` | 특정 일자 전체 브리핑(모든 섹션). `"latest"`/`"today"` 지원 |
 | `get_section(date, section)` | 특정 일자의 한 섹션(`papers`/`releases`/`community`/`video`/`deepdive`) |
-| `search_briefs(query, section?, limit?)` | 아카이브 전문 검색(제목 en/ko·요약·why·태그 부분일치, AND) |
+| `search_briefs(query, section?, tag?, limit?)` | 아카이브 전문 검색(제목 en/ko·요약·why·태그 부분일치, AND) |
+
+**발견**
+| 툴 | 설명 |
+|----|------|
+| `top_items(days=7, section?, limit?)` | 최근 N개 발행일의 점수 상위(섹션별 그룹핑) — "요즘 뜨는 AI 소식" |
+| `list_tags()` | 태그 목록 + 항목 수(`LLM`/`RAG`/`에이전트`/`인프라`/`오픈소스`) |
+| `get_stats()` | 아카이브 개요: 총 발행일·항목수·기간·섹션/태그별 분포 |
 
 각 항목은 aibrief `CuratedItem` 형태: `title_ko`·`summary_ko`(2~4문장)·`why_it_matters`(1줄)·
-`tags`·`url`·`score`·`published_at`.
+`tags`·`url`·`score`·`published_at`. 모든 툴은 정본 JSON을 계산·필터링만 하며 **런타임 LLM 호출 0**.
 
 ## 데이터 & 갱신
 
