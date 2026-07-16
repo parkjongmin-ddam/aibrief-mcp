@@ -1,0 +1,370 @@
+[
+  {
+    "id": "hf-2607.10383",
+    "section": "papers",
+    "title_en": "ABot-N1: Toward a General Visual Language Navigation Foundation Model",
+    "title_ko": "ABot-N1: 범용 시각-언어 내비게이션 기반 모델을 향해",
+    "url": "https://huggingface.co/papers/2607.10383",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "ABot-N1은 시각-언어 내비게이션의 인지(cognition)와 제어(control)를 분리하는 슬로우-패스트 아키텍처를 제안합니다. 슬로우 추론기는 Chain-of-Thought 방식으로 픽셀 목표 지점을 생성하고, 패스트 액션 전문가는 이를 바탕으로 연속적인 웨이포인트를 생성합니다. 도심 규모 내비게이션에서 POI 도착률을 35.0% 향상(77.3%)시켰으며, 복잡한 실내외 환경에서 각각 95.4%/92.9%의 성공률을 달성해 최신 성능을 기록했습니다.",
+    "why_it_matters": "실내외 복잡 환경을 아우르는 범용 로봇 내비게이션 모델의 해석 가능성과 일반화 성능을 동시에 크게 끌어올린 점이 주목할 만하다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.442651256490317,
+    "published_at": "2026-07-11T12:21:03Z"
+  },
+  {
+    "id": "hf-2607.10350",
+    "section": "papers",
+    "title_en": "ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory",
+    "title_ko": "ABot-AgentOS: 평생 멀티모달 메모리를 갖춘 범용 로봇 에이전트 OS",
+    "url": "https://huggingface.co/papers/2607.10350",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "ABot-AgentOS는 저수준 컨트롤러 위에 위치하는 범용 로봇 에이전트 운영체제로, 장면 기반 계획 수립, 멀티모달 메모리, 다단계 검증, 엣지-클라우드 협업 기능을 제공한다. 대화·시각·공간·시간 관계를 그래프 노드와 엣지로 변환하는 '유니버설 멀티모달 그래프 메모리'를 도입하며, 실패 기반 자기진화 루프를 통해 지속적인 성능 개선이 가능하다. 평가를 위해 16개 실내외 장면, 200개 이상 태스크를 포함한 EmbodiedWorldBench 벤치마크를 함께 공개했으며, LoCoMo 88.7, OpenEQA 60.4, Mem-Gallery 89.0 등의 성능을 기록했다.",
+    "why_it_matters": "장기적 구현 에이전트 실행에 필요한 범용 런타임 레이어와 지속 가능한 메모리 아키텍처를 제시하며, 로봇 AI의 실용적 배포 가능성을 크게 높인다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.304065093204169,
+    "published_at": "2026-07-11T11:24:43Z"
+  },
+  {
+    "id": "hf-2607.10400",
+    "section": "papers",
+    "title_en": "SynthDocBench: Controlled Benchmark for Long-Context Visual Document Understanding",
+    "title_ko": "SynthDocBench: 장문 시각 문서 이해를 위한 통제된 벤치마크",
+    "url": "https://huggingface.co/papers/2607.10400",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SynthDocBench는 문서 길이, 레이아웃 구조, 모달리티 구성, 질문 유형 등의 요소를 독립적으로 제어하는 완전 합성 벤치마크다. 7개의 최신 VLM을 평가한 결과, 기존 벤치마크에서는 드러나지 않던 세 가지 실패 패턴을 발견했다. 문서 길이에 따른 급격한 성능 저하, 문서 중간 부분에서의 체계적 위치 민감성(최대 8.3%p 하락), 그리고 장문 문서에서의 차트 이해 실패가 확인됐다. 이는 현재 모델들이 강건한 장문 문서 이해보다 벤치마크 패턴에 과적합됐을 가능성을 시사한다.",
+    "why_it_matters": "기존 벤치마크가 감추던 VLM의 장문 시각 문서 처리 한계를 체계적으로 진단할 수 있는 새로운 평가 기준을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.04305126783455,
+    "published_at": "2026-07-10T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.11886",
+    "section": "papers",
+    "title_en": "Read It Back: Pretrained MLLMs Are Zero-Shot Reward Models for Text-to-Image Generation",
+    "title_ko": "SpectraReward: 사전학습 MLLM을 제로샷 이미지 생성 보상 모델로 활용하기",
+    "url": "https://huggingface.co/papers/2607.11886",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SpectraReward는 별도 학습 없이 사전학습된 멀티모달 LLM(MLLM)을 텍스트-이미지 생성의 강화학습 보상 모델로 전환하는 방법이다. 생성된 이미지에서 원본 프롬프트가 얼마나 잘 복원되는지를 이미지 조건부 로그-우도로 측정하여 보상으로 사용한다. 또한 Self-SpectraReward는 통합 멀티모달 모델의 이해 브랜치가 생성 브랜치를 스스로 평가하는 폐쇄 루프 자기개선 구조를 제안하며, 외부 보상 모델 없이도 대형 외부 모델과 동등하거나 더 나은 성능을 달성했다.",
+    "why_it_matters": "파인튜닝이나 선호 데이터 없이 기존 MLLM을 보상 모델로 재활용해 이미지 생성 RL 비용을 크게 낮출 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.80666248977032,
+    "published_at": "2026-07-12T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.09125",
+    "section": "papers",
+    "title_en": "4D Human-Scene Reconstruction from Low-Overlap Captures",
+    "title_ko": "저중첩 카메라로 4D 인간-장면 재구성하는 StudioRecon",
+    "url": "https://huggingface.co/papers/2607.09125",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "StudioRecon은 소수의 저중첩 카메라만으로 4D 인간 장면을 재구성하는 파이프라인이다. 배경과 인물을 분리해 처리하며, 비디오 디퓨전 모델로 수백 개의 가상 시점을 합성해 배경 감독을 강화한다. 변형 가능한 가우시안 기반 인물 초기화와 재귀적 향상 모듈을 결합해 아티팩트를 최소화하며, 4개의 실제 데이터셋에서 최신 성능을 달성했다.",
+    "why_it_matters": "밀집 카메라 없이도 고품질 4D 인간 장면 재구성이 가능해져, 실제 환경에서의 볼류메트릭 캡처 접근성이 크게 높아진다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.761200115693562,
+    "published_at": "2026-07-10T02:30:45Z"
+  },
+  {
+    "id": "github_trending-Nutlope/hallmark",
+    "section": "releases",
+    "title_en": "Nutlope/hallmark",
+    "title_ko": "Hallmark: AI가 만든 티 안 나는 UI 생성 디자인 스킬",
+    "url": "https://github.com/Nutlope/hallmark",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Hallmark는 Claude Code, Cursor, Codex에서 사용할 수 있는 디자인 스킬로, AI가 생성한 듯한 뻔한 UI를 거부하고 독창적인 디자인을 만들어낸다. 20가지 테마와 57개의 슬롭 테스트 게이트를 통해 기본 템플릿 느낌을 배제하며, build·audit·redesign·study 4가지 명령어를 지원한다. Together AI가 제작했으며 MIT 라이선스로 오픈소스로 공개되어 있다.",
+    "why_it_matters": "AI 코딩 도구로 생성된 UI가 획일적으로 보이는 문제를 해결하려는 실용적인 접근법으로, 개발자가 더 차별화된 웹 디자인을 뽑아낼 수 있게 해준다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8663161375661376,
+    "published_at": "2026-07-16T01:32:27Z"
+  },
+  {
+    "id": "github_trending-moeru-ai/airi",
+    "section": "releases",
+    "title_en": "moeru-ai/airi",
+    "title_ko": "Project AIRI: 오픈소스 AI 버튜버 플랫폼 (Neuro-sama 재현 프로젝트)",
+    "url": "https://github.com/moeru-ai/airi",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Project AIRI는 Neuro-sama에서 영감을 받아 자신만의 AI 가상 캐릭터(버튜버)를 셀프 호스팅으로 운영할 수 있는 오픈소스 프로젝트입니다. 실시간 음성 대화, Minecraft·Factorio 게임 플레이, VRM/Live2D 아바타 지원 등을 제공하며 Web/macOS/Windows에서 동작합니다. OpenAI, Claude, DeepSeek, Gemini 등 다양한 LLM 프로바이더를 지원하며 WebGPU·WebAssembly 등 웹 기술 기반으로 브라우저에서도 실행 가능합니다.",
+    "why_it_matters": "폐쇄적인 Neuro-sama와 달리 누구나 자신의 AI 디지털 동반자를 소유·운영할 수 있는 완전한 오픈소스 스택을 제공한다는 점에서 주목할 만하다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8663161375661376,
+    "published_at": "2026-07-16T01:32:27Z"
+  },
+  {
+    "id": "github_trending-HenryNdubuaku/maths-cs-ai-compendium",
+    "section": "releases",
+    "title_en": "HenryNdubuaku/maths-cs-ai-compendium",
+    "title_ko": "수학·CS·AI 종합 학습서: AI/ML 리서치 엔지니어를 위한 오픈소스 교재",
+    "url": "https://github.com/HenryNdubuaku/maths-cs-ai-compendium",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "AI/ML 리서치 엔지니어를 목표로 하는 개발자를 위한 오픈소스 종합 교재로, 수학(선형대수, 미적분, 확률통계)부터 머신러닝, LLM 아키텍처, GPU 프로그래밍, AI 추론 최적화까지 총 18개 챕터로 구성되어 있다. 기존 교재처럼 딱딱한 수식 나열 대신 직관 중심의 설명을 지향하며, Claude Code·Cursor 등 AI 어시스턴트와 연동 가능한 MCP 서버도 포함되어 있다. 저자는 이 노트를 활용해 지인들이 DeepMind, OpenAI, Nvidia 등의 인터뷰를 통과했다고 밝히고 있다.",
+    "why_it_matters": "AI/ML 전 분야를 직관적으로 연결하는 무료 오픈소스 교재로, 실무 엔지니어 수준의 깊은 이해를 원하는 한국 개발자에게 유용한 학습 자료다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8663161375661376,
+    "published_at": "2026-07-16T01:32:27Z"
+  },
+  {
+    "id": "github_trending-Shubhamsaboo/awesome-llm-apps",
+    "section": "releases",
+    "title_en": "Shubhamsaboo/awesome-llm-apps",
+    "title_ko": "Awesome LLM Apps — 100개 이상의 AI 에이전트 & RAG 앱 모음",
+    "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude, Gemini, GPT, DeepSeek, Llama 등 주요 LLM을 지원하는 100개 이상의 오픈소스 AI 에이전트 및 RAG 앱 템플릿 모음입니다. 스타터 에이전트, 멀티 에이전트 팀, 음성 AI, RAG 파이프라인, MCP 에이전트 등 다양한 카테고리로 구성되어 있으며 Apache-2.0 라이선스로 자유롭게 사용 가능합니다. 각 템플릿은 엔드투엔드 테스트를 거쳤으며 클론 후 즉시 실행할 수 있도록 설계되어 있습니다.",
+    "why_it_matters": "실제로 동작하는 AI 에이전트·RAG 앱을 빠르게 참고·커스터마이징할 수 있는 대규모 오픈소스 레퍼런스로, 실무 프로젝트 시작점으로 활용 가치가 높습니다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "에이전트"
+    ],
+    "score": 0.8663161375661376,
+    "published_at": "2026-07-16T01:32:27Z"
+  },
+  {
+    "id": "github_trending-coreyhaines31/marketingskills",
+    "section": "releases",
+    "title_en": "coreyhaines31/marketingskills",
+    "title_ko": "AI 에이전트용 마케팅 스킬 모음 (Claude Code 등 지원)",
+    "url": "https://github.com/coreyhaines31/marketingskills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code, OpenAI Codex, Cursor 등 AI 코딩 에이전트에 마케팅 전문 지식을 부여하는 오픈소스 스킬 컬렉션이다. CRO, 카피라이팅, SEO, 광고, 이메일, 분석 등 40여 개의 마케팅 스킬이 마크다운 파일 형태로 제공된다. `npx skills add` 명령 한 줄로 설치할 수 있으며, 각 스킬은 제품 마케팅 컨텍스트를 공유해 서로 연계 동작한다.",
+    "why_it_matters": "AI 에이전트에 마케팅 도메인 지식을 즉시 주입할 수 있어, 테크 마케터와 창업자가 코딩 에이전트를 실질적인 마케팅 실무에 바로 활용할 수 있게 된다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8663161375661376,
+    "published_at": "2026-07-16T01:32:27Z"
+  },
+  {
+    "id": "openai_blog-advancing-ai-safety-through-state-and-federal-action",
+    "section": "releases",
+    "title_en": "The US is advancing AI safety through state and federal action",
+    "title_ko": "미국, 주(州) 및 연방 차원의 AI 안전 조치 추진",
+    "url": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 AI 거버넌스에 관한 '역연방주의(reverse federalism)' 접근법을 제시했다. 이 방식은 각 주(州)의 법률이 먼저 만들어지고, 이를 토대로 민주적이고 안전한 AI를 위한 국가 프레임워크를 구축하는 방식이다. OpenAI는 이러한 주 단위의 입법 활동이 연방 차원의 AI 정책 형성에 기여할 수 있다고 주장한다.",
+    "why_it_matters": "AI 규제의 방향성이 미국 내 주법(州法)에서 시작해 연방법으로 수렴되는 새로운 거버넌스 모델을 OpenAI가 공식 제안했다는 점에서, 글로벌 AI 규제 논의에 중요한 시사점을 제공한다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.7857159391534392,
+    "published_at": "2026-07-15T12:00:00Z"
+  },
+  {
+    "id": "openai_blog-unlocking-self-improvement-gpt-red",
+    "section": "releases",
+    "title_en": "GPT-Red: Unlocking Self-Improvement for Robustness",
+    "title_ko": "GPT-Red: 자기 대결 방식으로 AI 견고성 자동 강화",
+    "url": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 GPT-Red라는 자동화된 레드팀 시스템을 공개했다. 이 시스템은 자기 대결(self-play) 방식을 활용해 AI의 안전성, 정렬(alignment), 프롬프트 인젝션 견고성을 스스로 개선한다. 기존 수동 레드팀 방식의 한계를 넘어 자동화된 반복 개선을 가능하게 한다.",
+    "why_it_matters": "AI 안전성 평가와 강화를 자동화함으로써 모델 배포 전 취약점 발견 속도를 크게 높일 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7738111772486773,
+    "published_at": "2026-07-15T10:00:00Z"
+  },
+  {
+    "id": "hn-48924912",
+    "section": "community",
+    "title_en": "Inkling: Our Open-Weights Model",
+    "title_ko": "Inkling: 오픈 웨이트 모델 공개",
+    "url": "https://thinkingmachines.ai/news/introducing-inkling/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Inkling이라는 이름의 오픈 웨이트 AI 모델이 공개되었다. 상세한 설명은 제공되지 않았으나, 오픈 웨이트 형태로 배포되는 모델임을 알 수 있다.",
+    "why_it_matters": "오픈 웨이트 모델의 추가 공개는 개발자 커뮤니티의 선택지를 넓힌다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 10.192124548866701,
+    "published_at": "2026-07-15T18:12:45Z"
+  },
+  {
+    "id": "hn-48926590",
+    "section": "community",
+    "title_en": "Grok Build is open source",
+    "title_ko": "Grok Build, 오픈소스로 공개",
+    "url": "https://github.com/xai-org/grok-build",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Grok Build가 오픈소스로 공개되었다. 상세한 설명은 제공되지 않았으나, 소스코드가 공개적으로 열람 및 기여 가능한 상태가 된 것으로 보인다.",
+    "why_it_matters": "Grok 관련 도구의 오픈소스화는 개발자 커뮤니티의 접근성과 활용 가능성을 크게 높일 수 있다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 9.51848755459357,
+    "published_at": "2026-07-15T20:24:58Z"
+  },
+  {
+    "id": "hn-48922434",
+    "section": "community",
+    "title_en": "Running Gemma 4 26B at 5 tokens/sec on a 13-year-old Xeon with no GPU",
+    "title_ko": "13년 된 Xeon CPU로 GPU 없이 Gemma 4 26B를 초당 5토큰으로 실행",
+    "url": "https://www.neomindlabs.com/2026/06/08/running-gemma-4-26b-at-5-tokens-sec-on-a-13-year-old-xeon-with-no-gpu/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GPU 없이 13년 된 Intel Xeon CPU만으로 Google의 Gemma 4 26B 모델을 초당 5토큰 속도로 구동하는 실험이 공유되었다. 고사양 하드웨어 없이도 대형 언어 모델을 로컬에서 실행할 수 있음을 보여주는 사례다.",
+    "why_it_matters": "GPU 없는 구형 서버 환경에서도 26B급 LLM 로컬 실행이 가능함을 입증해, 저비용 온프레미스 AI 활용 가능성을 넓힌다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 8.997198677296243,
+    "published_at": "2026-07-15T15:34:05Z"
+  },
+  {
+    "id": "hn-48927095",
+    "section": "community",
+    "title_en": "Governments, companies, nonprofits should invest in free, open source AI [pdf]",
+    "title_ko": "정부·기업·비영리단체, 자유 오픈소스 AI에 투자해야",
+    "url": "https://www.siegelendowment.org/wp-content/uploads/2026/07/fortune-david-siegel-open-source-ai.pdf",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "PDF 문서를 통해 정부, 기업, 비영리단체가 자유롭고 오픈소스인 AI 개발에 투자해야 한다는 주장이 제기됐다. 구체적인 내용은 제공된 설명이 없어 상세히 전달하기 어렵다.",
+    "why_it_matters": "오픈소스 AI에 대한 공공·민간 투자 촉구는 AI 생태계의 주도권과 접근성 논의에서 중요한 화두다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 7.36438031621808,
+    "published_at": "2026-07-15T21:16:36Z"
+  },
+  {
+    "id": "hn-48913653",
+    "section": "community",
+    "title_en": "Book prizes don't work how you think",
+    "title_ko": "도서상은 당신이 생각하는 방식으로 작동하지 않는다",
+    "url": "https://rebeccamakkai.substack.com/p/book-prizes-dont-work-how-you-think",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "도서상의 실제 운영 방식이 일반적인 인식과 다를 수 있다는 내용을 다루는 글이다. 제목 외 구체적인 정보가 제공되지 않아 세부 내용은 확인하기 어렵다.",
+    "why_it_matters": "출판 및 문학상 시스템의 이면을 이해하는 데 관심 있는 독자에게 흥미로울 수 있다.",
+    "tags": [],
+    "score": 7.1875193736384855,
+    "published_at": "2026-07-14T22:19:01Z"
+  },
+  {
+    "id": "youtube-AgZQAz2lQSU",
+    "section": "video",
+    "title_en": "AI 대기업 대표들의 웅장한 싸움;;",
+    "title_ko": "AI 대기업 대표들의 치열한 신경전",
+    "url": "https://www.youtube.com/shorts/AgZQAz2lQSU",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "AI 업계 주요 대기업 대표들 간의 갈등과 경쟁을 다룬 콘텐츠다. 조코딩 채널에서 업계 리더들 사이의 대립 구도를 소개하고 있다.",
+    "why_it_matters": "AI 업계 주요 인물들의 갈등은 기술·산업 방향성에 직접적인 영향을 미칠 수 있어 주목할 필요가 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7678670634920635,
+    "published_at": "2026-07-15T09:00:05Z"
+  },
+  {
+    "id": "youtube-cVOjaTddVTc",
+    "section": "video",
+    "title_en": "AI 트렌드의 미래는..?",
+    "title_ko": "AI 트렌드의 미래는 어디로 향하는가?",
+    "url": "https://www.youtube.com/shorts/cVOjaTddVTc",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 AI 트렌드의 미래 방향을 주제로 영상을 공개했다. 루프 엔지니어링 등 최신 AI 키워드를 중심으로 흐름을 짚는 내용으로 보인다.",
+    "why_it_matters": "한국 개발자 대상으로 AI 트렌드 흐름을 쉽게 정리해주는 콘텐츠로, 빠르게 변화하는 AI 생태계 방향을 파악하는 데 참고할 수 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7559573412698413,
+    "published_at": "2026-07-15T07:00:02Z"
+  },
+  {
+    "id": "youtube-yqRyOMEDri8",
+    "section": "video",
+    "title_en": "모르는 사람이 많다는 사람처럼 말하는 GPT",
+    "title_ko": "사람처럼 자연스럽게 말하는 GPT 만들기",
+    "url": "https://www.youtube.com/shorts/yqRyOMEDri8",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 GPT를 보다 사람처럼 대화하도록 설정하는 방법을 소개하는 영상이다. 많은 사람들이 잘 모르는 설정이나 프롬프트 기법을 다루는 것으로 보인다.",
+    "why_it_matters": "GPT의 대화 품질을 높이는 실용적인 팁을 한국어로 쉽게 배울 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6250181878306877,
+    "published_at": "2026-07-14T09:00:10Z"
+  },
+  {
+    "id": "simon_willison-grok-mermaid",
+    "section": "deepdive",
+    "title_en": "Mermaid to Unicode box art (grok-mermaid)",
+    "title_ko": "Mermaid 다이어그램을 유니코드 박스 아트로 변환하는 브라우저 도구",
+    "url": "https://simonwillison.net/2026/Jul/16/grok-mermaid/#atom-everything",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Simon Willison이 xAI의 오픈소스 Grok CLI 코드베이스를 탐색하던 중, Rust로 작성된 터미널용 Mermaid 다이어그램 렌더러를 발견했다. 이를 WebAssembly로 컴파일해 브라우저에서 바로 사용할 수 있는 도구로 만들었으며, Claude Code(Fable 5)를 활용해 개발했다. 결과물은 Mermaid 소스 코드를 입력하면 유니코드 박스 아트 형태의 플로우차트로 변환해준다.",
+    "why_it_matters": "Grok CLI의 오픈소스화로 공개된 Rust 코드가 WebAssembly를 통해 브라우저 도구로 재활용되는 실용적 사례를 보여준다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 0.860448082010582,
+    "published_at": "2026-07-16T00:33:18Z"
+  }
+]
