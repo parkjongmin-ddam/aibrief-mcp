@@ -1,0 +1,373 @@
+[
+  {
+    "id": "hf-2606.22388",
+    "section": "papers",
+    "title_en": "PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems",
+    "title_ko": "PlanBench-XL: 대규모 툴 생태계에서 LLM 에이전트의 장기 계획 능력 평가 벤치마크",
+    "url": "https://huggingface.co/papers/2606.22388",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "PlanBench-XL은 1,665개 도구와 327개 리테일 태스크로 구성된 인터랙티브 벤치마크로, LLM 에이전트가 제한된 도구 가시성 환경에서 반복적으로 도구를 탐색·활용해 장기 목표를 달성하는 능력을 평가한다. 도구 실패·누락·방해 요소를 시뮬레이션하는 블로킹 메커니즘을 통해 실세계의 불확실성도 재현한다. 10개 주요 LLM 실험 결과, GPT-4.5조차 블로킹 없이 51.90% 정확도를 기록했으나 최고 난이도 블로킹 조건에서는 11.36%로 급락했다.",
+    "why_it_matters": "대규모·불완전한 도구 환경에서 LLM 에이전트의 장기 계획 한계를 구체적으로 드러내, 실용적인 에이전트 시스템 개발에 필수적인 평가 기준을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.110873864173311,
+    "published_at": "2026-06-20T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.21337",
+    "section": "papers",
+    "title_en": "DataClaw0: Agentic Tailoring Multimodal Data from Raw Streams",
+    "title_ko": "DataClaw0: 원시 멀티모달 스트림을 에이전틱 방식으로 정제하는 데이터 테일러링",
+    "url": "https://huggingface.co/papers/2606.21337",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "DataClaw0은 비정형 멀티모달 데이터의 높은 '데이터 엔트로피' 문제를 해결하기 위해 에이전틱 데이터 테일러링 패러다임을 제안합니다. SFT와 GRPO를 결합한 9B 규모의 모델로, 다양한 사용자 의도에 맞게 데이터를 능동적으로 정제·구조화합니다. 영상 생성, 실세계 VQA, GUI 내비게이션 등 다운스트림 태스크 평가에서 제한된 학습 데이터 환경에서도 효율적인 모델 적응을 가능하게 함을 확인했습니다.",
+    "why_it_matters": "데이터 처리 자체를 학습 가능한 에이전틱 능력으로 격상시켜, 고품질 AI 포스트트레이닝 데이터 확보 비용을 획기적으로 줄일 수 있는 새로운 접근법을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.060443010546419,
+    "published_at": "2026-06-18T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.23654",
+    "section": "papers",
+    "title_en": "EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions",
+    "title_ko": "EnterpriseClawBench: 실제 업무 세션 기반 엔터프라이즈 에이전트 벤치마크",
+    "url": "https://huggingface.co/papers/2606.23654",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "실제 기업 업무 세션에서 구축된 엔터프라이즈 에이전트 벤치마크 EnterpriseClawBench가 소개됐다. 852개의 재현 가능한 태스크로 구성되며, 각 태스크에는 복구된 픽스처, 재작성된 프롬프트, 역할 클래스, 스킬 서브클래스, 하드 룰, 시맨틱 루브릭이 포함된다. 최고 성능 구성(Codex with GPT-5.5)도 0.663에 그쳐 현재 에이전트의 기업 환경 적용 한계를 드러냈다. 내부 기업 데이터 포함으로 벤치마크 데이터는 공개하지 않으나, 구축·평가 프로토콜은 재사용 가능하도록 공개한다.",
+    "why_it_matters": "단일 점수 대신 하네스-모델 조합, 아티팩트 품질, 비용, 런타임 등 다차원 평가를 요구해 엔터프라이즈 에이전트 평가 기준을 새롭게 제시한다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 5.02535169073515,
+    "published_at": "2026-06-21T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.22807",
+    "section": "papers",
+    "title_en": "KaLM-Reranker-V1: Fast but Not Late Interaction for Compressed Document Reranking",
+    "title_ko": "KaLM-Reranker-V1: 쿼리-문서 분리 연산으로 빠른 문서 재순위화",
+    "url": "https://huggingface.co/papers/2606.22807",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "KaLM-Reranker-V1은 인코더-디코더 구조를 기반으로 쿼리와 문서 연산을 분리(디커플링)하면서도 크로스-어텐션을 통해 풍부한 관련성 모델링을 유지하는 재순위화 모델이다. Nano(0.27B), Small(1B), Large(4B) 세 가지 크기로 제공되며, BEIR 벤치마크에서 Qwen3-Reranker 등 산업용 강력 모델과 동등한 성능을 달성했다. MIRACL 다국어 벤치마크에서도 다국어 학습 데이터 없이 우수한 성능을 보였으며, 0.27B Nano 모델조차 7~12B 임베딩 모델과 경쟁력 있는 결과를 나타냈다.",
+    "why_it_matters": "문서 인코딩을 사전 계산해 효율성을 높이면서도 재순위화 품질을 타협하지 않아, RAG 파이프라인의 실용적 배포 효율을 크게 개선할 수 있다.",
+    "tags": [
+      "RAG",
+      "LLM"
+    ],
+    "score": 4.58351893845611,
+    "published_at": "2026-06-21T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.20781",
+    "section": "papers",
+    "title_en": "World Action Models: A Survey",
+    "title_ko": "월드 액션 모델(WAM) 종합 서베이",
+    "url": "https://huggingface.co/papers/2606.20781",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "월드 액션 모델(WAM)은 미래를 예측하여 행동에 활용하는 구현된 예측-행동 모델이다. 최근 WAM은 대규모 비디오 생성 모델을 재활용하거나, 비디오 생성 없이 언어·비전-언어 백본에 의존하는 두 갈래로 발전하고 있다. 이 서베이는 WAM과 비디오 생성 모델, VLA 정책 등의 경계를 명확히 하고, 생성 대상·예측 기반·행동 결합 방식·배포 환경의 네 가지 축으로 기존 연구를 체계적으로 분류한다. WAM은 단순한 액션 헤드를 붙인 비디오 생성기가 아니라, 표현 풍부성과 연산·지연·레이블 비용을 트레이드오프하는 예측-행동 방법론임을 강조한다.",
+    "why_it_matters": "로봇·자율에이전트 분야에서 급증하는 WAM 연구의 개념 혼란을 정리하고 통일된 분류 체계를 제시해 향후 연구 방향을 안내한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.49650756146648,
+    "published_at": "2026-06-17T20:00:00Z"
+  },
+  {
+    "id": "github_trending-mukul975/Anthropic-Cybersecurity-Skills",
+    "section": "releases",
+    "title_en": "mukul975/Anthropic-Cybersecurity-Skills",
+    "title_ko": "AI 에이전트를 위한 오픈소스 사이버보안 스킬 라이브러리 817개",
+    "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "AI 에이전트가 시니어 보안 분석가 수준의 사이버보안 작업을 수행할 수 있도록 817개의 구조화된 보안 스킬을 제공하는 오픈소스 라이브러리다. MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF, MITRE F3 등 6개 프레임워크에 매핑되어 있으며, 29개 보안 도메인을 커버한다. Claude Code, GitHub Copilot, Gemini CLI 등 26개 이상의 AI 플랫폼과 호환되며, Apache 2.0 라이선스로 제공된다.",
+    "why_it_matters": "AI 에이전트에 실전 보안 플레이북을 직접 주입할 수 있어, 보안 인력 부족 문제를 AI로 보완하려는 팀에 즉시 활용 가능한 지식 기반을 제공한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8667939814814815,
+    "published_at": "2026-06-23T01:37:16Z"
+  },
+  {
+    "id": "github_trending-ZhuLinsen/daily_stock_analysis",
+    "section": "releases",
+    "title_en": "ZhuLinsen/daily_stock_analysis",
+    "title_ko": "LLM 기반 다중 시장 주식 자동 분석 시스템 (daily_stock_analysis)",
+    "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "LLM을 활용해 A주·홍콩·미국·일본·한국 주식을 매일 자동 분석하고, 결정 대시보드를 기업 위챗/라인웍스/텔레그램/디스코드/슬랙/이메일로 자동 발송하는 오픈소스 프로젝트입니다. GitHub Actions를 통해 서버 없이 무료로 정해진 시간에 실행할 수 있으며, OpenAI·Gemini·Claude·DeepSeek·Ollama 등 다양한 AI 모델을 지원합니다. 웹 대시보드, 에이전트 전략 질의, 멀티소스 시세 데이터 통합 등 다양한 기능을 제공합니다.",
+    "why_it_matters": "별도 서버 없이 LLM 기반 주식 분석을 자동화·알림까지 원스톱으로 구축할 수 있어, 개인 투자자 및 개발자의 진입 장벽을 크게 낮춘다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8667939814814815,
+    "published_at": "2026-06-23T01:37:16Z"
+  },
+  {
+    "id": "github_trending-JCodesMore/ai-website-cloner-template",
+    "section": "releases",
+    "title_en": "JCodesMore/ai-website-cloner-template",
+    "title_ko": "AI 코딩 에이전트로 웹사이트를 한 명령어로 복제하는 템플릿",
+    "url": "https://github.com/JCodesMore/ai-website-cloner-template",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "URL을 입력하고 `/clone-website` 명령어를 실행하면 AI 코딩 에이전트가 사이트를 분석해 Next.js 코드베이스로 재구성해주는 오픈소스 템플릿이다. 정찰 → 디자인 토큰 추출 → 컴포넌트 스펙 작성 → 병렬 빌드 → QA의 다단계 파이프라인으로 동작하며, Claude Code(Opus 4.7)를 권장하지만 Cursor, Copilot, Gemini CLI 등 다양한 에이전트를 지원한다. 플랫폼 마이그레이션, 유실된 소스코드 복구, 학습 목적 등에 활용할 수 있다.",
+    "why_it_matters": "워드프레스·Webflow 등 레거시 사이트를 현대적인 Next.js 코드로 자동 변환할 수 있어, 재개발 비용과 시간을 크게 줄일 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8667939814814815,
+    "published_at": "2026-06-23T01:37:16Z"
+  },
+  {
+    "id": "github_trending-lyogavin/airllm",
+    "section": "releases",
+    "title_en": "lyogavin/airllm",
+    "title_ko": "AirLLM: 4GB GPU 단일 카드로 70B LLM 추론 실행",
+    "url": "https://github.com/lyogavin/airllm",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "AirLLM은 양자화·증류·프루닝 없이 4GB VRAM GPU 한 장으로 70B 대형 언어 모델 추론을 가능하게 하는 오픈소스 라이브러리다. 모델을 레이어 단위로 분할해 메모리 사용을 최적화하며, 블록 단위 양자화 압축을 적용하면 최대 3배 속도 향상도 지원한다. Llama3.1 405B를 8GB VRAM에서 실행할 수 있으며, Qwen2.5, Mistral, ChatGLM 등 다양한 모델을 지원한다.",
+    "why_it_matters": "고가의 GPU 없이도 소비자용 그래픽카드로 초대형 LLM을 직접 실행할 수 있어 개인 개발자의 LLM 접근성을 획기적으로 낮춘다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8667939814814815,
+    "published_at": "2026-06-23T01:37:16Z"
+  },
+  {
+    "id": "openai_blog-omio",
+    "section": "releases",
+    "title_en": "How Omio is building the future of conversational travel",
+    "title_ko": "Omio가 OpenAI로 구현하는 대화형 여행의 미래",
+    "url": "https://openai.com/index/omio",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "유럽 여행 플랫폼 Omio는 OpenAI를 활용해 대화형 여행 경험을 구축하고 있다. 이를 통해 제품 개발 속도를 높이고 AI 네이티브 기업으로의 전환을 추진 중이다. 사용자는 자연어로 여행 관련 질의를 하고 맞춤형 답변을 받을 수 있게 된다.",
+    "why_it_matters": "전통적인 여행 검색·예약 서비스가 대화형 AI로 재편되는 실제 사례로, 여행 테크 산업의 AI 전환 방향을 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8571445105820106,
+    "published_at": "2026-06-23T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-daybreak-securing-the-world",
+    "section": "releases",
+    "title_en": "Daybreak: Tools for securing every organization in the world",
+    "title_ko": "OpenAI, 조직 보안을 위한 Daybreak 툴 공개",
+    "url": "https://openai.com/index/daybreak-securing-the-world",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 조직의 보안 취약점을 대규모로 탐지·검증·패치할 수 있도록 돕는 새로운 Daybreak 툴셋을 발표했다. 여기에는 Codex Security와 GPT-5.5-Cyber가 포함된다. 이 도구들은 모든 규모의 조직이 사이버 보안 역량을 강화할 수 있도록 설계되었다.",
+    "why_it_matters": "LLM 기반 취약점 자동 탐지·패치 도구가 기업 보안 운영 방식을 근본적으로 바꿀 수 있는 전환점이 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7738111772486773,
+    "published_at": "2026-06-22T10:00:00Z"
+  },
+  {
+    "id": "openai_blog-patch-the-planet",
+    "section": "releases",
+    "title_en": "Patch the Planet: a Daybreak initiative to support open source maintainers",
+    "title_ko": "Patch the Planet: OpenAI, 오픈소스 유지관리자 지원 이니셔티브 발표",
+    "url": "https://openai.com/index/patch-the-planet",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 'Patch the Planet'이라는 Daybreak 이니셔티브를 공개했다. 이 프로그램은 오픈소스 유지관리자들이 AI와 전문가 리뷰를 활용해 취약점을 발견하고 검증하며 수정할 수 있도록 지원한다. 오픈소스 생태계의 보안 강화를 목표로 한다.",
+    "why_it_matters": "OpenAI가 AI를 활용한 오픈소스 보안 취약점 탐지·수정 지원에 직접 나섰다는 점에서 개발자 커뮤니티에 실질적인 영향을 미칠 수 있다.",
+    "tags": [
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7738111772486773,
+    "published_at": "2026-06-22T10:00:00Z"
+  },
+  {
+    "id": "hn-48634585",
+    "section": "community",
+    "title_en": "Canada plans 'nuclear renaissance' with up to 10 reactors built by 2040",
+    "title_ko": "캐나다, 2040년까지 원자로 10기 건설 계획 발표",
+    "url": "https://www.cbc.ca/news/politics/federal-nuclear-strategy-9.7244509",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "캐나다가 2040년까지 최대 10기의 원자로를 건설하는 이른바 '핵 르네상스' 계획을 추진한다. 구체적인 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "AI 데이터센터의 급증하는 전력 수요에 대응할 수 있는 청정 에너지 공급 확대 측면에서 주목된다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 10.160874559311415,
+    "published_at": "2026-06-22T19:06:48Z"
+  },
+  {
+    "id": "hn-48614715",
+    "section": "community",
+    "title_en": "Polymarket has flooded social media with deceptive videos by paid creators",
+    "title_ko": "폴리마켓, 유료 크리에이터 통해 소셜 미디어에 기만적 영상 유포 의혹",
+    "url": "https://www.wsj.com/business/media/polymarket-social-media-bets-prediction-market-441cdeb5?st=HhTZY2",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "폴리마켓이 유료 크리에이터를 활용해 소셜 미디어에 기만적인 홍보 영상을 퍼뜨렸다는 의혹이 제기됐다. 구체적인 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "예측 시장 플랫폼의 마케팅 윤리 문제로, 정보 신뢰성과 플랫폼 투명성에 대한 논의를 촉발할 수 있다.",
+    "tags": [],
+    "score": 9.745195034300577,
+    "published_at": "2026-06-21T01:12:21Z"
+  },
+  {
+    "id": "hn-48636377",
+    "section": "community",
+    "title_en": "GLM-5.2 – How to Run Locally",
+    "title_ko": "GLM-5.2 로컬 실행 방법",
+    "url": "https://unsloth.ai/docs/models/glm-5.2",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GLM-5.2 모델을 로컬 환경에서 직접 실행하는 방법을 다룬 내용이다. 상세한 설명은 제공되지 않아 구체적인 내용은 원문을 참고해야 한다.",
+    "why_it_matters": "GLM-5.2를 로컬에서 구동하려는 개발자에게 실용적인 가이드가 될 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 9.672962676454238,
+    "published_at": "2026-06-22T21:21:01Z"
+  },
+  {
+    "id": "hn-48630171",
+    "section": "community",
+    "title_en": "Moebius: 0.2B image inpainting model with 10B-level performance",
+    "title_ko": "Moebius: 2억 파라미터로 100억 수준 성능을 내는 이미지 인페인팅 모델",
+    "url": "https://hustvl.github.io/Moebius/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Moebius는 0.2B(2억) 파라미터 규모의 소형 이미지 인페인팅 모델로, 10B(100억) 수준의 성능을 달성했다고 주장한다. 인페인팅은 이미지의 특정 영역을 자연스럽게 채우거나 수정하는 기술이다.",
+    "why_it_matters": "초소형 모델로 대형 모델급 인페인팅 성능을 구현했다면, 엣지 디바이스나 저비용 환경에서의 고품질 이미지 편집 가능성을 크게 높일 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 8.845443324256903,
+    "published_at": "2026-06-22T13:53:02Z"
+  },
+  {
+    "id": "hn-48631726",
+    "section": "community",
+    "title_en": "Show HN: Oak – Git alternative designed for agents",
+    "title_ko": "Oak – 에이전트를 위해 설계된 Git 대안 도구",
+    "url": "https://oak.space/oak/oak",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Oak는 AI 에이전트를 염두에 두고 설계된 Git의 대안 버전 관리 시스템이다. 기존 Git이 사람 중심의 워크플로에 최적화된 것과 달리, Oak는 에이전트 기반 작업 흐름에 적합하도록 설계된 것으로 보인다.",
+    "why_it_matters": "AI 에이전트가 코드베이스를 직접 다루는 시대에 맞춰, 기존 Git의 한계를 극복하는 버전 관리 패러다임의 등장이다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 8.818684083083157,
+    "published_at": "2026-06-22T15:37:48Z"
+  },
+  {
+    "id": "youtube-izhQ-CbxDcc",
+    "section": "video",
+    "title_en": "클로드가 부럽지 않다는 오픈소스 모델 성능 ㄷㄷ",
+    "title_ko": "클로드 부럽지 않은 오픈소스 모델 등장",
+    "url": "https://www.youtube.com/shorts/izhQ-CbxDcc",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 클로드에 버금가는 성능을 보여주는 오픈소스 AI 모델을 소개하는 영상이다. 클로드 같은 상용 모델과 비교해도 손색없는 오픈소스 모델의 성능을 다루고 있다.",
+    "why_it_matters": "상용 LLM에 의존하지 않아도 되는 고성능 오픈소스 대안의 등장은 개발자들의 비용 절감과 자유로운 활용 측면에서 주목할 만하다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.9142708333333334,
+    "published_at": "2026-06-23T09:35:50Z"
+  },
+  {
+    "id": "youtube-oflXH0em4mo",
+    "section": "video",
+    "title_en": "특이점 온 실리콘밸리 AI 네이티브 기업 근황ㄷㄷ (ft. Speak 본사 투어)",
+    "title_ko": "실리콘밸리 AI 네이티브 기업 Speak 본사 투어 및 인터뷰",
+    "url": "https://www.youtube.com/watch?v=oflXH0em4mo",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "실리콘밸리의 AI 네이티브 기업 Speak 본사를 직접 방문해 팀원 및 창업자 인터뷰를 진행했습니다. 첫 시장으로 한국을 선택한 이유, Speak 팀이 AI를 활용하는 방식, AI 시대에 적합한 인재상 등 다양한 주제를 다룹니다. 또한 Speak의 경쟁 우위(해자)와 AI로 무언가를 만들고자 하는 사람들을 위한 조언도 담겨 있습니다.",
+    "why_it_matters": "실리콘밸리 AI 네이티브 기업의 실제 문화와 AI 활용 방식을 한국 개발자 시각에서 구체적으로 엿볼 수 있는 기회.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.895952380952381,
+    "published_at": "2026-06-23T06:31:11Z"
+  },
+  {
+    "id": "youtube-ZV0_nnBZlGc",
+    "section": "video",
+    "title_en": "개귀찮은 반복업무에서 탈출하는 방법",
+    "title_ko": "귀찮은 반복 업무에서 탈출하는 방법",
+    "url": "https://www.youtube.com/shorts/ZV0_nnBZlGc",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 직장인들이 겪는 반복 업무를 자동화하는 방법을 소개하는 영상입니다. 코딩을 활용해 업무 효율을 높이는 팁을 다루고 있습니다.",
+    "why_it_matters": "비개발자 직장인도 코딩으로 반복 업무를 자동화할 수 있다는 실용적인 접근을 제시합니다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.8928703703703704,
+    "published_at": "2026-06-23T06:00:07Z"
+  },
+  {
+    "id": "latent_space-ainews-spacex-is-already-a-28byr",
+    "section": "deepdive",
+    "title_en": "[AINews] SpaceX is already a $28B/yr Neocloud",
+    "title_ko": "SpaceX, 연 280억 달러 규모 네오클라우드로 부상",
+    "url": "https://www.latent.space/p/ainews-spacex-is-already-a-28byr",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "조용한 뉴스 사이클 속에서 Jamin Ball의 데이터를 바탕으로 SpaceX가 이미 연간 280억 달러 규모의 네오클라우드 사업자로 성장했음이 주목받고 있다. 네오클라우드는 AI 워크로드 중심의 신흥 클라우드 인프라 사업자를 지칭한다.",
+    "why_it_matters": "SpaceX의 클라우드 인프라 규모가 기존 빅테크에 필적하는 수준임을 보여주며 AI 인프라 경쟁 구도 변화를 시사한다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.8948247354497354,
+    "published_at": "2026-06-23T06:19:49Z"
+  }
+]

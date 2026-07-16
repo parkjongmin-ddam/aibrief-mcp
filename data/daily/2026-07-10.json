@@ -1,0 +1,320 @@
+[
+  {
+    "id": "hf-2607.07708",
+    "section": "papers",
+    "title_en": "Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning",
+    "title_ko": "SciReasoner: 단백질·분자·결정 구조-특성 관계를 과학적 추론으로 설명하는 멀티모달 AI 모델",
+    "url": "https://huggingface.co/papers/2607.07708",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SciReasoner는 단백질, 소분자, 무기 결정체의 구조-특성 관계를 과학적 원리에 기반해 추론하는 멀티모달 과학 기초 모델이다. 좌표·위상·주기적 연결성을 통합된 구조 인식 어휘로 이산화하여 추론 과정에서 구조 토큰을 증거 단위로 활용한다. 86개 벤치마크 중 67개에서 최고 성능을 달성했으며, 단일 단계 역합성 정확도를 0.63에서 0.72로, Gene Ontology 세포 구성요소 주석의 F_max를 0.42에서 0.55로 향상시켰다. 전문가 이중 맹검 평가에서 98% 사례에서 최신 대형 언어 모델과 동등하거나 더 선호되는 추론 결과를 보였다.",
+    "why_it_matters": "생물학·화학·재료과학 전반에서 구조 기반 예측의 정확도와 해석 가능성을 동시에 끌어올린 과학 특화 멀티모달 추론 모델이라는 점에서 AI 기반 과학 연구의 새로운 기준점이 된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.304065093204169,
+    "published_at": "2026-07-07T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.07608",
+    "section": "papers",
+    "title_en": "Dual Latent Memory in Vision-Language-Action Models for Robotic Manipulation",
+    "title_ko": "로봇 조작을 위한 비전-언어-액션 모델의 이중 잠재 메모리 구조 LaMem-VLA",
+    "url": "https://huggingface.co/papers/2607.07608",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "기존 VLA 모델은 마르코프 가정 하에 현재 관찰만으로 행동을 예측해 장기적·시간 의존적 작업에 취약했다. LaMem-VLA는 과거 경험을 단기·장기 메모리 저장소로 구성하고, 이를 잠재 토큰으로 재구성해 VLA 추론 과정에 직접 통합하는 프레임워크다. 큐레이터·시커·콘덴서·위버 등 4개 핵심 구성 요소가 협력해 과거 경험을 연속 잠재 공간에서 표현·검색·소비하도록 설계됐다. SimplerEnv와 LIBERO 벤치마크 실험에서 우수한 성능을 입증했다.",
+    "why_it_matters": "메모리를 VLA의 네이티브 잠재 공간에 통합함으로써 로봇의 장기 작업 수행 능력을 근본적으로 향상시킬 수 있는 접근법이다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.828641396489095,
+    "published_at": "2026-07-07T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.07675",
+    "section": "papers",
+    "title_en": "Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence",
+    "title_ko": "체화 지능을 위한 MoE 기반 대규모 비디오 사전학습 모델 LingBot-Video",
+    "url": "https://huggingface.co/papers/2607.07675",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LingBot-Video는 로봇 제어에 특화된 DiT 기반 비디오 사전학습 모델로, 밀집 구조 대신 Mixture-of-Experts(MoE) 아키텍처를 채택해 모델 용량과 추론 효율의 균형을 맞췄다. 데이터 측면에서는 조작, 탐색, 일인칭 시점 등 로봇 중심 영상을 포함한 데이터 프로파일링 엔진을 구축했으며, 물리적 합리성과 작업 완료율을 반영한 다차원 보상 시스템으로 훈련한다. 기존 비디오 생성 모델이 시각적 품질 중심인 것과 달리, 물리적 현실성과 행동 이해를 핵심 목표로 설계되었다. 최초의 대규모 오픈소스 MoE 비디오 파운데이션 모델로 공개된다.",
+    "why_it_matters": "로봇 제어를 위한 첫 오픈소스 대규모 MoE 비디오 파운데이션 모델로, 디지털 영상 생성과 물리적 로봇 행동 사이의 간극을 좁히는 새로운 방향을 제시한다.",
+    "tags": [
+      "오픈소스",
+      "에이전트"
+    ],
+    "score": 4.688879454113936,
+    "published_at": "2026-07-07T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.06560",
+    "section": "papers",
+    "title_en": "Vision as Unified Multimodal Generation",
+    "title_ko": "단일 멀티모달 생성 모델로 컴퓨터 비전 통합 — SenseNova-Vision",
+    "url": "https://huggingface.co/papers/2607.06560",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SenseNova-Vision은 태스크별 아키텍처 없이 텍스트와 이미지 생성 공간만으로 다양한 컴퓨터 비전 태스크를 통합 처리하는 모델이다. 객체 탐지, OCR, 키포인트 추정, 세그멘테이션, 깊이 추정, 카메라 포즈 추정 등 광범위한 비전 태스크를 자연어 명령과 선택적 시각 프롬프트로 수행한다. 대규모 학습을 위해 다양한 컴퓨터 비전 어노테이션을 지시-응답 예시로 변환한 SenseNova-Vision Corpus를 구축했으며, 모델과 코퍼스 모두 공개되었다.",
+    "why_it_matters": "태스크 전용 헤드나 구조 수정 없이 단일 멀티모달 모델이 전문 특화 시스템과 대등한 성능을 보여줌으로써, 범용 파운데이션 모델에 비전 능력을 통합하는 확장 가능한 방향을 제시한다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 4.663561646129646,
+    "published_at": "2026-07-06T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.07534",
+    "section": "papers",
+    "title_en": "Infinite Worlds with Versatile Interactions",
+    "title_ko": "무한한 세계와 다양한 상호작용을 지원하는 LingBot-World 2.0",
+    "url": "https://huggingface.co/papers/2607.07534",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LingBot-World 2.0(LingBot-World-Infinity)은 무제한 상호작용 지평선, 720p 60fps 실시간 스트리밍 지원, 공격·마법·활쏘기 등 다양한 액션 및 텍스트 기반 이벤트를 포함한 4가지 주요 업그레이드를 도입했다. 파일럿 에이전트가 캐릭터 행동을 계획·실행하고, 디렉터 에이전트가 새로운 환경 요소를 생성하는 에이전트 구조를 세계 모델링에 최초로 통합했다. 14B 기본 모델과 1.3B 경량 모델을 함께 제공해 단일 GPU에서도 손쉽게 배포할 수 있으며, 멀티플레이어 동시 접속 인터페이스도 지원한다.",
+    "why_it_matters": "에이전트 기반 세계 모델링과 실시간 고품질 영상 생성을 결합한 접근법은 게임 AI 및 인터랙티브 시뮬레이션 분야에 새로운 가능성을 열어준다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.13549421592915,
+    "published_at": "2026-07-07T20:00:00Z"
+  },
+  {
+    "id": "github_trending-MadsLorentzen/ai-job-search",
+    "section": "releases",
+    "title_en": "MadsLorentzen/ai-job-search",
+    "title_ko": "Claude Code 기반 AI 취업 지원 자동화 프레임워크",
+    "url": "https://github.com/MadsLorentzen/ai-job-search",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code를 활용해 구직 전 과정을 자동화하는 오픈소스 프레임워크다. 프로필을 입력하면 채용 공고 적합도 평가, 맞춤형 이력서 및 자기소개서 작성(LaTeX PDF), ATS 검증, 면접 준비까지 일관된 워크플로로 처리한다. 덴마크 채용 포털 기반으로 구축됐지만, LinkedIn 검색 등 국가 비의존 기능도 포함되어 있으며 다른 지역 채용 포털 추가도 지원한다.",
+    "why_it_matters": "AI 에이전트를 활용해 취업 준비의 반복 작업 전체를 자동화하는 실용적 사례로, 에이전트 기반 워크플로 설계 패턴을 참고할 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.8664335317460318,
+    "published_at": "2026-07-10T01:33:38Z"
+  },
+  {
+    "id": "github_trending-addyosmani/agent-skills",
+    "section": "releases",
+    "title_en": "addyosmani/agent-skills",
+    "title_ko": "AI 코딩 에이전트를 위한 프로덕션급 엔지니어링 스킬 팩 'Agent Skills'",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "addyosmani/agent-skills는 AI 코딩 에이전트가 소프트웨어 개발의 전 단계(정의→계획→구축→검증→리뷰→배포)에서 시니어 엔지니어 수준의 워크플로우를 일관되게 따르도록 설계된 24개의 구조화된 스킬 모음이다. /spec, /plan, /build, /test, /review, /ship 등 8개의 슬래시 명령어로 접근할 수 있으며, Claude Code, Cursor, Codex, GitHub Copilot 등 70개 이상의 에이전트 도구에 설치 가능하다. 각 스킬은 단계별 워크플로우, 검증 게이트, 합리화 방지 테이블을 포함하며 Google의 소프트웨어 엔지니어링 관행(Hyrum's Law, Beyonce Rule 등)을 반영한다.",
+    "why_it_matters": "AI 코딩 에이전트가 스펙·테스트·보안 리뷰를 건너뛰는 경향을 구조적 워크플로우로 강제 보완함으로써, 프로토타입 품질과 프로덕션 품질의 격차를 줄이는 실용적 도구다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8664335317460318,
+    "published_at": "2026-07-10T01:33:38Z"
+  },
+  {
+    "id": "github_trending-VoltAgent/awesome-design-md",
+    "section": "releases",
+    "title_en": "VoltAgent/awesome-design-md",
+    "title_ko": "DESIGN.md 파일 모음집 - AI 에이전트가 읽는 디자인 시스템 문서",
+    "url": "https://github.com/VoltAgent/awesome-design-md",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Google Stitch가 도입한 DESIGN.md 개념을 기반으로, 73개 유명 브랜드(Claude, Stripe, Apple, Tesla 등)의 디자인 시스템을 마크다운 파일로 정리한 오픈소스 컬렉션이다. 프로젝트 루트에 DESIGN.md 파일을 복사해 두면, AI 코딩 에이전트가 해당 브랜드의 색상·타이포그래피·컴포넌트 스타일을 이해하고 시각적으로 일관된 UI를 생성할 수 있다. Figma 익스포트나 JSON 스키마 없이 마크다운만으로 동작하며, 각 파일에는 색상 팔레트·타이포그래피·레이아웃·컴포넌트 스타일 등 9개 섹션이 포함된다.",
+    "why_it_matters": "AI 에이전트 기반 UI 생성 시 브랜드 디자인 일관성을 즉시 확보할 수 있는 실용적인 리소스로, 코딩 에이전트 활용 워크플로우를 크게 단축시킨다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8664335317460318,
+    "published_at": "2026-07-10T01:33:38Z"
+  },
+  {
+    "id": "github_trending-iOfficeAI/OfficeCLI",
+    "section": "releases",
+    "title_en": "iOfficeAI/OfficeCLI",
+    "title_ko": "AI 에이전트를 위한 오픈소스 오피스 CLI 도구 OfficeCLI",
+    "url": "https://github.com/iOfficeAI/OfficeCLI",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "OfficeCLI는 AI 에이전트가 Word, Excel, PowerPoint 파일을 읽고 편집하고 자동화할 수 있도록 설계된 오픈소스 CLI 도구입니다. Office 설치 없이 단일 바이너리로 동작하며, JSON 출력과 경로 기반 요소 접근, 내장 HTML/PNG 렌더링 엔진을 통해 에이전트가 문서를 '볼' 수 있는 피드백 루프를 제공합니다. Claude Code, Cursor, GitHub Copilot 등 주요 AI 코딩 도구와 자동 연동되며, MCP 서버도 내장되어 있습니다.",
+    "why_it_matters": "AI 에이전트가 Office 문서를 직접 생성·수정·검증하는 자동화 파이프라인을 Office 설치 없이 어디서든 구축할 수 있어, 문서 업무 자동화의 진입 장벽을 크게 낮춘다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8664335317460318,
+    "published_at": "2026-07-10T01:33:38Z"
+  },
+  {
+    "id": "github_trending-anthropics/claude-cookbooks",
+    "section": "releases",
+    "title_en": "anthropics/claude-cookbooks",
+    "title_ko": "Anthropic 공식 Claude 쿡북 (코드 예제 모음)",
+    "url": "https://github.com/anthropics/claude-cookbooks",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 Claude API를 활용하는 다양한 실전 예제를 담은 공식 쿡북 저장소다. 분류, RAG, 요약, 툴 사용, 멀티모달 비전, 에이전트, PDF 처리, 프롬프트 캐싱 등 폭넓은 주제를 Python 노트북 형태로 제공한다. Pinecone, Voyage AI, Stable Diffusion 등 서드파티 통합 예제도 포함되어 있으며, 커뮤니티 기여도 환영한다.",
+    "why_it_matters": "Claude API로 실제 서비스를 구축하려는 개발자에게 바로 복사해 쓸 수 있는 공식 레퍼런스 코드를 제공한다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "에이전트"
+    ],
+    "score": 0.8664335317460318,
+    "published_at": "2026-07-10T01:33:38Z"
+  },
+  {
+    "id": "github_trending-unclecode/crawl4ai",
+    "section": "releases",
+    "title_en": "unclecode/crawl4ai",
+    "title_ko": "Crawl4AI: LLM 친화적인 오픈소스 웹 크롤러 & 스크레이퍼",
+    "url": "https://github.com/unclecode/crawl4ai",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Crawl4AI는 웹 페이지를 LLM이 바로 활용할 수 있는 깔끔한 Markdown 형식으로 변환해주는 오픈소스 웹 크롤러입니다. RAG 파이프라인, AI 에이전트, 데이터 수집 등에 최적화되어 있으며, 비동기 브라우저 풀·캐싱·LLM 기반 구조화 추출·딥 크롤 등 다양한 기능을 제공합니다. 최신 v0.9.1에서는 12개의 버그 수정과 함께 PruningContentFilter의 CSS 클래스/태그 화이트리스트 기능이 추가되었습니다. Docker 배포, CLI, Python 패키지 형태로 모두 사용 가능합니다.",
+    "why_it_matters": "RAG·에이전트 개발 시 웹 데이터를 LLM 입력에 맞게 전처리하는 과정을 크게 단순화할 수 있는 GitHub 최다 스타 오픈소스 크롤러입니다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "에이전트"
+    ],
+    "score": 0.8664335317460318,
+    "published_at": "2026-07-10T01:33:38Z"
+  },
+  {
+    "id": "github_trending-bradautomates/claude-video",
+    "section": "releases",
+    "title_en": "bradautomates/claude-video",
+    "title_ko": "Claude에게 영상 시청 능력을 부여하는 오픈소스 플러그인 'claude-video'",
+    "url": "https://github.com/bradautomates/claude-video",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "'claude-video'는 Claude가 YouTube, TikTok, 로컬 동영상 파일 등을 직접 분석할 수 있게 해주는 오픈소스 플러그인이다. `/watch` 명령어 하나로 yt-dlp가 자막을 가져오고 ffmpeg가 프레임을 추출하며, Whisper API를 통한 전사(transcription)까지 자동으로 처리한다. Claude Code, Cursor, Codex, Copilot 등 50개 이상의 에이전트 환경에서 설치해 사용할 수 있으며, macOS에서는 첫 실행 시 필요한 의존성을 자동 설치한다. MIT 라이선스로 공개되어 있으며 설정 없이 즉시 시작 가능하다.",
+    "why_it_matters": "Claude의 멀티모달 능력을 영상 분석으로 확장해, 스크린 녹화 버그 진단·경쟁사 콘텐츠 분석·긴 영상 요약 등 실무 활용폭이 크게 넓어진다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8664335317460318,
+    "published_at": "2026-07-10T01:33:38Z"
+  },
+  {
+    "id": "hn-48849066",
+    "section": "community",
+    "title_en": "GPT-5.6",
+    "title_ko": "GPT-5.6",
+    "url": "https://openai.com/index/gpt-5-6/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GPT-5.6에 관한 소식이 공개되었으나 구체적인 설명이 제공되지 않았습니다.",
+    "why_it_matters": "추가 정보가 없어 정확한 내용 파악이 어렵습니다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 11.329718617744778,
+    "published_at": "2026-07-09T17:04:14Z"
+  },
+  {
+    "id": "hn-48846184",
+    "section": "community",
+    "title_en": "Muse Spark 1.1",
+    "title_ko": "Muse Spark 1.1 출시",
+    "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Muse Spark 1.1이 공개되었다. 상세한 설명은 제공되지 않아 구체적인 변경 사항은 알 수 없다.",
+    "why_it_matters": "추가 정보 없이 제목만으로는 구체적인 영향을 판단하기 어렵다.",
+    "tags": [],
+    "score": 9.38451136233882,
+    "published_at": "2026-07-09T14:10:22Z"
+  },
+  {
+    "id": "hn-48792383",
+    "section": "community",
+    "title_en": "Train sim created by just one person is being called the best ever made",
+    "title_ko": "1인 개발자가 만든 열차 시뮬레이터, '역대 최고'라는 평가 받아",
+    "url": "https://kotaku.com/a-train-sim-created-by-just-one-person-is-being-called-the-best-ever-made-2000699429",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "단 한 명의 개발자가 제작한 열차 시뮬레이터 게임이 역대 최고의 작품이라는 평가를 받고 있다. 1인 개발로 이 수준의 완성도를 달성했다는 점에서 큰 화제가 되고 있다.",
+    "why_it_matters": "1인 개발자의 가능성과 인디 게임 개발 트렌드를 보여주는 사례로 주목받고 있다.",
+    "tags": [],
+    "score": 9.129354658734998,
+    "published_at": "2026-07-05T08:40:27Z"
+  },
+  {
+    "id": "hn-48850414",
+    "section": "community",
+    "title_en": "GLM 5.2 is nearly as accurate as a human book keeper",
+    "title_ko": "GLM 5.2, 인간 부기 담당자와 거의 동등한 정확도 달성",
+    "url": "https://toot-books.pages.dev/blog/glm-5-2-vat-benchmark",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GLM 5.2 모델이 인간 부기 담당자에 근접한 수준의 정확도를 보인다는 내용이다. 구체적인 벤치마크나 수치는 제공되지 않았다.",
+    "why_it_matters": "회계·장부 관리 등 전문 금융 업무 영역에서 LLM의 실용적 가능성을 시사한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.620372652243878,
+    "published_at": "2026-07-09T18:29:41Z"
+  },
+  {
+    "id": "hn-48809574",
+    "section": "community",
+    "title_en": "Girls just wanna have fast MPMC queues with bounded waiting",
+    "title_ko": "유계 대기 시간을 보장하는 고속 MPMC 큐 구현",
+    "url": "https://nahla.dev/blog/waitfree_queue/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "다중 생산자-다중 소비자(MPMC) 큐에서 빠른 성능과 유계 대기 시간(bounded waiting)을 동시에 달성하는 방법을 다룬 글이다. 제목만으로 정확한 세부 내용을 파악하기 어려우나, 동시성 자료구조의 성능 최적화를 주제로 한 기술 게시물로 보인다.",
+    "why_it_matters": "고성능 동시성 큐는 AI 추론 서버 및 데이터 파이프라인의 핵심 인프라 구성 요소로, 지연 시간 보장이 중요한 시스템에 직접적인 영향을 준다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 7.681627841778032,
+    "published_at": "2026-07-06T19:46:30Z"
+  },
+  {
+    "id": "simon_willison-openai",
+    "section": "deepdive",
+    "title_en": "Quoting OpenAI",
+    "title_ko": "OpenAI의 ChatGPT Work 설명, 여전히 불명확",
+    "url": "https://simonwillison.net/2026/Jul/10/openai/#atom-everything",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "OpenAI가 ChatGPT Work의 동작 방식을 공식 문서로 설명했지만, Simon Willison은 이 설명이 충분히 명확하지 않다고 지적했다. 웹·모바일 버전은 클라우드에서 실행되고, 데스크톱 앱은 로컬 파일과 앱에 접근할 수 있으며, 두 환경 간 대화 내역은 공유되지 않는다는 내용이다.",
+    "why_it_matters": "ChatGPT Work의 데이터 처리 방식과 클라우드·로컬 환경 분리 구조가 여전히 불투명해 기업 사용자에게 혼란을 줄 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8636871693121693,
+    "published_at": "2026-07-10T01:05:57Z"
+  }
+]

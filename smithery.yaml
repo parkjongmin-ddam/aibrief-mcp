@@ -1,0 +1,4 @@
+# Smithery 배포 설정 — TypeScript 런타임(호스티드).
+# Smithery 가 이 repo 를 빌드(npx @smithery/cli build)해 서버를 호스팅한다.
+# src/index.ts 의 default export(createServer)와 configSchema 를 자동 인식.
+runtime: "typescript"

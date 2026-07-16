@@ -1,0 +1,323 @@
+[
+  {
+    "id": "hf-2607.02512",
+    "section": "papers",
+    "title_en": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
+    "title_ko": "Program-as-Weights: 퍼지 함수를 위한 새로운 프로그래밍 패러다임",
+    "url": "https://huggingface.co/papers/2607.02512",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "규칙 기반으로 구현하기 어려운 작업(로그 중요도 판별, 손상된 JSON 복구, 검색 결과 의도 기반 정렬 등)을 대형 LLM API 대신 로컬에서 실행 가능한 신경망 아티팩트로 컴파일하는 '퍼지 함수 프로그래밍' 패러다임을 제안한다. 4B 컴파일러가 자연어 명세를 받아 경량 인터프리터용 파라미터 효율적 어댑터를 생성하며, 0.6B Qwen3 인터프리터로 실행한 PAW 프로그램이 Qwen3-32B 직접 프롬프팅과 동등한 성능을 달성했다. 추론 메모리는 약 1/50 수준이며, MacBook M3에서 초당 30토큰 속도로 오프라인 실행이 가능하다.",
+    "why_it_matters": "대형 LLM API 의존 없이 로컬에서 저비용·고성능으로 퍼지 작업을 처리할 수 있어, AI 기능의 재현성·비용·프라이버시 문제를 동시에 해결할 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 5.68213122712422,
+    "published_at": "2026-07-01T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.02255",
+    "section": "papers",
+    "title_en": "AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents",
+    "title_ko": "AgenticSTS: 장기 수평 LLM 에이전트를 위한 제한 메모리 테스트베드",
+    "url": "https://huggingface.co/papers/2607.02255",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "장기 의사결정 LLM 에이전트에서 메모리 구조가 성능에 미치는 영향을 연구하기 위한 테스트베드 AgenticSTS를 소개한다. 기존의 누적 컨텍스트 방식 대신, 매 결정마다 타입드 검색으로 구성된 신선한 프롬프트를 사용하는 '제한 메모리 계약' 방식을 채택했다. 덱빌딩 게임 'Slay the Spire 2'를 벤치마크로 활용해 실험한 결과, 전략 스킬 레이어 추가 시 승률이 3/10에서 6/10으로 향상되는 방향성을 확인했다. 298개의 완성된 궤적, 메모리 스냅샷, 프롬프트 기록 등을 포함한 재현 가능한 테스트베드를 공개한다.",
+    "why_it_matters": "명시적 메모리 레이어가 장기 LLM 에이전트 의사결정에 미치는 영향을 체계적으로 분리·측정할 수 있는 방법론과 데이터셋을 제공한다는 점에서 에이전트 연구에 중요한 기여다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.02535169073515,
+    "published_at": "2026-07-01T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.02440",
+    "section": "papers",
+    "title_en": "EvoPolicyGym: Evaluating Autonomous Policy Evolution in Interactive Environments",
+    "title_ko": "EvoPolicyGym: 대화형 환경에서 자율 정책 진화 평가 벤치마크",
+    "url": "https://huggingface.co/papers/2607.02440",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "EvoPolicyGym은 에이전트가 제한된 상호작용 예산 내에서 실행 가능한 정책을 반복적으로 개선하는 '자율 정책 진화' 평가 설정을 도입한 벤치마크다. 기존 평가가 최종 점수 하나로 전 과정을 축약하거나 오픈엔드 소프트웨어 개발 진행과 혼동했던 문제를 해결한다. 16개 환경 전체에서 GPT-5.5가 가장 높은 종합 순위를 기록했으며, 벤치마크는 에이전트가 예산을 어떻게 배분하고 피드백을 파라메트릭 튜닝으로 전환하는지 궤적 수준의 진단도 제공한다.",
+    "why_it_matters": "LLM 기반 에이전트의 정책 자율 개선 능력을 체계적으로 측정하는 최초의 통제된 벤치마크로, 에이전트 연구의 평가 기준을 한 단계 높인다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.828641396489095,
+    "published_at": "2026-07-01T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.02501",
+    "section": "papers",
+    "title_en": "Embodied.cpp: A Portable Inference Runtime of Embodied AI Models on Heterogeneous Robots",
+    "title_ko": "Embodied.cpp: 이기종 로봇을 위한 포터블 구현 AI 추론 런타임",
+    "url": "https://huggingface.co/papers/2607.02501",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Embodied.cpp는 VLA(비전-언어-액션) 모델과 세계-액션 모델(WAM)을 이기종 엣지 디바이스에 배포하기 위한 C++ 추론 런타임이다. 입력 어댑터, 시퀀스 빌더, 백본 실행, 헤드 플러그인, 배포 어댑터의 5개 레이어 구조로 설계되어 폐쇄 루프 제어 내 다중 속도 실행과 저지연 배치-1 추론을 지원한다. HY-VLA와 pi0.5 두 VLA 모델 평가에서 각각 100%와 91% 태스크 성공률을 기록했으며, WAM 벤치마크에서는 블록 메모리를 312.2MiB에서 88.1MiB로 크게 줄였다.",
+    "why_it_matters": "로봇 AI 모델의 실제 현장 배포를 단일 경량 런타임으로 통합해 이기종 하드웨어 지원과 실시간 제어 요구사항을 동시에 해결한다는 점에서 중요하다.",
+    "tags": [
+      "에이전트",
+      "인프라",
+      "LLM"
+    ],
+    "score": 4.713572066704308,
+    "published_at": "2026-07-01T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.01642",
+    "section": "papers",
+    "title_en": "Multi-Resolution Flow Matching: Training-Free Diffusion Acceleration via Staged Sampling",
+    "title_ko": "MrFlow: 훈련 없이 10~25배 빠른 텍스트-이미지 확산 모델 가속화",
+    "url": "https://huggingface.co/papers/2607.01642",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "MrFlow는 사전 훈련된 플로우 매칭 모델(FLUX.1-dev, Qwen-Image)을 위한 훈련 불필요 다중 해상도 가속 전략이다. 저해상도에서 구조를 빠르게 생성한 뒤 GAN 기반 초해상도와 고주파 노이즈 재샘플링을 거쳐 고해상도 세부를 정제하는 단계별 파이프라인을 사용한다. FLUX.1-dev 기준 품질 손실 1% 이내로 10배 가속을 달성하며, 기존 타임스텝 증류 전략과 결합 시 최대 25배까지 속도를 높일 수 있다.",
+    "why_it_matters": "별도 학습이나 커스텀 커널 없이 최대 25배 추론 가속을 달성해, 실용적인 텍스트-이미지 생성 비용 절감에 직접 적용 가능하다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 4.526360524616162,
+    "published_at": "2026-07-01T20:00:00Z"
+  },
+  {
+    "id": "github_trending-asgeirtj/system_prompts_leaks",
+    "section": "releases",
+    "title_en": "asgeirtj/system_prompts_leaks",
+    "title_ko": "주요 AI 챗봇 시스템 프롬프트 유출 모음 저장소",
+    "url": "https://github.com/asgeirtj/system_prompts_leaks",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude, ChatGPT, Gemini, Grok 등 주요 AI 챗봇의 시스템 프롬프트를 수집·공개하는 GitHub 저장소다. Anthropic의 Claude Fable 5·Opus 4.8·Claude Code, OpenAI의 GPT-5.5·Codex, Google의 Gemini 3.5 Flash·3.1 Pro, xAI의 Grok 등 수십 개 모델의 내부 지침이 포함되어 있으며 정기적으로 업데이트된다. 워싱턴포스트에도 소개된 바 있다.",
+    "why_it_matters": "AI 서비스들이 어떤 내부 규칙과 지침으로 동작하는지 직접 확인할 수 있어, 개발자와 연구자에게 AI 시스템 설계 및 안전성 분석에 중요한 참고 자료가 된다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.866468253968254,
+    "published_at": "2026-07-07T01:33:59Z"
+  },
+  {
+    "id": "github_trending-addyosmani/agent-skills",
+    "section": "releases",
+    "title_en": "addyosmani/agent-skills",
+    "title_ko": "AI 코딩 에이전트를 위한 프로덕션급 엔지니어링 스킬 패키지 'agent-skills'",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "addyosmani/agent-skills는 AI 코딩 에이전트가 시니어 엔지니어 수준의 소프트웨어 개발 워크플로우를 일관되게 따를 수 있도록 설계된 24개의 구조화된 스킬 모음이다. /spec, /plan, /build, /test, /review, /ship 등 8개의 슬래시 명령어로 개발 라이프사이클 전반을 커버하며, 각 스킬에는 단계별 워크플로우, 검증 게이트, 안티-합리화 테이블이 포함되어 있다. Claude Code, Cursor, GitHub Copilot, Gemini CLI 등 70개 이상의 에이전트 도구에 npx 한 줄로 설치할 수 있다.",
+    "why_it_matters": "AI 코딩 에이전트가 스펙·테스트·보안 리뷰를 건너뛰는 단점을 구조화된 워크플로우로 강제 보완함으로써, 프로토타입이 아닌 프로덕션 품질의 코드를 일관되게 생성할 수 있게 한다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.866468253968254,
+    "published_at": "2026-07-07T01:33:59Z"
+  },
+  {
+    "id": "github_trending-alirezarezvani/claude-skills",
+    "section": "releases",
+    "title_en": "alirezarezvani/claude-skills",
+    "title_ko": "Claude Code용 355개 에이전트 스킬·플러그인 오픈소스 라이브러리",
+    "url": "https://github.com/alirezarezvani/claude-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code, OpenAI Codex, Gemini CLI, Cursor 등 13개 AI 코딩 도구에서 동작하는 355개의 에이전트 스킬과 플러그인을 제공하는 오픈소스 프로젝트다. 엔지니어링, 마케팅, 제품, 컴플라이언스, C레벨 어드바이저리 등 18개 도메인을 커버하며, 602개의 표준 라이브러리 전용 Python CLI 도구와 711개의 템플릿·체크리스트가 포함된다. 단일 변환 스크립트로 모든 스킬을 각 도구의 네이티브 포맷으로 자동 변환할 수 있다. GitHub 스타 5,200개 이상을 보유한 MIT 라이선스 프로젝트다.",
+    "why_it_matters": "AI 코딩 에이전트에 도메인 전문성을 주입하는 재사용 가능한 스킬 패키지를 대규모로 제공함으로써, 개발자가 에이전트 워크플로우를 빠르게 구성하고 확장할 수 있는 사실상의 표준 스킬 라이브러리로 자리잡을 가능성이 높다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.866468253968254,
+    "published_at": "2026-07-07T01:33:59Z"
+  },
+  {
+    "id": "github_trending-openai/codex-plugin-cc",
+    "section": "releases",
+    "title_en": "openai/codex-plugin-cc",
+    "title_ko": "Claude Code에서 OpenAI Codex를 사용하는 플러그인 공개",
+    "url": "https://github.com/openai/codex-plugin-cc",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "OpenAI가 Claude Code 환경에서 Codex를 바로 활용할 수 있는 플러그인 `codex-plugin-cc`를 공개했다. `/codex:review`, `/codex:adversarial-review` 등의 슬래시 커맨드로 코드 리뷰를 실행하거나, `/codex:rescue`로 버그 조사·수정 작업을 Codex에 위임할 수 있다. ChatGPT 구독 또는 OpenAI API 키가 필요하며, 로컬에 설치된 Codex CLI를 통해 동작한다.",
+    "why_it_matters": "Claude Code 워크플로우를 유지하면서 OpenAI Codex의 코드 리뷰 및 태스크 위임 기능을 함께 활용할 수 있어, 두 AI 코딩 도구를 혼합해 사용하는 개발자에게 실질적인 생산성 향상을 제공한다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.866468253968254,
+    "published_at": "2026-07-07T01:33:59Z"
+  },
+  {
+    "id": "github_trending-bradautomates/claude-video",
+    "section": "releases",
+    "title_en": "bradautomates/claude-video",
+    "title_ko": "Claude에게 영상 시청 능력을 부여하는 /watch 오픈소스 플러그인",
+    "url": "https://github.com/bradautomates/claude-video",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "'claude-video'는 Claude가 YouTube, TikTok, 로컬 영상 등을 직접 분석할 수 있게 해주는 오픈소스 플러그인이다. yt-dlp로 자막을 우선 추출하고, ffmpeg로 프레임을 추출한 뒤 타임스탬프가 달린 트랜스크립트와 함께 Claude에게 전달한다. 자막이 없는 경우 Groq 또는 OpenAI의 Whisper API를 통해 음성 전사를 수행하며, Claude Code, Cursor, Codex 등 50여 개 에이전트 환경에서 설치 가능하다.",
+    "why_it_matters": "Claude가 텍스트·코드 중심의 한계를 넘어 영상 콘텐츠를 직접 이해하고 답변할 수 있게 되어, 버그 재현 영상 분석·강의 요약·경쟁사 콘텐츠 분석 등 실무 적용 범위가 크게 확장된다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.866468253968254,
+    "published_at": "2026-07-07T01:33:59Z"
+  },
+  {
+    "id": "google_blog-google-ai-updates-june-2026",
+    "section": "releases",
+    "title_en": "The latest AI news we announced in June 2026",
+    "title_ko": "구글이 2026년 6월에 발표한 최신 AI 소식",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글이 2026년 6월에 다양한 AI 관련 소식을 발표했다. 상세 내용은 제공된 정보에 포함되어 있지 않아 구체적인 내용을 확인하려면 원문을 참고해야 한다.",
+    "why_it_matters": "구글의 월간 AI 발표 요약으로, 최신 AI 동향을 한눈에 파악할 수 있는 참고자료다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.10863260582010581,
+    "published_at": "2026-07-01T18:15:00Z"
+  },
+  {
+    "id": "google_blog-nyc-ai-summit",
+    "section": "releases",
+    "title_en": "New York City educators and industry leaders gathered at Google’s offices to shape the future of AI in classrooms.",
+    "title_ko": "뉴욕시 교육자·기업 리더들, 구글 오피스에서 AI 교육 미래 논의",
+    "url": "https://blog.google/products-and-platforms/products/education/nyc-ai-summit/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글, 뉴욕 잡스 CEO 카운슬, 어반 어셈블리가 공동 주최한 AI 서밋에 150명의 교육·산업 리더들이 모였다. 이 자리에서 참가자들은 교실에서의 AI 활용 방향과 미래 교육 전략을 논의했다.",
+    "why_it_matters": "빅테크와 교육계가 손잡고 AI 교육 표준을 만들어가는 움직임으로, 향후 AI 리터러시 교육 방향에 영향을 줄 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.0952397486772486,
+    "published_at": "2026-07-01T16:00:00Z"
+  },
+  {
+    "id": "hn-48805624",
+    "section": "community",
+    "title_en": "AMD Ryzen AI Halo – $4k AI Dev Kit",
+    "title_ko": "AMD Ryzen AI Halo – 4천 달러 AI 개발 키트 출시",
+    "url": "https://www.lttlabs.com/articles/2026/07/06/amd-ryzen-ai-halo",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AMD가 Ryzen AI Halo를 탑재한 AI 개발 키트를 약 4,000달러에 출시했다. 개발자들이 AI 워크로드를 로컬에서 개발하고 테스트할 수 있도록 설계된 제품이다.",
+    "why_it_matters": "로컬 AI 개발 환경을 위한 고성능 하드웨어 옵션이 늘어나는 추세를 보여주는 사례다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.313994169837855,
+    "published_at": "2026-07-06T15:01:18Z"
+  },
+  {
+    "id": "hn-48808002",
+    "section": "community",
+    "title_en": "A global workspace in language models",
+    "title_ko": "언어 모델의 글로벌 워크스페이스 이론",
+    "url": "https://www.anthropic.com/research/global-workspace",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "언어 모델에서 '글로벌 워크스페이스' 개념을 다루는 연구다. 제공된 설명이 없어 제목만으로는 구체적인 내용을 파악하기 어렵다.",
+    "why_it_matters": "LLM 내부 동작을 인지과학의 글로벌 워크스페이스 이론과 연결하는 시도로, AI 해석 가능성 연구에 의미 있을 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.97335630493467,
+    "published_at": "2026-07-06T17:44:08Z"
+  },
+  {
+    "id": "hn-48809877",
+    "section": "community",
+    "title_en": "GLM 5.2 and the coming AI margin collapse",
+    "title_ko": "GLM 5.2와 다가오는 AI 수익률 붕괴",
+    "url": "https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GLM 5.2 출시를 계기로 AI 산업의 마진 압박 문제를 다루는 글이다. AI 모델 경쟁이 심화되면서 수익성 확보가 점점 어려워지는 구조적 문제를 짚고 있는 것으로 보인다.",
+    "why_it_matters": "AI 모델의 상품화와 수익률 붕괴 가능성은 AI 산업 전반의 비즈니스 모델 변화를 예고한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.68201502771448,
+    "published_at": "2026-07-06T20:14:55Z"
+  },
+  {
+    "id": "hn-48807225",
+    "section": "community",
+    "title_en": "OfficeCLI: Office suite for AI agents to read and edit Microsoft Office files",
+    "title_ko": "OfficeCLI: AI 에이전트를 위한 Microsoft Office 파일 읽기·편집 CLI 도구",
+    "url": "https://github.com/iOfficeAI/OfficeCLI",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "OfficeCLI는 AI 에이전트가 Microsoft Office 파일을 읽고 편집할 수 있도록 설계된 오피스 스위트 도구다. 에이전트가 CLI를 통해 Office 문서를 처리할 수 있게 지원한다.",
+    "why_it_matters": "AI 에이전트가 실제 업무 환경에서 흔히 쓰이는 Office 문서를 직접 다룰 수 있어 자동화 범위가 크게 넓어진다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 7.6882608789084825,
+    "published_at": "2026-07-06T16:47:44Z"
+  },
+  {
+    "id": "hn-48811644",
+    "section": "community",
+    "title_en": "Ternlight – 7 MB embedding model that runs in browser (WASM)",
+    "title_ko": "Ternlight – 브라우저에서 실행되는 7MB 임베딩 모델 (WASM)",
+    "url": "https://ternlight-demo.vercel.app/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Ternlight는 WebAssembly(WASM)를 활용해 브라우저 환경에서 직접 실행 가능한 7MB 크기의 경량 임베딩 모델이다. 별도의 서버 없이 클라이언트 측에서 텍스트 임베딩을 생성할 수 있다.",
+    "why_it_matters": "서버 의존 없이 브라우저만으로 임베딩을 처리할 수 있어 프라이버시 친화적인 RAG·검색 애플리케이션 구축이 가능해진다.",
+    "tags": [
+      "RAG",
+      "오픈소스"
+    ],
+    "score": 7.222387267880118,
+    "published_at": "2026-07-06T23:06:31Z"
+  },
+  {
+    "id": "simon_willison-hy3",
+    "section": "deepdive",
+    "title_en": "tencent/Hy3",
+    "title_ko": "텐센트, 295B MoE 모델 Hy3 오픈소스 공개",
+    "url": "https://simonwillison.net/2026/Jul/6/hy3/#atom-everything",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "텐센트가 Apache 2.0 라이선스로 Hy3를 공개했다. 295B 파라미터의 MoE 구조로 활성 파라미터는 21B이며, 256K 컨텍스트 길이를 지원한다. 50개 이상의 제품에서 피드백을 반영해 포스트 트레이닝을 강화했으며, 2~5배 큰 플래그십 오픈소스 모델과 경쟁하는 성능을 보인다고 밝혔다. FP8 양자화 모델은 300GB로 HuggingFace에서 제공되며, 7월 21일까지 OpenRouter에서 무료로 사용 가능하다.",
+    "why_it_matters": "중국 빅테크가 Apache 2.0으로 대형 MoE 모델을 공개함으로써 오픈소스 LLM 경쟁이 한층 가속화된다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8569047619047618,
+    "published_at": "2026-07-06T23:57:35Z"
+  }
+]

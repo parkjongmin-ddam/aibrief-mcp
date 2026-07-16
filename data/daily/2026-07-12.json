@@ -1,0 +1,373 @@
+[
+  {
+    "id": "hf-2607.07708",
+    "section": "papers",
+    "title_en": "Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning",
+    "title_ko": "SciReasoner: 단백질·분자·결정 구조-특성 관계를 추론하는 멀티모달 과학 기반 모델",
+    "url": "https://huggingface.co/papers/2607.07708",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SciReasoner는 단백질, 소분자, 무기결정 등 다양한 구조를 통합된 구조 인식 어휘로 토큰화하여 과학적 원리 기반 추론을 수행하는 멀티모달 과학 기반 모델이다. Gene Ontology 예측에서 F_max를 0.42에서 0.55로, 단일 단계 역합성 정확도를 0.63에서 0.72로 향상시키는 등 86개 벤치마크 중 67개에서 최고 성능을 달성했다. 전문가 이중맹검 평가에서도 98% 케이스에서 프론티어 LLM과 동등하거나 더 선호되는 추론 경로를 생성했다.",
+    "why_it_matters": "생물·화학·재료과학 전반의 구조-특성 예측을 단일 모델로 해결하며, 예측 결과뿐 아니라 과학적으로 해석 가능한 추론 근거까지 제공한다는 점에서 AI 기반 과학 연구의 신뢰성을 크게 높인다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.430816798843313,
+    "published_at": "2026-07-07T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.07608",
+    "section": "papers",
+    "title_en": "Dual Latent Memory in Vision-Language-Action Models for Robotic Manipulation",
+    "title_ko": "로봇 조작을 위한 비전-언어-행동 모델의 이중 잠재 메모리 프레임워크 LaMem-VLA",
+    "url": "https://huggingface.co/papers/2607.07608",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "기존 VLA(Vision-Language-Action) 모델은 현재 관찰만으로 행동을 예측하는 마르코프 가정에 의존해 장기적·시간 의존적 작업에 취약했다. LaMem-VLA는 과거 경험을 단기·장기 메모리 볼트에 구성하고, 이를 잠재 토큰으로 재구성해 VLA 추론 과정에 직접 통합하는 프레임워크다. 큐레이터, 시커, 컨덴서, 위버 4가지 컴포넌트가 협력해 과거 경험을 연속 잠재 공간 안에서 표현·검색·소비한다. SimplerEnv와 LIBERO 벤치마크 실험에서 기존 방법 대비 우수한 성능을 입증했다.",
+    "why_it_matters": "메모리를 VLA 고유의 잠재 공간에 통합함으로써 로봇이 장기 의존적 작업을 수행하는 능력을 근본적으로 향상시킬 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.951243718581427,
+    "published_at": "2026-07-07T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.07675",
+    "section": "papers",
+    "title_en": "Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence",
+    "title_ko": "체화 지능을 위한 MoE 기반 대규모 비디오 사전학습: LingBot-Video",
+    "url": "https://huggingface.co/papers/2607.07675",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LingBot-Video는 로봇 제어에 특화된 DiT 기반 비디오 사전학습 모델로, 밀집(dense) 구조 대신 Mixture-of-Experts(MoE) 아키텍처를 채택해 모델 용량과 추론 효율 사이의 균형을 달성했다. 데이터 측면에서는 조작·탐색·1인칭 시점 등 로봇 중심 영상을 포함한 데이터 프로파일링 엔진을 구축하고, 물리적 합리성과 태스크 완료를 기준으로 한 다차원 보상 시스템으로 학습을 강화했다. 해당 모델은 최초의 대규모 오픈소스 MoE 비디오 파운데이션 모델로 공개된다.",
+    "why_it_matters": "디지털 콘텐츠 생성 위주였던 비디오 생성 모델을 로봇 물리 행동 이해에 맞게 재설계한 최초의 오픈소스 MoE 비디오 파운데이션 모델로, 체화 AI 연구의 기반이 될 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 4.850147601710058,
+    "published_at": "2026-07-07T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.08758",
+    "section": "papers",
+    "title_en": "Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation",
+    "title_ko": "아이디어에도 유전체가 있다: 과학적 계보 추론 벤치마크 IdeaGene-Bench",
+    "url": "https://huggingface.co/papers/2607.08758",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "과학적 아이디어는 이전 연구를 계승·변형·재조합하며 발전하는데, AI 시스템이 이 계보 구조를 이해할 수 있는지 평가하는 벤치마크 IG-Bench를 제안했다. IG-Bench는 1,961개의 계보 추적, 1,085개의 Idea Genome 객체, 920개의 쌍별 GenomeDiff 레코드를 10개 과학 분야에 걸쳐 포함한다. 14개 LLM 기반 시스템을 평가한 결과, 가장 강력한 시스템도 계보 추론에서 정확도 27.3%에 그쳐 구성적 병목 현상이 뚜렷이 드러났다.",
+    "why_it_matters": "현 LLM이 과학적 아이디어의 계보적 맥락을 제대로 파악하지 못함을 정량적으로 입증해, AI 기반 연구 보조 시스템의 한계를 명확히 진단한다.",
+    "tags": [
+      "LLM",
+      "RAG"
+    ],
+    "score": 4.433987204485146,
+    "published_at": "2026-07-08T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.07534",
+    "section": "papers",
+    "title_en": "Infinite Worlds with Versatile Interactions",
+    "title_ko": "무한 인터랙션이 가능한 LingBot-World 2.0 게임 세계 시뮬레이터",
+    "url": "https://huggingface.co/papers/2607.07534",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LingBot-World 2.0은 기존 모델의 4가지 핵심 업그레이드를 통해 무한한 인터랙션 지평선을 지원하며, 720p 60fps 실시간 스트리밍이 가능한 경량 변형 모델을 포함합니다. 공격, 궁술, 마법 시전, 사격 등 다양한 액션과 텍스트 기반 이벤트를 지원하며, 파일럿 에이전트와 디렉터 에이전트가 협력해 캐릭터 행동 계획과 환경 생성을 담당합니다. 14B 기본 모델과 1.3B 경량 모델을 함께 제공해 단일 GPU에서도 쉽게 배포할 수 있으며, 멀티플레이어 동시 접속 인터페이스도 지원합니다.",
+    "why_it_matters": "에이전트 기반 세계 모델링과 실시간 고해상도 생성을 결합해 AI 게임 시뮬레이터의 실용성을 크게 높인 사례다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.401197381662156,
+    "published_at": "2026-07-07T20:00:00Z"
+  },
+  {
+    "id": "github_trending-davila7/claude-code-templates",
+    "section": "releases",
+    "title_en": "davila7/claude-code-templates",
+    "title_ko": "Claude Code 템플릿 모음 — AI 에이전트·명령어·MCP 통합 설정 CLI 도구",
+    "url": "https://github.com/davila7/claude-code-templates",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic의 Claude Code를 위한 즉시 사용 가능한 설정 모음 프로젝트다. 100개 이상의 AI 에이전트, 커스텀 슬래시 명령어, MCP(외부 서비스 연동), 훅, 스킬 등을 npx 명령 하나로 설치할 수 있다. 분석 대시보드, 대화 모니터, 헬스체크 등 개발 지원 도구도 함께 제공되며, aitmpl.com 웹 인터페이스를 통해 탐색 및 관리가 가능하다.",
+    "why_it_matters": "Claude Code 환경을 빠르게 구성하고 확장하려는 개발자에게 실질적인 생산성 향상 수단이 될 수 있는 오픈소스 에코시스템이다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.8663905423280424,
+    "published_at": "2026-07-12T01:33:12Z"
+  },
+  {
+    "id": "github_trending-openai/plugins",
+    "section": "releases",
+    "title_en": "openai/plugins",
+    "title_ko": "OpenAI Codex 플러그인 공식 예제 저장소 공개",
+    "url": "https://github.com/openai/plugins",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "OpenAI가 Codex 플러그인 예제 모음을 GitHub에 공개했다. 각 플러그인은 `plugin.json` 매니페스트와 함께 스킬, MCP, 에이전트, 커맨드 등 다양한 구성 요소를 포함한다. Figma, Notion, iOS/macOS/웹 앱 빌드, Expo, Netlify 등 실용적인 플러그인 예제들이 포함되어 있다.",
+    "why_it_matters": "Codex 플러그인 생태계의 표준 구조와 실제 구현 예제를 공식 제공함으로써, 개발자들이 커스텀 AI 에이전트 플러그인을 빠르게 개발할 수 있는 기반이 마련된다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.8663905423280424,
+    "published_at": "2026-07-12T01:33:12Z"
+  },
+  {
+    "id": "github_trending-DayuanJiang/next-ai-draw-io",
+    "section": "releases",
+    "title_en": "DayuanJiang/next-ai-draw-io",
+    "title_ko": "AI로 draw.io 다이어그램을 자연어로 생성하는 Next.js 앱",
+    "url": "https://github.com/DayuanJiang/next-ai-draw-io",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "자연어 명령으로 draw.io 다이어그램을 생성·수정할 수 있는 Next.js 오픈소스 웹 애플리케이션이다. OpenAI, Claude, Gemini, DeepSeek 등 다양한 LLM 프로바이더를 지원하며, MCP 서버를 통해 Claude Desktop, Cursor, VS Code 같은 AI 에이전트와도 연동할 수 있다. PDF·이미지 업로드, 버전 히스토리, 클라우드 아키텍처 다이어그램(AWS·GCP·Azure) 생성 등의 기능도 제공한다.",
+    "why_it_matters": "다이어그램 작성 도구에 LLM과 MCP를 결합해 자연어만으로 복잡한 아키텍처 시각화를 자동화할 수 있는 실용적인 오픈소스 솔루션이다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8663905423280424,
+    "published_at": "2026-07-12T01:33:12Z"
+  },
+  {
+    "id": "github_trending-anthropics/claude-cookbooks",
+    "section": "releases",
+    "title_en": "anthropics/claude-cookbooks",
+    "title_ko": "Anthropic 공식 Claude 쿡북 (레시피 모음)",
+    "url": "https://github.com/anthropics/claude-cookbooks",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 공개한 Claude API 활용 예제 노트북 모음으로, 개발자가 자신의 프로젝트에 바로 복사해 쓸 수 있는 코드 스니펫을 제공합니다. 분류, RAG, 요약, 툴 사용, 멀티모달 비전, 서브 에이전트 등 다양한 기능을 다루며, 주로 Python으로 작성되어 있습니다. Pinecone·Voyage AI 등 서드파티 연동 가이드도 포함되어 있습니다.",
+    "why_it_matters": "Claude API를 실무에 적용하려는 개발자에게 공식 검증된 레퍼런스 코드를 제공하는 원스톱 리소스다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "에이전트"
+    ],
+    "score": 0.8663905423280424,
+    "published_at": "2026-07-12T01:33:12Z"
+  },
+  {
+    "id": "openai_blog-deutsche-telekom",
+    "section": "releases",
+    "title_en": "How Deutsche Telekom is rewiring telecommunications with AI",
+    "title_ko": "도이체 텔레콤, OpenAI와 함께 AI 네이티브 통신사로 전환",
+    "url": "https://openai.com/index/deutsche-telekom",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "도이체 텔레콤이 OpenAI와 협력하여 고객 서비스, 직원 업무 흐름, 네트워크 운영 전반에 AI를 도입하고 있다. 이를 통해 기존 통신 인프라와 운영 방식을 AI 중심으로 재편하는 'AI 네이티브 통신사' 전략을 추진 중이다. 특히 음성 서비스의 미래까지 AI로 혁신하는 것을 목표로 하고 있다.",
+    "why_it_matters": "대형 전통 통신사가 OpenAI와 손잡고 전사적 AI 전환을 추진하는 사례로, 통신 산업 내 AI 도입의 구체적 방향성을 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.6130968915343915,
+    "published_at": "2026-07-10T07:00:00Z"
+  },
+  {
+    "id": "openai_blog-gpt-5-6-preferred-model-microsoft-365-copilot",
+    "section": "releases",
+    "title_en": "GPT-5.6 is now the preferred model in Microsoft 365 Copilot",
+    "title_ko": "GPT-5.6, Microsoft 365 Copilot의 기본 모델로 채택",
+    "url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "GPT-5.6이 Microsoft 365 Copilot의 기본(preferred) 모델로 선정되었다. Word, Excel, PowerPoint, Chat, Cowork 등 주요 Microsoft 365 앱 전반에 걸쳐 더 강화된 AI 기능을 제공한다. 이를 통해 사용자들은 더 빠르고 높은 품질의 작업을 수행할 수 있게 된다.",
+    "why_it_matters": "수억 명이 사용하는 Microsoft 365 생산성 도구에 최신 GPT-5.6이 기본 탑재됨으로써 업무 현장에서의 AI 활용이 더욱 가속화될 전망이다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.5059540343915344,
+    "published_at": "2026-07-09T13:00:00Z"
+  },
+  {
+    "id": "openai_blog-gpt-5-6",
+    "section": "releases",
+    "title_en": "GPT-5.6: Frontier intelligence that scales with your ambition",
+    "title_ko": "GPT-5.6: 더 높은 야망에 맞춰 확장되는 프론티어 인텔리전스",
+    "url": "https://openai.com/index/gpt-5-6",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 GPT-5.6을 공개했다. 토큰당 더 높은 지능, 비용 대비 향상된 성능, 그리고 까다로운 작업에 대한 온디맨드 역량 강화를 주요 특징으로 내세웠다.",
+    "why_it_matters": "GPT-5.6은 성능과 비용 효율성을 동시에 개선해 기업 및 개발자의 실질적인 AI 활용 범위를 넓힐 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.4880968915343915,
+    "published_at": "2026-07-09T10:00:00Z"
+  },
+  {
+    "id": "hn-48873692",
+    "section": "community",
+    "title_en": "Female US rower completes historic solo journey from California to Hawaii",
+    "title_ko": "미국 여성 조정 선수, 캘리포니아에서 하와이까지 역사적인 단독 횡단 완료",
+    "url": "https://www.theguardian.com/us-news/2026/jul/04/california-hawaii-rowing-solo-journey",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "미국 여성 조정 선수가 캘리포니아에서 하와이까지 단독 조정 횡단을 역사적으로 완료했다. 상세한 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "AI와 직접적인 관련은 없으나, 인간의 한계에 도전하는 역사적 성취로 주목받는 사건이다.",
+    "tags": [],
+    "score": 8.84439059730622,
+    "published_at": "2026-07-11T17:03:23Z"
+  },
+  {
+    "id": "hn-48873836",
+    "section": "community",
+    "title_en": "Nvidia, CoreWeave, and Nebius: Inside the Circular Financing of the GPU Boom",
+    "title_ko": "엔비디아·CoreWeave·Nebius: GPU 붐의 순환 금융 구조 내막",
+    "url": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "엔비디아, CoreWeave, Nebius 세 기업 간의 GPU 붐을 떠받치는 순환적 자금 조달 구조를 다룬 기사다. 제목만으로는 구체적인 내용을 확인하기 어려우나, GPU 인프라 시장의 금융적 상호의존 관계를 조명하는 것으로 보인다.",
+    "why_it_matters": "AI 인프라 투자 열풍의 이면에 있는 자금 순환 구조는 시장 지속가능성과 리스크를 가늠하는 데 중요한 시사점을 제공한다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 8.133513422273818,
+    "published_at": "2026-07-11T17:21:49Z"
+  },
+  {
+    "id": "hn-48872858",
+    "section": "community",
+    "title_en": "The early History of the Singular Value Decomposition (1993) [pdf]",
+    "title_ko": "특이값 분해(SVD)의 초기 역사 (1993)",
+    "url": "https://www.math.ucdavis.edu/~saito/courses/229A/stewart-svd.pdf",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "특이값 분해(SVD)의 초기 역사를 다룬 1993년 PDF 문서다. SVD는 선형대수학의 핵심 개념으로 현대 머신러닝과 데이터 분석의 근간을 이루는 수학적 도구다.",
+    "why_it_matters": "SVD는 RAG, 추천 시스템, 차원 축소 등 AI 전반에 걸쳐 핵심적으로 쓰이는 알고리즘의 수학적 기초다.",
+    "tags": [],
+    "score": 7.573516287543214,
+    "published_at": "2026-07-11T15:26:12Z"
+  },
+  {
+    "id": "hn-48876505",
+    "section": "community",
+    "title_en": "Mesh LLM: distributed AI computing on iroh",
+    "title_ko": "Mesh LLM: iroh 기반 분산 AI 컴퓨팅",
+    "url": "https://www.iroh.computer/blog/mesh-llm",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Mesh LLM은 iroh 네트워크 위에서 분산 AI 컴퓨팅을 구현하는 프로젝트다. 여러 노드에 걸쳐 LLM 추론을 분산 처리하는 방식을 지향하는 것으로 보인다.",
+    "why_it_matters": "단일 고성능 서버 없이 분산 네트워크에서 LLM을 실행할 수 있는 가능성을 열어준다.",
+    "tags": [
+      "LLM",
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 7.2826474212318,
+    "published_at": "2026-07-11T22:38:57Z"
+  },
+  {
+    "id": "hn-48873417",
+    "section": "community",
+    "title_en": "Show HN: Reame – a CPU inference server that gets faster as it runs",
+    "title_ko": "Reame – 실행할수록 빨라지는 CPU 추론 서버",
+    "url": "https://github.com/swellweb/reame",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Reame는 CPU 기반의 AI 추론 서버로, 실행 시간이 길어질수록 성능이 향상되는 특징을 가지고 있다. GPU 없이도 동작하는 추론 서버를 지향한다.",
+    "why_it_matters": "GPU 없이 CPU만으로 점진적 성능 향상이 가능한 추론 서버로, 비용 효율적인 AI 배포에 관심 있는 개발자에게 주목할 만하다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 6.103718298725891,
+    "published_at": "2026-07-11T16:27:44Z"
+  },
+  {
+    "id": "youtube-mWlCituW7wo",
+    "section": "video",
+    "title_en": "A Model Explosion: GPT 5.6 Sol, Grok 4.5 and Meta Muse Rewrite the Rules",
+    "title_ko": "모델 폭발: GPT 5.6 Sol, Grok 4.5, Meta Muse Spark 1.1의 경쟁 구도 재편",
+    "url": "https://www.youtube.com/watch?v=mWlCituW7wo",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "한 주 동안 GPT 5.6 Sol, Grok 4.5, Meta Muse Spark 1.1이 동시에 공개되며 AI 모델 경쟁이 더욱 치열해졌습니다. GPT 5.6은 가성비 면에서 Claude를 앞설 수 있다는 평가가 나오며, 각 모델의 벤치마크 결과와 놓치기 쉬운 세부 사항들을 짚어봅니다. 또한 모델 자기 개선 가능성과 성능 향상이 정체되지 않을 이유도 함께 다룹니다.",
+    "why_it_matters": "주요 AI 기업들이 단기간에 경쟁 모델을 쏟아내며 선택지가 복잡해지는 상황에서, 각 모델의 실질적 차별점을 파악하는 것이 중요합니다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6468518518518518,
+    "published_at": "2026-07-10T12:40:15Z"
+  },
+  {
+    "id": "youtube-LE4YC5_YoWc",
+    "section": "video",
+    "title_en": "쇼츠 공장이 되었다는 구글 근황",
+    "title_ko": "구글 노트북LM, 쇼츠 공장이 되다?",
+    "url": "https://www.youtube.com/shorts/LE4YC5_YoWc",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "구글의 노트북LM이 쇼츠 콘텐츠 생성 도구로 활용되고 있다는 내용을 다룬 영상이다. 조코딩 채널에서 AI를 활용한 콘텐츠 제작 트렌드를 소개한다.",
+    "why_it_matters": "AI 도구가 실제 숏폼 콘텐츠 제작에 활용되는 실용적 사례로, 한국 개발자 및 크리에이터에게 참고가 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6071544312169312,
+    "published_at": "2026-07-10T06:00:06Z"
+  },
+  {
+    "id": "youtube-8io9vuqtdPI",
+    "section": "video",
+    "title_en": "[LIVE] OpenAI 내부자가 직접 알려주는 신규 업데이트 및 Codex 사용법",
+    "title_ko": "[LIVE] OpenAI 내부자가 직접 알려주는 신규 업데이트 및 Codex 사용법",
+    "url": "https://www.youtube.com/watch?v=8io9vuqtdPI",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "OpenAI 내부 관계자가 직접 출연해 최신 업데이트 내용과 Codex 사용법을 소개하는 라이브 방송이다. OpenAI의 공식 입장에서 Codex의 기능과 활용 방법을 안내한다.",
+    "why_it_matters": "OpenAI 내부자가 직접 설명하는 Codex 실사용법으로, 개발자들이 최신 AI 코딩 도구를 빠르게 파악할 수 있는 기회다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.4963673941798942,
+    "published_at": "2026-07-09T11:23:22Z"
+  },
+  {
+    "id": "simon_willison-sqlite-utils",
+    "section": "deepdive",
+    "title_en": "sqlite-utils 4.1",
+    "title_ko": "sqlite-utils 4.1 릴리스 — 주요 신기능 추가",
+    "url": "https://simonwillison.net/2026/Jul/11/sqlite-utils/#atom-everything",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "sqlite-utils 4.1이 4.0 출시 며칠 만에 릴리스되었다. 주요 변경으로 `insert`/`upsert` 명령에 `--code` 옵션이 추가되어 Python 코드 블록으로 직접 행을 생성·삽입할 수 있게 됐다. 또한 CSV 등의 컬럼 타입을 수동 지정하는 `--type` 옵션, 인덱스 삭제 명령, 표준 입력으로 SQL 쿼리 받기, SQLite strict 모드 전환 기능 등이 추가됐다. 일부 기능은 Codex를 활용해 오픈 이슈에서 구현 아이디어를 도출했다.",
+    "why_it_matters": "Python 코드 블록으로 데이터를 직접 생성·삽입하는 `--code` 옵션과 strict 모드 전환 지원으로 SQLite 데이터 파이프라인 구축이 한층 유연해졌다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 0.8561855158730158,
+    "published_at": "2026-07-11T23:50:20Z"
+  }
+]

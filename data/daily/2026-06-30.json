@@ -1,0 +1,367 @@
+[
+  {
+    "id": "hf-2606.26025",
+    "section": "papers",
+    "title_en": "In-Context World Modeling for Robotic Control",
+    "title_ko": "로봇 제어를 위한 인-컨텍스트 월드 모델링(ICWM)",
+    "url": "https://huggingface.co/papers/2606.26025",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Vision-Language-Action(VLA) 모델은 카메라 시점이나 로봇 형태가 달라지면 일반화에 실패하는 경우가 많다. 이를 해결하기 위해 ICWM은 시스템 식별을 인-컨텍스트 적응 문제로 접근하며, 로봇이 짧은 자기 생성 상호작용 이력으로부터 현재 시스템 변수를 자율적으로 추론하게 한다. 파라미터 업데이트 없이도 새로운 카메라 시점 등 다양한 환경에 적응할 수 있으며, 시뮬레이션과 실제 로봇 플랫폼 실험에서 기존 VLA 베이스라인을 크게 능가했다.",
+    "why_it_matters": "파인튜닝 없이 새로운 로봇 설정에 즉시 적응할 수 있어 실환경 배포 비용을 크게 줄일 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.060443010546419,
+    "published_at": "2026-06-24T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.26790",
+    "section": "papers",
+    "title_en": "OPID: On-Policy Skill Distillation for Agentic Reinforcement Learning",
+    "title_ko": "OPID: 에이전트 강화학습을 위한 온-폴리시 스킬 증류 프레임워크",
+    "url": "https://huggingface.co/papers/2606.26790",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "OPID는 완료된 온-폴리시 궤적에서 직접 스킬 지도를 추출하는 프레임워크입니다. 에피소드 수준의 전역 워크플로우와 스텝 수준의 로컬 결정 지식을 계층적 스킬로 표현하며, 중요 결정 시점을 감지해 적절한 스킬을 선택하는 'critical-first 라우팅' 메커니즘을 사용합니다. 이를 통해 희소한 보상 문제를 완화하고 토큰 수준의 밀집 감독 신호를 생성해 ALFWorld, WebShop, 검색 기반 QA에서 기존 기준선 대비 성능·샘플 효율·강건성이 향상되었습니다.",
+    "why_it_matters": "외부 스킬 메모리 없이 온-폴리시 궤적만으로 밀집 감독 신호를 생성해, 멀티턴 에이전트 RL의 희소 보상 한계를 실용적으로 극복한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.912023005428146,
+    "published_at": "2026-06-24T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.28128",
+    "section": "papers",
+    "title_en": "PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation",
+    "title_ko": "PhysisForcing: 물리 법칙 강화 로봇 조작용 월드 시뮬레이터",
+    "url": "https://huggingface.co/papers/2606.28128",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "비디오 생성 모델 기반 로봇 조작 시뮬레이션에서 물체 변형과 접촉 시 비현실적인 시공간 상관관계 문제를 해결하기 위해 PhysisForcing을 제안한다. 픽셀 수준의 궤적 정렬 손실과 의미론적 관계 정렬 손실을 결합해 물리적 일관성을 강화하는 학습 프레임워크다. R-Bench 기준으로 Wan2.2-I2V-A14B와 Cosmos3-Nano 베이스 모델에서 각각 22.3%, 9.2% 성능 향상을 달성했으며, 폐쇄 루프 성공률도 16.0%에서 24.0%로 개선됐다.",
+    "why_it_matters": "물리적으로 신뢰할 수 있는 비디오 월드 모델은 로봇 정책 학습의 품질을 직접 높이므로, 실제 로봇 조작 응용에 중요한 진전이다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 4.688879454113936,
+    "published_at": "2026-06-25T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.27313",
+    "section": "papers",
+    "title_en": "ViQ: Text-Aligned Visual Quantized Representations at Any Resolution",
+    "title_ko": "ViQ: 텍스트 정렬 기반 임의 해상도 시각적 양자화 표현 프레임워크",
+    "url": "https://huggingface.co/papers/2606.27313",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "ViQ는 이미지를 텍스트처럼 이산 신호로 표현할 때 발생하는 정보 손실 문제를 해결하기 위한 시각적 양자화 표현 프레임워크입니다. 텍스트 정렬 사전학습과 특징 이산화 두 단계로 양자화 학습을 구성하며, 임의 해상도의 시각 입력을 지원합니다. 멀티모달 학습에서 기존 연속·고차원 시각 특징과 경쟁적인 성능을 유지하면서도, 기반 LLM에 따라 학습 속도를 최대 20~70% 향상시키는 효율성을 달성했습니다.",
+    "why_it_matters": "이미지와 텍스트를 통합된 이산 표현으로 처리함으로써 멀티모달 모델의 구조를 단순화하고 학습 효율을 대폭 개선할 수 있다.",
+    "tags": [
+      "LLM",
+      "RAG"
+    ],
+    "score": 4.663561646129646,
+    "published_at": "2026-06-24T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.28133",
+    "section": "papers",
+    "title_en": "Translation as a Bridging Action: Transferring Manipulation Skills from Humans to Robots",
+    "title_ko": "번역(Translation)으로 인간의 조작 기술을 로봇에 전이하기",
+    "url": "https://huggingface.co/papers/2606.28133",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "인간의 행동 데이터로 양팔 로봇의 조작 기술을 학습하는 연구를 제안합니다. 기존 방식은 인간을 또 다른 6DoF 양팔 구현체로 취급해 손 자세 추정의 노이즈와 손가락-그리퍼 간 접촉 패턴 차이라는 문제가 있었습니다. 이를 해결하기 위해 회전 성분을 제외한 '상대적 손목 이동(relative wrist translation)'을 공통 행동 표현으로 제안하고, π₀와 유사한 비전-언어-액션 모델에 인터리브드 액션 토큰과 어텐션 마스킹을 적용했습니다. 결과적으로 노이즈가 많은 6DoF 인간 행동보다 훨씬 효과적으로 조작 지식을 로봇에 전이하며, 인간 데이터 양에 따라 성능이 향상됩니다.",
+    "why_it_matters": "저비용·대규모 인간 행동 데이터를 로봇 학습에 효과적으로 활용하는 실용적 경로를 제시해 로봇 조작 스케일업 가능성을 높인다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 4.526360524616162,
+    "published_at": "2026-06-25T20:00:00Z"
+  },
+  {
+    "id": "google_blog-full-stack-ai-explainer",
+    "section": "releases",
+    "title_en": "Ask an AI expert: What exactly is the full stack?",
+    "title_ko": "AI 전문가에게 묻다: 풀 스택이란 정확히 무엇인가?",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/full-stack-ai-explainer/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "Google 블로그에서 풀 스택 AI 인프라의 개념을 설명하는 콘텐츠를 게재했다. AI 전문가의 시각으로 풀 스택의 정의와 구성 요소를 다루고 있다. 삽화와 함께 AI 인프라 전반을 시각적으로 소개한다.",
+    "why_it_matters": "풀 스택 AI 인프라의 개념을 명확히 이해하는 것은 AI 시스템 설계 및 구현에 필수적인 기초 지식이다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.8095254629629629,
+    "published_at": "2026-06-29T16:00:00Z"
+  },
+  {
+    "id": "openai_blog-mapping-ai-jobs-transition-eu",
+    "section": "releases",
+    "title_en": "Mapping Europe’s AI Workforce Opportunity",
+    "title_ko": "유럽 AI 인력 기회 지도: OpenAI 보고서",
+    "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 유럽연합(EU) 전역의 일자리 구조가 AI로 인해 어떻게 재편될 수 있는지를 분석한 새 보고서를 발표했다. 이 보고서는 자동화 가능성이 높은 직종, 성장이 예상되는 직종, 업무 흐름 변화가 예상되는 직종을 구분해 제시한다. 유럽 노동시장에서 AI가 미칠 영향을 구체적으로 매핑한 첫 시도 중 하나다.",
+    "why_it_matters": "EU 전역의 직업별 AI 영향도를 체계적으로 분석한 보고서로, 정책 입안자와 기업·개발자 모두에게 노동시장 변화의 방향을 가늠할 수 있는 중요한 참고자료가 된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7559540343915344,
+    "published_at": "2026-06-29T07:00:00Z"
+  },
+  {
+    "id": "github_trending-commaai/openpilot",
+    "section": "releases",
+    "title_en": "commaai/openpilot",
+    "title_ko": "commaai/openpilot - 300개 이상의 차량을 지원하는 오픈소스 로보틱스 OS",
+    "url": "https://github.com/commaai/openpilot",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "openpilot은 comma.ai가 개발한 로보틱스 운영체제로, 현재 300종 이상의 차량에서 운전자 보조 시스템을 업그레이드한다. comma four 디바이스와 차량 하네스를 연결해 사용하며, MIT 라이선스로 오픈소스 공개되어 있다. ISO 26262 안전 지침을 준수하며, 매 커밋마다 소프트웨어 인루프 테스트가 실행된다.",
+    "why_it_matters": "오픈소스 자율주행 보조 시스템 중 가장 넓은 차종 호환성을 갖춘 프로젝트로, 개발자가 직접 기여하거나 자신의 차량에 적용해볼 수 있다.",
+    "tags": [
+      "오픈소스",
+      "에이전트"
+    ],
+    "score": 0.7243832671957672,
+    "published_at": "2026-06-29T01:41:46Z"
+  },
+  {
+    "id": "github_trending-xbtlin/ai-berkshire",
+    "section": "releases",
+    "title_en": "xbtlin/ai-berkshire",
+    "title_ko": "AI 버크셔: Claude Code/Codex 기반 가치투자 멀티에이전트 리서치 프레임워크",
+    "url": "https://github.com/xbtlin/ai-berkshire",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "버핏·멍거·단융핑·리루 4인의 가치투자 방법론을 구조화한 오픈소스 투자 리서치 프레임워크다. Claude Code 또는 Codex에서 18개 슬래시 커맨드를 호출하면, 4개의 AI 에이전트가 병렬로 기업을 분석하고 매수/관망/회색 지대 판정과 가격대별 포지션 추천을 출력한다. Python decimal을 활용한 정밀 재무 계산, 복수 출처 교차 검증, 반편향 메커니즘(A/B/C 정보 풍부도 등급)을 내장해 단순 AI 질의와 차별화했다. 개발자는 /investment-team, /industry-funnel 등 목적별 스킬을 선택해 기업 심층분석부터 포트폴리오 관리까지 수행할 수 있다.",
+    "why_it_matters": "멀티에이전트 병렬 투자 리서치라는 실용 사례를 통해, AI 에이전트를 단순 챗봇이 아닌 의사결정 파이프라인으로 구성하는 설계 패턴을 오픈소스로 확인할 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7243832671957672,
+    "published_at": "2026-06-29T01:41:46Z"
+  },
+  {
+    "id": "openai_blog-hp-frontier-partnership",
+    "section": "releases",
+    "title_en": "HP Inc. launches Frontier strategic partnership with OpenAI",
+    "title_ko": "HP Inc., OpenAI와 Frontier 전략적 파트너십 체결",
+    "url": "https://openai.com/index/hp-frontier-partnership",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "HP Inc.가 OpenAI와 Frontier 전략적 파트너십을 확대 체결했다. 이번 파트너십을 통해 고객 경험, 소프트웨어 개발, 엔터프라이즈 운영 전반에 AI를 도입할 계획이다.",
+    "why_it_matters": "글로벌 IT 대기업 HP가 OpenAI와 본격적인 엔터프라이즈 AI 협력에 나서며 기업 AI 도입 가속화의 신호탄이 될 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.672620701058201,
+    "published_at": "2026-06-28T17:00:00Z"
+  },
+  {
+    "id": "openai_blog-previewing-gpt-5-6-sol",
+    "section": "releases",
+    "title_en": "Previewing GPT-5.6 Sol: a next-generation model",
+    "title_ko": "GPT-5.6 Sol 미리보기: 차세대 OpenAI 모델 공개",
+    "url": "https://openai.com/index/previewing-gpt-5-6-sol",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 차세대 모델인 GPT-5.6 Sol을 공개 예고했다. 이 모델은 코딩, 과학, 사이버보안 분야에서 더욱 강화된 성능을 갖추고 있으며, OpenAI의 최신 안전성 스택과 함께 제공된다.",
+    "why_it_matters": "코딩·과학·보안 분야에서 향상된 능력과 고도화된 안전 시스템을 동시에 갖춘 GPT-5.6 Sol은 AI 모델의 성능과 안전성 기준을 새롭게 제시할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.3452397486772486,
+    "published_at": "2026-06-26T10:00:00Z"
+  },
+  {
+    "id": "openai_blog-how-agents-are-transforming-work",
+    "section": "releases",
+    "title_en": "How agents are transforming work",
+    "title_ko": "에이전트가 업무를 어떻게 변화시키는가",
+    "url": "https://openai.com/index/how-agents-are-transforming-work",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI의 새로운 연구 논문에 따르면 AI 에이전트가 업무 방식을 근본적으로 변화시키고 있다. 에이전트는 더 길고 복잡한 작업을 수행할 수 있게 해주며, 다양한 직군에 걸쳐 생산성을 높이는 데 기여하고 있다.",
+    "why_it_matters": "OpenAI의 공식 연구를 통해 AI 에이전트가 실제 업무 환경에서 가져오는 생산성 변화를 실증적으로 확인할 수 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.15476355820105814,
+    "published_at": "2026-06-25T02:00:00Z"
+  },
+  {
+    "id": "hn-48721903",
+    "section": "community",
+    "title_en": "Qwen 3.6 27B is the sweet spot for local development",
+    "title_ko": "Qwen 3.6 27B, 로컬 개발의 최적점",
+    "url": "https://quesma.com/blog/qwen-36-is-awesome/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Qwen 3.6 27B 모델이 로컬 개발 환경에서 사용하기에 최적의 선택으로 평가받고 있다. 성능과 자원 효율성 사이의 균형을 잘 갖춘 모델로 주목받고 있다.",
+    "why_it_matters": "로컬 LLM 개발자에게 실용적인 모델 선택 기준을 제시한다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 10.445148192720293,
+    "published_at": "2026-06-29T17:05:16Z"
+  },
+  {
+    "id": "hn-48719485",
+    "section": "community",
+    "title_en": "Rocketlab acquires Iridium",
+    "title_ko": "로켓랩, 이리듐 인수",
+    "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-acquire-iridium-historic-deal-creating-fully",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "로켓랩이 위성통신 기업 이리듐을 인수했다. 자세한 내용은 제공된 정보가 없어 추가적인 세부 사항을 확인하기 어렵다.",
+    "why_it_matters": "우주·위성 산업의 주요 인수합병 소식으로, 로켓랩의 사업 확장 방향을 가늠할 수 있다.",
+    "tags": [],
+    "score": 9.562124914402006,
+    "published_at": "2026-06-29T14:09:24Z"
+  },
+  {
+    "id": "hn-48718102",
+    "section": "community",
+    "title_en": "Samsung, SK Hynix, Micron Sued in US over Memory Price Fixing",
+    "title_ko": "삼성·SK하이닉스·마이크론, 미국서 메모리 가격 담합 소송 피소",
+    "url": "https://en.sedaily.com/international/2026/06/29/samsung-sk-hynix-micron-sued-in-us-over-memory-price-fixing",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "삼성전자, SK하이닉스, 마이크론이 미국에서 메모리 가격 담합 혐의로 소송을 제기받았다. 세 회사는 글로벌 메모리 반도체 시장의 주요 공급업체로, 담합 의혹이 사실로 밝혀질 경우 업계 전반에 상당한 파장이 예상된다.",
+    "why_it_matters": "글로벌 메모리 반도체 시장을 장악한 한국 기업들이 미국 법적 리스크에 노출되며 AI 인프라용 메모리 공급망에도 영향을 줄 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.451221607013409,
+    "published_at": "2026-06-29T11:58:48Z"
+  },
+  {
+    "id": "hn-48724230",
+    "section": "community",
+    "title_en": ".self: A new top-level domain designed to support self-hosting",
+    "title_ko": ".self: 셀프 호스팅을 지원하기 위해 설계된 새로운 최상위 도메인",
+    "url": "https://hccf.onmy.cloud/2026/06/21/reclaiming-our-digital-selves-hccfs-vision-for-a-human-centered-top-level-domain/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": ".self는 셀프 호스팅 환경을 위해 설계된 새로운 최상위 도메인(TLD)이다. 개인이나 조직이 자체 서버에서 서비스를 운영할 때 활용할 수 있도록 고안되었다.",
+    "why_it_matters": "셀프 호스팅 생태계를 위한 전용 TLD로, 개인 인프라 운영자에게 새로운 네트워크 식별 수단을 제공할 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.198907452073305,
+    "published_at": "2026-06-29T19:49:28Z"
+  },
+  {
+    "id": "hn-48711981",
+    "section": "community",
+    "title_en": "30-year sentence for transporting zines is a five-alarm fire for free speech",
+    "title_ko": "동인지 운반으로 30년 형 선고 – 표현의 자유에 대한 심각한 경고",
+    "url": "https://theintercept.com/2026/06/26/daniel-sanchez-estrada-zines-prairieland-free-speech/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "동인지(zine)를 운반한 행위로 30년 형이 선고된 사건이 표현의 자유에 심각한 위협으로 떠오르고 있다. 이는 출판물 유통과 관련된 법적 처벌의 극단적 사례로 주목받고 있다.",
+    "why_it_matters": "출판·콘텐츠 유통에 대한 법적 리스크가 디지털 시대에도 현실적 위협임을 상기시키는 사례다.",
+    "tags": [],
+    "score": 8.96937879954204,
+    "published_at": "2026-06-28T21:42:39Z"
+  },
+  {
+    "id": "youtube-Jx8zMUI1pU8",
+    "section": "video",
+    "title_en": "AI뉴스 - GPT‑5.6, Bidi 1, 할라피뇨, Unite Seoul 2026, Claude Tag, 애플 가격, Wan Streamer, 시댄스 2.5, Krea 2 등",
+    "title_ko": "GPT-5.6, Bidi 1, 할라피뇨 칩, Claude Tag 등 AI 주요 소식 모음",
+    "url": "https://www.youtube.com/watch?v=Jx8zMUI1pU8",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "오픈AI의 GPT-5.6 일부 공개 및 차세대 음성 모델 Bidi 1, 자체 추론 칩 '할라피뇨' 생산 소식이 전해졌습니다. 삼성전자가 임직원에게 챗GPT와 코덱스를 제공하고, 알리바바의 Claude 증류 의혹도 화제가 됐습니다. 영상·이미지 분야에서는 Wan Streamer 0.1 논문, 시댄스 2.5 공개 예정, Krea2 오픈웨이트 공개 등 다양한 모델 업데이트가 이어졌습니다.",
+    "why_it_matters": "오픈AI의 하드웨어·모델 독립 전략과 국내외 기업들의 AI 도입 가속화를 한눈에 파악할 수 있는 주간 뉴스 요약이다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7976339285714286,
+    "published_at": "2026-06-29T14:00:08Z"
+  },
+  {
+    "id": "youtube-TDWE59K_Df4",
+    "section": "video",
+    "title_en": "AWS 현직 전문가들이 생각하는 피지컬 AI와 AI 커리어의 미래",
+    "title_ko": "AWS 현직 전문가가 말하는 피지컬 AI와 AI 커리어의 미래",
+    "url": "https://www.youtube.com/watch?v=TDWE59K_Df4",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "AWS AI/ML 팀 현직 전문가들이 에이전틱 AI와 피지컬 AI의 차이, 현장 도입 사례, 그리고 AI 시대에 필요한 역량에 대해 이야기한다. 피지컬 AI 입문에 필요한 기술과 AWS AI/ML팀의 차별점, AWS AI 자격증 등 커리어 관련 실질적인 조언도 담겨 있다.",
+    "why_it_matters": "국내 개발자가 AI 커리어를 설계할 때 참고할 수 있는 AWS 현업 전문가의 실전 인사이트를 직접 들을 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.7083630952380953,
+    "published_at": "2026-06-28T23:00:17Z"
+  },
+  {
+    "id": "youtube-oiZJO1_P_bk",
+    "section": "video",
+    "title_en": "공장형 AI 뷰티 인플루언서 만들었습니다 (ft. Higgsfield MCP)",
+    "title_ko": "AI로 공장형 뷰티 인플루언서 만들기 (Higgsfield MCP 활용)",
+    "url": "https://www.youtube.com/watch?v=oiZJO1_P_bk",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "Higgsfield MCP를 활용해 AI 뷰티 인플루언서 이미지와 영상을 자동 생성하는 방법을 소개하는 영상이다. 인플루언서 이미지 생성부터 메이크업 비교 영상, 움직이는 영상 제작까지 다루며, 바이럴 예측과 마케팅 스튜디오 활용법도 포함한다. 실제 광고 수주 가능성까지 탐색하는 실전 중심의 튜토리얼이다.",
+    "why_it_matters": "생성형 AI로 가상 인플루언서를 저비용·대량 제작하는 워크플로가 실용화 단계에 접어들었음을 보여준다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.6161078042328043,
+    "published_at": "2026-06-28T07:30:21Z"
+  },
+  {
+    "id": "simon_willison-html-table-extractor",
+    "section": "deepdive",
+    "title_en": "HTML table extractor",
+    "title_ko": "HTML 테이블 추출기 — 브라우저 복사본을 여러 형식으로 변환",
+    "url": "https://simonwillison.net/2026/Jun/29/html-table-extractor/#atom-everything",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Simon Willison이 브라우저에서 복사한 리치 텍스트(HTML 테이블 포함)를 HTML, Markdown, CSV, TSV, JSON 등 다양한 형식으로 변환해 주는 온라인 도구를 공개했다. 위키피디아 등 웹페이지의 표를 그대로 선택해 붙여넣기만 하면 원하는 포맷으로 즉시 변환할 수 있다. 아울러 기존 '리치 텍스트 → 마크다운' 도구도 테이블 지원을 추가하는 방향으로 개선됐다.",
+    "why_it_matters": "코드 없이 웹 테이블 데이터를 다양한 형식으로 즉시 추출할 수 있어 데이터 수집·전처리 작업 시간을 크게 줄여준다.",
+    "tags": [],
+    "score": 0.8549966931216931,
+    "published_at": "2026-06-29T23:38:21Z"
+  }
+]

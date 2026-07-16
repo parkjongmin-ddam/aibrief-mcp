@@ -1,0 +1,370 @@
+[
+  {
+    "id": "hf-2606.28733",
+    "section": "papers",
+    "title_en": "Agentic Abstention: Do Agents Know When to Stop Instead of Act?",
+    "title_ko": "에이전트 절제(Agentic Abstention): AI 에이전트는 언제 행동을 멈춰야 하는가?",
+    "url": "https://huggingface.co/papers/2606.28733",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LLM 에이전트가 목표 달성이 불가능하거나 불명확한 상황에서 불필요한 도구 호출을 계속하는 대신 스스로 멈추는 능력을 연구한 논문이다. 웹 쇼핑, 터미널, QA 환경에서 13개의 LLM 에이전트 시스템과 2개의 스캐폴드를 28,000개 이상의 태스크로 평가했다. 흥미롭게도 모델 크기나 추론 능력이 클수록 적시 절제 성능이 오히려 낮아지는 경우도 발견됐다. 이를 개선하기 위해 전체 상호작용 궤적을 재사용 가능한 정지 규칙으로 압축하는 CONVOLVE 방법을 제안하며, Llama-3.3-70B의 적시 절제 recall을 26.7에서 57.4로 향상시켰다.",
+    "why_it_matters": "에이전트가 '언제 멈춰야 하는지' 판단하지 못하면 불필요한 비용과 오작동이 발생하므로, 이 문제는 실제 프로덕션 에이전트 신뢰성의 핵심 과제다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.795790545596741,
+    "published_at": "2026-06-26T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.30616",
+    "section": "papers",
+    "title_en": "Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent",
+    "title_ko": "파라미터 대신 에이전트 지평을 확장하라: 35B 모델로 1조 파라미터급 성능 달성",
+    "url": "https://huggingface.co/papers/2606.30616",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "Agents-A1은 35B Mixture-of-Experts 아키텍처를 채용하면서도 에이전트 지평(horizon) 확장을 통해 1조 파라미터급 모델 수준의 성능을 달성한 에이전틱 모델이다. 평균 45K 토큰 길이의 장기 궤적을 생성하는 지식-행동 인프라를 구축하고, 풀도메인 SFT → 도메인별 교사 모델 학습 → 멀티 교사 라우팅 온폴리시 증류의 3단계 학습 레시피를 적용했다. SEAL-0, IFBench, HiPhO 등 주요 장기 에이전트 벤치마크에서 Kimi-K2.6, DeepSeek-V4-pro 같은 1조 파라미터 모델과 대등하거나 앞서는 결과를 기록했다.",
+    "why_it_matters": "모델 크기를 키우는 대신 에이전트 지평 확장으로 동급 성능을 내는 실용적 대안을 제시해, 대규모 인프라 없이도 최고 수준 에이전트 구축이 가능함을 보여준다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.219507705176107,
+    "published_at": "2026-06-28T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.28480",
+    "section": "papers",
+    "title_en": "TUA-Bench: A Benchmark for General-Purpose Terminal-Use Agents",
+    "title_ko": "TUA-Bench: 범용 터미널 사용 에이전트 평가 벤치마크",
+    "url": "https://huggingface.co/papers/2606.28480",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "TUA-Bench는 터미널 기반 범용 AI 에이전트를 평가하기 위한 새로운 벤치마크로, 문서 편집·이메일 관리·웹 정보 탐색·과학 및 엔지니어링 워크플로 등 5개 작업 군에 걸친 120개의 실세계 태스크를 포함한다. 기존 벤치마크가 GUI 또는 코딩 중심의 셸 작업에 치우쳐 있던 한계를 극복하고자 설계되었다. 현재 최고 성능 모델인 Claude Code(Claude Opus 4.8, 최대 추론)가 65.8%를 기록하며 아직 상당한 개선 여지가 있음을 보여준다.",
+    "why_it_matters": "터미널 에이전트의 범용성을 체계적으로 측정할 수 있는 첫 번째 포괄적 벤치마크로, 에이전트의 실용적 능력 발전 방향을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.80666248977032,
+    "published_at": "2026-06-25T20:00:00Z"
+  },
+  {
+    "id": "hf-2502.16886",
+    "section": "papers",
+    "title_en": "ReFreeKV: Towards Threshold-Free KV Cache Compression",
+    "title_ko": "ReFreeKV: 임계값 없는 KV 캐시 압축 방법론",
+    "url": "https://huggingface.co/papers/2502.16886",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LLM 추론 시 메모리 절감을 위한 KV 캐시 프루닝 기법들은 대부분 입력/도메인별 임계값을 사전에 설정해야 하는 한계가 있다. ReFreeKV는 이러한 임계값 의존성을 제거하고, 다양한 입력에 대해 예산 할당을 적응적으로 조정하는 '임계값 없는' 압축 방식을 최초로 구현한 방법론이다. 13개 데이터셋에서 다양한 컨텍스트 길이, 태스크 유형, 모델 크기를 대상으로 실험하여 효과와 효율성을 검증했으며, 코드는 공개되어 있다.",
+    "why_it_matters": "실제 오픈 도메인 환경에서 임계값 설정 없이 안정적으로 KV 캐시를 압축할 수 있어 LLM 추론 메모리 최적화의 실용성을 크게 높인다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.7841896339182615,
+    "published_at": "2026-06-25T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.30410",
+    "section": "papers",
+    "title_en": "Beyond IID: How General Are Tabular Foundation Models, Really?",
+    "title_ko": "표 형식 파운데이션 모델의 실제 일반화 성능 평가: BeyondArena 벤치마크",
+    "url": "https://huggingface.co/papers/2606.30410",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "표 형식 데이터용 파운데이션 모델의 일반화 성능을 종합적으로 평가하는 BeyondArena 벤치마크가 공개됐다. 11개 모델과 142개 데이터셋을 대상으로 IID, 시계열, 그룹 등 다양한 태스크 유형과 규모를 지원하는 통합 평가 프레임워크다. 실험 결과, 기존 표 형식 파운데이션 모델은 소~중형 IID 데이터에서는 우수하지만, 비IID·대용량·고차원 데이터에서는 여전히 트리 기반 및 딥러닝 모델이 더 뛰어난 성능을 보였다. 데이터셋 큐레이션을 위한 Python 프레임워크 Data Foundry도 함께 제공된다.",
+    "why_it_matters": "기존 벤치마크가 파운데이션 모델에 유리한 IID 데이터에 편중돼 있다는 맹점을 드러내고, 진정한 범용 표 형식 모델 개발 방향을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.610917912644224,
+    "published_at": "2026-06-28T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-how-chatgpt-adoption-has-expanded",
+    "section": "releases",
+    "title_en": "How ChatGPT adoption has expanded",
+    "title_ko": "ChatGPT 글로벌 채택 현황 분석",
+    "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 공개한 Signals 데이터에 따르면 ChatGPT의 글로벌 채택이 지속적으로 확대되고 있다. 사용자들은 더 많은 기능을 탐색하며 사용 빈도를 높이고 있으며, 다양한 지역과 언어권에서 고르게 성장이 이루어지고 있다.",
+    "why_it_matters": "ChatGPT의 글로벌 확산 속도와 다언어·다지역 성장 패턴은 AI 서비스 시장 전략 수립에 중요한 지표가 된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7678587962962963,
+    "published_at": "2026-06-30T09:00:00Z"
+  },
+  {
+    "id": "google_blog-unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers",
+    "section": "releases",
+    "title_en": "Unlocking Britain’s next era of productivity: Building a nation of AI trailblazers",
+    "title_ko": "영국의 AI 선도국 도약: 차세대 생산성 시대를 열다",
+    "url": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글이 영국을 AI 선도 국가로 육성하기 위한 비전을 제시했다. 과학자, 기술자, 탐험가, 관찰자 등 다양한 직군의 전문가들이 AI를 활용해 생산성을 높이는 방향을 모색한다. 영국 전반의 AI 역량 강화를 목표로 한 이니셔티브로 보인다.",
+    "why_it_matters": "국가 단위의 AI 생산성 전략은 기업과 개발자 생태계 전반에 영향을 미치는 중요한 방향성을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7500016534391534,
+    "published_at": "2026-06-30T06:00:00Z"
+  },
+  {
+    "id": "github_trending-msitarzewski/agency-agents",
+    "section": "releases",
+    "title_en": "msitarzewski/agency-agents",
+    "title_ko": "agency-agents: 16개 부서 232개 전문 AI 에이전트 컬렉션",
+    "url": "https://github.com/msitarzewski/agency-agents",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code, Cursor, Copilot 등 주요 AI 코딩 도구에 즉시 설치할 수 있는 전문 AI 에이전트 232개를 제공하는 오픈소스 프로젝트다. 엔지니어링, 마케팅, 보안, 게임 개발, GIS 등 16개 부서로 구성되며, 각 에이전트는 고유한 성격·워크플로우·성공 지표를 갖춘 전문가로 설계됐다. macOS·Linux·Windows용 네이티브 앱을 통해 클릭 한 번으로 원하는 에이전트를 설치할 수 있으며, 스크립트 기반 설치도 지원한다.",
+    "why_it_matters": "단순 프롬프트 템플릿을 넘어 역할별 성격과 검증된 워크플로우를 갖춘 에이전트를 Claude Code·Cursor 등 주요 도구에 바로 연동할 수 있어, AI 코딩 워크플로우의 전문화·체계화를 빠르게 실현할 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7241104497354498,
+    "published_at": "2026-06-30T01:39:01Z"
+  },
+  {
+    "id": "github_trending-soxoj/maigret",
+    "section": "releases",
+    "title_en": "soxoj/maigret",
+    "title_ko": "Maigret: 사용자명 하나로 3,000개 이상 사이트에서 프로필 수집하는 OSINT 도구",
+    "url": "https://github.com/soxoj/maigret",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Maigret는 사용자명만으로 3,000개 이상의 사이트에서 계정을 검색하고 프로필 정보를 수집하는 오픈소스 OSINT 도구입니다. API 키 없이 사용 가능하며, 발견된 사용자명을 기반으로 재귀적 검색을 수행합니다. OpenAI 호환 API를 활용한 AI 분석 모드(--ai)도 지원해 수집 결과를 자동으로 요약해 줍니다. Python 라이브러리로 임베드하거나 Docker, 웹 UI 등 다양한 방식으로 사용할 수 있습니다.",
+    "why_it_matters": "AI 분석 기능이 추가된 강력한 OSINT 자동화 도구로, 보안 연구나 디지털 조사 워크플로우에 쉽게 통합할 수 있다는 점에서 주목할 만하다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7241104497354498,
+    "published_at": "2026-06-30T01:39:01Z"
+  },
+  {
+    "id": "github_trending-commaai/openpilot",
+    "section": "releases",
+    "title_en": "commaai/openpilot",
+    "title_ko": "commaai/openpilot - 300개 이상의 차량을 지원하는 오픈소스 로보틱스 OS",
+    "url": "https://github.com/commaai/openpilot",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "openpilot은 comma.ai가 개발한 오픈소스 로보틱스 운영체제로, 현재 300종 이상의 차량에서 운전자 보조 시스템을 업그레이드하는 데 사용된다. comma four 디바이스와 차량 하네스를 연결해 설치할 수 있으며, MIT 라이선스로 공개되어 있다. ISO 26262 안전 가이드라인을 준수하며, 매 커밋마다 소프트웨어-인-더-루프 테스트가 실행된다.",
+    "why_it_matters": "자율주행 보조 기술을 오픈소스로 공개해 누구나 300종 이상의 양산차에 적용·개선할 수 있다는 점에서 자율주행 민주화의 대표 사례다.",
+    "tags": [
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.7241104497354498,
+    "published_at": "2026-06-30T01:39:01Z"
+  },
+  {
+    "id": "github_trending-xbtlin/ai-berkshire",
+    "section": "releases",
+    "title_en": "xbtlin/ai-berkshire",
+    "title_ko": "AI Berkshire: Claude Code/Codex 기반 가치투자 리서치 프레임워크",
+    "url": "https://github.com/xbtlin/ai-berkshire",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "버핏, 멍거, 단용핑, 리루 4인의 가치투자 방법론을 AI Agent로 구현한 오픈소스 투자 리서치 프레임워크입니다. Claude Code와 Codex 모두 지원하며, 18가지 스킬(심층 기업분석, 재무제표 분석, 산업 스크리닝, 포트폴리오 관리 등)을 제공합니다. 4개의 Agent가 병렬로 각각 독립 분석 후 종합 결론을 도출하는 멀티에이전트 구조가 핵심이며, Python decimal 기반 정밀 재무 계산 도구도 포함됩니다. 제작자는 2024년 +69.29%, 2025년 현재까지 +66.38%의 실계좌 수익률을 공개하고 있습니다.",
+    "why_it_matters": "일반 LLM에게 단순 질문하는 것과 달리, 4가지 투자 거장의 관점이 서로 충돌·검증하는 구조화된 의사결정 프레임워크를 제공해 AI 기반 투자 리서치의 실용성을 한 단계 높인다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7241104497354498,
+    "published_at": "2026-06-30T01:39:01Z"
+  },
+  {
+    "id": "openai_blog-introducing-genebench-pro",
+    "section": "releases",
+    "title_en": "Introducing GeneBench-Pro",
+    "title_ko": "GeneBench-Pro 공개: 유전체학·생물학 분야 AI 성능 벤치마크",
+    "url": "https://openai.com/index/introducing-genebench-pro",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 유전체학, 생물학, 과학 연구 분야에서 AI 성능을 평가하는 새로운 벤치마크 'GeneBench-Pro'를 공개했다. 이 벤치마크는 복잡한 실제 데이터셋을 활용해 AI 모델의 과학적 역량을 측정한다.",
+    "why_it_matters": "실제 생물학·유전체 데이터 기반의 전문 벤치마크로, AI의 과학 연구 활용 가능성을 객관적으로 평가하는 기준이 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-06-30T00:00:00Z"
+  },
+  {
+    "id": "hn-48734373",
+    "section": "community",
+    "title_en": "Claude Code is steganographically marking requests",
+    "title_ko": "Claude Code, 요청에 스테가노그래피 마킹 적용 중",
+    "url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Claude Code가 요청에 스테가노그래피 방식으로 마킹을 삽입하고 있다는 사실이 알려졌다. 구체적인 설명은 제공되지 않았으나, 이는 AI 도구가 생성한 요청에 식별 가능한 숨겨진 정보를 포함시키는 것을 의미한다.",
+    "why_it_matters": "AI 코딩 도구가 사용자 요청에 은밀한 마킹을 삽입한다면 프라이버시 및 투명성 측면에서 중요한 논의가 필요하다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 11.219281660601812,
+    "published_at": "2026-06-30T15:44:24Z"
+  },
+  {
+    "id": "hn-48736605",
+    "section": "community",
+    "title_en": "Claude Sonnet 5",
+    "title_ko": "Claude Sonnet 5 출시",
+    "url": "https://www.anthropic.com/news/claude-sonnet-5",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Anthropic이 Claude Sonnet 5를 공개했다. 상세한 설명은 제공되지 않았으나, Claude 모델 시리즈의 새로운 버전으로 보인다.",
+    "why_it_matters": "Anthropic의 주력 모델 라인업 업데이트로, LLM 시장 경쟁에 영향을 줄 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.838628980187632,
+    "published_at": "2026-06-30T17:59:52Z"
+  },
+  {
+    "id": "hn-48735770",
+    "section": "community",
+    "title_en": "Claude Science",
+    "title_ko": "Claude Science 공개",
+    "url": "https://claude.com/product/claude-science",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Anthropic이 Claude Science를 공개했다. 상세한 설명이 제공되지 않아 구체적인 내용은 확인이 필요하다.",
+    "why_it_matters": "Anthropic의 과학 분야 특화 Claude 서비스로 보이며, AI의 과학 연구 활용 가능성에 주목할 필요가 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.254532094856888,
+    "published_at": "2026-06-30T17:07:41Z"
+  },
+  {
+    "id": "hn-48735444",
+    "section": "community",
+    "title_en": "Nano Banana 2 Lite",
+    "title_ko": "Nano Banana 2 Lite",
+    "url": "https://deepmind.google/models/gemini-image/flash-lite/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Nano Banana 2 Lite에 관한 소식이 Hacker News에 공유되었다. 제공된 설명이 없어 상세 내용은 확인하기 어렵다.",
+    "why_it_matters": "추가 정보 없이 내용을 파악하기 어려우므로 원문 확인이 필요하다.",
+    "tags": [],
+    "score": 9.074819106201577,
+    "published_at": "2026-06-30T16:48:37Z"
+  },
+  {
+    "id": "hn-48739466",
+    "section": "community",
+    "title_en": "From brain waves to words: a new path to communication without surgery",
+    "title_ko": "뇌파에서 언어로: 수술 없이 소통하는 새로운 방법",
+    "url": "https://ai.meta.com/blog/brain2qwerty-brain-ai-human-communication/?_fb_noscript=1",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "수술 없이 뇌파를 분석해 언어로 변환하는 새로운 기술이 소개됐다. 이 연구는 비침습적 방식으로 신체가 불편한 사람들이 의사소통할 수 있는 가능성을 제시한다.",
+    "why_it_matters": "수술 없이 뇌-컴퓨터 인터페이스를 구현한다면, 의사소통이 어려운 환자들에게 혁신적인 대안이 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 7.599662209270229,
+    "published_at": "2026-06-30T21:29:13Z"
+  },
+  {
+    "id": "youtube-4jKcvBC82EA",
+    "section": "video",
+    "title_en": "슬랙에 팀원으로 들어온 클로드 ㄷㄷ",
+    "title_ko": "슬랙 팀원으로 합류한 클로드 AI",
+    "url": "https://www.youtube.com/shorts/4jKcvBC82EA",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 Anthropic의 AI 클로드(Claude)를 슬랙(Slack)에 팀원처럼 연동하는 방법을 소개하는 영상이다. 슬랙 워크스페이스에 클로드를 추가해 실제 팀원처럼 활용하는 모습을 다룬다.",
+    "why_it_matters": "클로드를 슬랙에 통합해 업무 협업 도구로 활용하는 실용적인 에이전트 활용 사례를 보여준다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.7678984788359788,
+    "published_at": "2026-06-30T09:00:24Z"
+  },
+  {
+    "id": "youtube-H25hDhaTG-M",
+    "section": "video",
+    "title_en": "트럼프가 막아버린 GPT-5.6 출시",
+    "title_ko": "트럼프가 막아버린 GPT-5.6 출시",
+    "url": "https://www.youtube.com/shorts/H25hDhaTG-M",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 GPT-5.6 출시와 관련된 소식을 다루고 있으며, 트럼프와의 연관성이 언급되고 있다. 영상의 구체적인 내용은 제공된 정보만으로는 확인이 어렵다.",
+    "why_it_matters": "GPT 신모델 출시에 정치적 변수가 영향을 미칠 수 있다는 점에서 AI 업계 동향 파악에 중요하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7500016534391534,
+    "published_at": "2026-06-30T06:00:00Z"
+  },
+  {
+    "id": "youtube-Jx8zMUI1pU8",
+    "section": "video",
+    "title_en": "AI뉴스 - GPT‑5.6, Bidi 1, 할라피뇨, Unite Seoul 2026, Claude Tag, 애플 가격, Wan Streamer, 시댄스 2.5, Krea 2 등",
+    "title_ko": "AI 뉴스 종합: GPT-5.6, Bidi 1, 할라피뇨 칩, Claude Tag, Wan Streamer, 시댄스 2.5 등",
+    "url": "https://www.youtube.com/watch?v=Jx8zMUI1pU8",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "오픈AI의 GPT-5.6 일부 공개 및 차세대 음성 모델 Bidi 1, 자체 추론 칩 '할라피뇨' 생산 소식이 전해졌다. 클로드 태그 공개, 알리바바의 클로드 증류 의혹, 사카나AI의 Fugu 공개 등 LLM 관련 소식도 다수 포함됐다. 영상·이미지 분야에서는 Wan Streamer 0.1 논문, 시댄스 2.5 공개 예정, Krea2 오픈웨이트 출시 등이 소개됐다. 삼성전자 임직원 챗GPT·코덱스 제공, 애플 기습 가격 인상 등 산업 동향도 함께 다뤄졌다.",
+    "why_it_matters": "한 주간의 주요 AI 모델·칩·툴 업데이트를 한국어로 빠르게 파악할 수 있는 종합 뉴스 브리핑이다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.6547767857142857,
+    "published_at": "2026-06-29T14:00:08Z"
+  },
+  {
+    "id": "latent_space-forward-deployed-engineers-aiewf",
+    "section": "deepdive",
+    "title_en": "Forward Deployed Engineers and the future of software engineering",
+    "title_ko": "포워드 디플로이드 엔지니어와 소프트웨어 엔지니어링의 미래",
+    "url": "https://www.latent.space/p/forward-deployed-engineers-aiewf",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "Sierra의 Natalie Meurer가 제품 엔지니어(Product Engineer)와 포워드 디플로이드 엔지니어(Forward Deployed Engineer)의 역할이 점점 수렴하고 있는 현상을 분석한다. AI 시대에 엔지니어가 고객 현장에 직접 배치되어 문제를 해결하는 방식이 일반 제품 개발 방식과 가까워지고 있다는 내용이다.",
+    "why_it_matters": "AI 도입이 가속화되면서 엔지니어의 역할 경계가 허물어지고 있어, 미래 소프트웨어 엔지니어링 커리어 방향을 가늠하는 데 중요한 시사점을 제공한다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.8591583994708994,
+    "published_at": "2026-07-01T00:20:18Z"
+  }
+]

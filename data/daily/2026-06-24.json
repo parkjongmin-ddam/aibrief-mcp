@@ -1,0 +1,369 @@
+[
+  {
+    "id": "hf-2606.22388",
+    "section": "papers",
+    "title_en": "PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems",
+    "title_ko": "PlanBench-XL: 대규모 툴 생태계에서 LLM 에이전트의 장기 계획 능력 평가 벤치마크",
+    "url": "https://huggingface.co/papers/2606.22388",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "PlanBench-XL은 1,665개 도구와 327개 리테일 태스크로 구성된 대화형 벤치마크로, LLM 에이전트가 제한된 툴 가시성 환경에서 반복적으로 도구를 탐색하고 호출하며 장기 목표를 달성할 수 있는지 평가한다. 도구 누락·실패·방해 등 현실적 불확실성을 시뮬레이션하는 블로킹 메커니즘도 포함되어 있다. 10개 주요 LLM 실험 결과, GPT-4.5도 블로킹 없이 51.90% 정확도에 그쳤으며, 가장 심각한 블로킹 조건에서는 11.36%로 급락했다. 에이전트는 명시적 오류 신호가 없거나 더 긴 대안 경로가 필요한 상황에서 특히 취약한 것으로 나타났다.",
+    "why_it_matters": "현실적인 대규모 툴 환경에서 LLM 에이전트의 장기 계획 능력이 얼마나 취약한지 정량적으로 드러내며, 강건한 적응형 계획 연구의 필요성을 강조한다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "RAG"
+    ],
+    "score": 5.382026634673881,
+    "published_at": "2026-06-20T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.21337",
+    "section": "papers",
+    "title_en": "DataClaw0: Agentic Tailoring Multimodal Data from Raw Streams",
+    "title_ko": "DataClaw0: 원시 스트림에서 멀티모달 데이터를 능동적으로 정제하는 에이전틱 시스템",
+    "url": "https://huggingface.co/papers/2606.21337",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "DataClaw0는 비정형 멀티모달 데이터의 높은 '데이터 엔트로피' 문제를 해결하기 위해, 기존의 수동적 어노테이션 방식 대신 '에이전틱 데이터 테일러링' 패러다임을 제안한다. SFT와 GRPO를 결합한 9B 규모의 모델을 구축했으며, 물리·디지털 5개 핵심 도메인에 걸친 대규모 데이터셋을 생성한다. 영상 생성, 실세계 VQA, GUI 내비게이션 평가에서 제한된 학습 데이터 환경에서도 고품질 정제 데이터를 제공함을 검증했다. 데이터 정제 능력을 정량 평가하는 최초의 벤치마크인 DataClaw_0-val도 함께 공개했다.",
+    "why_it_matters": "AI 포스트트레이닝용 고품질 멀티모달 데이터를 자동으로 정제·구조화하는 에이전틱 접근법은 데이터 준비 비용을 크게 줄이고 다양한 다운스트림 태스크 적응력을 높일 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.189654742026425,
+    "published_at": "2026-06-18T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.23654",
+    "section": "papers",
+    "title_en": "EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions",
+    "title_ko": "EnterpriseClawBench: 실제 업무 세션 기반 엔터프라이즈 에이전트 벤치마크",
+    "url": "https://huggingface.co/papers/2606.23654",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "EnterpriseClawBench는 실제 기업 업무 세션에서 구축한 에이전트 벤치마크로, 852개의 재현 가능한 태스크로 구성됩니다. 각 태스크에는 복원된 파일 픽스처, 재작성된 프롬프트, 역할 분류, 스킬 세부 분류, 규칙, 평가 기준이 포함됩니다. 최고 성능 구성(Codex with GPT-5.5)도 0.663에 그쳐 현재 에이전트의 한계를 드러냈으며, 단일 점수가 아닌 다차원 평가 지표의 필요성을 강조합니다. 내부 기업 데이터를 포함해 벤치마크 데이터 자체는 공개하지 않고, 구축·평가 프로토콜만 오픈소스로 제공합니다.",
+    "why_it_matters": "실제 업무 환경 기반의 엔터프라이즈 에이전트 평가 방법론을 제시해, 기존 벤치마크의 한계를 극복하고 실용적인 AI 에이전트 성능 측정 기준을 제공한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.060443010546419,
+    "published_at": "2026-06-21T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.22807",
+    "section": "papers",
+    "title_en": "KaLM-Reranker-V1: Fast but Not Late Interaction for Compressed Document Reranking",
+    "title_ko": "KaLM-Reranker-V1: 쿼리-패시지 분리 연산으로 빠른 문서 재순위화",
+    "url": "https://huggingface.co/papers/2606.22807",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "KaLM-Reranker-V1은 인코더-디코더 구조를 활용해 쿼리와 패시지 연산을 분리하면서도 크로스어텐션으로 풍부한 관련성 모델링을 유지하는 재순위화 모델이다. Nano(0.27B), Small(1B), Large(4B) 세 가지 크기로 제공되며, BEIR 벤치마크에서 Qwen3-Reranker 시리즈 등 산업용 강자 모델과 동등한 성능을 달성했다. MIRACL 다국어 벤치마크에서도 다국어 학습 데이터 없이 우수한 성능을 보였으며, 0.27B Nano 모델이 7~12B 임베딩 모델과 경쟁력 있는 결과를 냈다.",
+    "why_it_matters": "소형 파라미터로 대형 임베딩 모델 수준의 재순위화 성능을 달성해 RAG 파이프라인의 효율적 배포 가능성을 높인다.",
+    "tags": [
+      "RAG"
+    ],
+    "score": 4.688879454113936,
+    "published_at": "2026-06-21T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.22883",
+    "section": "papers",
+    "title_en": "CLI-Universe: Towards Verifiable Task Synthesis Engine for Terminal Agents",
+    "title_ko": "CLI-Universe: 터미널 에이전트를 위한 검증 가능한 태스크 합성 엔진",
+    "url": "https://huggingface.co/papers/2606.22883",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "CLI-Universe는 LLM 기반 터미널 에이전트 학습을 위한 고품질 실행 가능 데이터 합성 엔진이다. 다차원 능력 분류 체계를 기반으로 태스크를 생성하고, Docker 환경에서 다단계 검증 파이프라인을 통해 약 2/3의 후보를 걸러낸다. 이를 통해 구축된 6,000개 궤적 데이터셋 CLI-Universe-6K로 Qwen3-32B를 파인튜닝한 결과, Terminal-Bench 2.0에서 33.4%를 달성해 오픈소스 데이터 기반 32B 이하 모델 중 최고 성능을 기록했다.",
+    "why_it_matters": "소규모 오픈소스 데이터만으로 훨씬 큰 모델을 능가하는 터미널 에이전트 학습 데이터 합성의 새 기준을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.332204510175204,
+    "published_at": "2026-06-21T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-gpt-5-immunology-mystery",
+    "section": "releases",
+    "title_en": "How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery",
+    "title_ko": "GPT-5가 3년 묵은 면역학 미스터리 해결에 기여",
+    "url": "https://openai.com/index/gpt-5-immunology-mystery",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "GPT-5 Pro가 면역학자 Derya Unutmaz의 3년간 풀리지 않던 연구 난제 해결을 도왔다. T세포 행동에 대한 새로운 인사이트를 제공했으며, 이번 성과는 암 및 자가면역 질환 연구에 기여할 수 있을 것으로 기대된다.",
+    "why_it_matters": "GPT-5가 실제 과학 연구 현장에서 전문가 수준의 문제 해결 능력을 발휘한 사례로, AI의 의생명과학 분야 활용 가능성을 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8154778439153438,
+    "published_at": "2026-06-23T17:00:00Z"
+  },
+  {
+    "id": "openai_blog-helping-build-shared-standards-for-advanced-ai",
+    "section": "releases",
+    "title_en": "Helping build shared standards for advanced AI",
+    "title_ko": "고급 AI를 위한 공통 표준 구축 지원",
+    "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 Appia Foundation을 통해 고급 AI의 공통 표준 구축을 지원하고 있다. 평가 프레임워크, 안전 관행, 글로벌 협력 등을 포함한 다양한 영역에서 표준화 작업에 참여한다. 이를 통해 AI 개발의 안전성과 신뢰성을 높이기 위한 국제적 협력을 강화한다.",
+    "why_it_matters": "AI 안전 평가 및 글로벌 표준화 논의가 본격화되면서, 개발자와 기업이 따라야 할 공통 기준이 형성될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7916683201058201,
+    "published_at": "2026-06-23T13:00:00Z"
+  },
+  {
+    "id": "github_trending-mukul975/Anthropic-Cybersecurity-Skills",
+    "section": "releases",
+    "title_en": "mukul975/Anthropic-Cybersecurity-Skills",
+    "title_ko": "AI 에이전트를 위한 817개 사이버보안 스킬 오픈소스 라이브러리",
+    "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "AI 에이전트가 시니어 보안 분석가 수준의 사이버보안 작업을 수행할 수 있도록 817개의 구조화된 스킬을 제공하는 오픈소스 프로젝트다. MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF, MITRE F3(사기 대응 프레임워크) 등 6개 프레임워크에 매핑되어 있으며, 29개 보안 도메인을 포괄한다. Claude Code, GitHub Copilot, Cursor, Gemini CLI 등 26개 이상의 AI 플랫폼과 호환되며 Apache 2.0 라이선스로 공개된다.",
+    "why_it_matters": "범용 LLM에 실무 수준의 사이버보안 의사결정 워크플로우를 주입할 수 있어, AI 에이전트 기반 보안 자동화의 실질적 기반이 된다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7239368386243386,
+    "published_at": "2026-06-23T01:37:16Z"
+  },
+  {
+    "id": "github_trending-ZhuLinsen/daily_stock_analysis",
+    "section": "releases",
+    "title_en": "ZhuLinsen/daily_stock_analysis",
+    "title_ko": "LLM 기반 멀티마켓 주식 자동 분석 시스템 - daily_stock_analysis",
+    "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "LLM을 활용해 A주, 홍콩주, 미국주, 일본주, 한국주 등 다양한 시장의 주식을 자동으로 분석하고 결정 대시보드를 생성하는 오픈소스 프로젝트입니다. 실시간 뉴스, 기술지표, 자금흐름 등 다중 데이터 소스를 통합하며, 분석 결과를 기업 위챗·슬랙·텔레그램·이메일 등으로 자동 전송합니다. GitHub Actions를 통해 서버 없이 무료로 매일 정해진 시간에 실행할 수 있으며, 웹 UI와 에이전트 전략 질의 기능도 제공합니다.",
+    "why_it_matters": "LLM과 멀티소스 데이터를 결합한 주식 분석 자동화 파이프라인을 서버 비용 없이 구축할 수 있는 실용적인 레퍼런스 구현체다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7239368386243386,
+    "published_at": "2026-06-23T01:37:16Z"
+  },
+  {
+    "id": "github_trending-JCodesMore/ai-website-cloner-template",
+    "section": "releases",
+    "title_en": "JCodesMore/ai-website-cloner-template",
+    "title_ko": "AI 에이전트로 웹사이트를 Next.js로 자동 복제하는 템플릿",
+    "url": "https://github.com/JCodesMore/ai-website-cloner-template",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "URL 하나만 지정하면 AI 코딩 에이전트가 대상 사이트를 분석해 디자인 토큰과 에셋을 추출하고, 병렬 빌더로 각 컴포넌트를 재구성한 뒤 Next.js 코드베이스로 출력하는 오픈소스 템플릿이다. Claude Code(Opus 4.7) 사용을 권장하며, Cursor·Copilot·Gemini CLI 등 주요 AI 코딩 에이전트도 지원한다. 플랫폼 마이그레이션, 소스 코드 복구, 레이아웃 학습 등의 용도로 활용할 수 있다.",
+    "why_it_matters": "AI 에이전트 기반 다단계 파이프라인으로 웹사이트 역공학을 자동화해, 레거시 사이트를 모던 Next.js 코드로 빠르게 전환할 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7239368386243386,
+    "published_at": "2026-06-23T01:37:16Z"
+  },
+  {
+    "id": "github_trending-lyogavin/airllm",
+    "section": "releases",
+    "title_en": "lyogavin/airllm",
+    "title_ko": "AirLLM: 4GB GPU 단일 카드로 70B LLM 추론 실행",
+    "url": "https://github.com/lyogavin/airllm",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "AirLLM은 양자화·증류·가지치기 없이 4GB VRAM의 단일 GPU에서 70B 대형 언어 모델 추론을 가능하게 하는 오픈소스 라이브러리입니다. 모델을 레이어 단위로 분할하여 디스크에서 순차적으로 로드하는 방식을 사용하며, 8GB VRAM에서는 Llama 3.1 405B도 실행할 수 있습니다. 블록 단위 양자화 기반 모델 압축을 적용하면 추론 속도를 최대 3배 향상시킬 수 있으며, Llama, Mistral, Qwen, ChatGLM 등 다양한 모델을 지원합니다.",
+    "why_it_matters": "저사양 GPU 환경에서도 초대형 LLM을 별도의 경량화 없이 직접 실행할 수 있어 개인 연구자·개발자의 접근성을 크게 높입니다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7239368386243386,
+    "published_at": "2026-06-23T01:37:16Z"
+  },
+  {
+    "id": "openai_blog-omio",
+    "section": "releases",
+    "title_en": "How Omio is building the future of conversational travel",
+    "title_ko": "Omio가 OpenAI로 구축하는 대화형 여행의 미래",
+    "url": "https://openai.com/index/omio",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "유럽 여행 플랫폼 Omio는 OpenAI를 활용해 대화형 여행 경험을 구현하고 제품 개발 속도를 높이고 있다. 이를 통해 Omio는 AI 네이티브 기업으로의 전환을 추진 중이다.",
+    "why_it_matters": "여행 산업에서 대화형 AI를 실제 서비스에 적용한 사례로, AI 네이티브 전환 전략을 엿볼 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-06-23T00:00:00Z"
+  },
+  {
+    "id": "hn-48643426",
+    "section": "community",
+    "title_en": "Unlimited OCR: One-shot long-horizon parsing",
+    "title_ko": "무제한 OCR: 원샷 장거리 파싱",
+    "url": "https://github.com/baidu/Unlimited-OCR",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "'Unlimited OCR'은 원샷(one-shot) 방식으로 긴 문서를 파싱하는 기술을 다룬다. 제목 외 상세 설명이 제공되지 않아 구체적인 내용은 확인하기 어렵다.",
+    "why_it_matters": "장문서 OCR의 정확도와 효율성 개선 가능성을 시사하는 주제로, 문서 처리 자동화에 관심 있는 개발자에게 주목할 만하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.380604792521035,
+    "published_at": "2026-06-23T11:35:05Z"
+  },
+  {
+    "id": "hn-48648619",
+    "section": "community",
+    "title_en": "FUTO Swipe – A new swipe typing model",
+    "title_ko": "FUTO Swipe – 새로운 스와이프 타이핑 모델",
+    "url": "https://swipe.futo.tech/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "FUTO가 새로운 스와이프 타이핑 모델인 'FUTO Swipe'를 공개했다. 스와이프 타이핑은 키보드에서 손가락을 떼지 않고 글자를 연결해 입력하는 방식이다.",
+    "why_it_matters": "오픈소스 지향의 FUTO가 자체 스와이프 타이핑 모델을 선보이며 모바일 입력 기술에 새로운 선택지를 제시한다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 8.635734515952453,
+    "published_at": "2026-06-23T17:50:22Z"
+  },
+  {
+    "id": "hn-48651613",
+    "section": "community",
+    "title_en": "Trains halted across Germany because of communication system problem",
+    "title_ko": "통신 시스템 문제로 독일 전역 열차 운행 중단",
+    "url": "https://apnews.com/article/germany-trains-halted-communications-radio-problem-deutsche-bahn-e8fd970b2d889f3ae7ce03322d5c726b",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "독일 전역에서 통신 시스템 문제로 인해 열차 운행이 중단되는 사태가 발생했다. 구체적인 원인과 피해 규모는 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "철도 인프라의 통신 시스템 장애가 국가 단위 운행 중단으로 이어질 수 있음을 보여주는 사례다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 8.37630836869615,
+    "published_at": "2026-06-23T21:19:44Z"
+  },
+  {
+    "id": "hn-48650837",
+    "section": "community",
+    "title_en": "Don't verify email addresses by sending spam to them",
+    "title_ko": "이메일 주소 인증을 스팸 발송으로 하지 마세요",
+    "url": "https://milek7.pl/mailverifyspam/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "이메일 주소 유효성 검증을 위해 실제 이메일을 발송하는 방식은 스팸 행위와 다름없다는 내용을 다루고 있다. 제목만으로 보수적으로 요약하면, 이메일 인증 목적으로 무분별하게 메일을 보내는 관행에 대한 경고로 보인다.",
+    "why_it_matters": "서비스 개발 시 이메일 인증 방식 선택은 사용자 경험과 스팸 정책 모두에 직결되는 중요한 설계 결정이다.",
+    "tags": [],
+    "score": 7.71197417751255,
+    "published_at": "2026-06-23T20:23:49Z"
+  },
+  {
+    "id": "hn-48643489",
+    "section": "community",
+    "title_en": "The Low-Tech AI of Elden Ring",
+    "title_ko": "엘든 링의 로우테크 AI",
+    "url": "https://nega.tv/posts/low-tech-ai-of-elden-ring.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "엘든 링에서 사용된 AI 기술을 다루는 글로, 제목에서 '로우테크'라는 표현이 시사하듯 복잡한 최신 기술보다 단순하고 전통적인 AI 기법이 활용되었음을 시사한다. 상세 내용은 제공되지 않아 구체적인 기법은 확인하기 어렵다.",
+    "why_it_matters": "게임 AI가 반드시 최신 ML 기술에 의존하지 않아도 뛰어난 플레이어 경험을 제공할 수 있음을 보여주는 사례로 주목할 만하다.",
+    "tags": [],
+    "score": 7.580265806910651,
+    "published_at": "2026-06-23T11:40:50Z"
+  },
+  {
+    "id": "youtube-izhQ-CbxDcc",
+    "section": "video",
+    "title_en": "클로드가 부럽지 않다는 오픈소스 모델 성능 ㄷㄷ",
+    "title_ko": "클로드 부럽지 않은 오픈소스 모델 성능 공개",
+    "url": "https://www.youtube.com/shorts/izhQ-CbxDcc",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 클로드(Claude)에 필적한다고 평가되는 오픈소스 AI 모델의 성능을 소개하는 영상이다. 구체적인 모델명이나 벤치마크 수치는 제공된 정보만으로는 확인되지 않는다.",
+    "why_it_matters": "클로드 수준의 성능을 오픈소스로 구현할 수 있다면 비용 없이 고성능 AI를 자체 운영할 수 있는 가능성이 열린다.",
+    "tags": [
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7714136904761905,
+    "published_at": "2026-06-23T09:35:50Z"
+  },
+  {
+    "id": "youtube-oflXH0em4mo",
+    "section": "video",
+    "title_en": "특이점 온 실리콘밸리 AI 네이티브 기업 근황ㄷㄷ (ft. Speak 본사 투어)",
+    "title_ko": "실리콘밸리 AI 네이티브 기업 스픽(Speak) 본사 투어 및 인터뷰",
+    "url": "https://www.youtube.com/watch?v=oflXH0em4mo",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "실리콘밸리의 AI 네이티브 언어 학습 기업 스픽(Speak) 본사를 직접 방문해 팀원들과 인터뷰를 진행했습니다. 스픽이 첫 시장으로 한국을 선택한 이유, AI를 활용하는 방식, AI 시대에 적합한 인재상 등을 다룹니다. 또한 스픽의 경쟁 우위(해자)와 AI로 무언가를 만들고자 하는 사람들을 위한 조언도 포함되어 있습니다.",
+    "why_it_matters": "실리콘밸리 AI 네이티브 기업이 실제로 AI를 어떻게 내재화하고 운영하는지 현장에서 확인할 수 있는 드문 사례다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.753095238095238,
+    "published_at": "2026-06-23T06:31:11Z"
+  },
+  {
+    "id": "youtube-ZV0_nnBZlGc",
+    "section": "video",
+    "title_en": "개귀찮은 반복업무에서 탈출하는 방법",
+    "title_ko": "반복 업무를 자동화로 탈출하는 방법",
+    "url": "https://www.youtube.com/shorts/ZV0_nnBZlGc",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 직장인들이 자주 겪는 반복 업무를 자동화로 해결하는 방법을 소개한다. 코딩을 활용해 귀찮은 업무에서 벗어나는 실용적인 팁을 다룬다.",
+    "why_it_matters": "코딩 초보 직장인도 반복 업무를 자동화해 업무 효율을 높일 수 있는 실용적인 접근을 제시한다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7500132275132275,
+    "published_at": "2026-06-23T06:00:07Z"
+  },
+  {
+    "id": "simon_willison-datasette",
+    "section": "deepdive",
+    "title_en": "datasette 1.0a35",
+    "title_ko": "Datasette 1.0a35 출시 - 테이블 생성·수정 UI 및 JSON API 추가",
+    "url": "https://simonwillison.net/2026/Jun/23/datasette/#atom-everything",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Datasette 1.0a35가 출시되었다. 이번 릴리스의 주요 기능으로는 데이터베이스 액션 메뉴에서 컬럼, 기본키, 외래키 등을 정의할 수 있는 '테이블 생성' 인터페이스와 JSON API, 그리고 기존 테이블의 컬럼 추가·이름 변경·삭제 등을 지원하는 'Alter table' 기능이 포함된다. 또한 커스텀 템플릿용 Template context 문서가 새로 정비되어 Datasette 2.0까지 안정적인 API로 취급될 예정이다.",
+    "why_it_matters": "GUI와 JSON API를 통한 테이블 생성·수정 기능 추가로 Datasette이 단순 데이터 뷰어를 넘어 본격적인 데이터 관리 도구로 진화하고 있다.",
+    "tags": [
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.8427215608465608,
+    "published_at": "2026-06-23T21:34:37Z"
+  }
+]

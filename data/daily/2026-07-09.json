@@ -1,0 +1,371 @@
+[
+  {
+    "id": "hf-2607.06291",
+    "section": "papers",
+    "title_en": "AlayaWorld: Long-Horizon and Playable Video World Generation",
+    "title_ko": "AlayaWorld: 장기 지평선의 플레이어블 비디오 월드 생성 오픈소스 프레임워크",
+    "url": "https://huggingface.co/papers/2607.06291",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "AlayaWorld는 인터랙티브 생성형 게임 월드를 구축하기 위한 풀스택 오픈소스 프레임워크입니다. 게임플레이 녹화 영상과 실사 영상을 학습 데이터로 활용해 현재 월드 상태와 사용자 입력에 조건화된 미래 장면을 자기회귀적으로 합성합니다. 전투, 마법 시전, 몬스터 소환 등 다양한 실시간 인터랙션을 지원하며, 데이터 준비부터 모델 아키텍처, 훈련, 추론 가속, 배포까지 모듈화된 구조로 통합되어 있습니다.",
+    "why_it_matters": "전통적인 게임 개발 파이프라인을 대체하는 생성형 월드 모델의 완전한 오픈소스 구현체로, 게임을 넘어 구현형 AI(embodied intelligence) 연구에도 활용 가능한 실용적 기반을 제공합니다.",
+    "tags": [
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 5.31748811353631,
+    "published_at": "2026-07-06T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.06559",
+    "section": "papers",
+    "title_en": "RynnWorld-4D: 4D Embodied World Models for Robotic Manipulation",
+    "title_ko": "RynnWorld-4D: 로봇 조작을 위한 4D 구현 세계 모델",
+    "url": "https://huggingface.co/papers/2607.06559",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "RynnWorld-4D는 단일 RGB-D 이미지와 언어 명령으로부터 미래의 RGB 프레임, 깊이 맵, 광학 흐름을 동시에 생성하는 통합 확산 모델이다. RGB-DF(RGB+깊이+광학 흐름) 멀티모달 표현을 활용해 장면의 4D 역학을 물리적으로 포착하며, 2억 5440만 프레임 이상의 대규모 데이터셋으로 학습된다. 역동작 헤드인 RynnWorld-4D-Policy는 비용이 큰 다단계 노이즈 제거 없이 단일 순전파로 로봇 행동을 출력하며, 실제 양손 조작 태스크에서 최고 수준의 성능을 달성했다.",
+    "why_it_matters": "4D 세계 모델과 정책 학습을 통합해 공간 정밀도와 시간적 조율이 필요한 실세계 로봇 조작 성능을 한 단계 끌어올린 점이 주목된다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.290459441148391,
+    "published_at": "2026-07-06T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.06558",
+    "section": "papers",
+    "title_en": "RynnWorld-Teleop: An Action-Conditioned World Model for Digital Teleoperation",
+    "title_ko": "RynnWorld-Teleop: 디지털 원격조작을 위한 행동 조건부 월드 모델",
+    "url": "https://huggingface.co/papers/2607.06558",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "로봇 학습에 필요한 대규모 궤적 데이터 수집의 병목을 해소하기 위해, 실제 로봇 대신 생성형 월드 모델을 활용하는 '디지털 원격조작' 패러다임을 제안한다. 운영자의 손 포즈 스트림을 기반으로 단일 참조 이미지에서 고품질 1인칭 시점 영상을 합성하며, 기록된 포즈 스트림은 표준 리타기팅을 통해 어떤 로봇에도 적용 가능한 행동 레이블로 활용된다. RynnWorld-Teleop은 단일 H100 GPU에서 40+ FPS 실시간 생성을 구현하며, 이 데이터만으로 학습한 정책이 다양한 양손 조작 태스크에서 제로샷 Sim2Real 전이에 성공했다.",
+    "why_it_matters": "물리적 하드웨어 없이도 대규모 로봇 시연 데이터를 생성할 수 있어, 로봇 학습 데이터 확보의 근본적 병목을 해소할 가능성을 보여준다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 5.219507705176107,
+    "published_at": "2026-07-06T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.06560",
+    "section": "papers",
+    "title_en": "Vision as Unified Multimodal Generation",
+    "title_ko": "비전 작업을 통합 멀티모달 생성으로 처리하는 SenseNova-Vision",
+    "url": "https://huggingface.co/papers/2607.06560",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SenseNova-Vision은 컴퓨터 비전의 다양한 작업을 별도의 태스크별 아키텍처 없이 통합 멀티모달 생성 프레임워크로 처리하는 모델이다. 자연어 지시와 선택적 시각 프롬프트를 입력받아 텍스트, 이미지, 혼합 형태로 결과를 출력하며, 검출·OCR·키포인트 추정·분할·깊이 추정·카메라 포즈 추정 등 광범위한 비전 작업을 하나의 모델로 커버한다. 대규모 학습을 위해 다양한 컴퓨터 비전 어노테이션을 지시-응답 예제로 변환한 SenseNova-Vision Corpus도 함께 공개되었으며, 실험 결과 단일 통합 모델이 태스크 특화 시스템과 대등한 성능을 보였다.",
+    "why_it_matters": "태스크별 아키텍처 없이 하나의 멀티모달 모델로 폭넓은 비전 작업을 처리할 수 있음을 실증해, 범용 파운데이션 모델에 비전 능력을 통합하는 확장 가능한 경로를 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.49650756146648,
+    "published_at": "2026-07-06T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.05147",
+    "section": "papers",
+    "title_en": "DSpark: Confidence-Scheduled Speculative Decoding with Semi-Autoregressive Generation",
+    "title_ko": "DSpark: 신뢰도 기반 스케줄링과 반자기회귀 생성을 결합한 투기적 디코딩 프레임워크",
+    "url": "https://huggingface.co/papers/2607.05147",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "DSpark는 LLM 추론 속도를 높이기 위한 투기적 디코딩 프레임워크로, 병렬 드래프트 생성과 적응형 검증을 통합했습니다. 반자기회귀(semi-autoregressive) 아키텍처로 블록 내 토큰 간 의존성을 모델링해 드래프트 품질 저하를 완화하고, 신뢰도 기반 검증 길이 동적 조정으로 시스템 효율을 최적화합니다. DeepSeek-V4 서빙 시스템 실환경 적용 결과, 기존 프로덕션 기준선(MTP-1) 대비 사용자당 생성 속도를 60~85% 향상시켰습니다.",
+    "why_it_matters": "고동시성 LLM 서빙 환경에서 투기적 디코딩의 검증 낭비 문제를 실질적으로 해결해 Pareto 최적 성능 티어를 새로 열었다는 점에서 프로덕션 AI 인프라에 직접적인 영향을 준다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 4.044522437723423,
+    "published_at": "2026-07-05T20:00:00Z"
+  },
+  {
+    "id": "github_trending-addyosmani/agent-skills",
+    "section": "releases",
+    "title_en": "addyosmani/agent-skills",
+    "title_ko": "AI 코딩 에이전트를 위한 프로덕션급 엔지니어링 스킬 모음 'Agent Skills'",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Addy Osmani가 공개한 'Agent Skills'는 AI 코딩 에이전트가 소프트웨어 개발 생명주기 전 단계에서 시니어 엔지니어 수준의 워크플로우를 일관되게 따르도록 설계된 24개의 구조화된 스킬 모음이다. /spec, /plan, /build, /test, /review, /ship 등 8개의 슬래시 커맨드로 각 단계를 활성화하며, Claude Code, Cursor, Copilot, Codex 등 70개 이상의 에이전트 도구에 설치할 수 있다. 각 스킬은 단계별 워크플로우, 품질 게이트, 검증 요건, 그리고 에이전트가 단계를 건너뛰려는 핑계에 대한 반박 테이블을 포함한다. Google의 엔지니어링 문화(Hyrum's Law, Beyonce Rule, Trunk-based development 등)에서 검증된 원칙들이 워크플로우에 직접 내재되어 있다.",
+    "why_it_matters": "AI 에이전트가 스펙·테스트·보안 리뷰를 생략하고 최단 경로를 택하는 문제를 구조적 워크플로우로 강제함으로써, 프로토타입 품질이 아닌 프로덕션 품질의 코드를 일관되게 생성할 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8663392857142858,
+    "published_at": "2026-07-09T01:32:41Z"
+  },
+  {
+    "id": "github_trending-TencentCloud/TencentDB-Agent-Memory",
+    "section": "releases",
+    "title_en": "TencentCloud/TencentDB-Agent-Memory",
+    "title_ko": "TencentCloud, AI 에이전트용 로컬 장기 메모리 시스템 'TencentDB Agent Memory' 공개",
+    "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "텐센트클라우드가 AI 에이전트를 위한 완전 로컬 장기 메모리 시스템을 오픈소스로 공개했다. 4단계 계층형 파이프라인(L0~L3)으로 단기 심볼릭 메모리와 장기 페르소나 메모리를 분리 관리하며, 외부 API 의존 없이 SQLite 기반으로 동작한다. OpenClaw와 통합 시 토큰 사용량을 최대 61.38% 절감하고, WideSearch 벤치마크 성공률을 33%에서 50%로, PersonaMem 정확도를 48%에서 76%로 향상시켰다. OpenClaw 플러그인 및 Hermes 에이전트 통합을 지원한다.",
+    "why_it_matters": "에이전트의 장기 메모리를 외부 API 없이 로컬에서 계층적으로 관리하며 토큰 비용과 성능을 동시에 개선하는 실전 수준의 오픈소스 솔루션이다.",
+    "tags": [
+      "에이전트",
+      "RAG",
+      "오픈소스"
+    ],
+    "score": 0.8663392857142858,
+    "published_at": "2026-07-09T01:32:41Z"
+  },
+  {
+    "id": "github_trending-iOfficeAI/OfficeCLI",
+    "section": "releases",
+    "title_en": "iOfficeAI/OfficeCLI",
+    "title_ko": "AI 에이전트를 위한 오픈소스 Office CLI 도구 'OfficeCLI'",
+    "url": "https://github.com/iOfficeAI/OfficeCLI",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "OfficeCLI는 AI 에이전트가 Word, Excel, PowerPoint 파일을 읽고 편집하고 자동화할 수 있도록 설계된 오픈소스 CLI 도구다. 단일 바이너리로 배포되며 Microsoft Office 설치 없이도 동작한다. 내장 HTML 렌더링 엔진을 통해 문서를 HTML 또는 PNG로 변환해 AI가 시각적으로 결과를 확인할 수 있으며, MCP 서버를 통해 Claude Code, Cursor, GitHub Copilot 등 주요 AI 코딩 도구와 통합된다. Apache 2.0 라이선스로 공개되어 있다.",
+    "why_it_matters": "AI 에이전트가 Office 문서를 직접 생성·편집·검증하는 자동화 파이프라인을 Office 없이 어디서든 구축할 수 있게 해주는 실용적인 오픈소스 도구다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8663392857142858,
+    "published_at": "2026-07-09T01:32:41Z"
+  },
+  {
+    "id": "github_trending-asgeirtj/system_prompts_leaks",
+    "section": "releases",
+    "title_en": "asgeirtj/system_prompts_leaks",
+    "title_ko": "주요 AI 챗봇 시스템 프롬프트 유출 모음 저장소",
+    "url": "https://github.com/asgeirtj/system_prompts_leaks",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude, ChatGPT, Gemini, Grok 등 주요 AI 챗봇의 시스템 프롬프트를 수집·공개하는 GitHub 저장소다. Anthropic의 Claude Fable 5·Opus 4.8·Claude Code, OpenAI의 GPT-5.5·Codex, Google의 Gemini 3.5 Flash, xAI의 Grok 등 수십 개 모델의 숨겨진 지침이 포함되어 있으며 정기적으로 업데이트된다. 워싱턴포스트에도 소개된 바 있다.",
+    "why_it_matters": "AI 제품의 숨겨진 행동 지침을 직접 확인할 수 있어, 프롬프트 엔지니어링 및 AI 안전성 연구에 중요한 참고 자료가 된다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8663392857142858,
+    "published_at": "2026-07-09T01:32:41Z"
+  },
+  {
+    "id": "github_trending-bradautomates/claude-video",
+    "section": "releases",
+    "title_en": "bradautomates/claude-video",
+    "title_ko": "Claude에게 영상을 볼 수 있는 능력을 부여하는 오픈소스 툴 'claude-video'",
+    "url": "https://github.com/bradautomates/claude-video",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "claude-video는 `/watch` 커맨드 하나로 Claude가 YouTube, TikTok, 로컬 영상 등을 분석할 수 있게 해주는 오픈소스 플러그인이다. yt-dlp로 자막을 가져오고, ffmpeg로 프레임을 추출한 뒤, Whisper API로 음성을 전사해 Claude에게 전달한다. Claude Code, Cursor, Codex, Copilot, Gemini CLI 등 50개 이상의 에이전트 환경에서 설치 가능하며, 공개 영상의 경우 자막이 있으면 추가 API 키 없이 무료로 동작한다.",
+    "why_it_matters": "Claude가 텍스트·코드를 넘어 영상 콘텐츠를 직접 '보고 듣고' 답변할 수 있게 되어, 영상 기반 업무 자동화의 가능성을 크게 확장한다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8663392857142858,
+    "published_at": "2026-07-09T01:32:41Z"
+  },
+  {
+    "id": "openai_blog-government-national-security-partnerships",
+    "section": "releases",
+    "title_en": "Our approach to government and national security partnerships",
+    "title_ko": "OpenAI의 정부 및 국가 안보 파트너십 접근 방식 공개",
+    "url": "https://openai.com/index/government-national-security-partnerships",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 정부 및 국가 안보 기관과의 파트너십에 대한 공식 입장을 발표했다. 책임 있는 AI 활용, 민주적 책임, 공공 안전을 핵심 원칙으로 삼고 있다. 이를 통해 AI 기술이 정부 영역에서 어떻게 운용될지에 대한 기준을 제시한다.",
+    "why_it_matters": "AI 기업이 정부·국가 안보 분야 협력의 원칙을 명문화함으로써 AI 거버넌스의 새로운 기준이 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7946445105820106,
+    "published_at": "2026-07-08T13:30:00Z"
+  },
+  {
+    "id": "openai_blog-separating-signal-from-noise-coding-evaluations",
+    "section": "releases",
+    "title_en": "Separating signal from noise in coding evaluations",
+    "title_ko": "코딩 평가에서 신호와 노이즈 구분하기",
+    "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI의 새로운 분석에 따르면 인기 있는 코딩 벤치마크인 SWE-Bench Pro에 신뢰성과 정확성 문제가 있는 것으로 밝혀졌다. 이번 연구는 AI 모델 평가 방식의 신뢰도에 의문을 제기하며, 벤치마크 결과 해석에 주의가 필요함을 시사한다.",
+    "why_it_matters": "AI 코딩 능력 평가의 기준이 되는 벤치마크 자체의 신뢰성 문제가 제기됨으로써, 기존 모델 비교 결과를 재검토해야 할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7916683201058201,
+    "published_at": "2026-07-08T13:00:00Z"
+  },
+  {
+    "id": "hn-48829312",
+    "section": "community",
+    "title_en": "Decoding the obfuscated bash script on a Uniqlo t-shirt",
+    "title_ko": "유니클로 티셔츠에 인쇄된 난독화 배시 스크립트 해독",
+    "url": "https://tris.sherliker.net/blog/obfuscated-self-evaluating-bash-script-by-cdn-akamai-being-supplied-to-consumers-via-retail-stores/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "유니클로 티셔츠에 프린트된 난독화된 Bash 스크립트를 해독하는 내용을 다룬 글이다. 티셔츠에 실제로 의미 있는 코드가 숨겨져 있는지 분석한 것으로 보인다.",
+    "why_it_matters": "패션과 해킹 문화가 결합된 흥미로운 사례로, 난독화 기법에 관심 있는 개발자에게 참고가 된다.",
+    "tags": [],
+    "score": 10.85362363966153,
+    "published_at": "2026-07-08T08:46:06Z"
+  },
+  {
+    "id": "hn-48834405",
+    "section": "community",
+    "title_en": "GPT‑Live",
+    "title_ko": "GPT‑Live",
+    "url": "https://openai.com/index/introducing-gpt-live/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GPT‑Live라는 프로젝트 또는 서비스가 공개되었다. 상세한 설명이 제공되지 않아 구체적인 기능은 확인하기 어렵다.",
+    "why_it_matters": "GPT 기반 실시간 기능과 관련된 프로젝트로 보이나, 추가 정보 확인이 필요하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.432394417128426,
+    "published_at": "2026-07-08T17:03:19Z"
+  },
+  {
+    "id": "hn-48835111",
+    "section": "community",
+    "title_en": "Grok 4.5",
+    "title_ko": "Grok 4.5 출시",
+    "url": "https://x.ai/news/grok-4-5",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "xAI의 새로운 AI 모델 Grok 4.5가 공개되었다. 상세한 설명이 제공되지 않아 구체적인 성능 지표나 기능은 확인하기 어렵다.",
+    "why_it_matters": "xAI의 최신 모델 업데이트로, Grok 시리즈의 발전 방향을 가늠할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.42607799816237,
+    "published_at": "2026-07-08T18:00:32Z"
+  },
+  {
+    "id": "hn-48780387",
+    "section": "community",
+    "title_en": "EVE Online's Carbon engine is now open source: Fenris Creations explains why",
+    "title_ko": "EVE Online의 Carbon 엔진, 오픈소스로 공개",
+    "url": "https://www.gamesindustry.biz/eve-onlines-carbon-engine-is-now-open-source-fenris-creations-explains-why",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "EVE Online 개발사가 자사 게임 엔진인 Carbon을 오픈소스로 공개했다. Fenris Creations가 이 결정의 배경과 이유를 설명했다.",
+    "why_it_matters": "대형 상용 게임 엔진의 오픈소스화는 개발자 커뮤니티에 새로운 기술 자원을 제공할 수 있다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 9.414269395166329,
+    "published_at": "2026-07-03T21:46:07Z"
+  },
+  {
+    "id": "hn-48832212",
+    "section": "community",
+    "title_en": "Mistral's Robostral Navigate: a state of the art robotics navigation model",
+    "title_ko": "Mistral의 로보스트랄 네비게이트: 최첨단 로보틱스 탐색 모델",
+    "url": "https://mistral.ai/news/robostral-navigate/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Mistral이 로보틱스 탐색에 특화된 모델인 'Robostral Navigate'를 공개했다. 해당 모델은 로봇의 경로 탐색 분야에서 최첨단 성능을 목표로 한다.",
+    "why_it_matters": "LLM 강자 Mistral이 로보틱스 영역으로 확장하며 AI 응용 범위가 넓어지고 있음을 시사한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 9.33708894448365,
+    "published_at": "2026-07-08T14:09:17Z"
+  },
+  {
+    "id": "youtube-8io9vuqtdPI",
+    "section": "video",
+    "title_en": "[LIVE] OpenAI 내부자가 직접 알려주는 신규 업데이트 및 Codex 사용법",
+    "title_ko": "[LIVE] OpenAI 내부자가 직접 알려주는 신규 업데이트 및 Codex 사용법",
+    "url": "https://www.youtube.com/watch?v=8io9vuqtdPI",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "OpenAI 내부자가 직접 출연해 최신 업데이트 내용과 Codex 활용법을 소개하는 라이브 영상이다. OpenAI의 공식 관계자가 직접 설명하는 자리로, Codex의 실제 사용 방법을 다룬다.",
+    "why_it_matters": "OpenAI 내부자가 직접 Codex 사용법을 설명해 개발자들이 최신 기능을 빠르게 파악할 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7683019179894179,
+    "published_at": "2026-07-08T09:04:28Z"
+  },
+  {
+    "id": "youtube-waqL9iuFwcM",
+    "section": "video",
+    "title_en": "언제 사라질지 모르는 클로드 토큰 절약법",
+    "title_ko": "곧 사라질 수도 있는 클로드 토큰 절약 방법",
+    "url": "https://www.youtube.com/shorts/waqL9iuFwcM",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "유튜버 조코딩이 클로드(Claude) 사용 시 토큰을 절약할 수 있는 방법을 소개하는 영상입니다. 언제 막힐지 모르는 팁인 만큼 빠르게 확인하는 것이 좋습니다.",
+    "why_it_matters": "클로드 API 비용 절감에 관심 있는 개발자라면 주목할 만한 실용적 팁.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7679216269841269,
+    "published_at": "2026-07-08T09:00:38Z"
+  },
+  {
+    "id": "youtube-jO0y1P9WZyM",
+    "section": "video",
+    "title_en": "AI 시대에 덕후들이 만들어낸 물건",
+    "title_ko": "AI 시대에 덕후들이 만들어낸 물건",
+    "url": "https://www.youtube.com/shorts/jO0y1P9WZyM",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 AI를 활용해 덕후(마니아)들이 직접 만들어낸 창작물을 소개하는 영상이다. 해리포터 등 팬덤 문화와 AI 기술이 결합된 사례를 다루는 것으로 보인다.",
+    "why_it_matters": "AI 도구를 활용한 팬·메이커 문화의 가능성을 엿볼 수 있는 사례 모음으로, 비개발자도 AI로 창작물을 만드는 트렌드를 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7500611772486773,
+    "published_at": "2026-07-08T06:00:36Z"
+  },
+  {
+    "id": "simon_willison-rewriting-bun-in-rust",
+    "section": "deepdive",
+    "title_en": "Rewriting Bun in Rust",
+    "title_ko": "Bun을 Rust로 재작성한 에이전틱 엔지니어링 사례",
+    "url": "https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/#atom-everything",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Bun의 창시자 Jarred Sumner가 Zig로 작성된 Bun 코드베이스를 Rust로 재작성하는 과정을 상세히 공개했다. 핵심은 AI 에이전트를 활용한 자동화된 포팅으로, TypeScript로 작성된 기존 테스트 스위트를 적합성 검증 도구로 삼아 11일 만에 백만 줄 이상의 Rust 코드를 생성했다. API 비용으로 약 165,000달러(약 59억 입력 토큰, 690억 출력 토큰)가 소요됐으며, 새 Rust 구현은 Claude Code v2.1.181부터 실제 서비스에 적용됐다.",
+    "why_it_matters": "AI 에이전트가 대규모 프로덕션 코드베이스의 언어 전면 전환을 현실적으로 가능하게 만든 첫 번째 공개 사례로, 소프트웨어 재작성 금기를 깨는 새로운 패러다임을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.8568816137566138,
+    "published_at": "2026-07-08T23:57:21Z"
+  }
+]

@@ -1,0 +1,366 @@
+[
+  {
+    "id": "hf-2606.19195",
+    "section": "papers",
+    "title_en": "Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance",
+    "title_ko": "Moebius: 0.2B 경량 이미지 인페인팅 프레임워크로 10B급 성능 달성",
+    "url": "https://huggingface.co/papers/2606.19195",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Moebius는 0.22B 파라미터만으로 11.9B 규모의 FLUX.1-Fill-Dev에 필적하거나 능가하는 이미지 인페인팅 성능을 구현한 경량 프레임워크다. 핵심은 Local-λ Mix Interaction(LλMI) 블록으로, 공간 컨텍스트와 전역 의미론적 정보를 고정 크기 선형 행렬로 압축해 표현력을 유지하면서 파라미터를 대폭 줄인다. 또한 잠재 공간 내에서만 동작하는 적응형 다중 세분성 증류 전략을 통해 고품질 정렬을 달성한다. 결과적으로 전체 추론 시간을 15배 이상 단축하며 새로운 경량 인페인팅 효율 기준을 세웠다.",
+    "why_it_matters": "10B급 대형 모델의 성능을 2% 미만의 파라미터와 15배 이상의 속도로 재현함으로써, 실용적 배포가 어려웠던 고품질 인페인팅 기술의 접근성을 크게 높인다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 5.7535901911063645,
+    "published_at": "2026-06-16T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.20517",
+    "section": "papers",
+    "title_en": "Multi-LCB: Extending LiveCodeBench to Multiple Programming Languages",
+    "title_ko": "Multi-LCB: LiveCodeBench을 12개 프로그래밍 언어로 확장한 벤치마크",
+    "url": "https://huggingface.co/papers/2606.20517",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "LiveCodeBench(LCB)는 코드 생성 평가에 널리 쓰이지만 Python에만 한정된 한계가 있었다. Multi-LCB는 LCB의 Python 문제를 11개 언어로 변환해 총 12개 언어에서 LLM을 평가할 수 있는 벤치마크를 제공한다. 24개 LLM을 평가한 결과, Python 과적합, 언어별 데이터 오염, 다국어 성능 격차 등 현 LLM의 심각한 취약점이 드러났다. LCB 포맷과 완전 호환되어 향후 LCB 업데이트도 자동으로 반영된다.",
+    "why_it_matters": "Python 편향 평가를 넘어 실제 소프트웨어 엔지니어링 환경에서 LLM의 다국어 코드 생성 능력을 체계적으로 검증할 수 있는 첫 번째 오염 방지 다국어 코드 벤치마크다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.02535169073515,
+    "published_at": "2026-06-17T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.19534",
+    "section": "papers",
+    "title_en": "PerceptionDLM: Parallel Region Perception with Multimodal Diffusion Language Models",
+    "title_ko": "PerceptionDLM: 멀티모달 확산 언어 모델을 활용한 병렬 지역 인식",
+    "url": "https://huggingface.co/papers/2606.19534",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "기존 멀티모달 대형 언어 모델(MLLM)은 자기회귀 방식으로 여러 이미지 영역을 순차적으로 처리해 효율이 낮았다. 이를 해결하기 위해 PerceptionDLM은 확산 언어 모델(DLM)의 병렬 디코딩 특성을 활용해 여러 마스크 영역의 캡션을 동시에 생성한다. 효율적인 프롬프팅과 구조화된 어텐션 마스킹을 도입해 시퀀스 및 토큰 수준에서 병렬 처리를 구현했으며, 평가를 위한 새로운 벤치마크 ParaDLC-Bench도 함께 공개했다. 코드·모델·데이터셋 모두 오픈소스로 제공된다.",
+    "why_it_matters": "확산 언어 모델로 다중 영역 캡셔닝을 최초로 병렬화해 멀티모달 비전-언어 추론의 속도 병목을 근본적으로 개선할 가능성을 제시한다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 4.850147601710058,
+    "published_at": "2026-06-16T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.19419",
+    "section": "papers",
+    "title_en": "Playful Agentic Robot Learning",
+    "title_ko": "자유 놀이로 로봇 스킬을 사전 학습하는 에이전트 시스템 'RATs'",
+    "url": "https://huggingface.co/papers/2606.19419",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "RATs(Robotics Agent Teams)는 로봇 에이전트가 명시적 태스크 지시 없이 '자유 놀이' 단계를 통해 재사용 가능한 코드 스킬을 자율적으로 축적하는 프레임워크다. 놀이 중 스스로 탐색 태스크를 제안하고, 코드 정책을 실행·검증·수정하며, 성공한 실행을 영구 스킬 라이브러리에 저장한다. LIBERO-PRO와 MolmoSpaces 실험에서 기준 대비 각각 20.6p, 17.0p 성능 향상을 달성했으며, 학습된 스킬은 파인튜닝 없이 다른 에이전트의 컨텍스트에 삽입해 재활용할 수 있다.",
+    "why_it_matters": "태스크 지시 없이 놀이만으로 범용 로봇 스킬을 사전 축적하는 접근법은 로봇 학습의 데이터 효율성과 일반화 가능성을 크게 높일 수 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 4.80666248977032,
+    "published_at": "2026-06-16T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.20515",
+    "section": "papers",
+    "title_en": "S-Agent: Spatial Tool-Use Elicits Reasoning for Spatial Intelligence",
+    "title_ko": "S-Agent: 공간 도구 활용으로 3D 공간 지능 추론 구현",
+    "url": "https://huggingface.co/papers/2606.20515",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "S-Agent는 연속적인 멀티뷰 이미지와 비디오에서 공간 추론을 수행하는 에이전트 패러다임입니다. VLM을 시맨틱 플래너로 활용하고, 계층적 공간 도구가 2D 객체를 3D 기하학적 증거로 변환하며, 씬 메모리와 에이전트 메모리를 통해 프레임 간 증거를 통합합니다. S-300K 궤적 데이터로 파인튜닝된 S-Agent-8B는 동급 모델(Qwen3-VL-8B)을 크게 능가하며, GPT-5.4·Gemini 3 수준의 성능을 보입니다.",
+    "why_it_matters": "학습 없이도 기존 VLM의 공간 추론 능력을 향상시키고, 소형 모델로 최상위 클로즈드 소스 모델에 필적하는 성능을 달성했다는 점에서 실용적 가치가 높다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.637586159726386,
+    "published_at": "2026-06-17T20:00:00Z"
+  },
+  {
+    "id": "github_trending-ZhuLinsen/daily_stock_analysis",
+    "section": "releases",
+    "title_en": "ZhuLinsen/daily_stock_analysis",
+    "title_ko": "LLM 기반 다중 시장 주식 자동 분석 시스템 — daily_stock_analysis",
+    "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "LLM을 활용해 A주·홍콩·미국·일본·한국 주식을 매일 자동 분석하고, 결정 대시보드를 기업 위챗·슬랙·텔레그램·이메일 등으로 자동 발송하는 오픈소스 시스템입니다. GitHub Actions를 통해 서버 없이 무료로 스케줄 실행이 가능하며, Docker 및 로컬 배포도 지원합니다. OpenAI·Gemini·DeepSeek·Claude·Ollama 등 다양한 LLM API를 연결할 수 있고, 멀티턴 에이전트 기반 전략 문의 기능도 내장되어 있습니다.",
+    "why_it_matters": "LLM과 실시간 시장 데이터를 결합한 자동화 주식 분석 파이프라인을 무료·무서버 환경에서 즉시 구축할 수 있어, 개인 투자자와 개발자 모두에게 실용적인 AI 활용 사례를 제공합니다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8678869047619048,
+    "published_at": "2026-06-22T01:48:17Z"
+  },
+  {
+    "id": "github_trending-mukul975/Anthropic-Cybersecurity-Skills",
+    "section": "releases",
+    "title_en": "mukul975/Anthropic-Cybersecurity-Skills",
+    "title_ko": "AI 에이전트를 위한 754개 사이버보안 스킬 오픈소스 라이브러리",
+    "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "AI 에이전트가 시니어 보안 분석가 수준의 판단을 내릴 수 있도록 설계된 오픈소스 사이버보안 스킬 라이브러리다. 26개 보안 도메인에 걸쳐 754개의 구조화된 스킬을 제공하며, MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF 등 6개 프레임워크에 매핑되어 있다. Claude Code, GitHub Copilot, Gemini CLI 등 20개 이상의 AI 플랫폼과 호환되며, agentskills.io 표준을 따른다. Apache 2.0 라이선스로 무료 사용·배포가 가능한 커뮤니티 프로젝트다.",
+    "why_it_matters": "AI 에이전트에 체계적인 사이버보안 실무 지식을 즉시 주입할 수 있어, 보안 인력 부족 문제를 AI로 보완하려는 개발자·보안팀에 실질적인 출발점이 된다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8678869047619048,
+    "published_at": "2026-06-22T01:48:17Z"
+  },
+  {
+    "id": "github_trending-asgeirtj/system_prompts_leaks",
+    "section": "releases",
+    "title_en": "asgeirtj/system_prompts_leaks",
+    "title_ko": "주요 AI 챗봇 시스템 프롬프트 유출 모음집",
+    "url": "https://github.com/asgeirtj/system_prompts_leaks",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "GitHub 저장소 'system_prompts_leaks'는 Claude, ChatGPT, Gemini, Grok 등 주요 AI 챗봇의 시스템 프롬프트를 수집·공개하는 프로젝트다. Anthropic의 Claude Fable 5·Opus 4.8, OpenAI의 GPT-5.5·Codex, Google의 Gemini 3.5 Flash, xAI의 Grok 등 수십 가지 모델과 통합 제품의 프롬프트가 포함되어 있으며 정기적으로 업데이트된다. 워싱턴포스트에도 소개된 바 있으며, Cursor·Copilot·Perplexity 등 개발 도구의 프롬프트도 망라한다.",
+    "why_it_matters": "AI 제품들이 내부적으로 어떤 지침으로 동작하는지 공개됨으로써, 개발자들이 프롬프트 설계 전략과 각 모델의 행동 원칙을 직접 분석할 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8678869047619048,
+    "published_at": "2026-06-22T01:48:17Z"
+  },
+  {
+    "id": "openai_blog-samsung-electronics-chatgpt-codex-deployment",
+    "section": "releases",
+    "title_en": "Samsung Electronics brings ChatGPT and Codex to employees",
+    "title_ko": "삼성전자, 임직원에게 ChatGPT와 Codex 도입",
+    "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "삼성전자가 전 세계 임직원을 대상으로 ChatGPT Enterprise와 Codex를 배포했다. 이는 OpenAI의 기업용 AI 서비스 중 최대 규모의 롤아웃 중 하나로 기록된다.",
+    "why_it_matters": "글로벌 대기업인 삼성전자의 대규모 도입은 기업용 AI 시장에서 OpenAI의 입지를 더욱 굳히는 중요한 사례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8511921296296296,
+    "published_at": "2026-06-21T23:00:00Z"
+  },
+  {
+    "id": "openai_blog-chatgpt-enterprise-spend-controls",
+    "section": "releases",
+    "title_en": "New usage analytics and updated spend controls for enterprises",
+    "title_ko": "기업용 ChatGPT에 새로운 사용량 분석 및 지출 관리 기능 추가",
+    "url": "https://openai.com/index/chatgpt-enterprise-spend-controls",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 ChatGPT Enterprise에 새로운 지출 관리 기능과 사용량 분석 도구를 도입했다. 이를 통해 기업들이 AI 비용을 보다 효과적으로 관리하고 자신 있게 AI를 확장 도입할 수 있도록 지원한다.",
+    "why_it_matters": "기업의 AI 도입 확산에 따라 비용 가시성과 통제력 강화는 실무 도입의 핵심 장벽을 낮추는 중요한 요소다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.38690641534391534,
+    "published_at": "2026-06-18T17:00:00Z"
+  },
+  {
+    "id": "openai_blog-improving-health-intelligence-in-chatgpt",
+    "section": "releases",
+    "title_en": "Improving health intelligence in ChatGPT",
+    "title_ko": "ChatGPT 건강 정보 지능 향상",
+    "url": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 GPT-5.5 Instant를 통해 ChatGPT의 건강 및 웰니스 관련 응답 품질을 개선했다. 더 강화된 추론 능력, 향상된 맥락 이해, 명확한 커뮤니케이션이 특징이며, 의사들의 평가를 반영해 개발되었다.",
+    "why_it_matters": "의료 분야에서 AI의 신뢰성과 정확성이 직접적인 건강 의사결정에 영향을 미치는 만큼, 의사 검증 기반의 모델 개선은 중요한 진전이다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.35119212962962965,
+    "published_at": "2026-06-18T11:00:00Z"
+  },
+  {
+    "id": "openai_blog-diagnose-rare-childhood-diseases",
+    "section": "releases",
+    "title_en": "Using AI to help physicians diagnose rare genetic diseases affecting children",
+    "title_ko": "AI로 소아 희귀 유전질환 진단 지원",
+    "url": "https://openai.com/index/diagnose-rare-childhood-diseases",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "연구자들이 OpenAI의 추론 모델을 활용해 희귀 질환 진단에 도전한 결과, 기존에 해결되지 않았던 사례에서 18건의 새로운 진단을 이끌어냈다. 이 연구는 AI가 의료 현장에서 실질적인 진단 보조 도구로 활용될 수 있음을 보여준다.",
+    "why_it_matters": "진단이 어려운 소아 희귀 유전질환에서 AI 추론 모델이 실제 미해결 사례를 해결하는 성과를 냈다는 점에서 임상 AI 적용의 가능성을 입증한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.33333498677248674,
+    "published_at": "2026-06-18T08:00:00Z"
+  },
+  {
+    "id": "hn-48618455",
+    "section": "community",
+    "title_en": "Identity verification on Claude",
+    "title_ko": "Claude의 신원 확인 기능",
+    "url": "https://support.claude.com/en/articles/14328960-identity-verification-on-claude",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Anthropic의 Claude에 신원 확인 관련 기능이 도입되었다. 제목만으로는 세부 내용을 확인하기 어려워 구체적인 사항은 파악이 제한적이다.",
+    "why_it_matters": "AI 서비스의 신원 확인 도입은 사용자 신뢰 및 안전성과 직결된 중요한 변화다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.941246744010876,
+    "published_at": "2026-06-21T12:44:13Z"
+  },
+  {
+    "id": "hn-48622778",
+    "section": "community",
+    "title_en": "Apertus – Open Foundation Model for Sovereign AI",
+    "title_ko": "Apertus – 자주적 AI를 위한 오픈 파운데이션 모델",
+    "url": "https://apertvs.ai/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Apertus는 주권형(Sovereign) AI를 지향하는 오픈 파운데이션 모델 프로젝트다. 특정 기업이나 국가에 종속되지 않는 독립적인 AI 인프라 구축을 목표로 한다.",
+    "why_it_matters": "AI 주권 및 오픈소스 파운데이션 모델에 관심 있는 개발자와 기관에 주목할 만한 프로젝트다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 9.585225601808064,
+    "published_at": "2026-06-21T21:29:43Z"
+  },
+  {
+    "id": "hn-48622518",
+    "section": "community",
+    "title_en": "There is minimal downside to switching to open models",
+    "title_ko": "오픈 모델로 전환할 때 단점은 거의 없다",
+    "url": "https://www.marble.onl/posts/cancel_claude.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "이 글은 오픈 소스 AI 모델로 전환하는 것에 대한 리스크가 매우 낮다는 주장을 담고 있다. 제목만으로는 구체적인 근거나 사례를 확인할 수 없으나, 오픈 모델 채택을 긍정적으로 바라보는 관점을 제시하는 것으로 보인다.",
+    "why_it_matters": "오픈 소스 모델 전환을 고려하는 개발자·기업에게 의사결정 참고가 될 수 있는 시각을 제공한다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 9.327800920865291,
+    "published_at": "2026-06-21T20:56:01Z"
+  },
+  {
+    "id": "hn-48621517",
+    "section": "community",
+    "title_en": "JSON-LD explained for personal websites",
+    "title_ko": "개인 웹사이트를 위한 JSON-LD 해설",
+    "url": "https://hawksley.dev/blog/json-ld-explained-for-personal-websites/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "JSON-LD가 개인 웹사이트에서 어떻게 활용되는지 설명하는 글이다. 구체적인 내용은 제공된 정보만으로 확인하기 어렵다.",
+    "why_it_matters": "구조화 데이터 마크업인 JSON-LD를 개인 웹사이트에 적용하는 방법을 다루는 입문 자료로 보인다.",
+    "tags": [],
+    "score": 8.620687785500866,
+    "published_at": "2026-06-21T18:51:47Z"
+  },
+  {
+    "id": "hn-48626930",
+    "section": "community",
+    "title_en": "Codex logging bug may write TBs to local SSDs",
+    "title_ko": "Codex 로깅 버그, 로컬 SSD에 TB 단위 데이터 기록 가능성",
+    "url": "https://github.com/openai/codex/issues/28224",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "OpenAI Codex에서 로깅 버그가 발견되어 로컬 SSD에 테라바이트 단위의 데이터가 기록될 수 있는 문제가 보고되었다. 이 버그는 사용자의 저장 장치에 심각한 영향을 줄 수 있다.",
+    "why_it_matters": "개발 환경에서 Codex를 사용하는 경우 SSD 수명 단축 및 저장 공간 고갈로 이어질 수 있어 즉각적인 확인이 필요하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.481235504185614,
+    "published_at": "2026-06-22T07:30:17Z"
+  },
+  {
+    "id": "youtube-tnIFBDyOlGE",
+    "section": "video",
+    "title_en": "IT뉴스 - GLM-5.2 열풍, 구글의 위기, GPT-5.6 소식, Codex Record & Replay, Mythos 논란, 미드저니 근황 등",
+    "title_ko": "GLM-5.2 열풍·GPT-5.6 소식·Codex Record & Replay 등 AI 주요 뉴스 정리",
+    "url": "https://www.youtube.com/watch?v=tnIFBDyOlGE",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "이 영상은 GLM-5.2의 주목, 구글의 위기, GPT-5.6 관련 소식, Codex의 Record & Replay 기능, Mythos 논란, 미드저니 근황 등 최신 AI 및 IT 이슈를 종합적으로 다룬다. 조코딩 채널의 뉴스 큐레이션 콘텐츠로, 다양한 AI 도구와 서비스의 동향을 한데 정리했다. 구체적인 수치나 세부 내용은 영상 내에서 확인할 수 있다.",
+    "why_it_matters": "GLM-5.2, GPT-5.6 등 최신 LLM 경쟁 구도와 코딩 AI 도구 동향을 한국어로 빠르게 파악할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.778968253968254,
+    "published_at": "2026-06-21T10:51:59Z"
+  },
+  {
+    "id": "youtube-3cIT7BBOEeE",
+    "section": "video",
+    "title_en": "천재적인 앱 만들어서 애플 본사 초청되어 CEO 앞에서 직접 시연한 한국 대학생",
+    "title_ko": "애플 본사에 초청된 한국 대학생들의 Swift Student Challenge 수상 비결",
+    "url": "https://www.youtube.com/watch?v=3cIT7BBOEeE",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "Swift Student Challenge에서 수상한 한국 대학생 두 명(장유진, 정윤재)이 각자 개발한 앱 '김치랩'과 '르비올라'를 소개하고 애플 CEO 앞에서 직접 시연한 경험을 공유한다. 애플 디벨로퍼 아카데미 경험담과 함께 Swift Student Challenge 지원 팁 및 수상 혜택도 안내한다.",
+    "why_it_matters": "국내 대학생 개발자들이 애플 글로벌 챌린지에서 인정받은 실제 사례로, 도전을 준비하는 한국 개발자들에게 실질적인 참고가 된다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 0.4821924603174603,
+    "published_at": "2026-06-19T09:00:29Z"
+  },
+  {
+    "id": "youtube-XVZbwPkBLLw",
+    "section": "video",
+    "title_en": "신종 구걸 방법",
+    "title_ko": "신종 구걸 방법 (AI·휴머노이드 관련)",
+    "url": "https://www.youtube.com/shorts/XVZbwPkBLLw",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널의 영상으로, AI 및 휴머노이드 로봇과 관련된 '신종 구걸 방법'이라는 주제를 다루고 있다. 구체적인 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "영상 설명이 충분하지 않아 핵심 내용을 파악하기 어려움.",
+    "tags": [],
+    "score": 0.4821643518518519,
+    "published_at": "2026-06-19T09:00:12Z"
+  },
+  {
+    "id": "simon_willison-sqlite-utils-40rc1",
+    "section": "deepdive",
+    "title_en": "sqlite-utils 4.0rc1 adds migrations and nested transactions",
+    "title_ko": "sqlite-utils 4.0rc1 출시 — 마이그레이션 및 중첩 트랜잭션 지원 추가",
+    "url": "https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/#atom-everything",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Simon Willison이 SQLite 작업용 Python 라이브러리·CLI 도구인 sqlite-utils의 4.0 첫 번째 릴리스 후보(rc1)를 공개했다. 주요 신기능으로 데이터베이스 마이그레이션(sqlite-migrate 패키지를 통합)과 Django·Peewee에서 차용한 `db.atomic()`을 이용한 중첩 트랜잭션 지원이 추가됐다. v4에는 Upsert 구문 변경, Python 3.8 지원 중단, 부동소수점 컬럼 기본 타입 변경(FLOAT→REAL) 등 여러 하위 호환성 파괴 변경도 포함되어 있다. `pip install sqlite-utils==4.0rc1`로 설치해 테스트할 수 있다.",
+    "why_it_matters": "SQLite 기반 프로젝트에서 마이그레이션과 중첩 트랜잭션을 간결하게 관리할 수 있게 되어 데이터 파이프라인·로컬 AI 도구 개발 워크플로가 크게 단순해진다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 0.8547420634920635,
+    "published_at": "2026-06-21T23:35:47Z"
+  }
+]

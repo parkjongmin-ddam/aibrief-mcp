@@ -1,0 +1,367 @@
+[
+  {
+    "id": "hf-2607.07708",
+    "section": "papers",
+    "title_en": "Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning",
+    "title_ko": "SciReasoner: 단백질·분자·결정 구조-특성 관계를 추론하는 멀티모달 과학 기반 모델",
+    "url": "https://huggingface.co/papers/2607.07708",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SciReasoner는 단백질, 소분자, 무기 결정의 구조-특성 관계를 과학적 원리 기반으로 추론하는 멀티모달 파운데이션 모델이다. 좌표·위상·주기적 연결성을 통합된 구조 인식 어휘로 이산화하여 추론 중 구조 토큰을 증거 단위로 활용한다. 86개 벤치마크 중 67개에서 최고 성능을 달성했으며, 전문가 이중맹검 평가에서 98% 케이스에서 프런티어 LLM의 추론과 동등하거나 우수한 평가를 받았다. Gene Ontology 예측, 역합성 정확도 향상 등 생물학·화학·재료과학 전 분야에 걸쳐 성과를 입증했다.",
+    "why_it_matters": "과학적 구조 데이터를 해석 가능한 추론 근거로 전환함으로써 AI 기반 신약·소재 발견의 신뢰성과 설명 가능성을 동시에 높일 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.356708826689592,
+    "published_at": "2026-07-07T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.07608",
+    "section": "papers",
+    "title_en": "Dual Latent Memory in Vision-Language-Action Models for Robotic Manipulation",
+    "title_ko": "로봇 조작을 위한 비전-언어-행동 모델의 이중 잠재 메모리 프레임워크 LaMem-VLA",
+    "url": "https://huggingface.co/papers/2607.07608",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "기존 VLA 모델은 현재 관측만으로 행동을 예측해 장기적·시간 의존적 작업에 취약했습니다. LaMem-VLA는 단기·장기 두 메모리 저장소를 두고, 과거 경험을 잠재 토큰으로 재구성하여 VLA 추론 과정에 직접 통합하는 프레임워크입니다. 큐레이터·시커·컨덴서·위버 4개 모듈이 협력해 과거 경험을 동일한 연속 잠재 공간에서 표현·검색·소비하여 행동 생성을 안내합니다. SimplerEnv와 LIBERO 벤치마크에서 기존 방법 대비 우수한 성능을 확인했습니다.",
+    "why_it_matters": "로봇이 장기 작업에서 과거 경험을 자연스럽게 활용할 수 있게 해, 실제 환경 적용 가능성을 높이는 핵심 접근법이다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 4.931825632724326,
+    "published_at": "2026-07-07T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.07675",
+    "section": "papers",
+    "title_en": "Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence",
+    "title_ko": "구현된 지능을 위한 MoE 기반 대규모 비디오 사전학습: LingBot-Video",
+    "url": "https://huggingface.co/papers/2607.07675",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LingBot-Video는 로봇 제어에 특화된 DiT 기반 비디오 사전학습 패러다임으로, Mixture-of-Experts(MoE) 아키텍처를 채택해 모델 용량과 추론 효율의 균형을 맞췄다. 데이터 측면에서는 조작·내비게이션·1인칭 시점 등 로봇 관련 영상을 포함한 데이터 프로파일링 엔진을 구축했으며, 물리적 합리성과 작업 완료도를 반영한 다차원 보상 시스템으로 학습한다. 이 모델은 디지털 콘텐츠 생성과 물리적 로봇 제어를 연결하는 최초의 대규모 오픈소스 MoE 비디오 파운데이션 모델로 공개된다.",
+    "why_it_matters": "영상 생성 모델을 로봇 제어에 특화시킨 최초의 오픈소스 대규모 MoE 비디오 파운데이션 모델로, 구현 지능 연구의 새로운 기반을 제시한다.",
+    "tags": [
+      "LLM",
+      "오픈소스",
+      "에이전트"
+    ],
+    "score": 4.7841896339182615,
+    "published_at": "2026-07-07T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.07534",
+    "section": "papers",
+    "title_en": "Infinite Worlds with Versatile Interactions",
+    "title_ko": "LingBot-World 2.0: 무한 인터랙션을 지원하는 세계 시뮬레이터",
+    "url": "https://huggingface.co/papers/2607.07534",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LingBot-World 2.0(LingBot-World-Infinity)은 무제한 인터랙션 지평선, 720p 60fps 실시간 스트리밍, 공격·궁술·주문 시전 등 다양한 행동 지원, 그리고 에이전트 기반 세계 모델링을 새롭게 도입한 고도화된 세계 시뮬레이터다. 파일럿 에이전트가 캐릭터 행동을 계획·실행하고, 디렉터 에이전트가 새로운 환경 요소를 생성하는 이중 에이전트 구조를 채택했다. 14B 기본 모델과 단일 GPU에서 구동 가능한 경량 1.3B 모델을 함께 제공하며, 멀티플레이어 동시 접속 인터페이스도 지원한다.",
+    "why_it_matters": "에이전트 기반 월드 모델링과 실시간 고화질 스트리밍을 결합해 인터랙티브 AI 세계 시뮬레이션의 새로운 기준을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.332204510175204,
+    "published_at": "2026-07-07T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.08768",
+    "section": "papers",
+    "title_en": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
+    "title_ko": "UniClawBench: 실세계 작업을 위한 프로액티브 에이전트 범용 벤치마크",
+    "url": "https://huggingface.co/papers/2607.08768",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "UniClawBench는 프로액티브 에이전트를 실세계 환경에서 평가하기 위한 최초의 능력 중심 벤치마크다. 스킬 활용, 탐색, 장문 추론, 멀티모달 이해, 크로스 플랫폼 조율 등 5가지 핵심 역량을 기반으로 400개의 이중 언어 실세계 태스크를 포함한다. 기존 샌드박스 환경과 달리 라이브 Docker 컨테이너에서 단계별 완료 체크포인트로 평가하며, 비밀 감독 에이전트와 사용자 에이전트를 활용한 폐쇄 루프 평가 전략을 통해 현실적인 멀티턴 피드백을 시뮬레이션한다.",
+    "why_it_matters": "기존 벤치마크의 정적·단일 턴 평가 한계를 극복하고, 에이전트 실패 원인을 모델 능력과 프레임워크 설계 수준에서 명확히 분리해 진단할 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.178053830347945,
+    "published_at": "2026-07-08T20:00:00Z"
+  },
+  {
+    "id": "github_trending-addyosmani/agent-skills",
+    "section": "releases",
+    "title_en": "addyosmani/agent-skills",
+    "title_ko": "AI 코딩 에이전트를 위한 프로덕션급 엔지니어링 스킬 패키지 'agent-skills'",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Addy Osmani가 공개한 'agent-skills'는 AI 코딩 에이전트가 시니어 엔지니어 수준의 개발 워크플로우를 일관되게 따르도록 돕는 24개의 구조화된 스킬 모음이다. /spec, /plan, /build, /test, /review, /ship 등 8개의 슬래시 커맨드로 개발 전 주기를 커버하며, Claude Code, Cursor, Copilot, Codex 등 70개 이상의 에이전트에 설치할 수 있다. 각 스킬은 단계별 워크플로우, 품질 게이트, 안티-합리화 테이블을 포함해 에이전트가 테스트·보안·리뷰 등 핵심 단계를 건너뛰지 못하도록 강제한다.",
+    "why_it_matters": "AI 에이전트가 최단 경로를 택해 스펙·테스트·보안 검토를 생략하는 문제를 구조적 워크플로우로 해결해, 프로토타입이 아닌 프로덕션 품질의 코드를 생성하도록 유도한다는 점에서 실무 적용 가치가 높다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.8663326719576719,
+    "published_at": "2026-07-11T01:32:37Z"
+  },
+  {
+    "id": "github_trending-TencentCloud/TencentDB-Agent-Memory",
+    "section": "releases",
+    "title_en": "TencentCloud/TencentDB-Agent-Memory",
+    "title_ko": "TencentCloud, AI 에이전트용 완전 로컬 장기 메모리 시스템 'TencentDB Agent Memory' 공개",
+    "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "텐센트클라우드가 외부 API 의존 없이 완전 로컬에서 동작하는 AI 에이전트용 장기 메모리 프레임워크를 오픈소스로 공개했다. 4계층 파이프라인(L0 대화→L1 원자 사실→L2 시나리오→L3 페르소나)으로 메모리를 계층화하고, Mermaid 심볼 그래프를 활용한 단기 컨텍스트 압축으로 토큰 사용량을 최대 61.38% 절감한다. OpenClaw와 통합 시 WideSearch 벤치마크에서 성공률이 33%에서 50%로 향상되었으며, PersonaMem 정확도는 48%에서 76%로 개선되었다. SQLite 기반 로컬 백엔드와 OpenClaw·Hermes 플러그인을 기본 제공한다.",
+    "why_it_matters": "외부 API 없이 완전 로컬에서 구동되는 계층형 에이전트 메모리 시스템으로, 토큰 절감과 장기 개인화를 동시에 달성하는 실용적 오픈소스 솔루션이다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8663326719576719,
+    "published_at": "2026-07-11T01:32:37Z"
+  },
+  {
+    "id": "github_trending-davila7/claude-code-templates",
+    "section": "releases",
+    "title_en": "davila7/claude-code-templates",
+    "title_ko": "Claude Code용 템플릿 모음 CLI 도구 - claude-code-templates",
+    "url": "https://github.com/davila7/claude-code-templates",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic의 Claude Code를 위한 AI 에이전트, 커스텀 명령어, 설정, 훅, MCP 연동 등 100개 이상의 컴포넌트를 제공하는 오픈소스 CLI 도구다. npx 명령어 하나로 프론트엔드 개발자 에이전트, 보안 감사 에이전트, GitHub·PostgreSQL 연동 등 다양한 템플릿을 즉시 설치할 수 있다. 실시간 세션 모니터링, 대화 뷰어, 헬스체크 등 부가 개발 도구도 포함되어 있으며, aitmpl.com에서 웹 인터페이스로 탐색·관리도 가능하다.",
+    "why_it_matters": "Claude Code 워크플로우를 빠르게 고도화할 수 있는 커뮤니티 주도 템플릿 생태계로, 반복 설정 없이 즉시 AI 에이전트·통합 기능을 팀 개발에 적용할 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.8663326719576719,
+    "published_at": "2026-07-11T01:32:37Z"
+  },
+  {
+    "id": "github_trending-tailscale/tailscale",
+    "section": "releases",
+    "title_en": "tailscale/tailscale",
+    "title_ko": "Tailscale: 쉽고 안전한 오픈소스 WireGuard VPN",
+    "url": "https://github.com/tailscale/tailscale",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Tailscale은 WireGuard 기반의 프라이빗 네트워크를 손쉽게 구성할 수 있는 오픈소스 프로젝트입니다. Linux, Windows, macOS, FreeBSD, OpenBSD 등 다양한 플랫폼을 지원하며, iOS·Android 앱에도 동일 코드베이스가 사용됩니다. 핵심 데몬인 tailscaled와 CLI 도구 tailscale이 이 저장소에 포함되어 있습니다.",
+    "why_it_matters": "복잡한 VPN 설정 없이 WireGuard 기반 안전한 사설 네트워크를 구축할 수 있어 개발자 인프라 구성에 실용적인 선택지가 됩니다.",
+    "tags": [
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 0.8663326719576719,
+    "published_at": "2026-07-11T01:32:37Z"
+  },
+  {
+    "id": "github_trending-iOfficeAI/OfficeCLI",
+    "section": "releases",
+    "title_en": "iOfficeAI/OfficeCLI",
+    "title_ko": "AI 에이전트를 위한 오피스 자동화 CLI 툴 'OfficeCLI'",
+    "url": "https://github.com/iOfficeAI/OfficeCLI",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "OfficeCLI는 AI 에이전트가 Word(.docx), Excel(.xlsx), PowerPoint(.pptx) 파일을 읽고 편집하고 생성할 수 있도록 설계된 오픈소스 CLI 도구다. Office 설치 없이 단일 바이너리로 동작하며, JSON 출력, 경로 기반 요소 접근, 내장 HTML/PNG 렌더링 엔진을 통해 에이전트가 문서를 '볼 수 있는' 환경을 제공한다. Claude Code, Cursor, GitHub Copilot 등 주요 AI 코딩 도구와 자동으로 연동되며 MCP 서버도 내장되어 있다. Apache 2.0 라이선스로 공개되어 있다.",
+    "why_it_matters": "AI 에이전트가 Office 문서를 자율적으로 생성·수정·검증하는 워크플로를 별도 라이선스나 런타임 없이 구현할 수 있어, 문서 자동화 에이전트 개발의 진입 장벽을 크게 낮춘다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8663326719576719,
+    "published_at": "2026-07-11T01:32:37Z"
+  },
+  {
+    "id": "openai_blog-deutsche-telekom",
+    "section": "releases",
+    "title_en": "How Deutsche Telekom is rewiring telecommunications with AI",
+    "title_ko": "도이체텔레콤, OpenAI와 함께 AI 네이티브 통신사로 전환",
+    "url": "https://openai.com/index/deutsche-telekom",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "도이체텔레콤이 OpenAI와 협력하여 고객 서비스, 직원 업무 흐름, 네트워크 운영 등 통신 사업 전반을 AI 중심으로 재편하고 있다. 특히 음성 서비스의 미래까지 AI로 혁신하는 'AI 네이티브 통신사'를 목표로 하고 있다.",
+    "why_it_matters": "글로벌 대형 통신사가 OpenAI를 기반으로 핵심 사업 전반을 AI로 전환하는 실제 사례로, 통신 산업의 AI 도입 방향성을 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7559540343915344,
+    "published_at": "2026-07-10T07:00:00Z"
+  },
+  {
+    "id": "openai_blog-gpt-5-6-preferred-model-microsoft-365-copilot",
+    "section": "releases",
+    "title_en": "GPT-5.6 is now the preferred model in Microsoft 365 Copilot",
+    "title_ko": "GPT-5.6, Microsoft 365 Copilot의 기본 모델로 채택",
+    "url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "GPT-5.6이 Microsoft 365 Copilot의 기본 AI 모델로 선정되었다. Word, Excel, PowerPoint, Chat, Cowork 등 Microsoft 365 전반에 걸쳐 더 강력한 AI 기능을 제공하며, 더 빠르고 높은 품질의 작업 수행을 지원한다.",
+    "why_it_matters": "수억 명이 사용하는 Microsoft 365에 GPT-5.6이 기본 탑재됨으로써 업무 생산성 AI의 실질적 확산이 가속화된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6488111772486773,
+    "published_at": "2026-07-09T13:00:00Z"
+  },
+  {
+    "id": "hn-48865019",
+    "section": "community",
+    "title_en": "Apple sues OpenAI, accuses ex-employees of stealing trade secrets",
+    "title_ko": "애플, 전직 직원들의 영업비밀 유출 혐의로 OpenAI 제소",
+    "url": "https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "애플이 OpenAI를 상대로 소송을 제기하며, 전직 직원들이 영업비밀을 유출했다고 주장했다. 구체적인 소송 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "빅테크 간 AI 인재 이동과 지식재산권 분쟁이 업계 전반에 미칠 파장에 주목할 필요가 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.13957028322694,
+    "published_at": "2026-07-10T20:47:09Z"
+  },
+  {
+    "id": "hn-48863490",
+    "section": "community",
+    "title_en": "GPT-5.6 Sol Ultra produces proof of the Cycle Double Cover Conjecture [pdf]",
+    "title_ko": "GPT-5.6 Sol Ultra, 사이클 이중 커버 추측 증명 생성 주장",
+    "url": "https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GPT-5.6 Sol Ultra 모델이 수학계의 오랜 미해결 문제인 사이클 이중 커버 추측(Cycle Double Cover Conjecture)의 증명을 생성했다는 내용의 PDF가 공개되었다. 구체적인 검증 여부나 세부 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "LLM이 난제로 꼽히는 수학 미해결 문제를 증명했다는 주장은 AI의 수학적 추론 능력의 한계를 시험하는 중요한 사례가 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.716535732544495,
+    "published_at": "2026-07-10T18:29:19Z"
+  },
+  {
+    "id": "hn-48848425",
+    "section": "community",
+    "title_en": "AI 2040: Plan A",
+    "title_ko": "AI 2040: 플랜 A",
+    "url": "https://ai-2040.com/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "'AI 2040: Plan A'라는 제목의 글이 Hacker News에 공유되었습니다. 구체적인 설명이 제공되지 않아 내용을 상세히 파악하기 어렵습니다.",
+    "why_it_matters": "2040년 AI의 미래 방향성을 다루는 것으로 보이나, 상세 내용 확인이 필요합니다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.565074967945755,
+    "published_at": "2026-07-09T16:21:44Z"
+  },
+  {
+    "id": "hn-48862252",
+    "section": "community",
+    "title_en": "Snails' teeth beats spider silk as nature's strongest material (2015)",
+    "title_ko": "달팽이 이빨, 거미줄을 제치고 자연계 최강 소재로 등극 (2015)",
+    "url": "https://www.smithsonianmag.com/smart-news/spider-silk-loses-top-spot-natures-strongest-material-snails-teeth-180954346/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "2015년 연구에 따르면 달팽이의 이빨이 거미줄을 능가하는 자연계에서 가장 강한 재료로 밝혀졌다. 달팽이 이빨의 구조가 극도로 높은 인장 강도를 지니는 것으로 확인되었다.",
+    "why_it_matters": "자연 소재에서 영감을 받는 신소재 연구에 새로운 방향을 제시할 수 있는 발견이다.",
+    "tags": [],
+    "score": 8.478339348577602,
+    "published_at": "2026-07-10T16:37:52Z"
+  },
+  {
+    "id": "hn-48803707",
+    "section": "community",
+    "title_en": "Lost city discovered beneath Egypt's desert with ancient church",
+    "title_ko": "이집트 사막 아래서 고대 교회 포함 잃어버린 도시 발견",
+    "url": "https://www.dailymail.com/sciencetech/article-15956159/Incredible-lost-city-discovered-Egypts-desert.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "이집트 사막 지하에서 고대 교회를 포함한 잃어버린 도시가 발견되었다는 소식이다. 상세한 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "AI·개발 분야와 직접적 연관성은 낮으나, 고고학적 탐사에 AI 기술이 활용될 가능성에 주목할 수 있다.",
+    "tags": [],
+    "score": 8.221339089795123,
+    "published_at": "2026-07-06T12:32:57Z"
+  },
+  {
+    "id": "youtube-mWlCituW7wo",
+    "section": "video",
+    "title_en": "A Model Explosion: GPT 5.6 Sol, Grok 4.5 and Meta Muse Rewrite the Rules",
+    "title_ko": "모델 대폭발: GPT 5.6 Sol, Grok 4.5, Meta Muse Spark 1.1이 AI 판도를 바꾸다",
+    "url": "https://www.youtube.com/watch?v=mWlCituW7wo",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "한 주 사이에 GPT 5.6 Sol, Grok 4.5, Meta Muse Spark 1.1이 동시에 공개되며 AI 모델 경쟁이 더욱 치열해졌습니다. GPT 5.6은 비용 대비 성능 면에서 Claude Fable을 능가할 수 있다는 평가가 나왔으며, 각 모델이 선택을 더 어렵게 만들고 있습니다. 영상에서는 바이럴 헤드라인 속에 묻힌 벤치마크 누락 이슈, 게이밍 프론티어, 자기 개선(Self-Improvement) 등 다양한 숨겨진 인사이트도 다룹니다.",
+    "why_it_matters": "주요 AI 모델 3종이 동시에 업데이트되며 성능·비용·활용처 비교가 복잡해진 시점에, 놓치기 쉬운 핵심 정보를 한눈에 정리해준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7897089947089947,
+    "published_at": "2026-07-10T12:40:15Z"
+  },
+  {
+    "id": "youtube-LE4YC5_YoWc",
+    "section": "video",
+    "title_en": "쇼츠 공장이 되었다는 구글 근황",
+    "title_ko": "구글, 쇼츠 공장이 되었다? 최근 구글 근황",
+    "url": "https://www.youtube.com/shorts/LE4YC5_YoWc",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 구글의 최근 동향을 다룬 영상으로, 구글이 쇼츠 중심으로 변화하고 있다는 내용을 소개한다. 영상은 노트북LM 등 AI 관련 주제와 연관된 것으로 보인다.",
+    "why_it_matters": "구글의 AI 및 콘텐츠 전략 변화를 한국어로 쉽게 파악할 수 있는 콘텐츠다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.750011574074074,
+    "published_at": "2026-07-10T06:00:06Z"
+  },
+  {
+    "id": "youtube-8io9vuqtdPI",
+    "section": "video",
+    "title_en": "[LIVE] OpenAI 내부자가 직접 알려주는 신규 업데이트 및 Codex 사용법",
+    "title_ko": "[LIVE] OpenAI 내부자가 직접 알려주는 신규 업데이트 및 Codex 사용법",
+    "url": "https://www.youtube.com/watch?v=8io9vuqtdPI",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "OpenAI 내부자가 직접 출연해 최신 업데이트 내용과 Codex 사용법을 소개하는 라이브 방송이다. OpenAI Codex 관련 실전 활용 방법을 직접 전달하는 내용으로 구성되어 있다.",
+    "why_it_matters": "OpenAI 내부자가 직접 Codex 사용법을 설명하는 만큼, 공식 문서 이상의 실용적 인사이트를 얻을 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.6392245370370371,
+    "published_at": "2026-07-09T11:23:22Z"
+  },
+  {
+    "id": "simon_willison-nilay-patel",
+    "section": "deepdive",
+    "title_en": "Quoting Nilay Patel",
+    "title_ko": "증강현실 안경은 필연적으로 프라이버시를 침해한다 — Nilay Patel",
+    "url": "https://simonwillison.net/2026/Jul/10/nilay-patel/#atom-everything",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "The Verge의 Nilay Patel은 증강현실 안경을 구현하려면 눈 앞의 모든 것을 지속적으로 촬영·처리하는 카메라가 필수이며, 현재 기술로는 실시간 처리를 안경 내부에서 완결할 수 없어 데이터를 클라우드로 전송할 수밖에 없다고 주장했다. 결국 '모두가 기대하는 차세대 제품'을 만들려면 사람들의 프라이버시를 침해해야 하며, 그 사회적 대가가 너무 크다면 아예 만들지 말아야 한다는 논거도 충분히 성립한다고 말했다.",
+    "why_it_matters": "AR 안경 개발의 기술적 한계가 프라이버시 침해와 직결된다는 점을 지적해, AI·AR 제품의 윤리적 설계 방향에 근본적인 질문을 던진다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.8160168650793651,
+    "published_at": "2026-07-10T17:05:26Z"
+  }
+]

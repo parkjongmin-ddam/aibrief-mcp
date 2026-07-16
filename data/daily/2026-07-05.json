@@ -1,0 +1,369 @@
+[
+  {
+    "id": "hf-2607.02512",
+    "section": "papers",
+    "title_en": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
+    "title_ko": "Program-as-Weights: 퍼지 함수를 위한 새로운 프로그래밍 패러다임",
+    "url": "https://huggingface.co/papers/2607.02512",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "규칙 기반으로 구현하기 어려운 로그 중요도 판별, 불완전한 JSON 복구, 의도 기반 검색 결과 정렬 같은 작업을 로컬에서 실행 가능한 경량 신경망 아티팩트로 컴파일하는 '퍼지 함수 프로그래밍' 패러다임을 제안한다. PAW(Program-as-Weights) 방식은 4B 컴파일러가 자연어 명세를 받아 동결된 경량 인터프리터용 파라미터 효율 어댑터를 생성한다. 0.6B Qwen3 인터프리터로 PAW 프로그램을 실행하면 Qwen3-32B 직접 프롬프팅과 동등한 성능을 내면서, 추론 메모리는 약 1/50 수준이며 MacBook M3에서 초당 30 토큰으로 동작한다.",
+    "why_it_matters": "대형 LLM API 의존 없이 로컬에서 저비용·재현 가능하게 퍼지 작업을 처리할 수 있어, 실용적인 엣지/오프라인 AI 개발에 큰 전환점이 될 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 5.304065093204169,
+    "published_at": "2026-07-01T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.02255",
+    "section": "papers",
+    "title_en": "AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents",
+    "title_ko": "AgenticSTS: 장기 과제 LLM 에이전트를 위한 제한 메모리 테스트베드",
+    "url": "https://huggingface.co/papers/2607.02255",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "장기 과제를 수행하는 LLM 에이전트에서 메모리 구조가 의사결정에 미치는 영향을 분리·분석하기 위한 테스트베드를 소개한다. 기존의 누적 컨텍스트 방식 대신, 매 결정마다 타입 기반 검색으로 신선한 프롬프트를 조립하는 '제한 메모리 계약'을 제안한다. 덱 빌딩 게임 'Slay the Spire 2'를 벤치마크 환경으로 활용했으며, 전략 스킬 레이어 추가 시 승률이 3/10에서 6/10으로 향상되는 경향이 관찰됐다. 298개의 완성된 궤적 데이터와 분석 스크립트를 포함한 재현 가능한 테스트베드를 공개한다.",
+    "why_it_matters": "장기 에이전트에서 메모리 레이어별 효과를 격리해 실험할 수 있는 체계적인 방법론과 공개 데이터셋을 제공해, 에이전트 설계 연구의 재현성과 분석 깊이를 높인다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.80666248977032,
+    "published_at": "2026-07-01T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.02440",
+    "section": "papers",
+    "title_en": "EvoPolicyGym: Evaluating Autonomous Policy Evolution in Interactive Environments",
+    "title_ko": "EvoPolicyGym: 상호작용 환경에서 자율적 정책 진화 평가 벤치마크",
+    "url": "https://huggingface.co/papers/2607.02440",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "EvoPolicyGym은 에이전트가 제한된 상호작용 예산 내에서 실행 가능한 정책을 반복적으로 개선하는 '자율 정책 진화' 평가 환경이다. 기존 평가가 최종 점수 하나로 과정을 압축하는 문제를 해결하기 위해, 소형 강화학습 환경 16개로 구성된 벤치마크를 제시했다. GPT-4.5가 전체 16개 환경에서 최상위권 성능을 기록했으며, 벤치마크는 예산 배분 방식과 피드백의 파라미터 조정 전환 등 궤적 수준의 진단 정보도 제공한다.",
+    "why_it_matters": "자율 에이전트가 단순 태스크 승리를 넘어 피드백 기반으로 정책을 정교화하는 능력을 체계적으로 측정하는 새로운 평가 기준을 제시한다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 4.737669618283368,
+    "published_at": "2026-07-01T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.01642",
+    "section": "papers",
+    "title_en": "Multi-Resolution Flow Matching: Training-Free Diffusion Acceleration via Staged Sampling",
+    "title_ko": "MrFlow: 훈련 없이 10~25배 빠른 텍스트-이미지 확산 가속 전략",
+    "url": "https://huggingface.co/papers/2607.01642",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "MrFlow는 사전 학습된 플로우 매칭 모델을 위한 훈련 불필요(training-free) 다중 해상도 가속 전략이다. 저해상도에서 주요 구조를 빠르게 생성한 뒤, 경량 GAN 기반 모델로 픽셀 공간에서 초해상도를 수행하고 고해상도로 세부 사항을 다듬는 단계적 파이프라인을 사용한다. FLUX.1-dev와 Qwen-Image에서 단독으로 10배 가속을 달성하며, 기존 타임스텝 증류 전략과 결합 시 최대 25배까지 가속이 가능하다.",
+    "why_it_matters": "커스텀 커널이나 재훈련 없이 최대 25배 추론 속도 향상을 달성해 실용적인 이미지 생성 비용 절감에 직접 기여한다.",
+    "tags": [
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 4.295836866004329,
+    "published_at": "2026-07-01T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.01647",
+    "section": "papers",
+    "title_en": "AgenticDataBench: A Comprehensive Benchmark for Data Agents",
+    "title_ko": "AgenticDataBench: 데이터 에이전트를 위한 종합 벤치마크",
+    "url": "https://huggingface.co/papers/2607.01647",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "AgenticDataBench는 LLM 기반 데이터 에이전트를 평가하기 위한 종합 벤치마크로, 15개 수직 도메인의 실제 데이터셋과 태스크를 포함하며 핀테크 기업의 실제 B2B 사례 5건도 수록되어 있다. Stack Overflow의 대규모 태스크 솔루션에서 스킬을 추출하고, 스킬 기반 계층적 클러스터링을 활용해 벤치마크의 커버리지와 품질을 높였다. 실제 데이터가 없는 도메인에는 LLM 기반 태스크 생성 방식을 도입해 현실적인 워크플로우를 생성하며, 세분화된 스킬 수준의 성능 평가를 제공한다.",
+    "why_it_matters": "데이터 사이언스 자동화를 위한 LLM 에이전트 연구에서 부재했던 체계적·다도메인 벤치마크를 제시해 에이전트 성능 비교와 개선 방향을 명확히 할 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.295836866004329,
+    "published_at": "2026-07-01T20:00:00Z"
+  },
+  {
+    "id": "github_trending-openai/codex-plugin-cc",
+    "section": "releases",
+    "title_en": "openai/codex-plugin-cc",
+    "title_ko": "Claude Code에서 OpenAI Codex를 사용하는 공식 플러그인",
+    "url": "https://github.com/openai/codex-plugin-cc",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "OpenAI가 공개한 `codex-plugin-cc`는 Claude Code 환경 안에서 OpenAI Codex를 직접 활용할 수 있게 해주는 플러그인이다. `/codex:review`, `/codex:adversarial-review` 명령으로 코드 리뷰를 수행하고, `/codex:rescue`로 버그 조사·수정 작업을 Codex에 위임할 수 있다. 백그라운드 실행, 세션 이전(`/codex:transfer`), 작업 상태 확인 및 취소 등 다양한 워크플로우를 지원한다. ChatGPT 구독(무료 포함) 또는 OpenAI API 키와 Node.js 18.18 이상이 필요하다.",
+    "why_it_matters": "Claude Code 사용자가 기존 워크플로우를 유지하면서 OpenAI Codex의 코드 리뷰·태스크 위임 기능을 통합할 수 있어, 두 AI 코딩 도구를 함께 활용하는 멀티 에이전트 개발 환경이 현실화된다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8664153439153439,
+    "published_at": "2026-07-05T01:33:27Z"
+  },
+  {
+    "id": "github_trending-alibaba/page-agent",
+    "section": "releases",
+    "title_en": "alibaba/page-agent",
+    "title_ko": "알리바바, 자연어로 웹 UI를 제어하는 JavaScript 인페이지 GUI 에이전트 'Page Agent' 공개",
+    "url": "https://github.com/alibaba/page-agent",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "알리바바가 오픈소스 JavaScript 라이브러리 'Page Agent'를 공개했다. 브라우저 확장 프로그램이나 Python, 헤드리스 브라우저 없이 웹 페이지 내 JavaScript만으로 자연어 명령을 통해 웹 UI를 제어할 수 있다. 스크린샷 없이 텍스트 기반 DOM 조작 방식을 사용하며, 원하는 LLM을 직접 연결해 사용할 수 있다. SaaS AI 코파일럿, 스마트 폼 자동화, 접근성 향상 등 다양한 활용 사례를 지원한다.",
+    "why_it_matters": "별도 인프라 없이 단 몇 줄의 JavaScript로 기존 웹 앱에 자연어 AI 에이전트를 내장할 수 있어, 프론트엔드 개발자의 AI 에이전트 도입 장벽을 크게 낮춘다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8664153439153439,
+    "published_at": "2026-07-05T01:33:27Z"
+  },
+  {
+    "id": "github_trending-asgeirtj/system_prompts_leaks",
+    "section": "releases",
+    "title_en": "asgeirtj/system_prompts_leaks",
+    "title_ko": "주요 AI 챗봇 시스템 프롬프트 유출 모음 저장소",
+    "url": "https://github.com/asgeirtj/system_prompts_leaks",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude, ChatGPT, Gemini, Grok 등 주요 AI 챗봇의 시스템 프롬프트를 수집·공개하는 GitHub 저장소다. Anthropic의 Claude Fable 5, Opus 4.8, OpenAI의 GPT-5.5, Google의 Gemini 3.5 Flash 등 최신 모델 프롬프트가 포함되어 있으며 정기적으로 업데이트된다. 워싱턴포스트에도 소개된 바 있으며, 모델 간 프롬프트 변경 사항을 diff로 비교하는 기능도 제공한다.",
+    "why_it_matters": "AI 제품 개발자와 연구자가 주요 LLM의 실제 시스템 프롬프트 설계 방식을 직접 비교·분석할 수 있는 희귀한 공개 레퍼런스다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8664153439153439,
+    "published_at": "2026-07-05T01:33:27Z"
+  },
+  {
+    "id": "github_trending-agentskills/agentskills",
+    "section": "releases",
+    "title_en": "agentskills/agentskills",
+    "title_ko": "Agent Skills: AI 에이전트 역량 확장을 위한 오픈 표준 포맷",
+    "url": "https://github.com/agentskills/agentskills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Agent Skills는 Anthropic이 개발하고 오픈 표준으로 공개한 AI 에이전트 역량 확장 포맷이다. SKILL.md 파일을 핵심으로 하는 폴더 구조로 전문 지식, 워크플로, 스크립트 등을 패키징하며, 에이전트는 '발견→활성화→실행'의 단계적 로딩 방식으로 필요할 때만 스킬을 컨텍스트에 올린다. 한 번 만든 스킬을 여러 호환 에이전트 제품에서 재사용할 수 있어 크로스 플랫폼 이식성이 높다.",
+    "why_it_matters": "Anthropic 주도로 시작된 에이전트 역량 확장 오픈 표준으로, 다양한 AI 툴에서 채택이 확산되고 있어 에이전트 생태계의 공통 인터페이스가 될 가능성이 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8664153439153439,
+    "published_at": "2026-07-05T01:33:27Z"
+  },
+  {
+    "id": "github_trending-alirezarezvani/claude-skills",
+    "section": "releases",
+    "title_en": "alirezarezvani/claude-skills",
+    "title_ko": "Claude Code용 354개 스킬·에이전트 플러그인 오픈소스 라이브러리",
+    "url": "https://github.com/alirezarezvani/claude-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "'claude-skills'는 Claude Code, OpenAI Codex, Gemini CLI, Cursor 등 13개 AI 코딩 도구에서 동작하는 354개의 재사용 가능한 스킬·에이전트 플러그인을 제공하는 오픈소스 라이브러리입니다. 엔지니어링, 마케팅, 제품, 컴플라이언스, C레벨 어드바이저리 등 18개 도메인을 커버하며, 593개의 stdlib 전용 Python CLI 도구도 함께 제공됩니다. 단일 변환 스크립트로 모든 스킬을 원하는 툴 포맷으로 변환할 수 있습니다.",
+    "why_it_matters": "특정 AI 코딩 도구에 종속되지 않고 도메인 전문 지식을 모듈 형태로 재사용할 수 있어, 팀의 AI 에이전트 활용 수준을 빠르게 끌어올릴 수 있는 실용적인 출발점이 됩니다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.8664153439153439,
+    "published_at": "2026-07-05T01:33:27Z"
+  },
+  {
+    "id": "github_trending-crynta/terax-ai",
+    "section": "releases",
+    "title_en": "crynta/terax-ai",
+    "title_ko": "Terax: 7MB 초경량 AI 내장 터미널 개발 워크스페이스",
+    "url": "https://github.com/crynta/terax-ai",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Terax는 Tauri 2 + Rust와 React 19 기반으로 만들어진 오픈소스 터미널 통합 개발 환경(ADE)으로, 설치 용량이 약 7~8MB에 불과합니다. WebGL 렌더링 터미널, CodeMirror 6 코드 에디터, Git 그래프 포함 소스 컨트롤, 웹 프리뷰 패널이 기본 내장되어 있습니다. AI 사이드패널은 OpenAI·Anthropic·Gemini 등 주요 BYOK 프로바이더와 Ollama·LM Studio 등 로컬 모델을 모두 지원하며, 에이전트 워크플로우·플랜 모드·커스텀 에이전트 기능도 제공합니다. 텔레메트리와 계정 가입이 없으며 Apache-2.0 라이선스로 공개되어 있습니다.",
+    "why_it_matters": "AI 코딩 어시스턴트·터미널·에디터·Git 관리를 7MB 단일 앱에 통합해 로컬 모델까지 지원하므로, 프라이버시를 중시하는 개발자에게 Cursor·Warp의 경량 오픈소스 대안이 될 수 있습니다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.8664153439153439,
+    "published_at": "2026-07-05T01:33:27Z"
+  },
+  {
+    "id": "google_blog-google-ai-updates-june-2026",
+    "section": "releases",
+    "title_en": "The latest AI news we announced in June 2026",
+    "title_ko": "구글, 2026년 6월 최신 AI 소식 발표",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글이 2026년 6월에 발표한 최신 AI 관련 소식들을 정리했다. 상세 내용은 제공된 정보에 포함되어 있지 않아 구체적인 사항은 원문을 참고해야 한다.",
+    "why_it_matters": "구글의 월간 AI 발표 동향을 파악할 수 있는 공식 요약 자료다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.3943468915343915,
+    "published_at": "2026-07-01T18:15:00Z"
+  },
+  {
+    "id": "hn-48788283",
+    "section": "community",
+    "title_en": "Command and Conquer Generals natively ported to macOS, iPhone, iPad using Fable",
+    "title_ko": "커맨드 앤 컨커 제너럴스, Fable로 macOS·iPhone·iPad 네이티브 포팅",
+    "url": "https://github.com/ammaarreshi/Generals-Mac-iOS-iPad/tree/main",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Fable 프레임워크를 활용하여 클래식 RTS 게임 커맨드 앤 컨커 제너럴스가 macOS, iPhone, iPad에 네이티브로 포팅되었다. 별도의 에뮬레이션 없이 Apple 기기에서 직접 실행 가능하다.",
+    "why_it_matters": "Fable 프레임워크의 크로스플랫폼 네이티브 포팅 능력을 보여주는 실제 사례로, 레거시 게임의 현대 플랫폼 이식 가능성을 시사한다.",
+    "tags": [],
+    "score": 9.411418355996803,
+    "published_at": "2026-07-04T19:41:10Z"
+  },
+  {
+    "id": "hn-48785485",
+    "section": "community",
+    "title_en": "Potential session/cache leakage between workspace instances or consumer accounts",
+    "title_ko": "워크스페이스 인스턴스 간 세션/캐시 정보 누출 가능성",
+    "url": "https://github.com/anthropics/claude-code/issues/74066",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "워크스페이스 인스턴스 또는 소비자 계정 간에 세션 및 캐시 데이터가 누출될 수 있는 잠재적 취약점이 보고되었다. 상세 설명은 제공되지 않아 구체적인 영향 범위는 확인되지 않는다.",
+    "why_it_matters": "멀티테넌트 환경에서 세션·캐시 누출은 계정 간 데이터 침해로 이어질 수 있어 보안상 심각한 위협이 될 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.053923708368174,
+    "published_at": "2026-07-04T14:03:40Z"
+  },
+  {
+    "id": "hn-48790066",
+    "section": "community",
+    "title_en": "Scientists reverse brain aging, with a nasal spray",
+    "title_ko": "과학자들, 비강 스프레이로 뇌 노화 역전 성공",
+    "url": "https://stories.tamu.edu/news/2026/04/14/scientists-reverse-brain-aging-with-a-nasal-spray/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "과학자들이 비강 스프레이를 이용해 뇌 노화를 되돌리는 연구 성과를 발표했다. 구체적인 메커니즘이나 임상 단계에 대한 상세 정보는 제공되지 않았다.",
+    "why_it_matters": "뇌 노화 역전 가능성을 시사하는 연구로, 신경과학 및 노화 치료 분야에 큰 파장을 줄 수 있다.",
+    "tags": [],
+    "score": 8.18355515155231,
+    "published_at": "2026-07-04T23:41:10Z"
+  },
+  {
+    "id": "hn-48789428",
+    "section": "community",
+    "title_en": "GPT-5.5 Codex reasoning-token clustering may be leading to degraded performance",
+    "title_ko": "GPT-5.5 Codex 추론 토큰 클러스터링이 성능 저하를 유발할 수 있다",
+    "url": "https://github.com/openai/codex/issues/30364",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GPT-5.5 Codex에서 추론 토큰 클러스터링이 성능 저하로 이어질 수 있다는 가능성이 제기됐다. 상세한 설명은 제공되지 않아 구체적인 내용은 확인이 필요하다.",
+    "why_it_matters": "Codex 기반 코드 생성 도구의 신뢰성에 영향을 줄 수 있는 잠재적 문제로 주목할 필요가 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.063218194523097,
+    "published_at": "2026-07-04T21:51:09Z"
+  },
+  {
+    "id": "hn-48788599",
+    "section": "community",
+    "title_en": "Better Models: Worse Tools",
+    "title_ko": "더 나은 모델, 더 나쁜 도구",
+    "url": "https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI 모델의 성능은 지속적으로 향상되고 있지만, 이를 활용하는 도구와 개발 환경은 오히려 퇴보하거나 충분히 발전하지 못하고 있다는 주장을 담은 글이다. 모델 자체의 발전과 도구 생태계의 성숙도 사이에 괴리가 생기고 있음을 지적한다.",
+    "why_it_matters": "모델 성능 향상만큼 개발 도구의 품질도 중요하다는 점을 상기시키는 논의로, 실무 개발자에게 시사하는 바가 크다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 7.388153075592351,
+    "published_at": "2026-07-04T20:16:22Z"
+  },
+  {
+    "id": "youtube-5iRf37Z8Wd4",
+    "section": "video",
+    "title_en": "\"AI 툴을 많이 쓰는 게 중요한 게 아닙니다\" 채널톡이 바라보는 AI 시대 인재 | AX 인재전쟁 4화 채널톡",
+    "title_ko": "'AI 툴 많이 쓰는 것보다 문제 해결력이 중요' – 채널톡 CSO가 말하는 AI 시대 인재상",
+    "url": "https://www.youtube.com/watch?v=5iRf37Z8Wd4",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "채널톡(채널코퍼레이션) CSO 이경훈이 AX 인재전쟁 인터뷰에서 AI 시대 인재의 핵심은 툴의 개수가 아니라 하나의 툴로 실제 문제를 푸는 능력이라고 강조했다. 평가 기준은 접근 방식과 프롬프팅 사고력이며, 개발자·비개발자 구분 없이 본질적 원리를 탐구하는 사람을 원한다고 밝혔다. 채널코퍼레이션은 200명으로 2000명 규모 회사와 동일한 성과를 내는 '인재 밀도'를 목표로 한다.",
+    "why_it_matters": "AI 도구 활용 능력보다 문제 정의와 사고력을 우선시하는 채용 기준은 국내 AI 전환(AX) 시대 인재 채용 트렌드를 가늠하는 실질적 지표가 된다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7678720238095238,
+    "published_at": "2026-07-04T09:00:08Z"
+  },
+  {
+    "id": "youtube-q2is2cLvias",
+    "section": "video",
+    "title_en": "무신사가 AI에 올인한 진짜 이유",
+    "title_ko": "무신사가 AI에 올인한 진짜 이유",
+    "url": "https://www.youtube.com/shorts/q2is2cLvias",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "무신사의 AI 전략과 관련된 내용을 다루는 영상으로, AX(AI Transformation) 인재전쟁 해커톤 참가를 함께 홍보하고 있다. 구체적인 내용은 영상을 통해 확인할 수 있다.",
+    "why_it_matters": "국내 대형 패션 플랫폼 무신사의 AI 전환 전략은 커머스 업계 AI 도입 사례로 주목할 만하다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.76588458994709,
+    "published_at": "2026-07-04T08:40:06Z"
+  },
+  {
+    "id": "youtube-K-S78ndk8wk",
+    "section": "video",
+    "title_en": "무신사 테크리드가 말하는 AI 인재 필수 역량",
+    "title_ko": "무신사 테크리드가 말하는 AI 인재 필수 역량",
+    "url": "https://www.youtube.com/shorts/K-S78ndk8wk",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "무신사 테크리드가 AI 인재에게 요구되는 핵심 역량에 대해 이야기한다. 해당 영상은 AX 인재전쟁 해커톤과 연계된 콘텐츠로 소개된다.",
+    "why_it_matters": "국내 대표 패션 플랫폼 무신사의 실무 관점에서 AI 인재 역량 기준을 직접 확인할 수 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7657308201058202,
+    "published_at": "2026-07-04T08:38:33Z"
+  },
+  {
+    "id": "simon_willison-sqlite-utils-fable",
+    "section": "deepdive",
+    "title_en": "sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)",
+    "title_ko": "Claude Fable가 약 $149로 sqlite-utils 4.0rc2 대부분을 작성하다",
+    "url": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Simon Willison이 Claude Fable(코딩 에이전트)을 활용해 sqlite-utils 4.0rc2를 완성했다. 37번의 프롬프트와 34번의 커밋, 30개 파일에 걸친 코드 변경을 통해 `delete_where()`의 데이터 손실 버그 등 심각한 릴리스 블로커 5개를 발견·수정했다. 이후 GPT-5.5로 교차 검토를 수행해 추가 버그도 잡아냈으며, 전체 비용은 API 기준 약 $149.25로 추산됐다. 트랜잭션 모델 전면 개편, 다수의 breaking change 포함이 이번 RC의 핵심이다.",
+    "why_it_matters": "AI 코딩 에이전트가 실제 오픈소스 라이브러리의 주요 릴리스를 주도하며 인간이 놓친 심각한 버그까지 발견할 수 있음을 보여주는 실증 사례다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8631762566137566,
+    "published_at": "2026-07-05T01:00:48Z"
+  }
+]

@@ -1,0 +1,373 @@
+[
+  {
+    "id": "hf-2607.10383",
+    "section": "papers",
+    "title_en": "ABot-N1: Toward a General Visual Language Navigation Foundation Model",
+    "title_ko": "ABot-N1: 범용 시각-언어 내비게이션 기반 모델을 향하여",
+    "url": "https://huggingface.co/papers/2607.10383",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "ABot-N1은 시각-언어 내비게이션(VLN) 기반 모델로, 인지와 제어를 분리하는 슬로우-패스트(slow-fast) 아키텍처를 채택했습니다. 느린 추론기는 Chain-of-Thought 방식으로 픽셀 목표를 생성하고, 빠른 액션 전문가는 이를 바탕으로 연속 웨이포인트를 생성합니다. 도심 규모 내비게이션에서 POI 도착률을 35.0% 향상(77.3%)시켰으며, 복잡한 실내외 환경에서 각각 95.4%/92.9%의 성공률을 달성해 최첨단 성능을 기록했습니다. 관련 벤치마크도 오픈소스로 공개되었습니다.",
+    "why_it_matters": "픽셀 기반 앵커와 명시적 추론 경로를 결합해 기존 블랙박스 내비게이션 모델의 좌표 드리프트·해석 불가 문제를 해결하며, 도심 규모 로봇 내비게이션의 범용성과 신뢰성을 크게 높였다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 5.418840607796598,
+    "published_at": "2026-07-11T12:21:03Z"
+  },
+  {
+    "id": "hf-2607.10350",
+    "section": "papers",
+    "title_en": "ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory",
+    "title_ko": "ABot-AgentOS: 평생 멀티모달 메모리를 갖춘 범용 로봇 에이전트 OS",
+    "url": "https://huggingface.co/papers/2607.10350",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "ABot-AgentOS는 저수준 컨트롤러 위에서 동작하는 범용 로봇 에이전트 운영체제로, 장면 기반 계획, 멀티모달 메모리, 다단계 검증, 엣지-클라우드 협업 기능을 제공한다. 200개 이상의 실내외 태스크를 포함한 EmbodiedWorldBench 벤치마크를 새롭게 도입해 장기 체화 에이전트를 평가한다. 실패 기반 자기진화 루프를 통해 메모리 실패를 학습하며 지속적으로 성능을 개선하고, LoCoMo 88.7, OpenEQA 60.4, Mem-Gallery 89.0 등 주요 메모리 벤치마크에서 향상된 결과를 기록했다.",
+    "why_it_matters": "로봇이 장기 복잡 태스크를 수행하기 위한 범용 에이전트 OS 계층과 실행 가능한 평가 벤치마크를 동시에 제시해, 체화 AI 연구의 표준화와 실용화에 중요한 이정표가 될 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.23410650459726,
+    "published_at": "2026-07-11T11:24:43Z"
+  },
+  {
+    "id": "hf-2607.09024",
+    "section": "papers",
+    "title_en": "Video Generation Models are General-Purpose Vision Learners",
+    "title_ko": "비디오 생성 모델이 범용 비전 학습기가 될 수 있다 — GenCeption 소개",
+    "url": "https://huggingface.co/papers/2607.09024",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "텍스트-투-비디오 생성을 컴퓨터 비전의 범용 사전학습 패러다임으로 활용하는 GenCeption을 제안한다. 사전학습된 비디오 생성 디퓨전 백본을 기반으로 깊이 추정, 표면 법선, 카메라 포즈, 세그멘테이션, 3D 키포인트 예측 등 다양한 비전 태스크를 텍스트 지시로 수행한다. DepthAnything3, SAM3, VGGT-Omega 등 특화 모델과 동등하거나 그 이상의 성능을 보이면서도, 학습 데이터는 최대 500배 적게 사용한다. 합성 인간 영상으로만 학습해도 실제 영상과 동물·로봇 등 미분포 카테고리로 일반화되는 창발적 행동도 확인됐다.",
+    "why_it_matters": "비디오 생성이 단순한 합성 도구를 넘어 범용 시각 지능의 핵심 사전학습 경로가 될 수 있음을 실증적으로 보여준다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 5.04305126783455,
+    "published_at": "2026-07-09T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.09657",
+    "section": "papers",
+    "title_en": "Scalable Visual Pretraining for Language Intelligence",
+    "title_ko": "언어 지능을 위한 확장 가능한 시각적 사전학습",
+    "url": "https://huggingface.co/papers/2607.09657",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "대규모 언어 모델은 주로 텍스트 코퍼스로 사전학습되지만, 문서의 그림·수식·페이지 레이아웃 등 시각적 정보는 텍스트 변환 과정에서 손실된다. 이 논문은 텍스트 추출 없이 시각적 문서를 직접 활용하는 비지도 시각적 사전학습 패러다임을 체계적으로 연구했다. 동일한 코퍼스 기준으로 시각적 사전학습이 텍스트 전용 사전학습보다 여러 백본과 벤치마크에서 일관되게 우수한 성능을 보였다.",
+    "why_it_matters": "텍스트 변환 없이 시각적 문서 그대로 사전학습하는 것이 언어 지능 향상에 더 효율적임을 실증해, 기존 LLM 사전학습 패러다임에 근본적인 도전을 제기한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.912023005428146,
+    "published_at": "2026-07-09T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.09125",
+    "section": "papers",
+    "title_en": "4D Human-Scene Reconstruction from Low-Overlap Captures",
+    "title_ko": "저중첩 카메라로 4D 인간-장면 재구성하는 StudioRecon",
+    "url": "https://huggingface.co/papers/2607.09125",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "StudioRecon은 소수의 저중첩 카메라만으로 4D 인간-장면을 재구성하는 파이프라인이다. 배경과 인간을 분리하여 처리하며, 비디오 디퓨전 모델로 수백 개의 새로운 시점을 합성해 배경 감독을 보강한다. 변형 가능한 가우시안 기반 인간 초기화와 재귀적 향상 모듈을 통해 아티팩트를 최소화하며, 4개의 실제 데이터셋에서 최첨단 성능을 달성했다.",
+    "why_it_matters": "밀집 카메라 배열 없이도 고품질 4D 재구성이 가능해져 실세계 동적 장면 촬영의 접근성이 크게 높아진다.",
+    "tags": [
+      "RAG"
+    ],
+    "score": 4.737669618283368,
+    "published_at": "2026-07-10T02:30:45Z"
+  },
+  {
+    "id": "github_trending-Shubhamsaboo/awesome-llm-apps",
+    "section": "releases",
+    "title_en": "Shubhamsaboo/awesome-llm-apps",
+    "title_ko": "실제로 실행 가능한 100+ AI 에이전트 & RAG 앱 모음 (awesome-llm-apps)",
+    "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude, Gemini, GPT, DeepSeek, Llama 등 주요 LLM을 지원하는 100개 이상의 오픈소스 AI 에이전트·RAG 앱 템플릿을 제공하는 GitHub 저장소다. 스타터 에이전트부터 멀티 에이전트 팀, 음성 에이전트, MCP 에이전트, RAG 파이프라인, LLM 파인튜닝 레시피까지 광범위한 카테고리를 다룬다. 모든 템플릿은 Apache-2.0 라이선스로 공개되어 있으며, 클론 후 30초 안에 실행 가능하도록 구성되어 있다.",
+    "why_it_matters": "AI 에이전트·RAG 앱을 처음부터 구현하지 않고 검증된 템플릿을 바로 가져다 쓸 수 있어 개발 생산성을 크게 높일 수 있다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "에이전트"
+    ],
+    "score": 0.8663872354497355,
+    "published_at": "2026-07-15T01:33:10Z"
+  },
+  {
+    "id": "github_trending-virattt/ai-hedge-fund",
+    "section": "releases",
+    "title_en": "virattt/ai-hedge-fund",
+    "title_ko": "AI 헤지펀드 팀 시뮬레이터 (virattt/ai-hedge-fund)",
+    "url": "https://github.com/virattt/ai-hedge-fund",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "교육 목적의 AI 기반 헤지펀드 개념 증명 프로젝트로, 워런 버핏·벤 그레이엄·캐시 우드 등 13명의 유명 투자자 스타일을 모방한 AI 에이전트와 밸류에이션·감성 분석·기술적 분석·리스크 관리 에이전트가 협력해 투자 결정을 시뮬레이션합니다. 실제 거래는 수행하지 않으며 순수 학습·연구 목적으로 설계되었습니다. 현재 백테스트, 페이퍼 트레이딩, 라이브 실행이 가능한 상시 구동 펀드 형태로 재설계 중입니다.",
+    "why_it_matters": "다양한 투자 철학을 가진 AI 에이전트 협업 구조를 실제 코드로 학습할 수 있어, 멀티 에이전트 시스템 구현에 관심 있는 개발자에게 좋은 참고 사례가 됩니다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8663872354497355,
+    "published_at": "2026-07-15T01:33:10Z"
+  },
+  {
+    "id": "github_trending-Nutlope/hallmark",
+    "section": "releases",
+    "title_en": "Nutlope/hallmark",
+    "title_ko": "Hallmark: AI 생성 티가 나지 않는 디자인 스킬 (Claude Code·Cursor·Codex용)",
+    "url": "https://github.com/Nutlope/hallmark",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Hallmark는 Claude Code, Cursor, Codex에서 사용할 수 있는 디자인 스킬로, AI가 만든 것처럼 보이지 않는 UI를 생성하는 것을 목표로 합니다. 20가지 테마와 57개의 슬롭(slop) 테스트 게이트, 사전 자기비평 단계를 거쳐 템플릿 기반의 획일적인 디자인을 방지합니다. 기본 생성, 감사(audit), 리디자인, 디자인 DNA 추출(study) 등 4가지 명령어를 제공하며, `npx skills add nutlope/hallmark`로 간단히 설치할 수 있습니다.",
+    "why_it_matters": "AI 코딩 도구로 UI를 만들 때 생기는 획일적인 '슬롭' 디자인 문제를 자동화된 규칙셋으로 해결하는 실용적인 오픈소스 접근법이다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8663872354497355,
+    "published_at": "2026-07-15T01:33:10Z"
+  },
+  {
+    "id": "github_trending-AIEraDev/Clypra",
+    "section": "releases",
+    "title_en": "AIEraDev/Clypra",
+    "title_ko": "Clypra: Tauri·React·Rust 기반 무료 오픈소스 비디오 편집기",
+    "url": "https://github.com/AIEraDev/Clypra",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Clypra는 Tauri v2, React 19, Rust를 기반으로 만든 크로스플랫폼 비디오 편집기로, MIT 라이선스 하에 워터마크·기능 제한·구독료 없이 제공된다. FFmpeg를 통한 하드웨어 가속 디코딩(VideoToolbox/D3D11VA/VAAPI), 멀티트랙 타임라인, H.264/H.265/ProRes 내보내기 등 전문가급 기능을 무료로 지원한다. 자연어 편집, 자동 자막, 스마트 리프레임 등 AI 기능은 옵션형 Pro 플랜으로 별도 제공된다.",
+    "why_it_matters": "CapCut 같은 상용 편집기의 핵심 기능을 완전 무료·오픈소스로 대체할 수 있어, 영상 제작 개발자 및 크리에이터에게 실질적인 대안이 된다.",
+    "tags": [
+      "오픈소스",
+      "에이전트"
+    ],
+    "score": 0.8663872354497355,
+    "published_at": "2026-07-15T01:33:10Z"
+  },
+  {
+    "id": "github_trending-HenryNdubuaku/maths-cs-ai-compendium",
+    "section": "releases",
+    "title_en": "HenryNdubuaku/maths-cs-ai-compendium",
+    "title_ko": "수학·CS·AI 통합 교재 — AI/ML 리서치 엔지니어 양성 오픈소스 컴펜디엄",
+    "url": "https://github.com/HenryNdubuaku/maths-cs-ai-compendium",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "AI/ML 리서치 엔지니어를 목표로 하는 학습자를 위한 오픈소스 교재로, 선형대수·미적분·통계부터 LLM 아키텍처·GPU 프로그래밍·AI 추론·ML 시스템 설계까지 18개 챕터를 제공한다. 기존 교과서의 난해한 표기와 불친절한 설명을 탈피해 직관 중심으로 서술되었으며, Claude Code·Cursor 등 AI 어시스턴트가 이 교재를 지식 베이스로 활용할 수 있는 MCP 서버도 포함되어 있다. 저자에 따르면 이 노트를 활용한 지인들이 DeepMind·OpenAI·NVIDIA 등의 면접을 통과했다고 밝혔다.",
+    "why_it_matters": "AI/ML 전 분야를 체계적으로 연결하는 무료 오픈소스 교재로, 입문자부터 연구 엔지니어 지망생까지 실질적인 학습 로드맵으로 활용 가능하다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8663872354497355,
+    "published_at": "2026-07-15T01:33:10Z"
+  },
+  {
+    "id": "openai_blog-managing-ai-investments-in-agentic-era",
+    "section": "releases",
+    "title_en": "How to manage AI investments in the agentic era",
+    "title_ko": "에이전트 시대의 AI 투자 관리 방법",
+    "url": "https://openai.com/index/managing-ai-investments-in-agentic-era",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "기업이 에이전트 AI 시대에 AI 투자를 효과적으로 관리하는 방법을 다룬다. 달러당 유용한 작업량을 측정하고, 효율성을 높이며, 고가치 워크플로우를 확장하는 전략이 핵심이다. OpenAI가 엔터프라이즈를 위한 실질적인 투자 관리 접근법을 제시한다.",
+    "why_it_matters": "AI 에이전트 도입을 고려하는 기업이 ROI를 정량적으로 측정하고 투자 효율을 높이는 실용적 프레임워크를 제공한다는 점에서 중요하다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7738111772486773,
+    "published_at": "2026-07-14T10:00:00Z"
+  },
+  {
+    "id": "openai_blog-how-data-science-teams-use-codex",
+    "section": "releases",
+    "title_en": "How data science teams use ChatGPT Work",
+    "title_ko": "데이터 사이언스 팀을 위한 ChatGPT Work 활용법",
+    "url": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "데이터 사이언스 팀이 ChatGPT Work를 활용해 근본 원인 분석 보고서, 영향 분석 자료, KPI 메모, 범위 분석, 대시보드 사양서 등을 실무 입력 데이터로부터 생성하는 방법을 소개한다. 실제 업무 흐름에 ChatGPT를 통합해 분석 작업의 효율을 높이는 구체적인 사례를 다룬다.",
+    "why_it_matters": "데이터 사이언스 실무에서 반복적으로 작성되는 보고서와 분석 문서를 AI로 자동화할 수 있는 실용적 가이드라는 점에서 현업 개발자·분석가에게 직접적인 참고 가치가 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-07-14T00:00:00Z"
+  },
+  {
+    "id": "hn-48905248",
+    "section": "community",
+    "title_en": "How to stop Claude from saying load-bearing",
+    "title_ko": "Claude가 '핵심적인(load-bearing)'이라는 표현을 반복 사용하는 문제 해결법",
+    "url": "https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Claude가 응답에서 'load-bearing'이라는 표현을 과도하게 반복 사용하는 경향이 있으며, 이를 억제하는 방법을 다룬 글이다. 구체적인 내용은 제공되지 않았으나, LLM의 특정 단어 편향 문제를 다루는 주제로 보인다.",
+    "why_it_matters": "LLM이 특정 단어나 표현을 반복적으로 사용하는 편향 문제는 실제 서비스 품질에 영향을 미치는 실용적인 이슈다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.194794498125042,
+    "published_at": "2026-07-14T11:46:02Z"
+  },
+  {
+    "id": "hn-48908178",
+    "section": "community",
+    "title_en": "Are we offloading too much of our thinking to AI?",
+    "title_ko": "우리는 AI에게 너무 많은 생각을 맡기고 있는가?",
+    "url": "https://www.artfish.ai/p/offloading-thinking-to-ai",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI에게 사고 과정을 과도하게 위임하는 현상에 대한 문제를 제기하는 글이다. 인간의 사고력과 판단력이 AI 의존으로 인해 약화될 수 있다는 우려를 다루고 있다.",
+    "why_it_matters": "AI 도구 의존도가 높아지는 개발자·지식 노동자에게 인지 능력 저하 리스크를 점검하게 하는 화두다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.924632955121467,
+    "published_at": "2026-07-14T15:18:13Z"
+  },
+  {
+    "id": "hn-48910545",
+    "section": "community",
+    "title_en": "Bonsai 27B: A 27B-Class model that runs on a phone",
+    "title_ko": "Bonsai 27B: 스마트폰에서 실행되는 270억 파라미터 모델",
+    "url": "https://prismml.com/news/bonsai-27b",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Bonsai 27B는 270억 파라미터 규모의 LLM임에도 스마트폰에서 구동 가능한 모델이다. 대형 모델급 성능을 모바일 환경에서 실현하는 것을 목표로 한다.",
+    "why_it_matters": "27B급 모델을 스마트폰에서 실행할 수 있다면 온디바이스 AI의 성능 한계가 크게 확장된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.644282619027988,
+    "published_at": "2026-07-14T17:50:48Z"
+  },
+  {
+    "id": "hn-48910676",
+    "section": "community",
+    "title_en": "Cursor 0day: When Full Disclosure Becomes the Only Protection Left",
+    "title_ko": "Cursor 0데이: 완전 공개가 유일한 보호 수단이 될 때",
+    "url": "https://mindgard.ai/blog/cursor-0day-when-full-disclosure-becomes-the-only-protection-left",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Cursor 에디터에서 발견된 0데이 취약점에 관한 내용으로, 완전 공개(Full Disclosure) 방식이 선택된 배경을 다루고 있다. 취약점이 책임감 있는 공개 절차를 통해 해결되지 못했거나, 사용자 보호를 위해 공개 외에 다른 선택지가 없었던 상황으로 보인다.",
+    "why_it_matters": "AI 코드 에디터로 널리 쓰이는 Cursor의 보안 취약점 공개는 AI 개발 도구의 신뢰성과 보안 대응 프로세스에 경각심을 불러일으킨다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 8.907068244595745,
+    "published_at": "2026-07-14T17:58:35Z"
+  },
+  {
+    "id": "hn-48883305",
+    "section": "community",
+    "title_en": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
+    "title_ko": "Juggler – JUCE 개발자가 만든 오픈소스 GUI 코딩 에이전트",
+    "url": "https://github.com/juggler-ai/juggler",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "JUCE 프레임워크 창시자가 Juggler라는 오픈소스 GUI 코딩 에이전트를 공개했다. GUI 환경에서 동작하는 코딩 에이전트로, Hacker News에 직접 소개되었다.",
+    "why_it_matters": "JUCE 창시자의 신뢰도를 바탕으로 한 오픈소스 GUI 코딩 에이전트로, 개발자 도구 생태계에 새로운 선택지를 제공한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 8.406710730177641,
+    "published_at": "2026-07-12T18:28:15Z"
+  },
+  {
+    "id": "youtube-yqRyOMEDri8",
+    "section": "video",
+    "title_en": "모르는 사람이 많다는 사람처럼 말하는 GPT",
+    "title_ko": "사람처럼 대화하는 GPT 활용법",
+    "url": "https://www.youtube.com/shorts/yqRyOMEDri8",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 GPT를 보다 자연스럽고 사람처럼 말하도록 설정하는 방법을 소개하는 영상입니다. 많은 사람들이 잘 모르는 GPT 활용 팁을 다루고 있습니다.",
+    "why_it_matters": "GPT를 더 자연스럽게 활용하고 싶은 한국 개발자 및 일반 사용자에게 실용적인 팁을 제공합니다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7678753306878308,
+    "published_at": "2026-07-14T09:00:10Z"
+  },
+  {
+    "id": "youtube-9LF2_ejuXcY",
+    "section": "video",
+    "title_en": "거의 모든것이 다 가능한 GPT 5.6 ㄷㄷ",
+    "title_ko": "거의 모든 것이 가능하다는 GPT 5.6 살펴보기",
+    "url": "https://www.youtube.com/shorts/9LF2_ejuXcY",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "유튜버 조코딩이 GPT 5.6의 다양한 기능과 가능성을 소개하는 영상이다. 영상 제목에서 GPT 5.6이 거의 모든 것이 가능할 정도로 강력하다고 표현하고 있다. 구체적인 기능 및 벤치마크 정보는 제공된 설명에 포함되어 있지 않다.",
+    "why_it_matters": "GPT 최신 버전의 활용 범위에 관심 있는 한국 개발자들에게 참고할 수 있는 콘텐츠다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7500214947089947,
+    "published_at": "2026-07-14T06:00:12Z"
+  },
+  {
+    "id": "youtube-bnxXaSwtCfw",
+    "section": "video",
+    "title_en": "AI뉴스 - GPT-5.6, GPT‑Live, Work, Grok 4.5, Muse Spark 1.1, Lingbot-World-2, Google 커스텀 URL 등",
+    "title_ko": "GPT-5.6·GPT-Live·ChatGPT Work·Grok 4.5 등 주요 AI 뉴스 한눈에 보기",
+    "url": "https://www.youtube.com/watch?v=bnxXaSwtCfw",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 최신 AI 소식을 정리했다. OpenAI의 GPT-5.6, GPT-Live, ChatGPT Work 출시와 함께 Anthropic의 Claude Code 브라우저 기능, 메타의 Muse Spark 1.1 및 Muse Image·Video, xAI의 Grok 4.5 공개 등 다양한 업데이트가 소개됐다. 중국 오픈소스 모델 Lingbot-World-2, Google AI Studio 커스텀 URL 도입 등도 다뤄졌으며, AI로 인한 노동시장 변화 이슈도 언급됐다.",
+    "why_it_matters": "주요 AI 기업들의 신규 모델·기능 출시가 한 주에 집중되어, 개발자라면 빠르게 동향을 파악해야 할 시점이다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.6488277116402117,
+    "published_at": "2026-07-13T13:00:10Z"
+  },
+  {
+    "id": "latent_space-ainews-not-much-happened-today-c72",
+    "section": "deepdive",
+    "title_en": "[AINews] not much happened today",
+    "title_ko": "[AI 뉴스] 오늘은 별다른 소식 없음",
+    "url": "https://www.latent.space/p/ainews-not-much-happened-today-c72",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "Codex가 하루 100만 명의 신규 사용자를 추가하며 빠른 성장세를 이어가고 있다. 그 외 특별히 주목할 만한 AI 관련 소식은 없었던 하루였다.",
+    "why_it_matters": "Codex의 폭발적인 사용자 증가 속도는 AI 코딩 도구의 대중화가 얼마나 빠르게 진행되고 있는지를 단적으로 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8565608465608465,
+    "published_at": "2026-07-14T23:54:07Z"
+  }
+]

@@ -1,0 +1,376 @@
+[
+  {
+    "id": "hf-2607.07708",
+    "section": "papers",
+    "title_en": "Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning",
+    "title_ko": "SciReasoner: 단백질·분자·결정 구조-특성 관계를 과학적 추론으로 설명하는 멀티모달 AI",
+    "url": "https://huggingface.co/papers/2607.07708",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SciReasoner는 단백질, 소분자, 무기 결정체에 걸쳐 구조-특성 관계를 과학적 원리에 기반해 추론하는 멀티모달 과학 파운데이션 모델이다. 좌표·토폴로지·주기적 연결성을 통합된 구조 인식 어휘로 이산화해 추론 과정에서 증거 단위로 활용한다. 86개 벤치마크 중 67개에서 최고 성능을 기록했으며, 단일 단계 역합성 정확도를 0.63에서 0.72로 향상시켰다. 전문가 이중맹검 평가에서 98%의 경우 최신 대형 언어모델과 동등하거나 우수한 추론 결과를 보였다.",
+    "why_it_matters": "생물학·화학·재료과학 전반에서 예측 정확도와 해석 가능한 과학적 추론을 동시에 달성한 범용 구조 추론 모델로, AI 기반 과학 연구의 신뢰성을 크게 높일 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.442651256490317,
+    "published_at": "2026-07-07T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.07608",
+    "section": "papers",
+    "title_en": "Dual Latent Memory in Vision-Language-Action Models for Robotic Manipulation",
+    "title_ko": "로봇 조작을 위한 비전-언어-액션 모델의 이중 잠재 메모리 프레임워크 LaMem-VLA",
+    "url": "https://huggingface.co/papers/2607.07608",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "기존 VLA 모델은 현재 관측값만으로 행동을 예측하는 마르코프 가정에 의존해 장기적·시간 의존적 작업에 취약했습니다. LaMem-VLA는 과거 경험을 단기·장기 두 가지 잠재 메모리 토큰으로 재구성하고, 이를 VLA의 추론 과정에 직접 삽입하는 잠재 메모리 네이티브 프레임워크입니다. 큐레이터, 시커, 컨덴서, 위버 네 가지 컴포넌트가 협력하여 과거 경험을 연속적인 임베딩 공간 안에서 표현·검색·소비합니다. SimplerEnv와 LIBERO 벤치마크에서 기존 방법 대비 우수한 성능을 입증했습니다.",
+    "why_it_matters": "로봇이 장기 연속 작업을 수행할 때 과거 경험을 추론 공간 내부에서 직접 활용할 수 있게 해, 실용적인 로봇 조작 능력을 크게 향상시킬 수 있습니다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.951243718581427,
+    "published_at": "2026-07-07T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.07675",
+    "section": "papers",
+    "title_en": "Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence",
+    "title_ko": "구현 지능을 위한 MoE 기반 대규모 비디오 사전학습 모델 LingBot-Video",
+    "url": "https://huggingface.co/papers/2607.07675",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LingBot-Video는 로봇 제어 및 구현 지능(Embodied Intelligence)에 특화된 DiT 기반 비디오 사전학습 모델이다. 밀집(Dense) 구조 대신 Mixture-of-Experts(MoE) 아키텍처를 채택해 모델 용량과 추론 효율의 균형을 개선했으며, 조작·탐색·1인칭 시점 등 로봇 특화 데이터를 인터넷 영상에 추가해 물리적 세계 이해를 강화했다. 또한 물리적 합리성과 태스크 완료도를 반영한 다차원 보상 시스템으로 학습을 지도한다. 최초의 대규모 오픈소스 MoE 비디오 파운데이션 모델로 공개된다.",
+    "why_it_matters": "콘텐츠 생성 중심 영상 생성 모델의 한계를 넘어, 로봇 제어에 직접 활용 가능한 오픈소스 MoE 비디오 파운데이션 모델의 첫 사례라는 점에서 구현 AI 연구의 새 기준점이 될 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 4.912023005428146,
+    "published_at": "2026-07-07T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.08758",
+    "section": "papers",
+    "title_en": "Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation",
+    "title_ko": "아이디어에도 유전체가 있다: 과학적 계보 추론 벤치마크 IdeaGene-Bench",
+    "url": "https://huggingface.co/papers/2607.08758",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "과학적 아이디어는 생물 유전체처럼 이전 연구를 계승·변형·재조합한다는 개념에서 출발한 벤치마크 IG-Bench가 발표됐다. 1,961개의 계보 추적, 1,085개의 아이디어 유전체 객체, 920개의 쌍별 GenomeDiff 레코드를 10개 과학 분야에 걸쳐 구축했다. 14개 LLM 기반 시스템을 평가한 결과, 가장 강력한 시스템도 계보 추론 정확도가 27.3%에 그쳐 현재 LLM의 구성적 추론 한계를 드러냈다.",
+    "why_it_matters": "현재 LLM이 과학적 아이디어의 계보 구조를 얼마나 이해하는지 체계적으로 측정하는 최초의 벤치마크로, AI 기반 연구 보조 도구의 실질적 한계를 명확히 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.465735902799727,
+    "published_at": "2026-07-08T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.07534",
+    "section": "papers",
+    "title_en": "Infinite Worlds with Versatile Interactions",
+    "title_ko": "무한한 세계와 다양한 상호작용을 지원하는 LingBot-World 2.0 공개",
+    "url": "https://huggingface.co/papers/2607.07534",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LingBot-World 2.0(LingBot-World-Infinity)은 인터랙티브 월드 시뮬레이터의 고급 버전으로, 무제한 상호작용 지평선과 720p 60fps 실시간 스트리밍을 지원한다. 공격, 활쏘기, 마법 시전, 사격 등 다양한 액션과 텍스트 기반 이벤트가 추가되었으며, 파일럿 에이전트와 디렉터 에이전트로 구성된 에이전틱 하네스를 세계 모델링에 처음으로 통합했다. 14B 기본 모델과 단일 GPU에서 실행 가능한 경량 1.3B 모델을 함께 제공하며, 멀티플레이어 동시 접속 인터페이스도 지원한다.",
+    "why_it_matters": "에이전트 기반 월드 모델링과 실시간 고품질 영상 생성을 결합해 인터랙티브 AI 시뮬레이션의 실용적 한계를 크게 확장한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.465735902799727,
+    "published_at": "2026-07-07T20:00:00Z"
+  },
+  {
+    "id": "github_trending-Shubhamsaboo/awesome-llm-apps",
+    "section": "releases",
+    "title_en": "Shubhamsaboo/awesome-llm-apps",
+    "title_ko": "Awesome LLM Apps — 바로 실행 가능한 100개 이상의 AI 에이전트 & RAG 앱 모음",
+    "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude, Gemini, OpenAI, Llama 등 주요 LLM을 지원하는 100개 이상의 AI 에이전트 및 RAG 앱 템플릿을 제공하는 오픈소스 저장소다. AI 에이전트, 멀티에이전트 팀, MCP 에이전트, 음성 AI, RAG 파이프라인, 파인튜닝 등 15개 카테고리로 구성되어 있으며, 3개 명령어만으로 즉시 실행 가능하다. Apache-2.0 라이선스로 자유롭게 포크·수정·상업적 활용이 가능하다.",
+    "why_it_matters": "LLM 앱 개발 시 반복적으로 구축해야 하는 RAG 파이프라인·에이전트 루프·MCP 연동을 즉시 사용 가능한 템플릿으로 제공해 개발 시간을 대폭 단축할 수 있다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "에이전트"
+    ],
+    "score": 0.866441798941799,
+    "published_at": "2026-07-13T01:33:43Z"
+  },
+  {
+    "id": "github_trending-anthropics/claude-cookbooks",
+    "section": "releases",
+    "title_en": "anthropics/claude-cookbooks",
+    "title_ko": "Anthropic 공식 Claude 쿡북 (코드 레시피 모음)",
+    "url": "https://github.com/anthropics/claude-cookbooks",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 공개한 Claude API 활용 예제 노트북 모음으로, 개발자가 바로 복사해 쓸 수 있는 코드 스니펫을 제공한다. RAG, 텍스트 분류, 요약, 툴 사용, 멀티모달 비전, 서브 에이전트 등 다양한 활용 패턴을 다룬다. Python 기반이며 Pinecone, Voyage AI 등 서드파티 통합 예제도 포함되어 있다.",
+    "why_it_matters": "Claude API를 처음 도입하거나 고급 기능을 탐색하려는 개발자에게 공식 검증된 레퍼런스 코드를 즉시 활용할 수 있어 개발 속도를 크게 단축시킨다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "에이전트"
+    ],
+    "score": 0.866441798941799,
+    "published_at": "2026-07-13T01:33:43Z"
+  },
+  {
+    "id": "github_trending-ColeMurray/background-agents",
+    "section": "releases",
+    "title_en": "ColeMurray/background-agents",
+    "title_ko": "오픈소스 백그라운드 코딩 에이전트 시스템 'Open-Inspect'",
+    "url": "https://github.com/ColeMurray/background-agents",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Ramp의 Inspect에서 영감을 받은 오픈소스 백그라운드 코딩 에이전트 시스템으로, 사용자가 다른 작업을 하는 동안 코드 작업을 자동으로 처리한다. Slack, GitHub PR, Linear 이슈 등 다양한 클라이언트에서 에이전트를 호출할 수 있으며, Anthropic Claude, OpenAI 등 여러 AI 모델을 선택해 사용할 수 있다. 격리된 샌드박스 환경에서 병렬 서브태스크 실행, 멀티플레이어 세션, 크론 스케줄 자동화 등 고급 기능을 제공한다.",
+    "why_it_matters": "조직 내 신뢰 환경에서 셀프호스팅으로 배포 가능한 풀스택 AI 코딩 에이전트 인프라를 오픈소스로 제공해, 자체 백그라운드 에이전트 시스템 구축의 진입 장벽을 크게 낮춘다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.866441798941799,
+    "published_at": "2026-07-13T01:33:43Z"
+  },
+  {
+    "id": "github_trending-virattt/ai-hedge-fund",
+    "section": "releases",
+    "title_en": "virattt/ai-hedge-fund",
+    "title_ko": "AI 헤지펀드 팀: 13명의 전설적 투자자를 AI 에이전트로 구현한 오픈소스 프로젝트",
+    "url": "https://github.com/virattt/ai-hedge-fund",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "워런 버핏, 벤 그레이엄, 캐시 우드 등 13명의 전설적 투자자 스타일을 모방한 AI 에이전트들이 협력하여 주식 투자 결정을 내리는 개념 증명 프로젝트다. 각 에이전트는 해당 투자자의 철학에 따라 분석하며, 가치평가·감성·기술·펀더멘털 분석 에이전트와 리스크 매니저, 포트폴리오 매니저도 포함된다. 백테스트, 페이퍼 트레이딩, CLI 및 웹 인터페이스를 지원하며, 로컬 LLM(Ollama) 사용도 가능하다. 교육 목적으로만 설계되었으며 실제 거래는 수행하지 않는다.",
+    "why_it_matters": "다양한 투자 철학을 가진 AI 에이전트들의 협업 구조를 직접 실험해볼 수 있어, 멀티에이전트 시스템과 금융 AI 응용 모두를 학습하기에 좋은 오픈소스 레퍼런스다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.866441798941799,
+    "published_at": "2026-07-13T01:33:43Z"
+  },
+  {
+    "id": "github_trending-davila7/claude-code-templates",
+    "section": "releases",
+    "title_en": "davila7/claude-code-templates",
+    "title_ko": "Claude Code 템플릿 모음 — CLI 도구 및 에이전트/커맨드/MCP 통합 컬렉션",
+    "url": "https://github.com/davila7/claude-code-templates",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic의 Claude Code를 위한 즉시 사용 가능한 설정 템플릿 모음 프로젝트다. AI 에이전트, 커스텀 슬래시 커맨드, MCP 외부 통합(GitHub, PostgreSQL, AWS 등), 훅, 설정 파일 등 100개 이상의 컴포넌트를 npx 명령어 하나로 설치할 수 있다. 분석 대시보드, 대화 모니터, 헬스체크 등 부가 개발 도구도 포함되어 있으며, MIT 라이선스 오픈소스로 커뮤니티 기여를 환영한다.",
+    "why_it_matters": "Claude Code 워크플로우를 빠르게 강화하고 싶은 개발자라면 직접 설정을 처음부터 만들 필요 없이 검증된 템플릿을 즉시 활용할 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.866441798941799,
+    "published_at": "2026-07-13T01:33:43Z"
+  },
+  {
+    "id": "github_trending-Nutlope/hallmark",
+    "section": "releases",
+    "title_en": "Nutlope/hallmark",
+    "title_ko": "Hallmark: AI가 만든 티 안 나는 UI 생성 디자인 스킬",
+    "url": "https://github.com/Nutlope/hallmark",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Hallmark는 Claude Code, Cursor, Codex에서 사용할 수 있는 디자인 스킬로, AI가 생성한 것처럼 보이는 뻔한 UI를 거부한다. 20가지 테마와 57개의 슬롭(slop) 테스트 게이트, 사전 자기비판 과정을 통해 매번 다른 구조와 디자인을 생성한다. `hallmark audit`, `hallmark redesign`, `hallmark study` 등 4가지 동사(verb) 명령을 지원하며, Together AI가 MIT 라이선스로 공개했다.",
+    "why_it_matters": "AI 코딩 도구로 만든 UI가 획일적으로 보이는 문제를 해결하는 실용적인 오픈소스 스킬로, 개발자가 별도 디자인 작업 없이도 차별화된 UI를 생성할 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.866441798941799,
+    "published_at": "2026-07-13T01:33:43Z"
+  },
+  {
+    "id": "openai_blog-deutsche-telekom",
+    "section": "releases",
+    "title_en": "How Deutsche Telekom is rewiring telecommunications with AI",
+    "title_ko": "도이치 텔레콤, OpenAI와 함께 AI 네이티브 통신사로 변신",
+    "url": "https://openai.com/index/deutsche-telekom",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "도이치 텔레콤이 OpenAI와 협력해 고객 서비스, 직원 업무 흐름, 네트워크 운영 등 핵심 사업 전반에 AI를 도입하고 있다. 이를 통해 전통적인 통신사에서 AI 네이티브 기업으로의 전환을 추진 중이다. 특히 음성 서비스의 미래까지 AI로 재정의하려는 시도가 주목된다.",
+    "why_it_matters": "대형 전통 통신사가 OpenAI 기술로 전사적 AI 전환을 추진하는 구체적 사례로, 엔터프라이즈 AI 도입의 실제 방향성을 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.4702397486772487,
+    "published_at": "2026-07-10T07:00:00Z"
+  },
+  {
+    "id": "hn-48883275",
+    "section": "community",
+    "title_en": "Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k",
+    "title_ko": "Claude Code, 프롬프트 읽기 전 3만3천 토큰 전송… OpenCode는 7천 토큰",
+    "url": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Claude Code는 실제 사용자 프롬프트를 읽기 전에 이미 약 33,000개의 토큰을 전송하는 것으로 나타났다. 반면 오픈소스 대안인 OpenCode는 동일한 작업에서 약 7,000토큰만 사용해 훨씬 효율적이다. 이는 코딩 에이전트의 토큰 소비 구조에 대한 관심을 불러일으키고 있다.",
+    "why_it_matters": "AI 코딩 에이전트의 토큰 효율성은 비용과 응답 속도에 직결되므로, 실제 사용 비용을 따질 때 중요한 비교 지표가 된다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 9.956939133234766,
+    "published_at": "2026-07-12T18:25:51Z"
+  },
+  {
+    "id": "hn-48883343",
+    "section": "community",
+    "title_en": "I love LLMs, I hate hype",
+    "title_ko": "LLM은 좋지만, 과대광고는 싫다",
+    "url": "https://geohot.github.io//blog/jekyll/update/2026/07/12/i-love-llms.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "LLM 기술 자체에 대한 긍정적인 시각을 유지하면서도, 그 주변에 형성된 과도한 과대광고(hype)에 대한 비판적인 시각을 담은 글이다. 상세 내용은 제공되지 않아 제목만으로 요약한다.",
+    "why_it_matters": "LLM 기술의 실질적 가치와 마케팅 과장 사이의 균형 잡힌 시각을 제시하는 논의로, 개발자들이 기술을 냉정하게 평가하는 데 참고할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.459794944009982,
+    "published_at": "2026-07-12T18:31:56Z"
+  },
+  {
+    "id": "hn-48880170",
+    "section": "community",
+    "title_en": "Old and new apps, via modern coding agents",
+    "title_ko": "모던 코딩 에이전트로 구현하는 구식·신식 앱",
+    "url": "https://terrytao.wordpress.com/2026/07/11/old-and-new-apps-via-modern-coding-agents/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "제목만 제공되어 구체적인 내용은 확인할 수 없으나, 현대적인 코딩 에이전트를 활용해 기존 앱과 새로운 앱을 개발하는 주제를 다루는 글로 보인다.",
+    "why_it_matters": "코딩 에이전트가 레거시 및 신규 애플리케이션 개발 방식에 어떤 변화를 가져오는지 탐색하는 주제로 개발자 관심을 끌 수 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 9.437491954891385,
+    "published_at": "2026-07-12T11:09:42Z"
+  },
+  {
+    "id": "hn-48882716",
+    "section": "community",
+    "title_en": "Migrating a production AI agent to GPT-5.6: 2.2x faster, 27% cheaper",
+    "title_ko": "프로덕션 AI 에이전트를 GPT-5.6으로 마이그레이션: 2.2배 빠르고 27% 저렴",
+    "url": "https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "프로덕션 환경의 AI 에이전트를 GPT-5.6으로 마이그레이션한 사례를 다룬 글이다. 마이그레이션 결과 처리 속도가 2.2배 향상되고 비용이 27% 절감되었다고 한다.",
+    "why_it_matters": "실제 프로덕션 환경에서의 GPT-5.6 도입 효과를 구체적인 수치로 확인할 수 있는 사례다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "인프라"
+    ],
+    "score": 7.908680422563366,
+    "published_at": "2026-07-12T17:13:07Z"
+  },
+  {
+    "id": "hn-48883238",
+    "section": "community",
+    "title_en": "I Learned to Read Again",
+    "title_ko": "나는 다시 읽는 법을 배웠다",
+    "url": "https://substack.magazinenongrata.com/p/how-i-learned-to-read-again",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "제목만 제공되어 구체적인 내용을 확인할 수 없습니다. '다시 읽는 법을 배웠다'는 제목으로 미루어, 독서 습관이나 학습 방법에 대한 개인적인 경험을 다룬 글로 보입니다.",
+    "why_it_matters": "상세 정보가 없어 핵심 의의를 특정하기 어렵습니다.",
+    "tags": [],
+    "score": 7.5249909569881535,
+    "published_at": "2026-07-12T18:22:15Z"
+  },
+  {
+    "id": "youtube-Xxuv8AkPS4Y",
+    "section": "video",
+    "title_en": "IT뉴스 - GPT-5.6, GPT‑Live, Work, Grok 4.5, Muse Spark 1.1, Lingbot-World-2, Google 커스텀 URL 등",
+    "title_ko": "GPT-5.6·Grok 4.5·Muse Spark 1.1 등 최신 AI 뉴스 모음",
+    "url": "https://www.youtube.com/watch?v=Xxuv8AkPS4Y",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널의 IT 뉴스 영상으로, GPT-5.6, GPT-Live, GPT-Work, Grok 4.5, Muse Spark 1.1, Lingbot-World-2, Google 커스텀 URL 등 최신 AI 및 IT 소식을 다룬다. 다양한 LLM 신규 모델 및 업데이트 소식이 한 번에 정리되어 있다.",
+    "why_it_matters": "주요 AI 모델 업데이트가 한 영상에 압축되어 있어 빠르게 트렌드를 파악하기에 유용하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7786722883597883,
+    "published_at": "2026-07-12T10:49:00Z"
+  },
+  {
+    "id": "youtube-mWlCituW7wo",
+    "section": "video",
+    "title_en": "A Model Explosion: GPT 5.6 Sol, Grok 4.5 and Meta Muse Rewrite the Rules",
+    "title_ko": "모델 폭발: GPT 5.6 Sol, Grok 4.5, Meta Muse Spark 1.1이 판도를 바꾸다",
+    "url": "https://www.youtube.com/watch?v=mWlCituW7wo",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "한 주 사이에 GPT 5.6 Sol, Grok 4.5, Meta Muse Spark 1.1이 잇따라 공개되며 AI 모델 경쟁이 더욱 치열해졌다. GPT 5.6은 가성비 면에서 Claude Fable을 능가할 수 있다는 평가가 나오며, 새로운 벤치마크(SimpleBench 업그레이드, SWE-Marathon 등)와 함께 모델 선택이 한층 복잡해졌다. 영상은 바이럴 헤드라인 뒤에 숨겨진 주요 인사이트와 모델 개선이 당분간 정체되지 않을 이유도 다룬다.",
+    "why_it_matters": "GPT·Grok·Meta 세 진영이 동시에 신모델을 출시하며 LLM 선택 기준과 벤치마크 생태계 자체가 빠르게 재편되고 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.503994708994709,
+    "published_at": "2026-07-10T12:40:15Z"
+  },
+  {
+    "id": "youtube-LE4YC5_YoWc",
+    "section": "video",
+    "title_en": "쇼츠 공장이 되었다는 구글 근황",
+    "title_ko": "구글, 쇼츠 공장이 되다? 최근 구글의 변화",
+    "url": "https://www.youtube.com/shorts/LE4YC5_YoWc",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "유튜브 채널 조코딩에서 구글의 최근 근황을 다루는 영상으로, 구글이 쇼츠 중심으로 변화하고 있다는 내용을 소개한다. 영상은 #노트북LM과 #AI 해시태그를 포함하고 있어 AI 관련 내용도 언급된 것으로 보인다.",
+    "why_it_matters": "구글의 콘텐츠 전략 변화가 개발자 및 크리에이터 생태계에 미치는 영향을 가늠할 수 있다.",
+    "tags": [],
+    "score": 0.46429728835978834,
+    "published_at": "2026-07-10T06:00:06Z"
+  },
+  {
+    "id": "simon_willison-directly-responsible-individuals",
+    "section": "deepdive",
+    "title_en": "Directly Responsible Individuals (DRI)",
+    "title_ko": "AI 에이전트는 '직접 책임자(DRI)'가 될 수 없다",
+    "url": "https://simonwillison.net/2026/Jul/12/directly-responsible-individuals/#atom-everything",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Simon Willison은 Apple에서 유래한 'Directly Responsible Individual(DRI)' 개념을 LLM 기반 에이전트의 맥락에서 고찰했다. 그는 AI 에이전트가 프로젝트의 DRI가 되어서는 안 된다고 주장하며, 책임은 인간 고유의 영역이라고 강조했다. IBM의 1979년 교육 슬라이드 '컴퓨터는 절대 책임을 질 수 없으므로 경영 결정을 내려서는 안 된다'는 원칙도 이를 뒷받침하는 사례로 언급했다.",
+    "why_it_matters": "AI 에이전트가 조직 내에서 더 많은 역할을 맡게 될수록, 최종 책임 소재를 명확히 인간에게 귀속시키는 원칙이 더욱 중요해진다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8568700396825397,
+    "published_at": "2026-07-12T23:57:14Z"
+  }
+]

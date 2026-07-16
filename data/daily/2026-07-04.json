@@ -1,0 +1,370 @@
+[
+  {
+    "id": "hf-2607.02512",
+    "section": "papers",
+    "title_en": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
+    "title_ko": "Program-as-Weights: 퍼지 함수를 위한 새로운 프로그래밍 패러다임",
+    "url": "https://huggingface.co/papers/2607.02512",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "규칙 기반으로 구현하기 어려운 작업(로그 중요도 판단, 비정형 JSON 수정, 검색 결과 의도 기반 랭킹 등)을 자연어 명세로부터 경량 신경망 아티팩트로 컴파일하는 '퍼지 함수 프로그래밍' 패러다임을 제안한다. PAW(Program-as-Weights) 방식은 4B 컴파일러가 FuzzyBench(1000만 예제 데이터셋)로 학습되어 경량 인터프리터용 파라미터 효율적 어댑터를 생성한다. 0.6B Qwen3 인터프리터로 실행 시 Qwen3-32B 직접 프롬프팅과 유사한 성능을 내면서 추론 메모리는 약 1/50 수준이며, MacBook M3에서 초당 30토큰으로 실행된다. 함수 정의당 한 번만 컴파일러를 호출하면 이후 호출은 저비용 오프라인으로 처리 가능하다.",
+    "why_it_matters": "대형 LLM API 의존 없이 로컬에서 재현 가능하고 저렴하게 퍼지 로직을 실행할 수 있는 실용적 대안을 제시해 개발 비용과 레이턴시를 크게 줄일 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 5.07753744390572,
+    "published_at": "2026-07-01T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.02255",
+    "section": "papers",
+    "title_en": "AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents",
+    "title_ko": "AgenticSTS: 장기 계획 LLM 에이전트를 위한 제한적 메모리 테스트베드",
+    "url": "https://huggingface.co/papers/2607.02255",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "장기 계획 LLM 에이전트에서 메모리 설계를 실험하는 테스트베드 'AgenticSTS'를 소개한다. 기존의 모든 과거 컨텍스트를 프롬프트에 누적하는 방식 대신, 타입별 검색으로 매번 새로운 메시지를 구성하는 '제한적 메모리 계약' 방식을 제안한다. 덱빌딩 게임 Slay the Spire 2를 벤치마크 환경으로 활용해 메모리 레이어가 에이전트 의사결정에 미치는 영향을 분리·측정했으며, 전략적 스킬 레이어 추가 시 승률이 3/10에서 6/10으로 향상되는 방향성을 확인했다. 298개의 완성된 궤적, 메모리 스냅샷, 프롬프트 기록 등을 포함한 재현 가능한 테스트베드를 공개한다.",
+    "why_it_matters": "장기 에이전트에서 메모리 구성 요소의 영향을 통제된 방식으로 분리·측정할 수 있는 방법론과 공개 데이터셋을 제공한다는 점에서 에이전트 설계 연구에 실질적인 기여를 한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.737669618283368,
+    "published_at": "2026-07-01T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.02440",
+    "section": "papers",
+    "title_en": "EvoPolicyGym: Evaluating Autonomous Policy Evolution in Interactive Environments",
+    "title_ko": "EvoPolicyGym: 상호작용 환경에서 자율 정책 진화를 평가하는 벤치마크",
+    "url": "https://huggingface.co/papers/2607.02440",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "EvoPolicyGym은 에이전트가 제한된 상호작용 예산 내에서 실행 가능한 정책을 반복적으로 개선하는 능력을 평가하는 벤치마크다. 16개의 소형 강화학습 환경으로 구성되며, GPT-4.5가 전체 순위에서 가장 높은 점수와 모든 환경에서 상위 2위 성능을 기록했다. 단순 최종 점수가 아닌 궤적 수준의 진단을 통해 에이전트가 예산을 어떻게 배분하고 피드백을 파라미터 튜닝으로 전환하는지 분석할 수 있다.",
+    "why_it_matters": "기존 평가가 놓쳤던 '자율 정책 진화' 과정을 체계적으로 측정함으로써, 에이전트의 반복 개선 능력을 보다 정밀하게 벤치마킹할 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.713572066704308,
+    "published_at": "2026-07-01T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.30562",
+    "section": "papers",
+    "title_en": "Morphing into Hybrid Attention Models",
+    "title_ko": "FlashMorph: 트랜스포머를 하이브리드 어텐션 모델로 변환하는 효율적인 레이어 선택 방법",
+    "url": "https://huggingface.co/papers/2606.30562",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "하이브리드 어텐션 모델은 일부 풀-어텐션 레이어를 선형 어텐션으로 교체해 긴 컨텍스트 처리 효율을 높이지만, 어떤 레이어를 유지할지 결정하는 것이 핵심 과제다. FlashMorph는 이 레이어 선택 문제를 예산 제약 부분집합 최적화 문제로 정식화하고, 각 풀-어텐션 레이어에 선형 어텐션 브랜치를 병렬 장착한 뒤 레이어별 게이트를 공동 최적화한다. 학습된 게이트를 이산화해 하이브리드 아키텍처를 결정하고, 이후 로짓 증류와 긴 컨텍스트 파인튜닝을 적용한다. 실험 결과 FlashMorph는 기존 방법 대비 레이어 선택 비용을 크게 줄이면서도 긴 컨텍스트 회상 능력과 일반 벤치마크 성능을 유지하는 것으로 나타났다.",
+    "why_it_matters": "기존 트랜스포머 모델을 재훈련 없이 효율적인 하이브리드 어텐션 구조로 전환할 수 있어, 긴 컨텍스트 LLM의 추론 비용 절감에 직접적으로 활용 가능하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.49650756146648,
+    "published_at": "2026-06-28T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.01647",
+    "section": "papers",
+    "title_en": "AgenticDataBench: A Comprehensive Benchmark for Data Agents",
+    "title_ko": "AgenticDataBench: 데이터 에이전트를 위한 종합 벤치마크",
+    "url": "https://huggingface.co/papers/2607.01647",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "AgenticDataBench는 LLM 기반 데이터 에이전트를 다양한 시나리오에서 세밀하게 평가하기 위한 종합 벤치마크다. 핀테크 기업의 실제 B2B 사례를 포함한 15개 수직 도메인의 실제 데이터셋과 태스크를 수집하였으며, Stack Overflow의 대규모 솔루션에서 데이터 과학 스킬을 추출해 벤치마크 커버리지를 정량화했다. 또한 실제 데이터가 부족한 도메인을 위해 LLM 기반 태스크 생성 방식을 도입하고, 최신 데이터 에이전트들을 스킬 수준의 세부 분석과 함께 평가한다.",
+    "why_it_matters": "데이터 과학 자동화를 위한 LLM 에이전트 평가 기준이 부재한 상황에서, 실무 중심의 다도메인 벤치마크가 등장해 에이전트 성능 비교와 개선 방향을 제시할 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.178053830347945,
+    "published_at": "2026-07-01T20:00:00Z"
+  },
+  {
+    "id": "github_trending-openai/codex-plugin-cc",
+    "section": "releases",
+    "title_en": "openai/codex-plugin-cc",
+    "title_ko": "Claude Code에서 OpenAI Codex를 사용하는 공식 플러그인",
+    "url": "https://github.com/openai/codex-plugin-cc",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "OpenAI가 공개한 이 플러그인은 Claude Code 워크플로우 안에서 Codex를 직접 호출할 수 있게 해줍니다. `/codex:review`, `/codex:adversarial-review` 등의 슬래시 명령으로 코드 리뷰를 요청하거나, `/codex:rescue`로 버그 조사·수정 작업을 Codex에게 위임할 수 있습니다. ChatGPT 구독(무료 포함) 또는 OpenAI API 키와 Node.js 18.18 이상이 필요하며, 로컬 Codex CLI를 통해 동작합니다.",
+    "why_it_matters": "경쟁사 AI 코딩 도구인 Claude Code 환경에서 OpenAI Codex를 직접 연동하는 공식 플러그인으로, 두 에이전트를 함께 활용하는 새로운 멀티 에이전트 개발 워크플로우를 가능하게 한다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8664021164021164,
+    "published_at": "2026-07-04T01:33:19Z"
+  },
+  {
+    "id": "github_trending-anthropics/claude-code",
+    "section": "releases",
+    "title_en": "anthropics/claude-code",
+    "title_ko": "Anthropic, Claude Code 공식 오픈소스 저장소 공개",
+    "url": "https://github.com/anthropics/claude-code",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 터미널 기반 에이전틱 코딩 도구인 Claude Code의 공식 GitHub 저장소를 공개했다. 자연어 명령으로 루틴 작업 실행, 복잡한 코드 설명, Git 워크플로우 처리 등을 지원하며 터미널, IDE, GitHub(@claude 태그)에서 모두 사용할 수 있다. MacOS, Linux, Windows를 지원하며 npm 설치는 deprecated되어 공식 설치 스크립트 사용이 권장된다.",
+    "why_it_matters": "Anthropic이 Claude Code를 오픈소스로 공개함으로써 개발자들이 플러그인 확장 및 커뮤니티 기여를 통해 에이전틱 코딩 도구 생태계를 직접 발전시킬 수 있게 됐다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8664021164021164,
+    "published_at": "2026-07-04T01:33:19Z"
+  },
+  {
+    "id": "github_trending-agentskills/agentskills",
+    "section": "releases",
+    "title_en": "agentskills/agentskills",
+    "title_ko": "Agent Skills: AI 에이전트 역량 확장을 위한 오픈 표준",
+    "url": "https://github.com/agentskills/agentskills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Agent Skills는 AI 에이전트에 전문 지식과 워크플로우를 추가할 수 있는 경량 오픈 포맷입니다. `SKILL.md` 파일을 포함한 폴더 구조로 스킬을 정의하며, 에이전트는 필요 시에만 해당 스킬을 로드해 컨텍스트 사용량을 최소화합니다. 원래 Anthropic이 개발했으며, 현재 오픈 스탠다드로 공개되어 다양한 에이전트 제품에서 채택되고 있습니다.",
+    "why_it_matters": "에이전트 간 재사용 가능한 스킬 표준화로, 팀·조직 특화 워크플로우를 여러 AI 도구에 걸쳐 일관되게 적용할 수 있게 된다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8664021164021164,
+    "published_at": "2026-07-04T01:33:19Z"
+  },
+  {
+    "id": "github_trending-msitarzewski/agency-agents",
+    "section": "releases",
+    "title_en": "msitarzewski/agency-agents",
+    "title_ko": "agency-agents: 16개 부서 232개 전문 AI 에이전트 모음집",
+    "url": "https://github.com/msitarzewski/agency-agents",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "엔지니어링, 디자인, 마케팅, 보안 등 16개 부서에 걸쳐 232개의 역할별 AI 에이전트 프롬프트를 제공하는 오픈소스 프로젝트다. 각 에이전트는 고유한 성격, 워크플로우, 성과 지표를 갖추고 있으며 Claude Code, Cursor, Gemini CLI, GitHub Copilot 등 주요 AI 코딩 도구에 설치 스크립트로 손쉽게 연동할 수 있다. macOS·Linux·Windows용 네이티브 앱도 출시되어 클릭 한 번으로 에이전트를 설치하고 자동 업데이트까지 지원한다.",
+    "why_it_matters": "단순 프롬프트 모음을 넘어 팀 전체를 AI 에이전트로 구성할 수 있는 실전형 프레임워크로, 다양한 AI 도구와의 통합까지 지원해 실무 적용 장벽이 낮다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.8664021164021164,
+    "published_at": "2026-07-04T01:33:19Z"
+  },
+  {
+    "id": "google_blog-google-ai-updates-june-2026",
+    "section": "releases",
+    "title_en": "The latest AI news we announced in June 2026",
+    "title_ko": "2026년 6월 Google AI 주요 발표 소식",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글이 2026년 6월에 발표한 최신 AI 관련 소식을 정리한 블로그 포스트입니다. Pixel Drop과 관련된 내용이 포함된 것으로 보입니다. 구체적인 세부 내용은 제공된 정보만으로는 확인하기 어렵습니다.",
+    "why_it_matters": "구글의 월간 AI 발표 요약으로, 최신 구글 AI 동향을 한눈에 파악할 수 있는 참고 자료입니다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.5372040343915344,
+    "published_at": "2026-07-01T18:15:00Z"
+  },
+  {
+    "id": "google_blog-nyc-ai-summit",
+    "section": "releases",
+    "title_en": "New York City educators and industry leaders gathered at Google’s offices to shape the future of AI in classrooms.",
+    "title_ko": "뉴욕시 교육자·기업 리더들, 구글 사무소에서 AI 교육 미래 논의",
+    "url": "https://blog.google/products-and-platforms/products/education/nyc-ai-summit/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글, 뉴욕 잡스 CEO 카운슬, 어반 어셈블리가 공동으로 AI 서밋을 개최했다. 약 150명의 교육계 및 산업계 리더들이 참석해 교실에서의 AI 활용 방향을 논의했다.",
+    "why_it_matters": "교육 현장에서의 AI 도입 방향을 교육자와 산업계가 함께 논의한다는 점에서 AI 교육 정책과 실무에 영향을 줄 수 있다.",
+    "tags": [],
+    "score": 0.5238111772486773,
+    "published_at": "2026-07-01T16:00:00Z"
+  },
+  {
+    "id": "openai_blog-how-chatgpt-adoption-has-expanded",
+    "section": "releases",
+    "title_en": "How ChatGPT adoption has expanded",
+    "title_ko": "ChatGPT 글로벌 도입 현황 공개",
+    "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 새로운 Signals 데이터를 통해 ChatGPT의 글로벌 채택 현황을 공개했다. 사용자들은 점점 더 많은 기능을 탐색하며 사용 빈도를 높이고 있으며, 다양한 지역과 언어권에 걸쳐 성장세가 나타나고 있다.",
+    "why_it_matters": "ChatGPT의 실제 사용자 증가 추세와 지역별 확산 데이터를 통해 AI 서비스의 글로벌 확장 방향을 가늠할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.3392873677248678,
+    "published_at": "2026-06-30T09:00:00Z"
+  },
+  {
+    "id": "hn-48775921",
+    "section": "community",
+    "title_en": "Jamesob's guide to running SOTA LLMs locally",
+    "title_ko": "로컬에서 최신 LLM 실행하기 - Jamesob 가이드",
+    "url": "https://github.com/jamesob/local-llm",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Jamesob가 로컬 환경에서 최신 LLM(SOTA)을 직접 실행하는 방법에 대한 가이드를 공개했다. 클라우드 API에 의존하지 않고 자신의 하드웨어에서 LLM을 구동하는 방법을 다룬다.",
+    "why_it_matters": "로컬 LLM 실행에 관심 있는 개발자에게 실용적인 참고 자료가 될 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 9.081575758988917,
+    "published_at": "2026-07-03T15:03:43Z"
+  },
+  {
+    "id": "hn-48779683",
+    "section": "community",
+    "title_en": "Espionage Against the European Parliament",
+    "title_ko": "유럽 의회를 겨냥한 스파이 활동",
+    "url": "https://citizenlab.ca/research/member-of-committee-investigating-spyware-hacked-with-pegasus/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "유럽 의회를 대상으로 한 스파이 활동에 관한 내용이다. 상세한 설명이 제공되지 않아 추가적인 정보는 확인이 필요하다.",
+    "why_it_matters": "주요 민주주의 기관에 대한 사이버 첩보 위협은 AI 기반 공격 가능성과 함께 보안 분야에서 중요한 사안이다.",
+    "tags": [],
+    "score": 8.744674365989267,
+    "published_at": "2026-07-03T20:38:26Z"
+  },
+  {
+    "id": "hn-48780417",
+    "section": "community",
+    "title_en": "GLM5.2 on AMD MI355X at 2626 tok/s/node at over 2x lower cost than Blackwell",
+    "title_ko": "AMD MI355X에서 GLM5.2, Blackwell 대비 2배 이상 저렴한 비용으로 2626 tok/s/node 달성",
+    "url": "https://www.wafer.ai/blog/glm52-amd",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AMD MI355X GPU에서 GLM5.2 모델이 노드당 2626 토큰/초의 추론 속도를 기록했다. 이는 NVIDIA Blackwell 대비 2배 이상 낮은 비용으로 달성한 성과다.",
+    "why_it_matters": "NVIDIA 독주 체제에 도전하는 AMD의 비용 경쟁력이 실제 벤치마크로 가시화되고 있어 AI 인프라 선택지가 넓어질 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 7.300831243317238,
+    "published_at": "2026-07-03T21:49:06Z"
+  },
+  {
+    "id": "hn-48780801",
+    "section": "community",
+    "title_en": "Leanstral 1.5: Proof Abundance for All",
+    "title_ko": "Leanstral 1.5: 모두를 위한 증명 풍요",
+    "url": "https://mistral.ai/news/leanstral-1-5/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Leanstral 1.5가 공개되었다. 제목에서 'Proof Abundance'를 강조하는 것으로 보아 수학적 증명 생성 또는 형식 검증 관련 기능이 강화된 버전으로 추정된다. 상세 설명이 제공되지 않아 구체적인 내용은 원문 확인이 필요하다.",
+    "why_it_matters": "수학 증명 자동화 분야의 새로운 모델 또는 도구 업데이트로, 형식 검증에 관심 있는 개발자에게 주목할 만하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 7.237524806593778,
+    "published_at": "2026-07-03T22:33:10Z"
+  },
+  {
+    "id": "hn-48780056",
+    "section": "community",
+    "title_en": "New serious vulnerabilities spiked around release of Claude Mythos Preview",
+    "title_ko": "Claude Mythos Preview 출시 전후 심각한 취약점 급증",
+    "url": "https://epoch.ai/data-insights/cve-severity-spike",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Claude Mythos Preview 출시 시점을 전후하여 심각한 보안 취약점이 급증한 것으로 보고되었다. 구체적인 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "AI 모델 출시 시점과 보안 취약점 급증의 상관관계는 AI 인프라 보안 관점에서 주목할 필요가 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 6.169239549951308,
+    "published_at": "2026-07-03T21:16:16Z"
+  },
+  {
+    "id": "youtube-2oAZfM2iUbw",
+    "section": "video",
+    "title_en": "실시간 소통은 껌이라는 중국의 AI",
+    "title_ko": "실시간 소통도 거뜬한 중국의 AI 스트리머",
+    "url": "https://www.youtube.com/shorts/2oAZfM2iUbw",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 실시간 소통이 가능한 중국의 AI 기술을 소개하는 영상이다. AI가 스트리머처럼 실시간으로 시청자와 대화하는 기능을 다루고 있다.",
+    "why_it_matters": "AI가 실시간 방송·소통 영역까지 진입하며 콘텐츠 크리에이터 생태계에 변화를 예고한다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7678687169312169,
+    "published_at": "2026-07-03T09:00:06Z"
+  },
+  {
+    "id": "youtube-OLAWeIuiD5Y",
+    "section": "video",
+    "title_en": "무신사의 AI 시대 전략과 인재상 | AX 인재전쟁 3화 무신사",
+    "title_ko": "무신사의 AI 전략과 인재상 | AX 인재전쟁 3화",
+    "url": "https://www.youtube.com/watch?v=OLAWeIuiD5Y",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "무신사 전사 테크 리드 김상범이 무신사의 AI 시대 전략을 소개했다. AI를 단순 도구가 아닌 복잡도를 이기는 생존의 문제로 보며, 10년 후에는 AI 에이전트가 가장 먼저 찾는 플랫폼이 되겠다는 비전을 제시했다. 인재상으로는 '깊이 생각하고 결과를 만들며 도구는 뭐든 활용하는 사람'을 강조했다.",
+    "why_it_matters": "국내 주요 패션 플랫폼 무신사가 AI를 핵심 생존 전략으로 삼고 AI 에이전트 생태계 선점을 목표로 한다는 점에서 국내 이커머스·테크 업계의 AX 방향성을 가늠할 수 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7678621031746031,
+    "published_at": "2026-07-03T09:00:02Z"
+  },
+  {
+    "id": "youtube--gABNH7Gv2o",
+    "section": "video",
+    "title_en": "학생이라면 시험기간에 꼭 필요한 도구",
+    "title_ko": "시험 기간 학생에게 유용한 AI 도구 소개",
+    "url": "https://www.youtube.com/shorts/-gABNH7Gv2o",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 시험 기간 학생들에게 유용한 AI 도구를 소개하는 영상입니다. 구체적인 도구명이나 기능 상세는 본문에 제공되지 않았으나, AI와 구글 관련 공부 도구를 다루는 내용으로 보입니다.",
+    "why_it_matters": "학생 대상 AI 활용 학습 도구에 관심 있는 개발자·학습자에게 참고가 될 수 있는 콘텐츠.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7500545634920635,
+    "published_at": "2026-07-03T06:00:32Z"
+  },
+  {
+    "id": "simon_willison-open-source-ai-gap-map",
+    "section": "deepdive",
+    "title_en": "Open Source AI Gap Map",
+    "title_ko": "오픈소스 AI 생태계 현황 지도 'Gap Map' 공개",
+    "url": "https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/#atom-everything",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "비영리 글로벌 파트너십 Current AI가 오픈소스 AI 생태계를 정리한 'Gap Map v0.1'을 공개했다. 이 지도는 228개 조직이 만든 421개 제품(소프트웨어 266개, 모델 85개, 데이터셋 50개, 하드웨어 20개)을 스택 3개 레이어·14개 카테고리로 분류한다. 기반 데이터는 MIT 라이선스로 GitHub에 공개되어 있으며, 1,184개의 YAML 파일과 관련 스크립트가 포함된다.",
+    "why_it_matters": "오픈소스 AI 생태계 전체를 체계적으로 인덱싱한 공개 데이터셋으로, 개발자와 연구자가 생태계 현황을 파악하고 활용하는 데 유용한 기준점이 될 수 있다.",
+    "tags": [
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.8456878306878307,
+    "published_at": "2026-07-03T22:04:31Z"
+  }
+]

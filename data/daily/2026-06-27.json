@@ -1,0 +1,370 @@
+[
+  {
+    "id": "hf-2606.24775",
+    "section": "papers",
+    "title_en": "Are We Ready For An Agent-Native Memory System?",
+    "title_ko": "에이전트 네이티브 메모리 시스템, 우리는 준비됐는가?",
+    "url": "https://huggingface.co/papers/2606.24775",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LLM 에이전트용 메모리는 단순 RAG에서 지속적 저장·검색·업데이트·수명 주기 관리를 포함한 복잡한 데이터 관리 시스템으로 진화했다. 본 논문은 에이전트 메모리를 표현·저장, 추출, 검색·라우팅, 유지관리 4개 모듈로 분해하는 분석 프레임워크를 제안하며, 12개 메모리 시스템을 11개 데이터셋 기반 5개 벤치마크로 평가했다. 평가 결과 단일 아키텍처가 모든 시나리오를 지배하지 않으며, 워크로드 병목과 메모리 구조의 정합성이 성능을 좌우한다는 사실을 확인했다. 또한 전역 재구성보다 지역적 유지관리가 비용 효율적임을 밝혔다.",
+    "why_it_matters": "에이전트 메모리를 블랙박스가 아닌 데이터 관리 관점에서 체계적으로 분석한 최초의 대규모 실험 연구로, 실용적인 설계 지침을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "RAG"
+    ],
+    "score": 5.61512051684126,
+    "published_at": "2026-06-22T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.26058",
+    "section": "papers",
+    "title_en": "DomainShuttle: Freeform Open Domain Subject-driven Text-to-video Generation",
+    "title_ko": "DomainShuttle: 오픈 도메인 주제 기반 텍스트-투-비디오 생성 프레임워크",
+    "url": "https://huggingface.co/papers/2606.26058",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "DomainShuttle은 참조 이미지의 주제를 기반으로 텍스트 프롬프트에 따라 영상을 생성하는 새로운 프레임워크다. 인도메인(높은 피사체 충실도)과 크로스 도메인(스타일·속성 변환) 두 시나리오를 모두 유연하게 처리할 수 있도록 설계되었다. 핵심 기술로 Domain-MoT, Video-Reference DualRoPE, Cross-Pair Consistent Loss를 도입해 피사체의 본질적 특징은 유지하면서 프롬프트에 따른 창의적 변형도 가능하게 했다. 실험 결과 기존 방법 대비 피사체 충실도와 생성 유연성 모두에서 성능 향상을 입증했다.",
+    "why_it_matters": "단일 모델로 충실한 재현과 창의적 크로스 도메인 변환을 동시에 달성해 영상 개인화 생성의 실용 범위를 크게 넓힌다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.110873864173311,
+    "published_at": "2026-06-23T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.27377",
+    "section": "papers",
+    "title_en": "DanceOPD: On-Policy Generative Field Distillation",
+    "title_ko": "DanceOPD: 온정책 생성 필드 증류로 이미지 생성 능력 통합",
+    "url": "https://huggingface.co/papers/2606.27377",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "DanceOPD는 텍스트-이미지 생성, 로컬 편집, 글로벌 편집 등 다양한 능력을 하나의 모델로 통합하기 위한 온정책(on-policy) 생성 필드 증류 프레임워크입니다. 플로우 매칭 모델에서 각 샘플을 특정 능력 필드로 라우팅하고, 학생 모델이 자신의 롤아웃 상태에서 전문가 능력을 학습하도록 설계되었습니다. 이 방식은 편집 기능이 T2I 성능을 저하시키거나 글로벌/로컬 편집이 서로 간섭하는 문제를 해결하며, CFG 흡수 등 다양한 실험에서 멀티 능력 구성 성능을 개선했습니다.",
+    "why_it_matters": "단일 이미지 생성 모델에서 상충하는 여러 능력을 효과적으로 통합하는 실용적 증류 방법을 제시해, 다목적 생성 모델 개발에 중요한 기초를 마련한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.007333185232471,
+    "published_at": "2026-06-24T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.25763",
+    "section": "papers",
+    "title_en": "ShutterMuse: Capture-Time Photography Guidance with MLLMs",
+    "title_ko": "ShutterMuse: 촬영 시점 사진 가이던스를 위한 멀티모달 LLM",
+    "url": "https://huggingface.co/papers/2606.25763",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "실제 촬영 환경에서 카메라 프레이밍과 피사체 포즈를 동시에 안내하는 캡처 타임 가이던스 연구다. 연구팀은 이를 평가하기 위해 CaptureGuide-Bench를 제안하고, 13만 샘플로 구성된 CaptureGuide-Dataset을 구축했다. 이를 기반으로 지도학습과 강화학습 파인튜닝을 결합해 훈련한 ShutterMuse는 사진가 측 구도 성능에서 최고 수준을 달성하고, 피사체 포즈 추천에서도 경쟁력 있는 성능을 낮은 추론 비용으로 보여준다.",
+    "why_it_matters": "촬영 순간 구도와 포즈를 동시에 안내하는 MLLM 연구로, AI 기반 인터랙티브 사진 어시스턴트 개발의 새로운 방향을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.737669618283368,
+    "published_at": "2026-06-23T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.27313",
+    "section": "papers",
+    "title_en": "ViQ: Text-Aligned Visual Quantized Representations at Any Resolution",
+    "title_ko": "ViQ: 임의 해상도를 지원하는 텍스트 정렬 시각 양자화 표현 프레임워크",
+    "url": "https://huggingface.co/papers/2606.27313",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "ViQ는 이미지를 텍스트처럼 이산 신호로 표현하면서도 저수준 디테일과 고수준 의미론적 정보를 균형 있게 유지하는 시각 양자화 표현 프레임워크입니다. 텍스트 정렬 사전학습과 특징 이산화의 두 단계로 양자화 학습을 구성하며, 네이티브 해상도 입력을 지원합니다. 멀티모달 학습 시 기존 연속·고차원 시각 특징과 경쟁력 있는 성능을 유지하면서 학습 속도를 최대 20~70% 향상시키는 것으로 나타났습니다.",
+    "why_it_matters": "텍스트와 이미지를 단일 이산 표현으로 통합함으로써 멀티모달 모델의 구조를 단순화하고 학습 효율을 크게 높일 수 있다.",
+    "tags": [
+      "LLM",
+      "RAG"
+    ],
+    "score": 4.610917912644224,
+    "published_at": "2026-06-24T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-previewing-gpt-5-6-sol",
+    "section": "releases",
+    "title_en": "Previewing GPT-5.6 Sol: a next-generation model",
+    "title_ko": "차세대 모델 GPT-5.6 Sol 미리보기",
+    "url": "https://openai.com/index/previewing-gpt-5-6-sol",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 차세대 모델 GPT-5.6 Sol을 공개했다. 이 모델은 코딩, 과학, 사이버보안 분야에서 강화된 성능을 갖추고 있으며, OpenAI의 가장 발전된 안전 시스템과 함께 제공된다.",
+    "why_it_matters": "OpenAI의 최신 모델이 핵심 기술 분야의 역량을 한층 높이면서 안전성도 강화해 AI 경쟁 구도에 영향을 줄 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7738111772486773,
+    "published_at": "2026-06-26T10:00:00Z"
+  },
+  {
+    "id": "github_trending-xbtlin/ai-berkshire",
+    "section": "releases",
+    "title_en": "xbtlin/ai-berkshire",
+    "title_ko": "AI Berkshire: Claude Code 기반 가치투자 리서치 프레임워크",
+    "url": "https://github.com/xbtlin/ai-berkshire",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "AI Berkshire는 Claude Code 위에 구축된 투자 리서치 스킬 모음으로, 워런 버핏·찰리 멍거·단융핑·리루 네 명의 가치투자 대가 방법론을 체계화했다. 4개의 AI 에이전트가 병렬로 기업을 분석하여 단순 AI 질의와 달리 명확한 매수/보류 결론과 구체적 가격 구간을 제시한다. Python decimal 기반 정밀 재무 계산, 다중 출처 교차 검증, 역발상 리스크 체크리스트 등 반(反)편향 메커니즘을 내장하고 있으며, 총 16개 스킬(심층 연구·재무제표 분석·업종 스크리닝·포트폴리오 관리 등)을 지원한다.",
+    "why_it_matters": "Claude Code의 멀티 에이전트 기능을 실제 투자 의사결정 워크플로우에 구조적으로 통합한 오픈소스 사례로, AI 에이전트를 도메인 전문 프레임워크와 결합하는 방식을 직접 참고할 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7243766534391534,
+    "published_at": "2026-06-26T01:41:42Z"
+  },
+  {
+    "id": "github_trending-apple/container",
+    "section": "releases",
+    "title_en": "apple/container",
+    "title_ko": "Apple, Mac용 경량 Linux 컨테이너 도구 'container' 오픈소스 공개",
+    "url": "https://github.com/apple/container",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Apple이 Apple 실리콘 Mac에서 경량 가상머신으로 Linux 컨테이너를 생성·실행할 수 있는 도구 'container'를 오픈소스로 공개했다. Swift로 작성되었으며 OCI 호환 컨테이너 이미지를 지원해 표준 컨테이너 레지스트리와 연동이 가능하다. 현재 macOS 26 이상에서만 지원되며, 프로젝트는 활발히 개발 중이다.",
+    "why_it_matters": "Apple이 직접 공개한 공식 컨테이너 도구로, Mac 개발 환경에서 Docker 대안으로 자리잡을 가능성이 있다.",
+    "tags": [
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 0.7243766534391534,
+    "published_at": "2026-06-26T01:41:42Z"
+  },
+  {
+    "id": "github_trending-JCodesMore/ai-website-cloner-template",
+    "section": "releases",
+    "title_en": "JCodesMore/ai-website-cloner-template",
+    "title_ko": "AI 에이전트로 웹사이트를 한 명령어로 복제하는 템플릿",
+    "url": "https://github.com/JCodesMore/ai-website-cloner-template",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "URL 하나를 입력하고 `/clone-website` 명령을 실행하면 AI 코딩 에이전트가 대상 사이트의 디자인 토큰, 에셋, 컴포넌트 구조를 분석해 Next.js 코드베이스로 재현한다. Claude Code(Opus 4.7) 사용을 권장하며, Cursor·Copilot·Gemini CLI 등 주요 AI 코딩 도구도 지원한다. 탐색 → 기반 구성 → 컴포넌트 스펙 작성 → 병렬 빌드 → 조합 및 QA의 다단계 파이프라인으로 동작한다. 플랫폼 마이그레이션, 소스 코드 복구, 학습 목적으로 활용할 수 있다.",
+    "why_it_matters": "워드프레스·Webflow 등 레거시 사이트를 AI 에이전트 기반으로 현대적인 Next.js 코드로 자동 변환할 수 있어 마이그레이션 비용을 크게 줄일 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7243766534391534,
+    "published_at": "2026-06-26T01:41:42Z"
+  },
+  {
+    "id": "github_trending-aws/agent-toolkit-for-aws",
+    "section": "releases",
+    "title_en": "aws/agent-toolkit-for-aws",
+    "title_ko": "AWS 공식 에이전트 툴킷 출시 – AI 코딩 에이전트를 위한 MCP 서버·스킬·플러그인 통합 패키지",
+    "url": "https://github.com/aws/agent-toolkit-for-aws",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "AWS가 AI 코딩 에이전트가 AWS 서비스를 활용해 애플리케이션을 빌드·배포·관리할 수 있도록 돕는 공식 Agent Toolkit for AWS를 공개했다. Claude Code, Codex, Cursor, Kiro 등 주요 코딩 에이전트와 통합되며, 300개 이상의 AWS 서비스에 접근할 수 있는 MCP 서버, 태스크별 스킬 패키지, 플러그인을 제공한다. DevSecOps, 데이터 분석, AI 에이전트 구축 등 다양한 도메인별 플러그인이 포함되어 있으며, IAM 조건 키·CloudWatch 메트릭·CloudTrail 감사 로그를 통한 엔터프라이즈 수준의 보안 및 모니터링도 지원한다.",
+    "why_it_matters": "AWS 공식 지원으로 AI 에이전트가 AWS 인프라를 안전하고 감사 가능하게 자동화할 수 있는 표준 통합 경로가 마련됐다.",
+    "tags": [
+      "에이전트",
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 0.7243766534391534,
+    "published_at": "2026-06-26T01:41:42Z"
+  },
+  {
+    "id": "github_trending-mukul975/Anthropic-Cybersecurity-Skills",
+    "section": "releases",
+    "title_en": "mukul975/Anthropic-Cybersecurity-Skills",
+    "title_ko": "AI 에이전트를 위한 817개 사이버보안 스킬 오픈소스 라이브러리",
+    "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "AI 에이전트가 시니어 보안 분석가 수준의 판단력을 갖출 수 있도록 설계된 구조화된 사이버보안 스킬 모음집이다. 총 817개 스킬이 29개 보안 도메인에 걸쳐 제공되며, MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF, MITRE F3(금융사기 프레임워크) 등 6개 프레임워크에 매핑되어 있다. Claude Code, GitHub Copilot, Gemini CLI 등 26개 이상의 AI 플랫폼과 호환되며, agentskills.io 표준을 따른다. Apache 2.0 라이선스로 공개된 커뮤니티 프로젝트이며 Anthropic PBC와는 무관하다.",
+    "why_it_matters": "AI 에이전트에 전문 보안 분석가 수준의 체계적 플레이북을 제공함으로써, 단순 코드 생성 도구를 실질적인 보안 운영 자동화 도구로 격상시킬 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7243766534391534,
+    "published_at": "2026-06-26T01:41:42Z"
+  },
+  {
+    "id": "github_trending-alibaba/page-agent",
+    "section": "releases",
+    "title_en": "alibaba/page-agent",
+    "title_ko": "알리바바, 자연어로 웹 인터페이스를 제어하는 인페이지 GUI 에이전트 'Page Agent' 공개",
+    "url": "https://github.com/alibaba/page-agent",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "알리바바가 오픈소스로 공개한 Page Agent는 브라우저 확장프로그램이나 파이썬 없이 순수 JavaScript만으로 웹페이지 내에서 자연어 명령을 실행할 수 있는 GUI 에이전트입니다. 스크린샷 없이 텍스트 기반 DOM 조작 방식을 사용하므로 멀티모달 LLM이 필요 없으며, 원하는 LLM을 직접 연결해 사용할 수 있습니다. SaaS AI 코파일럿, 스마트 폼 자동화, 접근성 향상 등 다양한 활용 사례를 지원하며 MCP 서버 연동도 베타로 제공됩니다.",
+    "why_it_matters": "백엔드 수정 없이 단 몇 줄의 코드로 기존 웹 서비스에 자연어 기반 AI 에이전트를 즉시 탑재할 수 있어, 웹 개발자의 AI 도입 장벽을 크게 낮춥니다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7243766534391534,
+    "published_at": "2026-06-26T01:41:42Z"
+  },
+  {
+    "id": "hn-48690101",
+    "section": "community",
+    "title_en": "U.S. government will decide who gets to use GPT-5.6",
+    "title_ko": "미국 정부, GPT-5.6 사용 권한 결정권 갖는다",
+    "url": "https://www.washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "미국 정부가 GPT-5.6 접근 및 사용 권한을 결정하는 역할을 맡게 된다는 내용의 소식이다. 구체적인 세부 사항은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "AI 모델 접근 통제에 정부가 개입한다면, AI 기술의 활용 범위와 규제 방향에 중대한 영향을 미칠 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 11.048234172871613,
+    "published_at": "2026-06-26T18:23:14Z"
+  },
+  {
+    "id": "hn-48689028",
+    "section": "community",
+    "title_en": "Previewing GPT‑5.6 Sol: a next-generation model",
+    "title_ko": "차세대 모델 GPT-5.6 Sol 미리보기",
+    "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GPT-5.6 Sol이라는 차세대 AI 모델이 공개 예고되었다. 제공된 정보가 제한적이어서 구체적인 성능이나 출시 일정은 확인되지 않는다.",
+    "why_it_matters": "OpenAI의 새로운 모델 라인업 동향을 파악할 수 있는 소식이나, 세부 정보가 부족해 추가 확인이 필요하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.772783455711686,
+    "published_at": "2026-06-26T17:06:55Z"
+  },
+  {
+    "id": "hn-48685558",
+    "section": "community",
+    "title_en": "Ultrasound imaging of the brain",
+    "title_ko": "초음파를 이용한 뇌 이미징",
+    "url": "https://alephneuro.com/blog/ultrasound-brain",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "초음파 기술을 활용한 뇌 이미징에 관한 내용이다. 세부 정보가 제공되지 않아 구체적인 내용은 확인하기 어렵다.",
+    "why_it_matters": "뇌 이미징 기술의 발전은 신경과학 및 의료 진단 분야에 중요한 영향을 미칠 수 있다.",
+    "tags": [],
+    "score": 8.704379055499825,
+    "published_at": "2026-06-26T11:51:11Z"
+  },
+  {
+    "id": "hn-48692995",
+    "section": "community",
+    "title_en": "US allows Anthropic to release Mythos to 'trusted partners'",
+    "title_ko": "미국, Anthropic의 Mythos 모델 '신뢰 파트너'에 공개 허용",
+    "url": "https://www.reuters.com/technology/us-releases-anthropic-model-mythos-some-us-companies-semafor-reports-2026-06-26/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "미국 정부가 Anthropic의 Mythos 모델을 신뢰할 수 있는 파트너에 한해 공개할 수 있도록 허가했다. 구체적인 세부 사항은 공개된 설명에 포함되지 않았다.",
+    "why_it_matters": "정부 차원의 AI 모델 배포 규제와 허가 방식이 업계 전반에 영향을 미칠 수 있는 선례가 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.343601294599999,
+    "published_at": "2026-06-26T22:48:28Z"
+  },
+  {
+    "id": "hn-48688700",
+    "section": "community",
+    "title_en": "Show HN: Smart model routing directly in Claude, Codex and Cursor",
+    "title_ko": "Claude, Codex, Cursor에서 스마트 모델 라우팅 직접 구현",
+    "url": "https://github.com/workweave/router",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Claude, Codex, Cursor 환경에서 스마트 모델 라우팅 기능을 직접 구현한 프로젝트가 공개되었다. 요청의 특성에 따라 적합한 모델로 자동 라우팅하는 방식으로 보인다.",
+    "why_it_matters": "개발자가 사용하는 주요 AI 코딩 도구 내에서 모델 선택을 자동화해 비용과 성능을 최적화할 수 있는 가능성을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 8.160207744484497,
+    "published_at": "2026-06-26T16:40:11Z"
+  },
+  {
+    "id": "youtube-Wl2n0PoP3m4",
+    "section": "video",
+    "title_en": "멀미가 있다면 꼭 알아야할 미친 방법 ㄷㄷ",
+    "title_ko": "멀미 예방을 위한 놀라운 방법 소개",
+    "url": "https://www.youtube.com/shorts/Wl2n0PoP3m4",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 멀미가 있는 사람들을 위한 특별한 방법을 소개하는 영상이다. 애플과 관련된 내용이 포함된 것으로 보인다. 구체적인 방법은 영상을 통해 확인할 수 있다.",
+    "why_it_matters": "멀미 해소와 관련된 실용적인 팁을 다루는 콘텐츠로, AI·기술과의 직접적인 연관성은 불분명하다.",
+    "tags": [],
+    "score": 0.7679216269841269,
+    "published_at": "2026-06-26T09:00:38Z"
+  },
+  {
+    "id": "youtube-WLnBjSYIGeo",
+    "section": "video",
+    "title_en": "상상도 못한 스마트폰의 활용법 ㄷㄷ",
+    "title_ko": "스마트폰을 서버로 재활용하는 의외의 활용법",
+    "url": "https://www.youtube.com/shorts/WLnBjSYIGeo",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 스마트폰을 서버로 활용하는 방법을 소개하는 영상이다. 버려지거나 사용하지 않는 스마트폰을 재활용해 서버로 쓰는 아이디어를 다룬다.",
+    "why_it_matters": "저비용으로 개인 서버를 구축하고 싶은 개발자에게 실용적인 대안이 될 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.7500066137566137,
+    "published_at": "2026-06-26T06:00:03Z"
+  },
+  {
+    "id": "youtube-CJQB4EFtwU8",
+    "section": "video",
+    "title_en": "어디서든 작업할 수 있는 코덱스의 꿀기능!!",
+    "title_ko": "어디서든 작업 가능한 코덱스 활용 꿀팁",
+    "url": "https://www.youtube.com/shorts/CJQB4EFtwU8",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 코덱스(Codex)의 원격 작업 관련 유용한 기능을 소개하는 영상이다. 장소에 구애받지 않고 코딩 작업을 수행할 수 있는 방법을 다룬다.",
+    "why_it_matters": "코덱스를 활용한 원격·유연 작업 환경 구성에 관심 있는 개발자에게 실용적인 팁을 제공한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6290145502645502,
+    "published_at": "2026-06-25T09:40:27Z"
+  },
+  {
+    "id": "simon_willison-dean-w-ball",
+    "section": "deepdive",
+    "title_en": "Quoting Dean W. Ball",
+    "title_ko": "딘 W. 볼: 미국 AI 산업의 구조적 딜레마",
+    "url": "https://simonwillison.net/2026/Jun/26/dean-w-ball/#atom-everything",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "딘 W. 볼은 프론티어 AI 모델이 천문학적 비용으로 훈련되지만, 수익 회수 가능 기간이 출시 후 수개월에 불과하다고 지적한다. 또한 미국의 AI 인프라 투자는 사실상 글로벌 시장을 전제로 하고 있어, 미국 정부가 접근을 제한할 경우 그 경제적 근거 자체가 무너진다고 주장한다.",
+    "why_it_matters": "AI 규제·수출 통제 정책이 미국 AI 산업의 수익 모델과 인프라 투자 전제를 동시에 위협할 수 있다는 구조적 문제를 짚는다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.8477959656084656,
+    "published_at": "2026-06-26T22:25:46Z"
+  }
+]

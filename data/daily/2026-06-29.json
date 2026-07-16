@@ -1,0 +1,375 @@
+[
+  {
+    "id": "hf-2606.27377",
+    "section": "papers",
+    "title_en": "DanceOPD: On-Policy Generative Field Distillation",
+    "title_ko": "DanceOPD: 온-폴리시 생성 필드 증류로 이미지 생성 능력 통합",
+    "url": "https://huggingface.co/papers/2606.27377",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "DanceOPD는 텍스트-이미지 생성(T2I), 로컬 편집, 글로벌 편집 등 다양한 능력을 단일 모델로 통합하기 위한 온-폴리시 생성 필드 증류 프레임워크다. 플로우 매칭 모델에서 각 샘플을 특정 능력 필드로 라우팅하고, 학생 모델 자신의 롤아웃 상태에서 전문가 필드를 학습하는 방식을 사용한다. T2I, 편집, 현실감 필드 흡수, CFG 흡수 등 다양한 실험에서 멀티 캐퍼빌리티 조합 성능이 향상됨을 확인했다.",
+    "why_it_matters": "편집과 생성 능력이 서로 간섭하는 문제를 온-폴리시 증류로 해결해, 단일 모델에서 다양한 이미지 생성 능력을 충돌 없이 통합할 수 있는 실용적 경로를 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.276666119016055,
+    "published_at": "2026-06-24T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.26058",
+    "section": "papers",
+    "title_en": "DomainShuttle: Freeform Open Domain Subject-driven Text-to-video Generation",
+    "title_ko": "DomainShuttle: 자유형식 오픈 도메인 주제 기반 텍스트-투-비디오 생성",
+    "url": "https://huggingface.co/papers/2606.26058",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "DomainShuttle은 오픈 도메인 주제 기반 텍스트-투-비디오(S2V) 생성을 위한 새로운 방법론으로, 인도메인(높은 피사체 충실도)과 크로스도메인(스타일·의미 변환) 두 시나리오 모두에서 우수한 성능을 목표로 한다. 핵심 기술로 Domain-MoT, Video-Reference DualRoPE, Cross-Pair Consistent Loss를 도입해 참조 이미지의 본질적 특징을 유지하면서도 유연한 편집이 가능하도록 설계했다. 실험 결과, 기존 방법 대비 피사체 충실도와 생성 유연성 모두에서 유의미한 성능 향상을 달성했다.",
+    "why_it_matters": "기존 S2V 모델의 크로스도메인 편집 한계를 극복해 영상 개인화 및 창작 도구의 실용성을 크게 높일 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.174387269895637,
+    "published_at": "2026-06-23T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.26025",
+    "section": "papers",
+    "title_en": "In-Context World Modeling for Robotic Control",
+    "title_ko": "로봇 제어를 위한 인-컨텍스트 월드 모델링(ICWM)",
+    "url": "https://huggingface.co/papers/2606.26025",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "현재의 Vision-Language-Action(VLA) 모델은 카메라 시점이나 로봇 형태가 바뀌면 일반화에 실패하는 경우가 많다. ICWM은 이를 해결하기 위해 로봇이 짧은 자기 생성 상호작용 이력으로 시스템 변수를 추론하는 인-컨텍스트 적응 프레임워크를 제안한다. 파라미터 업데이트 없이 새로운 환경에 적응할 수 있으며, 시뮬레이션과 실제 로봇 플랫폼 실험 모두에서 기존 VLA 베이스라인을 크게 능가하는 성능을 보였다.",
+    "why_it_matters": "파인튜닝 없이 새로운 카메라 시점·로봇 형태에 적응 가능한 VLA 프레임워크로, 범용 로봇 AI의 실용화에 중요한 진전이다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.931825632724326,
+    "published_at": "2026-06-24T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.26790",
+    "section": "papers",
+    "title_en": "OPID: On-Policy Skill Distillation for Agentic Reinforcement Learning",
+    "title_ko": "OPID: 에이전트 강화학습을 위한 온-폴리시 스킬 증류 프레임워크",
+    "url": "https://huggingface.co/papers/2606.26790",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "OPID는 완료된 온-폴리시 궤적에서 직접 스킬 감독 신호를 추출하는 프레임워크다. 에피소드 수준의 스킬(전역 워크플로우·실패 회피 규칙)과 스텝 수준의 스킬(중요 시점의 로컬 결정 지식)을 계층적으로 표현하며, 중요 결정 시점에 따라 적절한 스킬을 주입한다. 이를 통해 희소한 결과 보상의 한계를 보완하는 밀도 높은 토큰 수준 자기증류 이점을 생성하고, ALFWorld·WebShop·검색 기반 QA 실험에서 기존 베이스라인 대비 성능·샘플 효율·강건성을 전반적으로 향상시켰다.",
+    "why_it_matters": "외부 스킬 메모리 없이 온-폴리시 궤적만으로 밀도 높은 감독 신호를 생성해 에이전트 RL의 희소 보상 문제를 실용적으로 해결한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.850147601710058,
+    "published_at": "2026-06-24T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.25763",
+    "section": "papers",
+    "title_en": "ShutterMuse: Capture-Time Photography Guidance with MLLMs",
+    "title_ko": "ShutterMuse: MLLM 기반 촬영 시점 사진 구도·포즈 가이드 시스템",
+    "url": "https://huggingface.co/papers/2606.25763",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "실제 사진 촬영 시 필요한 카메라 구도 및 피사체 포즈 지도를 위한 벤치마크 CaptureGuide-Bench와 데이터셋 CaptureGuide-Dataset(13만 샘플)을 구축했다. 기존 MLLMs는 구도 결정은 가능하지만 정밀한 위치 조정이나 포즈 안내는 부족한 것으로 드러났다. 이를 해결하기 위해 지도학습과 강화학습 파인튜닝을 결합한 통합 MLLM ShutterMuse를 개발했으며, 평가 결과 촬영자 측 성능에서 최고 수준을 기록하고 낮은 추론 비용으로 경쟁력 있는 포즈 추천을 제공했다.",
+    "why_it_matters": "사진 촬영 현장에서 실시간으로 구도와 포즈를 동시에 안내할 수 있는 MLLM의 가능성을 체계적으로 검증한 첫 시도로, AI 카메라 어시스턴트 개발에 중요한 기반을 제공한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.828641396489095,
+    "published_at": "2026-06-23T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-hp-frontier-partnership",
+    "section": "releases",
+    "title_en": "HP Inc. launches Frontier strategic partnership with OpenAI",
+    "title_ko": "HP Inc., OpenAI와 Frontier 전략적 파트너십 체결",
+    "url": "https://openai.com/index/hp-frontier-partnership",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "HP Inc.가 OpenAI와 Frontier 전략적 파트너십을 확대하여 고객 경험, 소프트웨어 개발, 기업 운영 전반에 AI를 도입한다. 이번 파트너십을 통해 HP는 OpenAI의 AI 기술을 핵심 비즈니스 영역에 적극 활용할 계획이다.",
+    "why_it_matters": "글로벌 IT 기업 HP가 OpenAI와 공식 전략 파트너십을 맺음으로써 엔터프라이즈 AI 도입이 더욱 가속화될 전망이다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.8154778439153438,
+    "published_at": "2026-06-28T17:00:00Z"
+  },
+  {
+    "id": "github_trending-xbtlin/ai-berkshire",
+    "section": "releases",
+    "title_en": "xbtlin/ai-berkshire",
+    "title_ko": "AI 버크셔: Claude Code 기반 가치투자 리서치 프레임워크",
+    "url": "https://github.com/xbtlin/ai-berkshire",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "바핏·멍거·돤융핑·리루 4인의 가치투자 방법론을 Claude Code 및 Codex와 결합한 오픈소스 투자 리서치 프레임워크다. 18개의 스킬(깊이 분석·재무제표 독해·섹터 스크리닝·포트폴리오 관리 등)과 4개 AI 에이전트 병렬 분석을 지원하며, 할루시네이션을 방지하기 위한 다중 출처 교차검증 및 Python decimal 기반 정밀 계산 도구를 내장했다. 제작자는 이 프레임워크로 2024년 +69.29%, 2025년 누적 +66.38%의 실거래 수익을 주장하나, 과거 성과는 미래를 보장하지 않는다.",
+    "why_it_matters": "단순 AI 질답이 아닌, 4가지 투자 철학이 서로를 반박하는 구조화된 멀티에이전트 의사결정 파이프라인을 오픈소스로 제공한다는 점에서 AI 에이전트·RAG 설계의 실전 참고 사례가 된다.",
+    "tags": [
+      "에이전트",
+      "RAG",
+      "오픈소스"
+    ],
+    "score": 0.7243320105820106,
+    "published_at": "2026-06-28T01:41:15Z"
+  },
+  {
+    "id": "github_trending-commaai/openpilot",
+    "section": "releases",
+    "title_en": "commaai/openpilot",
+    "title_ko": "commaai/openpilot - 300개 이상의 차량을 지원하는 오픈소스 운전 보조 OS",
+    "url": "https://github.com/commaai/openpilot",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "openpilot은 comma.ai가 개발한 로보틱스용 오픈소스 운영체제로, 현재 300종 이상의 차량에서 운전자 보조 시스템을 업그레이드한다. comma four 디바이스와 차량 하네스를 연결해 사용할 수 있으며, MIT 라이선스로 공개되어 누구나 기여할 수 있다. ISO 26262 안전 가이드라인을 준수하며, 소프트웨어 및 하드웨어 인루프 테스트를 통해 안전성을 검증한다.",
+    "why_it_matters": "오픈소스 자율주행 보조 시스템 중 가장 넓은 차량 호환성을 갖춘 프로젝트로, 개발자가 실제 차량에서 AI 기반 주행 보조 기술을 직접 실험·개선할 수 있다.",
+    "tags": [
+      "오픈소스",
+      "에이전트"
+    ],
+    "score": 0.7243320105820106,
+    "published_at": "2026-06-28T01:41:15Z"
+  },
+  {
+    "id": "github_trending-JCodesMore/ai-website-cloner-template",
+    "section": "releases",
+    "title_en": "JCodesMore/ai-website-cloner-template",
+    "title_ko": "AI 에이전트로 웹사이트를 복제하는 Next.js 템플릿",
+    "url": "https://github.com/JCodesMore/ai-website-cloner-template",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "URL을 입력하고 `/clone-website` 명령 하나로 AI 코딩 에이전트가 대상 웹사이트를 분석해 Next.js 코드베이스로 재구성하는 오픈소스 템플릿이다. 스크린샷 촬영, 디자인 토큰 추출, 컴포넌트 스펙 작성, 병렬 빌드, 시각적 diff 검증까지 멀티 단계 파이프라인으로 작동한다. Claude Code(Opus 4.7) 사용이 권장되며, Cursor·Copilot·Gemini CLI 등 다양한 AI 코딩 에이전트도 지원한다.",
+    "why_it_matters": "플랫폼 마이그레이션이나 소스 코드 유실 상황에서 기존 라이브 사이트를 자동으로 현대적인 Next.js 코드로 복원할 수 있어 개발 생산성을 크게 높인다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7243320105820106,
+    "published_at": "2026-06-28T01:41:15Z"
+  },
+  {
+    "id": "github_trending-Anil-matcha/Open-Generative-AI",
+    "section": "releases",
+    "title_en": "Anil-matcha/Open-Generative-AI",
+    "title_ko": "Open Generative AI — 콘텐츠 필터 없는 오픈소스 AI 이미지·영상 생성 스튜디오",
+    "url": "https://github.com/Anil-matcha/Open-Generative-AI",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "200개 이상의 AI 모델(Flux, Midjourney, Kling, Sora, Veo 등)을 지원하는 오픈소스 이미지·영상 생성 플랫폼으로, 콘텐츠 필터나 구독료 없이 자체 호스팅이 가능하다. 텍스트→이미지, 이미지→이미지, 텍스트→영상, 이미지→영상, 립싱크 등 다양한 스튜디오를 제공하며 MIT 라이선스로 배포된다. 데스크톱 앱(macOS·Windows·Linux)과 웹 버전 모두 지원하며, 로컬 추론 엔진(sd.cpp, Wan2GP)도 내장되어 있다.",
+    "why_it_matters": "상용 AI 영상 플랫폼의 콘텐츠 제한·구독 비용 없이 200개 이상의 최신 모델을 자체 서버에서 자유롭게 운용할 수 있는 완전 오픈소스 대안이라는 점에서 주목할 만하다.",
+    "tags": [
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.7243320105820106,
+    "published_at": "2026-06-28T01:41:15Z"
+  },
+  {
+    "id": "github_trending-luongnv89/claude-howto",
+    "section": "releases",
+    "title_en": "luongnv89/claude-howto",
+    "title_ko": "Claude Code 완전 정복 가이드: 기초부터 고급 에이전트까지",
+    "url": "https://github.com/luongnv89/claude-howto",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code의 모든 기능을 시각적·예제 중심으로 학습할 수 있는 오픈소스 가이드다. 슬래시 커맨드, 메모리, 서브에이전트, MCP, 훅 등 10개 모듈로 구성된 단계적 학습 경로를 제공하며, 바로 프로젝트에 붙여넣을 수 있는 프로덕션 수준의 템플릿을 포함한다. MIT 라이선스로 무료 공개되어 있으며, GitHub 트렌딩 1위를 기록했다.",
+    "why_it_matters": "Claude Code를 단순 프롬프트 도구가 아닌 에이전트 오케스트레이션 플랫폼으로 활용하고 싶은 개발자에게 공식 문서를 대체하는 실전형 학습 경로를 제공한다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7243320105820106,
+    "published_at": "2026-06-28T01:41:15Z"
+  },
+  {
+    "id": "github_trending-Fission-AI/OpenSpec",
+    "section": "releases",
+    "title_en": "Fission-AI/OpenSpec",
+    "title_ko": "OpenSpec: AI 코딩 어시스턴트를 위한 스펙 기반 개발 프레임워크",
+    "url": "https://github.com/Fission-AI/OpenSpec",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "OpenSpec은 AI 코딩 어시스턴트와 함께 사용하는 스펙 주도 개발(SDD) 프레임워크다. `/opsx:propose`, `/opsx:apply`, `/opsx:archive` 등의 슬래시 커맨드를 통해 제안서·스펙·설계·태스크 문서를 자동 생성하고 변경사항을 체계적으로 관리할 수 있다. 25개 이상의 AI 도구와 호환되며, Node.js 20.19.0 이상 환경에서 npm으로 설치해 기존 프로젝트에도 적용 가능하다.",
+    "why_it_matters": "AI 코딩 어시스턴트 사용 시 요구사항이 채팅 기록에만 남아 결과가 불예측해지는 문제를 가벼운 스펙 레이어로 해결하는 오픈소스 솔루션이다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7243320105820106,
+    "published_at": "2026-06-28T01:41:15Z"
+  },
+  {
+    "id": "hn-48708941",
+    "section": "community",
+    "title_en": "I used Claude Code to get a second opinion on my MRI",
+    "title_ko": "Claude Code로 내 MRI 결과에 대한 두 번째 의견을 구했다",
+    "url": "https://antoine.fi/mri-analysis-using-claude-code-opus",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "한 사용자가 Claude Code를 활용해 자신의 MRI 결과를 분석하고 두 번째 의견을 얻는 경험을 공유했다. 설명이 제공되지 않아 자세한 내용은 확인할 수 없지만, AI를 의료 정보 보조 도구로 활용한 사례다.",
+    "why_it_matters": "AI를 의료 영상 해석 보조 수단으로 활용하는 일반인 사례가 늘고 있어, AI의 의료 분야 역할과 한계에 대한 논의를 촉발한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.819194046330981,
+    "published_at": "2026-06-28T16:35:19Z"
+  },
+  {
+    "id": "hn-48709670",
+    "section": "community",
+    "title_en": "GLM 5.2 beats Claude in our benchmarks",
+    "title_ko": "GLM 5.2, 자체 벤치마크에서 Claude 능가",
+    "url": "https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GLM 5.2가 자체 벤치마크 기준에서 Claude를 능가하는 성능을 보였다고 발표되었다. 상세한 벤치마크 항목이나 수치는 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "오픈소스 계열 LLM인 GLM이 최상위 상용 모델과 경쟁할 수 있는 수준에 도달했는지 주목된다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 9.576559648050567,
+    "published_at": "2026-06-28T17:50:47Z"
+  },
+  {
+    "id": "hn-48708991",
+    "section": "community",
+    "title_en": "Professor denounces mass AI fraud on an exam at Brown",
+    "title_ko": "브라운 대학 교수, 시험에서 대규모 AI 부정행위 공개 비판",
+    "url": "https://english.elpais.com/education/2026-06-28/ai-fraud-at-brown-university-academic-integrity-is-at-risk.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "브라운 대학의 한 교수가 시험에서 학생들이 AI를 이용해 집단적으로 부정행위를 저질렀다고 공개적으로 비판했다. 구체적인 사례와 규모에 대한 상세 정보는 제공되지 않았다.",
+    "why_it_matters": "AI 도구의 확산으로 학문적 정직성 위기가 대학 현장에서 가시화되고 있음을 보여주는 사례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.122482242725948,
+    "published_at": "2026-06-28T16:41:12Z"
+  },
+  {
+    "id": "hn-48710232",
+    "section": "community",
+    "title_en": "Librepods: AirPods liberated",
+    "title_ko": "Librepods: 해방된 에어팟",
+    "url": "https://github.com/librepods-org/librepods",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Librepods는 AirPods를 자유롭게 사용하기 위한 오픈소스 프로젝트다. 제목에서 'liberated(해방된)'라는 표현을 사용한 것으로 보아 Apple 생태계 제약 없이 AirPods를 활용하는 것을 목표로 한다.",
+    "why_it_matters": "Apple 기기 없이도 AirPods의 기능을 활용할 수 있는 오픈소스 대안에 관심 있는 개발자에게 유용할 수 있다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 8.750508445522561,
+    "published_at": "2026-06-28T18:48:53Z"
+  },
+  {
+    "id": "hn-48706714",
+    "section": "community",
+    "title_en": "A way to exclude sensitive files issue still open for OpenAI Codex",
+    "title_ko": "OpenAI Codex에서 민감한 파일 제외 기능 미해결 이슈",
+    "url": "https://github.com/openai/codex/issues/2847",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "OpenAI Codex에서 민감한 파일을 제외할 수 있는 기능에 대한 이슈가 아직 해결되지 않은 상태로 열려 있다. 해당 기능의 부재는 보안 및 프라이버시 측면에서 사용자들의 우려를 낳고 있다.",
+    "why_it_matters": "코드 작업 시 민감한 파일이 AI에 노출될 수 있는 보안 리스크가 여전히 해소되지 않아 실무 도입에 걸림돌이 될 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 8.5569505720129,
+    "published_at": "2026-06-28T12:27:33Z"
+  },
+  {
+    "id": "youtube-TDWE59K_Df4",
+    "section": "video",
+    "title_en": "AWS 현직 전문가들이 생각하는 피지컬 AI와 AI 커리어의 미래",
+    "title_ko": "AWS 현직 전문가가 말하는 피지컬 AI와 AI 커리어의 미래",
+    "url": "https://www.youtube.com/watch?v=TDWE59K_Df4",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "AWS AI/ML팀 현직 전문가들이 에이전틱 AI와 피지컬 AI의 차이, 현장 도입 사례, 그리고 AI 시대에 필요한 역량에 대해 이야기한다. AWS AI/ML팀의 차별점과 AI 자격증, 커리어 관련 조언도 함께 다룬다.",
+    "why_it_matters": "AWS 현직자 시각으로 피지컬 AI 입문 역량과 AI 커리어 방향을 구체적으로 파악할 수 있다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 0.8512202380952381,
+    "published_at": "2026-06-28T23:00:17Z"
+  },
+  {
+    "id": "youtube-us35t0LTyV4",
+    "section": "video",
+    "title_en": "IT뉴스 - GPT‑5.6, Bidi 1, 할라피뇨, Unite Seoul 2026, Claude Tag, 애플 가격, Wan Streamer, 시댄스 2.5, Krea 2 등",
+    "title_ko": "GPT-5.6, Bidi 1, 할라피뇨, Unite Seoul 2026 등 AI 주요 뉴스 모음",
+    "url": "https://www.youtube.com/watch?v=us35t0LTyV4",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 GPT-5.6, Bidi 1, 할라피뇨, Claude Tag, Wan Streamer, 시댄스 2.5, Krea 2 등 최신 AI 및 IT 뉴스를 한 번에 정리했다. Unite Seoul 2026 행사 등록 안내와 AX 인재 해커톤 정보도 함께 소개된다. 다양한 AI 모델·서비스 업데이트 소식을 빠르게 파악할 수 있는 요약 영상이다.",
+    "why_it_matters": "한국 개발자를 위해 최신 AI 모델·서비스 업데이트 소식을 한 영상에 압축 정리해 트렌드 파악에 유용하다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7819361772486773,
+    "published_at": "2026-06-28T11:21:54Z"
+  },
+  {
+    "id": "youtube-oiZJO1_P_bk",
+    "section": "video",
+    "title_en": "공장형 AI 뷰티 인플루언서 만들었습니다 (ft. Higgsfield MCP)",
+    "title_ko": "Higgsfield MCP로 AI 뷰티 인플루언서 대량 생성하기",
+    "url": "https://www.youtube.com/watch?v=oiZJO1_P_bk",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "Higgsfield AI의 MCP 기능을 활용해 가상의 뷰티 인플루언서 이미지와 영상을 자동으로 만드는 방법을 소개하는 영상이다. 이미지 생성부터 메이크업 비교 영상, 움직이는 인플루언서 제작까지 전 과정을 다룬다. 또한 Higgsfield 마케팅 스튜디오를 활용해 바이럴 가능성을 예측하고 실제 광고 수익화 가능성도 탐색한다.",
+    "why_it_matters": "AI 도구만으로 실제 광고까지 노릴 수 있는 가상 인플루언서를 누구나 쉽게 제작할 수 있는 시대가 왔음을 보여주는 사례다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7589649470899471,
+    "published_at": "2026-06-28T07:30:21Z"
+  },
+  {
+    "id": "simon_willison-jon-udell",
+    "section": "deepdive",
+    "title_en": "Quoting Jon Udell",
+    "title_ko": "'루프 안의 인간'이 아니라 '루프 안의 에이전트'로 시각을 바꿔야 한다",
+    "url": "https://simonwillison.net/2026/Jun/28/jon-udell/#atom-everything",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Jon Udell은 '루프 안의 인간(human in the loop)'이라는 표현이 기계에게 주도권을 넘기는 뉘앙스를 준다고 비판한다. 대신 그는 우리가 원래 하던 방식대로 일하면서 에이전트를 팀원으로 초대하는 개념으로 프레임을 바꿀 것을 제안한다. 에이전트 기반 소프트웨어 개발은 프롬프트를 넣으면 기능이 나오는 블랙박스가 아니라, 인간이 주도하는 루프에 에이전트가 참여하는 구조여야 한다는 주장이다.",
+    "why_it_matters": "에이전트 코딩 도구가 확산되는 시점에서, 인간의 검토 권한을 유지하는 개발 문화의 방향성을 제시한다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.8450099206349206,
+    "published_at": "2026-06-28T21:57:41Z"
+  }
+]

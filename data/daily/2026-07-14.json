@@ -1,0 +1,370 @@
+[
+  {
+    "id": "hf-2607.08964",
+    "section": "papers",
+    "title_en": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading",
+    "title_ko": "Long-Horizon-Terminal-Bench: 장기 터미널 태스크에서 AI 에이전트의 한계를 테스트하는 벤치마크",
+    "url": "https://huggingface.co/papers/2607.08964",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "AI 에이전트의 장기 계획 능력을 평가하는 새로운 벤치마크 'Long-Horizon-Terminal-Bench'가 공개됐다. 실험 재현, 소프트웨어 엔지니어링, 멀티모달 분석 등 9개 카테고리의 46개 장기 태스크로 구성되며, 세분화된 서브태스크를 통해 중간 진행 상황도 밀도 높게 평가한다. 15개 최전선 모델을 평가한 결과, 가장 우수한 모델도 완벽 보상 기준(1.0)에서 10.9%의 pass@1만 달성했으며, 전체 평균은 1.7%에 불과해 현재 에이전트의 명확한 한계를 드러냈다. 각 태스크당 평균 9.9M 토큰을 소비하고 85.3분의 실행 시간이 필요해 기존 터미널 벤치마크보다 훨씬 까다롭다.",
+    "why_it_matters": "현존 최강 AI 에이전트조차 장기 터미널 태스크에서 10% 내외의 성공률에 머물러, 장기 계획과 반복 디버깅 능력 개선이 시급한 과제임을 수치로 입증한다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 4.912023005428146,
+    "published_at": "2026-07-08T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.09657",
+    "section": "papers",
+    "title_en": "Scalable Visual Pretraining for Language Intelligence",
+    "title_ko": "언어 지능을 위한 확장 가능한 시각적 사전학습",
+    "url": "https://huggingface.co/papers/2607.09657",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "대형 파운데이션 모델은 주로 텍스트 코퍼스 사전학습으로 발전해왔지만, 문서의 그림·수식·페이지 레이아웃 등 시각적 표현에는 텍스트로 완전히 포착할 수 없는 풍부한 정보가 담겨 있다. 이 논문은 언어 모델이 반드시 텍스트 전용 표현으로 학습해야 한다는 기존 가정에 의문을 제기하며, 시각적 문서를 텍스트 추출 없이 직접 활용하는 비지도 시각적 사전학습 패러다임을 체계적으로 연구했다. 여러 백본과 벤치마크에서 동일한 코퍼스 기반의 시각적 사전학습이 텍스트 전용 사전학습을 일관되게 능가하는 결과를 보여주었다.",
+    "why_it_matters": "텍스트 변환 없이 시각적 문서를 그대로 학습에 활용함으로써, 언어 지능을 위한 더 효율적이고 확장 가능한 사전학습 경로를 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.7841896339182615,
+    "published_at": "2026-07-09T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.09024",
+    "section": "papers",
+    "title_en": "Video Generation Models are General-Purpose Vision Learners",
+    "title_ko": "비디오 생성 모델이 범용 비전 학습기가 될 수 있다 – GenCeption",
+    "url": "https://huggingface.co/papers/2607.09024",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "텍스트-투-비디오 생성 모델을 사전 학습 패러다임으로 활용해 다양한 컴퓨터 비전 태스크를 수행하는 GenCeption을 제안한다. 깊이 추정, 표면 법선, 카메라 포즈, 3D 키포인트 예측 등 여러 태스크에서 DepthAnything3, SAM3 등 전문 모델과 동등하거나 우수한 성능을 달성했다. 특히 학습 데이터를 7~500배 줄인 상태에서도 경쟁 모델에 준하는 성능을 보이며, 합성 데이터로만 학습해도 실제 영상과 비분포 객체 카테고리로 일반화되는 창발적 특성도 확인됐다.",
+    "why_it_matters": "비디오 생성 사전 학습이 NLP의 언어 모델처럼 컴퓨터 비전의 범용 기반 모델 패러다임이 될 수 있음을 실증적으로 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.761200115693562,
+    "published_at": "2026-07-09T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.08758",
+    "section": "papers",
+    "title_en": "Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation",
+    "title_ko": "아이디어도 유전체를 갖는다: 과학적 계보 추론 벤치마크 IdeaGene-Bench",
+    "url": "https://huggingface.co/papers/2607.08758",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "과학적 아이디어는 이전 연구를 계승·변형·재조합하며 발전하는 생물학적 유전체와 유사한 구조를 가진다. 이를 평가하기 위해 IG-Bench를 공개했으며, 1,961개의 계보 추적 데이터, 1,085개의 아이디어 유전체 객체, 920개의 GenomeDiff 레코드를 10개 과학 분야에 걸쳐 구축했다. 14개 LLM 기반 시스템을 실험한 결과, 가장 뛰어난 모델도 계보 추론에서 정확도 27.3%에 그쳐 현재 AI의 과학적 계보 이해 능력이 크게 부족함을 드러냈다.",
+    "why_it_matters": "AI가 과학 아이디어의 진화적 계보를 제대로 추론하지 못한다는 구체적 증거를 제시하며, 연구 자동화의 핵심 한계를 정의한 새로운 벤치마크다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.49650756146648,
+    "published_at": "2026-07-08T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.08768",
+    "section": "papers",
+    "title_en": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
+    "title_ko": "UniClawBench: 실제 환경에서 능동형 에이전트를 평가하는 범용 벤치마크",
+    "url": "https://huggingface.co/papers/2607.08768",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "UniClawBench는 대형 언어 모델 및 멀티모달 모델 기반 능동형 에이전트를 실제 환경에서 평가하기 위한 최초의 능력 중심 벤치마크다. 스킬 활용, 탐색, 장문 추론, 멀티모달 이해, 크로스 플랫폼 조율 등 5가지 핵심 역량을 기반으로 400개의 이중 언어 실세계 태스크를 구성했다. 기존 벤치마크와 달리 라이브 Docker 컨테이너 환경에서 단계별 체크포인트로 평가하며, 실행 에이전트·숨겨진 감독 에이전트·사용자 에이전트로 구성된 폐쇄 루프 평가 전략을 채택해 현실적인 멀티턴 인간 피드백을 시뮬레이션한다. 코드와 벤치마크는 GitHub을 통해 공개됐다.",
+    "why_it_matters": "샌드박스 기반의 단순 평가를 벗어나 실제 환경에서 에이전트의 실패 원인을 능력 단위로 분리·진단할 수 있어 에이전트 연구의 신뢰성 있는 기준점이 될 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.465735902799727,
+    "published_at": "2026-07-08T20:00:00Z"
+  },
+  {
+    "id": "github_trending-moeru-ai/airi",
+    "section": "releases",
+    "title_en": "moeru-ai/airi",
+    "title_ko": "AIRI: 오픈소스 AI VTuber 컴패니언 프로젝트",
+    "url": "https://github.com/moeru-ai/airi",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Project AIRI는 Neuro-sama에서 영감을 받은 셀프 호스팅 가능한 AI 가상 캐릭터(VTuber) 플랫폼입니다. 실시간 음성 채팅, Minecraft·Factorio 게임 플레이, VRM/Live2D 아바타 지원을 갖추고 있으며 Web/macOS/Windows 환경에서 동작합니다. WebGPU·WebAssembly 등 웹 기술 기반으로 구축되었으며, OpenAI·Claude·DeepSeek 등 다양한 LLM API 제공자를 지원합니다.",
+    "why_it_matters": "클로즈드 소스인 Neuro-sama의 오픈소스 대안으로, 누구나 자신만의 AI 버추얼 캐릭터를 직접 소유·운영할 수 있는 에이전트 플랫폼을 제공한다는 점에서 주목할 만합니다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8663095238095238,
+    "published_at": "2026-07-14T01:32:23Z"
+  },
+  {
+    "id": "github_trending-Shubhamsaboo/awesome-llm-apps",
+    "section": "releases",
+    "title_en": "Shubhamsaboo/awesome-llm-apps",
+    "title_ko": "실제로 실행 가능한 100개 이상의 AI 에이전트 & RAG 앱 모음집",
+    "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "LLM 기반 AI 에이전트와 RAG 앱 100여 개를 모아둔 오픈소스 쿡북 저장소다. 각 템플릿은 독립 실행 가능한 완전한 소스 코드로 제공되며, Claude·Gemini·OpenAI·Llama 등 주요 모델을 지원한다. AI 에이전트, 멀티에이전트 팀, MCP 에이전트, 음성 에이전트, RAG 파이프라인, 파인튜닝 등 15개 카테고리를 포괄한다. Apache-2.0 라이선스로 자유롭게 포크·배포·상업적 활용이 가능하다.",
+    "why_it_matters": "LLM 프로젝트를 시작할 때 RAG 파이프라인이나 에이전트 루프를 매번 처음부터 구현하지 않아도 되는 실전 템플릿 모음으로, 한국 개발자의 생산성을 크게 높일 수 있다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "에이전트"
+    ],
+    "score": 0.8663095238095238,
+    "published_at": "2026-07-14T01:32:23Z"
+  },
+  {
+    "id": "github_trending-Nutlope/hallmark",
+    "section": "releases",
+    "title_en": "Nutlope/hallmark",
+    "title_ko": "Hallmark: AI 생성 티 나지 않는 UI 디자인 스킬",
+    "url": "https://github.com/Nutlope/hallmark",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Hallmark는 Claude Code, Cursor, Codex에서 사용할 수 있는 디자인 스킬로, AI가 만든 것처럼 보이는 뻔한 UI를 거부한다. 20가지 테마와 57개의 슬롭(slop) 테스트 게이트를 통해 각 브리프에 맞는 고유한 구조와 디자인을 생성하며, 빌드·감사·리디자인·분석의 4가지 명령을 지원한다. Together AI가 제작했으며 MIT 라이선스로 공개되어 있다.",
+    "why_it_matters": "AI 코딩 도구로 만들어지는 UI의 획일적인 '템플릿 느낌'을 자동으로 탈피할 수 있어, 개발자가 디자인 품질을 손쉽게 끌어올릴 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8663095238095238,
+    "published_at": "2026-07-14T01:32:23Z"
+  },
+  {
+    "id": "github_trending-coreyhaines31/marketingskills",
+    "section": "releases",
+    "title_en": "coreyhaines31/marketingskills",
+    "title_ko": "AI 에이전트를 위한 마케팅 스킬 모음 (marketingskills)",
+    "url": "https://github.com/coreyhaines31/marketingskills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code, OpenAI Codex, Cursor 등 AI 코딩 에이전트에 마케팅 전문 지식을 부여하는 오픈소스 스킬 컬렉션이다. CRO, 카피라이팅, SEO, 애널리틱스, 성장 엔지니어링 등 40개 이상의 마크다운 기반 스킬을 포함하며, Agent Skills 스펙을 지원하는 모든 에이전트에서 동작한다. npx skills 명령어로 간편하게 설치할 수 있으며, 각 스킬은 product-marketing 스킬을 공통 기반으로 참조하는 구조로 설계되어 있다.",
+    "why_it_matters": "AI 에이전트에 마케팅 도메인 지식을 체계적으로 주입할 수 있어, 개발자 겸 마케터가 에이전트를 실질적인 그로스 작업에 바로 활용할 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8663095238095238,
+    "published_at": "2026-07-14T01:32:23Z"
+  },
+  {
+    "id": "openai_blog-deutsche-telekom",
+    "section": "releases",
+    "title_en": "How Deutsche Telekom is rewiring telecommunications with AI",
+    "title_ko": "도이체텔레콤, OpenAI와 함께 AI 네이티브 통신사로 전환",
+    "url": "https://openai.com/index/deutsche-telekom",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "도이체텔레콤이 OpenAI와 협력하여 고객 서비스, 직원 업무 흐름, 네트워크 운영 등 전반적인 통신 인프라를 AI 중심으로 재편하고 있다. 특히 음성 서비스의 미래까지 AI로 혁신하는 'AI 네이티브 통신사' 전략을 추진 중이다.",
+    "why_it_matters": "대형 통신사가 OpenAI와 손잡고 전사적 AI 전환을 실행하는 구체적 사례로, 통신 산업의 AI 도입 방향을 가늠할 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "인프라"
+    ],
+    "score": 0.3273826058201058,
+    "published_at": "2026-07-10T07:00:00Z"
+  },
+  {
+    "id": "openai_blog-getting-started",
+    "section": "releases",
+    "title_en": "Getting started with ChatGPT",
+    "title_ko": "ChatGPT 시작하기",
+    "url": "https://openai.com/academy/getting-started",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "ChatGPT를 처음 사용하는 사람들을 위한 입문 가이드로, 첫 대화 시작 방법과 글쓰기, 브레인스토밍, 문제 해결에 AI를 활용하는 방법을 소개한다. 복잡한 기술 지식 없이도 AI를 실생활에 바로 활용할 수 있는 기초적인 사용법을 다룬다.",
+    "why_it_matters": "AI 도구를 처음 접하는 개발자 및 일반 사용자에게 ChatGPT 활용의 진입 장벽을 낮춰주는 공식 입문 자료다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.2857159391534392,
+    "published_at": "2026-07-10T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-gpt-5-6-preferred-model-microsoft-365-copilot",
+    "section": "releases",
+    "title_en": "GPT-5.6 is now the preferred model in Microsoft 365 Copilot",
+    "title_ko": "GPT-5.6, 마이크로소프트 365 코파일럿의 기본 모델로 채택",
+    "url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "GPT-5.6이 Microsoft 365 Copilot의 기본 AI 모델로 선정되었다. Word, Excel, PowerPoint, Chat, Cowork 등 주요 앱 전반에 걸쳐 더 강력한 AI 기능을 제공하며, 더 빠르고 높은 품질의 작업 결과를 지원한다.",
+    "why_it_matters": "GPT-5.6의 Microsoft 365 전면 도입으로 기업 생산성 도구에서의 AI 활용이 한층 고도화될 전망이다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.2202397486772486,
+    "published_at": "2026-07-09T13:00:00Z"
+  },
+  {
+    "id": "hn-48894752",
+    "section": "community",
+    "title_en": "Apple's new SpeechAnalyzer API, benchmarked against Whisper and its predecessor",
+    "title_ko": "Apple의 새 SpeechAnalyzer API, Whisper 및 이전 버전과 벤치마크 비교",
+    "url": "https://get-inscribe.com/blog/apple-speech-api-benchmark.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Apple이 새롭게 선보인 SpeechAnalyzer API를 Whisper 및 기존 Apple 음성 인식 API와 성능 비교한 내용이다. 상세한 설명은 제공되지 않아 구체적인 수치나 결과는 확인되지 않는다.",
+    "why_it_matters": "Apple 플랫폼 개발자라면 온디바이스 음성 인식 API 선택 시 참고할 수 있는 실질적인 성능 비교 자료다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.734337062918678,
+    "published_at": "2026-07-13T16:06:08Z"
+  },
+  {
+    "id": "hn-48897878",
+    "section": "community",
+    "title_en": "Telegram's t.me domain has been suspended",
+    "title_ko": "텔레그램의 t.me 도메인 정지됨",
+    "url": "https://www.whois.com/whois/t.me",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "텔레그램의 단축 도메인 t.me가 정지된 것으로 알려졌다. 자세한 경위나 정지 주체에 대한 상세 정보는 확인되지 않는다.",
+    "why_it_matters": "전 세계 수억 명이 사용하는 텔레그램 링크 공유 도메인이 정지되면 서비스 접근성에 광범위한 영향을 미칠 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.164630393322513,
+    "published_at": "2026-07-13T19:52:25Z"
+  },
+  {
+    "id": "hn-48897991",
+    "section": "community",
+    "title_en": "Samsung Health app threatens data deletion if users opt out AI training",
+    "title_ko": "삼성 헬스 앱, AI 학습 거부 시 데이터 삭제 경고",
+    "url": "https://neow.in/cWsyMTV3",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "삼성 헬스 앱이 사용자가 AI 학습 데이터 제공을 거부할 경우 데이터를 삭제하겠다고 경고하는 것으로 알려졌다. 이는 사용자의 데이터 자기결정권과 관련해 논란을 일으키고 있다.",
+    "why_it_matters": "AI 학습 동의를 사실상 강제하는 방식은 개인정보 보호 측면에서 중요한 선례가 될 수 있어 주목된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.755459402846045,
+    "published_at": "2026-07-13T20:01:43Z"
+  },
+  {
+    "id": "hn-48892638",
+    "section": "community",
+    "title_en": "Benchmarking 15 “E-Waste” GPUs with Modern Workloads",
+    "title_ko": "중고 'E-Waste' GPU 15종, 최신 워크로드 벤치마크 비교",
+    "url": "https://esologic.com/benchmarking-tesla-gpus/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "15종의 저가 중고 GPU를 최신 워크로드 기준으로 벤치마크 테스트한 내용이다. 예산이 제한된 환경에서 어떤 GPU가 실용적인지 파악하는 데 참고할 수 있다.",
+    "why_it_matters": "저예산 AI·ML 인프라 구축 시 중고 GPU 선택에 실질적인 가이드가 될 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 7.709601693820438,
+    "published_at": "2026-07-13T13:48:42Z"
+  },
+  {
+    "id": "hn-48896599",
+    "section": "community",
+    "title_en": "Show HN: BillAI Bass, an AI-Powered Big Mouth Billy Bass Using Strands Agents",
+    "title_ko": "BillAI Bass: Strands 에이전트로 구동되는 AI 빅마우스 빌리 배스",
+    "url": "https://github.com/morganwilliscloud/billai-bass",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Strands Agents 프레임워크를 활용해 유명한 장난감 물고기 '빅마우스 빌리 배스'에 AI 기능을 탑재한 프로젝트다. AI가 대화하고 반응하는 인터랙티브 장치로 구현된 것으로 보인다.",
+    "why_it_matters": "에이전트 프레임워크를 재미있는 하드웨어 프로젝트에 접목한 사례로, AI 에이전트의 실물 디바이스 활용 가능성을 보여준다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 6.725455876907884,
+    "published_at": "2026-07-13T18:18:23Z"
+  },
+  {
+    "id": "youtube-bnxXaSwtCfw",
+    "section": "video",
+    "title_en": "AI뉴스 - GPT-5.6, GPT‑Live, Work, Grok 4.5, Muse Spark 1.1, Lingbot-World-2, Google 커스텀 URL 등",
+    "title_ko": "GPT-5.6·GPT-Live·ChatGPT Work·Grok 4.5 등 주요 AI 뉴스 한눈에 보기",
+    "url": "https://www.youtube.com/watch?v=bnxXaSwtCfw",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 최신 AI 소식을 한데 모아 정리했다. OpenAI의 GPT-5.6, GPT-Live, ChatGPT Work 출시와 함께 Anthropic의 Claude Code 브라우저 기능, xAI의 Grok 4.5 공개 등이 다뤄졌다. 메타의 Muse Spark 1.1·Muse Image·Muse Video, 중국의 오픈소스 모델 Lingbot-World-2, Google AI Studio 커스텀 URL 도입 등 다양한 플랫폼의 업데이트도 소개된다.",
+    "why_it_matters": "한 주간 주요 AI 기업들의 신규 모델·기능 출시가 집중되어, 업계 경쟁 구도와 개발자 도구 변화를 빠르게 파악하는 데 유용하다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7916848544973545,
+    "published_at": "2026-07-13T13:00:10Z"
+  },
+  {
+    "id": "youtube-mWlCituW7wo",
+    "section": "video",
+    "title_en": "A Model Explosion: GPT 5.6 Sol, Grok 4.5 and Meta Muse Rewrite the Rules",
+    "title_ko": "모델 대폭발: GPT 5.6 Sol, Grok 4.5, Meta Muse가 AI 판도를 뒤흔들다",
+    "url": "https://www.youtube.com/watch?v=mWlCituW7wo",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "한 주 사이에 GPT 5.6 Sol, Grok 4.5, Meta Muse Spark 1.1 등 주요 AI 모델이 연달아 공개되며 선택지가 더욱 복잡해졌다. GPT 5.6은 비용 대비 성능에서 Claude Fable을 앞설 수 있다는 분석이 나왔으며, 각 모델의 벤치마크 결과와 놓치기 쉬운 세부 정보들도 함께 다뤄진다. 또한 모델 자기개선(Self-Improvement) 가능성과 AI 발전이 당분간 정체되지 않을 이유도 짚어본다.",
+    "why_it_matters": "단기간에 경쟁 모델이 쏟아지면서 개발자들이 어떤 모델을 선택할지 판단하기 더욱 어려워졌고, 각 모델의 실질적 성능 차이를 파악하는 것이 중요해졌다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.3611375661375662,
+    "published_at": "2026-07-10T12:40:15Z"
+  },
+  {
+    "id": "youtube-LE4YC5_YoWc",
+    "section": "video",
+    "title_en": "쇼츠 공장이 되었다는 구글 근황",
+    "title_ko": "구글, 쇼츠 공장이 되었다? 최근 구글의 변화",
+    "url": "https://www.youtube.com/shorts/LE4YC5_YoWc",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 구글의 최근 동향을 다루는 영상이다. AI 및 노트북LM 관련 내용을 포함하며, 구글이 쇼츠 중심으로 변화하고 있다는 주제를 다룬다. 구체적인 내용은 영상 시청을 통해 확인할 수 있다.",
+    "why_it_matters": "구글의 전략적 변화 방향성을 파악하는 데 참고할 수 있는 콘텐츠다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.32144014550264555,
+    "published_at": "2026-07-10T06:00:06Z"
+  },
+  {
+    "id": "latent_space-ainews-codex-usage-up-10x-in-6-months",
+    "section": "deepdive",
+    "title_en": "[AINews] Codex usage up >10x in 6 months to 7M users, +1M in the past ~day; did Codex overtake Claude Code??",
+    "title_ko": "Codex 사용자 700만 명 돌파, 6개월 만에 10배 성장 – Claude Code를 추월했나?",
+    "url": "https://www.latent.space/p/ainews-codex-usage-up-10x-in-6-months",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "OpenAI Codex의 사용자 수가 6개월 만에 10배 이상 증가해 700만 명을 넘어섰으며, 최근 하루 만에 100만 명이 추가됐다. 반면 Anthropic의 Claude Code는 관련 수치를 공개하지 않아 대조적인 모습을 보이고 있다. 이에 따라 Codex가 Claude Code를 실제로 앞질렀는지 여부가 업계의 관심사로 떠오르고 있다.",
+    "why_it_matters": "AI 코딩 어시스턴트 시장에서 Codex의 폭발적 성장세가 Claude Code와의 경쟁 구도를 가늠할 중요한 지표가 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8653240740740741,
+    "published_at": "2026-07-14T01:22:27Z"
+  }
+]

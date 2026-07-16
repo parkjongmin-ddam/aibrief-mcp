@@ -1,0 +1,372 @@
+[
+  {
+    "id": "hf-2606.24775",
+    "section": "papers",
+    "title_en": "Are We Ready For An Agent-Native Memory System?",
+    "title_ko": "에이전트 네이티브 메모리 시스템, 우리는 준비됐는가?",
+    "url": "https://huggingface.co/papers/2606.24775",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LLM 에이전트의 메모리 시스템이 단순한 RAG 방식에서 지속적 저장·검색·갱신·수명 관리를 지원하는 데이터 관리 시스템으로 진화했지만, 기존 평가는 여전히 단순한 태스크 성공 지표에 의존한다. 이 연구는 에이전트 메모리를 표현·저장, 추출, 검색·라우팅, 유지관리의 4개 핵심 모듈로 분해하는 분석 프레임워크를 제안하고, 12개 메모리 시스템을 11개 데이터셋에서 평가했다. 단일 아키텍처가 모든 시나리오에서 우위를 점하지 않으며, 효과는 메모리 구조와 워크로드 병목의 정합성에 크게 달려 있다는 결론을 도출했다. 또한 전역 재구성보다 국소적 유지관리가 비용 효율이 더 높다는 점도 확인했다.",
+    "why_it_matters": "에이전트 메모리 시스템을 데이터 관리 관점에서 체계적으로 벤치마킹한 연구로, 실무에서 메모리 아키텍처 선택 시 비용·성능 트레이드오프 판단 기준을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "RAG"
+    ],
+    "score": 5.653960350157523,
+    "published_at": "2026-06-22T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.27377",
+    "section": "papers",
+    "title_en": "DanceOPD: On-Policy Generative Field Distillation",
+    "title_ko": "DanceOPD: 플로우 매칭 모델을 위한 온폴리시 생성 필드 증류 프레임워크",
+    "url": "https://huggingface.co/papers/2606.27377",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "DanceOPD는 텍스트-이미지 생성, 로컬 편집, 글로벌 편집 등 다양한 기능을 하나의 모델로 통합하기 위한 온폴리시 생성 필드 증류 프레임워크다. 각 샘플을 특정 기능 필드로 라우팅하고, 학생 모델 자신의 롤아웃 상태에서 전문가 필드를 학습하는 방식으로 기능 간 충돌 문제를 해결한다. 단순한 velocity MSE 목적 함수를 사용하며, CFG 흡수도 동일한 공식으로 처리한다.",
+    "why_it_matters": "이미지 생성·편집 기능 간 성능 저하 없이 단일 모델로 통합하는 실용적 학습 방법론을 제시해, 차세대 멀티기능 생성 모델 개발에 중요한 기반이 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.174387269895637,
+    "published_at": "2026-06-24T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.26058",
+    "section": "papers",
+    "title_en": "DomainShuttle: Freeform Open Domain Subject-driven Text-to-video Generation",
+    "title_ko": "DomainShuttle: 오픈 도메인 주제 기반 텍스트-투-비디오 생성 프레임워크",
+    "url": "https://huggingface.co/papers/2606.26058",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "DomainShuttle은 참조 이미지의 주제를 유지하면서 텍스트 프롬프트에 따라 다양한 도메인에서 비디오를 생성하는 S2V(Subject-to-Video) 방법론이다. 동일 도메인(인-도메인)에서의 높은 피사체 충실도와 교차 도메인에서의 스타일·속성 변환 유연성을 동시에 달성하는 것이 핵심 목표다. 이를 위해 Domain-MoT, Video-Reference DualRoPE, Cross-Pair Consistent Loss 등의 기법을 도입해 참조 이미지와 비디오 특징을 효과적으로 분리·모델링한다.",
+    "why_it_matters": "인-도메인 충실도와 크로스 도메인 편집 유연성을 함께 확보한 오픈 도메인 비디오 개인화 기술로, 영상 생성 AI의 실용적 적용 범위를 크게 넓힐 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.143134726391533,
+    "published_at": "2026-06-23T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.25763",
+    "section": "papers",
+    "title_en": "ShutterMuse: Capture-Time Photography Guidance with MLLMs",
+    "title_ko": "ShutterMuse: 멀티모달 LLM을 활용한 촬영 시점 사진 가이던스 시스템",
+    "url": "https://huggingface.co/papers/2606.25763",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "실제 사진 촬영 시 필요한 카메라 프레이밍과 피사체 포즈 안내를 위한 벤치마크 CaptureGuide-Bench와 데이터셋 CaptureGuide-Dataset(13만 샘플)을 새롭게 제안했다. 기존 MLLM은 구도 결정은 가능하지만 정밀한 위치 조정이나 포즈 안내에는 한계가 있음을 실험으로 확인했다. 이를 해결하기 위해 지도학습과 강화학습 파인튜닝을 결합한 통합 MLLM ShutterMuse를 개발했으며, 평가 결과 촬영자 측 성능에서 최고 수준을 기록하고 낮은 추론 비용으로 경쟁력 있는 포즈 추천을 제공했다.",
+    "why_it_matters": "촬영 현장에서 실시간으로 구도와 포즈를 안내하는 AI 어시스턴트 개발의 기반을 마련한 연구로, 사진 AI의 활용 범위를 후처리에서 촬영 시점으로 확장한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.80666248977032,
+    "published_at": "2026-06-23T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.26025",
+    "section": "papers",
+    "title_en": "In-Context World Modeling for Robotic Control",
+    "title_ko": "로봇 제어를 위한 인-컨텍스트 월드 모델링(ICWM)",
+    "url": "https://huggingface.co/papers/2606.26025",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "기존 Vision-Language-Action(VLA) 모델은 카메라 시점 변경이나 로봇 형태 변화 같은 새로운 환경에 잘 일반화하지 못하는 문제가 있다. 이를 해결하기 위해 제안된 ICWM은 로봇이 짧은 자기 생성 상호작용 이력을 통해 현재 시스템 변수를 스스로 추론하도록 한다. 파라미터 업데이트 없이 새로운 환경에 적응할 수 있으며, 시뮬레이션 및 실제 로봇 실험에서 기존 VLA 베이스라인 대비 우수한 성능을 보였다.",
+    "why_it_matters": "파인튜닝 없이 새로운 카메라 시점·로봇 형태에 적응 가능한 VLA 프레임워크로, 범용 로봇 제어 모델 개발에 중요한 진전이다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.761200115693562,
+    "published_at": "2026-06-24T20:00:00Z"
+  },
+  {
+    "id": "github_trending-commaai/openpilot",
+    "section": "releases",
+    "title_en": "commaai/openpilot",
+    "title_ko": "commaai/openpilot — 300개 이상의 차량을 지원하는 오픈소스 로보틱스 운영체제",
+    "url": "https://github.com/commaai/openpilot",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "openpilot은 comma.ai가 개발한 오픈소스 로보틱스 운영체제로, 현재 300종 이상의 차량에서 운전자 보조 시스템을 업그레이드합니다. comma four 디바이스와 차량 하네스를 이용해 설치할 수 있으며, MIT 라이선스로 공개되어 있습니다. ISO 26262 안전 지침을 준수하며 커밋마다 소프트웨어-인-더-루프 테스트를 수행합니다.",
+    "why_it_matters": "자동차 ADAS를 오픈소스로 직접 개선·확장할 수 있는 몇 안 되는 실용적 플랫폼으로, 자율주행 연구 및 개발 커뮤니티에 큰 참여 기회를 제공합니다.",
+    "tags": [
+      "오픈소스",
+      "에이전트",
+      "인프라"
+    ],
+    "score": 0.7240046296296296,
+    "published_at": "2026-06-27T01:37:57Z"
+  },
+  {
+    "id": "github_trending-alchaincyf/zhangxuefeng-skill",
+    "section": "releases",
+    "title_en": "alchaincyf/zhangxuefeng-skill",
+    "title_ko": "장쉐펑 AI 에이전트 스킬 — 중국 입시 전문가의 사고 프레임워크를 AI로 구현",
+    "url": "https://github.com/alchaincyf/zhangxuefeng-skill",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "중국의 유명 진학 컨설턴트 장쉐펑의 의사결정 방식을 AI 에이전트 스킬로 패키징한 오픈소스 프로젝트다. 5개의 핵심 멘탈 모델과 8개의 결정 휴리스틱을 추출해, Claude Code·Cursor·Codex 등 50개 이상의 AI 런타임에서 설치·실행할 수 있다. '여와(女娲).skill'이라는 멀티 에이전트 파이프라인이 6개 조사 파일을 병렬로 분석해 자동 생성한 결과물이다.",
+    "why_it_matters": "특정 인물의 사고 체계를 구조화된 에이전트 스킬로 변환하는 방법론을 제시해, 도메인 전문가 지식을 AI에 이식하는 새로운 접근법을 보여준다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7240046296296296,
+    "published_at": "2026-06-27T01:37:57Z"
+  },
+  {
+    "id": "github_trending-xbtlin/ai-berkshire",
+    "section": "releases",
+    "title_en": "xbtlin/ai-berkshire",
+    "title_ko": "AI Berkshire: Claude Code 기반 가치투자 리서치 프레임워크",
+    "url": "https://github.com/xbtlin/ai-berkshire",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "버핏·멍거·단융핑·리루 4인의 가치투자 방법론을 Claude Code 위에서 구현한 오픈소스 투자 리서치 프레임워크다. 16개의 스킬(Skill)과 멀티 에이전트 병렬 분석을 통해 한 명이 전문 투자팀 수준의 심층 리포트를 생성할 수 있도록 설계됐다. 4개의 독립 에이전트가 각자 리서치를 수행한 뒤 Team Lead가 종합하는 구조이며, Python decimal을 활용한 정확한 재무 계산과 다중 소스 교차 검증 도구도 포함한다.",
+    "why_it_matters": "LLM을 단순 질의 도구가 아닌 구조화된 멀티 에이전트 투자 의사결정 시스템으로 활용하는 실전 예시로, 에이전트 오케스트레이션과 RAG 기반 재무 분석 설계에 참고할 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "RAG"
+    ],
+    "score": 0.7240046296296296,
+    "published_at": "2026-06-27T01:37:57Z"
+  },
+  {
+    "id": "github_trending-aws/agent-toolkit-for-aws",
+    "section": "releases",
+    "title_en": "aws/agent-toolkit-for-aws",
+    "title_ko": "AWS, AI 에이전트용 공식 툴킷 'Agent Toolkit for AWS' 공개",
+    "url": "https://github.com/aws/agent-toolkit-for-aws",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "AWS가 AI 코딩 에이전트가 AWS 서비스를 활용해 애플리케이션을 빌드·배포·관리할 수 있도록 지원하는 공식 툴킷을 출시했다. Claude Code, Codex, Cursor, Kiro 등 주요 코딩 에이전트와 연동되며, MCP 서버·스킬·플러그인으로 구성된다. 300개 이상의 AWS 서비스 API 접근, 샌드박스 스크립트 실행, 실시간 문서 검색, CloudWatch/CloudTrail 감사 로그 등 엔터프라이즈급 기능을 제공한다. AWS Labs의 기존 MCP 서버·플러그인을 대체하는 후속 공식 프로젝트다.",
+    "why_it_matters": "AWS가 직접 지원하는 공식 에이전트 툴킷으로, IAM 조건 키 기반 에이전트 전용 정책과 감사 로그까지 갖춰 기업 환경에서 AI 코딩 에이전트를 안전하게 운영할 수 있는 표준 솔루션이 된다.",
+    "tags": [
+      "에이전트",
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 0.7240046296296296,
+    "published_at": "2026-06-27T01:37:57Z"
+  },
+  {
+    "id": "github_trending-JCodesMore/ai-website-cloner-template",
+    "section": "releases",
+    "title_en": "JCodesMore/ai-website-cloner-template",
+    "title_ko": "AI 코딩 에이전트로 웹사이트를 한 줄 명령으로 클론하는 템플릿",
+    "url": "https://github.com/JCodesMore/ai-website-cloner-template",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "URL을 지정하고 `/clone-website` 명령 하나만 실행하면 AI 코딩 에이전트가 대상 사이트를 분석해 Next.js 코드베이스로 재구성해 주는 오픈소스 템플릿이다. Claude Code(Opus 4.7) 사용을 권장하며, Cursor·Copilot·Gemini CLI 등 13종 이상의 에이전트를 지원한다. 정찰 → 디자인 토큰 추출 → 컴포넌트 스펙 작성 → 병렬 빌드 → 조립·QA의 멀티 페이즈 파이프라인으로 동작한다.",
+    "why_it_matters": "플랫폼 마이그레이션이나 소스코드 분실 상황에서 기존 라이브 사이트를 현대적인 Next.js 코드로 빠르게 복원할 수 있어 실무 생산성을 크게 높일 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7240046296296296,
+    "published_at": "2026-06-27T01:37:57Z"
+  },
+  {
+    "id": "github_trending-Panniantong/Agent-Reach",
+    "section": "releases",
+    "title_en": "Panniantong/Agent-Reach",
+    "title_ko": "Agent Reach: AI 에이전트에게 인터넷 접근 능력을 부여하는 오픈소스 CLI 툴",
+    "url": "https://github.com/Panniantong/Agent-Reach",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Agent Reach는 AI 에이전트가 Twitter, Reddit, YouTube, GitHub, Bilibili, 小红书 등 주요 플랫폼의 콘텐츠를 읽고 검색할 수 있도록 설치·설정·라우팅을 자동화해주는 오픈소스 CLI 도구다. API 비용 없이 무료로 사용 가능하며, Claude Code·Cursor·Windsurf 등 쉘 명령을 실행할 수 있는 모든 AI 에이전트와 호환된다. 각 플랫폼별로 '첫 번째 선택 + 대안' 다중 백엔드 라우팅 구조를 채택해, 특정 접근 방식이 차단되더라도 자동으로 대안으로 전환된다. `agent-reach doctor` 명령 하나로 각 채널의 상태와 현재 사용 중인 백엔드를 진단할 수 있다.",
+    "why_it_matters": "API 비용·인증·차단 등 플랫폼별 장벽을 단일 CLI로 추상화해, AI 에이전트가 인터넷 콘텐츠에 무료로 안정적으로 접근하는 설정 부담을 대폭 줄여준다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7240046296296296,
+    "published_at": "2026-06-27T01:37:57Z"
+  },
+  {
+    "id": "openai_blog-previewing-gpt-5-6-sol",
+    "section": "releases",
+    "title_en": "Previewing GPT-5.6 Sol: a next-generation model",
+    "title_ko": "GPT-5.6 Sol 미리보기: 차세대 OpenAI 모델",
+    "url": "https://openai.com/index/previewing-gpt-5-6-sol",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 차세대 모델인 GPT-5.6 Sol을 공개 예고했다. 이 모델은 코딩, 과학, 사이버보안 분야에서 더욱 강화된 성능을 제공하며, OpenAI의 가장 고도화된 안전 스택과 함께 제공된다.",
+    "why_it_matters": "GPT-5.6 Sol은 기술 집약적 도메인에서의 성능 향상과 안전성 강화를 동시에 추구하는 OpenAI의 차세대 전략을 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6309540343915344,
+    "published_at": "2026-06-26T10:00:00Z"
+  },
+  {
+    "id": "hn-48696585",
+    "section": "community",
+    "title_en": "DSpark: Speculative decoding accelerates LLM inference [pdf]",
+    "title_ko": "DSpark: 투기적 디코딩으로 LLM 추론 가속화",
+    "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "DSpark는 투기적 디코딩(Speculative Decoding) 기법을 활용하여 LLM 추론 속도를 높이는 연구다. 투기적 디코딩은 소형 모델이 초안을 생성하고 대형 모델이 이를 검증하는 방식으로 추론 지연을 줄인다. 제목 외 상세 내용은 제공되지 않았다.",
+    "why_it_matters": "LLM 추론 속도 개선은 서비스 비용과 응답성에 직결되므로, 관련 기법 동향을 파악하는 데 참고할 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 10.423041084883078,
+    "published_at": "2026-06-27T09:18:52Z"
+  },
+  {
+    "id": "hn-48677564",
+    "section": "community",
+    "title_en": "Long Wave radio era set to end with switch-off",
+    "title_ko": "장파(Long Wave) 라디오 시대의 종말",
+    "url": "https://www.economist.com/britain/2026/06/25/the-bbc-switches-off-its-oldest-service",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "장파 라디오 방송이 종료될 예정이라는 소식이다. 수십 년간 유지되어 온 장파 방송 인프라가 스위치오프와 함께 역사 속으로 사라지게 된다.",
+    "why_it_matters": "디지털 전환 흐름 속에 아날로그 장파 방송의 종료는 미디어 인프라 역사의 한 획을 긋는 사건이다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 8.648891983028028,
+    "published_at": "2026-06-25T18:42:17Z"
+  },
+  {
+    "id": "hn-48660021",
+    "section": "community",
+    "title_en": "AI learns the “dark art” of RFIC design",
+    "title_ko": "AI, RFIC 설계의 '비전(秘傳) 기술'을 학습하다",
+    "url": "https://spectrum.ieee.org/ai-radio-chip-design",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI가 고도로 숙련된 전문가만이 다룰 수 있는 RFIC(무선 주파수 집적회로) 설계 기술을 학습하는 연구가 주목받고 있다. RFIC 설계는 경험과 직관에 크게 의존하는 분야로 '어두운 기술'로 불릴 만큼 진입 장벽이 높다.",
+    "why_it_matters": "AI가 반도체·RF 설계 전문가 부족 문제를 해소할 가능성을 시사한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.578299163123043,
+    "published_at": "2026-06-24T14:02:16Z"
+  },
+  {
+    "id": "hn-48697958",
+    "section": "community",
+    "title_en": "Asian AI startups launch Mythos-like models",
+    "title_ko": "아시아 AI 스타트업들, Mythos 유사 모델 출시",
+    "url": "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "아시아의 AI 스타트업들이 Mythos와 유사한 모델을 출시하고 있다는 소식이다. 상세한 설명이 제공되지 않아 구체적인 내용은 확인이 어렵다.",
+    "why_it_matters": "아시아 AI 스타트업들의 경쟁력 있는 모델 출시는 글로벌 AI 시장의 다변화를 보여주는 신호일 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.193582791289021,
+    "published_at": "2026-06-27T13:10:21Z"
+  },
+  {
+    "id": "hn-48664063",
+    "section": "community",
+    "title_en": "Reducing tick density along recreational trails in Ottawa, Canada",
+    "title_ko": "캐나다 오타와 레크리에이션 트레일의 진드기 밀도 감소 연구",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1877959X26000476",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "캐나다 오타와의 레크리에이션 트레일에서 진드기 밀도를 줄이기 위한 연구를 다룬 내용이다. 상세한 설명이 제공되지 않아 구체적인 방법론이나 결과는 확인하기 어렵다.",
+    "why_it_matters": "AI·개발자 커뮤니티와 직접적인 관련성이 낮은 공중보건·생태 분야 주제로, 기술적 시사점은 제한적이다.",
+    "tags": [],
+    "score": 8.16937935086441,
+    "published_at": "2026-06-24T18:42:12Z"
+  },
+  {
+    "id": "youtube-0l5oJsjCPus",
+    "section": "video",
+    "title_en": "전세계 기업들을 관찰한 OpenAI 내부자가 알려주는 진짜 AX와 AI Native 되는 방법",
+    "title_ko": "OpenAI 내부자가 알려주는 진짜 AX와 AI 네이티브 기업 되는 법",
+    "url": "https://www.youtube.com/watch?v=0l5oJsjCPus",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "OpenAI 스타트업팀의 Marc Manera, Wolfie Bain이 한국 개발자들과 함께 AI 전환(AX)과 AI 네이티브 기업의 조건에 대해 이야기를 나눴습니다. Codex 활용법, 직원 없이 Codex만으로 운영하는 스타트업 사례, 추론 모델과 AI 에이전트의 발전 방향 등을 다룹니다. 전통 기업의 AI 전환 첫걸음부터 AGI 시대의 조직 구조 변화까지 OpenAI 내부 관점에서 실질적인 조언을 제공합니다.",
+    "why_it_matters": "OpenAI 본사 직원이 직접 전하는 AI 네이티브 기업 전환의 실제 사례와 방법론은 한국 개발자·창업자에게 실용적 인사이트를 제공한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.794699074074074,
+    "published_at": "2026-06-27T13:30:33Z"
+  },
+  {
+    "id": "youtube-EwT3OTGAAb8",
+    "section": "video",
+    "title_en": "대한민국 최초 AI 채용 해커톤 AX인재전쟁 #ax인재전쟁 #조코딩 #workmore",
+    "title_ko": "대한민국 최초 AI 채용 해커톤 'AX 인재전쟁' 개최",
+    "url": "https://www.youtube.com/shorts/EwT3OTGAAb8",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "학벌·경력 대신 AI 활용 능력으로만 평가받는 채용 해커톤 'AX 인재전쟁'이 열린다. 무신사, 카카오페이, 채널톡, 삼일회계법인 등 주요 기업들이 참여하며, 예선은 AI가 채점하고 본선은 기업 C레벨과 대면 평가로 진행된다. 본선 진출자 전원에게 채용 기회가 제공되며, 본선은 2026년 7월 18일 WORKMORE에서 열릴 예정이다.",
+    "why_it_matters": "스펙 없이 AI 실무 능력만으로 국내 주요 기업에 취업할 수 있는 새로운 채용 경로가 열린다는 점에서 개발자들의 주목을 받을 행사다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7763673941798942,
+    "published_at": "2026-06-27T10:25:46Z"
+  },
+  {
+    "id": "youtube-qGMVO0tjjGE",
+    "section": "video",
+    "title_en": "연차 상관없어요. AI 시대의 인재는 OO가 전부입니다. | AX 인재전쟁 2화 마이리얼트립",
+    "title_ko": "AI 시대 인재의 핵심 자질은? 마이리얼트립 AX 인재전쟁 2화",
+    "url": "https://www.youtube.com/watch?v=qGMVO0tjjGE",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "마이리얼트립이 AI 네이티브 기업으로 전환한 경험과 조직 운영 방식을 소개하는 영상이다. 대표 제품 '럭키 글라이드'(6개월 항공권 가격 미리보기)가 DAU 1만을 달성하는 등 AI 활용 성과를 공유한다. AI 네이티브 조직의 3가지 특징(리더 솔선수범·전폭 지원·인사평가 연계)을 설명하며, AI 시대 인재에게 가장 중요한 자질로 '집요함'을 꼽는다.",
+    "why_it_matters": "AI 네이티브 조직으로의 전환 사례와 실제 제품 성과를 통해 개발자가 갖춰야 할 역량과 기업 문화를 구체적으로 파악할 수 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7756464947089947,
+    "published_at": "2026-06-27T10:18:30Z"
+  },
+  {
+    "id": "latent_space-ainews-openai-gpt-56-sol-terra-luna",
+    "section": "deepdive",
+    "title_en": "[AINews] OpenAI GPT-5.6 Sol / Terra / Luna — restricted to trusted partners",
+    "title_ko": "OpenAI GPT-5.6 Sol / Terra / Luna — 신뢰 파트너에만 제한 공개",
+    "url": "https://www.latent.space/p/ainews-openai-gpt-56-sol-terra-luna",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "OpenAI가 GPT-5.6 계열 모델(Sol, Terra, Luna)을 신뢰할 수 있는 파트너에게만 제한적으로 공개했다. 같은 날 Anthropic(ANT)도 관련 릴리스를 진행하며 두 회사가 동일한 날 이례적인 티어형 출시를 단행했다. 구체적인 모델 사양이나 벤치마크 정보는 공개되지 않았다.",
+    "why_it_matters": "주요 AI 기업들이 일반 공개 전 단계적·제한적 릴리스 전략을 동시에 채택하고 있다는 점에서 업계 배포 트렌드 변화를 시사한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7463673941798942,
+    "published_at": "2026-06-27T05:23:22Z"
+  }
+]

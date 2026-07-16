@@ -1,0 +1,373 @@
+[
+  {
+    "id": "hf-2607.04033",
+    "section": "papers",
+    "title_en": "OmniOpt: Taxonomy, Geometry, and Benchmarking of Modern Optimizers",
+    "title_ko": "OmniOpt: 현대 옵티마이저의 분류체계, 기하학, 벤치마킹",
+    "url": "https://huggingface.co/papers/2607.04033",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "OmniOpt는 100여 개에 달하는 대규모 모델 학습용 옵티마이저를 통합적으로 정리한 서베이 및 벤치마크 프레임워크다. 5단계 메타 파이프라인과 노름 제약 선형 최소화 오라클(LMO)을 통해 다양한 옵티마이저를 통일된 관점으로 분석하며, 메커니즘 계열과 학습 목표를 두 축으로 하는 이중 분류 체계를 제안한다. 언어 모델 사전학습부터 이미지 분류까지 다양한 도메인에서 교차 벤치마크를 수행해 각 옵티마이저 계열의 트레이드오프를 체계적으로 정리했다.",
+    "why_it_matters": "옵티마이저 선택이 시스템 설계 결정으로 복잡해진 상황에서, 연구자와 엔지니어가 목적과 제약에 맞는 옵티마이저를 선택할 수 있는 실용적 좌표계를 제공한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.189654742026425,
+    "published_at": "2026-07-03T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.04425",
+    "section": "papers",
+    "title_en": "UI-MOPD: Multi-Platform On-Policy Distillation for Continual GUI Agent Learning",
+    "title_ko": "UI-MOPD: 지속적 GUI 에이전트 학습을 위한 멀티 플랫폼 온-폴리시 증류",
+    "url": "https://huggingface.co/papers/2607.04425",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "멀티모달 기반 모델의 발전으로 GUI 에이전트가 단일 플랫폼을 넘어 크로스 플랫폼 상호작용으로 확장되고 있지만, 플랫폼 간 행동 패턴 혼재와 치명적 망각 문제가 해결 과제로 남아 있었다. 이를 해결하기 위해 고품질 크로스 플랫폼 GUI 상호작용 데이터셋 Uni-GUI를 구축하고, 지속 학습에 멀티 티처 온-폴리시 증류를 결합한 UI-MOPD를 제안한다. UI-MOPD는 현재 환경에 맞는 플랫폼별 교사 모델을 동적으로 선택해 공유 정책에 행동 사전 지식을 전달하며, OSWorld와 MobileWorld에서 각각 38.2%, 12.0%의 작업 성공률을 달성했다.",
+    "why_it_matters": "플랫폼별 능력 저하 없이 새로운 플랫폼에 적응하는 GUI 에이전트 학습 방법론을 제시해 실용적인 멀티 플랫폼 에이전트 개발에 중요한 이정표가 된다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.1588830833596715,
+    "published_at": "2026-07-04T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.04438",
+    "section": "papers",
+    "title_en": "ResearchStudio-Reel: Automate the Last Mile of Research from Paper to Poster, Video, and Blog",
+    "title_ko": "ResearchStudio-Reel: 논문을 포스터·영상·블로그로 자동 변환하는 연구 배포 파이프라인",
+    "url": "https://huggingface.co/papers/2607.04438",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "ResearchStudio-Reel은 논문 한 편을 포스터, 발표 영상, 이중 언어 블로그로 자동 변환하는 파이프라인이다. Claude Code와 Codex 기반의 5가지 스킬로 구성되며, 공유 추출기(Paper2Assets)를 통해 논문을 한 번만 파싱한 후 각 산출물을 일관성 있게 생성한다. 생성된 결과물은 PowerPoint·Word에서 재편집 가능하며, Paper2Poster 벤치마크에서 84~93%의 논문에 대해 기존 자동화 시스템 및 프론티어 LLM을 능가하는 성과를 기록했다.",
+    "why_it_matters": "연구자의 수작업 배포 작업을 완전히 자동화하면서도 편집 가능한 형식을 유지하는 최초의 통합 파이프라인으로, 연구 커뮤니케이션의 생산성을 크게 높일 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.912023005428146,
+    "published_at": "2026-07-04T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.05373",
+    "section": "papers",
+    "title_en": "PixWorld: Unifying 3D Scene Generation and Reconstruction in Pixel Space",
+    "title_ko": "PixWorld: 픽셀 공간에서 3D 장면 생성과 재구성을 통합한 단일 모델",
+    "url": "https://huggingface.co/papers/2607.05373",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "3D 재구성과 생성은 각각 픽셀 기반 회귀와 잠재 확산이라는 별개의 패러다임으로 다뤄져 왔다. PixWorld는 이 두 작업을 픽셀 공간의 단일 확산 모델로 통합하여 VAE/RAE 인코딩에서 발생하는 정보 손실 없이 렌더링된 이미지에 직접 최적화한다. 또한 사전 학습된 3D 기반 모델의 기하학 인식 특징 공간을 활용한 지오메트리 퍼셉션 손실을 도입해 3D 구조적 감독을 강화한다. PixWorld는 기존 잠재 공간 생성 방식을 일관되게 능가하고 최신 재구성 방식과 동등한 성능을 달성했다.",
+    "why_it_matters": "3D 생성과 재구성을 하나의 픽셀 공간 모델로 통합함으로써 기존 잠재 공간 접근법의 구조적 한계를 극복한 새로운 패러다임을 제시한다.",
+    "tags": [],
+    "score": 4.850147601710058,
+    "published_at": "2026-07-05T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.04439",
+    "section": "papers",
+    "title_en": "ResearchStudio-Idea: An Evidence-Grounded Research-Ideation Skill Suite from ML Conference Outcomes",
+    "title_ko": "ResearchStudio-Idea: ML 컨퍼런스 논문 기반 근거 중심 연구 아이디어 생성 스킬 스위트",
+    "url": "https://huggingface.co/papers/2607.04439",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LLM을 활용한 연구 아이디어 생성을 체계화한 ResearchStudio-Idea 스킬 스위트가 공개됐다. ICLR, ICML, NeurIPS의 2021~2025년 논문 1,947편을 분석해 31개의 아이디어 패턴을 도출하고, 이를 15개의 재사용 가능한 패턴으로 정리했다. 핵심 도구인 IdeaSpark는 문헌 탐색, 선행연구 충돌 검사, 병목 파악, 패턴 기반 아이디어 생성, 감사까지 하나의 워크플로로 수행한다. 블라인드 자동 평가에서 기본 베이스라인 대비 더 우수한 연구 제안을 일관되게 생성하는 것으로 나타났다.",
+    "why_it_matters": "단순 아이디어 생성을 넘어 문헌 근거와 선행연구 충돌 검사까지 통합한 연구 아이디어 자동화 워크플로는 AI 기반 연구 보조 도구의 실용성을 크게 높일 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "RAG"
+    ],
+    "score": 4.737669618283368,
+    "published_at": "2026-07-04T20:00:00Z"
+  },
+  {
+    "id": "github_trending-MadsLorentzen/ai-job-search",
+    "section": "releases",
+    "title_en": "MadsLorentzen/ai-job-search",
+    "title_ko": "Claude Code 기반 AI 취업 지원 자동화 프레임워크",
+    "url": "https://github.com/MadsLorentzen/ai-job-search",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code CLI를 활용해 구직 활동 전 과정을 자동화하는 오픈소스 프레임워크다. 프로필을 입력하면 채용공고 적합도 평가, LaTeX CV 및 커버레터 맞춤 작성, ATS 검증, 면접 준비까지 처리한다. 덴마크 취업 포털(Jobindex, Jobnet 등) 검색 도구가 기본 포함되어 있으며, `/add-portal` 명령으로 다른 국가의 채용 사이트도 추가할 수 있다. 드래프터-리뷰어 이중 에이전트 구조와 PDF 컴파일 검증 루프가 특징이다.",
+    "why_it_matters": "구직 전 과정을 에이전트 기반으로 자동화한 실용적 오픈소스 사례로, Claude Code의 멀티에이전트 활용법을 실제 워크플로우에 적용한 참고 모델이 된다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.8663326719576719,
+    "published_at": "2026-07-08T01:32:37Z"
+  },
+  {
+    "id": "github_trending-addyosmani/agent-skills",
+    "section": "releases",
+    "title_en": "addyosmani/agent-skills",
+    "title_ko": "AI 코딩 에이전트를 위한 프로덕션급 엔지니어링 스킬 팩 'Agent Skills'",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "AI 코딩 에이전트가 시니어 엔지니어 수준의 개발 워크플로우를 따르도록 설계된 24개의 구조화된 스킬 모음이다. /spec, /plan, /build, /test, /review, /ship 등 8개의 슬래시 명령어로 개발 라이프사이클 전 단계를 커버하며, Claude Code·Cursor·Copilot 등 70개 이상의 에이전트에 설치할 수 있다. 각 스킬은 단계별 워크플로우, 검증 게이트, 합리화 방지 테이블을 포함하며 Google 소프트웨어 엔지니어링 모범 사례(Hyrum's Law, Beyonce Rule, 트렁크 기반 개발 등)를 기반으로 한다.",
+    "why_it_matters": "AI 에이전트가 스펙·테스트·보안 리뷰를 생략하는 단점을 구조화된 워크플로우로 보완해, 프로토타입 품질이 아닌 프로덕션 품질의 코드를 일관되게 생산할 수 있게 한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8663326719576719,
+    "published_at": "2026-07-08T01:32:37Z"
+  },
+  {
+    "id": "github_trending-asgeirtj/system_prompts_leaks",
+    "section": "releases",
+    "title_en": "asgeirtj/system_prompts_leaks",
+    "title_ko": "주요 AI 챗봇 시스템 프롬프트 유출 모음 저장소",
+    "url": "https://github.com/asgeirtj/system_prompts_leaks",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude, ChatGPT, Gemini, Grok 등 주요 AI 챗봇의 시스템 프롬프트를 수집·공개하는 GitHub 저장소다. Anthropic의 Claude Fable 5, Opus 4.8, OpenAI의 GPT-5.5, Google의 Gemini 3.5 Flash 등 최신 모델 프롬프트가 포함되며 정기적으로 업데이트된다. 워싱턴 포스트에도 소개된 바 있으며, 각 모델 간 프롬프트 변경 사항을 비교할 수 있는 diff 링크도 제공한다.",
+    "why_it_matters": "AI 제품의 내부 동작 원리를 파악할 수 있는 실질적인 레퍼런스로, 개발자와 연구자 모두에게 프롬프트 설계 및 AI 정책 분석에 직접 활용 가능한 자료다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8663326719576719,
+    "published_at": "2026-07-08T01:32:37Z"
+  },
+  {
+    "id": "github_trending-iOfficeAI/OfficeCLI",
+    "section": "releases",
+    "title_en": "iOfficeAI/OfficeCLI",
+    "title_ko": "AI 에이전트를 위한 오픈소스 오피스 CLI 툴 'OfficeCLI'",
+    "url": "https://github.com/iOfficeAI/OfficeCLI",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "OfficeCLI는 AI 에이전트가 Word, Excel, PowerPoint 파일을 읽고 편집하고 자동화할 수 있도록 설계된 오픈소스 CLI 도구입니다. Microsoft Office 설치 없이 단일 바이너리로 동작하며, 350개 이상의 Excel 함수 자동 계산, 내장 HTML 렌더링 엔진을 통한 문서 시각화, MCP 서버 지원 등을 제공합니다. Claude Code, Cursor, GitHub Copilot 등 주요 AI 코딩 에이전트에 자동으로 스킬을 설치해 즉시 사용 가능합니다.",
+    "why_it_matters": "Office 설치 없이 AI 에이전트가 직접 docx/xlsx/pptx를 생성·편집·검증할 수 있어 문서 자동화 파이프라인 구축이 크게 단순해진다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.8663326719576719,
+    "published_at": "2026-07-08T01:32:37Z"
+  },
+  {
+    "id": "github_trending-bradautomates/claude-video",
+    "section": "releases",
+    "title_en": "bradautomates/claude-video",
+    "title_ko": "Claude에게 영상 시청 능력을 부여하는 오픈소스 플러그인 'claude-video'",
+    "url": "https://github.com/bradautomates/claude-video",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "claude-video는 Claude가 YouTube, TikTok, 로컬 파일 등 다양한 영상을 직접 분석할 수 있게 해주는 오픈소스 스킬 플러그인이다. yt-dlp로 자막을 먼저 가져오고, ffmpeg로 장면 변화 기반 프레임을 추출해 Claude의 멀티모달 컨텍스트에 제공한다. 자막이 없는 영상은 Groq 또는 OpenAI의 Whisper API로 음성을 전사하며, Claude Code, Cursor, Codex 등 50여 개 에이전트 호스트에서 설치 가능하다. MIT 라이선스로 공개되어 있다.",
+    "why_it_matters": "Claude가 영상을 URL만으로 실제로 '보고 듣게' 만들어, 버그 재현 영상 분석·경쟁사 콘텐츠 분석·긴 강의 요약 등 실무 워크플로에 즉시 적용 가능하다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.8663326719576719,
+    "published_at": "2026-07-08T01:32:37Z"
+  },
+  {
+    "id": "github_trending-kyutai-labs/pocket-tts",
+    "section": "releases",
+    "title_en": "kyutai-labs/pocket-tts",
+    "title_ko": "Pocket TTS: CPU에서 실행되는 경량 텍스트-음성 변환 모델",
+    "url": "https://github.com/kyutai-labs/pocket-tts",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Kyutai Labs가 공개한 Pocket TTS는 GPU 없이 CPU만으로 동작하는 경량 TTS 모델입니다. 파라미터 수 1억 개의 소형 모델로, MacBook Air M4 기준 실시간 대비 약 6배 속도로 동작하며 첫 오디오 청크까지의 지연이 약 200ms에 불과합니다. 영어, 프랑스어, 독일어, 스페인어 등 6개 언어를 지원하고, 음성 복제(voice cloning) 기능과 스트리밍 오디오 출력도 제공합니다. pip 설치 후 단 몇 줄의 코드로 바로 사용할 수 있으며, 브라우저 내 WebAssembly 실행도 가능합니다.",
+    "why_it_matters": "GPU나 클라우드 API 없이도 실시간 이상의 속도로 고품질 TTS를 로컬에서 실행할 수 있어, 온디바이스 AI 음성 서비스 개발 진입 장벽을 크게 낮춘다.",
+    "tags": [
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.8663326719576719,
+    "published_at": "2026-07-08T01:32:37Z"
+  },
+  {
+    "id": "github_trending-hesreallyhim/awesome-claude-code",
+    "section": "releases",
+    "title_en": "hesreallyhim/awesome-claude-code",
+    "title_ko": "awesome-claude-code: Claude Code 최고의 리소스 모음집",
+    "url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic의 AI 코딩 에이전트 Claude Code를 위한 커뮤니티 큐레이션 리소스 목록이다. 플러그인, 스킬, 훅, MCP 서버, 대체 클라이언트, 보안 도구, 비용 모니터링, 멀티 에이전트 오케스트레이션 등 19개 카테고리에 걸쳐 수십 개의 고품질 프로젝트가 정리되어 있다. Anthropic 공식 자료부터 커뮤니티 제작 도구까지 초보자와 고급 사용자 모두를 대상으로 한다.",
+    "why_it_matters": "Claude Code 생태계 전반을 한눈에 파악할 수 있는 사실상의 공식 허브로, 개발 워크플로우 강화에 즉시 활용 가능한 도구들이 집약되어 있다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8663326719576719,
+    "published_at": "2026-07-08T01:32:37Z"
+  },
+  {
+    "id": "hn-48818311",
+    "section": "community",
+    "title_en": "Chat Control 1.0 and 2.0 Explained",
+    "title_ko": "채팅 검열법 1.0과 2.0 해설",
+    "url": "https://fightchatcontrol.eu/chat-control-overview",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "유럽의 '채팅 컨트롤' 법안 1.0과 2.0의 내용을 설명하는 글이다. 채팅 컨트롤은 온라인 메시지와 암호화된 통신에 대한 스캐닝을 의무화하려는 EU 입법 시도다. 프라이버시와 암호화 훼손 논란으로 큰 반발을 사고 있다.",
+    "why_it_matters": "AI 기반 콘텐츠 스캐닝 의무화 논의는 개발자와 서비스 운영자에게 직접적인 법적·기술적 영향을 미칠 수 있다.",
+    "tags": [],
+    "score": 9.625615065999078,
+    "published_at": "2026-07-07T14:23:15Z"
+  },
+  {
+    "id": "hn-48815982",
+    "section": "community",
+    "title_en": "Why skilled workers come to Germany and then leave again",
+    "title_ko": "숙련 인력이 독일에 왔다가 떠나는 이유",
+    "url": "https://www.dw.com/en/germany-migrants-skilled-workers-integration-labor-market-bureaucracy-language-housing/a-77853162",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "독일로 이주한 숙련 노동자들이 결국 독일을 떠나는 현상을 다룬 기사다. 구체적인 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "AI·기술 인재 유치 및 유지 문제는 글로벌 테크 생태계에 직접적인 영향을 미치는 주제다.",
+    "tags": [],
+    "score": 9.323335014780918,
+    "published_at": "2026-07-07T10:42:59Z"
+  },
+  {
+    "id": "hn-48821848",
+    "section": "community",
+    "title_en": "Show HN: Davit, a Apple Containers UI",
+    "title_ko": "Davit: Apple Containers를 위한 UI 도구",
+    "url": "https://davit.app/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Davit는 Apple Containers를 위한 그래픽 사용자 인터페이스(UI) 도구다. 별도의 설명이 제공되지 않아 자세한 기능은 확인이 필요하다.",
+    "why_it_matters": "Apple Containers를 GUI로 관리할 수 있는 오픈소스 도구로, Mac 개발자에게 유용할 수 있다.",
+    "tags": [
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 8.293017679772781,
+    "published_at": "2026-07-07T18:44:29Z"
+  },
+  {
+    "id": "hn-48819808",
+    "section": "community",
+    "title_en": "Show HN: Rowboat – Open-source, local-first alternative to Claude Desktop",
+    "title_ko": "Rowboat – Claude Desktop의 오픈소스 로컬 우선 대안 공개",
+    "url": "https://github.com/rowboatlabs/rowboat",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Rowboat는 Claude Desktop을 대체하는 오픈소스 로컬 우선 애플리케이션으로 Hacker News에 공개되었다. 로컬 환경에서 직접 실행할 수 있어 데이터 프라이버시를 중시하는 사용자에게 적합한 선택지다.",
+    "why_it_matters": "Claude Desktop 없이도 유사한 기능을 로컬에서 오픈소스로 사용할 수 있는 대안이 등장했다는 점에서 주목할 만하다.",
+    "tags": [
+      "오픈소스",
+      "에이전트"
+    ],
+    "score": 7.253088618990256,
+    "published_at": "2026-07-07T16:10:44Z"
+  },
+  {
+    "id": "hn-48821749",
+    "section": "community",
+    "title_en": "AI Meets Cryptography 1: What AI Found in Cloudflare's Circl",
+    "title_ko": "AI가 Cloudflare의 Circl에서 암호화 취약점을 발견하다",
+    "url": "https://blog.zksecurity.xyz/posts/circl-bugs/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI가 Cloudflare의 암호화 라이브러리 Circl에서 취약점을 찾아낸 사례를 다룬 글이다. AI와 암호화 분야의 교차점을 탐구하는 시리즈의 첫 번째 편으로 보인다.",
+    "why_it_matters": "AI가 보안 코드 감사 영역에서 실질적인 성과를 내기 시작했음을 보여주는 사례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 6.605639842750531,
+    "published_at": "2026-07-07T18:36:35Z"
+  },
+  {
+    "id": "youtube-m9PV55tg9pU",
+    "section": "video",
+    "title_en": "얼마나 규제가 싫은지 감도안옴",
+    "title_ko": "오픈AI, AI 규제에 강력 반발",
+    "url": "https://www.youtube.com/shorts/m9PV55tg9pU",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 오픈AI와 AI 규제 이슈를 다룬 영상이다. 트럼프 행정부 기조와 맞물려 AI 규제에 대한 업계의 반응을 소개하는 내용으로 보인다.",
+    "why_it_matters": "AI 규제 방향은 국내외 개발자와 기업 모두에게 직접적인 영향을 미치는 핵심 이슈다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7679199735449735,
+    "published_at": "2026-07-07T09:00:37Z"
+  },
+  {
+    "id": "youtube-aBuoojGjyf4",
+    "section": "video",
+    "title_en": "투자 업계에서 AI를 활용하는 방법과 원하는 인재 | AX 인재전쟁 6화 카카오페이증권",
+    "title_ko": "카카오페이증권이 말하는 투자 분야 AI 활용법과 원하는 인재상",
+    "url": "https://www.youtube.com/watch?v=aBuoojGjyf4",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "카카오페이증권은 AI 상담 지원 시스템을 도입해 응답률과 만족도를 개선하는 등 AX(AI 전환)를 적극 추진 중이다. 초보 투자자의 매수·매도를 돕는 AI를 주제로 한 해커톤 문제를 출제했으며, 정답보다 '사용자를 설득하는 과정 설계'를 핵심 평가 기준으로 삼는다. 5년 뒤에는 별도 앱 없이 에이전트가 서비스에 스며드는 형태를 전망했고, 본선 진출자는 전원 채용 검토 대상이다.",
+    "why_it_matters": "금융 투자 도메인에서 AI 에이전트가 실제 서비스로 진화하는 방향과 기업이 원하는 AX 인재상을 구체적으로 확인할 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.7678852513227513,
+    "published_at": "2026-07-07T09:00:16Z"
+  },
+  {
+    "id": "youtube-XcxIjcnrfvI",
+    "section": "video",
+    "title_en": "국내 1위 회계법인이 PPT를 아예 버린 이유",
+    "title_ko": "국내 1위 회계법인이 PPT를 버린 이유",
+    "url": "https://www.youtube.com/shorts/XcxIjcnrfvI",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "삼일회계법인이 AX(AI 전환) 팀을 직접 리드하며 기존 업무 방식을 혁신하고 있다. PPT 대신 AI 기반 도구를 도입한 배경과 관련 해커톤 참여 안내가 담긴 영상이다.",
+    "why_it_matters": "대형 회계법인의 AI 업무 전환 사례는 전통 산업에서의 실질적 AX 도입 방향을 보여준다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7581977513227514,
+    "published_at": "2026-07-07T07:22:37Z"
+  },
+  {
+    "id": "latent_space-ainews-lilian-weng-summarizes-35",
+    "section": "deepdive",
+    "title_en": "[AINews] Lilian Weng summarizes 35 papers on Harness Engineering for RSI",
+    "title_ko": "Lilian Weng, RSI를 위한 에이전트 엔지니어링 논문 35편 요약 정리",
+    "url": "https://www.latent.space/p/ainews-lilian-weng-summarizes-35",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "조용한 뉴스 날, Lilian Weng이 RSI(Recursive Self-Improvement, 재귀적 자기 개선)를 위한 에이전트 엔지니어링 관련 논문 35편을 압축 정리했다. 방대한 연구를 한눈에 파악할 수 있는 인사이트를 제공한다.",
+    "why_it_matters": "AI 자기 개선 분야의 핵심 연구자인 Lilian Weng의 큐레이션은 에이전트 개발 트렌드를 빠르게 파악하는 데 높은 신뢰도를 가진다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.8710747354497355,
+    "published_at": "2026-07-08T02:20:25Z"
+  }
+]
