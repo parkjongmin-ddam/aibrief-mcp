@@ -1,3 +1,5 @@
+<img src="assets/icon.png" alt="aibrief-mcp" width="96" align="right" />
+
 # aibrief-mcp
 
 매일 큐레이션된 **한국어 AI 브리핑**을 읽기 전용 [MCP](https://modelcontextprotocol.io) 툴로
