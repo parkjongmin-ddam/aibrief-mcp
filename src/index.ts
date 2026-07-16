@@ -65,6 +65,15 @@ interface SearchRow {
   url: string;
   score: number;
 }
+// 사전계산 집계(build_index.py). list_tags·get_stats 가 search.json(대용량) 대신 소비.
+interface StatsDoc {
+  total_days: number;
+  total_items: number;
+  earliest: string | null;
+  latest: string | null;
+  by_section: Record<string, number>;
+  by_tag: Record<string, number>;
+}
 
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 
@@ -76,8 +85,12 @@ async function fetchJson<T>(url: string): Promise<T> {
   const now = Date.now();
   const hit = _cache.get(url);
   if (hit && now - hit.at < TTL_MS) return hit.body as T;
-  const res = await fetch(url, { headers: { "User-Agent": "aibrief-mcp" } });
-  if (!res.ok) throw new Error(`fetch 실패 ${res.status}: ${url}`);
+  // cf.cacheTtl: isolate 간 엣지 캐시 — 콜드 isolate마다 GitHub raw 재fetch/재파싱 방지.
+  const res = await fetch(url, {
+    headers: { "User-Agent": "aibrief-mcp" },
+    cf: { cacheTtl: 60, cacheEverything: true },
+  });
+  if (!res.ok) throw new Error(`데이터 조회 실패 (${res.status})`); // 내부 URL 비노출
   const body = (await res.json()) as T;
   _cache.set(url, { at: now, body });
   return body;
@@ -93,6 +106,7 @@ function createServer(base: string): McpServer {
   const u = (p: string) => `${base}/${p}`;
   const getManifest = () => fetchJson<ManifestEntry[]>(u("index.json")); // 내림차순
   const getSearchRows = () => fetchJson<SearchRow[]>(u("search.json")); // (date,score) desc
+  const getStats = () => fetchJson<StatsDoc>(u("stats.json")); // 사전계산 집계(경량)
   const getDay = (d: string) => fetchJson<CuratedItem[]>(u(`daily/${d}.json`));
 
   async function resolveDate(date: string): Promise<string> {
@@ -172,7 +186,7 @@ function createServer(base: string): McpServer {
         "브리핑 아카이브 전체에서 키워드로 항목을 검색한다(제목 en/ko·요약·why·태그 " +
         "부분일치, 대소문자 무시). section·tag 로 좁힐 수 있다.",
       inputSchema: {
-        query: z.string().min(1).describe("검색어(공백 구분 시 모든 토큰 포함, AND)"),
+        query: z.string().min(1).max(200).describe("검색어(공백 구분 시 모든 토큰 포함, AND)"),
         section: z.enum(SECTIONS).optional().describe("섹션 한정(선택)"),
         tag: z.enum(TAGS).optional().describe("태그 한정(선택)"),
         limit: z.number().int().positive().max(100).default(20).describe("최대 결과 수"),
@@ -244,13 +258,19 @@ function createServer(base: string): McpServer {
       annotations: RO,
     },
     async () => {
-      const rows = await getSearchRows();
-      const counts = new Map<string, number>();
-      for (const r of rows) for (const t of r.tags) counts.set(t, (counts.get(t) ?? 0) + 1);
-      const tags = [...counts.entries()]
-        .map(([tag, count]) => ({ tag, count }))
-        .sort((a, b) => b.count - a.count);
-      return json({ tags });
+      const toTags = (byTag: Record<string, number>) =>
+        Object.entries(byTag)
+          .map(([tag, count]) => ({ tag, count }))
+          .sort((a, b) => b.count - a.count);
+      try {
+        return json({ tags: toTags((await getStats()).by_tag) }); // 경량 경로
+      } catch {
+        // stats.json 부재 시 search.json 에서 직접 집계(정확성 폴백).
+        const rows = await getSearchRows();
+        const counts: Record<string, number> = {};
+        for (const r of rows) for (const t of r.tags) counts[t] = (counts[t] ?? 0) + 1;
+        return json({ tags: toTags(counts) });
+      }
     }
   );
 
@@ -264,22 +284,27 @@ function createServer(base: string): McpServer {
       annotations: RO,
     },
     async () => {
-      const rows = await getSearchRows();
-      const dates = [...new Set(rows.map((r) => r.date))].sort();
-      const by_section: Record<string, number> = {};
-      const by_tag: Record<string, number> = {};
-      for (const r of rows) {
-        by_section[r.section] = (by_section[r.section] ?? 0) + 1;
-        for (const t of r.tags) by_tag[t] = (by_tag[t] ?? 0) + 1;
+      try {
+        return json(await getStats()); // 경량 경로(사전계산)
+      } catch {
+        // stats.json 부재 시 search.json 에서 직접 집계(정확성 폴백).
+        const rows = await getSearchRows();
+        const dates = [...new Set(rows.map((r) => r.date))].sort();
+        const by_section: Record<string, number> = {};
+        const by_tag: Record<string, number> = {};
+        for (const r of rows) {
+          by_section[r.section] = (by_section[r.section] ?? 0) + 1;
+          for (const t of r.tags) by_tag[t] = (by_tag[t] ?? 0) + 1;
+        }
+        return json({
+          total_days: dates.length,
+          total_items: rows.length,
+          earliest: dates[0] ?? null,
+          latest: dates[dates.length - 1] ?? null,
+          by_section,
+          by_tag,
+        });
       }
-      return json({
-        total_days: dates.length,
-        total_items: rows.length,
-        earliest: dates[0] ?? null,
-        latest: dates[dates.length - 1] ?? null,
-        by_section,
-        by_tag,
-      });
     }
   );
 

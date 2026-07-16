@@ -1,0 +1,20 @@
+{
+  "total_days": 25,
+  "total_items": 519,
+  "earliest": "2026-06-22",
+  "latest": "2026-07-16",
+  "by_section": {
+    "community": 125,
+    "deepdive": 25,
+    "papers": 125,
+    "releases": 175,
+    "video": 69
+  },
+  "by_tag": {
+    "LLM": 347,
+    "에이전트": 250,
+    "오픈소스": 175,
+    "인프라": 61,
+    "RAG": 25
+  }
+}

@@ -26,7 +26,8 @@ wrangler.jsonc      # Worker 설정 (compatibility_flags: nodejs_compat, var DAT
 data/daily/*.json   # aibrief 정본 미러 (cron 이 매일 push)
 data/index.json     # 일자 매니페스트                ← 생성물
 data/search.json    # 평면 검색 인덱스               ← 생성물
-scripts/build_index.py  # data/daily → index/search 재생성 (표준 라이브러리만)
+data/stats.json     # 사전계산 집계(태그·섹션·기간)  ← 생성물 (list_tags·get_stats 용)
+scripts/build_index.py  # data/daily → index/search/stats 재생성 (표준 라이브러리만)
 ```
 
 데이터는 번들이 아니라 **런타임에 raw 에서 fetch**(base = `DATA_BASE_URL`) → cron 이 새 일자를

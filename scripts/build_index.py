@@ -21,6 +21,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DAILY = ROOT / "data" / "daily"
 INDEX = ROOT / "data" / "index.json"
 SEARCH = ROOT / "data" / "search.json"
+STATS = ROOT / "data" / "stats.json"
 
 # search.json 에 실을 필드 (렌더/매칭에 필요한 것만; score 는 랭킹 참고용).
 _SEARCH_FIELDS = (
@@ -59,12 +60,32 @@ def build() -> tuple[int, int]:
     manifest.sort(key=lambda d: d["date"], reverse=True)
     rows.sort(key=lambda r: (r["date"], r.get("score") or 0.0), reverse=True)
 
+    # 사전계산 집계 — 런타임 list_tags·get_stats 가 search.json(대용량) 대신 소비.
+    by_section: Counter[str] = Counter()
+    by_tag: Counter[str] = Counter()
+    for r in rows:
+        by_section[r["section"]] += 1
+        for t in r.get("tags") or []:
+            by_tag[t] += 1
+    all_dates = sorted({r["date"] for r in rows})
+    stats = {
+        "total_days": len(manifest),
+        "total_items": len(rows),
+        "earliest": all_dates[0] if all_dates else None,
+        "latest": all_dates[-1] if all_dates else None,
+        "by_section": dict(sorted(by_section.items())),
+        "by_tag": dict(by_tag.most_common()),  # 건수 내림차순
+    }
+
     INDEX.write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     SEARCH.write_text(
         json.dumps(rows, ensure_ascii=False, separators=(",", ":")) + "\n",
         encoding="utf-8",
+    )
+    STATS.write_text(
+        json.dumps(stats, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     return len(manifest), len(rows)
 
