@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "aibrief-mcp",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-01-01",
+  "compatibility_flags": ["nodejs_compat"],
+  // 데이터 소스(공개 아카이브 raw). 포크 시 본인 repo 로 교체.
+  "vars": {
+    "DATA_BASE_URL": "https://raw.githubusercontent.com/parkjongmin-ddam/aibrief-mcp/main/data"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

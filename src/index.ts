@@ -1,38 +1,31 @@
 /**
- * aibrief-mcp — 매일 큐레이션된 한국어 AI 브리핑을 읽기 전용 MCP 툴로 노출.
+ * aibrief-mcp — Cloudflare Worker (무상태 원격 MCP 서버).
  *
- * aibrief 파이프라인(collect→rank→summarize→emit)이 만든 정본 JSON
- * (CuratedItem 배열, 하루 1파일)을 그대로 서빙한다. 요약이 이미 계산돼 있으므로
- * 요청당 LLM 호출·과금 0 — stateless·read-only(모든 툴 readOnlyHint).
+ * aibrief 파이프라인이 만든 정본 JSON(공개 아카이브)을 읽기 전용 MCP 툴로 노출한다.
+ * 요약이 이미 계산돼 있어 요청당 LLM 호출·과금 0. 데이터는 런타임에 공개 repo raw
+ * 에서 fetch 하므로(base 는 var 로 교체 가능) cron 이 새 일자를 push 하면 재배포 없이 반영.
  *
- * 데이터는 배포 번들에 넣지 않고 런타임에 공개 repo raw 에서 fetch 한다
- * (cron 이 새 일자를 push 하면 재배포 없이 바로 반영). base 는 config 로 교체 가능.
+ * 무상태(createMcpHandler): Durable Objects·세션·OAuth 불필요. 요청마다 새 McpServer
+ * 인스턴스 생성(MCP SDK 1.26 보안 가드 준수). 엔드포인트: POST /mcp
  *
  * 툴(7): list_briefs · get_brief · get_section · search_briefs
  *        · top_items · list_tags · get_stats
  */
-import { z } from "zod";
+import { createMcpHandler } from "agents/mcp";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { z } from "zod";
 
-// ─── config (Smithery 세션 설정) ──────────────────────────────────────────────
-export const configSchema = z.object({
-  dataBaseUrl: z
-    .string()
-    .url()
-    .default("https://raw.githubusercontent.com/parkjongmin-ddam/aibrief-mcp/main/data")
-    .describe("정본 JSON(data/) 이 서빙되는 base URL. 포크 시 본인 repo 로 교체."),
-});
+interface Env {
+  DATA_BASE_URL?: string;
+}
 
-type Config = z.infer<typeof configSchema>;
+const DEFAULT_BASE =
+  "https://raw.githubusercontent.com/parkjongmin-ddam/aibrief-mcp/main/data";
 
 // ─── 도메인 상수 (aibrief schemas.py Enum 미러 — schemas.py 가 정본) ──────────
 const SECTIONS = ["papers", "releases", "community", "video", "deepdive"] as const;
 type Section = (typeof SECTIONS)[number];
-
-// TagEnum 값 (schemas.py 순서).
 const TAGS = ["LLM", "RAG", "에이전트", "인프라", "오픈소스"] as const;
-
-// emit.py SECTION_HEADER 와 동일 라벨 (표시용).
 const SECTION_LABEL: Record<Section, string> = {
   papers: "📄 논문",
   releases: "🚀 릴리스",
@@ -75,7 +68,7 @@ interface SearchRow {
 
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 
-// ─── fetch 헬퍼 (경량 캐시 — 같은 URL 60초 재사용) ───────────────────────────
+// ─── fetch 헬퍼 (isolate 스코프 캐시 — 같은 URL 60초 재사용) ──────────────────
 const _cache = new Map<string, { at: number; body: unknown }>();
 const TTL_MS = 60_000;
 
@@ -90,38 +83,34 @@ async function fetchJson<T>(url: string): Promise<T> {
   return body;
 }
 
-const manifestUrl = (c: Config) => `${c.dataBaseUrl}/index.json`;
-const searchUrl = (c: Config) => `${c.dataBaseUrl}/search.json`;
-const dayUrl = (c: Config, date: string) => `${c.dataBaseUrl}/daily/${date}.json`;
-
-const getManifest = (c: Config) => fetchJson<ManifestEntry[]>(manifestUrl(c)); // 내림차순
-const getSearchRows = (c: Config) => fetchJson<SearchRow[]>(searchUrl(c)); // (date,score) desc
-
-/** "latest"/"today" 또는 YYYY-MM-DD → 실존 일자로 해석. */
-async function resolveDate(c: Config, date: string): Promise<string> {
-  const m = await getManifest(c);
-  if (m.length === 0) throw new Error("발행된 브리핑이 없습니다.");
-  if (date === "latest" || date === "today") return m[0].date;
-  if (!DATE_RE.test(date)) throw new Error(`날짜 형식 오류: ${date} (YYYY-MM-DD)`);
-  if (!m.some((e) => e.date === date)) throw new Error(`${date} 브리핑 없음. 최신: ${m[0].date}`);
-  return date;
-}
-
 const json = (v: unknown) => ({
   content: [{ type: "text" as const, text: JSON.stringify(v, null, 2) }],
 });
-const RO = { readOnlyHint: true } as const; // 모든 툴 읽기 전용
+const RO = { readOnlyHint: true } as const;
 
-// ─── 서버 ────────────────────────────────────────────────────────────────────
-export default function createServer({ config }: { config: Config }) {
+// ─── 서버 (요청당 새 인스턴스; base 클로저) ──────────────────────────────────
+function createServer(base: string): McpServer {
+  const u = (p: string) => `${base}/${p}`;
+  const getManifest = () => fetchJson<ManifestEntry[]>(u("index.json")); // 내림차순
+  const getSearchRows = () => fetchJson<SearchRow[]>(u("search.json")); // (date,score) desc
+  const getDay = (d: string) => fetchJson<CuratedItem[]>(u(`daily/${d}.json`));
+
+  async function resolveDate(date: string): Promise<string> {
+    const m = await getManifest();
+    if (m.length === 0) throw new Error("발행된 브리핑이 없습니다.");
+    if (date === "latest" || date === "today") return m[0].date;
+    if (!DATE_RE.test(date)) throw new Error(`날짜 형식 오류: ${date} (YYYY-MM-DD)`);
+    if (!m.some((e) => e.date === date)) throw new Error(`${date} 브리핑 없음. 최신: ${m[0].date}`);
+    return date;
+  }
+
   const server = new McpServer({ name: "aibrief", version: "0.2.0" });
 
   // 1) 발행된 날짜 목록.
   server.registerTool(
     "list_briefs",
     {
-      description:
-        "발행된 일일 AI 브리핑 날짜 목록(최신순)과 각 일자 섹션별 건수를 반환한다.",
+      description: "발행된 일일 AI 브리핑 날짜 목록(최신순)과 각 일자 섹션별 건수를 반환한다.",
       inputSchema: {
         from: z.string().regex(DATE_RE).optional().describe("시작일 YYYY-MM-DD(포함)"),
         to: z.string().regex(DATE_RE).optional().describe("종료일 YYYY-MM-DD(포함)"),
@@ -130,7 +119,7 @@ export default function createServer({ config }: { config: Config }) {
       annotations: RO,
     },
     async ({ from, to, limit }) => {
-      let m = await getManifest(config);
+      let m = await getManifest();
       if (from) m = m.filter((e) => e.date >= from);
       if (to) m = m.filter((e) => e.date <= to);
       return json({ count: m.length, days: m.slice(0, limit) });
@@ -150,8 +139,8 @@ export default function createServer({ config }: { config: Config }) {
       annotations: RO,
     },
     async ({ date }) => {
-      const d = await resolveDate(config, date);
-      const items = await fetchJson<CuratedItem[]>(dayUrl(config, d));
+      const d = await resolveDate(date);
+      const items = await getDay(d);
       return json({ date: d, total: items.length, items });
     }
   );
@@ -169,20 +158,13 @@ export default function createServer({ config }: { config: Config }) {
       annotations: RO,
     },
     async ({ date, section }) => {
-      const d = await resolveDate(config, date);
-      const items = await fetchJson<CuratedItem[]>(dayUrl(config, d));
-      const filtered = items.filter((it) => it.section === section);
-      return json({
-        date: d,
-        section,
-        label: SECTION_LABEL[section],
-        total: filtered.length,
-        items: filtered,
-      });
+      const d = await resolveDate(date);
+      const items = (await getDay(d)).filter((it) => it.section === section);
+      return json({ date: d, section, label: SECTION_LABEL[section], total: items.length, items });
     }
   );
 
-  // 4) 아카이브 전문 검색(제목/요약/why/태그 부분일치 + 섹션·태그 필터).
+  // 4) 아카이브 전문 검색.
   server.registerTool(
     "search_briefs",
     {
@@ -198,7 +180,7 @@ export default function createServer({ config }: { config: Config }) {
       annotations: RO,
     },
     async ({ query, section, tag, limit }) => {
-      const rows = await getSearchRows(config);
+      const rows = await getSearchRows();
       const tokens = query.toLowerCase().split(/\s+/).filter(Boolean);
       const hay = (r: SearchRow) =>
         [r.title_en, r.title_ko, r.summary_ko, r.why_it_matters, r.tags.join(" ")]
@@ -215,37 +197,30 @@ export default function createServer({ config }: { config: Config }) {
         section: section ?? null,
         tag: tag ?? null,
         total: hits.length,
-        results: hits.slice(0, limit), // 이미 (date,score) desc 정렬
+        results: hits.slice(0, limit),
       });
     }
   );
 
-  // 5) 최근 N개 발행일의 베스트(score 순) — 편집된 랭킹 노출.
+  // 5) 최근 N개 발행일의 베스트(score 순).
   server.registerTool(
     "top_items",
     {
       description:
-        "최근 N개 발행일 아카이브에서 점수(score) 상위 항목을 반환한다. " +
-        "section 을 주면 그 섹션의 상위 목록, 안 주면 섹션별 상위 목록을 준다. " +
-        "'요즘 뜨는 AI 소식' 용도. (score 밴딩이 섹션마다 달라 섹션별로 그룹핑한다.)",
+        "최근 N개 발행일 아카이브에서 점수(score) 상위 항목을 반환한다. section 을 주면 그 " +
+        "섹션 상위, 안 주면 섹션별 상위. '요즘 뜨는 AI 소식' 용도(섹션별 그룹핑).",
       inputSchema: {
         days: z.number().int().positive().max(90).default(7).describe("최근 발행일 수"),
         section: z.enum(SECTIONS).optional().describe("섹션 한정(선택)"),
-        limit: z
-          .number()
-          .int()
-          .positive()
-          .max(50)
-          .default(10)
-          .describe("섹션당(또는 전체) 최대 개수"),
+        limit: z.number().int().positive().max(50).default(10).describe("섹션당(또는 전체) 최대 개수"),
       },
       annotations: RO,
     },
     async ({ days, section, limit }) => {
-      const rows = await getSearchRows(config);
+      const rows = await getSearchRows();
       const dates = [...new Set(rows.map((r) => r.date))].sort().reverse().slice(0, days);
-      const dateSet = new Set(dates);
-      const win = rows.filter((r) => dateSet.has(r.date));
+      const dset = new Set(dates);
+      const win = rows.filter((r) => dset.has(r.date));
       const byScore = (a: SearchRow, b: SearchRow) => b.score - a.score;
       const window = { days: dates.length, dates };
       if (section) {
@@ -269,7 +244,7 @@ export default function createServer({ config }: { config: Config }) {
       annotations: RO,
     },
     async () => {
-      const rows = await getSearchRows(config);
+      const rows = await getSearchRows();
       const counts = new Map<string, number>();
       for (const r of rows) for (const t of r.tags) counts.set(t, (counts.get(t) ?? 0) + 1);
       const tags = [...counts.entries()]
@@ -289,24 +264,38 @@ export default function createServer({ config }: { config: Config }) {
       annotations: RO,
     },
     async () => {
-      const rows = await getSearchRows(config);
+      const rows = await getSearchRows();
       const dates = [...new Set(rows.map((r) => r.date))].sort();
-      const bySection: Record<string, number> = {};
-      const byTag: Record<string, number> = {};
+      const by_section: Record<string, number> = {};
+      const by_tag: Record<string, number> = {};
       for (const r of rows) {
-        bySection[r.section] = (bySection[r.section] ?? 0) + 1;
-        for (const t of r.tags) byTag[t] = (byTag[t] ?? 0) + 1;
+        by_section[r.section] = (by_section[r.section] ?? 0) + 1;
+        for (const t of r.tags) by_tag[t] = (by_tag[t] ?? 0) + 1;
       }
       return json({
         total_days: dates.length,
         total_items: rows.length,
         earliest: dates[0] ?? null,
         latest: dates[dates.length - 1] ?? null,
-        by_section: bySection,
-        by_tag: byTag,
+        by_section,
+        by_tag,
       });
     }
   );
 
-  return server.server;
+  return server;
 }
+
+// ─── Worker 엔트리 ───────────────────────────────────────────────────────────
+export default {
+  fetch: async (request: Request, env: Env, ctx: ExecutionContext) => {
+    const base = (env.DATA_BASE_URL ?? DEFAULT_BASE).replace(/\/+$/, "");
+    if (new URL(request.url).pathname === "/") {
+      return new Response("aibrief MCP server — endpoint: POST /mcp\n", {
+        headers: { "content-type": "text/plain; charset=utf-8" },
+      });
+    }
+    const server = createServer(base);
+    return createMcpHandler(server)(request, env, ctx);
+  },
+} satisfies ExportedHandler<Env>;
