@@ -77,14 +77,22 @@ interface StatsDoc {
 
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 
-// ─── fetch 헬퍼 (isolate 스코프 캐시 — 같은 URL 60초 재사용) ──────────────────
+// ─── fetch 헬퍼 (isolate 스코프 LRU 캐시 — 같은 URL 60초 재사용, 키 상한) ──────
+// cf.cacheTtl 이 isolate 간 엣지 백스톱이라, in-isolate 캐시는 작게 유지한다.
+// 키는 인덱스 3종 + 요청된 일자(daily/*)라, 상한이 없으면 오래 사는 isolate 에서
+// 일자 키가 무한정 쌓인다 → LRU 로 CACHE_MAX 개만 유지.
 const _cache = new Map<string, { at: number; body: unknown }>();
 const TTL_MS = 60_000;
+const CACHE_MAX = 64;
 
 async function fetchJson<T>(url: string): Promise<T> {
   const now = Date.now();
   const hit = _cache.get(url);
-  if (hit && now - hit.at < TTL_MS) return hit.body as T;
+  if (hit && now - hit.at < TTL_MS) {
+    _cache.delete(url); // LRU: 최근 사용으로 승격(재삽입 → 삽입순서 갱신).
+    _cache.set(url, hit);
+    return hit.body as T;
+  }
   // cf.cacheTtl: isolate 간 엣지 캐시 — 콜드 isolate마다 GitHub raw 재fetch/재파싱 방지.
   const res = await fetch(url, {
     headers: { "User-Agent": "aibrief-mcp" },
@@ -92,7 +100,11 @@ async function fetchJson<T>(url: string): Promise<T> {
   });
   if (!res.ok) throw new Error(`데이터 조회 실패 (${res.status})`); // 내부 URL 비노출
   const body = (await res.json()) as T;
+  _cache.delete(url);
   _cache.set(url, { at: now, body });
+  while (_cache.size > CACHE_MAX) {
+    _cache.delete(_cache.keys().next().value as string); // 가장 오래된(LRU) 키 축출.
+  }
   return body;
 }
 
