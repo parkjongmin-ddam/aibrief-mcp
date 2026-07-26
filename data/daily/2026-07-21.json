@@ -1,0 +1,342 @@
+[
+  {
+    "id": "hf-2607.14952",
+    "section": "papers",
+    "title_en": "LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget",
+    "title_ko": "LongStraw: 고정 GPU 예산으로 200만 토큰 이상의 장문 컨텍스트 RL 학습 지원",
+    "url": "https://huggingface.co/papers/2607.14952",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LongStraw는 고정 GPU 예산 내에서 백만 토큰 규모의 강화학습(RL) 후훈련을 가능하게 하는 아키텍처 인식 실행 스택으로, GRPO 기반으로 구현됩니다. 공유 프롬프트는 autograd 없이 평가하고, 짧은 응답 브랜치를 순차적으로 재실행하는 방식으로 학습 그래프 메모리를 절감합니다. 8개의 H20 GPU로 210만 포지션에서 그룹 스코어링과 역전파를 완료했으며, 스트레스 테스트에서는 446만 포지션까지 도달했습니다. 다만 현재는 실행 용량 검증 단계로, 완전한 학습 정확성은 아직 보장되지 않습니다.",
+    "why_it_matters": "추론 시스템의 초장문 컨텍스트와 RL 후훈련 간의 격차를 해소함으로써, 장기 궤적을 다루는 AI 에이전트 훈련의 실용성을 크게 높일 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "인프라"
+    ],
+    "score": 6.209486152841421,
+    "published_at": "2026-07-15T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.14935",
+    "section": "papers",
+    "title_en": "VideoChat3: Fully Open Video MLLM for Efficient and Generalist Video Understanding",
+    "title_ko": "VideoChat3: 효율적이고 범용적인 완전 오픈소스 비디오 MLLM",
+    "url": "https://huggingface.co/papers/2607.14935",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "VideoChat3는 일반, 장편, 스트리밍 비디오 이해를 모두 아우르는 완전 오픈소스 멀티모달 대형 언어 모델이다. 효율성을 위해 Inflated 3D Vision Transformer(I3D-ViT)와 적응형 프레임 해상도 기법을 도입했으며, 세 가지 고품질 학습 데이터셋(Academic2M, LV116K, OL617K)을 합성해 범용성을 강화했다. 단 4B 파라미터로 동일하거나 더 큰 규모의 기존 오픈소스 모델을 다양한 벤치마크에서 능가한다.",
+    "why_it_matters": "학습 코드·전략·데이터셋까지 완전 공개해 재현성과 커뮤니티 발전을 동시에 촉진하는 경량 범용 비디오 AI 모델이다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 6.049856007249537,
+    "published_at": "2026-07-15T20:00:00Z"
+  },
+  {
+    "id": "hf-2606.29538",
+    "section": "papers",
+    "title_en": "RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources",
+    "title_ko": "RESOURCE2SKILL: 멀티모달 리소스에서 실행 가능한 에이전트 스킬 추출 프레임워크",
+    "url": "https://huggingface.co/papers/2606.29538",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "RESOURCE2SKILL은 튜토리얼 영상, 코드 저장소, 문서 등 다양한 멀티모달 자료로부터 소프트웨어 에이전트가 실행할 수 있는 스킬을 자동으로 추출하는 프레임워크다. 추출된 스킬은 구조화된 텍스트, 코드, 시각적 예시, 메타데이터를 포함한 계층적 멀티모달 Skill Wiki로 구성된다. 7개의 실용적 저작 도메인에서 스킬 미사용 에이전트 대비 평균 +11.9%p 성능 향상을 달성했으며, 28개 주요 평가 셀 중 26개에서 강력한 기준 모델을 능가했다.",
+    "why_it_matters": "손으로 작성한 스킬 라이브러리의 한계를 넘어, 방대한 멀티모달 인간 자료를 자동으로 재사용 가능한 에이전트 지식으로 전환할 수 있는 확장 가능한 방법을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.762173934797756,
+    "published_at": "2026-07-15T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.15330",
+    "section": "papers",
+    "title_en": "Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K Hours of Real-World Trajectories",
+    "title_ko": "샤오미 로보틱스-1: 10만 시간 실제 데이터로 학습한 비전-언어-액션 로봇 모델",
+    "url": "https://huggingface.co/papers/2607.15330",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "샤오미가 100,000시간 이상의 실제 로봇 조작 궤적 데이터로 학습한 기반 VLA(비전-언어-액션) 모델 'Xiaomi-Robotics-1'을 공개했다. 사전학습과 사후학습 2단계 훈련 방식을 채택했으며, 자동 레이블링 파이프라인으로 자연어 주석을 생성해 다양한 언어 명령을 따를 수 있다. RoboCasa365 벤치마크에서 57.6% 성공률로 기존 최고 성능(46.6%)을 넘어섰고, RoboDojo에서도 평균 20.07점으로 이전 최고치(13.07)를 크게 상회했다. 코드와 모델 체크포인트는 추후 공개 예정이다.",
+    "why_it_matters": "대규모 실제 로봇 데이터 기반의 스케일링 법칙이 로봇 조작 분야에도 유효함을 입증하며, 범용 로봇 기반 모델 경쟁에 샤오미가 본격 참전했음을 알린다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 5.02535169073515,
+    "published_at": "2026-07-15T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.16051",
+    "section": "papers",
+    "title_en": "Loop the Loopies!",
+    "title_ko": "Loopie: 루프 트랜스포머의 새로운 강자 등장",
+    "url": "https://huggingface.co/papers/2607.16051",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Loopie는 현재까지 가장 강력한 루프 트랜스포머 시리즈로, MoE 구조의 20B(활성 2B)와 6B(활성 0.6B) 두 가지 모델로 구성된다. 기존 루프 트랜스포머는 동일 컴퓨팅 예산 대비 파라미터를 늘리는 방식에 비해 성능이 낮은 한계가 있었으나, Loopie는 이를 극복하여 동일 컴퓨팅 예산의 바닐라 30B-A3B 모델을 능가한다. 2025 IMO 및 IPhO에서 도구 없이 금메달 수준의 성능을 달성하는 강력한 추론 능력을 보여줬다.",
+    "why_it_matters": "루프 트랜스포머의 고질적 성능 한계를 MoE 구조와 새로운 학습 파이프라인으로 돌파해, 적은 활성 파라미터로 최고 수준 추론이 가능함을 입증했다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.02535169073515,
+    "published_at": "2026-07-16T20:00:00Z"
+  },
+  {
+    "id": "github_trending-rohitg00/ai-engineering-from-scratch",
+    "section": "releases",
+    "title_en": "rohitg00/ai-engineering-from-scratch",
+    "title_ko": "AI 엔지니어링 처음부터 배우기 — 503개 레슨 오픈소스 커리큘럼",
+    "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "수학 기초부터 자율 에이전트 스웜까지 20개 단계, 503개 레슨으로 구성된 무료 오픈소스 AI 엔지니어링 커리큘럼이다. Python·TypeScript·Rust·Julia 4개 언어를 사용하며, 각 레슨은 프레임워크 없이 직접 구현하고 재사용 가능한 프롬프트·스킬·에이전트·MCP 서버 아티팩트를 산출한다. 전체 학습 시간은 약 320시간으로 추정되며 MIT 라이선스로 공개되어 있다.",
+    "why_it_matters": "API 호출만 가르치는 단편적 자료들과 달리, 수학부터 프로덕션 인프라까지 일관된 맥락으로 쌓아 올리는 체계적 커리큘럼이라 실무 AI 엔지니어 역량 격차를 메울 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "RAG"
+    ],
+    "score": 0.8664136904761905,
+    "published_at": "2026-07-21T01:33:26Z"
+  },
+  {
+    "id": "github_trending-msitarzewski/agency-agents",
+    "section": "releases",
+    "title_en": "msitarzewski/agency-agents",
+    "title_ko": "Agency Agents: 230개 이상의 특화 AI 에이전트 컬렉션",
+    "url": "https://github.com/msitarzewski/agency-agents",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "프론트엔드 개발자, 보안 아키텍트, Reddit 커뮤니티 빌더 등 230개 이상의 개성과 전문 워크플로우를 갖춘 AI 에이전트 모음집이다. Claude Code, Cursor, GitHub Copilot, Gemini CLI 등 주요 AI 코딩 도구에 설치 스크립트 한 번으로 통합할 수 있다. 엔지니어링, 디자인, 마케팅, 보안, 게임 개발 등 10개 이상의 부서로 구성되며, MIT 라이선스로 자유롭게 커스터마이징 가능하다. macOS·Linux·Windows용 네이티브 앱도 제공된다.",
+    "why_it_matters": "단순 프롬프트 템플릿이 아닌 개성·프로세스·성공 지표를 갖춘 프로덕션 수준의 에이전트를 다양한 AI 코딩 도구에 즉시 적용할 수 있어, 멀티 에이전트 워크플로우 구축의 진입 장벽을 크게 낮춘다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8664136904761905,
+    "published_at": "2026-07-21T01:33:26Z"
+  },
+  {
+    "id": "github_trending-kvcache-ai/ktransformers",
+    "section": "releases",
+    "title_en": "kvcache-ai/ktransformers",
+    "title_ko": "KTransformers: CPU-GPU 이기종 LLM 추론·파인튜닝 최적화 프레임워크",
+    "url": "https://github.com/kvcache-ai/ktransformers",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "KTransformers는 CPU와 GPU를 함께 활용하는 이기종 컴퓨팅 방식으로 대형 언어 모델의 추론과 파인튜닝을 효율화하는 오픈소스 프레임워크다. DeepSeek-V3/R1 같은 초대형 MoE 모델을 제한된 GPU 메모리(예: RTX 4090 4장, 총 80GB)에서 파인튜닝할 수 있으며, ZeRO-Offload 대비 6~12배 빠른 학습 속도를 제공한다. 추론 측면에서는 Intel AMX/AVX 가속, NUMA 인식 메모리 관리, INT4/INT8 양자화를 지원하며 SGLang과도 통합된다. 청화대 MADSys Lab 등이 개발 중이며 ACM SIGOPS 2025에 논문이 게재됐다.",
+    "why_it_matters": "고가의 전용 GPU 클러스터 없이도 소비자용 하드웨어에서 DeepSeek급 초대형 MoE 모델을 추론·파인튜닝할 수 있어, 연구자와 개발자의 진입 장벽을 크게 낮춘다.",
+    "tags": [
+      "LLM",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.8664136904761905,
+    "published_at": "2026-07-21T01:33:26Z"
+  },
+  {
+    "id": "github_trending-MoonshotAI/kimi-cli",
+    "section": "releases",
+    "title_en": "MoonshotAI/kimi-cli",
+    "title_ko": "MoonshotAI의 터미널 AI 에이전트 'Kimi CLI'",
+    "url": "https://github.com/MoonshotAI/kimi-cli",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "MoonshotAI가 공개한 Kimi CLI는 터미널에서 동작하는 AI 코딩 에이전트로, 코드 읽기·편집, 셸 명령 실행, 웹 검색 및 페이지 조회 등을 자율적으로 수행합니다. VS Code 확장, ACP(Agent Client Protocol)를 통한 Zed·JetBrains IDE 연동, Zsh 플러그인, MCP(Model Context Protocol) 서버 관리 등 다양한 통합 기능을 제공합니다. 현재 Kimi CLI는 차세대 버전인 Kimi Code CLI로 진화 중이며, 기존 설정과 세션은 자동 마이그레이션됩니다.",
+    "why_it_matters": "터미널 중심 개발 워크플로우에 AI 에이전트를 직접 통합할 수 있어, Claude Code·Gemini CLI 등과 경쟁하는 오픈소스 대안으로 주목받고 있습니다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.8664136904761905,
+    "published_at": "2026-07-21T01:33:26Z"
+  },
+  {
+    "id": "github_trending-moonshine-ai/moonshine",
+    "section": "releases",
+    "title_en": "moonshine-ai/moonshine",
+    "title_ko": "Moonshine Voice: 초저지연 온디바이스 음성 AI 오픈소스 툴킷",
+    "url": "https://github.com/moonshine-ai/moonshine",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Moonshine Voice는 실시간 음성 인터페이스 구축을 위한 오픈소스 AI 툴킷으로, 음성→텍스트(STT), 텍스트→음성(TTS), 의도 인식을 단일 라이브러리로 제공합니다. Whisper Large V3보다 높은 정확도(WER 6.65%)를 245M 파라미터로 달성하며, MacBook Pro 기준 107ms의 초저지연을 실현합니다. Python, iOS, Android, Windows, Linux, Raspberry Pi 등 다양한 플랫폼을 지원하며, 모든 처리가 온디바이스에서 이루어져 API 키나 인터넷 연결이 불필요합니다. 한국어를 포함한 다국어 STT/TTS를 지원합니다.",
+    "why_it_matters": "Whisper 대비 수십 배 낮은 지연시간과 더 높은 정확도를 온디바이스에서 단일 라이브러리로 제공해, 실시간 음성 에이전트 개발의 진입장벽을 크게 낮춥니다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8664136904761905,
+    "published_at": "2026-07-21T01:33:26Z"
+  },
+  {
+    "id": "openai_blog-safety-alignment-long-horizon-models",
+    "section": "releases",
+    "title_en": "Safety and alignment in an era of long-horizon models",
+    "title_ko": "장기 실행 AI 모델 시대의 안전성과 정렬 문제",
+    "url": "https://openai.com/index/safety-alignment-long-horizon-models",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 장기간 실행되는 AI 모델 배포 경험에서 얻은 교훈을 공유했다. 새로운 안전 위험 요소와 실제 관찰된 실패 사례를 분석하고, 반복적 배포를 통해 개선된 안전 장치를 소개한다. 장기 실행 모델은 기존 단기 응답 모델과 다른 새로운 정렬 과제를 제시한다.",
+    "why_it_matters": "장기 실행 AI 에이전트가 실제 환경에 확산되는 시점에서, OpenAI의 실패 사례와 대응 방안은 안전한 AI 배포 기준을 수립하는 데 중요한 참고자료가 된다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.7738111772486773,
+    "published_at": "2026-07-20T10:00:00Z"
+  },
+  {
+    "id": "openai_blog-a-scorecard-for-the-ai-age",
+    "section": "releases",
+    "title_en": "A scorecard for the AI age",
+    "title_ko": "AI 시대를 위한 성과 측정 카드",
+    "url": "https://openai.com/index/a-scorecard-for-the-ai-age",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI의 CFO 사라 프리어가 AI 투자 수익률(ROI)을 측정하기 위한 실용적인 AI 스코어카드를 소개했다. 이 스코어카드는 유용한 작업량, 성공 과제당 비용, 신뢰성, 컴퓨트 대비 수익이라는 네 가지 핵심 지표를 기반으로 한다. 기업이 AI 도입 성과를 객관적으로 평가할 수 있는 프레임워크를 제시한다는 점에서 주목된다.",
+    "why_it_matters": "AI 도입 효과를 막연히 체감하는 데서 벗어나 정량적으로 측정할 수 있는 표준 지표를 OpenAI가 직접 제안했다는 점에서 기업의 AI 투자 의사결정에 실질적 기준이 될 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.3452397486772486,
+    "published_at": "2026-07-17T10:00:00Z"
+  },
+  {
+    "id": "hn-48979269",
+    "section": "community",
+    "title_en": "China’s open-weights AI strategy is winning",
+    "title_ko": "중국의 오픈웨이트 AI 전략이 승기를 잡고 있다",
+    "url": "https://werd.io/american-ai-is-locked-down-and-proprietary-its-losing/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "중국이 오픈웨이트(공개 가중치) AI 모델 전략을 통해 글로벌 AI 경쟁에서 점점 더 유리한 위치를 점하고 있다는 분석이 제기됐다. 구체적인 세부 내용은 제공되지 않았으나, 제목만으로도 중국의 오픈소스 AI 접근법이 주목받고 있음을 시사한다.",
+    "why_it_matters": "중국의 오픈웨이트 AI 전략이 글로벌 AI 패권 경쟁의 판도를 바꿀 수 있다는 점에서 주목할 필요가 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 11.239385416011773,
+    "published_at": "2026-07-20T14:21:47Z"
+  },
+  {
+    "id": "hn-48973869",
+    "section": "community",
+    "title_en": "Claude Fable produced a counterexample to the Jacobian Conjecture",
+    "title_ko": "Claude Fable, 야코비안 추측의 반례 생성",
+    "url": "https://xcancel.com/__alpoge__/status/2079028340955197566",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Claude Fable이 오랜 수학 미해결 문제인 야코비안 추측(Jacobian Conjecture)의 반례를 만들어냈다는 소식이다. 야코비안 추측은 수십 년간 증명되지 않은 난제로, AI가 이에 대한 반례를 제시했다는 점에서 주목받고 있다.",
+    "why_it_matters": "AI가 수십 년간 미해결 상태였던 수학 난제에 반례를 제시했다면, 수학 연구에서 LLM의 역할이 근본적으로 달라질 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.574742802645119,
+    "published_at": "2026-07-20T02:51:16Z"
+  },
+  {
+    "id": "hn-48976846",
+    "section": "community",
+    "title_en": "Airport Simulator",
+    "title_ko": "공항 시뮬레이터",
+    "url": "https://airport.apunen.com/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "공항 시뮬레이터 관련 프로젝트가 Hacker News에 공유되었다. 상세 설명이 제공되지 않아 구체적인 내용은 확인하기 어렵다.",
+    "why_it_matters": "상세 정보가 없어 AI·개발 관련 변별력 있는 평가가 어렵다.",
+    "tags": [],
+    "score": 10.066213707515669,
+    "published_at": "2026-07-20T10:30:40Z"
+  },
+  {
+    "id": "hn-48980019",
+    "section": "community",
+    "title_en": "Kimi K3, Qwen 3.8, and Anthropic's (Potential) Unravelling",
+    "title_ko": "Kimi K3, Qwen 3.8, 그리고 Anthropic의 위기 가능성",
+    "url": "https://www.emergingtrajectories.com/lh/frontier-lab-economics/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Kimi K3, Qwen 3.8 등 최신 AI 모델 동향과 Anthropic의 잠재적 위기 상황을 다룬 글이다. 구체적인 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "주요 AI 모델 경쟁 구도와 선도 기업의 변화 가능성을 짚는 내용으로 업계 흐름 파악에 참고할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.550665360086029,
+    "published_at": "2026-07-20T15:13:42Z"
+  },
+  {
+    "id": "hn-48977128",
+    "section": "community",
+    "title_en": "Who's afraid of Chinese models?",
+    "title_ko": "중국 AI 모델, 두려워해야 할까?",
+    "url": "https://stratechery.com/2026/whos-afraid-of-chinese-models/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "중국 AI 모델의 부상에 대한 시각을 다룬 글이다. 제목만으로는 구체적인 내용을 확인할 수 없어 추가 추측은 하지 않는다.",
+    "why_it_matters": "중국 AI 모델의 경쟁력과 글로벌 AI 시장에서의 영향력에 대한 논의가 커지고 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.365319983493084,
+    "published_at": "2026-07-20T11:05:58Z"
+  },
+  {
+    "id": "youtube-GlYgs6v2YfU",
+    "section": "video",
+    "title_en": "But what is cross-entropy? | Compression is Intelligence Part 2",
+    "title_ko": "크로스 엔트로피란 무엇인가? | 압축과 지능 2부",
+    "url": "https://www.youtube.com/watch?v=GlYgs6v2YfU",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "3Blue1Brown의 영상으로, LLM 학습에 사용되는 손실 함수인 크로스 엔트로피의 개념과 기원을 수학적으로 설명한다. 최적 코드, 크로스 엔트로피 정의, 언어 트리에의 적용, LLM 사전 학습, KL 다이버전스 등을 단계적으로 다룬다. 압축 관점에서 지능을 바라보는 시리즈의 두 번째 편이다.",
+    "why_it_matters": "LLM 학습의 핵심 손실 함수인 크로스 엔트로피를 정보이론적 시각에서 직관적으로 이해할 수 있어 AI 개발자에게 필수적인 수학적 기반을 제공한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.21389715608465598,
+    "published_at": "2026-07-16T11:56:04Z"
+  },
+  {
+    "id": "simon_willison-cheap-reverse-engineering",
+    "section": "deepdive",
+    "title_en": "Reverse-engineering is cheap now",
+    "title_ko": "코딩 에이전트가 리버스 엔지니어링의 비용을 낮추다",
+    "url": "https://simonwillison.net/2026/Jul/20/cheap-reverse-engineering/#atom-everything",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "코딩 에이전트의 등장으로 홈 디바이스를 리버스 엔지니어링하고 자동화하는 비용이 크게 줄었다. 기존에는 문서화되지 않은 불안정한 API를 다루는 초기 작업과 이후 유지보수 부담이 ROI를 떨어뜨렸다. 하지만 에이전트 덕분에 코드 작성 비용이 낮아지면서, 실패하거나 나중에 버리고 다시 만들더라도 심리적 부담이 훨씬 줄었다.",
+    "why_it_matters": "코드 생산 비용의 하락이 리버스 엔지니어링처럼 ROI가 낮았던 영역까지 자동화를 확산시키는 구조적 변화를 가져온다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.8297718253968254,
+    "published_at": "2026-07-20T19:24:05Z"
+  }
+]

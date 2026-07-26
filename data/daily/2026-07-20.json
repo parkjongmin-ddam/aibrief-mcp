@@ -1,0 +1,380 @@
+[
+  {
+    "id": "hf-2607.14952",
+    "section": "papers",
+    "title_en": "LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget",
+    "title_ko": "LongStraw: 고정 GPU 예산으로 200만 토큰 이상의 장문 컨텍스트 RL 학습 구현",
+    "url": "https://huggingface.co/papers/2607.14952",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LongStraw는 추론 시스템의 컨텍스트 길이(수백만 토큰)와 RL 후훈련(보통 256K 이하) 사이의 격차를 해소하기 위한 아키텍처 인식 실행 스택이다. GRPO를 기반으로, 공유 프롬프트를 autograd 없이 평가하고 짧은 응답 브랜치를 순차 재실행하여 학습 그래프 메모리를 줄이는 방식을 채택했다. 8개의 H20 GPU에서 210만 포지션 학습, 그룹 크기를 늘려도 추가 메모리가 0.21GB에 불과하며, 스트레스 테스트에서는 446만 포지션까지 도달했다. 현재는 완전한 학습 정확성보다 실행 용량을 검증하는 단계다.",
+    "why_it_matters": "AI 에이전트처럼 긴 궤적이 필요한 작업을 위해 제한된 GPU로 수백만 토큰 규모의 RL 학습을 가능하게 하는 실질적인 방법론을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "인프라"
+    ],
+    "score": 6.181783550292085,
+    "published_at": "2026-07-15T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.14935",
+    "section": "papers",
+    "title_en": "VideoChat3: Fully Open Video MLLM for Efficient and Generalist Video Understanding",
+    "title_ko": "VideoChat3: 효율적이고 범용적인 완전 오픈소스 비디오 멀티모달 LLM",
+    "url": "https://huggingface.co/papers/2607.14935",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "VideoChat3는 일반 영상, 장편 영상, 스트리밍 영상 등 다양한 도메인을 포괄하는 완전 오픈소스 비디오 특화 멀티모달 LLM이다. 효율성을 위해 Inflated 3D Vision Transformer(I3D-ViT)와 적응형 프레임 해상도 기법을 도입해 학습 및 추론 비용을 절감했다. 또한 VideoChat3-Academic2M, VideoChat3-LV116K, VideoChat3-OL617K 등 세 가지 고품질 학습 데이터셋을 구축해 범용성을 강화했으며, 4B 파라미터만으로 동등하거나 더 큰 규모의 기존 오픈소스 모델을 능가하는 성능을 달성했다.",
+    "why_it_matters": "훈련 코드·전략·데이터셋까지 완전 공개한 범용 비디오 LLM으로, 재현성과 커뮤니티 발전에 실질적으로 기여할 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 6.0106352940962555,
+    "published_at": "2026-07-15T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.14777",
+    "section": "papers",
+    "title_en": "SEED: Self-Evolving On-Policy Distillation for Agentic Reinforcement Learning",
+    "title_ko": "SEED: 에이전트 강화학습을 위한 자기 진화형 온-폴리시 증류",
+    "url": "https://huggingface.co/papers/2607.14777",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SEED는 장기 다중 턴 에이전트 태스크에서 결과 기반 강화학습(RL)의 희소 보상 문제를 해결하는 프레임워크다. 완료된 온-폴리시 궤적을 분석해 재사용 가능한 워크플로우, 실패 회피 규칙 등 자연어 '힌드사이트 스킬'을 추출하고, 이를 밀도 높은 토큰 수준 증류 신호로 변환해 정책 모델에 재주입한다. 정책 업데이트가 의사결정과 스킬 분석 능력을 동시에 향상시키는 자기 진화 구조를 가지며, 텍스트 및 비전 기반 에이전트 태스크 모두에서 성능과 샘플 효율이 개선됨을 실험으로 검증했다.",
+    "why_it_matters": "에이전트 RL의 핵심 난제인 희소 보상 문제를 자기 진화형 온-폴리시 증류로 해결해, 더 효율적이고 일반화 가능한 LLM 에이전트 훈련 방법론을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.48863636973214,
+    "published_at": "2026-07-15T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.15257",
+    "section": "papers",
+    "title_en": "SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration",
+    "title_ko": "SearchOS-V1: 강건한 오픈 도메인 정보 탐색 멀티 에이전트 프레임워크",
+    "url": "https://huggingface.co/papers/2607.15257",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SearchOS는 웹 검색 기반 정보 탐색 에이전트들이 반복 루프에 빠지는 문제를 해결하기 위한 멀티 에이전트 프레임워크다. 검색 진행 상태를 Frontier Task, Evidence Graph, Coverage Map, Failure Memory로 외부화하는 SOCM(Search-Oriented Context Management)을 핵심으로 설계됐다. 파이프라인 병렬 스케줄링으로 서브 에이전트 실행을 겹쳐 처리하고, Search Tool Middleware Harness를 통해 에이전트 상호작용을 가로채 증거를 기록하고 교착 상태에 대응한다. WideSearch 및 GISA 벤치마크에서 단일·멀티 에이전트 베이스라인 대비 전 지표에서 최고 성능을 달성했다.",
+    "why_it_matters": "검색 예산 낭비와 반복 루프라는 실전 멀티 에이전트 검색 시스템의 고질적 문제를 구조적으로 해결한 프레임워크로, 대규모 오픈 도메인 정보 탐색의 신뢰성을 높이는 데 실질적 기여를 한다.",
+    "tags": [
+      "에이전트",
+      "RAG",
+      "LLM"
+    ],
+    "score": 5.110873864173311,
+    "published_at": "2026-07-15T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.15207",
+    "section": "papers",
+    "title_en": "BadWAM: When World-Action Models Dream Right but Act Wrong",
+    "title_ko": "BadWAM: 세계-행동 모델의 새로운 적대적 공격 프레임워크",
+    "url": "https://huggingface.co/papers/2607.15207",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "세계-행동 모델(WAM)은 행동 생성과 미래 세계 예측을 결합해 로봇 제어의 안전성과 해석 가능성을 높이는 방향으로 주목받고 있다. 이 논문은 BadWAM이라는 프레임워크를 통해 작은 시각적 교란만으로 WAM의 '상상'과 '실제 행동' 사이의 정렬을 깨뜨리는 새로운 적대적 공격 유형을 제시한다. 실험 결과, 행동 전용 공격은 모델의 작업 성공률을 96.5%에서 43.1%로 대폭 떨어뜨렸으며, 상상 유지 공격은 미래 예측을 정상처럼 보이게 유지하면서도 실제 행동을 오작동시키는 은밀한 취약점을 드러냈다.",
+    "why_it_matters": "로봇 제어의 안전 근거로 여겨졌던 세계-행동 모델의 자기검증 메커니즘이 근본적으로 취약할 수 있음을 입증해, 구현 AI 안전 연구에 중요한 경고를 던진다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 4.871201010907891,
+    "published_at": "2026-07-15T20:00:00Z"
+  },
+  {
+    "id": "github_trending-kvcache-ai/ktransformers",
+    "section": "releases",
+    "title_en": "kvcache-ai/ktransformers",
+    "title_ko": "KTransformers: CPU-GPU 이종 컴퓨팅 기반 고성능 LLM 추론·파인튜닝 프레임워크",
+    "url": "https://github.com/kvcache-ai/ktransformers",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "KTransformers는 CPU와 GPU를 함께 활용하는 이종 컴퓨팅 방식으로 대형 언어 모델의 추론과 파인튜닝을 최적화하는 오픈소스 프레임워크입니다. DeepSeek-V3/R1, Kimi-K2, Qwen3 등 최신 MoE 모델을 제한된 GPU 메모리 환경에서도 실행할 수 있으며, LLaMA-Factory와 통합해 ZeRO-Offload 대비 6~12배 빠른 파인튜닝 속도를 제공합니다. Intel AMX/AVX 가속, INT4/INT8 양자화, NUMA 인식 메모리 관리 등 다양한 최적화 기법을 지원합니다.",
+    "why_it_matters": "고가의 GPU 클러스터 없이도 소비자용 하드웨어에서 DeepSeek급 초대형 MoE 모델을 추론·파인튜닝할 수 있어 접근성을 크게 낮춘다.",
+    "tags": [
+      "LLM",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.8663789682539682,
+    "published_at": "2026-07-20T01:33:05Z"
+  },
+  {
+    "id": "github_trending-rohitg00/ai-engineering-from-scratch",
+    "section": "releases",
+    "title_en": "rohitg00/ai-engineering-from-scratch",
+    "title_ko": "처음부터 배우는 AI 엔지니어링 - 503개 레슨 오픈소스 커리큘럼",
+    "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "수학 기초부터 자율 에이전트까지 20개 단계, 503개 레슨으로 구성된 무료 AI 엔지니어링 커리큘럼이다. Python, TypeScript, Rust, Julia를 사용하며 각 레슨은 알고리즘을 직접 구현한 뒤 프레임워크로 검증하는 '빌드 후 활용' 방식을 따른다. 매 레슨마다 프롬프트, 스킬, 에이전트, MCP 서버 등 재사용 가능한 결과물을 산출하며, MIT 라이선스로 무료 공개된다. 약 320시간 분량으로 자신의 수준에 맞게 진입 단계를 선택할 수 있다.",
+    "why_it_matters": "LLM·에이전트·RAG·인프라를 모두 아우르는 체계적 오픈소스 커리큘럼으로, 단순 API 호출을 넘어 AI의 내부 동작 원리까지 이해하려는 개발자에게 실질적 학습 경로를 제공한다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "RAG"
+    ],
+    "score": 0.8663789682539682,
+    "published_at": "2026-07-20T01:33:05Z"
+  },
+  {
+    "id": "github_trending-MoonshotAI/kimi-cli",
+    "section": "releases",
+    "title_en": "MoonshotAI/kimi-cli",
+    "title_ko": "MoonshotAI Kimi CLI — 터미널 기반 AI 코딩 에이전트",
+    "url": "https://github.com/MoonshotAI/kimi-cli",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "MoonshotAI가 공개한 Kimi CLI는 터미널에서 동작하는 AI 에이전트로, 코드 읽기·편집, 셸 명령 실행, 웹 검색·페이지 가져오기 등을 자율적으로 수행한다. VS Code 확장, ACP(Agent Client Protocol)를 통한 Zed·JetBrains 연동, Zsh 플러그인, MCP(Model Context Protocol) 서버 관리 기능을 지원한다. 현재 Kimi CLI는 차세대 버전인 Kimi Code CLI로 전환 중이며, 기존 설정과 세션은 자동 마이그레이션된다.",
+    "why_it_matters": "Claude Code·Gemini CLI 등 터미널 AI 에이전트 경쟁에 MoonshotAI가 본격 참전한 오픈소스 도구로, 다양한 IDE 및 MCP 생태계와의 통합을 제공한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.8663789682539682,
+    "published_at": "2026-07-20T01:33:05Z"
+  },
+  {
+    "id": "github_trending-lyogavin/airllm",
+    "section": "releases",
+    "title_en": "lyogavin/airllm",
+    "title_ko": "AirLLM: 4GB GPU 하나로 70B LLM 추론 실행",
+    "url": "https://github.com/lyogavin/airllm",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "AirLLM은 양자화·증류·가지치기 없이 대형 언어 모델의 메모리 사용량을 획기적으로 줄여주는 오픈소스 라이브러리다. 한 번에 GPU에 레이어 하나만 올리는 방식으로, 4GB VRAM에서 70B 모델, 8GB에서 Llama 3.1 405B, 약 12GB에서 DeepSeek-V3(671B) 추론이 가능하다. v3.0에서는 FP8 모델 지원이 추가되어 Qwen3-235B를 약 3GB로 실행할 수 있으며, AutoModel 한 줄 코드로 대부분의 주요 모델을 지원한다.",
+    "why_it_matters": "고가의 GPU 없이도 최신 초대형 LLM을 로컬에서 실행할 수 있어, 개인 개발자와 연구자의 LLM 접근 장벽을 크게 낮춘다.",
+    "tags": [
+      "LLM",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.8663789682539682,
+    "published_at": "2026-07-20T01:33:05Z"
+  },
+  {
+    "id": "github_trending-Canner/WrenAI",
+    "section": "releases",
+    "title_en": "Canner/WrenAI",
+    "title_ko": "WrenAI: AI 에이전트를 위한 오픈소스 GenBI(생성형 BI) 엔진",
+    "url": "https://github.com/Canner/WrenAI",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "WrenAI는 자연어 질문을 신뢰할 수 있는 SQL, 차트, 대시보드로 변환하는 오픈소스 GenBI 엔진입니다. BigQuery, Snowflake, PostgreSQL, ClickHouse 등 22개 이상의 데이터 소스를 지원하며, AI 에이전트가 비즈니스 맥락(시맨틱 모델, 정의, 메모리)을 기반으로 거버넌스가 적용된 SQL을 생성하고 대시보드를 배포할 수 있습니다. Apache 2.0 라이선스로 공개되어 있으며, LangChain/LangGraph 등 주요 에이전트 프레임워크와의 SDK 통합도 제공합니다.",
+    "why_it_matters": "단순 text-to-SQL을 넘어 비즈니스 시맨틱 레이어와 거버넌스를 갖춘 end-to-end BI 자동화를 오픈소스로 구현할 수 있어, 데이터 에이전트 개발자에게 신뢰성 높은 BI 파이프라인 구축의 현실적 대안이 된다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.8663789682539682,
+    "published_at": "2026-07-20T01:33:05Z"
+  },
+  {
+    "id": "openai_blog-a-scorecard-for-the-ai-age",
+    "section": "releases",
+    "title_en": "A scorecard for the AI age",
+    "title_ko": "AI 시대를 위한 성과 측정표",
+    "url": "https://openai.com/index/a-scorecard-for-the-ai-age",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI의 CFO Sarah Friar가 AI 투자 수익률(ROI)을 측정하기 위한 실용적인 AI 스코어카드를 소개했다. 이 스코어카드는 유용한 작업량, 성공적인 작업당 비용, 신뢰성, 컴퓨팅 대비 수익 등 네 가지 핵심 지표로 구성된다. 기업이 AI 도입 효과를 구체적으로 측정할 수 있는 프레임워크를 제시한다는 점에서 주목받고 있다.",
+    "why_it_matters": "AI 투자 효과를 막연히 체감하는 수준을 넘어 정량적으로 측정할 수 있는 공식 프레임워크가 OpenAI CFO로부터 제시됐다는 점에서 기업 의사결정에 직접적인 영향을 줄 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.4880968915343915,
+    "published_at": "2026-07-17T10:00:00Z"
+  },
+  {
+    "id": "openai_blog-why-teens-deserve-access-safe-ai",
+    "section": "releases",
+    "title_en": "Why teens deserve access to safe AI",
+    "title_ko": "청소년을 위한 안전한 AI: OpenAI의 접근 방식",
+    "url": "https://openai.com/index/why-teens-deserve-access-safe-ai",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 청소년을 위해 ChatGPT를 더 안전하게 만들기 위한 다양한 조치를 발표했다. 연령에 맞는 보호 기능, 학습 도구, 보호자 제어 기능, 그리고 전문가 파트너십을 통해 청소년 사용 환경을 개선한다는 내용이다.",
+    "why_it_matters": "AI 서비스의 청소년 보호 정책은 향후 규제 및 플랫폼 설계 기준에 영향을 미칠 수 있어 업계 전반에 중요한 선례가 된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.3809540343915343,
+    "published_at": "2026-07-16T16:00:00Z"
+  },
+  {
+    "id": "hn-48966120",
+    "section": "community",
+    "title_en": "Qwen 3.8",
+    "title_ko": "Qwen 3.8 공개",
+    "url": "https://twitter.com/Alibaba_Qwen/status/2078759124914098291",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Qwen 3.8 모델이 공개되었다. 상세한 설명은 제공되지 않았으나, Qwen 시리즈의 새로운 버전으로 보인다.",
+    "why_it_matters": "Qwen 시리즈는 오픈소스 LLM 생태계에서 주목받는 모델군으로, 신규 버전 출시는 성능 변화에 관심을 가질 필요가 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 10.866331286768077,
+    "published_at": "2026-07-19T08:44:57Z"
+  },
+  {
+    "id": "hn-48966569",
+    "section": "community",
+    "title_en": "Claude Code uses Bun written in Rust now",
+    "title_ko": "Claude Code, 이제 Rust로 작성된 Bun 사용",
+    "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Anthropic의 Claude Code가 런타임으로 Rust 기반의 Bun을 채택했다. 구체적인 배경이나 변경 시점에 대한 상세 정보는 제공되지 않았다.",
+    "why_it_matters": "AI 코딩 도구의 런타임 선택이 성능과 개발 경험에 직접적인 영향을 줄 수 있어 주목된다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 10.205652908161504,
+    "published_at": "2026-07-19T10:03:23Z"
+  },
+  {
+    "id": "hn-48971738",
+    "section": "community",
+    "title_en": "AI advice made people less accurate but more confident – sudy",
+    "title_ko": "AI 조언이 정확도는 낮추고 자신감은 높인다는 연구 결과",
+    "url": "https://thenextweb.com/news/ai-advice-suppresses-critical-thinking-wrong-answers-study",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "새로운 연구에 따르면 AI의 조언을 받은 사람들이 오히려 판단 정확도는 낮아지고 자신감은 높아지는 현상이 나타났다. 이는 AI 조언에 대한 과신이 의사결정 품질을 저하시킬 수 있음을 시사한다.",
+    "why_it_matters": "AI 도구 도입이 확산되는 시대에 오히려 인간의 판단력을 왜곡할 수 있다는 경고로, AI 활용 설계 시 중요한 시사점을 제공한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.24029266823616,
+    "published_at": "2026-07-19T21:18:10Z"
+  },
+  {
+    "id": "hn-48969291",
+    "section": "community",
+    "title_en": "Moonshot AI suspends new subscriptions due to Kimi K3 demand",
+    "title_ko": "Moonshot AI, Kimi K3 폭발적 수요로 신규 구독 일시 중단",
+    "url": "https://twitter.com/kimi_moonshot/status/2078855608565207130",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Moonshot AI가 Kimi K3의 높은 수요로 인해 신규 구독을 일시 중단했다. 서버 부하를 감당하지 못할 정도로 사용자가 몰린 것으로 보인다.",
+    "why_it_matters": "Kimi K3가 중국 AI 시장에서 큰 반향을 일으키고 있음을 보여주는 신호로, 글로벌 LLM 경쟁 구도에 영향을 줄 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.764754413006761,
+    "published_at": "2026-07-19T16:02:25Z"
+  },
+  {
+    "id": "hn-48965880",
+    "section": "community",
+    "title_en": "Ollama: All Aboard Open Models",
+    "title_ko": "Ollama: 오픈 모델 전면 지원 선언",
+    "url": "https://ollama.com/blog/all-aboard-open-models",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Ollama가 오픈 모델 지원을 전면적으로 확대하는 방향을 발표했다. 제목만으로는 구체적인 내용을 확인하기 어려우나, 오픈소스 LLM의 로컬 실행 플랫폼인 Ollama의 새로운 행보로 보인다.",
+    "why_it_matters": "로컬 AI 실행 생태계의 핵심 도구인 Ollama의 오픈 모델 전략 변화는 개발자 커뮤니티에 직접적인 영향을 줄 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 7.70808408385307,
+    "published_at": "2026-07-19T07:59:44Z"
+  },
+  {
+    "id": "youtube-LW-aKL9oODk",
+    "section": "video",
+    "title_en": "[LIVE] LTX 기반 스트리머 테스트 (ft. RTX Pro 6000 Blackwell)",
+    "title_ko": "[라이브] LTX 기반 스트리머 테스트 (ft. RTX Pro 6000 Blackwell)",
+    "url": "https://www.youtube.com/watch?v=LW-aKL9oODk",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "RTX Pro 6000 Blackwell GPU를 활용한 LTX 기반 스트리머 라이브 테스트 영상이다. 구체적인 내용은 제목 외에 확인되지 않는다.",
+    "why_it_matters": "최신 Blackwell 아키텍처 GPU에서 LTX 기반 스트리밍 성능을 직접 확인할 수 있는 실험적 사례다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.7879580026455026,
+    "published_at": "2026-07-19T12:22:36Z"
+  },
+  {
+    "id": "youtube-mxSVL5fOtyU",
+    "section": "video",
+    "title_en": "IT뉴스 - Kimi K3 열풍, Fable 5 구독제 계속, 오픈AI 하드웨어, grok-build 오픈소스, Gemini Spark, Lucy 2.5 등",
+    "title_ko": "IT뉴스: Kimi K3·오픈AI 하드웨어·Gemini Spark 등 AI 최신 소식",
+    "url": "https://www.youtube.com/watch?v=mxSVL5fOtyU",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "Kimi K3가 화제를 모으고 있으며, 오픈AI의 하드웨어 동향과 Gemini Spark, Lucy 2.5 등 다양한 AI 신규 소식이 다뤄진다. grok-build의 오픈소스 공개와 Fable 5 구독제 관련 소식도 포함된다. 조코딩 채널에서 주요 IT·AI 뉴스를 한국어로 요약 정리한 영상이다.",
+    "why_it_matters": "국내 개발자를 위해 최신 AI 모델 및 플랫폼 동향을 한 번에 파악할 수 있는 한국어 IT 뉴스 요약 콘텐츠다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7846180555555555,
+    "published_at": "2026-07-19T11:48:56Z"
+  },
+  {
+    "id": "youtube-WcDBmbowpRs",
+    "section": "video",
+    "title_en": "구글의 월드모델을 따라잡은 오픈소스 모델 ㄷㄷ",
+    "title_ko": "구글 월드모델에 필적하는 오픈소스 모델 등장",
+    "url": "https://www.youtube.com/shorts/WcDBmbowpRs",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "구글의 월드모델 수준에 근접한 오픈소스 모델이 공개되어 주목받고 있다. 해당 영상에서는 이 오픈소스 모델의 성능과 특징을 소개하며, 관련 키워드로 '지니3'가 언급되고 있다.",
+    "why_it_matters": "독점 기업의 고성능 월드모델을 오픈소스로 따라잡는 흐름은 AI 기술 민주화의 중요한 신호다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 0.46432208994709,
+    "published_at": "2026-07-17T06:00:21Z"
+  },
+  {
+    "id": "simon_willison-ai-mania",
+    "section": "deepdive",
+    "title_en": "AI Mania Is Eviscerating Global Decision-Making",
+    "title_ko": "AI 광풍이 기업의 글로벌 의사결정을 망가뜨리고 있다",
+    "url": "https://simonwillison.net/2026/Jul/19/ai-mania/#atom-everything",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "컨설턴트 Nik Suresh가 대기업들에서 목격한 AI 과열 현상을 익명 사례들로 폭로했다. ChatGPT를 한 번도 써본 적 없는 임원이 AI 중심의 전사 기술 전략을 수립하거나, 직원이 '토큰 리더보드' 유지를 위해 AI에게 코드베이스 전체를 재작성시키는 사례가 등장한다. 특히 벤더 임원이 '100x 생산성' 같은 과장된 수치에 이의를 제기하면 고객사 임원의 체면을 깎고 계약 취소로 이어질 수 있어, 진실을 말하기 어려운 구조적 침묵이 형성되고 있다는 점이 주목된다.",
+    "why_it_matters": "AI 도입 압박이 조직 내 합리적 판단과 솔직한 소통을 억압하는 구조적 문제로 이어지고 있음을 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7446792328042329,
+    "published_at": "2026-07-19T05:06:21Z"
+  }
+]

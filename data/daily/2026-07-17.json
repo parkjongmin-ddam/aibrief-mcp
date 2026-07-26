@@ -1,0 +1,375 @@
+[
+  {
+    "id": "hf-2607.13285",
+    "section": "papers",
+    "title_en": "Harness Handbook: Making Evolving Agent Harnesses Readable,Navigable, and Editable",
+    "title_ko": "Harness Handbook: AI 에이전트 하네스의 가독성·탐색성·편집성 향상 프레임워크",
+    "url": "https://huggingface.co/papers/2607.13285",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "현대 AI 에이전트의 성능은 기반 모델뿐 아니라 프롬프트 구성, 상태 관리, 도구 호출 등을 담당하는 '하네스(harness)'에도 크게 의존한다. 하네스가 진화함에 따라 특정 동작이 코드 어디에 구현되어 있는지 파악하는 '동작 위치 특정(behavior localization)'이 주요 병목이 된다. 이를 해결하기 위해 정적 분석과 LLM 기반 구조화를 결합한 Harness Handbook과 Behavior-Guided Progressive Disclosure(BGPD) 기법을 제안하며, 이를 통해 플래너 토큰 사용량을 줄이면서도 동작 위치 특정 및 편집 계획 품질이 향상됨을 두 오픈소스 하네스에서 검증했다.",
+    "why_it_matters": "복잡한 에이전트 시스템의 유지보수 핵심 병목인 '코드 내 동작 위치 특정' 문제를 자동화해, 에이전트 기반 코드 수정의 효율성을 실질적으로 높일 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 6.135798437050262,
+    "published_at": "2026-07-13T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.13125",
+    "section": "papers",
+    "title_en": "Boogu-Image-0.1: Boosting Open-Source Unified Multimodal Understanding and Generation",
+    "title_ko": "Boogu-Image-0.1: 오픈소스 통합 멀티모달 이해·생성 모델 공개",
+    "url": "https://huggingface.co/papers/2607.13125",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Boogu-Image-0.1은 텍스트-이미지 생성, 빠른 추론, 지시 기반 편집, 중국어-영어 이중 언어 텍스트 렌더링을 지원하는 오픈소스 통합 멀티모달 모델 패밀리다. Base, Turbo, Edit, Edit-Turbo 네 가지 변형으로 구성되며, 약 2억 장의 고유 이미지와 약 40만 달러의 학습 비용으로 훈련되었다. 표준 벤치마크에서 다른 오픈소스 모델을 상회하고 GPT-Image-2 등 주요 클로즈드 소스 시스템에 근접하는 성능을 달성했다. 가중치, 코드, 학습 레시피를 Apache 2.0 라이선스로 공개한다.",
+    "why_it_matters": "저비용·오픈소스로 클로즈드 소스 수준의 멀티모달 생성·편집 성능을 달성해, 연구·개발 생태계의 진입 장벽을 크게 낮춘다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 5.709530201312334,
+    "published_at": "2026-07-13T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.12463",
+    "section": "papers",
+    "title_en": "Function-Aware Fill-in-the-Middle as Mid-Training for Coding Agent Foundation Models",
+    "title_ko": "코딩 에이전트 기반 모델을 위한 함수 인식 FIM 미드-트레이닝",
+    "url": "https://huggingface.co/papers/2607.12463",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "코딩 에이전트의 액션-관찰-계속 루프가 함수 호출 구조와 동일하다는 점에 착안해, 프로그램 의존성 그래프 분석 기반의 함수 인식 Fill-in-the-Middle(FIM) 미드-트레이닝 기법을 제안했다. Qwen2.5-Coder(7B/14B)와 Qwen3-8B를 GitHub 968개 저장소에서 추출한 26억 토큰 코퍼스로 미드-트레이닝한 결과, SWE-Bench-Verified에서 최대 +3.2, SWE-Bench-Lite에서 최대 +5.4 포인트 성능이 향상됐다. 또한 에이전트 사후 학습 시 발생하는 일반 코딩·툴 사용 능력 저하도 완화하는 효과가 확인됐다.",
+    "why_it_matters": "기존 좌→우 사전학습의 한계를 자기지도 방식으로 보완해 코딩 에이전트 성능을 일관되게 끌어올리는 실용적 미드-트레이닝 레시피를 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 5.5217885770490405,
+    "published_at": "2026-07-13T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.12395",
+    "section": "papers",
+    "title_en": "Ring-Zero: Scaling Zero RL to a Trillion Parameters for Emergent Reasoning",
+    "title_ko": "Ring-Zero: 1조 파라미터 규모의 제로 RL로 창발적 추론 달성",
+    "url": "https://huggingface.co/papers/2607.12395",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Ring-Zero는 인간 주석 데이터 없이 검증 가능한 보상만으로 강화학습(제로 RL)을 1조 파라미터 규모까지 확장한 연구다. 클리핑된 중요도 샘플링, 학습-추론 비율 보정, 혼합 정밀도 제어 등의 최적화를 통해 안정적인 학습 파이프라인을 구축했다. 실험 결과, 스케일 확장이 샘플 효율과 성능 상한을 크게 높이며, 모델이 자기검증·병렬 추론·구조화된 포맷팅 등 고급 인지 행동을 자발적으로 발현함을 확인했다. 7개 수학 벤치마크에서 경쟁력 있는 성능을 보였으며, 이해 가능성·재현성·효율성 3차원의 CoT 품질 평가 프레임워크도 함께 제안했다.",
+    "why_it_matters": "제로 RL의 1조 파라미터 스케일 실험은 대형 모델에서의 창발적 추론 행동과 학습 동역학에 대한 새로운 통찰을 제공한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.394449154672439,
+    "published_at": "2026-07-13T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.11886",
+    "section": "papers",
+    "title_en": "Read It Back: Pretrained MLLMs Are Zero-Shot Reward Models for Text-to-Image Generation",
+    "title_ko": "SpectraReward: 사전학습된 MLLM을 제로샷 이미지 생성 보상 모델로 활용하기",
+    "url": "https://huggingface.co/papers/2607.11886",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SpectraReward는 별도의 학습 없이 사전학습된 멀티모달 LLM(MLLM)을 텍스트-이미지 생성의 강화학습 보상 모델로 활용하는 방법론이다. 생성된 이미지로부터 원래 프롬프트를 얼마나 잘 복원할 수 있는지를 측정하여 보상으로 사용하며, 선호 레이블이나 별도의 보상 모델 파인튜닝이 필요 없다. Self-SpectraReward는 동일 모델의 이해 브랜치가 생성 브랜치의 보상 모델 역할을 하는 폐쇄 루프 자기 개선 프레임워크로, 외부 보상 모델 없이도 대형 외부 모델에 필적하는 성능을 보였다.",
+    "why_it_matters": "파인튜닝 없이 기존 MLLM을 보상 모델로 재활용하는 방식은 이미지 생성 RL 연구의 비용과 복잡도를 크게 줄일 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.276666119016055,
+    "published_at": "2026-07-12T20:00:00Z"
+  },
+  {
+    "id": "github_trending-Nutlope/hallmark",
+    "section": "releases",
+    "title_en": "Nutlope/hallmark",
+    "title_ko": "Hallmark: AI 생성 티가 나지 않는 UI 디자인 스킬",
+    "url": "https://github.com/Nutlope/hallmark",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Hallmark는 Claude Code, Cursor, Codex에서 사용할 수 있는 디자인 스킬로, AI가 만든 것처럼 보이지 않는 UI를 생성하는 것이 목표입니다. 20가지 테마와 57개의 슬롭 테스트 게이트, 사전 자기비평 단계를 통해 LLM이 학습된 기본 패턴을 의도적으로 회피합니다. build, audit, redesign, study 네 가지 명령어를 제공하며, `npx skills add nutlope/hallmark`로 간단히 설치할 수 있습니다.",
+    "why_it_matters": "AI 코딩 도구로 만든 UI가 획일적으로 보이는 문제를 해결하는 실용적인 오픈소스 툴로, Together AI가 제작했다는 점에서 신뢰도가 높다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8664781746031747,
+    "published_at": "2026-07-17T01:34:05Z"
+  },
+  {
+    "id": "github_trending-PrismML-Eng/Bonsai-demo",
+    "section": "releases",
+    "title_en": "PrismML-Eng/Bonsai-demo",
+    "title_ko": "Bonsai: 1비트/삼진 양자화 LLM을 로컬에서 실행하는 데모",
+    "url": "https://github.com/PrismML-Eng/Bonsai-demo",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "PrismML이 공개한 Bonsai 데모는 1비트(Bonsai) 및 삼진(Ternary-Bonsai) 양자화 언어 모델을 Mac(Metal), Linux/Windows(CUDA, Vulkan, ROCm), CPU에서 로컬로 실행할 수 있게 해줍니다. 최신 Bonsai-27B는 비전-언어 모델로 이미지·PDF 입력, 에이전틱 툴 콜링(OpenAI 스타일), 추론(thinking) 모드, 256K+ 토큰 컨텍스트를 지원합니다. 1비트 Bonsai-27B는 가중치당 약 1.125비트로 압축되어 최신 아이폰에서도 메모리 오프로딩 없이 실행 가능하며, 기본 모드인 Ternary-Bonsai-27B는 약 7.8GiB(4K 컨텍스트 기준)만으로 동작합니다. 설정은 `./setup.sh` 한 번으로 모델 다운로드부터 서버 기동까지 자동으로 완료됩니다.",
+    "why_it_matters": "극한의 양자화(1~2비트)로 27B급 비전-언어 모델을 일반 소비자 기기나 스마트폰에서도 로컬 실행할 수 있다는 점에서 엣지 AI 배포의 새로운 가능성을 보여줍니다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8664781746031747,
+    "published_at": "2026-07-17T01:34:05Z"
+  },
+  {
+    "id": "github_trending-Shubhamsaboo/awesome-llm-apps",
+    "section": "releases",
+    "title_en": "Shubhamsaboo/awesome-llm-apps",
+    "title_ko": "실제로 실행 가능한 100개 이상의 AI 에이전트 & RAG 앱 모음",
+    "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude, Gemini, GPT, DeepSeek, Llama 등 주요 LLM을 지원하는 100개 이상의 오픈소스 AI 에이전트 및 RAG 앱 템플릿을 제공하는 GitHub 저장소다. 스타터 에이전트, 멀티 에이전트 팀, 음성 AI, RAG 파이프라인, MCP 에이전트, 파인튜닝 튜토리얼 등 다양한 카테고리로 구성되어 있으며, Apache-2.0 라이선스로 자유롭게 사용·배포·판매가 가능하다. 모든 템플릿은 end-to-end 테스트를 거쳤으며, 클론 후 빠르게 실행할 수 있도록 설계되어 있다.",
+    "why_it_matters": "검증된 AI 에이전트·RAG 앱 템플릿을 즉시 실행 가능한 형태로 제공해, 개발자가 처음부터 구현하지 않고도 프로덕션 수준의 LLM 앱을 빠르게 개발·배포할 수 있다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "에이전트"
+    ],
+    "score": 0.8664781746031747,
+    "published_at": "2026-07-17T01:34:05Z"
+  },
+  {
+    "id": "openai_blog-why-teens-deserve-access-safe-ai",
+    "section": "releases",
+    "title_en": "Why teens deserve access to safe AI",
+    "title_ko": "청소년을 위한 안전한 AI: OpenAI의 접근 방식",
+    "url": "https://openai.com/index/why-teens-deserve-access-safe-ai",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 청소년을 위해 ChatGPT에 연령에 맞는 보호 기능, 학습 도구, 보호자 제어 기능을 도입하고 있다. 전문가 파트너십을 통해 청소년이 보다 안전하게 AI를 활용할 수 있는 환경을 구축하는 것이 목표다.",
+    "why_it_matters": "미성년자의 AI 사용이 증가하는 가운데, 플랫폼 차원의 청소년 안전 정책이 업계 표준으로 자리잡을 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8095254629629629,
+    "published_at": "2026-07-16T16:00:00Z"
+  },
+  {
+    "id": "google_blog-gemini-omni-personal-avatars",
+    "section": "releases",
+    "title_en": "Create, edit and star in videos with two Google Vids updates",
+    "title_ko": "Google Vids에 Gemini Omni 및 개인 아바타 기능 추가",
+    "url": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "Google Vids에 두 가지 새로운 업데이트가 도입되었습니다. Gemini Omni를 활용한 영상 생성·편집 기능과 사용자가 직접 영상에 출연할 수 있는 개인 아바타 기능이 추가되었습니다. 이를 통해 사용자는 더욱 쉽고 다양한 방식으로 영상 콘텐츠를 제작할 수 있게 됩니다.",
+    "why_it_matters": "Google의 AI 모델 Gemini Omni가 영상 제작 도구에 직접 통합되며 생성형 AI 기반 콘텐츠 제작의 접근성이 높아진다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8095254629629629,
+    "published_at": "2026-07-16T16:00:00Z"
+  },
+  {
+    "id": "openai_blog-cars24",
+    "section": "releases",
+    "title_en": "How Cars24 scales conversations and builds faster with OpenAI",
+    "title_ko": "Cars24, OpenAI로 월 100만분 대화 처리 및 이탈 리드 12% 회수",
+    "url": "https://openai.com/index/cars24",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "중고차 플랫폼 Cars24는 OpenAI 기반 음성·채팅 에이전트를 도입해 월 100만분 이상의 고객 대화를 처리하고 있다. 이를 통해 이탈한 잠재 고객 중 12%를 재유치하는 성과를 거뒀다. 또한 에이전틱 워크플로우를 회사 전반의 팀에 확산시키고 있다.",
+    "why_it_matters": "대규모 고객 대화를 AI 에이전트로 자동화해 실질적인 매출 회복 효과를 입증한 실사례로, 커머스 도메인에서의 AI 에이전트 적용 가능성을 보여준다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-07-16T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-advancing-ai-safety-through-state-and-federal-action",
+    "section": "releases",
+    "title_en": "The US is advancing AI safety through state and federal action",
+    "title_ko": "미국, 주(州) 및 연방 차원에서 AI 안전 정책 추진",
+    "url": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 AI 거버넌스에 대한 '역연방주의(reverse federalism)' 접근법을 제안했다. 이 방식은 각 주(州)의 AI 관련 법률이 국가 차원의 AI 안전 프레임워크를 구축하는 토대가 되는 방식이다. OpenAI는 이를 통해 민주적이고 안전한 AI 체계를 만들어갈 수 있다고 주장한다.",
+    "why_it_matters": "AI 규제의 방향이 연방 주도가 아닌 주 단위 입법에서 출발하는 상향식 구조로 정립될 수 있어, 향후 미국 AI 정책 전반에 영향을 미칠 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.6428587962962964,
+    "published_at": "2026-07-15T12:00:00Z"
+  },
+  {
+    "id": "hn-48936451",
+    "section": "community",
+    "title_en": "NotebookLM is now Gemini Notebook",
+    "title_ko": "NotebookLM, 'Gemini 노트북'으로 이름 변경",
+    "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "구글의 AI 노트 서비스인 NotebookLM이 'Gemini 노트북'으로 브랜드명을 변경했다. 이는 구글의 Gemini AI 브랜드로의 통합 전략의 일환으로 보인다.",
+    "why_it_matters": "구글이 AI 서비스 브랜드를 Gemini로 통합하는 흐름을 보여주는 상징적인 변화다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.939443878124791,
+    "published_at": "2026-07-16T16:08:13Z"
+  },
+  {
+    "id": "hn-48939524",
+    "section": "community",
+    "title_en": "$100 AI Music Video: Claude Fable 5 vs. GPT-5.6 Sol",
+    "title_ko": "$100로 만든 AI 뮤직비디오: Claude Fable 5 vs GPT-5.6 Sol",
+    "url": "https://www.tryai.dev/blog/ai-music-video-arena-claude-vs-gpt-5.6",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "약 100달러의 비용으로 AI를 활용해 제작한 뮤직비디오 프로젝트로, Claude Fable 5와 GPT-5.6 Sol 두 AI 모델을 비교하는 내용을 담고 있다. 상세 설명이 제공되지 않아 구체적인 제작 방식이나 결과는 확인하기 어렵다.",
+    "why_it_matters": "저비용 AI 뮤직비디오 제작 사례로, 생성형 AI의 창작 활용 가능성과 모델 간 비교에 관심 있는 개발자에게 참고가 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.451043350990629,
+    "published_at": "2026-07-16T20:03:23Z"
+  },
+  {
+    "id": "hn-48936880",
+    "section": "community",
+    "title_en": "Detecting LLM-Generated Texts with “Classical” Machine Learning",
+    "title_ko": "'전통적' 머신러닝으로 LLM 생성 텍스트 탐지하기",
+    "url": "https://blog.lyc8503.net/en/post/llm-classifier/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "LLM이 생성한 텍스트를 딥러닝이 아닌 전통적인 머신러닝 기법으로 탐지하는 방법을 다루는 내용이다. 복잡한 신경망 없이도 LLM 생성 텍스트를 구별할 수 있는 접근법을 탐구한다.",
+    "why_it_matters": "LLM 생성 텍스트 탐지를 가볍고 해석 가능한 방식으로 구현할 수 있다는 점에서 실용적 가치가 높다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.434815814368871,
+    "published_at": "2026-07-16T16:41:37Z"
+  },
+  {
+    "id": "hn-48939662",
+    "section": "community",
+    "title_en": "LM Studio Bionic: the AI agent for open models",
+    "title_ko": "LM Studio Bionic: 오픈 모델을 위한 AI 에이전트",
+    "url": "https://lmstudio.ai/blog/introducing-lm-studio-bionic",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "LM Studio가 오픈 모델을 위한 AI 에이전트 기능인 'Bionic'을 발표했다. 로컬에서 실행되는 오픈 소스 모델을 대상으로 에이전트 기능을 제공하는 것으로 보인다.",
+    "why_it_matters": "로컬 오픈 모델에서도 에이전트 워크플로우를 구현할 수 있는 가능성을 열어준다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 8.1931391088484,
+    "published_at": "2026-07-16T20:18:15Z"
+  },
+  {
+    "id": "hn-48935687",
+    "section": "community",
+    "title_en": "How to Train a Gen AI Kick Drum Model on Your Old Linux Desktop with 6GB VRAM",
+    "title_ko": "구형 리눅스 데스크톱(6GB VRAM)으로 킥드럼 생성 AI 모델 학습하기",
+    "url": "https://www.zhinit.dev/blog/training-a-kick-drum-diffusion-model",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "6GB VRAM을 탑재한 구형 리눅스 데스크톱 환경에서 킥드럼 사운드를 생성하는 AI 모델을 직접 학습하는 방법을 소개하는 글이다. 고사양 장비 없이도 생성 AI 모델 학습이 가능함을 다루고 있다.",
+    "why_it_matters": "저사양 GPU 환경에서도 도메인 특화 생성 AI 모델을 학습할 수 있다는 실용적인 가능성을 보여준다.",
+    "tags": [
+      "LLM",
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 7.618787109457495,
+    "published_at": "2026-07-16T15:13:00Z"
+  },
+  {
+    "id": "youtube-6XX-yR3qomM",
+    "section": "video",
+    "title_en": "[LIVE] Solar Open Weight Day",
+    "title_ko": "[라이브] Solar 오픈 웨이트 공개 행사",
+    "url": "https://www.youtube.com/watch?v=6XX-yR3qomM",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "Solar의 오픈 웨이트 모델 공개 관련 라이브 이벤트입니다. 상세 내용은 제공된 정보만으로는 확인하기 어렵습니다.",
+    "why_it_matters": "Solar 오픈 웨이트 모델 공개는 오픈소스 LLM 생태계 확장에 기여할 수 있는 이벤트다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8708217592592593,
+    "published_at": "2026-07-17T02:17:52Z"
+  },
+  {
+    "id": "youtube-GlYgs6v2YfU",
+    "section": "video",
+    "title_en": "But what is cross-entropy? | Compression is Intelligence Part 2",
+    "title_ko": "크로스 엔트로피란 무엇인가? | 압축과 지능 2부 (3Blue1Brown)",
+    "url": "https://www.youtube.com/watch?v=GlYgs6v2YfU",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "3Blue1Brown의 'Compression is Intelligence' 시리즈 2편으로, LLM 학습에 사용되는 손실 함수인 크로스 엔트로피의 개념과 유래를 수학적으로 설명한다. 최적 코드, 크로스 엔트로피 정의, 언어 트리에의 적용, LLM 사전 학습, KL 발산까지 단계별로 다룬다. 지식 증류(distillation)와의 연결도 포함되어 있다.",
+    "why_it_matters": "LLM 손실 함수의 수학적 근거를 직관적 애니메이션으로 설명해 AI 학습 원리를 깊이 이해하려는 개발자에게 유용하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7853257275132275,
+    "published_at": "2026-07-16T11:56:04Z"
+  },
+  {
+    "id": "youtube-6Ad2o1-ehnw",
+    "section": "video",
+    "title_en": "이제 딸깍 한번에 배포까지 가능한 세상 ㄷㄷ",
+    "title_ko": "클릭 한 번으로 웹사이트 배포가 가능한 시대",
+    "url": "https://www.youtube.com/shorts/6Ad2o1-ehnw",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 클라우드플레어를 활용해 웹사이트를 손쉽게 배포하는 방법을 소개한다. 복잡한 설정 없이 클릭 한 번으로 배포까지 완료할 수 있는 과정을 다룬다.",
+    "why_it_matters": "개발자가 아니어도 클라우드플레어로 간편하게 웹사이트를 배포할 수 있는 시대가 열렸음을 보여준다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.7679150132275132,
+    "published_at": "2026-07-16T09:00:34Z"
+  },
+  {
+    "id": "latent_space-ainews-kimi-k3-28t-a50b-the-largest",
+    "section": "deepdive",
+    "title_en": "[AINews] Kimi K3 2.8T-A50B: the largest open model ever released; Opus 4.8-class at Sonnet 5 pricing",
+    "title_ko": "Kimi K3 2.8T-A50B: 역대 최대 규모 오픈 모델 출시, Opus 4.8급 성능을 Sonnet 5 가격에",
+    "url": "https://www.latent.space/p/ainews-kimi-k3-28t-a50b-the-largest",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "Kimi K3가 2.8조 파라미터(활성화 500억)의 역대 최대 규모 오픈 모델로 출시되었다. Opus 4.8급 성능을 Sonnet 5 수준의 가격으로 제공한다는 점이 주목된다. 오픈 모델 생태계에 있어 의미 있는 한 주가 이어지고 있다.",
+    "why_it_matters": "역대 최대 규모의 오픈 소스 모델이 경쟁력 있는 가격에 공개되며 오픈 모델과 클로즈드 모델 간의 성능 격차가 빠르게 좁혀지고 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8677199074074073,
+    "published_at": "2026-07-17T01:46:36Z"
+  }
+]

@@ -1,5 +1,126 @@
 [
   {
+    "date": "2026-07-27",
+    "total": 21,
+    "counts": {
+      "community": 5,
+      "deepdive": 1,
+      "papers": 5,
+      "releases": 7,
+      "video": 3
+    }
+  },
+  {
+    "date": "2026-07-26",
+    "total": 21,
+    "counts": {
+      "community": 5,
+      "deepdive": 1,
+      "papers": 5,
+      "releases": 7,
+      "video": 3
+    }
+  },
+  {
+    "date": "2026-07-25",
+    "total": 21,
+    "counts": {
+      "community": 5,
+      "deepdive": 1,
+      "papers": 5,
+      "releases": 7,
+      "video": 3
+    }
+  },
+  {
+    "date": "2026-07-24",
+    "total": 21,
+    "counts": {
+      "community": 5,
+      "deepdive": 1,
+      "papers": 5,
+      "releases": 7,
+      "video": 3
+    }
+  },
+  {
+    "date": "2026-07-23",
+    "total": 21,
+    "counts": {
+      "community": 5,
+      "deepdive": 1,
+      "papers": 5,
+      "releases": 7,
+      "video": 3
+    }
+  },
+  {
+    "date": "2026-07-22",
+    "total": 21,
+    "counts": {
+      "community": 5,
+      "deepdive": 1,
+      "papers": 5,
+      "releases": 7,
+      "video": 3
+    }
+  },
+  {
+    "date": "2026-07-21",
+    "total": 19,
+    "counts": {
+      "community": 5,
+      "deepdive": 1,
+      "papers": 5,
+      "releases": 7,
+      "video": 1
+    }
+  },
+  {
+    "date": "2026-07-20",
+    "total": 21,
+    "counts": {
+      "community": 5,
+      "deepdive": 1,
+      "papers": 5,
+      "releases": 7,
+      "video": 3
+    }
+  },
+  {
+    "date": "2026-07-19",
+    "total": 21,
+    "counts": {
+      "community": 5,
+      "deepdive": 1,
+      "papers": 5,
+      "releases": 7,
+      "video": 3
+    }
+  },
+  {
+    "date": "2026-07-18",
+    "total": 21,
+    "counts": {
+      "community": 5,
+      "deepdive": 1,
+      "papers": 5,
+      "releases": 7,
+      "video": 3
+    }
+  },
+  {
+    "date": "2026-07-17",
+    "total": 21,
+    "counts": {
+      "community": 5,
+      "deepdive": 1,
+      "papers": 5,
+      "releases": 7,
+      "video": 3
+    }
+  },
+  {
     "date": "2026-07-16",
     "total": 21,
     "counts": {

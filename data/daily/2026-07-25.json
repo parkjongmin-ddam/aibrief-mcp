@@ -1,0 +1,367 @@
+[
+  {
+    "id": "hf-2607.21461",
+    "section": "papers",
+    "title_en": "AREX: Towards a Recursively Self-Improving Agent for Deep Research",
+    "title_ko": "AREX: 재귀적 자기개선을 통한 심층 리서치 에이전트",
+    "url": "https://huggingface.co/papers/2607.21461",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "AREX는 복잡한 다중 제약 조건을 충족하는 답변을 찾기 위해 설계된 재귀적 자기개선(RSI) 딥 리서치 에이전트 패밀리다. 내부 리서치 루프에서 증거를 수집하고 임시 답변을 구성한 뒤, 외부 자기개선 루프에서 제약 조건별 감사를 수행하고 미해결 주장에 대한 후속 리서치를 진행한다. 4B 밀집 모델과 122B-A10B MoE 모델로 구현되었으며, BrowseComp·WideSearch·DeepSearchQA·HLE 등 주요 벤치마크에서 동급 규모 베이스라인을 크게 능가하고 더 많은 파라미터를 사용하는 모델과도 경쟁력을 유지한다.",
+    "why_it_matters": "검색-검증 비대칭 문제를 재귀적 자기개선 루프로 해결해 소형 모델로도 대형 모델 수준의 심층 리서치 성능을 달성할 수 있음을 보여준다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.77912349311153,
+    "published_at": "2026-07-22T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.20145",
+    "section": "papers",
+    "title_en": "SLAI T-Rex: Full-Parameter Post-training of the DeepSeek-V4 Family on Ascend SuperPOD",
+    "title_ko": "SLAI T-Rex: Ascend SuperPOD에서 DeepSeek-V4 패밀리 전체 파라미터 포스트 트레이닝",
+    "url": "https://huggingface.co/papers/2607.20145",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "트릴리언 파라미터 규모의 MoE 모델 포스트 트레이닝 시 발생하는 메모리 압박, 통신 오버헤드, 비효율적 커널 실행 문제를 Ascend NPU SuperPOD 환경에서 해결한 최적화 사례다. 계층적 최적화 프레임워크를 통해 오픈소스 베이스라인 대비 2.93배 향상된 34.22% MFU를 달성했다. 이를 기반으로 운영 연구(OR) 특화 CPT·SFT 워크플로우를 구축했으며, 1만 개 고품질 SFT 샘플로 파인튜닝한 모델이 제로샷 Pass@1 71.81%로 GPT-5.4-Mini를 3.98%p 앞섰다.",
+    "why_it_matters": "GPU가 아닌 Ascend NPU 기반에서 트릴리언 파라미터 LLM의 풀 파라미터 포스트 트레이닝을 실현한 전체 스택 최적화 경로를 제시해, GPU 의존도를 낮추려는 대규모 AI 인프라 구축에 중요한 참고 사례가 된다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 5.04305126783455,
+    "published_at": "2026-07-21T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.20061",
+    "section": "papers",
+    "title_en": "ReferTrack: Referring Then Tracking for Embodied Visual Tracking",
+    "title_ko": "ReferTrack: 자연어 지시 기반 구현형 시각 추적 패러다임",
+    "url": "https://huggingface.co/papers/2607.20061",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "ReferTrack은 자연어로 설명된 특정 대상을 모바일 에이전트가 단일 전방 카메라만으로 추적하는 구현형 시각 추적(EVT) 프레임워크다. 기존 VLA 정책의 추상적 공간 추론 한계를 극복하고자, 먼저 바운딩 박스 인덱스에서 대상을 선택(Referring)한 뒤 이미지 기반 결정에 따라 경로 웨이포인트를 디코딩(Tracking)하는 2단계 방식을 채택했다. 슬라이딩 윈도우 큐와 TVBI 토큰으로 시간적 모션 단서를 보존하며, EVT-Bench에서 단일 대상·방해물·모호성 분할 각각 89.4%, 73.3%, 74.1%의 성공률로 최고 성능을 달성했다. 족보 로봇과 휴머노이드 로봇에서의 실환경 배포로 시뮬레이션-실제 전이 능력도 검증되었다.",
+    "why_it_matters": "단일 카메라만으로 다중 카메라 기반 기준선에 필적하는 성능을 내며, 실제 로봇 배포까지 입증해 구현형 AI 에이전트 추적 분야의 실용성을 크게 높인다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.80666248977032,
+    "published_at": "2026-07-21T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.21556",
+    "section": "papers",
+    "title_en": "Visual Contrastive Self-Distillation",
+    "title_ko": "시각적 대조 자기 증류(VCSD): 외부 교사 없는 멀티모달 LLM 학습",
+    "url": "https://huggingface.co/papers/2607.21556",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "VCSD는 외부 교사 모델이나 특권 정답 없이 이미지 내용 제거를 자기 증류 신호로 활용하는 새로운 온폴리시 학습 방법이다. EMA 교사가 원본 이미지와 내용이 지워진 이미지에 대해 각각 토큰 분포를 생성하고, 두 분포의 로그 확률 차이를 활용해 시각 정보에 민감한 토큰을 강조한다. Qwen3-VL 모델 기준으로 2B·4B·8B 전 규모에서 기존 OPSD 대비 7개 벤치마크 평균 점수가 일관되게 향상되었다.",
+    "why_it_matters": "외부 교사·추가 추론 비용 없이 멀티모달 LLM 성능을 높일 수 있어 실용적인 비전-언어 모델 학습 효율화에 직접 기여한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.737669618283368,
+    "published_at": "2026-07-22T20:00:00Z"
+  },
+  {
+    "id": "hf-2605.09635",
+    "section": "papers",
+    "title_en": "K12-KGraph: A Curriculum-Aligned Knowledge Graph for Benchmarking and Training Educational LLMs",
+    "title_ko": "K12-KGraph: 교육과정 기반 지식 그래프로 교육용 LLM 벤치마킹 및 학습",
+    "url": "https://huggingface.co/papers/2605.09635",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "K-12 교육에서 LLM의 교육과정 인지 능력(선수 학습 체계, 개념 분류, 시각적 이해 등)을 평가하기 위해 중국 인민교육출판사 교과서 기반의 지식 그래프 K12-KGraph를 구축했다. 이를 바탕으로 23,640문항의 벤치마크 K12-Bench와 7,335개 샘플의 파인튜닝 데이터셋 K12-Train을 공개했다. Gemini-3-Flash도 정확도 57%에 그칠 만큼 난이도가 높으며, 도메인 특화 학습으로 성능 격차를 줄일 수 있음을 실험으로 입증했다. 텍스트와 시각 데이터의 결합 학습이 상호 보완적임도 확인됐다.",
+    "why_it_matters": "기존 시험 문제 풀이 위주의 교육 LLM 평가를 넘어, 교육과정 구조 이해라는 새로운 평가 기준과 데이터를 제시했다는 점에서 교육 AI 연구의 새로운 방향을 제시한다.",
+    "tags": [
+      "LLM",
+      "RAG"
+    ],
+    "score": 4.713572066704308,
+    "published_at": "2026-07-22T20:00:00Z"
+  },
+  {
+    "id": "github_trending-ComposioHQ/awesome-claude-skills",
+    "section": "releases",
+    "title_en": "ComposioHQ/awesome-claude-skills",
+    "title_ko": "Awesome Claude Skills: 1,000개 이상의 Claude 스킬 모음집",
+    "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "ComposioHQ가 공개한 Claude Skills 큐레이션 저장소로, 문서 처리·개발·데이터 분석·비즈니스 자동화 등 다양한 카테고리에 걸쳐 1,000개 이상의 프로덕션 수준 스킬을 제공합니다. Claude Skills는 SKILL.md 파일 기반의 재사용 가능한 지시 패키지로, Claude.ai·Claude Code·API는 물론 Cursor·Codex·Gemini CLI 등 다양한 AI 에이전트 플랫폼에서 동작합니다. Composio MCP Gateway를 통해 Gmail·Slack·GitHub·Notion 등 1,000개 이상의 외부 서비스와 실제 액션 연동도 지원합니다.",
+    "why_it_matters": "Claude 에이전트의 워크플로우를 표준화된 스킬 포맷으로 패키징·공유·재사용할 수 있는 생태계가 형성되면서, 에이전트 기반 업무 자동화 진입 장벽이 크게 낮아진다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8665195105820106,
+    "published_at": "2026-07-25T01:34:30Z"
+  },
+  {
+    "id": "github_trending-Lordog/dive-into-llms",
+    "section": "releases",
+    "title_en": "Lordog/dive-into-llms",
+    "title_ko": "LLM 실습 교육 시리즈: 동수학대모형(Dive into LLMs)",
+    "url": "https://github.com/Lordog/dive-into-llms",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "상하이교통대학교 연구팀이 개발한 대형 언어 모델 입문 실습 튜토리얼 시리즈입니다. 파인튜닝, 프롬프트 엔지니어링, 지식 편집, 수학 추론, 모델 워터마킹, 탈옥 공격, GUI 에이전트, RLHF 정렬 등 11개 주제를 PPT·노트북·실습 스크립트 형태로 제공합니다. 최근 화웨이 승등(Ascend) 커뮤니티와 협력해 '대모델 개발 전 과정' 공익 강좌도 추가로 공개했습니다. 모든 콘텐츠는 무료로 제공됩니다.",
+    "why_it_matters": "LLM 입문부터 보안·에이전트까지 체계적으로 다루는 오픈소스 실습 커리큘럼으로, 한국 개발자·연구자의 빠른 LLM 학습에 실질적인 참고자료가 됩니다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8665195105820106,
+    "published_at": "2026-07-25T01:34:30Z"
+  },
+  {
+    "id": "openai_blog-health-in-chatgpt",
+    "section": "releases",
+    "title_en": "Launching Health in ChatGPT",
+    "title_ko": "ChatGPT 헬스 기능 출시 – 의료 기록 및 Apple Health 연동",
+    "url": "https://openai.com/index/health-in-chatgpt",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 ChatGPT에 헬스 기능을 출시했다. 미국 내 적격 사용자는 의료 기록과 Apple Health 데이터를 안전하게 연결해 더 개인화된 건강 인사이트를 얻고 자신의 건강을 더 잘 이해할 수 있다.",
+    "why_it_matters": "ChatGPT가 개인 의료 데이터와 직접 연동되면서 AI 기반 개인 건강 관리 시대가 본격화될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.5714302248677249,
+    "published_at": "2026-07-23T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-building-ai-infrastructure-with-the-effingham-county-community",
+    "section": "releases",
+    "title_en": "Building AI infrastructure with the Effingham County community",
+    "title_ko": "오픈AI, 조지아주 에핑엄 카운티에 AI 인프라 프로젝트 '카멜리아' 발표",
+    "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "오픈AI가 조지아주 에핑엄 카운티와 함께 '프로젝트 카멜리아'를 발표했다. 이 프로젝트는 책임감 있는 에너지 사용, 지역사회 투자, 일자리 창출, 그리고 Codex 접근성 제공 등을 핵심 약속으로 포함한다. 지역 커뮤니티와의 협력을 중심으로 AI 인프라를 구축하는 방향을 지향한다.",
+    "why_it_matters": "오픈AI가 단순한 기술 개발을 넘어 지역사회와 연계한 AI 인프라 투자 모델을 구체화하고 있다는 점에서 주목할 만하다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.5059540343915344,
+    "published_at": "2026-07-22T13:00:00Z"
+  },
+  {
+    "id": "openai_blog-how-news-organizations-are-using-ai",
+    "section": "releases",
+    "title_en": "How news organizations are using AI to advance their vital missions",
+    "title_ko": "뉴스 조직들이 AI를 활용해 핵심 미션을 발전시키는 방법",
+    "url": "https://openai.com/index/how-news-organizations-are-using-ai",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "전 세계 뉴스 조직들이 OpenAI 도구를 활용해 보도 역량 강화, 독자 확대, 비즈니스 운영 개선에 나서고 있다. AI는 저널리스트와 퍼블리셔를 지원하는 실질적인 도구로 자리잡고 있으며, 미디어 산업 전반에 걸쳐 다양한 방식으로 적용되고 있다.",
+    "why_it_matters": "AI가 저널리즘 현장에 실제로 도입되는 사례가 늘면서 미디어 산업의 AI 활용 방향을 가늠할 수 있는 중요한 기준점이 된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.5059540343915344,
+    "published_at": "2026-07-22T13:00:00Z"
+  },
+  {
+    "id": "openai_blog-advancing-the-next-era-of-national-science",
+    "section": "releases",
+    "title_en": "Advancing the next era of national science",
+    "title_ko": "OpenAI, 미국 국가 과학 발전을 위한 차세대 AI 협력 발표",
+    "url": "https://openai.com/index/advancing-the-next-era-of-national-science",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 미국 에너지부 및 국립 연구소들과 협력하여 프론티어 AI를 과학적 발견 가속화에 활용하겠다는 계획을 발표했다. 이번 협력은 미국 과학 발전을 위한 OpenAI의 공식적인 의지 표명이다.",
+    "why_it_matters": "정부 기관과 AI 기업 간의 대규모 협력이 과학 연구의 판도를 바꿀 수 있는 중요한 신호탄이 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.5000016534391535,
+    "published_at": "2026-07-22T12:00:00Z"
+  },
+  {
+    "id": "openai_blog-introducing-openai-presence",
+    "section": "releases",
+    "title_en": "Introducing OpenAI Presence",
+    "title_ko": "OpenAI Presence 소개: 기업용 AI 에이전트 플랫폼",
+    "url": "https://openai.com/index/introducing-openai-presence",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 기업용 AI 에이전트 플랫폼인 'OpenAI Presence'를 공개했다. 이 플랫폼은 고객 응대 및 사내 업무 흐름을 위한 음성·채팅 에이전트를 배포할 수 있도록 지원한다. 신뢰성이 검증된 솔루션으로 기업의 다양한 워크플로우에 적용 가능하다.",
+    "why_it_matters": "OpenAI가 기업 시장을 겨냥한 전용 에이전트 플랫폼을 출시하며 엔터프라이즈 AI 에이전트 경쟁이 본격화될 전망이다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.4613111772486772,
+    "published_at": "2026-07-22T05:30:00Z"
+  },
+  {
+    "id": "hn-49038433",
+    "section": "community",
+    "title_en": "Claude Opus 5",
+    "title_ko": "Claude Opus 5 출시",
+    "url": "https://www.anthropic.com/news/claude-opus-5",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Anthropic의 새로운 AI 모델 Claude Opus 5가 공개되었다. 세부 사항은 알려지지 않았으나 Anthropic의 최상위 모델 라인업인 Opus 시리즈의 최신작이다.",
+    "why_it_matters": "Anthropic 플래그십 모델의 새 버전으로, LLM 시장 경쟁 구도에 영향을 미칠 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 11.480416843237359,
+    "published_at": "2026-07-24T16:57:41Z"
+  },
+  {
+    "id": "hn-49035303",
+    "section": "community",
+    "title_en": "Nvidia, Microsoft, Meta warn against overregulating open-weight models",
+    "title_ko": "엔비디아·마이크로소프트·메타, 오픈웨이트 모델 과잉규제 경고",
+    "url": "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "엔비디아, 마이크로소프트, 메타 등 주요 빅테크 기업들이 오픈웨이트 AI 모델에 대한 과도한 규제에 반대 입장을 표명했다. 오픈웨이트 모델의 혁신 가능성을 저해할 수 있다는 우려가 핵심이다.",
+    "why_it_matters": "글로벌 AI 규제 방향이 오픈소스 생태계에 직접적인 영향을 미칠 수 있어 개발자 커뮤니티의 주목이 필요하다.",
+    "tags": [
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 9.972504927039441,
+    "published_at": "2026-07-24T13:32:30Z"
+  },
+  {
+    "id": "hn-49038060",
+    "section": "community",
+    "title_en": "Be skeptical of OpenAI's rogue hacker agent story",
+    "title_ko": "OpenAI의 '불량 해커 에이전트' 이야기에 회의적 시각",
+    "url": "https://www.theguardian.com/technology/2026/jul/24/openai-rogue-hacker",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "OpenAI가 공개한 '불량 해커 에이전트' 관련 주장에 대해 회의적인 시각을 촉구하는 내용이다. 제공된 정보만으로는 구체적인 내용을 확인하기 어렵다.",
+    "why_it_matters": "AI 기업의 공개 발표를 비판적으로 검토하는 시각이 중요함을 상기시킨다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 9.798023992616553,
+    "published_at": "2026-07-24T16:33:31Z"
+  },
+  {
+    "id": "hn-49033240",
+    "section": "community",
+    "title_en": "IRGC claims it destroyed Amazon's Bahrain data center",
+    "title_ko": "이란 혁명수비대, 아마존 바레인 데이터센터 파괴 주장",
+    "url": "https://houseofsaud.com/irgc-claims-destroyed-amazon-bahrain-data-center/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "이란 혁명수비대(IRGC)가 아마존의 바레인 데이터센터를 파괴했다고 주장했다. 현재 설명이 없어 추가 세부 사항은 확인되지 않는다.",
+    "why_it_matters": "클라우드 핵심 인프라가 지정학적 분쟁의 표적이 될 수 있음을 시사하는 사건이다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.387349352554324,
+    "published_at": "2026-07-24T09:52:58Z"
+  },
+  {
+    "id": "hn-48995409",
+    "section": "community",
+    "title_en": "Firefox Containers Preview",
+    "title_ko": "파이어폭스 컨테이너 미리보기",
+    "url": "https://blog.mozilla.org/en/firefox/firefox-containers-preview/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "파이어폭스의 컨테이너 기능 미리보기가 공개되었다. 컨테이너는 브라우저 내에서 탭을 격리하여 쿠키, 로그인 정보 등을 분리 관리할 수 있게 해주는 기능이다.",
+    "why_it_matters": "AI와 직접적인 관련성이 낮아 추가 맥락 없이 중요도를 판단하기 어렵다.",
+    "tags": [],
+    "score": 8.63876593285274,
+    "published_at": "2026-07-21T17:27:59Z"
+  },
+  {
+    "id": "youtube-6XPlmCDNLNc",
+    "section": "video",
+    "title_en": "The 64 sugar cubes puzzle",
+    "title_ko": "64개의 각설탕 퍼즐",
+    "url": "https://www.youtube.com/shorts/6XPlmCDNLNc",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "MoMath(미국 수학 박물관)의 월간 퍼즐 시리즈 중 하나로, 64개의 각설탕을 이용한 수학 퍼즐을 소개합니다. 자세한 내용은 MoMath 공식 사이트에서 확인할 수 있습니다.",
+    "why_it_matters": "AI와 직접적인 연관은 없으나, 수학적 사고력과 문제 해결 능력을 기르는 데 흥미로운 퍼즐 콘텐츠입니다.",
+    "tags": [],
+    "score": 0.804133597883598,
+    "published_at": "2026-07-24T15:05:39Z"
+  },
+  {
+    "id": "youtube-N6SeR4BhwqQ",
+    "section": "video",
+    "title_en": "로고들이 다 이상하게 보이는 저주",
+    "title_ko": "AI가 로고를 이상하게 인식하는 현상",
+    "url": "https://www.youtube.com/shorts/N6SeR4BhwqQ",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 AI가 로고를 올바르게 인식하지 못하는 흥미로운 현상을 다룬 영상이다. 구체적인 내용은 영상을 통해 확인할 수 있다.",
+    "why_it_matters": "AI의 시각 인식 한계를 재미있는 사례로 살펴볼 수 있는 콘텐츠다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7680076058201057,
+    "published_at": "2026-07-24T09:01:30Z"
+  },
+  {
+    "id": "youtube-11EZFKPCt5A",
+    "section": "video",
+    "title_en": "중국에 등장한 현실판 '리얼 스틸'",
+    "title_ko": "중국에 등장한 현실판 '리얼 스틸' 휴머노이드 격투기",
+    "url": "https://www.youtube.com/shorts/11EZFKPCt5A",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "중국에서 영화 '리얼 스틸'을 연상시키는 휴머노이드 로봇 격투 장면이 등장해 화제를 모으고 있다. 조코딩 채널에서 해당 영상을 소개하며 AI 및 로보틱스 기술의 발전상을 다루고 있다.",
+    "why_it_matters": "휴머노이드 로봇의 실전 활용 가능성을 보여주는 사례로, AI와 로보틱스 기술의 급속한 발전을 체감할 수 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.6250628306878308,
+    "published_at": "2026-07-23T09:00:37Z"
+  },
+  {
+    "id": "simon_willison-boris-cherny",
+    "section": "deepdive",
+    "title_en": "Quoting Boris Cherny",
+    "title_ko": "Claude Opus 5, 프롬프트 인젝션 저항성 크게 향상",
+    "url": "https://simonwillison.net/2026/Jul/25/boris-cherny/#atom-everything",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Anthropic의 Boris Cherny에 따르면, Claude Opus 5는 현재까지 출시된 모델 중 프롬프트 인젝션에 가장 강한 모델이다. 벤치마크 점수보다 이 점이 더 주목할 만하다고 강조했으며, 해당 내용은 Claude Opus 5 시스템 카드 73페이지에 수록되어 있다.",
+    "why_it_matters": "프롬프트 인젝션 취약점은 LLM 기반 에이전트의 핵심 보안 위협이므로, 이에 대한 저항성 향상은 실제 서비스 신뢰성에 직결된다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8614087301587301,
+    "published_at": "2026-07-25T00:42:59Z"
+  }
+]

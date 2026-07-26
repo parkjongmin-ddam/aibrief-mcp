@@ -1,0 +1,376 @@
+[
+  {
+    "id": "hf-2607.13125",
+    "section": "papers",
+    "title_en": "Boogu-Image-0.1: Boosting Open-Source Unified Multimodal Understanding and Generation",
+    "title_ko": "Boogu-Image-0.1: 오픈소스 통합 멀티모달 이해·생성 모델 공개",
+    "url": "https://huggingface.co/papers/2607.13125",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Boogu-Image-0.1은 텍스트-이미지 생성, 고속 추론, 지시 기반 편집, 중영문 이중언어 텍스트 렌더링을 지원하는 오픈소스 통합 멀티모달 모델 패밀리다. Base·Turbo·Edit·Edit-Turbo 4가지 변형으로 구성되며, 약 2억 860만 장의 고유 이미지와 약 40만 달러의 학습 비용으로 다른 오픈소스 모델들을 능가하고 주요 클로즈드소스 시스템에 근접한 성능을 달성했다. 모델 가중치, 코드, 학습 레시피를 Apache 2.0 라이선스로 전면 공개한다.",
+    "why_it_matters": "제한된 컴퓨팅 예산으로 GPT-Image-2 등 클로즈드소스에 근접한 성능을 달성하고 전체 학습 레시피까지 공개해 오픈소스 멀티모달 생성 연구의 재현성과 접근성을 크게 높인다.",
+    "tags": [
+      "LLM",
+      "오픈소스",
+      "에이전트"
+    ],
+    "score": 5.812184355372417,
+    "published_at": "2026-07-13T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.14935",
+    "section": "papers",
+    "title_en": "VideoChat3: Fully Open Video MLLM for Efficient and Generalist Video Understanding",
+    "title_ko": "VideoChat3: 효율적이고 범용적인 완전 오픈소스 비디오 멀티모달 LLM",
+    "url": "https://huggingface.co/papers/2607.14935",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "VideoChat3는 일반 영상, 장편 영상, 스트리밍 영상 이해를 모두 지원하는 완전 오픈소스 비디오 중심 멀티모달 LLM이다. 효율성을 위해 Inflated 3D Vision Transformer(I3D-ViT)와 Adaptive Frame Resolution을 도입했으며, 학습 데이터셋 3종(Academic2M, LV116K, OL617K)을 공개해 재현성을 높였다. 4B 파라미터만으로 동등하거나 더 큰 규모의 기존 오픈소스 모델들을 다양한 벤치마크에서 능가한다.",
+    "why_it_matters": "학습 코드·전략·데이터셋까지 완전 공개해 비디오 이해 연구의 재현성과 커뮤니티 발전을 동시에 끌어올린다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 5.6913478822291435,
+    "published_at": "2026-07-15T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.12395",
+    "section": "papers",
+    "title_en": "Ring-Zero: Scaling Zero RL to a Trillion Parameters for Emergent Reasoning",
+    "title_ko": "Ring-Zero: 1조 파라미터 규모로 확장한 Zero RL 기반 추론 모델",
+    "url": "https://huggingface.co/papers/2607.12395",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "인간 주석 데이터 없이 검증 가능한 보상만으로 학습하는 'Zero RL' 패러다임을 1조 파라미터 규모까지 확장한 Ring-Zero를 소개합니다. 기존 소규모 모델에서 발생하던 가독성 저하, 토큰 중복, 추론 깊이 부족 문제를 클리핑 중요도 샘플링, 학습-추론 비율 보정, 혼합 정밀도 제어 등으로 해결했습니다. 실험 결과, 1T 파라미터 스케일링은 샘플 효율과 성능 상한을 크게 높이며, 자기 검증·병렬 추론 등 고급 인지 행동이 자발적으로 출현함을 확인했습니다. 7개 수학 벤치마크에서 경쟁력 있는 성능을 보였으며, CoT 품질 평가를 위한 새로운 3차원 평가 프레임워크도 제안합니다.",
+    "why_it_matters": "조 단위 파라미터 규모에서 Zero RL의 학습 동역학과 창발적 추론 능력을 최초로 체계적으로 탐구한 연구로, 대규모 LLM 훈련의 새로운 방향을 제시합니다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.442651256490317,
+    "published_at": "2026-07-13T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.14777",
+    "section": "papers",
+    "title_en": "SEED: Self-Evolving On-Policy Distillation for Agentic Reinforcement Learning",
+    "title_ko": "SEED: 에이전트 강화학습을 위한 자기진화형 온-폴리시 증류",
+    "url": "https://huggingface.co/papers/2607.14777",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SEED는 장기 다중 턴 에이전트 태스크에서 희소한 보상 신호 문제를 해결하기 위한 자기진화 프레임워크다. 완료된 온-폴리시 궤적을 분석해 재사용 가능한 워크플로우, 실패 회피 규칙 등 '힌드사이트 스킬'을 자연어로 추출하고, 이를 토큰 수준의 밀도 높은 증류 신호로 변환해 정책 모델에 재주입한다. 결과 기반 RL과 공동 최적화함으로써 정책 업데이트가 의사결정과 스킬 분석 능력을 함께 향상시키며, 텍스트 및 비전 기반 에이전트 태스크 모두에서 성능과 샘플 효율이 개선됨을 실험으로 확인했다.",
+    "why_it_matters": "에피소드 수준 보상과 토큰 수준 정책 학습 사이의 감독 공백을 자기진화 스킬 증류로 해소해, 에이전트 RL 학습 효율을 실질적으로 높인다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.219507705176107,
+    "published_at": "2026-07-15T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.15257",
+    "section": "papers",
+    "title_en": "SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration",
+    "title_ko": "SearchOS-V1: 강건한 오픈도메인 정보 탐색 멀티에이전트 프레임워크",
+    "url": "https://huggingface.co/papers/2607.15257",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SearchOS는 대형 언어 모델 기반 정보 탐색 에이전트들이 반복적 검색 루프에 빠지는 문제를 해결하기 위한 멀티에이전트 시스템이다. 검색 진행 상태를 명시적·공유 상태(Frontier Task, Evidence Graph, Coverage Map, Failure Memory)로 외부화하는 SOCM 설계를 도입했다. 파이프라인 병렬 스케줄링과 Search Tool Middleware Harness를 통해 에이전트 실행을 조율하며, WideSearch·GISA 벤치마크에서 단일·멀티에이전트 기준선 대비 모든 지표에서 최고 성능을 달성했다.",
+    "why_it_matters": "반복 검색 실패와 예산 낭비 문제를 구조적으로 해결한 멀티에이전트 프레임워크로, 실용적인 오픈도메인 정보 탐색 에이전트 개발의 새로운 기준을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "RAG"
+    ],
+    "score": 4.912023005428146,
+    "published_at": "2026-07-15T20:00:00Z"
+  },
+  {
+    "id": "github_trending-HenryNdubuaku/maths-cs-ai-compendium",
+    "section": "releases",
+    "title_en": "HenryNdubuaku/maths-cs-ai-compendium",
+    "title_ko": "수학·CS·AI 종합 교재 - AI/ML 리서치 엔지니어를 위한 오픈소스 컴펜디엄",
+    "url": "https://github.com/HenryNdubuaku/maths-cs-ai-compendium",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "AI/ML 리서치 엔지니어를 목표로 하는 개발자를 위한 오픈소스 온라인 교재로, 수학(선형대수·미적분·확률·통계)부터 딥러닝·LLM 아키텍처·GPU 프로그래밍·ML 시스템 설계까지 18개 챕터로 구성되어 있습니다. 기존 교재가 직관 없이 수식만 나열하는 문제를 해결하기 위해 실무 중심의 설명 방식을 채택했습니다. DeepMind·OpenAI·NVIDIA 인터뷰 준비에 활용된 저자의 개인 노트를 기반으로 하며, AI 어시스턴트가 이 교재를 지식 베이스로 활용할 수 있는 MCP 서버도 포함되어 있습니다.",
+    "why_it_matters": "수학 기초부터 GPU 프로그래밍·AI 추론 최적화까지 AI/ML 엔지니어에게 필요한 전 영역을 무료로 체계적으로 학습할 수 있는 실전형 오픈소스 교재다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8663971560846561,
+    "published_at": "2026-07-18T01:33:16Z"
+  },
+  {
+    "id": "github_trending-Nutlope/hallmark",
+    "section": "releases",
+    "title_en": "Nutlope/hallmark",
+    "title_ko": "Hallmark: AI 생성 티가 나지 않는 UI 디자인 스킬",
+    "url": "https://github.com/Nutlope/hallmark",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Hallmark는 Claude Code, Cursor, Codex에서 사용할 수 있는 디자인 스킬로, AI가 생성한 것처럼 보이는 뻔한 UI를 거부한다. 20가지 테마와 57개의 슬롭(slop) 테스트 게이트, 사전 자기 비평을 통해 매 결과물이 고유한 구조와 디자인을 갖도록 한다. build, audit, redesign, study 네 가지 명령어를 제공하며, Together AI에서 만들었다.",
+    "why_it_matters": "AI 코딩 도구로 만든 UI가 획일적으로 보이는 문제를 해결해, 개발자도 차별화된 디자인 결과물을 낼 수 있게 해준다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8663971560846561,
+    "published_at": "2026-07-18T01:33:16Z"
+  },
+  {
+    "id": "github_trending-anthropics/cwc-workshops",
+    "section": "releases",
+    "title_en": "anthropics/cwc-workshops",
+    "title_ko": "Anthropic 'Code with Claude' 워크숍 자료 공개",
+    "url": "https://github.com/anthropics/cwc-workshops",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 자체 운영한 'Code with Claude' 워크숍의 실습 자료를 GitHub에 공개했다. 올바른 모델 선택, 멀티 에이전트 시스템 구성, 메모리 관리, eval 기반 에이전트 개발 등 총 9개 워크숍 모듈로 구성되어 있다. Claude Managed Agents API와 MCP를 활용한 실전 예제 중심으로, 각 모듈은 45분~수 시간 내 완료 가능한 핸즈온 형태다. 단, 현재 유지보수 및 기여는 받지 않는 아카이브 상태다.",
+    "why_it_matters": "Claude 기반 에이전트 개발의 베스트 프랙티스를 Anthropic 직접 제작 실습 자료로 빠르게 습득할 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.8663971560846561,
+    "published_at": "2026-07-18T01:33:16Z"
+  },
+  {
+    "id": "github_trending-PrismML-Eng/Bonsai-demo",
+    "section": "releases",
+    "title_en": "PrismML-Eng/Bonsai-demo",
+    "title_ko": "Bonsai: 1비트/3진 양자화 LLM을 로컬에서 실행하는 오픈소스 데모",
+    "url": "https://github.com/PrismML-Eng/Bonsai-demo",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "PrismML이 공개한 Bonsai는 1비트 및 3진(ternary) 양자화 언어 모델을 Mac, Linux, Windows에서 로컬 실행할 수 있는 데모 프로젝트입니다. 최신 Bonsai 27B는 비전-언어 모델로 이미지·PDF 입력, OpenAI 호환 툴 콜링, 256k+ 토큰 컨텍스트, 추론(thinking) 기능을 지원합니다. 1비트 Bonsai-27B는 가중치당 약 1.125비트로 압축되어 최신 아이폰에도 탑재 가능한 수준이며, 3진 버전(~1.7비트)은 더 높은 품질을 제공합니다. llama.cpp 및 MLX 포맷을 지원하며 두 명령어만으로 셋업이 가능합니다.",
+    "why_it_matters": "27B 파라미터 비전-언어 모델을 소비자 기기(심지어 iPhone)에서 구동 가능한 수준으로 극단적 경량화한 사례로, 온디바이스 AI의 실용적 한계를 크게 확장한다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8663971560846561,
+    "published_at": "2026-07-18T01:33:16Z"
+  },
+  {
+    "id": "github_trending-RyanCodrai/turbovec",
+    "section": "releases",
+    "title_en": "RyanCodrai/turbovec",
+    "title_ko": "turbovec: Google TurboQuant 기반 고속 벡터 인덱스 (Rust/Python)",
+    "url": "https://github.com/RyanCodrai/turbovec",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Google Research의 TurboQuant 알고리즘을 기반으로 Rust로 구현하고 Python 바인딩을 제공하는 벡터 인덱스 라이브러리다. 1,000만 건 코퍼스 기준 float32 대비 메모리를 31GB에서 4GB로 줄이며, ARM에서 FAISS IndexPQFastScan 대비 10~19% 빠른 검색 속도를 달성한다. 별도 학습 단계 없이 온라인 인제스트를 지원하며, LangChain·LlamaIndex·Haystack·Agno 등 주요 RAG 프레임워크와 드롭인 교체가 가능하다.",
+    "why_it_matters": "메모리와 지연 시간이 중요한 로컬·프라이빗 RAG 스택에서 FAISS를 대체할 수 있는 고압축·고속 오픈소스 벡터 인덱스로, 학습 단계 없는 온라인 인제스트와 주요 프레임워크 통합을 동시에 제공한다는 점에서 실용적 가치가 높다.",
+    "tags": [
+      "RAG",
+      "오픈소스"
+    ],
+    "score": 0.8663971560846561,
+    "published_at": "2026-07-18T01:33:16Z"
+  },
+  {
+    "id": "openai_blog-a-scorecard-for-the-ai-age",
+    "section": "releases",
+    "title_en": "A scorecard for the AI age",
+    "title_ko": "AI 시대를 위한 성과 측정 카드",
+    "url": "https://openai.com/index/a-scorecard-for-the-ai-age",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI의 CFO 사라 프리어(Sarah Friar)가 AI 투자 수익(ROI)을 측정하기 위한 실용적인 AI 스코어카드를 소개했다. 이 스코어카드는 유용한 작업량, 성공적인 작업당 비용, 신뢰성, 컴퓨트 대비 수익 등 네 가지 핵심 지표를 중심으로 구성된다. 기업이 AI 도입 효과를 구체적으로 정량화할 수 있는 프레임워크를 제시하는 것이 목적이다.",
+    "why_it_matters": "AI 투자 효과를 막연히 평가하던 기업들에게 구체적인 측정 기준을 제공함으로써, AI 도입의 실질적 가치를 검증하는 표준 프레임워크로 자리잡을 가능성이 있다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "인프라"
+    ],
+    "score": 0.7738111772486773,
+    "published_at": "2026-07-17T10:00:00Z"
+  },
+  {
+    "id": "openai_blog-why-teens-deserve-access-safe-ai",
+    "section": "releases",
+    "title_en": "Why teens deserve access to safe AI",
+    "title_ko": "10대를 위한 안전한 AI, OpenAI의 접근 방식",
+    "url": "https://openai.com/index/why-teens-deserve-access-safe-ai",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 청소년을 위해 ChatGPT에 연령에 맞는 안전 보호 기능, 학습 도구, 보호자 제어 기능을 도입하고 있다. 전문가 파트너십을 통해 10대 사용자가 더 안전하게 AI를 활용할 수 있는 환경을 구축하는 것이 목표다.",
+    "why_it_matters": "AI 서비스의 청소년 보호 정책은 향후 규제 및 플랫폼 설계 기준에 직접적인 영향을 미칠 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6666683201058201,
+    "published_at": "2026-07-16T16:00:00Z"
+  },
+  {
+    "id": "hn-48947825",
+    "section": "community",
+    "title_en": "The state of open source AI",
+    "title_ko": "오픈소스 AI의 현재 상태",
+    "url": "https://stateofopensource.ai/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "오픈소스 AI의 현황을 다루는 글이다. 현재 오픈소스 AI 생태계의 동향과 주요 이슈를 정리한 것으로 보인다.",
+    "why_it_matters": "오픈소스 AI의 흐름을 파악하고 싶은 개발자에게 유용한 현황 정리 자료다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 9.732490176537894,
+    "published_at": "2026-07-17T14:31:10Z"
+  },
+  {
+    "id": "hn-48952880",
+    "section": "community",
+    "title_en": "Kaiser nurses say AI, workplace surveillance are making their jobs, care worse",
+    "title_ko": "카이저 간호사들, AI와 직장 감시가 업무와 환자 돌봄을 악화시킨다고 주장",
+    "url": "https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "카이저 퍼머넌테 간호사들이 AI 도구와 직장 감시 시스템이 오히려 업무 환경과 환자 케어 질을 떨어뜨리고 있다고 주장하고 나섰다. 의료 현장에서의 AI 도입이 긍정적 효과보다 부작용을 낳고 있다는 현장 목소리다.",
+    "why_it_matters": "의료 현장 종사자들의 반발은 AI 도입 방식과 노동 환경에 대한 중요한 경고 신호다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.267016170091871,
+    "published_at": "2026-07-17T22:26:30Z"
+  },
+  {
+    "id": "hn-48947717",
+    "section": "community",
+    "title_en": "Kimi K3, and what we can still learn from the pelican benchmark",
+    "title_ko": "Kimi K3와 펠리컨 벤치마크에서 배울 수 있는 것들",
+    "url": "https://simonwillison.net/2026/Jul/16/kimi-k3/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Kimi K3 모델과 관련하여 펠리컨 벤치마크를 통해 여전히 얻을 수 있는 인사이트를 다루는 글이다. 구체적인 내용은 제공된 정보만으로는 파악하기 어렵다.",
+    "why_it_matters": "새로운 LLM 모델 평가 방법론과 벤치마크의 유효성에 관심 있는 개발자에게 참고할 만한 주제다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.129817918703424,
+    "published_at": "2026-07-17T14:21:51Z"
+  },
+  {
+    "id": "hn-48952939",
+    "section": "community",
+    "title_en": "Texas wins court order to suspend domain name for violating age-verification law",
+    "title_ko": "텍사스, 연령 인증법 위반으로 도메인 이름 정지 법원 명령 획득",
+    "url": "https://www.texasattorneygeneral.gov/news/releases/attorney-general-ken-paxton-secures-landmark-legal-victory-lock-pornographic-website-domain-and",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "텍사스 주가 연령 인증법을 위반한 웹사이트의 도메인 이름을 정지시키는 법원 명령을 받아냈다. 이는 온라인 연령 인증 규제와 관련한 법적 집행 사례다.",
+    "why_it_matters": "도메인 수준에서 콘텐츠 접근을 차단하는 판례로, 인터넷 규제와 표현의 자유 논쟁에 새로운 선례가 될 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 8.336936913707618,
+    "published_at": "2026-07-17T22:35:55Z"
+  },
+  {
+    "id": "hn-48952439",
+    "section": "community",
+    "title_en": "FAA lets Boeing sign off on 737 MAX, 787 airworthiness certificates again",
+    "title_ko": "FAA, 보잉의 737 MAX·787 감항 인증 자체 서명 권한 재허용",
+    "url": "https://www.cnbc.com/2026/07/17/faa-boeing-737-max-787.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "미국 연방항공청(FAA)이 보잉에게 737 MAX와 787 항공기의 감항 인증서에 자체 서명할 수 있는 권한을 다시 부여했다. 이는 보잉이 일련의 품질·안전 문제로 인해 해당 권한을 제한받았던 상황에서 나온 조치다.",
+    "why_it_matters": "항공 안전 규제의 핵심 권한이 보잉에 반환된 것으로, 항공업계 공급망과 납품 일정에 직접적인 영향을 미칠 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 7.9292376076710465,
+    "published_at": "2026-07-17T21:22:53Z"
+  },
+  {
+    "id": "youtube-WcDBmbowpRs",
+    "section": "video",
+    "title_en": "구글의 월드모델을 따라잡은 오픈소스 모델 ㄷㄷ",
+    "title_ko": "구글 월드모델 수준에 도달한 오픈소스 모델 등장",
+    "url": "https://www.youtube.com/shorts/WcDBmbowpRs",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "구글의 월드모델과 견줄 만한 오픈소스 모델이 등장했다는 내용을 다루는 영상이다. 조코딩 채널에서 해당 모델의 주요 특징과 의미를 소개하고 있다. 영상 태그로 '지니3'가 언급되어 있어 관련 모델일 가능성이 있다.",
+    "why_it_matters": "독점 기업의 월드모델 기술을 오픈소스로 따라잡는 흐름은 AI 기술 민주화에 중요한 이정표가 될 수 있다.",
+    "tags": [
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7500363756613757,
+    "published_at": "2026-07-17T06:00:21Z"
+  },
+  {
+    "id": "youtube-6XX-yR3qomM",
+    "section": "video",
+    "title_en": "[LIVE] Solar Open Weight Day",
+    "title_ko": "[라이브] 솔라 오픈 웨이트 데이",
+    "url": "https://www.youtube.com/watch?v=6XX-yR3qomM",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "솔라(Solar) 오픈 웨이트 관련 라이브 방송이 진행되었다. 제공된 정보가 제한적이어서 구체적인 내용은 확인하기 어렵다.",
+    "why_it_matters": "오픈 웨이트 모델 공개 관련 행사로, AI 모델 접근성 확대에 관심 있는 개발자들이 주목할 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7279646164021164,
+    "published_at": "2026-07-17T02:17:52Z"
+  },
+  {
+    "id": "youtube-GlYgs6v2YfU",
+    "section": "video",
+    "title_en": "But what is cross-entropy? | Compression is Intelligence Part 2",
+    "title_ko": "교차 엔트로피란 무엇인가? | 압축과 지능 2부 (3Blue1Brown)",
+    "url": "https://www.youtube.com/watch?v=GlYgs6v2YfU",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "3Blue1Brown의 'Compression is Intelligence' 시리즈 2편으로, LLM 훈련에 사용되는 손실 함수인 교차 엔트로피의 개념과 수학적 원리를 다룬다. 최적 코드, 교차 엔트로피의 정의와 직관, LLM 사전 훈련에의 적용, KL 발산까지 단계적으로 설명한다. 지식 증류(distillation)와 이 손실 함수가 왜 최선인지에 대한 내용도 포함된다.",
+    "why_it_matters": "LLM 훈련의 핵심 손실 함수인 교차 엔트로피를 수학적으로 명확히 이해하고 싶은 개발자에게 필수적인 시각화 강의다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6424685846560847,
+    "published_at": "2026-07-16T11:56:04Z"
+  },
+  {
+    "id": "simon_willison-kimi-k3",
+    "section": "deepdive",
+    "title_en": "Quoting Kimi K3",
+    "title_ko": "Kimi K3, 시스템 프롬프트 유출 거부 후 재치 있는 한마디",
+    "url": "https://simonwillison.net/2026/Jul/17/kimi-k3/#atom-everything",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Kimi K3 모델이 시스템 프롬프트 유출 시도를 거부한 뒤 \"오늘 실제로 도움이 필요한 것이 있으신가요?\"라고 응답했다. Simon Willison이 이 답변을 인용하며 주목했다.",
+    "why_it_matters": "AI 모델이 시스템 프롬프트 보호와 동시에 자연스러운 대화 흐름을 유지하는 방식이 AI 퍼스낼리티 설계의 사례로 주목된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7960218253968254,
+    "published_at": "2026-07-17T13:43:53Z"
+  }
+]

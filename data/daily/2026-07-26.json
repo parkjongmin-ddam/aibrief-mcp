@@ -1,0 +1,370 @@
+[
+  {
+    "id": "hf-2607.21461",
+    "section": "papers",
+    "title_en": "AREX: Towards a Recursively Self-Improving Agent for Deep Research",
+    "title_ko": "AREX: 재귀적 자기개선 딥 리서치 에이전트",
+    "url": "https://huggingface.co/papers/2607.21461",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "AREX는 복잡한 다중 제약 조건을 만족하는 답변을 찾기 위해 재귀적 자기개선(RSI) 방식을 채택한 딥 리서치 에이전트 패밀리다. 내부 루프에서 증거를 수집해 임시 답변을 구성하고, 외부 루프에서 제약 조건별 검증을 통해 미해결 주장을 식별·개선하는 구조로 동작한다. 장기 학습의 희소 보상 문제를 완화하기 위해 결정적 증거 획득 및 오류 수정 단계를 강조하는 강화학습을 적용했으며, 4B 밀집 모델과 122B-A10B MoE 모델로 구현해 BrowseComp, HLE 등 여러 벤치마크에서 유사 규모 베이스라인을 크게 능가했다.",
+    "why_it_matters": "단순히 더 오래 검색하는 것을 넘어 중간 결과를 검증하며 스스로 개선하는 리서치 에이전트 패러다임을 제시해, 복잡한 멀티-제약 추론 작업의 자동화 가능성을 크게 높인다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.859812404361672,
+    "published_at": "2026-07-22T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.20145",
+    "section": "papers",
+    "title_en": "SLAI T-Rex: Full-Parameter Post-training of the DeepSeek-V4 Family on Ascend SuperPOD",
+    "title_ko": "SLAI T-Rex: Ascend SuperPOD에서 DeepSeek-V4 패밀리 전체 파라미터 후훈련",
+    "url": "https://huggingface.co/papers/2607.20145",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "조 단위 파라미터 MoE 모델의 전체 파라미터 후훈련(post-training)을 Ascend NPU SuperPOD에서 수행하기 위해 계층적 최적화 프레임워크 SLAI T-Rex를 개발했다. 모델 병렬화, 연산-통신 오케스트레이션, 커널 실행 최적화를 통해 오픈소스 베이스라인 대비 2.93배 향상된 34.22% MFU를 달성했다. 이 인프라를 기반으로 운영 연구(OR) 특화 CPT·SFT 파이프라인을 구축해 1만 개의 고품질 SFT 샘플을 생성했으며, 특화 모델은 제로샷 Pass@1 71.81%로 GPT-5.4-Mini를 약 4포인트 앞섰다.",
+    "why_it_matters": "GPU 없이 Ascend NPU만으로 조 단위 LLM 전체 파라미터 후훈련을 실용적으로 구현한 사례로, GPU 의존도를 낮출 대안 인프라 가능성을 입증한다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 5.04305126783455,
+    "published_at": "2026-07-21T20:00:00Z"
+  },
+  {
+    "id": "hf-2605.09635",
+    "section": "papers",
+    "title_en": "K12-KGraph: A Curriculum-Aligned Knowledge Graph for Benchmarking and Training Educational LLMs",
+    "title_ko": "K12-KGraph: 교육 LLM 벤치마킹을 위한 교육과정 정렬 지식 그래프",
+    "url": "https://huggingface.co/papers/2605.09635",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "K-12 교육에서 LLM의 교육과정 인지 능력(선수 지식 체계, 개념 분류, 시각적 근거 등)을 평가하는 기존 벤치마크가 부족한 문제를 해결하기 위해 K12-KGraph를 공개했다. 중국 인민교육출판사 수학·물리·화학·생물 교과서에서 추출한 지식 그래프를 기반으로 23,640개 문항의 K12-Bench와 7,335개 샘플의 파인튜닝 데이터셋 K12-Train을 구축했다. Gemini-3-Flash도 57%, Gemma-4-31B-IT는 46% 정확도에 그쳐 현 LLM의 교육과정 인지 능력 한계를 드러냈으며, K12-Train으로 파인튜닝 시 성능 격차가 줄어들었다. 그래프, 벤치마크, 학습 데이터, 구축 파이프라인 전체가 공개된다.",
+    "why_it_matters": "최신 최강 LLM조차 교육과정 구조 이해에서 절반 수준의 성능을 보여, 교육용 AI의 실질적 한계와 개선 방향을 명확히 제시한다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "오픈소스"
+    ],
+    "score": 5.02535169073515,
+    "published_at": "2026-07-22T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.20061",
+    "section": "papers",
+    "title_en": "ReferTrack: Referring Then Tracking for Embodied Visual Tracking",
+    "title_ko": "ReferTrack: 자연어로 목표를 지정하고 추적하는 체화형 비주얼 트래킹",
+    "url": "https://huggingface.co/papers/2607.20061",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "ReferTrack은 자연어로 설명된 특정 대상을 모바일 에이전트가 단일 전방 카메라만으로 지속 추적하는 '지정 후 추적(referring-then-tracking)' 패러다임을 제안합니다. 모델은 바운딩 박스 집합에서 목표를 먼저 선택한 뒤, 이 이미지 기반 결정을 조건으로 추적 웨이포인트를 디코딩합니다. 시간적 뷰포인트-박스 지시자(TVBI) 토큰으로 이전 바운딩 박스의 기하학적 정보를 시각 히스토리에 주입해 목표 움직임 단서를 보존합니다. EVT-Bench에서 단일 목표·방해물·모호성 시나리오에 각각 89.4%, 73.3%, 74.1%의 성공률로 단일 카메라 최고 성능을 달성했으며, 다족 로봇과 휴머노이드 로봇에서 실세계 전이도 검증했습니다.",
+    "why_it_matters": "단일 카메라만으로 자연어 기반 목표 추적을 멀티카메라 수준으로 끌어올려, 현실 로봇 배포 가능성을 크게 높였다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.912023005428146,
+    "published_at": "2026-07-21T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.21556",
+    "section": "papers",
+    "title_en": "Visual Contrastive Self-Distillation",
+    "title_ko": "시각적 대조 자기-증류(VCSD): 외부 교사 없는 온-폴리시 자기 증류",
+    "url": "https://huggingface.co/papers/2607.21556",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "VCSD는 외부 교사 모델, 특권 정답, 시각적 증거 없이 순수하게 입력 조건화만으로 온-폴리시 자기 증류를 수행하는 방법이다. EMA 교사가 원본 이미지와 내용이 제거된 이미지 각각에 대해 토큰 분포를 생성하고, 그 로그 확률 차이를 활용해 시각 정보에 특화된 학습 신호를 만든다. ViRL39K 데이터셋 기반 Qwen3-VL 실험에서 2B·4B·8B 모든 크기에서 기존 OPSD 대비 7개 벤치마크 종합 점수가 일관되게 향상되었다.",
+    "why_it_matters": "외부 교사·추가 추론 비용 없이 멀티모달 LLM의 시각적 추론 능력을 효과적으로 향상시킬 수 있어, 경량화 및 자기 개선 학습 연구에 중요한 방향을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.737669618283368,
+    "published_at": "2026-07-22T20:00:00Z"
+  },
+  {
+    "id": "github_trending-ComposioHQ/awesome-claude-skills",
+    "section": "releases",
+    "title_en": "ComposioHQ/awesome-claude-skills",
+    "title_ko": "Awesome Claude Skills: 1,000개+ Claude 스킬 모음집",
+    "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "ComposioHQ가 Claude AI 워크플로우를 확장하는 1,000개 이상의 프로덕션 레디 스킬과 플러그인을 큐레이션한 오픈소스 목록입니다. Claude Skills는 SKILL.md 파일 기반의 재사용 가능한 명령 패키지로, Claude Code·Claude.ai·API 등 다양한 플랫폼에서 동작합니다. 문서 처리, 개발 도구, CRM, 프로젝트 관리, 소셜 미디어 자동화 등 78개 SaaS 앱 연동 스킬이 포함되어 있으며, Composio MCP 게이트웨이를 통해 실제 앱 액션도 수행할 수 있습니다.",
+    "why_it_matters": "Claude 에이전트의 기능을 손쉽게 확장할 수 있는 표준화된 스킬 포맷과 방대한 커뮤니티 스킬 라이브러리를 한곳에서 제공해, 에이전트 기반 자동화 개발의 진입 장벽을 크게 낮춥니다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8664963624338624,
+    "published_at": "2026-07-26T01:34:16Z"
+  },
+  {
+    "id": "github_trending-anthropics/claude-cookbooks",
+    "section": "releases",
+    "title_en": "anthropics/claude-cookbooks",
+    "title_ko": "Anthropic 공식 Claude 쿡북 (예제 모음)",
+    "url": "https://github.com/anthropics/claude-cookbooks",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 공개한 Claude API 활용 예제 모음 저장소로, Python 기반의 복사 가능한 코드 스니펫을 제공한다. RAG, 분류, 요약, 툴 사용, 멀티모달 비전, 서브 에이전트 등 다양한 활용 패턴을 다룬다. Pinecone·Voyage AI 등 서드파티 연동 예제와 프롬프트 캐싱, JSON 모드, 자동 평가 등 고급 기법도 포함되어 있다.",
+    "why_it_matters": "Claude API를 처음 접하거나 실전 적용을 고려하는 개발자에게 바로 쓸 수 있는 공식 레퍼런스 코드를 제공한다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "에이전트"
+    ],
+    "score": 0.8664963624338624,
+    "published_at": "2026-07-26T01:34:16Z"
+  },
+  {
+    "id": "github_trending-Lordog/dive-into-llms",
+    "section": "releases",
+    "title_en": "Lordog/dive-into-llms",
+    "title_ko": "LLM 실습 교육 시리즈: 동수학대모형(Dive into LLMs)",
+    "url": "https://github.com/Lordog/dive-into-llms",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "상하이교통대학교 연구팀이 공개한 대형 언어 모델 실습 튜토리얼 시리즈입니다. 파인튜닝·배포, 프롬프트 학습, 수학 추론, GUI 에이전트, RLHF 정렬, 탈옥 공격 등 11개 챕터를 PPT·코드·설명서 형태로 제공합니다. 화웨이 Ascend와 협력한 '대형 모델 개발 전체 프로세스' 공익 강좌도 추가로 제공됩니다. 모든 콘텐츠는 무료 공개입니다.",
+    "why_it_matters": "LLM 입문부터 보안·에이전트까지 실습 중심으로 체계적으로 다루는 무료 오픈소스 한국 개발자 친화적 커리큘럼으로 활용 가능하다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8664963624338624,
+    "published_at": "2026-07-26T01:34:16Z"
+  },
+  {
+    "id": "github_trending-RyanCodrai/turbovec",
+    "section": "releases",
+    "title_en": "RyanCodrai/turbovec",
+    "title_ko": "turbovec: Google TurboQuant 기반 고속 벡터 인덱스 (Rust + Python)",
+    "url": "https://github.com/RyanCodrai/turbovec",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "turbovec는 Google Research의 TurboQuant 알고리즘을 기반으로 Rust로 구현된 벡터 인덱스로, Python 바인딩을 제공합니다. 1,000만 문서 코퍼스를 float32 기준 31GB에서 4GB로 압축하며, ARM에서 FAISS IndexPQFastScan 대비 10~19% 빠른 검색 속도를 보입니다. 별도 학습 단계 없이 온라인 벡터 추가가 가능하며, LangChain·LlamaIndex·Haystack 등 주요 RAG 프레임워크와 드롭인 통합을 지원합니다.",
+    "why_it_matters": "학습 없이 실시간 벡터 인덱싱이 가능하고 메모리를 8분의 1 수준으로 줄이면서 FAISS보다 빠른 검색을 제공해, 프라이버시·자원 효율이 중요한 로컬 RAG 환경에 즉시 적용 가능합니다.",
+    "tags": [
+      "RAG",
+      "오픈소스"
+    ],
+    "score": 0.8664963624338624,
+    "published_at": "2026-07-26T01:34:16Z"
+  },
+  {
+    "id": "github_trending-andrewyng/aisuite",
+    "section": "releases",
+    "title_en": "andrewyng/aisuite",
+    "title_ko": "aisuite: 여러 AI 제공자를 위한 통합 Python 라이브러리",
+    "url": "https://github.com/andrewyng/aisuite",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "aisuite는 OpenAI, Anthropic, Google, Ollama 등 다양한 LLM 제공자를 단일 API로 통합하는 경량 Python 라이브러리입니다. Chat Completions API와 Agents API(툴킷, MCP 지원 포함)를 제공하며, 제공자를 변경할 때 모델 문자열 하나만 바꾸면 됩니다. 이 라이브러리를 기반으로 데스크탑 AI 코워커인 OpenWorker도 개발되어 별도 저장소에서 공개됐습니다.",
+    "why_it_matters": "여러 LLM 제공자를 코드 변경 최소화로 자유롭게 교체할 수 있어, 멀티 LLM 에이전트 개발의 복잡성을 크게 줄여준다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8664963624338624,
+    "published_at": "2026-07-26T01:34:16Z"
+  },
+  {
+    "id": "openai_blog-health-in-chatgpt",
+    "section": "releases",
+    "title_en": "Launching Health in ChatGPT",
+    "title_ko": "ChatGPT 헬스 기능 출시: 의료 기록 및 Apple Health 연동",
+    "url": "https://openai.com/index/health-in-chatgpt",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 ChatGPT에 헬스 기능을 새롭게 출시했다. 미국 내 자격 요건을 갖춘 사용자는 의료 기록과 Apple Health 데이터를 안전하게 연동할 수 있다. 이를 통해 보다 개인화된 건강 인사이트를 얻고 자신의 건강 상태를 더 잘 이해할 수 있게 된다.",
+    "why_it_matters": "ChatGPT가 개인 의료 데이터와 연동되며 AI 기반 헬스케어 어시스턴트로 본격 진화하는 신호탄이 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.4285730820105821,
+    "published_at": "2026-07-23T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-building-ai-infrastructure-with-the-effingham-county-community",
+    "section": "releases",
+    "title_en": "Building AI infrastructure with the Effingham County community",
+    "title_ko": "OpenAI, 조지아주 에핑엄 카운티에 AI 인프라 구축 발표",
+    "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 조지아주 에핑엄 카운티에 '프로젝트 카멜리아'를 발표했다. 이 프로젝트는 책임 있는 에너지 사용, 지역사회 투자, 일자리 창출, 그리고 Codex 접근권 제공을 핵심 내용으로 한다. 지역 커뮤니티와의 협력을 통해 AI 인프라를 확장하는 것이 목표다.",
+    "why_it_matters": "OpenAI의 대규모 AI 인프라 투자가 지역사회 고용·에너지 정책과 연계되는 방식이 향후 AI 데이터센터 확장의 모델이 될 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.3630968915343915,
+    "published_at": "2026-07-22T13:00:00Z"
+  },
+  {
+    "id": "hn-49048034",
+    "section": "community",
+    "title_en": "Open-weight AI is having its Kubernetes moment",
+    "title_ko": "오픈 웨이트 AI, 쿠버네티스의 전철을 밟다",
+    "url": "https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "오픈 웨이트 AI가 과거 쿠버네티스가 컨테이너 오케스트레이션 시장을 재편했던 것처럼 AI 생태계에서 유사한 전환점을 맞이하고 있다는 주장이다. 제목만으로는 구체적인 내용을 확인하기 어려우나, 오픈 웨이트 모델의 확산과 표준화 흐름을 쿠버네티스 성장 궤적에 빗댄 분석으로 보인다.",
+    "why_it_matters": "오픈 웨이트 AI가 인프라 표준으로 자리잡을 가능성을 시사하며, 기업과 개발자의 기술 선택에 장기적 영향을 줄 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 9.529052431286441,
+    "published_at": "2026-07-25T14:49:49Z"
+  },
+  {
+    "id": "hn-49051361",
+    "section": "community",
+    "title_en": "The new rules of context engineering for Claude 5 generation models",
+    "title_ko": "Claude 5 세대 모델을 위한 새로운 컨텍스트 엔지니어링 규칙",
+    "url": "https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Claude 5 세대 모델에 맞춘 새로운 컨텍스트 엔지니어링 원칙을 다루는 글이다. 컨텍스트 엔지니어링은 LLM에 제공하는 정보와 구조를 최적화하는 기법으로, 모델 세대가 바뀜에 따라 접근 방식도 달라진다.",
+    "why_it_matters": "Claude 5 등 최신 LLM을 실무에 활용하는 개발자라면 달라진 컨텍스트 설계 원칙을 파악해야 성능을 극대화할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.547037465888803,
+    "published_at": "2026-07-25T20:42:35Z"
+  },
+  {
+    "id": "hn-49051947",
+    "section": "community",
+    "title_en": "GM Backs Sodium Ion Batteries for U.S. Grid Storage",
+    "title_ko": "GM, 미국 그리드 저장용 나트륨이온 배터리 지원",
+    "url": "https://spectrum.ieee.org/sodium-ion-battery-peak-energy",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GM이 미국 전력망 저장 용도로 나트륨이온 배터리를 지원한다고 밝혔다. 나트륨이온 배터리는 리튬이온 배터리의 대안으로 주목받고 있다.",
+    "why_it_matters": "GM의 나트륨이온 배터리 투자는 에너지 저장 기술 다양화와 리튬 의존도 감소에 중요한 신호탄이 될 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 7.843156309746296,
+    "published_at": "2026-07-25T21:48:22Z"
+  },
+  {
+    "id": "hn-49049693",
+    "section": "community",
+    "title_en": "Show HN: Brolly, a plain-text weather forecast site",
+    "title_ko": "Brolly: 텍스트 기반 날씨 예보 사이트",
+    "url": "https://brolly.sh/forecast/RWFP2qW8",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Brolly는 복잡한 UI 없이 순수 텍스트로 날씨 예보를 제공하는 사이트다. 간결하고 빠른 날씨 정보 확인을 목표로 한다.",
+    "why_it_matters": "AI와 직접적인 관련은 낮지만, 심플한 텍스트 기반 UX 설계 접근 방식으로 참고할 만하다.",
+    "tags": [],
+    "score": 7.834301624072673,
+    "published_at": "2026-07-25T17:34:34Z"
+  },
+  {
+    "id": "hn-49050859",
+    "section": "community",
+    "title_en": "LLM Usage in Debian: Three Proposals",
+    "title_ko": "데비안에서의 LLM 활용: 세 가지 제안",
+    "url": "https://www.debian.org/vote/2026/vote_002",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "데비안 프로젝트에서 LLM 활용 방안에 관한 세 가지 제안이 논의되고 있다. 구체적인 내용은 공개된 설명이 없어 상세 내용은 확인이 어렵다.",
+    "why_it_matters": "오픈소스 리눅스 배포판인 데비안이 LLM을 공식적으로 어떻게 수용할지 방향성을 결정하는 논의로, 오픈소스 커뮤니티의 AI 정책에 영향을 미칠 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 7.572085917407419,
+    "published_at": "2026-07-25T19:44:39Z"
+  },
+  {
+    "id": "youtube-6XPlmCDNLNc",
+    "section": "video",
+    "title_en": "The 64 sugar cubes puzzle",
+    "title_ko": "64개의 각설탕 퍼즐",
+    "url": "https://www.youtube.com/shorts/6XPlmCDNLNc",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "MoMath(미국 수학 박물관)에서 제공하는 월간 퍼즐 시리즈 중 하나로, 64개의 각설탕을 활용한 수학 퍼즐을 다루는 영상이다. 자세한 내용은 MoMath 공식 사이트에서 확인할 수 있다.",
+    "why_it_matters": "AI와 직접적인 관련은 없으나, 수학적 사고력과 문제 해결 능력을 키우는 데 도움이 되는 퍼즐 콘텐츠다.",
+    "tags": [],
+    "score": 0.661276455026455,
+    "published_at": "2026-07-24T15:05:39Z"
+  },
+  {
+    "id": "youtube-N6SeR4BhwqQ",
+    "section": "video",
+    "title_en": "로고들이 다 이상하게 보이는 저주",
+    "title_ko": "로고들이 다 이상하게 보이는 저주",
+    "url": "https://www.youtube.com/shorts/N6SeR4BhwqQ",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널의 AI 관련 콘텐츠로, 로고가 이상하게 보이는 현상을 주제로 다루고 있다. 구체적인 내용은 영상을 통해 확인할 수 있다.",
+    "why_it_matters": "AI와 시각 인식의 흥미로운 현상을 다루는 콘텐츠로, 구체적인 정보가 부족해 추가 판단이 어렵다.",
+    "tags": [],
+    "score": 0.625150462962963,
+    "published_at": "2026-07-24T09:01:30Z"
+  },
+  {
+    "id": "youtube-11EZFKPCt5A",
+    "section": "video",
+    "title_en": "중국에 등장한 현실판 '리얼 스틸'",
+    "title_ko": "중국에 등장한 현실판 '리얼 스틸' 휴머노이드 격투기",
+    "url": "https://www.youtube.com/shorts/11EZFKPCt5A",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "중국에서 영화 '리얼 스틸'을 연상시키는 휴머노이드 로봇 격투 장면이 등장해 화제가 되고 있다. 조코딩 채널에서 해당 영상을 소개하며 AI 및 로보틱스 기술의 발전을 조명했다.",
+    "why_it_matters": "휴머노이드 로봇의 실전 격투 구현은 AI와 로보틱스 기술이 공상과학 수준에 근접했음을 보여주는 상징적 사례다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.48220568783068785,
+    "published_at": "2026-07-23T09:00:37Z"
+  },
+  {
+    "id": "simon_willison-ruff",
+    "section": "deepdive",
+    "title_en": "Ruff v0.16.0",
+    "title_ko": "Ruff v0.16.0 출시 — 기본 린트 규칙 59개→413개로 대폭 확대",
+    "url": "https://simonwillison.net/2026/Jul/25/ruff/#atom-everything",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Astral이 Python 린터 Ruff v0.16.0을 7월 23일 릴리스하며 기본 활성화 규칙 수를 기존 59개에서 413개로 크게 늘렸다. 전체 규칙 수도 708개에서 968개로 증가했으며, 구문 오류나 즉각적인 런타임 오류를 잡는 규칙들이 이제 기본으로 포함된다. Simon Willison은 Datasette, sqlite-utils, LLM 등 자신의 주요 프로젝트에 적용한 결과 수백~1,600여 건의 경고가 검출됐으며, `--fix --unsafe-fixes` 옵션과 AI 코딩 에이전트(Codex, Claude Code)를 활용해 대부분을 자동 수정했다고 밝혔다.",
+    "why_it_matters": "버전 고정 없이 Ruff를 사용하는 프로젝트는 CI가 즉시 깨질 수 있으므로, 업그레이드 전 의존성 핀 여부와 신규 규칙 영향도 확인이 필요하다.",
+    "tags": [
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 0.8496130952380953,
+    "published_at": "2026-07-25T22:44:05Z"
+  }
+]
