@@ -3,13 +3,13 @@
     "id": "hf-2607.21461",
     "section": "papers",
     "title_en": "AREX: Towards a Recursively Self-Improving Agent for Deep Research",
-    "title_ko": "AREX: 재귀적 자기개선 기반 심층 리서치 에이전트",
+    "title_ko": "AREX: 재귀적 자기 개선 방식의 심층 리서치 에이전트",
     "url": "https://huggingface.co/papers/2607.21461",
     "sources": [
       "hf"
     ],
-    "summary_ko": "AREX는 복잡한 제약 조건을 만족하는 답변을 찾기 위해 내부 리서치 루프와 외부 자기개선 루프를 번갈아 실행하는 심층 리서치 에이전트 패밀리다. 중간 결과를 제약 조건별로 검증하고 미해결 주장을 식별해 후속 리서치를 수행하는 방식으로 재귀적으로 답변을 개선한다. 4B 밀집 모델과 122B-A10B MoE 모델로 구현되었으며, BrowseComp·WideSearch·HLE 등 다양한 벤치마크에서 동급 규모 베이스라인을 크게 앞서고 훨씬 더 많은 활성 파라미터를 사용하는 모델과도 경쟁력 있는 성능을 보였다.",
-    "why_it_matters": "발견-검증 비대칭 문제를 재귀적 자기개선으로 해결하여, 소규모 모델로도 대형 모델 수준의 심층 리서치 성능을 달성할 수 있음을 보여준다.",
+    "summary_ko": "AREX는 복잡한 멀티 제약 조건 연구 문제를 해결하기 위한 재귀적 자기 개선(RSI) 에이전트 패밀리다. 내부 루프에서 증거를 수집하고 임시 답변을 구성한 뒤, 외부 루프에서 제약 조건별 검증과 미해결 주장에 대한 후속 연구를 수행한다. 4B 밀집 모델과 122B-A10B MoE 모델로 구현되었으며, BrowseComp·WideSearch·HLE 등 다양한 벤치마크에서 동급 규모 모델을 크게 앞서고 훨씬 큰 모델과도 경쟁력 있는 성능을 보인다.",
+    "why_it_matters": "발견-검증 비대칭 문제를 재귀적 자기 개선 루프로 해결해, 소규모 모델로도 복잡한 장기 연구 태스크를 수행할 수 있음을 보여준다.",
     "tags": [
       "에이전트",
       "LLM"
@@ -21,13 +21,13 @@
     "id": "hf-2607.20145",
     "section": "papers",
     "title_en": "SLAI T-Rex: Full-Parameter Post-training of the DeepSeek-V4 Family on Ascend SuperPOD",
-    "title_ko": "SLAI T-Rex: Ascend SuperPOD에서 DeepSeek-V4 패밀리 전체 파라미터 포스트 트레이닝",
+    "title_ko": "SLAI T-Rex: Ascend SuperPOD에서 DeepSeek-V4 패밀리 전체 파라미터 사후 학습",
     "url": "https://huggingface.co/papers/2607.20145",
     "sources": [
       "hf"
     ],
-    "summary_ko": "조 단위 파라미터 규모의 MoE 모델을 GPU가 아닌 Ascend NPU SuperPOD에서 전체 파라미터 포스트 트레이닝한 최적화 사례를 소개합니다. 모델 병렬성, 통신-연산 오케스트레이션, 저수준 커널 실행을 아우르는 계층적 최적화 프레임워크를 통해 MFU 34.22%를 달성했으며, 오픈소스 베이스라인 대비 2.93배 성능 향상을 이뤘습니다. 이를 기반으로 운영 리서치(OR) 특화 CPT·SFT 파이프라인을 구축했으며, 1만 개의 고품질 SFT 샘플로 파인튜닝한 모델이 제로샷 Pass@1 71.81%를 기록해 GPT-5.4-Mini를 약 4포인트 앞질렀습니다.",
-    "why_it_matters": "GPU 클러스터 중심 생태계에서 벗어나 Ascend NPU 기반으로 조 단위 LLM 포스트 트레이닝의 실용성을 검증했다는 점에서 인프라 다양화 측면의 중요한 선례가 됩니다.",
+    "summary_ko": "화웨이 Ascend NPU SuperPOD 인프라에서 조 단위 파라미터 MoE 모델의 전체 파라미터 사후 학습(post-training)을 최적화한 프레임워크 'SLAI T-Rex'를 소개한다. 계층적 최적화를 통해 오픈소스 기준 대비 2.93배 향상된 34.22% MFU(Model FLOPs Utilization)를 달성했다. 또한 운영 연구(OR) 특화 CPT·SFT 파이프라인을 구축해 DeepSeek-V4-Flash 기반 모델이 제로샷 Pass@1 71.81%를 기록, GPT-4.1-Mini 및 기본 모델을 각각 3.98·11.27 퍼센트포인트 상회했다.",
+    "why_it_matters": "GPU 없이 Ascend NPU만으로 조 단위 LLM 사후 학습의 풀스택 최적화를 실증해, GPU 종속 탈피 및 도메인 특화 대형 모델 개발 가능성을 보여준다.",
     "tags": [
       "LLM",
       "인프라"
@@ -39,13 +39,13 @@
     "id": "hf-2605.09635",
     "section": "papers",
     "title_en": "K12-KGraph: A Curriculum-Aligned Knowledge Graph for Benchmarking and Training Educational LLMs",
-    "title_ko": "K12-KGraph: 교육용 LLM 벤치마킹·훈련을 위한 교육과정 정렬 지식 그래프",
+    "title_ko": "K12-KGraph: 교육용 LLM 벤치마크 및 훈련을 위한 교육과정 기반 지식 그래프",
     "url": "https://huggingface.co/papers/2605.09635",
     "sources": [
       "hf"
     ],
-    "summary_ko": "K12-KGraph는 중국 인민교육출판사의 수학·물리·화학·생물 교과서에서 추출한 교육과정 정렬 지식 그래프로, 9가지 노드 유형과 14가지 관계 유형을 포함한다. 이를 기반으로 23,640개 문항의 벤치마크(K12-Bench)와 7,335개 샘플의 파인튜닝 데이터셋(K12-Train)을 구축했다. K12-Bench에서 Gemini-3-Flash는 정확도 57%, Gemma-4-31B-IT는 46%에 그쳐 현재 LLM의 교육과정 인지 능력이 부족함을 확인했다. 도메인 특화 학습을 통해 성능 격차를 줄일 수 있으며, 텍스트와 시각적 감독 학습이 상호 보완적임을 실험으로 입증했다.",
-    "why_it_matters": "기존 시험 문제 풀이 위주 벤치마크를 넘어 교육과정 구조·시각적 이해까지 평가하는 새로운 기준을 제시해, 교육용 LLM 연구의 방향을 확장한다.",
+    "summary_ko": "K12-KGraph는 중국 인민교육출판사의 수학·물리·화학·생물 교과서에서 추출한 교육과정 정렬 지식 그래프로, 9가지 노드 타입과 14가지 관계 타입을 포함한다. 이를 기반으로 23,640개 문항의 벤치마크 K12-Bench와 7,335개 샘플의 파인튜닝 데이터셋 K12-Train을 구축했다. K12-Bench에서 Gemini-3-Flash는 57%, Gemma-4-31B-IT는 46%의 정확도만 기록해 현재 LLM의 교육과정 인지 능력이 부족함을 확인했다. 도메인 특화 학습을 통해 이 격차를 줄일 수 있으며, 텍스트와 비주얼 감독 학습이 상호 보완적임을 실험으로 입증했다.",
+    "why_it_matters": "기존 시험 문항 풀이 중심의 교육 벤치마크를 넘어, 교육과정 구조와 시각적 표현 이해라는 새로운 평가 기준을 제시해 교육용 LLM 개발 방향을 바꿀 수 있다.",
     "tags": [
       "LLM",
       "RAG"
@@ -57,13 +57,13 @@
     "id": "hf-2607.20061",
     "section": "papers",
     "title_en": "ReferTrack: Referring Then Tracking for Embodied Visual Tracking",
-    "title_ko": "ReferTrack: 자연어 기반 구체화된 시각 추적 패러다임",
+    "title_ko": "ReferTrack: 자연어 설명 기반 구현형 시각 추적 패러다임",
     "url": "https://huggingface.co/papers/2607.20061",
     "sources": [
       "hf"
     ],
-    "summary_ko": "ReferTrack은 자연어로 설명된 특정 대상을 모바일 에이전트가 단일 전방 카메라만으로 지속 추적하는 'referring-then-tracking' 패러다임을 제안합니다. 모델은 인덱싱된 바운딩 박스 집합에서 대상을 먼저 선택한 뒤, 이미지 기반 결정에 조건화된 추적 웨이포인트를 디코딩합니다. 시간적 뷰포인트-바운딩박스 인디케이터(TVBI) 토큰으로 이전 선택 박스의 기하학적 특징을 주입해 타겟 움직임 단서를 보존하며, EVT-Bench에서 단일 타겟·방해·모호성 추적 각각 89.4%, 73.3%, 74.1%의 성공률로 최고 성능을 달성했습니다. 족형 및 휴머노이드 로봇에서의 실제 배포로 sim-to-real 전이 능력도 검증되었습니다.",
-    "why_it_matters": "단일 카메라와 자연어만으로 다중 카메라 기준선에 필적하는 시각 추적을 구현해, 실제 로봇 배포 가능성을 크게 높인 점이 중요합니다.",
+    "summary_ko": "ReferTrack은 자연어로 설명된 특정 대상을 모바일 에이전트가 단일 전방 카메라만으로 연속 추적하는 'referring-then-tracking' 패러다임을 제안합니다. 모델은 인덱싱된 바운딩 박스 집합에서 대상을 먼저 선택한 뒤, 해당 이미지 기반 결정을 조건으로 추적 웨이포인트를 디코딩합니다. 슬라이딩 윈도우 큐와 TVBI 토큰으로 시간적 움직임 단서를 유지하며, EVT-Bench에서 단일 뷰 기준 최고 성능(단일 대상 89.4%, 방해 요소 73.3%, 모호성 74.1%)을 달성했습니다. 족형 및 휴머노이드 로봇 실세계 배포를 통해 시뮬레이션-실환경 전이 능력도 검증되었습니다.",
+    "why_it_matters": "단일 카메라만으로 다중 카메라 기준선에 필적하는 자연어 기반 시각 추적을 실현해, 실용적인 구현형 로봇 응용의 가능성을 높인다.",
     "tags": [
       "에이전트",
       "LLM"
@@ -75,14 +75,14 @@
     "id": "hf-2607.21556",
     "section": "papers",
     "title_en": "Visual Contrastive Self-Distillation",
-    "title_ko": "시각적 대조 자기-증류(VCSD): 외부 교사 없는 온폴리시 자기증류",
+    "title_ko": "시각적 대조 자기 증류(VCSD): 외부 교사 없는 온-폴리시 자기 증류",
     "url": "https://huggingface.co/papers/2607.21556",
     "sources": [
       "hf",
       "arxiv"
     ],
-    "summary_ko": "VCSD는 외부 교사, 정답 레이블, 시각적 증거 없이도 이미지 콘텐츠 제거를 자기증류 신호로 활용하는 방법론이다. EMA 교사가 원본 이미지와 콘텐츠 지운 이미지 각각에 대해 다음 토큰 분포를 생성하고, 그 로그 확률 차이를 통해 시각 정보에 민감한 토큰을 강조한다. ViRL39K 데이터셋으로 Qwen3-VL 모델에 적용한 결과, 7개 벤치마크 집계 기준 2B에서 62.27→67.04%, 8B에서 72.51→76.26%로 기존 OPSD 대비 일관된 성능 향상을 달성했다.",
-    "why_it_matters": "외부 교사·추가 추론 비용 없이 멀티모달 LLM의 시각 이해 능력을 높일 수 있어, 자원 효율적인 VLM 학습 파이프라인 구축에 직접 활용 가능하다.",
+    "summary_ko": "VCSD는 외부 교사 모델이나 특권 정답 없이 이미지 콘텐츠 제거를 자기 증류 신호로 활용하는 방법론이다. EMA 교사가 원본 이미지와 콘텐츠 제거 이미지 각각에 대해 토큰 분포를 생성하고, 그 차이를 활용해 시각적 정보에 민감한 후보 토큰을 강조한다. ViRL39K 데이터셋으로 Qwen3-VL 모델에 적용한 결과, 2B·4B·8B 파라미터 규모에서 7개 벤치마크 평균 점수가 각각 62.27%→67.04%, 71.30%→73.16%, 72.51%→76.26%로 향상되었다.",
+    "why_it_matters": "추가 추론 비용이나 외부 교사 없이도 멀티모달 LLM의 시각 이해 성능을 일관되게 끌어올릴 수 있어 실용적 가치가 높다.",
     "tags": [
       "LLM"
     ],
@@ -93,13 +93,13 @@
     "id": "github_trending-ComposioHQ/awesome-claude-skills",
     "section": "releases",
     "title_en": "ComposioHQ/awesome-claude-skills",
-    "title_ko": "Awesome Claude Skills: Claude AI 워크플로우 확장을 위한 큐레이션 리소스 모음",
+    "title_ko": "awesome-claude-skills: 1,000개 이상의 Claude 스킬 모음집",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
     "sources": [
       "github_trending"
     ],
-    "summary_ko": "ComposioHQ가 공개한 'Awesome Claude Skills'는 Claude AI의 워크플로우를 확장하는 1,000개 이상의 스킬과 플러그인을 정리한 큐레이션 리포지토리다. Claude Skills는 SKILL.md 파일 기반의 재사용 가능한 지침 패키지로, Anthropic이 도입한 오픈 표준이며 Claude Code, Claude.ai, OpenAI Codex, Cursor 등 다양한 AI 에이전트 플랫폼에서 지원된다. 문서 처리, 개발 도구, 데이터 분석, 비즈니스 자동화 등 다양한 카테고리와 함께 Gmail, Slack, GitHub, Salesforce 등 78개 이상의 SaaS 앱 자동화 스킬이 포함되어 있다.",
-    "why_it_matters": "Claude 에이전트의 기능을 손쉽게 확장할 수 있는 표준화된 스킬 생태계가 형성되고 있어, 개발자들이 복잡한 워크플로우를 빠르게 구축하고 공유할 수 있는 기반이 마련되고 있다.",
+    "summary_ko": "ComposioHQ가 Claude AI 워크플로우 커스터마이징을 위한 1,000개 이상의 실전용 Claude Skills와 플러그인을 정리한 오픈소스 모음집을 공개했다. Claude Skills는 SKILL.md 파일 기반의 재사용 가능한 지시 패키지로, Claude.ai·Claude Code·API는 물론 Cursor·Codex·Gemini CLI 등 다양한 AI 에이전트 플랫폼에서 동작한다. 문서 처리, 개발 도구, 데이터 분석, 비즈니스 자동화 등 카테고리별로 분류되어 있으며, Composio MCP Gateway를 통해 78개 SaaS 앱 자동화 스킬도 포함되어 있다.",
+    "why_it_matters": "Claude 에이전트의 행동 패턴을 표준화된 스킬 형식으로 공유·재사용할 수 있어, 에이전트 워크플로우 구축의 진입 장벽을 대폭 낮춘다.",
     "tags": [
       "에이전트",
       "LLM",
@@ -112,13 +112,13 @@
     "id": "github_trending-anthropics/claude-cookbooks",
     "section": "releases",
     "title_en": "anthropics/claude-cookbooks",
-    "title_ko": "Anthropic 공식 Claude 쿡북(레시피 모음)",
+    "title_ko": "Anthropic 공식 Claude 쿡북 (레시피 모음)",
     "url": "https://github.com/anthropics/claude-cookbooks",
     "sources": [
       "github_trending"
     ],
-    "summary_ko": "Anthropic이 개발자를 위해 Claude API 활용 예제를 담은 공식 쿡북 저장소입니다. RAG, 툴 사용, 멀티모달 비전, 서브 에이전트, 프롬프트 캐싱 등 다양한 주제의 Jupyter 노트북과 가이드를 제공합니다. 코드 예제는 주로 Python으로 작성되어 있으며 복사해서 바로 프로젝트에 적용할 수 있습니다.",
-    "why_it_matters": "Claude API를 처음 사용하거나 고급 기능을 탐색하는 개발자에게 공식 레퍼런스 코드를 한 곳에서 제공하는 실용적인 출발점입니다.",
+    "summary_ko": "Anthropic이 공개한 Claude API 활용 예제 모음 저장소로, 분류·RAG·요약·툴 사용·멀티모달·서브에이전트 등 다양한 기능을 Jupyter 노트북 형태로 제공한다. 코드 스니펫은 주로 Python으로 작성되어 있으며 바로 복사해 프로젝트에 통합할 수 있다. Pinecone, Wikipedia, Voyage AI 등 서드파티 연동 예제도 포함되어 있다.",
+    "why_it_matters": "Claude API를 처음 사용하거나 고급 기법을 익히려는 개발자에게 공식 레퍼런스 구현체를 제공해 개발 진입 장벽을 낮춘다.",
     "tags": [
       "LLM",
       "RAG",
@@ -131,13 +131,13 @@
     "id": "github_trending-Lordog/dive-into-llms",
     "section": "releases",
     "title_en": "Lordog/dive-into-llms",
-    "title_ko": "대규모 언어모델 실습 교육 튜토리얼 'Dive into LLMs'",
+    "title_ko": "LLM 실습 튜토리얼: 동수학대모형(Dive into LLMs)",
     "url": "https://github.com/Lordog/dive-into-llms",
     "sources": [
       "github_trending"
     ],
-    "summary_ko": "상하이교통대학교 연구팀이 공개한 LLM 입문 실습 튜토리얼로, 미세조정·배포, 프롬프트·사고사슬, 수학 추론, 모델 워터마크, 탈옥 공격, GUI 에이전트, RLHF 안전 정렬 등 11개 챕터를 무료로 제공합니다. 각 챕터는 강의자료(PPT), 실습 매뉴얼, Jupyter 노트북 스크립트로 구성되어 있습니다. 또한 화웨이 Ascend(승등) 커뮤니티와 협력하여 국산 하드웨어 기반의 '대규모 언어모델 개발 전 과정' 공익 교육과정도 추가로 공개했습니다.",
-    "why_it_matters": "LLM 이론부터 보안·에이전트까지 아우르는 무료 한 권짜리 실습 커리큘럼으로, 연구자·개발자 모두 빠르게 LLM 실전 역량을 쌓을 수 있습니다.",
+    "summary_ko": "상하이교통대학교 연구팀이 개발한 대형 언어 모델(LLM) 입문 실습 튜토리얼 시리즈입니다. 미세조정·배포, 프롬프트 엔지니어링, 수학 추론, GUI 에이전트, 탈옥 공격, RLHF 정렬 등 11개 챕터로 구성되어 있으며 강의자료·실습 노트북·영상을 모두 무료로 제공합니다. 최근 화웨이 어센드(Ascend)와 협력하여 국산 하드웨어 기반의 《대모형 개발 전과정》 공익 교육과정도 추가되었습니다.",
+    "why_it_matters": "LLM 이론부터 보안(탈옥·워터마크·은닉술)·에이전트까지 폭넓게 다루는 무료 실습 교재로, 중국어 자료이지만 주피터 노트북 코드로 직접 실습 가능해 한국 개발자에게도 실용적입니다.",
     "tags": [
       "LLM",
       "에이전트",
@@ -150,17 +150,16 @@
     "id": "github_trending-RyanCodrai/turbovec",
     "section": "releases",
     "title_en": "RyanCodrai/turbovec",
-    "title_ko": "turbovec: Google TurboQuant 기반 고성능 벡터 인덱스 (Rust + Python)",
+    "title_ko": "turbovec: Google TurboQuant 기반 Rust 벡터 인덱스 (Python 바인딩 지원)",
     "url": "https://github.com/RyanCodrai/turbovec",
     "sources": [
       "github_trending"
     ],
-    "summary_ko": "turbovec는 Google Research의 TurboQuant 알고리즘을 기반으로 Rust로 작성된 벡터 인덱스 라이브러리로, Python 바인딩을 제공합니다. 1000만 건 문서 기준 float32 대비 약 8배(31GB → 4GB) 메모리 절감을 실현하며, ARM 환경에서 FAISS IndexPQFastScan 대비 10~19% 빠른 SIMD 검색 성능을 보입니다. 별도 학습 단계 없이 온라인 인제스트를 지원하며, LangChain·LlamaIndex·Haystack 등 주요 AI 프레임워크와의 드롭인 교체 통합도 제공합니다.",
-    "why_it_matters": "프라이버시·메모리·지연 시간이 중요한 로컬 RAG 파이프라인 구축 시 FAISS를 대체할 수 있는 오픈소스 고성능 벡터 인덱스 옵션이 등장했다는 점에서 주목할 만하다.",
+    "summary_ko": "turbovec은 Google Research의 TurboQuant 알고리즘을 기반으로 Rust로 구현된 벡터 인덱스로, Python 바인딩을 제공합니다. 1,000만 건 문서 기준 float32 대비 메모리를 31GB에서 4GB로 줄이며, ARM 환경에서 FAISS IndexPQFastScan 대비 10~19% 빠른 검색 속도를 보입니다. 별도 학습 단계 없이 온라인 인제스트를 지원하며, LangChain·LlamaIndex·Haystack 등 주요 RAG 프레임워크와 드롭인 교체가 가능합니다.",
+    "why_it_matters": "메모리·지연시간·프라이버시가 중요한 로컬 RAG 스택에서 FAISS를 대체할 수 있는 오픈소스 고성능 벡터 인덱스 옵션이 등장했다.",
     "tags": [
       "RAG",
-      "오픈소스",
-      "인프라"
+      "오픈소스"
     ],
     "score": 0.7236392195767196,
     "published_at": "2026-07-26T01:34:16Z"
@@ -169,13 +168,13 @@
     "id": "github_trending-andrewyng/aisuite",
     "section": "releases",
     "title_en": "andrewyng/aisuite",
-    "title_ko": "aisuite: 여러 AI 제공자를 위한 통합 인터페이스 라이브러리",
+    "title_ko": "aisuite: 여러 생성형 AI 공급자를 위한 통합 인터페이스",
     "url": "https://github.com/andrewyng/aisuite",
     "sources": [
       "github_trending"
     ],
-    "summary_ko": "aisuite는 OpenAI, Anthropic, Google, Ollama 등 다양한 LLM 제공자를 단일 API로 통합하는 경량 Python 라이브러리입니다. 채팅 완성 API와 에이전트 API 두 계층으로 구성되며, MCP 서버 연동 및 툴킷(파일, git, 셸)도 지원합니다. 이 라이브러리를 기반으로 한 데스크톱 AI 코워커 OpenWorker도 별도 저장소에서 제공됩니다.",
-    "why_it_matters": "제공자 문자열 하나만 바꿔 여러 LLM을 교체할 수 있어 멀티 프로바이더 에이전트 개발 비용을 크게 줄여준다.",
+    "summary_ko": "aisuite는 OpenAI, Anthropic, Google, Mistral, Ollama 등 다양한 LLM 공급자를 단일 API로 통합하는 경량 Python 라이브러리입니다. Chat Completions API와 Agents API 두 계층으로 구성되며, MCP 서버 연동, 툴킷(파일·git·셸), 툴 정책 및 상태 저장소 등 프로덕션 수준의 에이전트 기능을 제공합니다. 또한 이 라이브러리를 기반으로 만들어진 데스크톱 AI 코워커 앱 OpenWorker도 별도 저장소에서 공개되었습니다.",
+    "why_it_matters": "공급자 교체가 문자열 하나 변경으로 끝나는 통합 LLM 인터페이스로, 멀티 프로바이더 AI 앱 개발 생산성을 크게 높일 수 있다.",
     "tags": [
       "LLM",
       "에이전트",
@@ -188,13 +187,13 @@
     "id": "openai_blog-health-in-chatgpt",
     "section": "releases",
     "title_en": "Launching Health in ChatGPT",
-    "title_ko": "ChatGPT에 헬스 기능 출시",
+    "title_ko": "ChatGPT에 헬스 기능 출시 – 의료 기록·Apple Health 연동",
     "url": "https://openai.com/index/health-in-chatgpt",
     "sources": [
       "openai_blog"
     ],
-    "summary_ko": "OpenAI가 ChatGPT에 'Health' 기능을 출시했다. 미국 내 적격 사용자는 의료 기록과 Apple Health 데이터를 안전하게 연동하여 보다 개인화된 건강 인사이트를 받을 수 있다. 이를 통해 사용자는 자신의 건강 상태를 더 잘 이해할 수 있게 된다.",
-    "why_it_matters": "ChatGPT가 개인 의료 데이터와 연동되면서 AI 기반 건강 관리 어시스턴트로의 진화를 본격화한다.",
+    "summary_ko": "OpenAI가 ChatGPT에 'Health' 기능을 출시했다. 미국 내 자격을 갖춘 사용자는 의료 기록과 Apple Health 데이터를 안전하게 연결하여 보다 개인화된 건강 정보와 인사이트를 얻을 수 있다.",
+    "why_it_matters": "LLM이 개인 의료 데이터와 직접 통합되는 첫 사례로, AI 헬스케어 서비스의 실용화를 가속화할 수 있다.",
     "tags": [
       "LLM"
     ],
@@ -205,13 +204,13 @@
     "id": "openai_blog-building-ai-infrastructure-with-the-effingham-county-community",
     "section": "releases",
     "title_en": "Building AI infrastructure with the Effingham County community",
-    "title_ko": "OpenAI, 조지아주 에핑엄 카운티에 AI 인프라 프로젝트 발표",
+    "title_ko": "OpenAI, 조지아주 에핑엄 카운티에 AI 인프라 프로젝트 '카멜리아' 발표",
     "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
     "sources": [
       "openai_blog"
     ],
-    "summary_ko": "OpenAI가 조지아주 에핑엄 카운티에서 '프로젝트 카멜리아'를 발표했다. 이 프로젝트는 책임감 있는 에너지 사용, 지역사회 투자, 일자리 창출, 그리고 Codex 접근권 제공을 핵심 약속으로 포함한다. OpenAI는 지역 커뮤니티와의 협력을 통해 AI 인프라를 구축할 계획이다.",
-    "why_it_matters": "OpenAI의 대규모 AI 인프라 투자가 지역 고용과 에너지 정책을 함께 고려한 사례로, 향후 AI 데이터센터 확장 전략의 방향을 보여준다.",
+    "summary_ko": "OpenAI가 조지아주 에핑엄 카운티와 함께 '프로젝트 카멜리아'를 발표했다. 이 프로젝트는 책임감 있는 에너지 사용, 지역 사회 투자, 일자리 창출, 그리고 Codex에 대한 접근 제공을 핵심 약속으로 포함한다.",
+    "why_it_matters": "OpenAI가 지역 사회와의 협력을 통해 AI 인프라를 확장하는 구체적 행보를 보여주며, 에너지 및 고용 측면에서의 책임 있는 AI 개발 모델을 제시한다.",
     "tags": [
       "인프라"
     ],
@@ -222,17 +221,17 @@
     "id": "hn-49055169",
     "section": "community",
     "title_en": "GrapheneOS protections against data extraction from locked devices",
-    "title_ko": "GrapheneOS, 잠긴 기기에서의 데이터 추출 방지 기능 소개",
+    "title_ko": "GrapheneOS, 잠긴 기기에서 데이터 추출 방지 보호 기능 소개",
     "url": "https://discuss.grapheneos.org/d/40700-grapheneos-protections-against-data-extraction-from-locked-devices",
     "sources": [
       "hn"
     ],
-    "summary_ko": "GrapheneOS가 잠긴 상태의 기기에서 데이터를 추출하려는 시도를 막는 보안 기능을 다루고 있다. 구체적인 설명은 제공되지 않아 제목 기반으로만 요약한다.",
-    "why_it_matters": "모바일 기기 보안에 관심 있는 개발자에게 GrapheneOS의 데이터 보호 접근 방식은 참고할 만하다.",
+    "summary_ko": "GrapheneOS가 잠긴 기기에서 데이터를 추출하려는 시도를 막는 보안 보호 기능을 다루는 내용이다. 구체적인 설명은 제공되지 않았으나, 제목을 기반으로 기기 잠금 상태에서의 데이터 보안 강화가 핵심 주제임을 알 수 있다.",
+    "why_it_matters": "프라이버시 중심 모바일 OS인 GrapheneOS의 물리적 보안 기능은 보안에 민감한 개발자 및 사용자에게 중요한 참고 사항이다.",
     "tags": [
       "인프라"
     ],
-    "score": 9.6034516824085,
+    "score": 9.633975546378464,
     "published_at": "2026-07-26T05:57:22Z"
   },
   {
@@ -244,67 +243,67 @@
     "sources": [
       "hn"
     ],
-    "summary_ko": "세부 사항을 타인이나 시스템에 위임하는 것이 반드시 역량 강화를 의미하지는 않는다는 주장을 담은 글이다. 제목만으로는 구체적인 내용을 파악하기 어렵지만, 자동화나 위임이 오히려 주체성을 약화시킬 수 있다는 관점을 제시하는 것으로 보인다.",
-    "why_it_matters": "AI 등 자동화 도구에 판단과 세부 사항을 맡기는 흐름에 대한 비판적 시각을 제공한다.",
+    "summary_ko": "AI나 자동화 도구에 세부 작업을 맡기는 것이 진정한 역량 강화라고 보기 어렵다는 주장을 담은 글이다. 제목만으로 볼 때, 핵심 작업의 통제권을 잃는 것은 오히려 역량을 약화시킬 수 있다는 시각을 제시한다.",
+    "why_it_matters": "AI 도구에 점점 더 많은 것을 위임하는 개발자 문화에 대한 비판적 시각을 제공한다.",
     "tags": [
-      "에이전트"
+      "LLM"
     ],
-    "score": 8.313222387086302,
+    "score": 8.467371066917561,
     "published_at": "2026-07-26T17:58:02Z"
   },
   {
     "id": "hn-49057877",
     "section": "community",
     "title_en": "The New AI Superpowers: Focus and Followthrough",
-    "title_ko": "새로운 AI 초강점: 집중력과 실행력",
+    "title_ko": "새로운 AI 초능력: 집중력과 실행력",
     "url": "https://www.rickmanelius.com/p/the-new-ai-superpowers-focus-and",
     "sources": [
       "hn"
     ],
-    "summary_ko": "AI의 새로운 핵심 역량으로 '집중력'과 '실행력(팔로우스루)'이 주목받고 있다는 내용을 다루고 있다. 설명이 제공되지 않아 제목 기반으로만 요약한다.",
-    "why_it_matters": "AI 활용에서 단순한 능력 이상으로 집중과 지속적 실행이 중요해지고 있음을 시사한다.",
+    "summary_ko": "이 글은 AI 시대에 중요해진 새로운 역량으로 '집중력'과 '실행력'을 제시한다. AI 도구가 보편화되면서 진정한 차별점은 기술 자체보다 이를 일관되게 활용하는 능력에 있다는 주제를 다루는 것으로 보인다.",
+    "why_it_matters": "AI 도구 활용이 보편화된 환경에서 개발자와 지식 노동자의 실질적 경쟁력이 무엇인지 생각하게 한다.",
     "tags": [
-      "LLM",
-      "에이전트"
+      "LLM"
     ],
-    "score": 7.615124351522633,
+    "score": 7.774896739545501,
     "published_at": "2026-07-26T13:13:03Z"
   },
   {
-    "id": "reddit-1v7fquf",
+    "id": "reddit-1v7k5r1",
     "section": "community",
-    "title_en": "~20s that you'll never get back",
-    "title_ko": "로컬 Qwen TTS 설정 오류로 인한 웃긴 출력 영상",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v7fquf/20s_that_youll_never_get_back/",
+    "title_en": "Vision Support for Minimax-M3 has been merged into llama.cpp",
+    "title_ko": "Minimax-M3 비전 지원, llama.cpp에 병합 완료",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v7k5r1/vision_support_for_minimaxm3_has_been_merged_into/",
     "sources": [
       "reddit"
     ],
-    "summary_ko": "한 사용자가 로컬 환경에서 Qwen TTS를 설정하다 실수로 깨진 출력물을 생성했다. 작성자 스스로도 품질이나 가치가 없는 게시물임을 인정하며, 유머로 공유했다.",
-    "why_it_matters": "기술적 가치는 없으나 로컬 TTS 설정 시 발생할 수 있는 오류를 가볍게 보여주는 사례.",
+    "summary_ko": "Minimax-M3 모델의 비전(이미지 인식) 기능 지원이 llama.cpp에 공식 병합되었다. 이로써 로컬 환경에서 llama.cpp를 통해 Minimax-M3의 멀티모달 기능을 활용할 수 있게 됐다.",
+    "why_it_matters": "로컬 LLM 추론 엔진인 llama.cpp에서 Minimax-M3 멀티모달 기능을 직접 사용할 수 있어 온디바이스 비전 AI 활용 범위가 넓어진다.",
     "tags": [
       "LLM",
       "오픈소스"
     ],
-    "score": 0.8384804894179894,
-    "published_at": "2026-07-26T20:51:52Z"
+    "score": 0.8562251984126984,
+    "published_at": "2026-07-26T23:50:44Z"
   },
   {
-    "id": "reddit-1v7eb4x",
+    "id": "reddit-1v7ifsj",
     "section": "community",
-    "title_en": "Do people building local LLM rigs track RTX Ada/workstation card prices, or just consumer cards like the 5090?",
-    "title_ko": "로컬 LLM 빌드 시 워크스테이션 GPU(RTX Ada 시리즈) 가격 추적, 어떻게 하나요?",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v7eb4x/do_people_building_local_llm_rigs_track_rtx/",
+    "title_en": "[OSS] Use case only possible with local inference at its core: an on-device LLM understands your entire life, then proactively offers to get your work done through computer use! Open-source & free :D",
+    "title_ko": "온디바이스 LLM이 당신의 일상을 이해하고 선제적으로 업무를 처리해주는 오픈소스 OS, Sentient OS",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v7ifsj/oss_use_case_only_possible_with_local_inference/",
     "sources": [
       "reddit"
     ],
-    "summary_ko": "로컬 LLM 구축을 위해 RTX 6000 Ada, 5000 Ada 같은 워크스테이션 카드 가격을 추적하는지, 아니면 소비자용 RTX 5090으로도 충분한지에 대한 커뮤니티 의견을 묻는 글이다. 워크스테이션 GPU는 구매 빈도가 낮고 고가인 만큼 가격 알림·추적 도구가 있는지도 함께 질문하고 있다.",
-    "why_it_matters": "로컬 LLM 운용을 위한 고성능 GPU 선택 기준과 비용 최적화 전략에 관심 있는 개발자에게 실용적인 참고 포인트가 된다.",
+    "summary_ko": "Sentient OS는 Mac에서 로컬 LLM(Gemma 4 E4B)을 활용해 매일 새벽 3시에 파일, 스크린샷, 이메일, iMessage 등을 분석하고 사용자의 개인 지식 베이스를 구축하는 오픈소스 프로젝트다. 아침이 되면 미처 챙기지 못한 답장 초안 작성이나 구독 갱신 알림 등을 선제적으로 제안하며, Computer Use 기능으로 실제 앱과 브라우저에서 작업을 수행한다. 원시 데이터는 기기 밖으로 나가지 않으며, 클라우드 엔드포인트 사용 시에도 PII가 제거된 요약본만 전송된다. Apple Silicon(M1 이상), macOS 15+, 8GB RAM 환경에서 무료로 사용할 수 있다.",
+    "why_it_matters": "프라이버시와 비용 문제를 로컬 추론으로 해결하면서 진정한 '선제적 AI 에이전트'를 오픈소스로 구현했다는 점에서 온디바이스 AI의 실용적 가능성을 보여준다.",
     "tags": [
       "LLM",
-      "인프라"
+      "에이전트",
+      "오픈소스"
     ],
-    "score": 0.8331564153439153,
-    "published_at": "2026-07-26T19:58:12Z"
+    "score": 0.8489649470899471,
+    "published_at": "2026-07-26T22:37:33Z"
   },
   {
     "id": "youtube-_cz7JeXRkfg",
@@ -315,8 +314,8 @@
     "sources": [
       "youtube"
     ],
-    "summary_ko": "한빛미디어와 조코딩이 협력하여 바이브 코딩으로 실제 서비스를 만드는 라이브 챌린지를 진행한다. AI 기반 바이브 코딩 방식을 활용해 서비스 개발 과정을 실시간으로 선보이는 콘텐츠다.",
-    "why_it_matters": "바이브 코딩으로 실제 서비스를 만드는 과정을 라이브로 확인할 수 있는 실습형 콘텐츠다.",
+    "summary_ko": "한빛미디어와 조코딩이 협력하여 바이브 코딩으로 실제 서비스를 만드는 라이브 챌린지를 진행했다. 바이브 코딩은 AI를 활용해 빠르게 서비스를 개발하는 방식으로, 실습 중심의 콘텐츠로 구성된 방송이다.",
+    "why_it_matters": "AI 기반 바이브 코딩으로 실제 서비스를 만드는 과정을 라이브로 보여줘 국내 개발자들의 실전 활용에 참고가 된다.",
     "tags": [
       "에이전트"
     ],
@@ -327,13 +326,13 @@
     "id": "youtube--CDz4HTz5Iw",
     "section": "video",
     "title_en": "IT뉴스 - Claude Opus 5, Hugging Face 해킹, 오픈웨이트 규제, Gemini 3.6 Flash, FLUX 3, 샌프란 AI Summit 등",
-    "title_ko": "[IT뉴스] Claude Opus 5, Hugging Face 해킹, 오픈웨이트 규제, Gemini 3.6 Flash, FLUX 3 등 주요 AI 소식",
+    "title_ko": "[IT뉴스] Claude Opus 5, Hugging Face 해킹, 오픈웨이트 규제, Gemini 3.6 Flash, FLUX 3 등 주요 소식",
     "url": "https://www.youtube.com/watch?v=-CDz4HTz5Iw",
     "sources": [
       "youtube"
     ],
-    "summary_ko": "이번 영상에서는 Claude Opus 5, Gemini 3.6 Flash, FLUX 3 등 새로운 AI 모델 소식과 함께 Hugging Face 해킹 사건 및 오픈웨이트 모델 규제 이슈를 다룬다. 샌프란시스코 AI Summit 관련 내용도 포함되어 있다. 조코딩 채널의 주간 IT 뉴스 큐레이션 영상이다.",
-    "why_it_matters": "오픈웨이트 규제, 주요 모델 출시, 보안 이슈 등 AI 업계 전반의 흐름을 한 번에 파악할 수 있다.",
+    "summary_ko": "조코딩 채널의 AI/IT 뉴스 요약 영상으로, Claude Opus 5, Gemini 3.6 Flash, FLUX 3 등 신규 AI 모델 소식과 Hugging Face 해킹 사건, 오픈웨이트 모델 규제 동향, 샌프란시스코 AI Summit 등 다양한 주요 이슈를 다룬다. 국내 개발자를 대상으로 최신 AI 업계 동향을 한국어로 정리한 콘텐츠다.",
+    "why_it_matters": "한 주의 굵직한 AI 모델 출시·보안·규제 이슈를 한국어로 한번에 파악할 수 있는 뉴스 큐레이션 영상이다.",
     "tags": [
       "LLM",
       "오픈소스"
@@ -350,8 +349,8 @@
     "sources": [
       "youtube"
     ],
-    "summary_ko": "MoMath(미국 국립수학박물관)의 월간 퍼즐 시리즈 중 하나로, 64개의 각설탕을 활용한 수학 퍼즐이다. 자세한 내용은 MoMath의 Mindbenders 페이지에서 확인할 수 있다.",
-    "why_it_matters": "수학적 사고력을 자극하는 퍼즐 콘텐츠로, AI와는 직접적인 관련이 없는 수학 교육 자료다.",
+    "summary_ko": "MoMath(미국 국립 수학 박물관)의 월간 퍼즐 시리즈 중 하나로, 64개의 각설탕을 활용한 수학적 사고 문제를 다룬다. 자세한 내용은 MoMath 공식 사이트에서 확인할 수 있다.",
+    "why_it_matters": "AI와 직접적인 연관은 없으나, 논리적 사고와 문제 해결 능력을 키우는 수학 퍼즐 콘텐츠다.",
     "tags": [],
     "score": 0.5184193121693121,
     "published_at": "2026-07-24T15:05:39Z"
@@ -360,13 +359,13 @@
     "id": "simon_willison-relay-market",
     "section": "deepdive",
     "title_en": "An Inside Look at the Relay Market Powering Token Resellers and Fraud",
-    "title_ko": "LLM 토큰 재판매 및 사기를 가능하게 하는 릴레이 마켓 내부 조사",
+    "title_ko": "LLM 토큰 재판매 시장의 실태: 릴레이 마켓과 사기 생태계",
     "url": "https://simonwillison.net/2026/Jul/26/relay-market/#atom-everything",
     "sources": [
       "simon_willison"
     ],
-    "summary_ko": "Matt Lenhard의 조사에 따르면, 주로 중국을 중심으로 LLM API 토큰을 할인 가격에 재판매하는 시장이 형성되어 있다. 재판매자들은 무료 체험 남용, 보호되지 않은 지원 봇 프록시, 도난 신용카드 등을 통해 저렴한 토큰을 확보한다. 이 프록시에는 오픈소스 프로젝트인 one-api와 new-api가 주로 활용되며, 구매자들은 저렴한 토큰, 지역 제한 우회, 모델 디스틸레이션용 데이터 수집 등을 목적으로 이용한다.",
-    "why_it_matters": "보호되지 않은 LLM 엔드포인트를 악용해 수익을 내는 생태계가 실제로 존재하며, 개발자들은 API 키의 엄격한 사용량 한도 설정이 시급함을 인식해야 한다.",
+    "summary_ko": "LLM API 키를 여러 경로로 수집해 할인된 가격에 재판매하는 '토큰 릴레이 마켓'의 실태를 조사한 분석 글이다. 주로 중국에서 활성화되어 있으며, 무료 체험 남용·미보호 지원 봇 프록시·도난 신용카드 등을 통해 저렴한 토큰을 확보한다. 구매자들은 저렴한 비용, 지역 제한 우회, 모델 증류용 데이터 수집 등을 목적으로 이를 이용한다. 이 생태계에 주로 활용되는 소프트웨어는 one-api, new-api 같은 오픈소스 API 프록시 도구다.",
+    "why_it_matters": "보호되지 않은 LLM 엔드포인트를 노리는 조직적 생태계가 존재하므로, 개발자는 API 키 비용 상한 설정과 엔드포인트 보안에 더욱 주의해야 한다.",
     "tags": [
       "LLM",
       "오픈소스"
