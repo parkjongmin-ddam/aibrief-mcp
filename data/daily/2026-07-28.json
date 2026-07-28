@@ -1,0 +1,371 @@
+[
+  {
+    "id": "hf-2607.21461",
+    "section": "papers",
+    "title_en": "AREX: Towards a Recursively Self-Improving Agent for Deep Research",
+    "title_ko": "AREX: 심층 연구를 위한 재귀적 자기개선 에이전트",
+    "url": "https://huggingface.co/papers/2607.21461",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "AREX는 복잡한 다중 제약 조건을 만족하는 답을 찾기 위해 설계된 심층 연구 에이전트 패밀리입니다. 내부 연구 루프에서 증거를 수집하고 임시 답변을 구성한 뒤, 외부 자기개선 루프에서 제약별 검증과 미해결 주장을 파악해 후속 연구를 진행하는 방식으로 작동합니다. 4B 밀집 모델과 122B-A10B MoE 모델로 구현되어 BrowseComp, WideSearch, HLE 등 다양한 벤치마크에서 유사 규모 기준선을 크게 앞섰습니다.",
+    "why_it_matters": "검색-검증 비대칭 문제를 재귀적 자기개선으로 해결하여, 소형 모델로도 대규모 파라미터 모델에 준하는 심층 연구 성능을 달성한 점이 주목된다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.962844630259907,
+    "published_at": "2026-07-22T20:00:00Z"
+  },
+  {
+    "id": "hf-2605.09635",
+    "section": "papers",
+    "title_en": "K12-KGraph: A Curriculum-Aligned Knowledge Graph for Benchmarking and Training Educational LLMs",
+    "title_ko": "K12-KGraph: 교육과정 정렬 지식 그래프 기반 교육용 LLM 벤치마크 및 학습 데이터셋",
+    "url": "https://huggingface.co/papers/2605.09635",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "K12-KGraph는 인민교육출판사의 수학·물리·화학·생물 교과서에서 추출한 교육과정 정렬 지식 그래프로, 9가지 노드 타입과 14가지 관계 타입을 포함합니다. 이를 기반으로 23,640개 문항의 벤치마크 K12-Bench와 7,335개 샘플의 파인튜닝 코퍼스 K12-Train을 공개했습니다. Gemini-3-Flash도 정확도 57%에 그칠 만큼 난이도가 높으며, 도메인 특화 학습으로 성능 격차를 줄일 수 있음을 실험으로 입증했습니다. 텍스트와 시각 감독 신호가 상호 보완적임도 확인됐습니다.",
+    "why_it_matters": "최신 LLM조차 K-12 교육과정의 개념 구조와 선수 지식 관계를 제대로 이해하지 못한다는 것을 정량적으로 밝히며, 교육용 AI 개발의 새로운 평가 기준을 제시합니다.",
+    "tags": [
+      "LLM",
+      "RAG"
+    ],
+    "score": 5.060443010546419,
+    "published_at": "2026-07-22T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.21556",
+    "section": "papers",
+    "title_en": "Visual Contrastive Self-Distillation",
+    "title_ko": "Visual Contrastive Self-Distillation: 외부 교사 없이 시각 모델 성능 향상",
+    "url": "https://huggingface.co/papers/2607.21556",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "VCSD는 외부 교사 모델 없이 온-폴리시 자기 증류(OPSD)를 수행하는 새로운 방법론이다. 이미지 콘텐츠를 제거한 입력과 원본 이미지 입력 간의 토큰 수준 로그 확률 차이를 활용해 시각적 학습 신호를 생성한다. Qwen3-VL 모델 기준으로 2B~8B 전 규모에서 7개 벤치마크 종합 점수를 일관되게 향상시켰으며, 추가적인 추론 비용도 발생하지 않는다.",
+    "why_it_matters": "외부 교사, 정답 레이블, 시각 증거 없이도 멀티모달 LLM의 시각 이해 능력을 효과적으로 향상시킬 수 있어 실용적인 학습 비용 절감에 기여한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.80666248977032,
+    "published_at": "2026-07-22T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.21072",
+    "section": "papers",
+    "title_en": "Show, Don't Tell: Evaluating Spatial Cognition in Generative Pixels Rather Than LLM Text",
+    "title_ko": "픽셀로 보여주기: 이미지 생성 모델의 공간 인지 능력 평가 프레임워크 ProVisE",
+    "url": "https://huggingface.co/papers/2607.21072",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "공간 추론 벤치마크는 대부분 좌표나 텍스트 답변을 요구해, 픽셀 공간에서 직접 답을 표현할 수 있는 이미지 생성 모델 평가에 부적합한 문제가 있었다. 이를 해결하기 위해 연구진은 이미지 생성 모델로부터 시각적 답변을 이끌어내고 기존 메트릭과 호환되는 구조화된 예측으로 변환하는 프레임워크 ProVisE를 제안했다. 또한 14개 공간 하위 과제, 4개 능력 수준, 470개 샘플로 구성된 SpatialGen-Bench 벤치마크를 함께 공개했으며, 평가 결과 이미지 생성 모델은 픽셀 공간 표현에서 경쟁력을 보인 반면 텍스트 출력 VLM은 복합적 공간 추론에서 우위를 유지했다.",
+    "why_it_matters": "이미지 생성 모델과 텍스트 출력 VLM을 동일한 조건에서 공간 인지 능력을 비교할 수 있는 최초의 통합 평가 체계를 제시해 에이전트의 물리 세계 상호작용 연구에 새로운 기준을 마련한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.58351893845611,
+    "published_at": "2026-07-22T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.21553",
+    "section": "papers",
+    "title_en": "SANA-Video 2.0: Hybrid Linear Attention with Attention Residuals for Efficient Video Generation",
+    "title_ko": "SANA-Video 2.0: 효율적인 고품질 영상 생성을 위한 하이브리드 선형 어텐션 모델",
+    "url": "https://huggingface.co/papers/2607.21553",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SANA-Video 2.0은 5B·14B 규모의 하이브리드 비디오 확산 트랜스포머로, 단일 GPU에서 720p 고품질 영상을 생성할 수 있도록 설계되었다. 선형 어텐션(O(N))과 소프트맥스 어텐션을 3:1 비율로 결합한 Hybrid Linear-Softmax Attention과 블록 요약을 후속 레이어에 전달하는 Block Attention Residuals(AttnRes)를 도입해 표현력을 유지하면서 연산 비용을 크게 낮췄다. 단일 H100에서 480p 기준 13.2초에 VBench 점수 84.30을 달성했으며, Sol-Engine 최적화를 통해 풀 소프트맥스 대비 최대 3.58배 추가 가속, Wan 2.2-A14B 대비 120배 빠른 속도를 실현했다.",
+    "why_it_matters": "단일 GPU에서 경쟁 모델 대비 120배 빠른 720p 영상 생성을 가능하게 해, 고해상도 장편 비디오 생성의 실용적 한계를 크게 낮춘 기술적 돌파구다.",
+    "tags": [
+      "LLM",
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 4.555348061489413,
+    "published_at": "2026-07-22T20:00:00Z"
+  },
+  {
+    "id": "github_trending-moeru-ai/airi",
+    "section": "releases",
+    "title_en": "moeru-ai/airi",
+    "title_ko": "Project AIRI: 자체 호스팅 가능한 오픈소스 AI 버추얼 스트리머(VTuber) 프레임워크",
+    "url": "https://github.com/moeru-ai/airi",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Project AIRI는 Neuro-sama에서 영감을 받아 자신만의 AI 버추얼 캐릭터를 직접 소유하고 운영할 수 있는 오픈소스 프레임워크입니다. 실시간 음성 대화, Minecraft·Factorio 게임 플레이, Live2D/VRM 아바타 지원 등을 갖추고 있으며 Web/macOS/Windows에서 동작합니다. WebGPU, WebAssembly 등 웹 기술을 기반으로 구축되었으며, OpenAI·Claude·DeepSeek 등 다양한 LLM 프로바이더를 지원합니다.",
+    "why_it_matters": "클로즈드 소스로만 존재하던 AI VTuber를 누구나 자체 호스팅할 수 있게 오픈소스로 제공한다는 점에서 AI 에이전트와 인터랙티브 캐릭터 개발의 새로운 가능성을 열어준다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8665922619047619,
+    "published_at": "2026-07-28T01:35:14Z"
+  },
+  {
+    "id": "github_trending-bradautomates/claude-video",
+    "section": "releases",
+    "title_en": "bradautomates/claude-video",
+    "title_ko": "Claude에게 영상 시청 능력을 부여하는 오픈소스 플러그인 'claude-video'",
+    "url": "https://github.com/bradautomates/claude-video",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "claude-video는 Claude가 YouTube, TikTok 등 다양한 플랫폼의 영상이나 로컬 파일을 직접 '시청'할 수 있게 해주는 오픈소스 스킬 플러그인이다. /watch 명령어 하나로 yt-dlp로 자막을 우선 수집하고 ffmpeg로 프레임을 추출한 뒤, 자막이 없을 경우 Groq/OpenAI의 Whisper API로 음성 전사를 수행해 Claude에게 전달한다. Claude Code, Cursor, Codex, Copilot, Gemini CLI 등 50개 이상의 에이전트 호스트에 설치할 수 있으며, macOS에서는 첫 실행 시 의존성을 자동 설치한다. 토큰 비용을 절감하기 위해 프레임 예산 제한, 중복 프레임 제거, 세부 수준 조절(transcript/efficient/balanced/token-burner) 기능을 제공한다.",
+    "why_it_matters": "텍스트 중심의 Claude에 영상 이해 능력을 간단한 플러그인으로 추가할 수 있어, 버그 재현 영상 분석·콘텐츠 요약·경쟁사 분석 등 다양한 실무 시나리오에 즉시 활용 가능하다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8665922619047619,
+    "published_at": "2026-07-28T01:35:14Z"
+  },
+  {
+    "id": "openai_blog-how-ai-is-expanding-what-people-do-at-work",
+    "section": "releases",
+    "title_en": "How AI is expanding what people do at work",
+    "title_ko": "AI가 직장에서 사람들의 역할을 어떻게 확장하는가",
+    "url": "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI의 새로운 연구에 따르면 AI가 직장 내 근로자들의 업무 범위를 확장시키고 있는 것으로 나타났다. ChatGPT 사용자들은 기존 역할을 넘어 다양한 업무를 수행하며 직무 경계를 재편하고 있다. 이는 AI가 단순히 기존 업무를 자동화하는 것을 넘어 새로운 가능성을 열어주고 있음을 시사한다.",
+    "why_it_matters": "AI가 직무 대체가 아닌 역할 확장의 도구로 작용한다는 실증 연구로, 미래 업무 환경 설계에 중요한 시사점을 제공한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.735120701058201,
+    "published_at": "2026-07-27T03:30:00Z"
+  },
+  {
+    "id": "openai_blog-health-in-chatgpt",
+    "section": "releases",
+    "title_en": "Launching Health in ChatGPT",
+    "title_ko": "ChatGPT에 헬스 기능 출시",
+    "url": "https://openai.com/index/health-in-chatgpt",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 ChatGPT에 'Health' 기능을 출시했다. 미국 내 적격 사용자는 의료 기록과 Apple Health를 안전하게 연동하여 보다 개인화된 건강 인사이트를 얻을 수 있다. 이를 통해 사용자는 자신의 건강 데이터를 더 잘 이해할 수 있게 된다.",
+    "why_it_matters": "ChatGPT가 개인 의료 데이터와 결합되며 AI 헬스케어 어시스턴트로의 본격 진화를 알리는 신호탄이다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.14285879629629628,
+    "published_at": "2026-07-23T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-building-ai-infrastructure-with-the-effingham-county-community",
+    "section": "releases",
+    "title_en": "Building AI infrastructure with the Effingham County community",
+    "title_ko": "OpenAI, 조지아주 에핑엄 카운티에 AI 인프라 구축 발표",
+    "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 조지아주 에핑엄 카운티에 '프로젝트 카멜리아'를 발표했다. 이 프로젝트는 책임 있는 에너지 사용, 지역사회 투자, 일자리 창출, 그리고 Codex 접근 제공을 핵심 내용으로 담고 있다.",
+    "why_it_matters": "OpenAI의 AI 데이터센터 인프라 확장이 지역사회와의 협력 모델로 구체화되고 있어, 향후 AI 인프라 투자 방식의 방향성을 보여준다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.07738260582010581,
+    "published_at": "2026-07-22T13:00:00Z"
+  },
+  {
+    "id": "openai_blog-how-news-organizations-are-using-ai",
+    "section": "releases",
+    "title_en": "How news organizations are using AI to advance their vital missions",
+    "title_ko": "뉴스 조직들이 AI를 활용해 핵심 미션을 발전시키는 방법",
+    "url": "https://openai.com/index/how-news-organizations-are-using-ai",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "전 세계 언론사들이 OpenAI 도구를 활용해 취재 역량을 강화하고, 독자층을 확대하며, 비즈니스 운영 효율을 높이고 있다. OpenAI는 저널리스트와 퍼블리셔들을 지원하는 다양한 방식으로 뉴스 산업과 협력 중이다.",
+    "why_it_matters": "AI가 저널리즘의 실제 운영 방식을 바꾸고 있음을 보여주는 사례로, 미디어 산업의 AI 도입 트렌드를 가늠할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.07738260582010581,
+    "published_at": "2026-07-22T13:00:00Z"
+  },
+  {
+    "id": "openai_blog-advancing-the-next-era-of-national-science",
+    "section": "releases",
+    "title_en": "Advancing the next era of national science",
+    "title_ko": "국가 과학의 새 시대를 여는 OpenAI의 행보",
+    "url": "https://openai.com/index/advancing-the-next-era-of-national-science",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 미국 에너지부(DOE) 및 국립연구소와 협력해 프론티어 AI를 과학적 발견 가속화에 활용하겠다는 계획을 발표했다. 이는 미국 과학 발전에 대한 OpenAI의 공식적인 의지 표명이다. 국가 차원의 연구 인프라와 최첨단 AI 기술을 결합하는 방향으로 추진된다.",
+    "why_it_matters": "AI와 국가 연구기관의 협력이 본격화되면서, 과학 연구의 패러다임 변화와 함께 AI의 사회적 역할이 더욱 확대될 전망이다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.07143022486772488,
+    "published_at": "2026-07-22T12:00:00Z"
+  },
+  {
+    "id": "hn-49076057",
+    "section": "community",
+    "title_en": "Our position on open-weights models",
+    "title_ko": "오픈웨이트 모델에 대한 우리의 입장",
+    "url": "https://www.anthropic.com/news/position-open-weights-models",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "오픈웨이트 모델에 대한 공식 입장을 밝히는 글이다. 구체적인 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "AI 기업의 오픈웨이트 모델 정책 방향은 오픈소스 생태계 전반에 영향을 미친다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 10.418911513846153,
+    "published_at": "2026-07-27T22:03:49Z"
+  },
+  {
+    "id": "hn-49072361",
+    "section": "community",
+    "title_en": "MAI-Cyber-1-Flash inside MDASH",
+    "title_ko": "MAI-Cyber-1-Flash, MDASH 내부 통합",
+    "url": "https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "MAI-Cyber-1-Flash가 MDASH 내부에 통합되었다는 소식이다. 상세한 설명이 제공되지 않아 구체적인 내용은 확인이 어렵다.",
+    "why_it_matters": "MAI-Cyber-1-Flash와 MDASH의 통합은 사이버 보안 분야 AI 활용 동향과 관련될 수 있으나, 현재 공개된 정보가 제한적이다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.734745670931073,
+    "published_at": "2026-07-27T16:52:22Z"
+  },
+  {
+    "id": "hn-49070756",
+    "section": "community",
+    "title_en": "Exploiting Volvo/Eicher's fleet platform to gain control over all users/vehicles",
+    "title_ko": "볼보/아이처 플릿 플랫폼 취약점으로 전체 사용자·차량 제어 가능",
+    "url": "https://eaton-works.com/2026/07/27/my-eicher-hack/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "볼보/아이처의 차량 관리 플랫폼에서 보안 취약점이 발견되어 모든 사용자와 차량을 제어할 수 있는 공격이 가능했다는 내용이다. 구체적인 기술적 세부사항은 제공되지 않았으나, 플릿 관리 시스템 전체에 영향을 미치는 심각한 수준의 취약점으로 보인다.",
+    "why_it_matters": "상용 차량 플릿 플랫폼의 취약점은 물리적 자산 통제권까지 탈취될 수 있어 공급망 및 물류 보안에 직접적 위협이 된다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 7.823312170713285,
+    "published_at": "2026-07-27T15:08:16Z"
+  },
+  {
+    "id": "hn-49076391",
+    "section": "community",
+    "title_en": "Benchmarking Opus 5 on SlopCodeBench",
+    "title_ko": "SlopCodeBench에서 Opus 5 벤치마킹 결과",
+    "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-opus-5-on-slop-code-bench.md",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Opus 5 모델을 SlopCodeBench 기준으로 벤치마킹한 내용을 다룬다. 상세한 수치나 결과는 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "새로운 코딩 벤치마크를 통한 Opus 5 성능 평가는 모델 선택에 참고가 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 7.675507465890445,
+    "published_at": "2026-07-27T22:37:52Z"
+  },
+  {
+    "id": "hn-49073942",
+    "section": "community",
+    "title_en": "Self-contained highly-portable Python distributions",
+    "title_ko": "독립 실행형 고이식성 파이썬 배포판",
+    "url": "https://gregoryszorc.com/docs/python-build-standalone/main/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "별도 설치 없이 어디서든 실행 가능한 자체 포함 파이썬 배포판에 관한 내용이다. 높은 이식성을 목표로 하여 다양한 환경에서 파이썬을 손쉽게 사용할 수 있도록 한다.",
+    "why_it_matters": "환경 설정 없이 파이썬을 바로 실행할 수 있어 배포 및 CI/CD 환경에서 유용하게 활용될 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 7.351200849971729,
+    "published_at": "2026-07-27T18:43:31Z"
+  },
+  {
+    "id": "youtube-_tX58F1grUs",
+    "section": "video",
+    "title_en": "AI뉴스 - Claude Opus 5, Hugging Face 해킹, 오픈웨이트 규제, Gemini 3.6 Flash, FLUX 3, 샌프란 AI Summit 등",
+    "title_ko": "AI 뉴스 종합: Claude Opus 5, HuggingFace 해킹, 오픈웨이트 규제, Gemini 신모델, FLUX 3 등",
+    "url": "https://www.youtube.com/watch?v=_tX58F1grUs",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "Claude Opus 5 출시 및 Voice Mode 도입, OpenAI 모델의 HuggingFace 해킹 사건, 오픈웨이트 모델 규제 논란이 주요 이슈로 다뤄졌다. 구글의 신규 모델 3종, FLUX 3, Qwen 시리즈 신모델, MS의 이미지·음성 모델 공개 등 다양한 AI 모델 소식도 함께 소개됐다. 국내에서는 업스테이지의 Solar Open 2 공개와 AI 모티프의 AAII 44점 달성 소식도 포함됐다.",
+    "why_it_matters": "한 주간 글로벌 AI 업계의 주요 모델 출시·보안 이슈·규제 동향을 한국어로 한눈에 파악할 수 있는 종합 뉴스다.",
+    "tags": [
+      "LLM",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.7978488756613756,
+    "published_at": "2026-07-27T14:02:18Z"
+  },
+  {
+    "id": "youtube-_cz7JeXRkfg",
+    "section": "video",
+    "title_en": "[LIVE] 한빛미디어x조코딩 바이브 코딩으로 서비스 만들기 챌린지",
+    "title_ko": "[라이브] 한빛미디어×조코딩 바이브 코딩으로 서비스 만들기 챌린지",
+    "url": "https://www.youtube.com/watch?v=_cz7JeXRkfg",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "한빛미디어와 조코딩이 협업하여 바이브 코딩으로 실제 서비스를 만드는 라이브 챌린지를 진행한다. 바이브 코딩은 AI를 활용해 빠르게 프로토타입 및 서비스를 개발하는 방식이다.",
+    "why_it_matters": "AI 기반 바이브 코딩으로 실제 서비스를 만드는 과정을 실시간으로 볼 수 있어 국내 개발자에게 실용적인 참고가 된다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.6394791666666667,
+    "published_at": "2026-07-26T11:25:56Z"
+  },
+  {
+    "id": "youtube-6XPlmCDNLNc",
+    "section": "video",
+    "title_en": "The 64 sugar cubes puzzle",
+    "title_ko": "64개의 각설탕 퍼즐",
+    "url": "https://www.youtube.com/shorts/6XPlmCDNLNc",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "MoMath(국립수학박물관)의 월간 퍼즐 시리즈 중 하나로, 64개의 각설탕을 이용한 수학적 사고 퍼즐을 소개한다. 상세한 문제 내용은 MoMath 공식 사이트에서 확인할 수 있다.",
+    "why_it_matters": "수학적 직관과 공간 사고력을 기를 수 있는 퍼즐 콘텐츠로, AI·알고리즘 문제 해결 능력과 연계될 수 있다.",
+    "tags": [],
+    "score": 0.37556216931216924,
+    "published_at": "2026-07-24T15:05:39Z"
+  },
+  {
+    "id": "simon_willison-kimi-k3",
+    "section": "deepdive",
+    "title_en": "moonshotai/Kimi-K3",
+    "title_ko": "Moonshot AI, Kimi K3 가중치 공개 — 2.8조 파라미터, 1.56TB",
+    "url": "https://simonwillison.net/2026/Jul/27/kimi-k3/#atom-everything",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Moonshot AI가 2.8조 파라미터 규모의 Kimi K3 모델 가중치를 Hugging Face에 공개했다. 용량은 1.56TB에 달한다. 라이선스는 '수정 MIT'를 표방했던 K2와 달리, 연간 매출 2천만 달러 초과 MaaS 사업자는 Moonshot AI와 별도 계약을 체결해야 한다는 조건이 추가됐다. Moonshot 측은 이를 '오픈소스'가 아닌 '오픈 웨이트'로 일관되게 표현하고 있으며, OpenRouter에서 7개 제공사를 통해 이미 서비스 중이다.",
+    "why_it_matters": "대규모 상업적 활용에 별도 계약 조건이 붙는 오픈 웨이트 라이선스 트렌드가 강화되고 있어, 기업 도입 시 라이선스 검토가 필수다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8550677910052911,
+    "published_at": "2026-07-27T23:39:04Z"
+  }
+]
