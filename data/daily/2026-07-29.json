@@ -1,0 +1,378 @@
+[
+  {
+    "id": "hf-2607.24653",
+    "section": "papers",
+    "title_en": "Kimi K3: Open Frontier Intelligence",
+    "title_ko": "Kimi K3: 2.8조 파라미터 오픈 프런티어 MoE 모델 공개",
+    "url": "https://huggingface.co/papers/2607.24653",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Moonshot AI가 2.8조 파라미터(활성화 1040억) 규모의 MoE 모델 Kimi K3를 오픈소스로 공개했다. 100만 토큰 컨텍스트 윈도우와 네이티브 비전 기능을 갖추며, Kimi K2 대비 약 2.5배 향상된 스케일링 효율을 달성했다. 코딩, 에이전트, 추론, 비전 등 다양한 벤치마크에서 기존 오픈 및 일부 독점 모델을 능가하나, Claude Fable 5·GPT-5.6 Sol 등 최상위 독점 모델에는 아직 미치지 못한다고 밝혔다.",
+    "why_it_matters": "프런티어급 성능의 초대형 MoE 모델 가중치를 전체 공개함으로써 오픈 AI 연구 및 대규모 배포 가능성을 크게 높인다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 6.6131281063880705,
+    "published_at": "2026-07-26T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.23588",
+    "section": "papers",
+    "title_en": "JarvisHub: An Open Harness for Canvas-Native Multimodal Creative Agents",
+    "title_ko": "JarvisHub: 오픈소스 캔버스 기반 멀티모달 크리에이티브 에이전트 하네스",
+    "url": "https://huggingface.co/papers/2607.23588",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "JarvisHub는 이미지·영상·오디오·UI 등 다양한 멀티모달 에셋을 장기간에 걸쳐 제작할 수 있는 캔버스 네이티브 크리에이티브 에이전트 프레임워크다. 편집 가능한 캔버스를 에이전트의 외부 메모리이자 액션 공간으로 활용하며, 아티팩트·버전·피드백을 노드와 링크로 표현한다. 캔버스 상태, 프로토콜 브리지, 에이전트 런타임의 3계층 아키텍처를 통해 사용자가 언제든 개입·수정할 수 있는 인간-에이전트 협업 창작 자동화를 지원한다.",
+    "why_it_matters": "기존 프롬프트·챗 기반 생성 시스템의 한계를 넘어 장기적 창작 프로젝트 전반을 투명하게 관리할 수 있는 오픈 에이전트 하네스를 제공해, 크리에이티브 AI 연구와 실무 적용의 새로운 기반이 될 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 5.68213122712422,
+    "published_at": "2026-07-25T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.24280",
+    "section": "papers",
+    "title_en": "From Proprietary to Open-Source: Bridging the Distribution Gap via Multi-Agent Protocol Distillation in Agentic Search",
+    "title_ko": "독점 모델에서 오픈소스로: 멀티에이전트 프로토콜 증류(MAPD)로 에이전틱 검색 격차 해소",
+    "url": "https://huggingface.co/papers/2607.24280",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "MAPD는 독점 LLM의 숨겨진 로짓과 토크나이저 불일치 문제를 해결하기 위해 구조화된 JSON 프로토콜을 중간 표현으로 활용하는 지식 증류+강화학습 프레임워크다. 오프라인 멀티에이전트 시스템이 쿼리를 분해하고 검색·수정·추론 계획을 JSON으로 정규화한 뒤, 학생 모델의 특권 브랜치에 제공해 밀도 높은 학습 신호를 생성한다. 7개 QA 벤치마크에서 Qwen3-1.7B 39.4%, Qwen3-4B 44.4%의 평균 성공률로 기존 증류·RL 방법을 능가했으며, 스타일 드리프트와 장황화 문제도 효과적으로 억제했다.",
+    "why_it_matters": "독점 모델의 강력한 추론 능력을 오픈소스 소형 모델에 효과적으로 이전할 수 있는 실용적 프레임워크로, 에이전틱 검색 분야의 오픈소스 경쟁력을 높일 수 있다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "에이전트"
+    ],
+    "score": 5.23410650459726,
+    "published_at": "2026-07-26T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.24731",
+    "section": "papers",
+    "title_en": "Rethinking Classifier-Free Guidance in On-Policy Diffusion Distillation",
+    "title_ko": "온-폴리시 확산 증류에서 분류기 없는 가이던스(CFG) 재고찰",
+    "url": "https://huggingface.co/papers/2607.24731",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "온-폴리시 증류(OPD)에서 CFG를 단순히 결합된 예측에 적용하면 양성·음성 브랜치 오류가 서로 상쇄되어 목적 함수가 과소식별되는 문제가 발생한다. 연구팀은 이를 '음성 브랜치 비대칭(NBA)'으로 명명하고, 양성 예측과 CFG 조건 방향을 별도로 제약하는 'Positive-Direction Matching(PDM)'을 제안한다. PDM을 고밀도→저밀도 비디오 제어 태스크에 적용한 결과, 추론 가이던스 스케일 변화에 더 강건하고 효과적인 지식 전이가 가능함을 확인했다.",
+    "why_it_matters": "CFG는 현대 확산 모델의 기본 구성 요소인 만큼, OPD와의 결합 시 발생하는 구조적 실패 모드를 규명하고 해결책을 제시한 점이 실용적으로 중요하다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 5.174387269895637,
+    "published_at": "2026-07-26T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.22798",
+    "section": "papers",
+    "title_en": "StateAct: Program State, before Pixels, for Long-Horizon Computer-Use Agents",
+    "title_ko": "StateAct: 스크린샷 대신 프로그램 상태를 활용하는 장기 컴퓨터 사용 에이전트",
+    "url": "https://huggingface.co/papers/2607.22798",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "StateAct는 스크린샷 기반 인식 대신 파일, DOM 등 실제 프로그램 상태를 코드로 직접 다루는 멀티 에이전트 프레임워크다. 메인 에이전트는 코드를 통해 프로그램 상태를 조작하고, GUI가 반드시 필요한 소수의 작업에만 전담 GUI 서브에이전트를 사용한다. OSWorld 2.0 벤치마크에서 Claude Opus 4.8의 이진 성공률을 20.6%에서 26.9%로, 부분 성공률을 54.8%에서 61.6%로 향상시켰으며, 스크린샷 기반 대비 약 9배 낮은 비용을 달성했다.",
+    "why_it_matters": "인식이 아닌 추론을 병목으로 전환하는 '상태 기반 그라운딩' 접근법이 컴퓨터 사용 에이전트의 성능과 비용 효율을 동시에 개선할 수 있음을 실증했다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.9889840465642745,
+    "published_at": "2026-07-23T20:00:00Z"
+  },
+  {
+    "id": "github_trending-moeru-ai/airi",
+    "section": "releases",
+    "title_en": "moeru-ai/airi",
+    "title_ko": "Project AIRI: 오픈소스 자체 호스팅 AI 버추얼 컴패니언",
+    "url": "https://github.com/moeru-ai/airi",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Project AIRI는 Neuro-sama에서 영감을 받은 자체 호스팅 AI 가상 캐릭터 플랫폼으로, 실시간 음성 대화, Minecraft·Factorio 게임 플레이 등을 지원합니다. WebGPU, WebAssembly 등 웹 기술 기반으로 구축되어 브라우저, 데스크톱(Windows/macOS), 모바일 등 다양한 환경에서 실행 가능합니다. OpenAI, Claude, DeepSeek, Qwen 등 다수의 LLM API 프로바이더를 지원하며, RAG·메모리 시스템·임베디드 DB 등 다양한 서브 프로젝트도 포함되어 있습니다.",
+    "why_it_matters": "비공개 소스인 Neuro-sama의 대안으로, 누구나 자신만의 AI 버추얼 캐릭터를 직접 소유·운영할 수 있는 오픈소스 생태계를 제공한다는 점에서 주목할 만합니다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8665757275132275,
+    "published_at": "2026-07-29T01:35:04Z"
+  },
+  {
+    "id": "github_trending-andrewyng/aisuite",
+    "section": "releases",
+    "title_en": "andrewyng/aisuite",
+    "title_ko": "aisuite: 여러 생성형 AI 제공자를 통합하는 경량 Python 라이브러리",
+    "url": "https://github.com/andrewyng/aisuite",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "aisuite는 OpenAI, Anthropic, Google, Ollama 등 다양한 LLM 제공자를 단일 API로 통합하는 경량 Python 라이브러리다. 통합 Chat Completions API와 에이전트 API(툴킷, MCP 지원 포함)를 두 계층으로 제공하며, 제공자 변경 시 모델 문자열 하나만 바꾸면 된다. 이 라이브러리를 기반으로 파일 읽기·슬랙·이메일 연동 등 실제 작업을 수행하는 데스크톱 AI 코워커 OpenWorker도 별도 저장소에서 공개되었다.",
+    "why_it_matters": "LLM 제공자 종속성을 최소화하고 에이전트·MCP 통합까지 한 라이브러리로 해결할 수 있어 멀티 LLM 프로젝트 개발 효율이 크게 높아진다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8665757275132275,
+    "published_at": "2026-07-29T01:35:04Z"
+  },
+  {
+    "id": "github_trending-huggingface/speech-to-speech",
+    "section": "releases",
+    "title_en": "huggingface/speech-to-speech",
+    "title_ko": "HuggingFace Speech-to-Speech: 오픈소스 로컬 음성 에이전트 파이프라인",
+    "url": "https://github.com/huggingface/speech-to-speech",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "VAD → STT → LLM → TTS로 구성된 저지연 모듈형 음성 에이전트 파이프라인으로, OpenAI Realtime 호환 WebSocket API를 통해 노출됩니다. 각 컴포넌트는 독립적으로 교체 가능하며, LLM은 OpenAI, HF Inference Providers, vLLM, llama.cpp 등 다양한 백엔드를 지원합니다. 기본 구성은 Parakeet TDT(STT), Qwen3-TTS(TTS)를 사용하며, Apple Silicon·CUDA·CPU 모두 지원합니다. 수천 대의 Reachy Mini 로봇 대화 백엔드로 프로덕션 운영 중입니다.",
+    "why_it_matters": "OpenAI Realtime API 호환 인터페이스를 유지하면서 모든 컴포넌트를 오픈소스 모델로 완전 로컬 구동할 수 있어, 음성 에이전트 구축의 진입 장벽을 크게 낮춥니다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8665757275132275,
+    "published_at": "2026-07-29T01:35:04Z"
+  },
+  {
+    "id": "github_trending-microsoft/agent-governance-toolkit",
+    "section": "releases",
+    "title_en": "microsoft/agent-governance-toolkit",
+    "title_ko": "Microsoft, 자율 AI 에이전트 거버넌스 툴킷 오픈소스 공개",
+    "url": "https://github.com/microsoft/agent-governance-toolkit",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Microsoft가 자율 AI 에이전트의 정책 집행, 제로 트러스트 신원 확인, 실행 샌드박싱, 신뢰성 엔지니어링을 위한 'Agent Governance Toolkit'을 오픈소스로 공개했다. OWASP Agentic Top 10 전 항목을 커버하며, YAML 정책 파일 기반으로 에이전트의 모든 툴 호출을 애플리케이션 미들웨어 레이어에서 결정론적으로 차단한다. Python, TypeScript, .NET, Rust, Go 등 다양한 언어 SDK와 LangGraph, CrewAI, AutoGen 등 주요 에이전트 프레임워크 통합을 지원한다. 현재 퍼블릭 프리뷰 상태이며 MIT 라이선스로 제공된다.",
+    "why_it_matters": "프롬프트 수준의 안전 장치가 아닌 코드 레이어에서 에이전트 행동을 구조적으로 제어하는 프로덕션 수준의 거버넌스 프레임워크로, 기업 환경에서 AI 에이전트 배포 시 컴플라이언스와 보안을 동시에 확보할 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.8665757275132275,
+    "published_at": "2026-07-29T01:35:04Z"
+  },
+  {
+    "id": "github_trending-bradautomates/claude-video",
+    "section": "releases",
+    "title_en": "bradautomates/claude-video",
+    "title_ko": "Claude에게 영상 시청 능력을 부여하는 오픈소스 플러그인 'claude-video'",
+    "url": "https://github.com/bradautomates/claude-video",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "claude-video는 Claude가 YouTube, TikTok 등 다양한 플랫폼의 영상이나 로컬 동영상 파일을 실제로 '보고 들을 수 있도록' 해주는 오픈소스 플러그인이다. yt-dlp로 자막을 우선 추출하고, ffmpeg로 장면 인식 프레임을 뽑아 Claude의 멀티모달 컨텍스트에 넘기는 방식으로 동작한다. 자막이 없는 경우 Groq의 whisper-large-v3 또는 OpenAI whisper-1을 폴백으로 사용하며, 중복 프레임 제거와 토큰 예산 관리 기능도 갖추고 있다. Claude Code, Cursor, Codex, Copilot 등 50여 개 에이전트 호스트에서 설치해 사용할 수 있다.",
+    "why_it_matters": "Claude를 비롯한 LLM이 영상 콘텐츠를 직접 분석할 수 없다는 한계를 실용적인 오픈소스 도구로 해소해, 버그 재현 영상 진단·경쟁사 콘텐츠 분석·강의 노트화 등 개발자 워크플로에 즉시 활용 가능하다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8665757275132275,
+    "published_at": "2026-07-29T01:35:04Z"
+  },
+  {
+    "id": "openai_blog-scientific-computing-agentic-ai",
+    "section": "releases",
+    "title_en": "Scientific computing in the age of agentic AI",
+    "title_ko": "에이전트 AI 시대의 과학 컴퓨팅",
+    "url": "https://openai.com/index/scientific-computing-agentic-ai",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "새로운 현장 보고서에 따르면 과학자들이 AI 코딩 에이전트를 활용해 과학 컴퓨팅을 현대화하고 있다. 유전체학 등 다양한 분야에서 소프트웨어 개발과 연구 발견 속도를 크게 높이고 있다는 내용을 담고 있다.",
+    "why_it_matters": "AI 코딩 에이전트가 과학 연구 현장에 실질적으로 도입되어 연구 생산성을 가속화하는 사례를 보여주는 구체적 현장 보고서라는 점에서 주목할 만하다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.8154778439153438,
+    "published_at": "2026-07-28T17:00:00Z"
+  },
+  {
+    "id": "google_blog-expanding-managed-agents-gemini-api-3-6-flash-hooks",
+    "section": "releases",
+    "title_en": "Gemini API Managed Agents: 3.6 Flash, hooks, and more",
+    "title_ko": "Gemini API 관리형 에이전트: 3.6 Flash, 훅 등 신기능 공개",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "Google이 Gemini API 관리형 에이전트에 Gemini 3.6 Flash 모델 지원을 추가하고, 훅(Hooks)과 트리거(Triggers) 기능을 새롭게 선보였다. 이를 통해 개발자는 에이전트의 실행 흐름을 더욱 세밀하게 제어할 수 있게 된다.",
+    "why_it_matters": "Gemini 3.6 Flash와 훅/트리거 기능 추가로 에이전트 개발의 유연성과 제어 수준이 크게 향상된다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.8095254629629629,
+    "published_at": "2026-07-28T16:00:00Z"
+  },
+  {
+    "id": "hn-49086788",
+    "section": "community",
+    "title_en": "Substack writers, you need a website",
+    "title_ko": "서브스택 작가들이여, 웹사이트가 필요하다",
+    "url": "https://elizabethtai.com/2026/06/10/substack-writers-you-need-a-website/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "이 글은 서브스택에서 글을 쓰는 작가들에게 별도의 개인 웹사이트를 운영할 것을 권장하는 내용으로 보인다. 플랫폼 의존도를 줄이고 독립적인 온라인 존재감을 확보하는 것이 중요하다는 주장을 담고 있는 것으로 추정된다.",
+    "why_it_matters": "플랫폼 종속 리스크를 줄이고 콘텐츠 창작자의 디지털 자립을 강조하는 관점에서 주목할 만하다.",
+    "tags": [],
+    "score": 9.732691193110108,
+    "published_at": "2026-07-28T16:58:31Z"
+  },
+  {
+    "id": "hn-49089755",
+    "section": "community",
+    "title_en": "Codex Security",
+    "title_ko": "Codex 보안",
+    "url": "https://github.com/openai/codex-security",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Codex 보안에 관한 소식이 공유되었으나 상세 설명이 제공되지 않았습니다.",
+    "why_it_matters": "Codex 관련 보안 이슈는 AI 코딩 도구 사용자에게 중요할 수 있으나 현재 확인 가능한 정보가 제한적입니다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.214150199010591,
+    "published_at": "2026-07-28T20:52:55Z"
+  },
+  {
+    "id": "hn-49087091",
+    "section": "community",
+    "title_en": "Discovering Cryptographic Weaknesses with Claude",
+    "title_ko": "Claude로 암호화 취약점 발견하기",
+    "url": "https://www.anthropic.com/research/discovering-cryptographic-weaknesses",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Anthropic의 AI 모델 Claude를 활용해 암호화 알고리즘의 취약점을 탐색하는 내용을 다루고 있다. 구체적인 세부 정보는 제공되지 않았으나, AI를 보안 연구 도구로 활용하는 사례로 보인다.",
+    "why_it_matters": "LLM이 암호화 취약점 탐지 등 고난도 보안 연구에 실질적으로 활용될 수 있음을 시사한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.643253378069213,
+    "published_at": "2026-07-28T17:22:16Z"
+  },
+  {
+    "id": "hn-49084813",
+    "section": "community",
+    "title_en": "Una GPS smart watch – Repairable, USB-C charging, developer-friendly",
+    "title_ko": "Una GPS 스마트워치 – 수리 가능, USB-C 충전, 개발자 친화적 설계",
+    "url": "https://unawatch.com/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Una는 수리 가능성, USB-C 충전, 개발자 친화적 환경을 내세운 GPS 스마트워치다. 일반적인 폐쇄형 스마트워치와 달리 개방적인 설계를 지향하는 것으로 보인다.",
+    "why_it_matters": "개발자가 직접 커스터마이징하고 수리할 수 있는 오픈 스마트워치 생태계에 관심 있는 이들에게 주목할 만한 프로젝트다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 8.239036374966762,
+    "published_at": "2026-07-28T14:48:13Z"
+  },
+  {
+    "id": "hn-49084987",
+    "section": "community",
+    "title_en": "Now is the time to give LLMs access to the ACM digital library",
+    "title_ko": "LLM에 ACM 디지털 라이브러리 접근 권한을 부여할 때가 됐다",
+    "url": "https://cacm.acm.org/opinion/now-is-the-time-to-give-llms-access-to-the-acm-digital-library/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "ACM 디지털 라이브러리에 LLM이 접근할 수 있도록 허용해야 한다는 주장이 제기됐다. 현재 LLM은 방대한 컴퓨터 과학 학술 자료에 대한 접근이 제한되어 있어 연구 및 기술 활용에 한계가 있다.",
+    "why_it_matters": "학술 DB와 LLM의 연계는 AI 기반 연구 보조 도구의 품질을 크게 높일 수 있는 중요한 과제다.",
+    "tags": [
+      "LLM",
+      "RAG"
+    ],
+    "score": 8.091609899753665,
+    "published_at": "2026-07-28T15:01:12Z"
+  },
+  {
+    "id": "youtube-_tX58F1grUs",
+    "section": "video",
+    "title_en": "AI뉴스 - Claude Opus 5, Hugging Face 해킹, 오픈웨이트 규제, Gemini 3.6 Flash, FLUX 3, 샌프란 AI Summit 등",
+    "title_ko": "Claude Opus 5·Gemini 신모델·오픈웨이트 규제 논란 등 AI 주요 뉴스 총정리",
+    "url": "https://www.youtube.com/watch?v=_tX58F1grUs",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "Claude Opus 5 출시와 함께 Claude 및 Codex에 Voice Mode가 도입됐으며, OpenAI 모델이 허깅페이스를 해킹했다는 사건이 주목을 받았다. 구글은 신규 모델 3종을 공개했고, FLUX 3·Qwen 시리즈·MS의 이미지·음성 모델 등 다양한 오픈웨이트 및 멀티모달 모델 소식이 이어졌다. 국내에서는 업스테이지가 Solar Open 2를 공개했으며, 오픈웨이트 모델에 대한 규제 논란도 불거졌다.",
+    "why_it_matters": "한 주간 Claude·Gemini·Qwen·FLUX 등 주요 AI 모델 업데이트와 오픈웨이트 규제 이슈가 동시에 터져, 개발자들이 반드시 파악해야 할 변화가 집중됐다.",
+    "tags": [
+      "LLM",
+      "오픈소스",
+      "에이전트"
+    ],
+    "score": 0.6549917328042327,
+    "published_at": "2026-07-27T14:02:18Z"
+  },
+  {
+    "id": "youtube-_cz7JeXRkfg",
+    "section": "video",
+    "title_en": "[LIVE] 한빛미디어x조코딩 바이브 코딩으로 서비스 만들기 챌린지",
+    "title_ko": "[라이브] 한빛미디어×조코딩 바이브 코딩으로 서비스 만들기 챌린지",
+    "url": "https://www.youtube.com/watch?v=_cz7JeXRkfg",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "한빛미디어와 조코딩이 협력하여 바이브 코딩으로 실제 서비스를 만드는 라이브 챌린지를 진행한다. 바이브 코딩은 AI를 활용해 빠르게 서비스를 구축하는 개발 방식이다.",
+    "why_it_matters": "AI 기반 바이브 코딩으로 실제 서비스를 만드는 과정을 실시간으로 볼 수 있어 국내 개발자들에게 실용적인 참고 사례가 된다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.4966220238095238,
+    "published_at": "2026-07-26T11:25:56Z"
+  },
+  {
+    "id": "youtube-6XPlmCDNLNc",
+    "section": "video",
+    "title_en": "The 64 sugar cubes puzzle",
+    "title_ko": "64개의 각설탕 퍼즐",
+    "url": "https://www.youtube.com/shorts/6XPlmCDNLNc",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "MoMath(미국 수학 박물관)에서 제공하는 월간 퍼즐 시리즈 중 하나로, 64개의 각설탕을 활용한 수학 퍼즐이다. 자세한 내용은 MoMath 공식 사이트에서 확인할 수 있다.",
+    "why_it_matters": "AI와 직접적인 연관성이 낮은 수학 퍼즐 콘텐츠로, 개발자 독자에게 변별력 있는 정보를 제공하기 어렵다.",
+    "tags": [],
+    "score": 0.23270502645502644,
+    "published_at": "2026-07-24T15:05:39Z"
+  },
+  {
+    "id": "latent_space-ainews-fearing-rsi-openai-anthropic",
+    "section": "deepdive",
+    "title_en": "[AINews] Fearing RSI: OpenAI, Anthropic, GDM, Meta, Thinky cosign letter to \"Pace\" AI development, as HuggingFace details Machine-Speed Offensive Cyberattack",
+    "title_ko": "AI 개발 속도 조절 요구 서한에 OpenAI·Anthropic·구글·Meta 등 공동 서명",
+    "url": "https://www.latent.space/p/ainews-fearing-rsi-openai-anthropic",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "OpenAI, Anthropic, Google DeepMind, Meta 등 주요 AI 기업과 연구자들이 AI 개발 속도를 늦출 것을 촉구하는 공개 서한에 공동 서명했다. 이와 함께 HuggingFace는 머신 속도로 진행되는 공격적 사이버 공격에 대한 상세 내용을 공개해 AI 보안 위협에 대한 우려가 높아지고 있다. RSI(급격한 자기 개선) 위험에 대한 경계감이 업계 전반으로 확산되는 분위기다.",
+    "why_it_matters": "주요 AI 선도 기업들이 스스로 개발 속도 조절을 촉구한다는 점에서 AI 거버넌스와 안전 논의의 새로운 전환점이 될 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8617939814814815,
+    "published_at": "2026-07-29T00:46:52Z"
+  }
+]
