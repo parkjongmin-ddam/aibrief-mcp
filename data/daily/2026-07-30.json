@@ -1,0 +1,375 @@
+[
+  {
+    "id": "hf-2607.25895",
+    "section": "papers",
+    "title_en": "HiFi-UMI: Learning Deployable Manipulation Policies from High-Fidelity UMI Data Alone",
+    "title_ko": "HiFi-UMI: 고충실도 UMI 데이터만으로 배포 가능한 조작 정책 학습",
+    "url": "https://huggingface.co/papers/2607.25895",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "HiFi-UMI는 실제 로봇 없이도 배포 가능한 조작 정책을 학습할 수 있는 휴대용 UMI 데이터 수집 시스템이다. 헤드마운트 스테레오-관성 SLAM, 마이크로초 단위 GPIO 동기화, 손당 2개의 광각 카메라를 통해 외부 추적 인프라 없이 3mm 수준의 궤적 정확도를 달성한다. 실제 로봇 후처리 없이 HiFi-UMI 데이터만으로 학습한 정책이 텔레오퍼레이션 기반과 최대 ±3.1%p 차이 내에서 동등한 성능을 보였으며, 정밀 삽입 작업에서 85% 성공률을 기록했다. 2,000시간 규모의 HiFi-UMI-2K 데이터셋을 오픈소스로 공개한다.",
+    "why_it_matters": "실제 로봇 없이도 고품질 데이터만으로 배포 가능한 로봇 조작 정책 학습이 가능함을 입증해, 로봇 학습 데이터 수집의 비용·확장성 문제를 근본적으로 해결할 수 있는 가능성을 보여준다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 5.919980925828125,
+    "published_at": "2026-07-27T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.24223",
+    "section": "papers",
+    "title_en": "A New Role for Relevance: Guiding Corpus Interaction in Agentic Search",
+    "title_ko": "에이전틱 검색에서 관련성의 새로운 역할: 코퍼스 상호작용 가이드",
+    "url": "https://huggingface.co/papers/2607.24223",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "기존 검색 에이전트는 관련성(relevance)을 상위-k 문서 선택에만 활용하지만, 복잡한 질문에서 증거를 정확히 찾아내기엔 한계가 있다. 이를 해결하기 위해 연구팀은 관련성을 코퍼스 탐색의 실행 우선순위로 활용하는 RARG(Relevance-Aware RipGrep Search Agent)를 제안했다. RARG는 문서를 관련성 순서대로 순회하고, 관련 단락을 탐색 시작점으로 초기화하며, grep 매칭 결과를 재랭킹해 유용한 발췌문을 LLM에 먼저 노출시킨다. 그 결과 검색 정확도와 효율성 모두에서 기존 검색 기반 및 직접 상호작용 에이전트를 능가한다.",
+    "why_it_matters": "복잡한 질의응답 과제에서 LLM 기반 검색 에이전트의 수렴 속도와 정확도를 동시에 개선하는 실질적인 방법론을 제시한다.",
+    "tags": [
+      "RAG",
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.442651256490317,
+    "published_at": "2026-07-26T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.24731",
+    "section": "papers",
+    "title_en": "Rethinking Classifier-Free Guidance in On-Policy Diffusion Distillation",
+    "title_ko": "분류기 없는 가이던스(CFG)를 온-정책 확산 증류에서 재고하다",
+    "url": "https://huggingface.co/papers/2607.24731",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "온-정책 증류(OPD)에서 CFG를 단순히 적용하면 포지티브/네거티브 브랜치 오류가 서로 상쇄되는 '식별 불가' 문제가 발생한다. 특히 교사 모델의 네거티브 브랜치에 학생이 접근할 수 없는 정보가 있을 경우, 두 브랜치 오류가 반대 방향으로 움직이는 'NBA(Negative Branch Asymmetry)' 현상이 나타난다. 이를 해결하기 위해 포지티브 예측과 CFG 조건 방향을 별도로 제약하는 PDM(Positive-Direction Matching) 기법을 제안하며, 이를 동영상 제어 증류에 적용해 추론 가이던스 스케일 변화에 더 강건한 지식 전이를 달성했다.",
+    "why_it_matters": "CFG가 기본 탑재된 현대 확산 모델의 증류 과정에서 발생하는 구조적 결함을 분석하고 실용적 해법을 제시해, 영상 생성 모델 경량화·증류 연구에 직접적 영향을 준다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 5.276666119016055,
+    "published_at": "2026-07-26T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.25565",
+    "section": "papers",
+    "title_en": "ReDesign: Recovering Editable Design Structures from Images via Agentic Decomposition",
+    "title_ko": "ReDesign: 에이전트 기반 분해로 이미지에서 편집 가능한 디자인 구조 복원",
+    "url": "https://huggingface.co/papers/2607.25565",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "ReDesign은 래스터 이미지에서 타이포그래피, 벡터 지오메트리, 색상, 그룹핑, 레이어 순서 등 멀티모달 속성을 복원해 편집 가능한 디자인 파일을 재생성하는 에이전트 프레임워크다. 각 확장 단계에서 로컬 수용·가지치기·재시도 피드백을 제공하는 '우아한 검증(graceful verification)'으로 오류 누적을 방지한다. 평가를 위해 909개의 Figma 파일과 14,796개의 편집 지시로 구성된 Figma Edit Replay Benchmark를 도입했으며, 레이아웃·색상·텍스트 편집 편집성에서 기존 베이스라인을 능가했다.",
+    "why_it_matters": "디자인 재편집 워크플로우의 핵심 병목인 이미지→편집 가능 파일 변환을 자동화해 실무 생산성을 크게 높일 수 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 5.060443010546419,
+    "published_at": "2026-07-27T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.25431",
+    "section": "papers",
+    "title_en": "CodeNib: A Multi-View Data System for Serving Repository Context to Coding Agents",
+    "title_ko": "CodeNib: 코딩 에이전트를 위한 멀티뷰 저장소 컨텍스트 시스템",
+    "url": "https://huggingface.co/papers/2607.25431",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "CodeNib는 코딩 에이전트가 저장소를 탐색하고 컨텍스트를 유지하는 데 필요한 어휘적·밀집·구조적 뷰를 커밋 단위로 구축하는 시스템이다. 단일 런타임을 통해 검색, 심볼 탐색, 컨텍스트 제공을 통합하며, 그래프·벡터 업데이트 속도가 독립 재빌드 대비 각각 8.7배·25.4배 빠르다. 또한 선택된 컨텍스트 정책을 통해 grep/read 방식 대비 50~87% 적은 토큰으로 동일한 위치 파악 성능을 유지한다.",
+    "why_it_matters": "코딩 에이전트의 저장소 탐색 비용과 토큰 낭비를 크게 줄이는 통합 컨텍스트 서빙 아키텍처를 제시한다.",
+    "tags": [
+      "에이전트",
+      "RAG"
+    ],
+    "score": 4.912023005428146,
+    "published_at": "2026-07-27T20:00:00Z"
+  },
+  {
+    "id": "github_trending-moeru-ai/airi",
+    "section": "releases",
+    "title_en": "moeru-ai/airi",
+    "title_ko": "Project AIRI: 오픈소스 AI 버튜버 플랫폼 (Neuro-sama 재현 프로젝트)",
+    "url": "https://github.com/moeru-ai/airi",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "AIRI는 Neuro-sama에서 영감을 받아 자체 호스팅 가능한 AI 가상 캐릭터(버튜버) 플랫폼이다. 실시간 음성 대화, Minecraft·Factorio 게임 플레이, VRM/Live2D 아바타 지원 등을 갖추고 있으며, 웹·데스크톱(macOS/Windows)·모바일에서 모두 동작한다. OpenAI, Claude, DeepSeek, Ollama 등 수십 개의 LLM API 프로바이더를 지원하며, WebGPU 기반 브라우저 내 추론도 목표로 한다.",
+    "why_it_matters": "클라우드 서비스 의존 없이 자신만의 AI 버튜버를 소유·운영할 수 있는 완성도 높은 오픈소스 스택을 제공한다는 점에서 AI 에이전트·인터랙티브 캐릭터 개발의 참고 사례가 된다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8664550264550265,
+    "published_at": "2026-07-30T01:33:51Z"
+  },
+  {
+    "id": "github_trending-huggingface/speech-to-speech",
+    "section": "releases",
+    "title_en": "huggingface/speech-to-speech",
+    "title_ko": "HuggingFace Speech-to-Speech: 오픈소스 로컬 음성 에이전트 파이프라인",
+    "url": "https://github.com/huggingface/speech-to-speech",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "HuggingFace가 공개한 `speech-to-speech`는 VAD → STT → LLM → TTS로 구성된 저지연 음성 에이전트 파이프라인이다. OpenAI Realtime 호환 WebSocket API를 제공하며, 각 컴포넌트를 자유롭게 교체할 수 있다. llama.cpp나 vLLM을 통한 완전 로컬 실행부터 OpenAI·HF Inference Providers 등 외부 API 연동까지 모두 지원하며, 실제로 수천 대의 Reachy Mini 로봇 대화 백엔드로 프로덕션 운영 중이다.",
+    "why_it_matters": "OpenAI Realtime API 호환 인터페이스를 유지하면서 모든 컴포넌트를 오픈소스 모델로 로컬 대체할 수 있어, 음성 AI 서비스의 비용·프라이버시 문제를 동시에 해결할 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8664550264550265,
+    "published_at": "2026-07-30T01:33:51Z"
+  },
+  {
+    "id": "github_trending-different-ai/openwork",
+    "section": "releases",
+    "title_en": "different-ai/openwork",
+    "title_ko": "OpenWork: Claude Cowork의 오픈소스 대안 데스크톱 앱",
+    "url": "https://github.com/different-ai/openwork",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "OpenWork는 Claude Cowork와 Codex의 오픈소스 대안으로, macOS·Windows·Linux를 지원하는 무료 데스크톱 앱입니다. MCP(Model Context Protocol)를 통해 Claude Code, Cursor, Codex 등 기존 AI 에이전트에 연결하여 스킬·플러그인·외부 서비스를 팀원·기기 간에 공유할 수 있습니다. 조직 관리자는 'OpenWork Den' 컨트롤 플레인에서 모델 접근 권한, 팀 정책, 플러그인 배포를 중앙 관리할 수 있습니다.",
+    "why_it_matters": "여러 AI 에이전트에 분산된 워크플로우를 하나의 오픈소스 플랫폼으로 통합·공유할 수 있어 팀 단위 AI 협업 환경 구축에 실질적인 대안이 된다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8664550264550265,
+    "published_at": "2026-07-30T01:33:51Z"
+  },
+  {
+    "id": "github_trending-MoonshotAI/FlashKDA",
+    "section": "releases",
+    "title_en": "MoonshotAI/FlashKDA",
+    "title_ko": "MoonshotAI, 고성능 Kimi Delta Attention 커널 'FlashKDA' 공개",
+    "url": "https://github.com/MoonshotAI/FlashKDA",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "MoonshotAI가 CUTLASS 기반의 고성능 Kimi Delta Attention 커널인 FlashKDA를 오픈소스로 공개했다. SM90 이상의 GPU와 CUDA 12.9, PyTorch 2.4 이상을 요구하며, flash-linear-attention 라이브러리의 chunk_kda 연산 백엔드로 자동 디스패치된다. 기존 Triton 경로 대비 성능 개선을 목표로 하며, 가변 길이 배치 처리도 지원한다.",
+    "why_it_matters": "선형 어텐션 계열 모델의 추론 속도를 높이는 커널 수준 최적화로, 효율적인 LLM 서빙 인프라 구축에 직접 활용 가능하다.",
+    "tags": [
+      "LLM",
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 0.8664550264550265,
+    "published_at": "2026-07-30T01:33:51Z"
+  },
+  {
+    "id": "openai_blog-how-two-settings-tripled-our-arc-agi-3-scores",
+    "section": "releases",
+    "title_en": "How enabling two settings tripled our scores on the ARC-AGI-3 benchmark",
+    "title_ko": "두 가지 API 설정으로 ARC-AGI-3 벤치마크 점수를 3배로 끌어올린 방법",
+    "url": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 GPT-5.6에서 두 가지 API 설정을 활성화하는 것만으로 ARC-AGI-3 벤치마크 점수를 3배 향상시켰다고 발표했다. 이 설정은 추론 내용을 유지하는 기능과 컴팩션(compaction)을 활성화하는 것으로, 성능과 효율성 모두를 개선했다. 복잡한 모델 변경 없이 설정 조정만으로 벤치마크 성과를 크게 높인 사례다.",
+    "why_it_matters": "모델 자체의 변경 없이 API 설정 최적화만으로 AGI 벤치마크 점수를 대폭 향상시킬 수 있다는 점에서, 실무 개발자에게 즉시 적용 가능한 성능 개선 인사이트를 제공한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.803573082010582,
+    "published_at": "2026-07-29T15:00:00Z"
+  },
+  {
+    "id": "openai_blog-chatgpt-for-academic-researchers",
+    "section": "releases",
+    "title_en": "Accelerating scientific discovery with ChatGPT for Academic Researchers",
+    "title_ko": "OpenAI, 학술 연구자 10만 명에게 ChatGPT 고급 모델 무료 제공",
+    "url": "https://openai.com/index/chatgpt-for-academic-researchers",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 과학적 발견을 가속화하기 위해 10만 명의 학술 연구자에게 ChatGPT 최고급 AI 모델에 대한 무료 접근권을 제공한다. 이 이니셔티브는 과학 연구, 협업, 발견을 지원하는 것을 목표로 한다.",
+    "why_it_matters": "대규모 학술 연구자에게 최첨단 AI 모델을 무료 제공함으로써 AI 기반 과학 연구의 대중화를 본격화하는 신호탄이 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7738111772486773,
+    "published_at": "2026-07-29T10:00:00Z"
+  },
+  {
+    "id": "openai_blog-gpt-5-6-frontier-intelligence-efficiency",
+    "section": "releases",
+    "title_en": "How GPT-5.6 fuses frontier intelligence with frontier efficiency",
+    "title_ko": "GPT-5.6, 최첨단 성능과 효율성을 동시에 구현하는 방법",
+    "url": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "GPT-5.6은 모델, 추론, 에이전트 워크플로우 전반에 걸쳐 AI 효율성을 개선했다. 이를 통해 비용 대비 더 많은 유용한 지능을 제공하는 것을 목표로 한다.",
+    "why_it_matters": "성능 저하 없이 비용 효율을 높이는 방향으로 발전하면서, 실사용 환경에서의 AI 도입 문턱이 낮아질 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-07-29T00:00:00Z"
+  },
+  {
+    "id": "hn-49096188",
+    "section": "community",
+    "title_en": "Document-borne AI worms can self-propagate through Copilot for Word",
+    "title_ko": "문서 기반 AI 웜, Word용 Copilot을 통해 자가 전파 가능",
+    "url": "https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "문서에 심어진 악성 AI 웜이 Word용 Copilot을 통해 스스로 전파될 수 있다는 보안 취약점이 발견되었다. 이는 AI 기반 문서 처리 시스템이 새로운 형태의 사이버 공격 벡터가 될 수 있음을 시사한다.",
+    "why_it_matters": "LLM 기반 코파일럿이 기업 환경에 확산되는 가운데, 문서를 매개로 한 AI 웜 공격이 실질적인 보안 위협으로 부상하고 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 9.653426644738888,
+    "published_at": "2026-07-29T11:44:33Z"
+  },
+  {
+    "id": "hn-49096969",
+    "section": "community",
+    "title_en": "Handbook.md shows that long policy documents do not reliably govern agents",
+    "title_ko": "Handbook.md, 긴 정책 문서는 에이전트를 신뢰성 있게 제어하지 못한다는 것을 보여줌",
+    "url": "https://arxiv.org/abs/2607.25398",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Handbook.md 사례는 장문의 정책 문서가 AI 에이전트의 행동을 일관되게 통제하지 못한다는 점을 시사한다. 에이전트가 복잡한 규칙 문서를 완전히 따르지 않는 문제는 실제 배포 환경에서 중요한 과제로 떠오르고 있다.",
+    "why_it_matters": "AI 에이전트 거버넌스의 핵심 한계를 드러내며, 정책 설계 방식의 근본적 재검토를 촉구한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 9.297827333128552,
+    "published_at": "2026-07-29T13:01:57Z"
+  },
+  {
+    "id": "hn-49089500",
+    "section": "community",
+    "title_en": "Anatomy of a Frontier Lab Agent Intrusion: A Timeline of the July 2026 Incident",
+    "title_ko": "프론티어 AI 연구소 에이전트 침입 사건 해부: 2026년 7월 타임라인",
+    "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "프론티어 AI 연구소에서 발생한 에이전트 관련 침입 사건의 전말을 타임라인 형식으로 정리한 글이다. 구체적인 내용은 제공된 설명이 없어 확인하기 어렵다.",
+    "why_it_matters": "AI 에이전트의 보안 취약점과 실제 침입 사고 사례는 에이전트 시스템 안전성 논의에 중요한 시사점을 제공할 수 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 9.284052357244438,
+    "published_at": "2026-07-28T20:28:33Z"
+  },
+  {
+    "id": "hn-49098198",
+    "section": "community",
+    "title_en": "A.I. companies are recruiting electricians and carpenters by the thousands",
+    "title_ko": "AI 기업들, 전기기사·목수 수천 명 대규모 채용 나서",
+    "url": "https://www.nytimes.com/2026/07/29/business/economy/data-center-electricians-training.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI 기업들이 데이터센터 건설 및 확장을 위해 전기기사, 목수 등 전통적인 건설 기술직 인력을 수천 명 규모로 채용하고 있다. 이는 AI 인프라 투자가 소프트웨어·연구 인력을 넘어 물리적 시설 구축 분야까지 확대되고 있음을 보여준다.",
+    "why_it_matters": "AI 성장이 디지털 인재를 넘어 전통 건설·기술 직종 고용 시장에도 직접적인 영향을 미치고 있음을 시사한다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.203827979210935,
+    "published_at": "2026-07-29T14:43:47Z"
+  },
+  {
+    "id": "hn-49101852",
+    "section": "community",
+    "title_en": "Kimi K3-256k",
+    "title_ko": "Kimi K3-256k 공개",
+    "url": "https://www.kimi.com/code/docs/en/kimi-code/models",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Kimi에서 K3-256k 모델을 공개했다. 256k 컨텍스트 윈도우를 지원하는 것으로 보인다.",
+    "why_it_matters": "긴 컨텍스트를 지원하는 새로운 LLM 모델로, 장문 처리 능력이 주목된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.143226750367443,
+    "published_at": "2026-07-29T19:25:33Z"
+  },
+  {
+    "id": "youtube-2IQLSPmLMas",
+    "section": "video",
+    "title_en": "허깅페이스 제로데이 해킹이 AI 짓이라고?",
+    "title_ko": "허깅페이스 제로데이 해킹, AI가 관여했다?",
+    "url": "https://www.youtube.com/shorts/2IQLSPmLMas",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "허깅페이스에서 발생한 제로데이 해킹 사건이 AI와 연관되어 있다는 내용을 다루는 영상이다. 조코딩 채널에서 해당 사건을 소개하고 있다.",
+    "why_it_matters": "AI 인프라의 보안 취약점과 AI를 활용한 사이버 공격 가능성에 대한 경각심을 일깨우는 사례다.",
+    "tags": [
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 0.7705588624338624,
+    "published_at": "2026-07-29T09:27:13Z"
+  },
+  {
+    "id": "youtube-r4g4Nc7vNqc",
+    "section": "video",
+    "title_en": "AI에게 일을 더 잘 시키는 미친 꿀팁",
+    "title_ko": "AI에게 일을 더 잘 시키는 꿀팁 모음",
+    "url": "https://www.youtube.com/shorts/r4g4Nc7vNqc",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 AI를 더 효과적으로 활용하는 팁을 소개하는 영상이다. Claude 등 AI 도구를 실무에 잘 활용하는 방법을 다루는 것으로 보인다.",
+    "why_it_matters": "AI 프롬프트 활용 노하우를 한국어로 쉽게 접할 수 있는 실용적인 콘텐츠다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7581431878306879,
+    "published_at": "2026-07-29T07:22:04Z"
+  },
+  {
+    "id": "youtube-qB9c4RFBQ9s",
+    "section": "video",
+    "title_en": "AI시대 진짜 일잘러가 되는 방법 ㄷㄷ (w.ChatGPT Work)",
+    "title_ko": "AI 시대에 진짜 일 잘하는 사람이 되는 방법 (feat. ChatGPT Work)",
+    "url": "https://www.youtube.com/shorts/qB9c4RFBQ9s",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "ChatGPT Work를 활용해 업무 효율을 높이는 방법을 소개하는 영상이다. OpenAI의 유료 광고를 포함하고 있으며, ChatGPT Work 서비스를 직접 사용해볼 수 있는 링크를 제공한다.",
+    "why_it_matters": "ChatGPT Work를 실무에 적용하는 구체적인 팁을 원하는 직장인·개발자에게 유용한 실용 콘텐츠다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7441071428571429,
+    "published_at": "2026-07-29T05:00:35Z"
+  },
+  {
+    "id": "latent_space-ainews-ai-is-eating-finance-aie-nyc",
+    "section": "deepdive",
+    "title_en": "[AINews] AI is eating Finance; AIE NYC now open",
+    "title_ko": "AI가 금융을 삼키다: 코딩 다음 큰 수직 시장으로 부상",
+    "url": "https://www.latent.space/p/ainews-ai-is-eating-finance-aie-nyc",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "코딩 분야에 이어 AI가 금융 서비스 산업에 빠르게 침투하고 있다는 흐름을 다룬다. 금융이 AI의 차세대 핵심 수직 시장으로 주목받고 있으며, AI Engineer NYC 이벤트 등록도 시작됐다.",
+    "why_it_matters": "AI가 코딩을 넘어 금융 서비스까지 본격 확장되는 산업 전환 흐름을 파악할 수 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.8543865740740741,
+    "published_at": "2026-07-29T23:32:12Z"
+  }
+]
