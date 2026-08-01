@@ -1,0 +1,372 @@
+[
+  {
+    "id": "hf-2607.28618",
+    "section": "papers",
+    "title_en": "AskChem: Claim-Centered Infrastructure for Chemistry Literature Synthesis",
+    "title_ko": "AskChem: 화학 문헌 합성을 위한 클레임 중심 인프라",
+    "url": "https://huggingface.co/papers/2607.28618",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "AskChem은 기존의 문서 단위 검색 방식을 벗어나 화학 논문을 원자적 클레임(claim) 단위로 변환하여 출처 DOI와 원문 인용을 함께 제공하는 검색 인프라다. 현재 147K편의 논문에서 추출한 240만 개의 클레임을 인덱싱하며, 증거 그래프·분류 체계·패싯 택소노미 등 다양한 탐색 구조를 제공한다. REST, SDK, MCP를 통해 AI 에이전트도 활용 가능하며, AskChem-Bench에서 GPT-5.5와 결합 시 DOI 확인 가능률이 88.3%에서 100%로 향상되었다.",
+    "why_it_matters": "화학 연구에서 AI 에이전트가 다수 논문을 넘나들며 정확한 출처 기반 답변을 생성할 수 있는 전문 RAG 인프라로, 과학적 할루시네이션 방지에 실질적 기여 가능.",
+    "tags": [
+      "RAG",
+      "에이전트",
+      "인프라"
+    ],
+    "score": 6.655991810819852,
+    "published_at": "2026-07-29T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.28227",
+    "section": "papers",
+    "title_en": "Qwen-UI-Agent Technical Report: Toward Next-Generation Real-World Centric Foundation GUI Agents",
+    "title_ko": "Qwen-UI-Agent: 실제 기기 중심의 차세대 GUI 에이전트 기술 보고서",
+    "url": "https://huggingface.co/papers/2607.28227",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Alibaba Qwen 팀이 모바일·PC·웹·DeepSearch 환경을 아우르는 GUI 에이전트 'Qwen-UI-Agent'를 공개했다. GUI 조작과 CLI 실행을 통합한 단일 액션 스페이스, 100턴 이상의 장기 궤적을 지원하는 온라인 강화학습, 1만 개 이상의 동시 환경을 활용한 대규모 훈련이 특징이다. 모바일 벤치마크에서 MobileWorld 82.1%, AndroidDaily 97.5%를 기록하며 Opus 4.8, Gemini 3.1 Pro, GPT-5.6 Sol 등 최신 모델 대비 최고 수준의 성능을 달성했다.",
+    "why_it_matters": "실제 기기에서 장기 멀티플랫폼 작업을 자율 수행하는 GUI 에이전트가 최전선 모델들을 넘어서며 범용 디지털 자동화의 실용화 가능성을 높였다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 6.5909869805108565,
+    "published_at": "2026-07-29T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.26760",
+    "section": "papers",
+    "title_en": "Metis: Memory Foundation Model",
+    "title_ko": "Metis: 네이티브 메모리 능력을 갖춘 메모리 파운데이션 모델",
+    "url": "https://huggingface.co/papers/2607.26760",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "AI 에이전트의 메모리는 그동안 외부 모듈로 구현되어 왔으나, Metis는 파운데이션 모델 자체에 네이티브 메모리 기능을 내재화한 첫 번째 프로토타입이다. 모델 백본 내에 지속적으로 진화하는 메모리 상태를 두고, 메모리 어텐션을 통해 과거 정보를 압축·접근하는 새로운 아키텍처를 제안한다. 온라인 메모리 유지는 그래디언트 없이 순전파(forward pass)만으로 이루어지며, 추론 시 모델 가중치는 고정된 채 메모리 상태만 자율적으로 변환된다. 프로젝트 코드와 모델 체크포인트가 공개되어 향후 연구를 지원한다.",
+    "why_it_matters": "외부 메모리 모듈 의존을 없애고 모델 내부에서 메모리를 처리함으로써 에이전트 아키텍처의 효율성과 엔드투엔드 최적화 가능성을 근본적으로 높일 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 6.493061443340548,
+    "published_at": "2026-07-28T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.28568",
+    "section": "papers",
+    "title_en": "Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering",
+    "title_ko": "Frontis-MA1: 머신러닝 엔지니어링에서 재귀적 자기개선을 향한 AI4AI 모델",
+    "url": "https://huggingface.co/papers/2607.28568",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "재귀적 자기개선(RSI) 연구를 위한 오픈소스 풀스택 시스템 OpenMLE와 함께, 35B 규모의 메타 진화 에이전트 Frontis-MA1을 공개했다. Draft·Improve·Debug·Crossover 4가지 프로그램 진화 연산자를 SFT·RL로 학습시키고, 장기 탐색(OpenMLE-Evo)과 결합해 MLE-Bench Lite에서 메달 평균 39.39%→71.21%로 끌어올렸다. RTX 4090 단일 GPU(12GB VRAM)로 과제당 12시간 예산 내에서 GPT-5.5+Codex를 초과하고 2.8T 규모의 Kimi K3에 근접하는 성능을 달성했으며, 모델 가중치와 전체 코드를 오픈소스로 공개했다.",
+    "why_it_matters": "AI가 스스로 AI를 개선하는 재귀적 자기개선 연구에서 소비자급 GPU로도 최대 규모 모델에 근접하는 성능을 오픈소스로 재현 가능하게 제시한 첫 풀스택 프레임워크다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 6.049856007249537,
+    "published_at": "2026-07-29T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.28624",
+    "section": "papers",
+    "title_en": "PhiZero: A World Model Built Around Physical Language",
+    "title_ko": "PhiZero: 물리적 언어 기반 세계 모델",
+    "url": "https://huggingface.co/papers/2607.28624",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "PhiZero는 물리적 세계의 상태 전이를 간결한 이산 표현인 '물리적 언어'로 추상화하는 세계 모델이다. 기존 물리 세계 모델이 픽셀 공간에서 직접 미래 영상을 예측하는 방식과 달리, PhiZero는 먼저 물리적 언어 시퀀스로 미래 세계 진화를 추론한 뒤 이를 영상으로 렌더링하는 '추론 후 렌더링' 패러다임을 채택한다. 와일드 비디오에서 자기 지도 학습으로 물리적 언어를 학습하며, 생성·이해 벤치마크에서 물리적으로 일관된 세계 모델링 능력을 검증했다. 액션 조건부 시뮬레이션 및 제로샷 모션 전이 가능성도 함께 제시한다.",
+    "why_it_matters": "픽셀 예측 중심의 한계를 넘어 물리 법칙을 명시적으로 추론하는 세계 모델 접근법으로, 인터랙티브 시뮬레이션과 로보틱스 등 응용 분야에 새로운 방향을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 6.017279836814924,
+    "published_at": "2026-07-29T20:00:00Z"
+  },
+  {
+    "id": "github_trending-different-ai/openwork",
+    "section": "releases",
+    "title_en": "different-ai/openwork",
+    "title_ko": "OpenWork: Claude Cowork 대체 오픈소스 AI 워크플로우 공유 앱",
+    "url": "https://github.com/different-ai/openwork",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "OpenWork는 Claude Cowork와 Codex의 오픈소스 대안으로, macOS·Windows·Linux를 지원하는 무료 데스크톱 앱입니다. MCP(Model Context Protocol)를 통해 Claude Code, Cursor, Codex 등 다양한 AI 에이전트에서 동일한 스킬과 MCP 연결을 재사용할 수 있습니다. 팀 단위로는 'OpenWork Den' 관리 인터페이스를 통해 권한 관리, 모델 프로바이더 제어, 플러그인 배포 등을 중앙에서 처리할 수 있습니다.",
+    "why_it_matters": "여러 AI 에이전트에서 워크플로우·MCP 연결을 단일 오픈소스 플랫폼으로 통합·공유할 수 있어 팀 생산성 향상에 직접적으로 기여한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8665195105820106,
+    "published_at": "2026-08-01T01:34:30Z"
+  },
+  {
+    "id": "github_trending-microsoft/AI-For-Beginners",
+    "section": "releases",
+    "title_en": "microsoft/AI-For-Beginners",
+    "title_ko": "마이크로소프트 AI 입문자 커리큘럼 (12주, 24강)",
+    "url": "https://github.com/microsoft/AI-For-Beginners",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "마이크로소프트가 공개한 오픈소스 AI 입문 커리큘럼으로, 12주 동안 24개 강의를 통해 신경망, 컴퓨터 비전, NLP, 강화학습, AI 윤리 등을 다룬다. PyTorch와 TensorFlow를 활용한 실습 노트북과 퀴즈, 랩 과제가 포함되어 있다. 한국어를 포함한 50개 이상의 언어로 번역이 지원된다.",
+    "why_it_matters": "마이크로소프트가 직접 제공하는 체계적인 무료 AI 커리큘럼으로, 입문자가 이론과 실습을 동시에 익힐 수 있는 가장 포괄적인 오픈소스 학습 자료 중 하나다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8665195105820106,
+    "published_at": "2026-08-01T01:34:30Z"
+  },
+  {
+    "id": "openai_blog-advancing-responsible-ai-across-europe",
+    "section": "releases",
+    "title_en": "Advancing responsible AI across Europe",
+    "title_ko": "OpenAI, 유럽에서의 책임 있는 AI 발전 방향 공유",
+    "url": "https://openai.com/index/advancing-responsible-ai-across-europe",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 유럽에서의 안전성, 보안, 투명성, 출처 관리 등 책임 있는 AI 거버넌스 실천 사항을 공개했다. EU AI법이 진행됨에 따라 해당 노력을 지속해 나갈 계획임을 밝혔다.",
+    "why_it_matters": "EU AI법 시행을 앞두고 OpenAI의 유럽 규제 대응 전략을 확인할 수 있는 공식 입장이다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.803573082010582,
+    "published_at": "2026-07-31T15:00:00Z"
+  },
+  {
+    "id": "openai_blog-building-abundant-intelligence",
+    "section": "releases",
+    "title_en": "Building abundant intelligence",
+    "title_ko": "풍요로운 지능 구축: OpenAI의 풀스택 AI 전략",
+    "url": "https://openai.com/index/building-abundant-intelligence",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 고급 AI를 더욱 강력하고, 저렴하며, 광범위하게 활용 가능하게 만들기 위한 풀스택 접근 방식을 제시했다. 이 전략은 AI의 역량 향상과 동시에 접근성 확대를 목표로 한다.",
+    "why_it_matters": "OpenAI가 AI의 성능·비용·보급이라는 세 가지 과제를 동시에 해결하려는 방향성을 공식화했다는 점에서 업계 전반에 영향을 미칠 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.803573082010582,
+    "published_at": "2026-07-31T15:00:00Z"
+  },
+  {
+    "id": "openai_blog-unive",
+    "section": "releases",
+    "title_en": "Univé builds an AI-ready workforce",
+    "title_ko": "유니베, ChatGPT 엔터프라이즈로 AI 준비된 인력 구축",
+    "url": "https://openai.com/index/unive",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "네덜란드 보험사 유니베(Univé)는 ChatGPT 엔터프라이즈를 도입해 AI 친화적 인력을 양성했다. 리더십 주도의 책임 있는 거버넌스와 직원 주도의 혁신을 결합해 조직 전반의 업무 방식을 변화시켰다. 대규모 AI 전환을 위한 실질적인 사례로 주목받고 있다.",
+    "why_it_matters": "대기업이 AI 도입 시 거버넌스와 직원 참여를 어떻게 균형 있게 조율하는지 보여주는 실제 사례로, 기업 AI 전환 전략 수립에 참고할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7559540343915344,
+    "published_at": "2026-07-31T07:00:00Z"
+  },
+  {
+    "id": "openai_blog-disrupting-malicious-uses-of-ai-criminal-scam-operation",
+    "section": "releases",
+    "title_en": "Disrupting a Criminal Scam Operation",
+    "title_ko": "OpenAI, 캄보디아 기반 사기 조직 운영 차단",
+    "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 캄보디아에 거점을 둔 사기 조직의 ChatGPT 악용을 적발하고 차단했다. 해당 조직은 투자 사기, 로맨스 스캠, 도박, 사칭 등 다양한 범죄 사기 활동에 ChatGPT를 활용하고 있었다. OpenAI는 이번 조치를 통해 생성형 AI가 범죄에 악용되는 사례에 적극 대응하고 있음을 밝혔다.",
+    "why_it_matters": "LLM이 실제 범죄 사기 조직에 조직적으로 악용되고 있음을 보여주는 사례로, AI 플랫폼의 오남용 탐지 및 대응 체계의 중요성을 부각시킨다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-07-31T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-advancing-the-price-performance-frontier-with-gpt-5-6",
+    "section": "releases",
+    "title_en": "Advancing the price-performance frontier with GPT-5.6",
+    "title_ko": "GPT-4.1 Mini 후속, GPT-5.6으로 가격 대비 성능 한계를 넘다",
+    "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 GPT-5.6 모델의 Luna 및 Terra 티어에 대한 인하된 가격을 발표했다. 더욱 효율적인 모델 아키텍처를 통해 기업들이 대규모 AI 워크플로우를 더 낮은 비용으로 배포할 수 있도록 지원하는 것이 목표다. 이번 가격 정책은 엔터프라이즈 규모의 AI 도입 장벽을 낮추기 위한 OpenAI의 전략적 행보다.",
+    "why_it_matters": "GPT-5.6의 가격 인하로 기업 규모의 AI 워크플로우 도입 비용 부담이 줄어들어 상용화 가속이 기대된다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.6309540343915344,
+    "published_at": "2026-07-30T10:00:00Z"
+  },
+  {
+    "id": "hn-49127306",
+    "section": "community",
+    "title_en": "Tailscale didn't stop the Hugging Face intrusion",
+    "title_ko": "Tailscale, Hugging Face 침입 사고를 막지 못했다",
+    "url": "https://tailscale.com/blog/hugging-face-intrusion",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Tailscale이 Hugging Face에서 발생한 보안 침입을 방지하지 못한 사건이 언급되고 있다. 구체적인 경위나 피해 규모 등 세부 정보는 제공되지 않았다.",
+    "why_it_matters": "AI 인프라 보안의 취약점을 드러내는 사례로, VPN 솔루션만으로는 충분하지 않을 수 있음을 시사한다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.75960117043713,
+    "published_at": "2026-07-31T19:03:45Z"
+  },
+  {
+    "id": "hn-49126604",
+    "section": "community",
+    "title_en": "qm – Multiplayer agent harness for work",
+    "title_ko": "qm – 작업용 멀티플레이어 에이전트 하네스",
+    "url": "https://github.com/yc-software/qm",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "qm은 여러 에이전트가 협력하여 작업을 수행할 수 있도록 지원하는 멀티플레이어 에이전트 하네스 도구다. 제공된 정보가 제한적이어서 세부 기능은 확인이 어렵다.",
+    "why_it_matters": "복수 에이전트의 협업 실행 환경을 제공하는 도구로, 에이전트 기반 워크플로우에 관심 있는 개발자에게 주목할 만하다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 9.475801210676776,
+    "published_at": "2026-07-31T18:04:58Z"
+  },
+  {
+    "id": "hn-49124358",
+    "section": "community",
+    "title_en": "Is AI reasoning right for the wrong reasons?",
+    "title_ko": "AI의 추론, 올바른 결론을 잘못된 이유로 내리는 건 아닐까?",
+    "url": "https://www.quantamagazine.org/is-ai-reasoning-right-for-the-wrong-reasons-20260731/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI 추론 모델이 정답을 도출하더라도 그 과정이 실제로 올바른 논리에 기반한 것인지 의문을 제기하는 글이다. 겉으로는 맞는 결론처럼 보여도 내부 추론 과정이 잘못된 방향일 수 있다는 점을 다룬다.",
+    "why_it_matters": "AI 추론의 신뢰성과 해석 가능성에 근본적인 의문을 던지는 주제로, 모델 평가 방식 재고가 필요할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.338757866811852,
+    "published_at": "2026-07-31T15:29:39Z"
+  },
+  {
+    "id": "hn-49083599",
+    "section": "community",
+    "title_en": "Twenty-five years ago it was cryptography, today it's model weights",
+    "title_ko": "25년 전엔 암호화, 오늘날엔 모델 가중치",
+    "url": "https://weeraman.com/because-we-can/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "25년 전 암호화 기술이 국가 안보와 수출 통제의 핵심 쟁점이었듯, 오늘날에는 AI 모델 가중치가 그 자리를 차지하고 있다는 주장이다. 암호화 논쟁의 역사적 교훈이 현재 AI 규제 논의에 시사점을 준다는 관점을 담고 있다.",
+    "why_it_matters": "AI 모델 가중치의 통제·공개 논쟁이 과거 암호화 수출 규제처럼 기술·정책의 핵심 전장이 될 수 있음을 시사한다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 8.322516541640237,
+    "published_at": "2026-07-28T13:31:25Z"
+  },
+  {
+    "id": "hn-49123386",
+    "section": "community",
+    "title_en": "Run Kimi K3 using 29 GB of RAM at 0.50 tok/s",
+    "title_ko": "Kimi K3, 29GB RAM으로 초당 0.50 토큰 속도로 실행 가능",
+    "url": "https://github.com/sqliteai/waste",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Kimi K3 모델을 29GB의 RAM 환경에서 로컬로 실행할 수 있다는 내용이다. 초당 0.50 토큰의 속도로 동작하며, 비교적 일반적인 하드웨어에서도 구동이 가능함을 시사한다.",
+    "why_it_matters": "고성능 LLM을 소비자급 메모리 환경에서 로컬 실행할 수 있는 가능성을 보여준다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 8.173191742486598,
+    "published_at": "2026-07-31T14:12:38Z"
+  },
+  {
+    "id": "youtube-nbahzNt5Dik",
+    "section": "video",
+    "title_en": "로봇에 몰빵한 중국 기업 근황",
+    "title_ko": "로봇에 집중 투자한 중국 기업 최근 근황",
+    "url": "https://www.youtube.com/shorts/nbahzNt5Dik",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "중국 기업들의 로봇 분야 집중 투자 현황을 다룬 영상이다. 유니트리(Unitree) 등 중국 로봇 기업들의 최신 동향을 소개한다. 구체적인 내용은 영상을 통해 확인할 수 있다.",
+    "why_it_matters": "중국 로봇 산업의 급성장 흐름을 파악할 수 있어 AI·로봇 분야 동향에 관심 있는 개발자에게 유용하다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7500330687830687,
+    "published_at": "2026-07-31T06:00:19Z"
+  },
+  {
+    "id": "youtube-Ijmm39E0dCQ",
+    "section": "video",
+    "title_en": "10억개의 토큰을 무료로 쓰는 ㅎㄷㄷ한 방법",
+    "title_ko": "10억 개의 토큰을 무료로 사용하는 방법",
+    "url": "https://www.youtube.com/shorts/Ijmm39E0dCQ",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 Claude, GPT 등 AI 모델의 토큰을 무료로 대량 활용할 수 있는 방법을 소개하는 영상이다. 구체적인 방법은 영상 본편에서 다루고 있으며, AI 토큰 비용 절감에 관심 있는 개발자를 대상으로 한다.",
+    "why_it_matters": "AI API 비용 부담을 줄일 수 있는 실용적인 방법을 제시해 개발자들의 실험 및 프로토타이핑 비용 절감에 도움이 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6277132936507936,
+    "published_at": "2026-07-30T09:27:20Z"
+  },
+  {
+    "id": "youtube-QaFSOPFzM8I",
+    "section": "video",
+    "title_en": "GPT를 여자친구로 만들어버림..",
+    "title_ko": "GPT로 AI 여자친구 만들기",
+    "url": "https://www.youtube.com/shorts/QaFSOPFzM8I",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "유튜버 조코딩이 GPT를 활용해 AI 여자친구를 만드는 프로젝트를 소개하는 영상이다. 코딩 교육 채널답게 실습 위주의 내용을 다루는 것으로 보인다.",
+    "why_it_matters": "GPT를 활용한 챗봇 커스터마이징 아이디어를 쉽게 접할 수 있는 입문용 콘텐츠로 활용 가능하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6071858465608466,
+    "published_at": "2026-07-30T06:00:25Z"
+  },
+  {
+    "id": "latent_space-ainews-not-much-happened-today-038",
+    "section": "deepdive",
+    "title_en": "[AINews] not much happened today",
+    "title_ko": "[AI 뉴스] DeepSeek V4-Flash 0731 외에는 조용한 하루",
+    "url": "https://www.latent.space/p/ainews-not-much-happened-today-038",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "오늘은 DeepSeek V4-Flash 0731 출시를 제외하면 특별한 AI 소식이 없는 조용한 날이었다. 전반적으로 주목할 만한 대형 발표나 이슈는 없었다.",
+    "why_it_matters": "DeepSeek의 새 Flash 모델 업데이트가 유일한 주요 소식으로, 오픈소스 LLM 동향을 주시하는 개발자라면 확인이 필요하다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8668816137566138,
+    "published_at": "2026-08-01T01:38:09Z"
+  }
+]
