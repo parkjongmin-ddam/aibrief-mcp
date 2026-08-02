@@ -1,0 +1,379 @@
+[
+  {
+    "id": "hf-2607.28618",
+    "section": "papers",
+    "title_en": "AskChem: Claim-Centered Infrastructure for Chemistry Literature Synthesis",
+    "title_ko": "AskChem: 화학 문헌 합성을 위한 클레임 중심 인프라",
+    "url": "https://huggingface.co/papers/2607.28618",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "AskChem은 화학 문헌 검색의 단위를 논문에서 '출처 기반 클레임'으로 전환한 인프라다. 각 논문을 원자 단위의 클레임으로 분해하고, DOI 및 인용 근거와 함께 저장해 147만 편 논문에서 추출한 240만 개의 클레임을 인덱싱한다. 검색 구조로는 계층적 분류 체계, 증거 그래프, 탐색형 살아있는 분류체계를 제공하며, REST·SDK·MCP를 통해 AI 에이전트와 연동이 가능하다. AskChem-Bench에서 GPT-5.5에 AskChem을 결합하면 DOI 해석 성공률이 88.3%에서 100%로 향상됐다.",
+    "why_it_matters": "AI 에이전트가 화학 문헌을 정확하고 출처 추적 가능한 방식으로 검색·합성할 수 있는 RAG 인프라로, 과학 연구 자동화의 신뢰성을 높인다.",
+    "tags": [
+      "RAG",
+      "에이전트"
+    ],
+    "score": 6.673323267171493,
+    "published_at": "2026-07-29T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.28227",
+    "section": "papers",
+    "title_en": "Qwen-UI-Agent Technical Report: Toward Next-Generation Real-World Centric Foundation GUI Agents",
+    "title_ko": "Qwen-UI-Agent: 실제 디바이스 중심의 차세대 GUI 에이전트 기술 보고서",
+    "url": "https://huggingface.co/papers/2607.28227",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "알리바바 Qwen 팀이 모바일, 컴퓨터, 웹, DeepSearch 환경을 아우르는 GUI 에이전트 'Qwen-UI-Agent'를 공개했다. GUI 조작과 CLI 실행을 통합한 단일 액션 스페이스, 온라인 강화학습(100턴 이상 궤적 지원), 1만 개 이상의 동시 환경을 활용한 대규모 학습이 특징이다. 모바일 벤치마크에서 MobileWorld 82.1%, AndroidDaily 97.5%를 달성하며 최고 성능을 기록했고, 브라우저·컴퓨터 사용 태스크에서도 GPT-5.6, Gemini 3.1 Pro 등 최신 모델과 경쟁력 있는 성능을 보였다.",
+    "why_it_matters": "실제 디바이스에서 장기 작업을 자율 수행하는 GUI 에이전트의 실용화 수준을 크게 끌어올려, 범용 디지털 자동화 시대를 앞당길 수 있는 기술적 이정표다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 6.631211781821365,
+    "published_at": "2026-07-29T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.26760",
+    "section": "papers",
+    "title_en": "Metis: Memory Foundation Model",
+    "title_ko": "Metis: 네이티브 메모리 능력을 갖춘 메모리 파운데이션 모델",
+    "url": "https://huggingface.co/papers/2607.26760",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "AI 에이전트의 메모리는 그동안 외부 모듈로 구현되어 왔으나, Metis는 파운데이션 모델 자체에 네이티브 메모리 능력을 부여하는 최초의 메모리 파운데이션 모델 프로토타입이다. 과거 정보를 모델 내부에 압축 저장하고 메모리 어텐션을 통해 접근하는 새로운 아키텍처를 제안하며, 온라인 메모리 유지는 그래디언트 없이 순전파만으로 동작한다. 추론 시 모델 가중치는 고정된 채 네이티브 메모리 상태만 자율적으로 변환되어 효율성을 높인다. 프로젝트와 모델 체크포인트를 공개하여 후속 연구를 지원한다.",
+    "why_it_matters": "외부 메모리 모듈 의존을 탈피해 모델 내부에 메모리를 통합함으로써 AI 에이전트의 구조적 효율성과 엔드투엔드 최적화 가능성을 크게 높일 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 6.541263545158426,
+    "published_at": "2026-07-28T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.28568",
+    "section": "papers",
+    "title_en": "Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering",
+    "title_ko": "Frontis-MA1: 머신러닝 엔지니어링 분야의 재귀적 자기개선 AI 모델",
+    "url": "https://huggingface.co/papers/2607.28568",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Frontis-MA1(35B)은 AI가 AI를 개선하는 '재귀적 자기개선(RSI)' 연구를 위해 개발된 메타 진화 에이전트다. Draft·Improve·Debug·Crossover 4가지 프로그램 진화 연산자를 기반으로 SFT와 RL로 학습되며, OpenMLE 풀스택 프레임워크 위에서 동작한다. MLE-Bench Lite 평가에서 기존 베이스 모델 대비 Medal Average를 39.39%에서 60.61%로 높였고, OpenMLE-Evo-Max 적용 시 71.21%까지 도달해 GPT-5.5 + Codex를 초과하며 GPT-5.6 Sol에 근접했다. 모델 가중치와 전체 OpenMLE 스택을 오픈소스로 공개했다.",
+    "why_it_matters": "AI 스스로 ML 코드를 작성·개선하는 재귀적 자기개선 연구의 실용적 풀스택 프레임워크와 강력한 오픈 모델을 동시에 제공해, 자율 AI 개발 연구의 재현 가능한 기반을 마련했다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 6.093750200806762,
+    "published_at": "2026-07-29T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.28624",
+    "section": "papers",
+    "title_en": "PhiZero: A World Model Built Around Physical Language",
+    "title_ko": "PhiZero: 물리적 언어를 핵심으로 한 월드 모델",
+    "url": "https://huggingface.co/papers/2607.28624",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "PhiZero는 영상에서 자기지도학습으로 획득한 '물리적 언어(physical language)'라는 이산 표현을 통해 세계 상태 전이를 추론하는 물리 세계 모델입니다. 기존 모델들이 픽셀 공간에서 미래 영상을 직접 예측하는 방식과 달리, PhiZero는 먼저 물리적 언어 시퀀스로 미래 세계 진화를 추론한 뒤 이를 영상으로 렌더링하는 '추론 후 렌더링' 패러다임을 채택합니다. 생성 및 이해 벤치마크 실험에서 물리적 일관성 있는 세계 진화 모델링 능력을 검증하였으며, 액션 조건부 시뮬레이션과 제로샷 모션 전이 가능성도 확인했습니다.",
+    "why_it_matters": "픽셀 예측 대신 명시적 물리 추론을 도입한 접근법으로, 인터랙티브 시뮬레이션과 로봇·자율주행 등 실세계 응용에 새로운 방향을 제시합니다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 6.056245805348308,
+    "published_at": "2026-07-29T20:00:00Z"
+  },
+  {
+    "id": "github_trending-microsoft/AI-For-Beginners",
+    "section": "releases",
+    "title_en": "microsoft/AI-For-Beginners",
+    "title_ko": "마이크로소프트 AI 입문 커리큘럼 (12주, 24강)",
+    "url": "https://github.com/microsoft/AI-For-Beginners",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "마이크로소프트가 공개한 오픈소스 AI 입문 커리큘럼으로, 12주 동안 24개 강의를 통해 신경망, 컴퓨터 비전, NLP, 강화학습, AI 윤리 등을 다룹니다. PyTorch와 TensorFlow를 활용한 실습 노트북과 퀴즈, 랩이 포함되어 있으며, 한국어를 포함한 50개 이상의 언어로 번역이 제공됩니다. 상징적 AI부터 대형 언어 모델, 멀티에이전트 시스템까지 폭넓은 주제를 초보자 친화적으로 구성했습니다.",
+    "why_it_matters": "마이크로소프트가 직접 제작한 체계적인 무료 AI 입문 커리큘럼으로, 한국어 번역까지 지원해 국내 개발자들이 AI 기초를 처음부터 실습 중심으로 학습하기에 최적의 자료입니다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8665178571428571,
+    "published_at": "2026-08-02T01:34:29Z"
+  },
+  {
+    "id": "github_trending-microsoft/generative-ai-for-beginners",
+    "section": "releases",
+    "title_en": "microsoft/generative-ai-for-beginners",
+    "title_ko": "마이크로소프트 '초보자를 위한 생성형 AI' 21강 무료 커리큘럼",
+    "url": "https://github.com/microsoft/generative-ai-for-beginners",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "마이크로소프트 클라우드 애드보케이트가 제작한 21개 레슨으로 구성된 생성형 AI 입문 과정이다. Python과 TypeScript 코드 예제를 포함하며, Azure OpenAI, OpenAI API, 오프라인 로컬 모델 등 다양한 환경을 지원한다. RAG, AI 에이전트, 파인튜닝, 프롬프트 엔지니어링 등 실무 주제를 폭넓게 다루며 한국어를 포함한 다국어 번역도 제공된다.",
+    "why_it_matters": "생성형 AI 애플리케이션 개발 전반을 체계적으로 학습할 수 있는 마이크로소프트 공식 무료 커리큘럼으로, 입문자부터 실무 적용까지 가장 포괄적인 출발점이다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "에이전트"
+    ],
+    "score": 0.8665178571428571,
+    "published_at": "2026-08-02T01:34:29Z"
+  },
+  {
+    "id": "github_trending-huggingface/speech-to-speech",
+    "section": "releases",
+    "title_en": "huggingface/speech-to-speech",
+    "title_ko": "HuggingFace Speech-to-Speech: 오픈소스 로컬 음성 에이전트 파이프라인",
+    "url": "https://github.com/huggingface/speech-to-speech",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "HuggingFace가 VAD → STT → LLM → TTS로 구성된 모듈형 저지연 음성 에이전트 파이프라인을 오픈소스로 공개했다. OpenAI Realtime 호환 WebSocket API를 지원하며, 각 컴포넌트를 자유롭게 교체할 수 있다. llama.cpp나 vLLM을 통한 완전 로컬 실행도 지원하며, 수천 대의 Reachy Mini 로봇의 대화 백엔드로 실제 운영 중이다. Apple Silicon, CUDA, CPU 등 다양한 플랫폼을 지원한다.",
+    "why_it_matters": "OpenAI Realtime API와 호환되는 완전 오픈소스 음성 에이전트를 로컬에서 구축할 수 있어, 비용·프라이버시 걱정 없이 실시간 음성 AI 서비스 개발이 가능하다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8665178571428571,
+    "published_at": "2026-08-02T01:34:29Z"
+  },
+  {
+    "id": "github_trending-abus-aikorea/voice-pro",
+    "section": "releases",
+    "title_en": "abus-aikorea/voice-pro",
+    "title_ko": "Voice-Pro: AI 음성 인식·번역·다국어 더빙 올인원 오픈소스 도구",
+    "url": "https://github.com/abus-aikorea/voice-pro",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Voice-Pro는 Whisper 기반 음성 인식, F5-TTS/CosyVoice 제로샷 음성 복제, Edge-TTS 다국어 TTS, YouTube 다운로드, Demucs 보컬 분리 등을 Gradio WebUI로 통합한 오픈소스 프로젝트입니다. 최신 v4.0에서는 Python 3.12, Torch 2.8.0, Gradio 6으로 업그레이드되고 설치 도구가 uv로 전환되어 설치 속도가 크게 향상됐습니다. 한국어를 포함한 9개 언어를 지원하는 Fun-CosyVoice3-0.5B 모델도 새로 추가됐으며, 전체 코드가 완전 오픈소스로 공개됐습니다.",
+    "why_it_matters": "ElevenLabs 같은 유료 SaaS 없이도 로컬에서 무료로 다국어 더빙·음성 복제 파이프라인을 구축할 수 있어, 콘텐츠 제작자와 개발자 모두에게 실질적인 대안이 됩니다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 0.8665178571428571,
+    "published_at": "2026-08-02T01:34:29Z"
+  },
+  {
+    "id": "github_trending-TencentCloud/TencentDB-Agent-Memory",
+    "section": "releases",
+    "title_en": "TencentCloud/TencentDB-Agent-Memory",
+    "title_ko": "TencentDB Agent Memory: AI 에이전트 팀을 위한 공유 메모리 허브",
+    "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "텐센트가 오픈소스로 공개한 TencentDB Agent Memory는 AI 에이전트 팀이 대화, 문서, 코드에서 추출한 경험을 Chat Memory·Skill·Wiki·CodeGraph 네 가지 재사용 가능한 자산으로 저장·공유할 수 있는 팀 레벨 메모리 허브다. 에이전트 프레임워크와 독립적으로 동작해 여러 에이전트와 팀원이 동일한 메모리 자산을 활용할 수 있으며, PersonaMem 벤치마크에서 메모리 적용 시 정확도가 48%에서 76%로 약 59% 향상됐다. ACL 기반 접근 제어(private·team·restricted)로 팀 경험 공유와 개인 정보 보호를 동시에 지원한다.",
+    "why_it_matters": "에이전트마다 반복되는 컨텍스트 재학습 비용을 팀 공유 메모리로 제거해, 멀티 에이전트 협업의 실질적 효율화를 가능하게 한다.",
+    "tags": [
+      "에이전트",
+      "RAG",
+      "오픈소스"
+    ],
+    "score": 0.8665178571428571,
+    "published_at": "2026-08-02T01:34:29Z"
+  },
+  {
+    "id": "openai_blog-ten-advances-in-mathematics",
+    "section": "releases",
+    "title_en": "Ten advances in mathematics and theoretical computer science",
+    "title_ko": "수학 및 이론 컴퓨터 과학 분야의 10가지 새로운 성과",
+    "url": "https://openai.com/index/ten-advances-in-mathematics",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 수학 및 이론 컴퓨터 과학 분야의 오랜 미해결 문제들에 대한 새로운 연구 결과를 발표했다. 기하학, 암호학, 복잡도 이론 등 다양한 영역에서 의미 있는 진전이 이루어졌다. 이번 성과들은 AI가 순수 수학 연구에 실질적으로 기여할 수 있음을 보여준다.",
+    "why_it_matters": "AI가 인간도 풀지 못했던 난제들을 실질적으로 해결하기 시작했다는 점에서 AI의 과학적 발견 역할이 새로운 단계에 접어들었음을 시사한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-advancing-responsible-ai-across-europe",
+    "section": "releases",
+    "title_en": "Advancing responsible AI across Europe",
+    "title_ko": "OpenAI, 유럽에서의 책임감 있는 AI 발전 방향 공유",
+    "url": "https://openai.com/index/advancing-responsible-ai-across-europe",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 유럽에서의 안전성, 보안, 투명성, 출처 추적 등의 실천 방안을 공개했다. 이는 EU AI법 시행에 맞춰 책임감 있는 AI 거버넌스를 지원하기 위한 노력의 일환이다. OpenAI는 EU AI법이 발전함에 따라 이러한 활동을 지속해 나갈 계획이다.",
+    "why_it_matters": "EU AI법 시행을 앞두고 OpenAI의 유럽 내 AI 거버넌스 대응 전략을 파악할 수 있는 중요한 신호다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6607159391534392,
+    "published_at": "2026-07-31T15:00:00Z"
+  },
+  {
+    "id": "hn-49139102",
+    "section": "community",
+    "title_en": "AI financial advice is surprisingly good, especially if you ask right questions",
+    "title_ko": "AI 금융 조언, 올바른 질문을 하면 놀랍도록 유용하다",
+    "url": "https://mitsloan.mit.edu/ideas-made-to-matter/ai-financial-advice-surprisingly-good-especially-if-you-ask-right-questions",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI가 제공하는 금융 조언의 품질이 생각보다 높은 수준인 것으로 나타났다. 특히 질문 방식을 잘 구성하면 더욱 유용한 답변을 얻을 수 있다는 점이 주목된다.",
+    "why_it_matters": "AI를 개인 금융 도구로 활용하려는 사용자와 개발자 모두에게 프롬프트 설계의 중요성을 시사한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.607484939727515,
+    "published_at": "2026-08-01T22:25:12Z"
+  },
+  {
+    "id": "hn-49135245",
+    "section": "community",
+    "title_en": "Explorative modeling: Train on the best of K guesses",
+    "title_ko": "탐색적 모델링: K개의 추측 중 최선을 학습하기",
+    "url": "https://alexiglad.github.io/blog/2026/explorative_modeling/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "'탐색적 모델링'이란 모델이 K개의 후보 출력을 생성한 후 그 중 가장 좋은 결과를 선택해 학습에 활용하는 기법을 다루는 글이다. 설명이 제공되지 않아 제목 기반으로만 요약한다.",
+    "why_it_matters": "Best-of-K 방식의 학습 전략은 모델 성능 향상에 실용적인 접근법으로 주목받고 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 6.958474767640994,
+    "published_at": "2026-08-01T15:23:15Z"
+  },
+  {
+    "id": "reddit-1vd51ey",
+    "section": "community",
+    "title_en": "Ran DS V4-Flash-0731 Locally on 3xMI50 32GB @ ~15 t/s TG",
+    "title_ko": "DeepSeek V4-Flash-0731, AMD MI50 3장으로 로컬 실행 성공 (~15 토큰/초)",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vd51ey/ran_ds_v4flash0731_locally_on_3xmi50_32gb_15_ts_tg/",
+    "sources": [
+      "reddit"
+    ],
+    "summary_ko": "사용자가 AMD MI50 32GB GPU 3장(총 96GB VRAM)으로 DeepSeek V4-Flash-0731 모델을 UD-IQ2_M 양자화 방식으로 완전히 VRAM에 올려 로컬 구동에 성공했다. llama-server 기준 텍스트 생성 속도는 약 15~16 토큰/초, 프롬프트 처리 속도는 약 105~110 토큰/초로 안정적으로 작동했다. 30K 토큰 길이의 응답 생성 중에도 속도가 14 토큰/초 아래로 떨어지지 않았으며, 루빅스 큐브 애니메이션 HTML 코드 생성 등 간단한 코딩 테스트도 수행했다.",
+    "why_it_matters": "고급 소비자용 AMD GPU 3장만으로 대형 MoE 모델을 로컬에서 실용적인 속도로 구동할 수 있음을 실증한 사례로, 로컬 LLM 운용의 가능성을 넓혀준다.",
+    "tags": [
+      "LLM",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.8680175264550265,
+    "published_at": "2026-08-02T01:49:36Z"
+  },
+  {
+    "id": "reddit-1vd44uv",
+    "section": "community",
+    "title_en": "Expert-only IQ3 requant of DeepSeek-V4-Flash-0731: better KLD than UD-IQ3_S, 1.4x decode on a CPU-spill rig",
+    "title_ko": "DeepSeek-V4-Flash-0731 전문가 전용 IQ3 재양자화: UD-IQ3_S보다 낮은 KLD, CPU 스필 환경에서 1.4배 빠른 디코딩",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vd44uv/expertonly_iq3_requant_of_deepseekv4flash0731/",
+    "sources": [
+      "reddit"
+    ],
+    "summary_ko": "멀티 GPU 환경에서 전문가(expert) 텐서만 IQ3_XXS/IQ3_S로 재양자화하고 나머지(어텐션, 공유 전문가 등)는 원본 정밀도를 유지한 DeepSeek-V4-Flash-0731 GGUF가 공개됐다. 총 111.37 GiB 4개 샤드로 구성되며, wikitext-2 KLD 기준 평균 0.2386으로 UD-IQ3_S(0.2936)보다 품질이 우수하다. CPU 스필 환경에서 원본 MXFP4 대비 약 1.4배 빠른 디코딩 속도(13.91 t/s)를 달성했으나, 최대 KLD는 UD-IQ3_S가 더 낮아 완전한 우위는 아니다. 단, llama.cpp의 DSV4 SWA/롤백 스톨 이슈가 존재하므로 패치된 빌드 사용이 권장된다.",
+    "why_it_matters": "VRAM이 부족해 전문가 텐서를 RAM으로 스필해야 하는 혼합 GPU 환경에서 Q2 강등 없이 3비트 품질 티어를 유지하는 실용적 양자화 레시피를 제시한다.",
+    "tags": [
+      "LLM",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.8636259920634921,
+    "published_at": "2026-08-02T01:05:20Z"
+  },
+  {
+    "id": "reddit-1vd2yk9",
+    "section": "community",
+    "title_en": "Why are almost all new benchmarks and leaderboards coding focused?",
+    "title_ko": "새로운 LLM 벤치마크가 코딩 중심으로 편중된 이유는?",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vd2yk9/why_are_almost_all_new_benchmarks_and/",
+    "sources": [
+      "reddit"
+    ],
+    "summary_ko": "대부분의 최신 LLM 벤치마크와 리더보드가 코딩 능력 평가에 집중되어 있다는 문제 제기가 나왔다. 외국어 학습, 창작 글쓰기, 의학·생화학 추론 등 다양한 활용 사례에 맞는 벤치마크는 여전히 부족한 실정이다. 커뮤니티에서는 MMLU-Pro-2 같은 다목적 벤치마크의 필요성과 함께, 비코딩 분야의 모델 성능을 객관적으로 평가할 수 있는 다양한 벤치마크 개발을 촉구하고 있다.",
+    "why_it_matters": "코딩 외 실제 활용 분야(언어 학습·의료·STEM 등)에 대한 신뢰할 만한 평가 기준이 없으면, 사용자들은 자신의 용도에 맞는 모델을 올바르게 선택하기 어렵다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8580059523809523,
+    "published_at": "2026-08-02T00:08:41Z"
+  },
+  {
+    "id": "youtube-nbahzNt5Dik",
+    "section": "video",
+    "title_en": "로봇에 몰빵한 중국 기업 근황",
+    "title_ko": "로봇에 올인한 중국 기업 최근 근황",
+    "url": "https://www.youtube.com/shorts/nbahzNt5Dik",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "중국의 로봇 관련 기업들의 최근 동향을 다룬 영상으로, 유니트리(Unitree) 등 중국 로봇 기업들의 현황을 소개한다. 조코딩 채널을 통해 AI 및 로봇 분야의 최신 소식을 전달하는 내용이다.",
+    "why_it_matters": "중국 로봇 기업들의 급성장 동향은 글로벌 AI·로봇 산업 경쟁 구도를 이해하는 데 중요한 참고가 된다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 0.607175925925926,
+    "published_at": "2026-07-31T06:00:19Z"
+  },
+  {
+    "id": "youtube-Ijmm39E0dCQ",
+    "section": "video",
+    "title_en": "10억개의 토큰을 무료로 쓰는 ㅎㄷㄷ한 방법",
+    "title_ko": "10억 개의 토큰을 무료로 사용하는 방법",
+    "url": "https://www.youtube.com/shorts/Ijmm39E0dCQ",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 AI 토큰을 무료로 대량 사용할 수 있는 방법을 소개하는 영상이다. Claude, GPT 등 주요 AI 서비스와 관련된 내용으로 보인다. 구체적인 방법은 영상 본편에서 확인할 수 있다.",
+    "why_it_matters": "AI API 비용 부담 없이 대규모 토큰을 활용할 수 있는 방법은 개발자에게 실질적인 비용 절감 기회가 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.48485615079365085,
+    "published_at": "2026-07-30T09:27:20Z"
+  },
+  {
+    "id": "youtube-QaFSOPFzM8I",
+    "section": "video",
+    "title_en": "GPT를 여자친구로 만들어버림..",
+    "title_ko": "GPT를 AI 여자친구로 만들기",
+    "url": "https://www.youtube.com/shorts/QaFSOPFzM8I",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 GPT를 활용해 AI 여자친구를 만드는 프로젝트를 소개하는 영상이다. GPT의 대화 기능을 창의적으로 응용한 실습 콘텐츠로, 코딩 학습자를 대상으로 제작되었다.",
+    "why_it_matters": "GPT API를 활용한 캐릭터 챗봇 구현 아이디어를 쉽게 접할 수 있는 실습 예시로 주목할 만하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.4643287037037037,
+    "published_at": "2026-07-30T06:00:25Z"
+  },
+  {
+    "id": "simon_willison-greg-brockman",
+    "section": "deepdive",
+    "title_en": "Quoting Greg Brockman",
+    "title_ko": "그렉 브록만: 사람들은 AI가 대신 연락하는 것을 싫어한다",
+    "url": "https://simonwillison.net/2026/Aug/1/greg-brockman/#atom-everything",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "OpenAI 공동창업자 그렉 브록만은 OpenAI 내부에서 많은 직원들이 ChatGPT를 Slack에 연동해 사용하고 있다고 밝혔다. 그러나 동료가 직접 부탁하면 기꺼이 도울 일도, ChatGPT가 대신 연락하면 불쾌하게 느끼는 경우가 많다는 사실을 발견했다. 이는 사람들이 인간적인 관계와 상호 협력을 중요하게 여기며, AI가 관계를 대체하는 층이 되기보다 시간을 돌려주거나 함께하는 시간을 풍요롭게 해주길 원한다는 것을 보여준다.",
+    "why_it_matters": "AI 에이전트가 실제 직장 환경에 도입될 때 기술적 가능성과 인간의 심리·관계적 수용성 사이의 간극을 명확히 보여주는 사례다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.8481894841269841,
+    "published_at": "2026-08-01T22:29:44Z"
+  }
+]
