@@ -1,0 +1,382 @@
+[
+  {
+    "id": "hf-2607.28618",
+    "section": "papers",
+    "title_en": "AskChem: Claim-Centered Infrastructure for Chemistry Literature Synthesis",
+    "title_ko": "AskChem: 화학 문헌 합성을 위한 클레임 중심 인프라",
+    "url": "https://huggingface.co/papers/2607.28618",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "AskChem은 화학 논문 검색의 단위를 '논문' 대신 '클레임(주장)'으로 바꾼 인프라로, 각 클레임에 출처 DOI와 원문 인용구를 포함해 147K 편 논문에서 240만 개의 클레임을 인덱싱한다. 계층적 패싯 분류체계, 증거 그래프, 탐색형 분류 구조를 통해 교차 논문 검색과 합성을 지원한다. AskChem-Bench 평가에서 GPT-5.5에 AskChem을 결합하면 DOI 해석 성공률이 88.3%에서 100%로 향상되었다. REST, SDK, MCP 인터페이스를 통해 AI 에이전트도 직접 활용할 수 있다.",
+    "why_it_matters": "AI 에이전트가 화학 문헌에서 출처가 명확한 근거 기반 답변을 자동으로 조합할 수 있게 되어 과학 연구의 RAG 품질을 크게 높일 수 있다.",
+    "tags": [
+      "RAG",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 6.680172609017068,
+    "published_at": "2026-07-29T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.28227",
+    "section": "papers",
+    "title_en": "Qwen-UI-Agent Technical Report: Toward Next-Generation Real-World Centric Foundation GUI Agents",
+    "title_ko": "Qwen-UI-Agent: 실제 환경 중심의 차세대 GUI 에이전트 기술 보고서",
+    "url": "https://huggingface.co/papers/2607.28227",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Alibaba Qwen 팀이 모바일·PC·웹·DeepSearch 환경을 아우르는 GUI 에이전트 'Qwen-UI-Agent'를 발표했다. GUI 조작과 CLI 실행을 통합한 액션 공간, 100턴 이상의 장기 궤적을 지원하는 온라인 RL, 1만 개 이상의 동시 환경을 활용한 데이터 플라이휠을 적용했다. 모바일 벤치마크에서 MobileWorld 82.1%, AndroidDaily 97.5%를 기록하며 Opus 4.8, Gemini 3.1 Pro, GPT-5.6 Sol 등 최신 모델 대비 최고 수준의 성능을 달성했다.",
+    "why_it_matters": "실기기 기반 모바일부터 브라우저·OS까지 통합 운용 가능한 GUI 에이전트가 주요 프론티어 모델을 넘어서며 범용 디지털 자동화의 새 기준을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 6.659482215759621,
+    "published_at": "2026-07-29T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.26760",
+    "section": "papers",
+    "title_en": "Metis: Memory Foundation Model",
+    "title_ko": "Metis: 네이티브 메모리 능력을 갖춘 메모리 파운데이션 모델",
+    "url": "https://huggingface.co/papers/2607.26760",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "AI 에이전트의 메모리는 지금까지 외부 모듈로 구현되어 왔지만, 이 논문은 파운데이션 모델 자체에 네이티브 메모리 능력을 내재화하는 '메모리 파운데이션 모델' 개념을 처음으로 제안한다. Metis는 모델 백본 내부에 지속적이고 동적으로 진화하는 메모리 상태를 두고, 메모리 어텐션을 통해 과거 정보를 압축·접근하는 새로운 아키텍처를 도입했다. 온라인 메모리 유지는 그래디언트 없이 포워드 패스만으로 이루어지며, 추론 시 모델 가중치는 고정된 채 메모리 상태만 자율적으로 변환된다. 프로젝트와 모델 체크포인트를 공개해 후속 연구를 지원한다.",
+    "why_it_matters": "에이전트 메모리를 외부 RAG 모듈 없이 모델 내부에서 처리하는 첫 프로토타입으로, AI 에이전트 아키텍처의 패러다임 전환 가능성을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "RAG"
+    ],
+    "score": 6.556828061699537,
+    "published_at": "2026-07-28T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.28568",
+    "section": "papers",
+    "title_en": "Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering",
+    "title_ko": "Frontis-MA1: 머신러닝 엔지니어링에서 재귀적 자기개선을 향한 AI4AI 모델",
+    "url": "https://huggingface.co/papers/2607.28568",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Frontis-MA1(35B)은 AI가 AI를 개선하는 '재귀적 자기개선(RSI)' 연구를 위해 개발된 메타-진화 에이전트다. Draft·Improve·Debug·Crossover 네 가지 프로그램 진화 연산자를 SFT와 RL로 훈련하고, 이를 장기 탐색(OpenMLE-Evo)과 결합해 MLE-Bench Lite에서 Medal Average를 39.39%에서 최대 71.21%까지 끌어올렸다. RTX 4090 단일 GPU(12GB VRAM) 환경에서 GPT-5.5+Codex를 초과하고 Kimi K3(2.8T)에 근접하는 성능을 보였으며, 모델 가중치와 OpenMLE 전체 스택을 오픈소스로 공개했다.",
+    "why_it_matters": "단일 소비자급 GPU에서 동작하는 오픈소스 RSI 프레임워크로, AI가 스스로 AI를 개선하는 연구의 재현 가능한 기반을 제공한다는 점에서 중요하다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 6.1298987149230735,
+    "published_at": "2026-07-29T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.28624",
+    "section": "papers",
+    "title_en": "PhiZero: A World Model Built Around Physical Language",
+    "title_ko": "PhiZero: 물리적 언어 기반 월드 모델",
+    "url": "https://huggingface.co/papers/2607.28624",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "PhiZero는 물리적 세계의 상태 전이를 간결한 이산 표현인 '물리적 언어'로 추상화하는 새로운 월드 모델이다. 기존 모델들이 픽셀 공간에서 직접 미래 영상을 예측하는 것과 달리, PhiZero는 '추론 후 렌더링' 패러다임을 채택해 먼저 물리적 언어 시퀀스로 미래 진화를 추론한 뒤 이를 영상으로 렌더링한다. 자기지도학습을 통해 실제 영상에서 물리적 언어를 학습하며, 물리적으로 일관된 세계 모델링, 액션 조건부 시뮬레이션, 제로샷 모션 전이 등에서 그 가능성을 검증했다.",
+    "why_it_matters": "픽셀 예측에 의존하던 기존 물리 월드 모델의 한계를 넘어, 명시적 추론 기반의 물리적 언어 표현으로 더 정확하고 해석 가능한 세계 모델링 접근법을 제시한다는 점에서 중요하다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 6.081404364984463,
+    "published_at": "2026-07-29T20:00:00Z"
+  },
+  {
+    "id": "github_trending-microsoft/AI-For-Beginners",
+    "section": "releases",
+    "title_en": "microsoft/AI-For-Beginners",
+    "title_ko": "마이크로소프트 AI 입문자 커리큘럼 (12주, 24강)",
+    "url": "https://github.com/microsoft/AI-For-Beginners",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "마이크로소프트가 공개한 AI 입문자용 오픈소스 커리큘럼으로, 12주 동안 24개 강의를 통해 신경망, 컴퓨터 비전, NLP, 강화학습, AI 윤리 등을 다룬다. PyTorch와 TensorFlow를 활용한 실습 노트북과 퀴즈, 랩이 포함되어 있으며 한국어를 포함한 50개 이상의 언어로 번역이 제공된다. 심볼릭 AI부터 대형 언어 모델, 멀티에이전트 시스템까지 폭넓은 주제를 초보자 친화적으로 구성했다.",
+    "why_it_matters": "AI를 처음 배우는 한국 개발자에게 체계적인 무료 커리큘럼을 한국어로 제공하는 공식 마이크로소프트 리소스다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8665823412698412,
+    "published_at": "2026-08-03T01:35:08Z"
+  },
+  {
+    "id": "github_trending-lyogavin/airllm",
+    "section": "releases",
+    "title_en": "lyogavin/airllm",
+    "title_ko": "AirLLM: 4GB GPU 단일 카드로 70B~2.8T 대형 모델 추론",
+    "url": "https://github.com/lyogavin/airllm",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "AirLLM은 양자화·증류·프루닝 없이 GPU에 레이어 하나씩만 올려 추론하는 방식으로 VRAM 사용량을 획기적으로 줄인 오픈소스 라이브러리다. 4GB GPU로 Llama 70B, 8GB로 Llama 3.1 405B, 약 12GB로 DeepSeek-V3(671B) 실행이 가능하다. 최신 업데이트(v3.0)에서는 FP8 모델 지원이 추가됐고, Kimi K3(2.8T) 모델도 3.72GB VRAM으로 구동할 수 있다. AutoModel 한 줄로 Llama, Qwen, DeepSeek 등 주요 모델 패밀리를 모두 지원한다.",
+    "why_it_matters": "고가의 GPU 없이도 수백B 규모의 최신 오픈소스 LLM을 로컬에서 실행할 수 있어, 개인 개발자와 연구자의 접근성을 크게 낮춘다.",
+    "tags": [
+      "LLM",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.8665823412698412,
+    "published_at": "2026-08-03T01:35:08Z"
+  },
+  {
+    "id": "github_trending-different-ai/openwork",
+    "section": "releases",
+    "title_en": "different-ai/openwork",
+    "title_ko": "OpenWork: Claude Cowork 대체 오픈소스 AI 워크플로우 공유 데스크톱 앱",
+    "url": "https://github.com/different-ai/openwork",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "OpenWork는 Claude Cowork 및 Codex의 오픈소스 대안으로, macOS·Windows·Linux를 지원하는 무료 데스크톱 앱이다. MCP(Model Context Protocol)를 통해 Claude Code, Cursor, Codex 등 기존 AI 에이전트에 연결하여 스킬·플러그인·MCP 연결을 팀원 및 여러 도구 간에 공유할 수 있다. 조직 관리자는 'OpenWork Den'을 통해 모델 접근 권한, 팀 구성, 스킬 배포 등을 중앙에서 제어할 수 있다.",
+    "why_it_matters": "여러 AI 에이전트 도구를 사용하는 팀이 워크플로우·스킬·서비스 연결을 한 곳에서 공유·관리할 수 있는 오픈소스 인프라를 제공한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.8665823412698412,
+    "published_at": "2026-08-03T01:35:08Z"
+  },
+  {
+    "id": "github_trending-microsoft/generative-ai-for-beginners",
+    "section": "releases",
+    "title_en": "microsoft/generative-ai-for-beginners",
+    "title_ko": "초보자를 위한 생성형 AI 강좌 (Microsoft 공식 21강)",
+    "url": "https://github.com/microsoft/generative-ai-for-beginners",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Microsoft Cloud Advocates가 제작한 생성형 AI 입문 과정으로, 총 21개의 레슨으로 구성되어 있습니다. 각 레슨은 개념 학습(Learn)과 실습 구현(Build)으로 나뉘며, Python과 TypeScript 코드 예제를 함께 제공합니다. LLM 기초부터 RAG, AI 에이전트, 파인튜닝, SLM까지 폭넓은 주제를 다루며 Azure OpenAI, OpenAI API, 오프라인 로컬 실행 등 다양한 환경을 지원합니다.",
+    "why_it_matters": "Microsoft가 직접 운영하는 무료 오픈소스 생성형 AI 커리큘럼으로, 입문자가 체계적으로 AI 앱 개발을 시작할 수 있는 가장 검증된 학습 경로 중 하나입니다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "에이전트"
+    ],
+    "score": 0.8665823412698412,
+    "published_at": "2026-08-03T01:35:08Z"
+  },
+  {
+    "id": "github_trending-Panniantong/Agent-Reach",
+    "section": "releases",
+    "title_en": "Panniantong/Agent-Reach",
+    "title_ko": "Agent Reach: AI 에이전트에 인터넷 접근 능력을 한 번에 장착하는 CLI 도구",
+    "url": "https://github.com/Panniantong/Agent-Reach",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Agent Reach는 AI 에이전트가 Twitter, Reddit, YouTube, GitHub, Bilibili, 샤오홍슈 등 다양한 플랫폼을 별도 API 비용 없이 읽고 검색할 수 있도록 해주는 오픈소스 CLI 도구입니다. 각 플랫폼별로 '첫 번째 선택 + 대안' 방식의 다중 백엔드 라우팅을 채택해, 특정 접근 방식이 막히면 자동으로 다음 경로로 전환됩니다. 설치는 AI 에이전트에게 한 줄의 명령을 전달하는 것만으로 완료되며, `agent-reach doctor` 명령으로 각 채널의 현재 상태를 진단할 수 있습니다.",
+    "why_it_matters": "AI 에이전트의 인터넷 접근 문제를 플랫폼별 설정 없이 단일 CLI로 해결하고, 백엔드 변화에도 사용자가 별도 대응 없이 안정적으로 사용할 수 있는 실용적 인프라 레이어다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.8665823412698412,
+    "published_at": "2026-08-03T01:35:08Z"
+  },
+  {
+    "id": "github_trending-TencentCloud/TencentDB-Agent-Memory",
+    "section": "releases",
+    "title_en": "TencentCloud/TencentDB-Agent-Memory",
+    "title_ko": "TencentCloud, AI 에이전트용 팀 레벨 메모리 허브 'TencentDB Agent Memory' 오픈소스 공개",
+    "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "TencentDB Agent Memory는 AI 에이전트 팀이 대화, 문서, 코드를 Chat Memory·Skill·LLM-Wiki·CodeGraph 등 4가지 재사용 가능한 메모리 자산으로 변환해 공유할 수 있는 오픈소스 메모리 허브다. 에이전트 프레임워크와 분리된 구조로 여러 에이전트·팀원 간 경험을 축적·공유할 수 있으며, PersonaMem 벤치마크에서 미사용 대비 +59%(48% → 76%) 향상을 기록했다. MIT 라이선스로 공개되며 단일 명령어로 전체 서비스를 배포할 수 있다.",
+    "why_it_matters": "에이전트가 세션을 넘어 팀의 경험을 누적·상속할 수 있는 거버넌스 기반 메모리 인프라로, 반복 학습 비용을 줄이고 멀티 에이전트 협업의 실용성을 높인다.",
+    "tags": [
+      "에이전트",
+      "RAG",
+      "오픈소스"
+    ],
+    "score": 0.8665823412698412,
+    "published_at": "2026-08-03T01:35:08Z"
+  },
+  {
+    "id": "github_trending-esengine/DeepSeek-Reasonix",
+    "section": "releases",
+    "title_en": "esengine/DeepSeek-Reasonix",
+    "title_ko": "DeepSeek-Reasonix: 터미널용 DeepSeek 네이티브 AI 코딩 에이전트",
+    "url": "https://github.com/esengine/DeepSeek-Reasonix",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "DeepSeek-Reasonix는 터미널에서 동작하는 DeepSeek 전용 AI 코딩 에이전트로, 프리픽스 캐시 안정성을 중심으로 설계되어 장시간 세션에서도 토큰 비용을 낮게 유지한다. 단일 Go 바이너리로 배포되며 설정 파일(TOML) 기반으로 모델·플러그인·툴을 자유롭게 구성할 수 있다. CLI/TUI, 데스크탑 앱, VS Code 확장 등 다양한 사용 방식을 지원하며, OpenAI 호환 엔드포인트도 설정만으로 추가 가능하다.",
+    "why_it_matters": "DeepSeek 모델에 최적화된 캐시 전략으로 장기 코딩 세션의 비용 효율을 높이는 오픈소스 에이전트로, 터미널·에디터 통합까지 아우른다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8665823412698412,
+    "published_at": "2026-08-03T01:35:08Z"
+  },
+  {
+    "id": "hn-49147435",
+    "section": "community",
+    "title_en": "'Crush this lady': how eBay harassment campaign led to $56M payout",
+    "title_ko": "eBay의 집단 괴롭힘 캠페인, 5600만 달러 합의금으로 마무리",
+    "url": "https://www.ft.com/content/06ec1b03-d4af-40cf-b12a-4ba5a410f6d2",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "eBay가 한 여성을 대상으로 벌인 조직적 괴롭힘 캠페인과 관련해 5600만 달러의 합의금을 지급하게 되었다. 제목만으로는 구체적인 사건 경위를 확인하기 어려우나, 기업 차원의 표적 괴롭힘이 대규모 법적 책임으로 이어진 사례로 보인다.",
+    "why_it_matters": "기업 임직원에 의한 조직적 온라인 괴롭힘이 수천만 달러 규모의 법적 배상으로 이어질 수 있음을 보여주는 선례다.",
+    "tags": [],
+    "score": 8.544646949698748,
+    "published_at": "2026-08-02T19:19:24Z"
+  },
+  {
+    "id": "hn-49147622",
+    "section": "community",
+    "title_en": "My personal AI benchmark: \"Generate an SVG of a frog with a Habsburg jaw.\"",
+    "title_ko": "개인 AI 벤치마크: '합스부르크 턱을 가진 개구리 SVG 생성하기'",
+    "url": "https://frogs.vaguespac.es/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "한 개발자가 AI 모델의 창의적 이미지 생성 능력을 테스트하기 위해 '합스부르크 턱을 가진 개구리 SVG를 그려라'라는 독특한 개인 벤치마크를 사용하고 있다. 이 과제는 역사적 지식, SVG 코드 생성, 창의적 해석을 동시에 요구한다.",
+    "why_it_matters": "표준 벤치마크 외에 창의성과 지식을 결합한 비정형 테스트로 LLM의 실질적 능력 차이를 가늠할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 7.675443017674497,
+    "published_at": "2026-08-02T19:42:08Z"
+  },
+  {
+    "id": "hn-49122655",
+    "section": "community",
+    "title_en": "Autoregressive Language Model on the 6502 Processor",
+    "title_ko": "6502 프로세서에서 동작하는 자기회귀 언어 모델",
+    "url": "https://mattbeton.com/blog/bitnet-6502.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "6502 프로세서 위에서 자기회귀 언어 모델을 구동하는 실험적 프로젝트다. 1970~80년대 8비트 레트로 컴퓨터에 사용된 6502 CPU에서 LLM을 실행한다는 점이 이색적이다.",
+    "why_it_matters": "초저사양 레트로 하드웨어에서 LLM을 구현함으로써 언어 모델 경량화와 하드웨어 한계에 대한 흥미로운 시각을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 6.100089459572748,
+    "published_at": "2026-07-31T13:08:30Z"
+  },
+  {
+    "id": "reddit-1vduxth",
+    "section": "community",
+    "title_en": "You really should not quantize KV Cache for DeepSeek V4 Flash",
+    "title_ko": "DeepSeek V4 Flash에서 KV 캐시 양자화를 피해야 하는 이유",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vduxth/you_really_should_not_quantize_kv_cache_for/",
+    "sources": [
+      "reddit"
+    ],
+    "summary_ko": "Reddit 사용자가 DeepSeek V4 Flash(DS4F)에서 BF16 KV를 Q8 KV로 양자화했을 때 품질 저하가 심각하다는 실험 결과를 공유했다. PPL이 약 0.64% 증가하고, 평균 KLD가 0.145884로 Qwen 397B(0.003552)보다 약 41배 높게 나타났다. 상위 토큰 일치율(Same top p)도 87.2%로 Qwen 397B의 97.9%에 비해 크게 낮아, DS4F는 KV 양자화에 매우 민감한 모델임이 드러났다.",
+    "why_it_matters": "로컬 LLM 운용 시 메모리 절약을 위해 KV 캐시 양자화를 적용하는 경우가 많은데, DS4F는 이 설정이 출력 품질을 크게 손상시킬 수 있음을 수치로 입증한 사례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.845391865079365,
+    "published_at": "2026-08-02T22:01:32Z"
+  },
+  {
+    "id": "reddit-1vduej3",
+    "section": "community",
+    "title_en": "China’s DFSX Offers 2x The Memory Bandwidth Of NVIDIA’s GB200",
+    "title_ko": "중국 DFSX, NVIDIA GB200 대비 2배 메모리 대역폭 제공",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vduej3/chinas_dfsx_offers_2x_the_memory_bandwidth_of/",
+    "sources": [
+      "reddit"
+    ],
+    "summary_ko": "중국의 DFSX가 NVIDIA GB200 NVL72 시스템 대비 2배의 메모리 대역폭을 제공한다고 알려졌다. 이 시스템은 14nm 공정 기반의 슈퍼노드 아키텍처를 채택하며, 마이크로범프를 생략한 수직형 컴퓨트-메모리 타워 구조가 특징이다. 최첨단 공정 없이도 메모리 대역폭에서 NVIDIA 최신 제품을 앞선다는 점이 주목된다.",
+    "why_it_matters": "미국의 반도체 수출 규제에도 불구하고 중국이 독자적인 AI 가속기 설계로 NVIDIA 최신 제품을 메모리 대역폭 면에서 능가하는 성과를 주장하고 있어, AI 하드웨어 경쟁 구도에 영향을 줄 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.843181216931217,
+    "published_at": "2026-08-02T21:39:15Z"
+  },
+  {
+    "id": "youtube-KrE6zFGbD8s",
+    "section": "video",
+    "title_en": "[LIVE] 데이터 센터 게임으로 배워보기",
+    "title_ko": "[라이브] 데이터 센터 게임으로 배우기",
+    "url": "https://www.youtube.com/watch?v=KrE6zFGbD8s",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "삼성전자·SK하이닉스의 반등을 기원하며 데이터 센터를 주제로 한 게임을 통해 관련 개념을 배워보는 라이브 방송이다.",
+    "why_it_matters": "게임 형식으로 데이터 센터 개념을 쉽게 익힐 수 있는 교육 콘텐츠로, 반도체·인프라에 관심 있는 개발자에게 유용하다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.7851190476190476,
+    "published_at": "2026-08-02T11:53:59Z"
+  },
+  {
+    "id": "youtube-e_j_SyBlc18",
+    "section": "video",
+    "title_en": "IT뉴스 - 오픈AI Astra 10대 난제 해결, DeepSeek-V4-Flash 정식, Seedance 2.5, MiniMax H3, Gemini Robotics 2 등",
+    "title_ko": "오픈AI Astra 10대 난제 해결, DeepSeek-V4-Flash 정식 출시, Seedance 2.5, MiniMax H3, Gemini Robotics 2 등 AI 뉴스 정리",
+    "url": "https://www.youtube.com/watch?v=e_j_SyBlc18",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "이번 영상에서는 오픈AI Astra의 10대 난제 해결 소식을 비롯해 DeepSeek-V4-Flash 정식 출시, Seedance 2.5, MiniMax H3, Gemini Robotics 2 등 최신 AI 뉴스들을 다룬다. 다양한 AI 모델과 서비스의 업데이트 소식을 한 번에 정리한 내용이다.",
+    "why_it_matters": "주요 AI 모델들의 신규 출시 및 업데이트가 동시다발적으로 이루어지고 있어 개발자들이 빠르게 동향을 파악하는 데 유용하다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7757357804232804,
+    "published_at": "2026-08-02T10:19:24Z"
+  },
+  {
+    "id": "youtube-nbahzNt5Dik",
+    "section": "video",
+    "title_en": "로봇에 몰빵한 중국 기업 근황",
+    "title_ko": "로봇에 올인한 중국 기업 근황",
+    "url": "https://www.youtube.com/shorts/nbahzNt5Dik",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "중국 로봇 기업의 최근 동향을 다루는 영상으로, 유니트리(Unitree) 등 중국 로봇 기업들의 현황을 소개한다. 조코딩 채널에서 제작한 콘텐츠로, AI 및 로보틱스 분야에 관심 있는 개발자를 대상으로 한다.",
+    "why_it_matters": "중국 로봇 기업의 급성장은 글로벌 AI·로보틱스 산업 경쟁 구도에 직접적인 영향을 미친다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 0.46431878306878305,
+    "published_at": "2026-07-31T06:00:19Z"
+  },
+  {
+    "id": "simon_willison-condense-json",
+    "section": "deepdive",
+    "title_en": "condense-json 1.0",
+    "title_ko": "condense-json 1.0 정식 출시",
+    "url": "https://simonwillison.net/2026/Aug/2/condense-json/#atom-everything",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Simon Willison이 JSON 데이터 내 중복 문자열을 압축 표현으로 치환하는 Python 라이브러리 condense-json의 1.0 버전을 출시했다. 반복되는 문자열을 `{\"$r\": ...}` 형태의 참조 구문으로 대체하여 저장 공간을 절약하며, `uncondense_json()`으로 원본 복원도 가능하다. 주요 활용처는 LLM 도구의 SQLite 로그에서 중복 데이터 저장 최적화다.",
+    "why_it_matters": "LLM 로그처럼 반복 데이터가 많은 JSON 저장 시 용량을 줄이는 실용적 도구로, LLM 파이프라인 인프라 최적화에 직접 활용 가능하다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.8472222222222222,
+    "published_at": "2026-08-02T22:19:59Z"
+  }
+]
