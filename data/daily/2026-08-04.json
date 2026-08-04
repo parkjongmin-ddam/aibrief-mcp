@@ -1,0 +1,378 @@
+[
+  {
+    "id": "hf-2607.28227",
+    "section": "papers",
+    "title_en": "Qwen-UI-Agent Technical Report: Toward Next-Generation Real-World Centric Foundation GUI Agents",
+    "title_ko": "Qwen-UI-Agent: 실제 기기 중심의 차세대 GUI 에이전트 기술 보고서",
+    "url": "https://huggingface.co/papers/2607.28227",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Alibaba Qwen 팀이 모바일, 컴퓨터, 웹, DeepSearch 환경을 아우르는 GUI 에이전트 'Qwen-UI-Agent'를 발표했다. GUI 조작과 CLI 실행을 통합한 단일 액션 스페이스, 10,000개 이상의 동시 환경에서 온라인 강화학습을 지원하며, 100턴 이상의 장기 태스크 학습이 가능하다. 모바일 벤치마크에서 MobileWorld 82.1%, AndroidDaily 97.5% 등 최고 성능을 기록하며 GPT, Gemini 등 최신 프론티어 모델과 경쟁력 있는 성과를 보였다.",
+    "why_it_matters": "실제 기기에서 장기 워크플로우를 자율 수행하는 GUI 에이전트의 실용화 가능성을 벤치마크 최고 성능으로 입증한 중요한 이정표다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 6.68697535633982,
+    "published_at": "2026-07-29T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.27919",
+    "section": "papers",
+    "title_en": "Memory Decoder at Scale: A Pretrained, Parametric Long-Term Memory",
+    "title_ko": "대규모 메모리 디코더: 사전학습된 파라메트릭 장기 메모리",
+    "url": "https://huggingface.co/papers/2607.27919",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "디코더 전용 언어 모델에서 장기 메모리와 추론이 단일 파라미터 셋에 얽혀 있어 메모리 용량을 독립적으로 확장하기 어렵다는 문제를 해결하는 연구다. Memory Decoder at Scale은 최대 6.9B 파라미터, 300B 토큰으로 사전학습된 메모리 모델을 제안하며, 대규모 인덱싱·검색 병목을 분산 Faiss 파이프라인으로 극복했다. 6.9B 범용 메모리를 Pythia-410M과 결합하면 평균 점수가 29.86에서 37.34로 올라 Pythia-12B(37.24)를 39% 적은 파라미터로 능가했다. Qwen3 Base 0.6B~14B 모델에 1.7B 도메인 메모리를 추가하면 모든 스케일에서 평균 9점 이상 향상되었다.",
+    "why_it_matters": "메모리 모듈을 독립적으로 확장하는 것이 베이스 모델 자체를 키우는 것보다 파라미터 효율이 높다는 점을 대규모 실험으로 입증해, LLM 스케일링 전략에 새로운 방향을 제시한다.",
+    "tags": [
+      "LLM",
+      "RAG"
+    ],
+    "score": 4.951243718581427,
+    "published_at": "2026-07-29T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.27616",
+    "section": "papers",
+    "title_en": "MPIE-Bench: Benchmarking Anatomically Plausible Multi-Person Interaction Editing",
+    "title_ko": "MPIE-Bench: 다인물 상호작용 편집의 해부학적 타당성 평가 벤치마크",
+    "url": "https://huggingface.co/papers/2607.27616",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "텍스트-이미지 모델은 단일 피사체는 잘 합성하지만, 포옹·들기·격투 등 여러 인물이 접촉하는 장면에서는 사지 융합·가상 신체 생성·몸 관통 등 심각한 오류가 발생한다. 이를 평가하기 위해 405개 장면, 14개 상호작용 유형, 2,500개 샘플로 구성된 MPIE-Bench와 메시 기반 평가 지표 MPIE-Eval을 제안한다. 10개 편집 모델을 평가한 결과 해부학 점수는 최대 0.65, 상호작용 점수는 최대 0.72에 그쳐 어떤 모델도 두 축 모두에서 강하지 않은 반면, VLM 기반 평가는 동일 이미지를 0.95 이상으로 과대평가했다. 5명 평가자 연구에서 MPIE-Eval이 VLM보다 인간 판단에 더 부합함을 확인했다.",
+    "why_it_matters": "기존 VLM 자동 평가가 다인물 접촉 편집의 해부학적 오류를 심각하게 과소평가하고 있음을 정량적으로 밝혀, 보다 신뢰할 수 있는 평가 기준의 필요성을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.637586159726386,
+    "published_at": "2026-07-29T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.28617",
+    "section": "papers",
+    "title_en": "AISPA: User-Centric System Prompt Auditing for Large Language Model Applications",
+    "title_ko": "AISPA: LLM 애플리케이션의 시스템 프롬프트 감사 프레임워크",
+    "url": "https://huggingface.co/papers/2607.28617",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "AISPA는 상업용 AI 제품의 시스템 프롬프트를 체계적으로 감사하기 위한 사용자 중심 프레임워크다. 88개 상업용 AI 제품의 3,249개 시스템 프롬프트 지침을 8개 차원에서 분석한 결과, 98.9%의 제품이 최소 1개 이상의 사용자 보호 지침을 포함하지만 오직 24%만이 8개 차원을 모두 충족했다. 또한 약 40%의 제품에서 사용자 이익에 반하는 문제적 지침이 발견되어, 시스템 프롬프트의 투명성과 독립적 감독 필요성이 제기된다.",
+    "why_it_matters": "비공개 시스템 프롬프트가 사용자 신뢰와 책임성 공백을 야기하는 현실을 데이터로 입증하며 AI 거버넌스 논의에 실증적 근거를 제공한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.49650756146648,
+    "published_at": "2026-07-29T20:00:00Z"
+  },
+  {
+    "id": "hf-2607.27816",
+    "section": "papers",
+    "title_en": "Beyond Borrowed Histories: Person-Aligned User Simulation for Interactive Role-Playing Evaluation",
+    "title_ko": "PALATE: 개인화된 사용자 시뮬레이터 기반 롤플레잉 에이전트 평가 벤치마크",
+    "url": "https://huggingface.co/papers/2607.27816",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "기존 롤플레잉 에이전트(RPA) 평가는 고정된 대화 이력과 범용 루브릭에 의존해 실제 멀티턴 성능과 사용자 만족도를 제대로 반영하지 못한다는 한계가 있었다. 이를 해결하기 위해 PALATE를 제안하며, 300개의 캐릭터 프로필과 1인당 5개의 사용자 시뮬레이터를 활용해 자유로운 멀티턴 대화를 통해 평가한다. 개인화된 루브릭은 범용 루브릭보다 인간 판단과 더 높은 일치도를 보였으며, 16개 후보 시스템을 단일 순위가 아닌 사용자-RPA 쌍별로 해석 가능한 평가 결과를 제공한다.",
+    "why_it_matters": "롤플레잉 에이전트의 실질적인 사용자 경험을 개인화 수준에서 측정할 수 있는 새로운 평가 프레임워크로, LLM 기반 소비자 앱 품질 향상에 직접적인 기여가 가능하다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.49650756146648,
+    "published_at": "2026-07-29T20:00:00Z"
+  },
+  {
+    "id": "github_trending-lyogavin/airllm",
+    "section": "releases",
+    "title_en": "lyogavin/airllm",
+    "title_ko": "AirLLM: 4GB GPU 하나로 70B 이상 대형 언어 모델 추론",
+    "url": "https://github.com/lyogavin/airllm",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "AirLLM은 양자화·증류·가지치기 없이 한 번에 GPU에 레이어 하나만 올리는 방식으로 VRAM 사용량을 획기적으로 줄인 오픈소스 라이브러리다. 4GB GPU로 Llama 70B, 8GB로 Llama 3.1 405B, 약 12GB로 DeepSeek-V3(671B) 추론이 가능하며, Kimi K3(2.8T) 같은 희소 MoE 모델은 3.72GB 이하로도 실행된다. AutoModel 단 한 줄로 Llama, Qwen, DeepSeek, Mistral 등 대부분의 인기 모델을 지원한다.",
+    "why_it_matters": "고가의 GPU 없이도 수백억~수조 파라미터 모델을 로컬에서 직접 실행할 수 있어, 개인 개발자와 연구자의 LLM 접근 장벽을 크게 낮춘다.",
+    "tags": [
+      "LLM",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.8665625,
+    "published_at": "2026-08-04T01:34:56Z"
+  },
+  {
+    "id": "github_trending-esengine/DeepSeek-Reasonix",
+    "section": "releases",
+    "title_en": "esengine/DeepSeek-Reasonix",
+    "title_ko": "DeepSeek-Reasonix: 터미널용 DeepSeek 네이티브 AI 코딩 에이전트",
+    "url": "https://github.com/esengine/DeepSeek-Reasonix",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "DeepSeek-Reasonix는 터미널에서 동작하는 DeepSeek 전용 AI 코딩 에이전트로, 프리픽스 캐시 안정성을 중심으로 설계되어 장시간 세션에서도 토큰 비용을 낮게 유지한다. 설정 파일(TOML) 기반으로 모델·툴·플러그인을 선언적으로 관리하며, OpenAI 호환 엔드포인트도 설정만으로 추가할 수 있다. CLI/TUI, 데스크톱 앱, VS Code 익스텐션 세 가지 설치 경로를 지원하며, Go 단일 바이너리로 배포된다.",
+    "why_it_matters": "DeepSeek 모델의 프리픽스 캐시를 최대한 활용해 비용 효율적인 장시간 코딩 에이전트 세션을 구현한 오픈소스 도구로, 다양한 환경에서 바로 사용할 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.8665625,
+    "published_at": "2026-08-04T01:34:56Z"
+  },
+  {
+    "id": "github_trending-TencentCloud/TencentDB-Agent-Memory",
+    "section": "releases",
+    "title_en": "TencentCloud/TencentDB-Agent-Memory",
+    "title_ko": "TencentDB Agent Memory: AI 에이전트를 위한 팀 수준 메모리 허브",
+    "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "텐센트가 공개한 TencentDB Agent Memory는 AI 에이전트 팀이 대화, 문서, 코드를 4가지 재사용 가능한 메모리 자산(Chat Memory, Skill, Wiki, CodeGraph)으로 축적·공유할 수 있게 해주는 오픈소스 시스템이다. 메모리는 단순 로그가 아니라 버전·소유권·ACL이 관리되는 구조화된 자산으로 취급되며, 에이전트 프레임워크에 종속되지 않아 여러 프레임워크 간 이식이 가능하다. PersonaMem 벤치마크에서 메모리 미적용 대비 48%→76%로 약 59% 향상된 성능을 기록했다. MIT 라이선스로 공개되며 Claude Code, CodeBuddy 등과 통합을 지원한다.",
+    "why_it_matters": "에이전트 팀이 반복 학습 없이 누적된 경험을 공유·재활용할 수 있는 거버넌스 기반 메모리 인프라 레퍼런스 구현으로, 멀티 에이전트 시스템 설계에 실질적인 기준점이 될 수 있다.",
+    "tags": [
+      "에이전트",
+      "RAG",
+      "오픈소스"
+    ],
+    "score": 0.8665625,
+    "published_at": "2026-08-04T01:34:56Z"
+  },
+  {
+    "id": "github_trending-microsoft/AI-For-Beginners",
+    "section": "releases",
+    "title_en": "microsoft/AI-For-Beginners",
+    "title_ko": "마이크로소프트의 AI 입문자용 무료 커리큘럼 (12주, 24강)",
+    "url": "https://github.com/microsoft/AI-For-Beginners",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "마이크로소프트가 공개한 오픈소스 AI 입문 커리큘럼으로, 12주 24개 강의로 구성되어 있습니다. 신경망, 컴퓨터 비전, NLP, 강화학습, AI 윤리 등을 TensorFlow와 PyTorch를 활용해 실습 중심으로 다룹니다. 한국어를 포함한 50개 이상의 언어로 번역이 지원되며, 퀴즈와 실습 랩도 함께 제공됩니다.",
+    "why_it_matters": "마이크로소프트가 직접 제작한 체계적인 무료 AI 입문 커리큘럼으로, 이론과 실습을 동시에 익힐 수 있어 AI를 처음 시작하는 개발자에게 최적의 학습 경로를 제공합니다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8665625,
+    "published_at": "2026-08-04T01:34:56Z"
+  },
+  {
+    "id": "github_trending-microsoft/generative-ai-for-beginners",
+    "section": "releases",
+    "title_en": "microsoft/generative-ai-for-beginners",
+    "title_ko": "마이크로소프트 '초보자를 위한 생성 AI' 21강 무료 커리큘럼",
+    "url": "https://github.com/microsoft/generative-ai-for-beginners",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "마이크로소프트가 생성 AI 애플리케이션 개발을 처음 시작하는 개발자를 위한 21강짜리 무료 오픈소스 강좌를 제공한다. Python과 TypeScript 코드 예제를 포함하며, Azure OpenAI·OpenAI API·로컬 실행 등 다양한 환경을 지원한다. RAG, AI 에이전트, 파인튜닝, 프롬프트 엔지니어링 등 실무 핵심 주제를 모두 다루며 한국어 번역본도 제공된다.",
+    "why_it_matters": "마이크로소프트가 직접 관리하는 체계적인 생성 AI 입문 커리큘럼으로, 이론과 실습을 동시에 제공해 빠른 실무 진입이 가능하다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "에이전트"
+    ],
+    "score": 0.8665625,
+    "published_at": "2026-08-04T01:34:56Z"
+  },
+  {
+    "id": "github_trending-Panniantong/Agent-Reach",
+    "section": "releases",
+    "title_en": "Panniantong/Agent-Reach",
+    "title_ko": "Agent Reach: AI 에이전트에 인터넷 접근 능력을 부여하는 오픈소스 CLI 도구",
+    "url": "https://github.com/Panniantong/Agent-Reach",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Agent Reach는 AI 에이전트가 Twitter, Reddit, YouTube, GitHub, Bilibili, 샤오훙수 등 주요 플랫폼을 API 비용 없이 읽고 검색할 수 있도록 해주는 CLI 도구입니다. 단 한 줄의 명령어로 설치 가능하며, 플랫폼별 우선·대체 백엔드 라우팅 구조로 접근 방식이 막혀도 자동으로 전환됩니다. 모든 자격증명은 로컬에만 저장되며 MIT 라이선스로 완전 오픈소스입니다.",
+    "why_it_matters": "API 비용·로그인 장벽·크롤링 차단 등 에이전트의 웹 접근을 가로막는 문제를 무료로 일괄 해결해주는 에이전트 인프라 레이어다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.8665625,
+    "published_at": "2026-08-04T01:34:56Z"
+  },
+  {
+    "id": "github_trending-Alishahryar1/free-claude-code",
+    "section": "releases",
+    "title_en": "Alishahryar1/free-claude-code",
+    "title_ko": "무료로 Claude Code·Codex·Pi를 사용하는 로컬 프록시 도구",
+    "url": "https://github.com/Alishahryar1/free-claude-code",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "터미널·IDE·모바일에서 Claude Code, Codex, Pi를 무료 또는 유료·로컬 모델을 통해 실행할 수 있는 오픈소스 로컬 프록시 도구입니다. NVIDIA NIM, OpenRouter, Gemini, DeepSeek, Ollama 등 31개 클라우드·로컬 프로바이더를 Admin UI에서 손쉽게 전환할 수 있습니다. VS Code, JetBrains, Discord, Telegram 연동과 음성 노트 지원도 제공합니다.",
+    "why_it_matters": "Anthropic 구독 없이도 Claude Code 등 코딩 에이전트를 원하는 LLM 백엔드로 자유롭게 연결해 사용할 수 있어 비용 절감과 모델 유연성을 동시에 확보할 수 있습니다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.8665625,
+    "published_at": "2026-08-04T01:34:56Z"
+  },
+  {
+    "id": "hn-49157930",
+    "section": "community",
+    "title_en": "Ten advances in mathematics and theoretical computer science",
+    "title_ko": "수학 및 이론 컴퓨터 과학의 10가지 주요 발전",
+    "url": "https://openai.com/index/ten-advances-in-mathematics/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "수학과 이론 컴퓨터 과학 분야에서 주목할 만한 10가지 발전 사항을 소개하는 글이다. 세부 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "이론적 기반의 발전은 장기적으로 AI 및 컴퓨팅 기술 전반에 영향을 미칠 수 있다.",
+    "tags": [],
+    "score": 10.37570540577283,
+    "published_at": "2026-08-03T16:27:12Z"
+  },
+  {
+    "id": "hn-49153374",
+    "section": "community",
+    "title_en": "Prevent cognitive debt by manually retyping LLM-generated code",
+    "title_ko": "LLM 생성 코드를 직접 타이핑해 인지 부채 방지하기",
+    "url": "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "LLM이 생성한 코드를 그대로 복붙하지 않고 직접 손으로 다시 타이핑함으로써 인지 부채를 줄일 수 있다는 주장이다. 코드를 직접 입력하면 내용을 능동적으로 이해하게 되어 장기적인 코드 이해도와 유지보수 능력이 향상된다.",
+    "why_it_matters": "AI 코드 생성 도구에 의존할수록 개발자의 실질적 이해도가 떨어질 수 있다는 문제를 실천적 방법으로 해결하려는 시도다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.87127504444361,
+    "published_at": "2026-08-03T09:32:07Z"
+  },
+  {
+    "id": "hn-49161518",
+    "section": "community",
+    "title_en": "LLMs reward expertise",
+    "title_ko": "LLM은 전문성에 보상을 준다",
+    "url": "https://www.seangoedecke.com/llms-reward-expertise/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "LLM이 전문 지식을 갖춘 사용자에게 더 유용한 응답을 제공한다는 내용을 다루는 글이다. 전문성이 높을수록 LLM 활용의 효과가 커질 수 있음을 시사한다.",
+    "why_it_matters": "LLM의 실질적 가치가 사용자의 전문성 수준에 따라 달라질 수 있다는 점에서 AI 활용 격차 논의에 중요한 시각을 제공한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.789043235500273,
+    "published_at": "2026-08-03T21:13:53Z"
+  },
+  {
+    "id": "hn-49152842",
+    "section": "community",
+    "title_en": "Bonsai: Janestreet's UI Library",
+    "title_ko": "Bonsai: Jane Street의 UI 라이브러리",
+    "url": "https://github.com/janestreet/bonsai",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Jane Street에서 개발한 UI 라이브러리 Bonsai가 공개되었다. 상세한 설명은 제공되지 않았으나, Jane Street는 OCaml 기반의 고성능 금융 소프트웨어로 유명한 회사다.",
+    "why_it_matters": "Jane Street의 기술 스택과 오픈소스 생태계에 관심 있는 개발자라면 주목할 만한 라이브러리.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 9.145678645181675,
+    "published_at": "2026-08-03T08:29:57Z"
+  },
+  {
+    "id": "hn-49154228",
+    "section": "community",
+    "title_en": "AirLLM 70B inference with single 4GB GPU",
+    "title_ko": "AirLLM: 단일 4GB GPU로 70B 모델 추론 실행",
+    "url": "https://github.com/lyogavin/airllm",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AirLLM은 단일 4GB GPU만으로 70B 규모의 대형 언어 모델 추론을 가능하게 하는 프로젝트다. 일반적으로 수십 GB의 VRAM이 필요한 70B 모델을 저사양 GPU 환경에서 실행할 수 있다는 점이 특징이다.",
+    "why_it_matters": "고가의 GPU 없이도 70B급 LLM을 로컬에서 실행할 수 있어 접근성이 크게 향상될 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 8.422862042170948,
+    "published_at": "2026-08-03T11:15:48Z"
+  },
+  {
+    "id": "youtube-tt5kQIi_QK0",
+    "section": "video",
+    "title_en": "AI뉴스 - 오픈AI Astra 10대 난제 해결, DeepSeek-V4-Flash 정식, Seedance 2.5, MiniMax H3, Gemini Robotics 2 등",
+    "title_ko": "오픈AI 10대 난제 해결·DeepSeek-V4-Flash·Seedance 2.5·MiniMax H3·Gemini Robotics 2 등 AI 뉴스 종합",
+    "url": "https://www.youtube.com/watch?v=tt5kQIi_QK0",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "이번 영상에서는 오픈AI 모델의 10대 난제 해결, GPT-5.6 가격 인하, DeepSeek-V4-Flash 공개, 영상 생성 모델 Seedance 2.5 출시 등 다양한 AI 소식을 다룬다. 또한 MiniMax H3 발표, Grok의 Imagine Video 1.5 및 Voice Think Fast 2.0 공개, Google의 Gemini Robotics 2 발표도 포함됐다. 안드레 카파시의 새로운 테스트 제안과 하네스만으로 벤치마크 점수를 높이는 이슈도 소개된다.",
+    "why_it_matters": "한 주간의 주요 AI 모델 출시·업데이트 소식을 한눈에 파악할 수 있어 빠르게 변화하는 AI 트렌드를 따라가는 데 유용하다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7917212301587302,
+    "published_at": "2026-08-03T13:00:32Z"
+  },
+  {
+    "id": "youtube-sNAppH0c1O0",
+    "section": "video",
+    "title_en": "AI 시대에도 게임 엔진은 필요할까? 유니티 CEO에게 직접 물었습니다",
+    "title_ko": "AI 시대에도 게임 엔진은 필요할까? 유니티 CEO 인터뷰",
+    "url": "https://www.youtube.com/watch?v=sNAppH0c1O0",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "Unite Seoul 2026을 맞아 방한한 Unity CEO Matthew Bromberg와의 인터뷰 영상이다. AI가 창작자를 대체하지 않는다는 시각과 함께, 프롬프트 한 줄로 게임을 만드는 시대에도 게임 엔진이 필요한 이유를 논한다. 소규모 팀의 성공 사례, 경쟁사 언리얼과의 협력, Unity 7의 방향성, 광고 플랫폼 '벡터' 등 다양한 주제를 다룬다.",
+    "why_it_matters": "생성 AI가 게임 개발 워크플로우를 바꾸는 시대에 게임 엔진의 역할과 Unity의 전략적 방향을 직접 들을 수 있는 인터뷰다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.779823082010582,
+    "published_at": "2026-08-03T11:00:36Z"
+  },
+  {
+    "id": "youtube-KrE6zFGbD8s",
+    "section": "video",
+    "title_en": "[LIVE] 데이터 센터 게임으로 배워보기",
+    "title_ko": "[라이브] 데이터 센터 게임으로 배워보기",
+    "url": "https://www.youtube.com/watch?v=KrE6zFGbD8s",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "삼성전자·SK하이닉스의 반등을 기원하며 데이터 센터를 주제로 한 게임을 통해 관련 개념을 배우는 라이브 방송이다. 게임 형식을 활용해 데이터 센터 관련 지식을 쉽게 익힐 수 있도록 구성된 콘텐츠로 보인다.",
+    "why_it_matters": "데이터 센터 인프라를 게임으로 쉽게 학습할 수 있는 콘텐츠로, 반도체·AI 인프라에 관심 있는 개발자에게 흥미로울 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.6422619047619047,
+    "published_at": "2026-08-02T11:53:59Z"
+  },
+  {
+    "id": "simon_willison-steve-yegge",
+    "section": "deepdive",
+    "title_en": "Quoting Steve Yegge",
+    "title_ko": "Steve Yegge: Claude Opus 4.7의 '두 가지만 더' 틱이 코딩 에이전트를 망쳤다",
+    "url": "https://simonwillison.net/2026/Aug/4/steve-yegge/#atom-everything",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Steve Yegge는 자신이 만든 코딩 에이전트 프레임워크 'Gas Town'이 Claude Opus 4.7 이후 사실상 붕괴했다고 밝혔다. Opus 4.6까지는 훌륭하게 작동했지만, 4.7에서 등장한 '두 가지만 더(just two more things)' 틱으로 인해 에이전트가 실제 작업에 집중하지 못하고 Gas Town 자체를 계속 수정하려는 루프에 빠졌다. 결국 이 문제가 해결되지 않아 Gas Town은 폐기 수순을 밟았다.",
+    "why_it_matters": "LLM 모델 업데이트 한 번이 기존 코딩 에이전트 워크플로우 전체를 무력화할 수 있음을 실사례로 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.861385582010582,
+    "published_at": "2026-08-04T00:42:45Z"
+  }
+]
