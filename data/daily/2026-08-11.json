@@ -1,0 +1,372 @@
+[
+  {
+    "id": "hf-2608.06020",
+    "section": "papers",
+    "title_en": "From Economic Agents to Agentic Economies: A Systems Blueprint for Economic World Models",
+    "title_ko": "경제 에이전트에서 에이전틱 경제로: 경제 세계 모델 시스템 설계도",
+    "url": "https://huggingface.co/papers/2608.06020",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "이 논문은 이질적인 에이전트들이 시장·제도와 상호작용하며 경제 동학을 내부에서 생성하는 '경제 세계 모델(EWM)'의 구현 로드맵을 제시한다. 고정 규칙 기반 에이전트부터 LLM 기반 적응형 에이전트, 자기진화 에이전트, 실세계 쌍둥이 모델까지 6단계 능력 사다리로 체계화했다. 기존 연구는 하위 단계에 집중되어 있으며, 자기진화 에이전트·내생적 제도·실증적 정합성을 갖춘 시스템은 여전히 희소하다고 지적한다.",
+    "why_it_matters": "AI 에이전트의 훈련·계획·안전성 검증을 위한 고충실도 경제 시뮬레이션 환경 구축의 체계적 청사진을 제공한다는 점에서 의미가 크다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.526360524616162,
+    "published_at": "2026-08-05T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.03573",
+    "section": "papers",
+    "title_en": "SFT Conflicts, RL Coexists: A Theoretical and Empirical Analysis of Multi-Task Learning for LLMs",
+    "title_ko": "SFT는 충돌, RL은 공존: LLM 멀티태스크 학습의 이론적·실증적 분석",
+    "url": "https://huggingface.co/papers/2608.03573",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SFT와 RL은 LLM의 멀티태스크 추론 강화에서 근본적으로 다른 동작을 보인다. SFT는 멀티스테이지 학습에서 심각한 태스크 충돌을 겪는 반면, RL은 다양한 태스크 간 안정적인 공존을 가능하게 한다. 이를 파라미터 수준에서 분석한 결과, RL은 태스크 간 희소하고 근사 직교적인 업데이트를 유도하며, 이는 어드밴티지 정규화와 온폴리시 최적화로 인한 그래디언트 분산 억제에 기인한다. 이 인사이트를 바탕으로 멀티태스크 학습을 분리하는 Parallel-RL 패러다임을 제안한다.",
+    "why_it_matters": "SFT 대비 RL의 멀티태스크 학습 우위를 이론적으로 규명하고, 효율적인 Parallel-RL 학습 방식을 제시해 LLM 파인튜닝 전략 설계에 직접적인 가이드를 제공한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.465735902799727,
+    "published_at": "2026-08-05T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.03571",
+    "section": "papers",
+    "title_en": "Beyond Simply Environment Scaling: Designing Effective Environment Distributions for Multimodal Agent Learning",
+    "title_ko": "단순한 환경 확장을 넘어서: 멀티모달 에이전트 학습을 위한 효과적인 환경 분포 설계",
+    "url": "https://huggingface.co/papers/2608.03571",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "멀티모달 에이전트 학습에서 환경 풀의 규모를 단순히 늘리는 것만으로는 성능 향상이 보장되지 않는다는 점을 발견했다. 연구팀은 환경 분포의 한계를 분석하고, **다양성**과 **난이도 구조**라는 두 가지 차원에서 효과적인 학습 환경 구성 방법을 연구했다. 다양성을 위해 능력 인식 환경 선택(AES)을, 난이도 구조를 위해 계층적 난이도 커리큘럼(HDC)을 제안하며 두 기법 모두 에이전트 학습 성능을 실질적으로 개선했다.",
+    "why_it_matters": "멀티모달 에이전트 학습의 효율성을 높이는 환경 설계 원칙을 제시해, 무작정 데이터를 늘리는 방식의 한계를 극복할 수 있는 실용적 방법론을 제공한다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 4.367295829986475,
+    "published_at": "2026-08-05T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.05784",
+    "section": "papers",
+    "title_en": "Activity Frames: Deterministic Screen-Activity Compilation for Agent Memory and Replay",
+    "title_ko": "Activity Frames: 에이전트 메모리를 위한 결정론적 화면 활동 컴파일러",
+    "url": "https://huggingface.co/papers/2608.05784",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "컴퓨터 사용 에이전트는 사용자가 이미 수행한 루틴을 매번 LLM 추론으로 재도출하는 비효율이 있다. 이 연구는 로컬 화면 캡처 스트림을 모델 없이 결정론적으로 '활동 프레임'으로 컴파일해 에이전트 메모리로 변환한다. 51일치 128,756 프레임 데이터에서 하루치 캡처를 86배 압축한 컨텍스트 블록을 68ms 만에 생성하며, 이를 읽은 에이전트의 질문 응답 정확도는 98.4%로 LLM 요약 방식(66~80%)을 크게 앞질렀다. 반복 루틴은 결정론적으로 재실행되어 모델 토큰을 전혀 소비하지 않으며, 스키마·컴파일러·평가 도구는 모두 오픈소스로 공개된다.",
+    "why_it_matters": "LLM 추론 비용 없이 반복 업무를 재실행할 수 있어 에이전트 운영 비용을 획기적으로 절감할 수 있는 실용적 접근법이다.",
+    "tags": [
+      "에이전트",
+      "RAG",
+      "LLM"
+    ],
+    "score": 4.218875824868201,
+    "published_at": "2026-08-05T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.07468",
+    "section": "papers",
+    "title_en": "SimWAM: A Simple World Action Model for End-to-End Autonomous Driving",
+    "title_ko": "SimWAM: 추론 시 영상 생성 없이 작동하는 자율주행 세계-행동 모델",
+    "url": "https://huggingface.co/papers/2608.07468",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SimWAM은 비디오 생성을 추론이 아닌 학습 신호로만 활용하는 경량 자율주행 플래너입니다. 사전학습된 비디오 전문가와 경량 행동 전문가를 공동 학습시키되, 격리된 어텐션 마스크를 통해 행동 예측이 미래 프레임에 독립적으로 이루어지도록 설계했습니다. 학습 후 비디오 브랜치를 제거할 수 있어 추론 지연이 크게 낮아지며, NAVSIM 벤치마크에서 91.5 PDMS를 달성해 기존 WAM 기반 플래너를 능가하고 nuScenes에 제로샷 전이도 성공했습니다.",
+    "why_it_matters": "추론 시 비디오 생성 비용을 완전히 제거하면서도 최고 수준의 자율주행 성능을 달성해, 실시간 배포 가능성을 크게 높인 실용적 기준 모델을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.13549421592915,
+    "published_at": "2026-08-06T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-building-an-ai-native-finance-function",
+    "section": "releases",
+    "title_en": "What building an AI-native finance function taught me",
+    "title_ko": "AI 네이티브 재무 조직 구축에서 배운 것들",
+    "url": "https://openai.com/index/building-an-ai-native-finance-function",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI CFO Sarah Friar가 AI 네이티브 재무 조직을 구축하며 얻은 5가지 교훈을 공유했다. 자동화된 예측, 강화된 내부 통제, AI ROI 측정 등 실무적인 내용을 다룬다. 재무 조직이 AI를 단순 도구가 아닌 핵심 운영 체계로 통합하는 방법을 제시한다.",
+    "why_it_matters": "OpenAI 내부에서 직접 실천한 AI 도입 사례를 CFO 시각으로 정리한 실용 가이드로, 기업 재무·운영 혁신에 참고할 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8154778439153438,
+    "published_at": "2026-08-10T17:00:00Z"
+  },
+  {
+    "id": "google_blog-google-ads-analytics-ai-updates",
+    "section": "releases",
+    "title_en": "Evolve your marketing with new AI tools",
+    "title_ko": "구글 광고·애널리틱스에 새로운 AI 마케팅 도구 도입",
+    "url": "https://blog.google/products/ads-commerce/google-ads-analytics-ai-updates/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글이 Google Ads와 Google Analytics에 AI 기반 Advisor UI를 새롭게 도입했다. 이 도구는 마케터가 AI를 활용해 마케팅 전략을 발전시킬 수 있도록 지원한다.",
+    "why_it_matters": "구글의 핵심 광고·분석 플랫폼에 AI 어드바이저 기능이 통합되어, 마케터의 의사결정 방식이 크게 변화할 수 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.8005968915343915,
+    "published_at": "2026-08-10T14:30:00Z"
+  },
+  {
+    "id": "openai_blog-responsible-ai-infrastructure-texas",
+    "section": "releases",
+    "title_en": "OpenAI’s letter to Governor Abbott on responsible AI infrastructure in Texas",
+    "title_ko": "OpenAI, 텍사스 주지사에게 책임 있는 AI 인프라 구축 서한 발송",
+    "url": "https://openai.com/index/responsible-ai-infrastructure-texas",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 텍사스 주지사 그렉 애벗에게 서한을 보내 텍사스 내 책임 있는 AI 인프라 구축에 대한 의지를 표명했다. 서한은 텍사스 주민들에게 혜택을 주는 신뢰성 있고 투명한 성장을 지지하는 내용을 담고 있다.",
+    "why_it_matters": "OpenAI가 미국 주 정부와의 협력을 통해 AI 인프라 확장에 적극 나서고 있음을 보여주는 사례다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.797620701058201,
+    "published_at": "2026-08-10T14:00:00Z"
+  },
+  {
+    "id": "openai_blog-model-ml",
+    "section": "releases",
+    "title_en": "Model ML completes finance work more efficiently with GPT-5.6 Sol",
+    "title_ko": "Model ML, GPT-5.6 Sol로 금융 업무 효율화 달성",
+    "url": "https://openai.com/index/model-ml",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Model ML은 GPT-5.6 Sol을 활용해 금융 리서치 및 분석 업무를 수행하고, 편집 가능하고 추적 가능한 PowerPoint 덱과 Excel 워크북 형태로 결과물을 산출한다. 이를 통해 금융 업무 전반의 효율성을 크게 향상시켰다.",
+    "why_it_matters": "GPT-5.6 Sol이 실제 금융 워크플로우에 도입되어 리서치부터 문서 산출물까지 end-to-end 자동화가 가능함을 보여주는 사례다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7857159391534392,
+    "published_at": "2026-08-10T12:00:00Z"
+  },
+  {
+    "id": "openai_blog-expanding-daybreak-as-the-cyber-defense-window-narrows",
+    "section": "releases",
+    "title_en": "Expanding Daybreak as the Cyber Defense Window Narrows",
+    "title_ko": "사이버 방어 역량 강화를 위한 Daybreak 프로그램 확장",
+    "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 사이버보안 특화 모델인 GPT-5.6-Cyber를 공개했다. 이 모델은 Daybreak Red 프로그램을 통해 승인된 연구자들에게 제공되며, 취약점 연구, 익스플로잇 검증, 보안 테스트 등의 용도로 활용할 수 있다. 사이버 방어 역량이 좁아지는 환경에 대응하기 위한 조치로 소개되고 있다.",
+    "why_it_matters": "OpenAI가 사이버보안 전용 LLM을 공식 출시함으로써, 승인된 보안 연구자들의 취약점 분석 및 방어 역량이 AI로 크게 강화될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7738111772486773,
+    "published_at": "2026-08-10T10:00:00Z"
+  },
+  {
+    "id": "openai_blog-putting-frontier-cyber-models-in-more-trusted-hands",
+    "section": "releases",
+    "title_en": "Putting frontier cyber models in more trusted hands",
+    "title_ko": "프론티어 사이버 모델을 신뢰할 수 있는 파트너 손에",
+    "url": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 승인된 Daybreak 파트너들이 프론티어 사이버 모델을 활용해 고객에게 인가된 사이버보안 서비스를 제공할 수 있도록 했다. 이 프로그램은 거버넌스 체계 하에 통제된 방식으로 사이버 모델 접근을 허용한다.",
+    "why_it_matters": "OpenAI의 고성능 사이버 모델이 검증된 파트너를 통해 기업 보안 서비스에 본격적으로 활용될 수 있는 경로가 열렸다는 점에서 주목할 만하다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.7738111772486773,
+    "published_at": "2026-08-10T10:00:00Z"
+  },
+  {
+    "id": "github_trending-PrimeIntellect-ai/prime-agent",
+    "section": "releases",
+    "title_en": "PrimeIntellect-ai/prime-agent",
+    "title_ko": "Prime Agent: 자기 개선형 RLM 코딩 에이전트 (오픈소스)",
+    "url": "https://github.com/PrimeIntellect-ai/prime-agent",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "PrimeIntellect AI가 공개한 Prime Agent는 코딩 워크플로우와 장시간 자율 작업을 위한 오픈소스 에이전트입니다. RLM(Recursive Language Model) 추상화를 통해 컨텍스트를 변수로 다루고, 서브에이전트를 함수 호출처럼 실행하며, 지속적인 Python REPL 환경에서 동작합니다. Continual Harness 기능으로 세션 간 메모리·스킬·프롬프트를 유지하고 자체 개선할 수 있으며, 터미널 연결이 끊겨도 백그라운드에서 에이전트가 계속 실행됩니다.",
+    "why_it_matters": "세션을 넘어 지속되는 자기 개선 메커니즘과 병렬 서브에이전트 오케스트레이션을 갖춘 오픈소스 장기 자율 코딩 에이전트로, 연구 및 복잡한 자동화 워크플로우에 실용적인 선택지를 제공합니다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.773531746031746,
+    "published_at": "2026-08-10T09:57:11Z"
+  },
+  {
+    "id": "hn-49241679",
+    "section": "community",
+    "title_en": "Muse Glimmer: 30B-parameter model optimized for always-on local agent workflows",
+    "title_ko": "Muse Glimmer: 상시 로컬 에이전트 워크플로우에 최적화된 300억 파라미터 모델",
+    "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Muse Glimmer는 300억(30B) 파라미터 규모의 언어 모델로, 항상 실행 중인 로컬 에이전트 워크플로우에 특화되어 최적화되었다. 로컬 환경에서 에이전트 작업을 수행하는 데 초점을 맞춘 모델이다.",
+    "why_it_matters": "클라우드 의존 없이 로컬에서 상시 구동 가능한 에이전트 특화 30B 모델로, 프라이버시와 비용 측면에서 주목할 만하다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 11.080269946242206,
+    "published_at": "2026-08-10T10:10:02Z"
+  },
+  {
+    "id": "hn-49243880",
+    "section": "community",
+    "title_en": "Mark Zuckerberg attacks 'closed' AI rivals as Meta returns to open models",
+    "title_ko": "저커버그, '폐쇄적' AI 경쟁사 공격하며 메타의 오픈 모델 복귀 선언",
+    "url": "https://www.ft.com/content/4e3957f8-ea7c-4c46-a3de-cdce8e526878",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "마크 저커버그가 폐쇄적인 AI 경쟁사들을 비판하며 메타가 오픈 모델 전략으로 돌아간다고 밝혔다. 메타는 개방형 AI 개발을 통해 업계에서 차별화된 입지를 강조하고 있다.",
+    "why_it_matters": "메타의 오픈소스 AI 전략 복귀는 폐쇄형 모델 중심의 업계 판도에 영향을 줄 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 9.78216942633238,
+    "published_at": "2026-08-10T14:06:22Z"
+  },
+  {
+    "id": "hn-49243397",
+    "section": "community",
+    "title_en": "Mistral Patent for “Code implemented tool calls”",
+    "title_ko": "Mistral, '코드 구현 툴 호출' 특허 출원",
+    "url": "https://patentsgazette.uspto.gov/week26/OG/html/1547-5/US12670045-20260630.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Mistral AI가 '코드 구현 툴 호출(Code implemented tool calls)'과 관련된 특허를 출원했다. 상세 설명은 공개되지 않았으나, LLM이 코드를 통해 툴을 호출하는 방식에 관한 기술적 접근으로 보인다.",
+    "why_it_matters": "오픈소스 친화적 이미지의 Mistral이 핵심 기술을 특허화하려는 움직임은 AI 업계의 지식재산권 경쟁 심화를 시사한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 8.9035505715167,
+    "published_at": "2026-08-10T13:29:12Z"
+  },
+  {
+    "id": "hn-49243474",
+    "section": "community",
+    "title_en": "Humanising LLM Outputs Is Dumb",
+    "title_ko": "LLM 출력을 '인간답게' 만드는 것은 어리석다",
+    "url": "https://kuber.studio/blog/Reflections/Humanising-LLM-Outputs-is-Actually-Dumb",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "LLM 출력을 인위적으로 인간처럼 보이게 다듬는 행위에 대한 비판적 시각을 다룬 글이다. 제목만으로는 구체적인 논거를 파악하기 어렵지만, LLM 결과물을 굳이 인간 글쓰기처럼 위장하는 것이 불필요하거나 역효과를 낼 수 있다는 주장으로 보인다.",
+    "why_it_matters": "AI 출력물의 '인간화' 트렌드에 반론을 제기하는 시각으로, LLM 활용 방향성에 대한 논의를 촉발할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.183000705728015,
+    "published_at": "2026-08-10T13:35:40Z"
+  },
+  {
+    "id": "hn-49242297",
+    "section": "community",
+    "title_en": "Tail-call optimization in C is relatively recent (2025)",
+    "title_ko": "C 언어의 꼬리 호출 최적화(TCO)는 비교적 최근의 일",
+    "url": "https://lwn.net/Articles/1034703/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "C 언어에서 꼬리 호출 최적화(Tail-call Optimization)가 공식적으로 지원된 것은 비교적 최근의 일이라는 내용을 다루고 있다. 2025년 기준으로 해당 주제가 재조명되고 있다.",
+    "why_it_matters": "C 언어의 오래된 기능처럼 여겨졌던 TCO가 실제로는 최근에야 정착했다는 사실은 언어 표준화 역사에 관심 있는 개발자에게 중요한 인식 전환 포인트다.",
+    "tags": [],
+    "score": 8.134378533821835,
+    "published_at": "2026-08-10T11:34:40Z"
+  },
+  {
+    "id": "youtube-Z3jUPEKm35Q",
+    "section": "video",
+    "title_en": "AI 뉴스 - Google 떠나는 인재들, GPT-6 Astra 소식, Luna 무제한, 콜드카드 하드월렛 해킹, Muse Spark 1.2, Imagine Image 2.0 등",
+    "title_ko": "구글 인재 이탈, GPT-6 지연, 챗GPT 무료 무제한 등 AI 주요 뉴스 총정리",
+    "url": "https://www.youtube.com/watch?v=Z3jUPEKm35Q",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "구글 딥마인드 리더십 개편으로 핵심 인재들이 이탈하는 한편, GCP는 오히려 성장세를 보이고 있습니다. OpenAI는 GPT-6(Astra) 출시가 더 늦어질 것임을 시사했으며, 반면 챗GPT 무료·Go 사용자에게 GPT-5.6 Luna 무제한 텍스트 채팅을 제공하기 시작했습니다. 메타의 Muse Spark 1.2, xAI의 Imagine Image 2.0, Wan 3.0 등 다양한 생성 AI 모델 업데이트도 이번 주 주요 소식으로 다뤄졌습니다.",
+    "why_it_matters": "GPT-6 지연과 무료 무제한 제공 등 OpenAI의 전략 변화와 구글 내부 변동이 AI 업계 판도에 직접적 영향을 미칠 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7950082671957672,
+    "published_at": "2026-08-10T13:33:40Z"
+  },
+  {
+    "id": "youtube-UjDOksH5cFY",
+    "section": "video",
+    "title_en": "1위를 탈환한 오픈소스 STT 모델 ㄷㄷㄷ",
+    "title_ko": "오픈소스 STT 모델, 1위 탈환",
+    "url": "https://www.youtube.com/shorts/UjDOksH5cFY",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 최근 오픈소스 음성 인식(STT) 모델이 1위를 탈환했다는 소식을 다루고 있다. 구체적인 모델명이나 벤치마크 수치는 영상 설명에 명시되어 있지 않아 상세 내용은 영상을 통해 확인해야 한다.",
+    "why_it_matters": "오픈소스 STT 모델의 성능이 최상위권에 오른 것은 음성 인식 기술의 오픈소스 생태계 경쟁력 강화를 의미한다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 0.33929563492063497,
+    "published_at": "2026-08-07T09:00:05Z"
+  },
+  {
+    "id": "youtube-2cDAVdrzGGA",
+    "section": "video",
+    "title_en": "클로드 코드 제작자가 쓰는 AI 성능 올리는 비법",
+    "title_ko": "클로드 코드 제작자가 공개하는 AI 성능 향상 비법",
+    "url": "https://www.youtube.com/shorts/2cDAVdrzGGA",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 클로드 코드 제작자가 AI 성능을 높이는 방법을 소개하는 영상이다. 구체적인 팁과 노하우를 다루는 것으로 보이며, 바이브 코딩 및 1인 창업과 관련된 콘텐츠와 연계된다.",
+    "why_it_matters": "클로드 코드를 직접 만든 개발자의 시각에서 AI 활용 성능을 끌어올리는 실전 팁을 얻을 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.32143187830687836,
+    "published_at": "2026-08-07T06:00:01Z"
+  },
+  {
+    "id": "simon_willison-introducing-muse-glimmer",
+    "section": "deepdive",
+    "title_en": "Introducing Muse Glimmer",
+    "title_ko": "Meta, 오픈 에이전틱 모델 'Muse Glimmer' 공개",
+    "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/#atom-everything",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Meta가 Apache 2.0 라이선스 하에 새로운 30B 파라미터 모델 Muse Glimmer를 공개했다. 엔드투엔드 에이전틱 태스크 완료, 신뢰할 수 있는 툴 사용, 멀티스텝 추론에 최적화되어 있으며 DeepSearch QA, MCP-Atlas, SWE-Bench 등 주요 벤치마크에서 높은 성과를 보인다고 주장한다. LM Studio를 통해 약 18GB 크기로 로컬에서 실행 가능하며, 32GB 이상 RAM 환경에서 다른 애플리케이션과 병행 사용이 가능한 실용적인 크기다.",
+    "why_it_matters": "Meta가 기존 Llama 라이선스 대신 Apache 2.0을 채택해 상업적 활용 제약이 크게 줄어든 강력한 로컬 에이전트 모델을 출시했다는 점에서 주목할 만하다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8567526455026455,
+    "published_at": "2026-08-10T23:56:03Z"
+  }
+]
