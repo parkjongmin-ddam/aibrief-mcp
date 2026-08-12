@@ -1,0 +1,381 @@
+[
+  {
+    "id": "hf-2608.09888",
+    "section": "papers",
+    "title_en": "BDH-CQ: In-Context Learning with Recurrent Latent Reasoning",
+    "title_ko": "BDH-CQ: 순환 잠재 추론을 결합한 인컨텍스트 학습 모델",
+    "url": "https://huggingface.co/papers/2608.09888",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "BDH-CQ는 인컨텍스트 학습과 순환 잠재 추론을 결합한 추론 모델로, 추론 시점에 입력이 모델의 순환 메모리를 지속적으로 업데이트한다. 중간 추론 과정을 언어로 표현하지 않고 고차원 잠재 공간에서 반복 연산으로 쿼리를 해결한다. 1억 5천만 파라미터 구성으로 ARC-AGI-1 평가셋에서 pass@2 29.5%를 달성했으며, 태스크당 추론 비용은 단 $0.0007로 기존 비용-정확도 파레토 프론티어를 돌파했다.",
+    "why_it_matters": "초소형 모델로 ARC-AGI-1 벤치마크의 비용 효율성 최고점을 경신해, 저비용 고성능 추론 모델의 새로운 가능성을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 6.493061443340548,
+    "published_at": "2026-08-09T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.09819",
+    "section": "papers",
+    "title_en": "Macaron-V1: Towards Open Continual Learning with Self-Improvement and Mixture-of-LoRA",
+    "title_ko": "Macaron-V1: 자기 개선과 Mixture-of-LoRA를 활용한 오픈 지속 학습 에이전트 모델",
+    "url": "https://huggingface.co/papers/2608.09819",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "Macaron-V1은 실제 환경에서의 경험 학습과 배포 후 지속 학습을 목표로 하는 오픈 에이전트 모델 패밀리다. Mixture-of-LoRA(MoL) 아키텍처를 통해 기반 모델을 동결한 채 채팅·에이전트·코딩·GenUI 등 전문 LoRA 어댑터를 조합해 사용한다. 플래그십 모델인 Macaron-V1-Venti는 744B GLM-5.2 베이스에 4개의 LoRA를 결합하며, Qwen3 기반 50B 모델인 Macaron-V1-Tall은 로컬 배포를 지원한다. 재귀적 자기 개선 루프, 에이전트 RL 프레임워크 MindForge, 장문맥 RL 방법 LongStraw 등 다양한 인프라와 알고리즘이 함께 설계되었다.",
+    "why_it_matters": "배포 이후에도 경험을 통해 스스로 개선되는 오픈 지속 학습 에이전트 아키텍처를 공개함으로써, 실용적인 에이전트 AI 개발의 새로운 방향을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 6.332718793265369,
+    "published_at": "2026-08-09T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.09802",
+    "section": "papers",
+    "title_en": "SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring",
+    "title_ko": "SWE-Bench ProMax: 대규모 다국어 코드 리팩터링 에이전트 벤치마크 공개",
+    "url": "https://huggingface.co/papers/2608.09802",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "기존 SWE-bench의 품질 문제(미해결 인스턴스의 약 60%가 결함 있는 테스트 포함)를 해결하기 위해 SWE-Bench ProMax가 공개됐다. 7개 프로그래밍 언어(Python, Java, TypeScript, Go, C, C++, Rust)에서 실제 커밋 170개를 전문가가 수작업으로 큐레이션한 멀티링구얼 코드 리팩터링 벤치마크로, 인스턴스당 평균 11.4개 파일·261.6줄 수정을 요구하는 고난도 과제로 구성됐다. 최고 성능 프론티어 모델도 41.2% 해결률에 그쳐 아직 포화되지 않은 도전적인 평가 지표임을 확인했다.",
+    "why_it_matters": "기존 벤치마크의 데이터 오염·테스트 품질 문제를 해결한 고품질 다국어 코딩 에이전트 평가 기준이 생겨, AI 코딩 에이전트의 실질적 능력을 더 정확히 측정할 수 있게 된다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 5.762173934797756,
+    "published_at": "2026-08-09T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.08311",
+    "section": "papers",
+    "title_en": "Ouroboros: A Self-Developing Frontier Coding Agent with Reviewed Core Evolution",
+    "title_ko": "Ouroboros: 스스로 진화하는 프론티어 코딩 에이전트",
+    "url": "https://huggingface.co/papers/2608.08311",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Ouroboros는 자신의 도구, 프롬프트, 구현 코드를 검토된 커밋을 통해 스스로 개선하는 자기발전형 에이전트 프레임워크다. Terminal-Bench 2.1에서 86.74%, OSWorld-Verified에서 90.69%를 기록해 각 벤치마크 최고 성능을 달성했다. 161일간 운영 중인 'Hope' 배포 실험에서는 자유 진화와 인간 소통을 통해 구조적 변화를 이끌어냈으며, 에이전트가 자신의 코드를 재작성하는 상황에서의 운영 안전성이 핵심 설계 과제로 부각됐다.",
+    "why_it_matters": "에이전트가 자기 코드를 수정·진화시키는 자기발전 루프를 실제 장기 운영으로 검증했다는 점에서, AI 에이전트의 자율성과 안전성 연구에 중요한 이정표가 된다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.204692619390966,
+    "published_at": "2026-08-07T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.06296",
+    "section": "papers",
+    "title_en": "On-Policy Self-Distillation without Any Supervision",
+    "title_ko": "외부 감독 없는 온-폴리시 자기 증류(U-OPSD)",
+    "url": "https://huggingface.co/papers/2608.06296",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "U-OPSD는 외부 정답 신호나 대형 모델의 가이드 없이, 모델 자신의 생성물과 내부 일관성만으로 온-폴리시 자기 증류를 수행하는 비지도 학습 방법이다. 다수결 투표로 의사 정답을 구성하고, 모델이 확신하지만 틀린 부분을 스스로 교정한다. AIME24, AIME25 등 5개 수학 추론 벤치마크에서 Qwen3 4B·8B 기준 베이스 모델 대비 각각 8.5%, 10.7% 향상을 기록했으며, GT 기반 지도 학습 방법인 OPSD와 GRPO를 대등하거나 능가한다.",
+    "why_it_matters": "정답 레이블 없이도 감독 학습 수준의 성능을 달성해, 레이블 획득이 어려운 도메인에서 LLM 포스트 트레이닝 비용을 크게 줄일 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.9889840465642745,
+    "published_at": "2026-08-08T20:00:00Z"
+  },
+  {
+    "id": "github_trending-msitarzewski/agency-agents",
+    "section": "releases",
+    "title_en": "msitarzewski/agency-agents",
+    "title_ko": "agency-agents: 230개 이상의 전문 AI 에이전트 컬렉션",
+    "url": "https://github.com/msitarzewski/agency-agents",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code, Cursor, Gemini CLI 등 14개 이상의 AI 코딩 도구에 바로 설치 가능한 전문 AI 에이전트 모음 프로젝트다. 엔지니어링·디자인·보안·마케팅·게임 개발 등 10여 개 분야에 걸쳐 230개 이상의 에이전트가 각각 고유한 성격, 워크플로우, 성공 지표를 갖추고 있다. 네이티브 앱(macOS·Linux·Windows)과 설치 스크립트를 통해 클릭 한 번으로 원하는 에이전트를 설치할 수 있으며, MIT 라이선스로 자유롭게 사용·수정 가능하다.",
+    "why_it_matters": "단순 프롬프트 모음이 아닌 실전 검증된 전문 에이전트 시스템으로, 주요 AI 코딩 도구 전반에서 즉시 활용 가능하다는 점에서 개발자 생산성 향상에 실질적 임팩트를 줄 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8496412037037038,
+    "published_at": "2026-08-11T22:44:22Z"
+  },
+  {
+    "id": "github_trending-addyosmani/agent-skills",
+    "section": "releases",
+    "title_en": "addyosmani/agent-skills",
+    "title_ko": "AI 코딩 에이전트를 위한 프로덕션급 엔지니어링 스킬 팩 'Agent Skills'",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Addy Osmani가 공개한 'Agent Skills'는 AI 코딩 에이전트가 소프트웨어 개발 전 단계(정의→계획→구현→검증→리뷰→배포)에서 시니어 엔지니어 수준의 워크플로우를 일관되게 따르도록 설계된 24개의 구조화된 스킬 팩이다. `/spec`, `/plan`, `/build`, `/test`, `/review`, `/ship` 등 8개의 슬래시 커맨드로 각 단계를 활성화하며, Claude Code·Cursor·Codex·Copilot 등 70개 이상의 에이전트에 `npx skills add` 한 줄로 설치할 수 있다. 각 스킬은 Google 엔지니어링 문화(Hyrum's Law, Beyonce Rule, trunk-based development 등)에서 비롯된 베스트 프랙티스와 안티-합리화 테이블, 검증 게이트를 포함해 에이전트가 테스트·보안 리뷰·스펙 작성을 건너뛰지 못하도록 강제한다.",
+    "why_it_matters": "AI 에이전트가 최단 경로만 택하며 품질 게이트를 무시하는 문제를 구조화된 워크플로우로 해결해, 프로토타입 수준이 아닌 실제 프로덕션 품질의 코드를 생성하도록 유도하는 실용적 오픈소스 도구다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8496412037037038,
+    "published_at": "2026-08-11T22:44:22Z"
+  },
+  {
+    "id": "github_trending-ZhuLinsen/daily_stock_analysis",
+    "section": "releases",
+    "title_en": "ZhuLinsen/daily_stock_analysis",
+    "title_ko": "LLM 기반 다중 시장 주식 지능 분석 시스템 - daily_stock_analysis",
+    "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "LLM을 활용해 A주·홍콩·미국·일본·한국·대만 주식을 매일 자동 분석하고 결정 대시보드를 생성하는 오픈소스 시스템입니다. GitHub Actions를 통해 서버 없이 무료로 스케줄 실행이 가능하며, 기업 위챗·Slack·Telegram·이메일 등 다양한 채널로 알림을 전송합니다. OpenAI·Gemini·DeepSeek·Claude·Ollama 등 주요 LLM을 지원하며, 15가지 내장 전략을 활용한 에이전트 질의 기능도 제공합니다.",
+    "why_it_matters": "서버 비용 없이 LLM 기반 주식 분석을 자동화할 수 있는 실용적인 오픈소스 솔루션으로, AI를 실제 금융 워크플로에 접목하는 레퍼런스로 활용 가치가 높습니다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8496412037037038,
+    "published_at": "2026-08-11T22:44:22Z"
+  },
+  {
+    "id": "github_trending-vitali87/code-graph-rag",
+    "section": "releases",
+    "title_en": "vitali87/code-graph-rag",
+    "title_ko": "Code-Graph-RAG: 지식 그래프 기반 모노레포 코드베이스 탐색·편집 도구",
+    "url": "https://github.com/vitali87/code-graph-rag",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Tree-sitter로 다중 언어 코드베이스를 파싱하고 Memgraph에 지식 그래프로 저장해, 자연어로 코드를 조회·편집·최적화할 수 있는 오픈소스 RAG 도구입니다. Python, TypeScript, Rust, Go, Java, C/C++, C#, PHP 등 14개 이상 언어를 지원하며, AST 기반 구조적 검색·치환과 데이터 흐름 추적 기능도 제공합니다. MCP 서버로도 동작해 Claude Code 등 MCP 클라이언트에서 직접 코드베이스를 쿼리하고 편집할 수 있습니다.",
+    "why_it_matters": "단순 벡터 검색을 넘어 코드 구조를 그래프로 모델링해, 대규모 모노레포에서 데드 코드 탐지·데이터 흐름 추적·AI 기반 리팩터링까지 가능한 코드 이해 플랫폼을 오픈소스로 제공한다는 점에서 주목할 만합니다.",
+    "tags": [
+      "RAG",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8496412037037038,
+    "published_at": "2026-08-11T22:44:22Z"
+  },
+  {
+    "id": "github_trending-anthropics/skills",
+    "section": "releases",
+    "title_en": "anthropics/skills",
+    "title_ko": "Anthropic, Claude용 Agent Skills 공개 저장소 공개",
+    "url": "https://github.com/anthropics/skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 Claude의 'Agent Skills' 시스템을 위한 공개 GitHub 저장소를 공개했다. Skills는 지시사항·스크립트·리소스로 구성된 폴더로, Claude가 특정 작업(문서 생성, 데이터 분석, 자동화 등)을 반복 가능한 방식으로 수행하도록 동적으로 로드된다. Claude Code 플러그인, Claude.ai(유료 플랜), Claude API를 통해 사용 가능하며, SKILL.md 파일 하나로 커스텀 스킬을 직접 제작할 수 있다. docx·pdf·pptx·xlsx 관련 스킬도 소스 공개 형태로 포함되어 있다.",
+    "why_it_matters": "Claude에 특화된 기능을 모듈 형태로 추가·공유할 수 있는 표준 생태계가 공식화되어, 기업과 개발자의 에이전트 커스터마이징 가능성이 크게 확대된다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8496412037037038,
+    "published_at": "2026-08-11T22:44:22Z"
+  },
+  {
+    "id": "github_trending-stablyai/orca",
+    "section": "releases",
+    "title_en": "stablyai/orca",
+    "title_ko": "Orca: 병렬 AI 코딩 에이전트를 한 곳에서 관리하는 오픈소스 ADE",
+    "url": "https://github.com/stablyai/orca",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Orca는 Claude Code, Codex, Cursor 등 다양한 CLI 코딩 에이전트를 병렬로 실행하고 통합 관리할 수 있는 AI 개발 환경(ADE)이다. 각 에이전트를 독립된 git worktree에서 동시에 실행하고 결과를 비교할 수 있으며, 데스크톱·모바일·VPS 환경을 모두 지원한다. MIT 라이선스 오픈소스로 macOS, Windows, Linux에서 사용 가능하다.",
+    "why_it_matters": "여러 AI 코딩 에이전트를 병렬로 오케스트레이션하는 통합 환경을 제공해, 개발자가 다양한 에이전트의 결과를 한 번에 비교·활용할 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8496412037037038,
+    "published_at": "2026-08-11T22:44:22Z"
+  },
+  {
+    "id": "github_trending-paperclipai/paperclip",
+    "section": "releases",
+    "title_en": "paperclipai/paperclip",
+    "title_ko": "Paperclip: 오픈소스 AI 에이전트 팀 관리 플랫폼",
+    "url": "https://github.com/paperclipai/paperclip",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Paperclip은 여러 AI 에이전트를 마치 회사 조직처럼 관리할 수 있는 오픈소스 Node.js 서버 + React UI 플랫폼이다. 조직도, 목표 정렬, 예산 통제, 거버넌스 기능을 갖추고 Claude Code·Codex·Cursor 등 다양한 에이전트를 하나의 대시보드에서 조율한다. 태스크 매니저처럼 작동하지만 내부적으로는 에이전트별 예산 한도, 승인 워크플로우, 전체 감사 로그 등을 제공한다. MIT 라이선스로 자체 호스팅이 가능하며 계정 없이 바로 시작할 수 있다.",
+    "why_it_matters": "수십 개의 AI 에이전트를 동시에 운영해야 하는 팀에게 비용 폭주·맥락 유실·거버넌스 부재 문제를 한 번에 해결하는 오픈소스 에이전트 오케스트레이션 레이어다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.8496412037037038,
+    "published_at": "2026-08-11T22:44:22Z"
+  },
+  {
+    "id": "hn-49257876",
+    "section": "community",
+    "title_en": "Stealing Reasoning Traces from Proprietary LLM APIs",
+    "title_ko": "독점 LLM API에서 추론 트레이스 탈취하기",
+    "url": "https://stolen-thoughts.com/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "독점 LLM API의 추론 과정(추론 트레이스)을 외부에서 탈취할 수 있다는 내용을 다룬 글이다. 상세한 설명은 제공되지 않았으나, 제목에서 유추하면 API 응답을 분석해 모델의 내부 추론 과정을 역추적하는 방법을 논한 것으로 보인다.",
+    "why_it_matters": "독점 LLM의 추론 과정이 외부로 노출될 수 있다면, 모델 보안 및 지식재산권 보호에 심각한 위협이 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.806866543404707,
+    "published_at": "2026-08-11T13:22:00Z"
+  },
+  {
+    "id": "hn-49257160",
+    "section": "community",
+    "title_en": "OpenAI’s head of ethics leaves less than a year after joining",
+    "title_ko": "OpenAI 윤리 책임자, 합류 1년도 안 돼 퇴사",
+    "url": "https://www.ft.com/content/e49dfb75-f841-4466-a577-f7aaff8779a0",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "OpenAI의 윤리 총괄 책임자가 입사한 지 1년이 채 되지 않아 회사를 떠났다. 구체적인 퇴사 이유는 공개되지 않았다.",
+    "why_it_matters": "AI 안전·윤리 거버넌스에 대한 OpenAI 내부 분위기를 가늠할 수 있는 신호로 주목된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.45013527258375,
+    "published_at": "2026-08-11T12:23:07Z"
+  },
+  {
+    "id": "hn-49261133",
+    "section": "community",
+    "title_en": "Go is an ideal language for AI-assisted software engineering",
+    "title_ko": "Go는 AI 보조 소프트웨어 엔지니어링에 이상적인 언어다",
+    "url": "https://developers.googleblog.com/why-go-is-an-ideal-language-for-ai-assisted-software-engineering/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Go 언어가 AI 보조 개발 환경에 특히 적합하다는 주장을 다룬 글이다. 구체적인 근거는 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "AI 코딩 도구와 언어 선택의 상관관계에 관심 있는 개발자에게 참고할 만한 시각을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 9.250088062016864,
+    "published_at": "2026-08-11T16:57:09Z"
+  },
+  {
+    "id": "hn-49259339",
+    "section": "community",
+    "title_en": "Apple Silicon and macOS VMs: Faster LLM Inference with llama.cpp",
+    "title_ko": "Apple Silicon과 macOS VM에서 llama.cpp로 더 빠른 LLM 추론",
+    "url": "https://github.com/trycua/cua/blob/main/blog/gpu-passthrough-macos-vms.md",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Apple Silicon 환경과 macOS 가상 머신에서 llama.cpp를 활용해 LLM 추론 속도를 향상시키는 내용을 다룬다. 구체적인 세부 사항은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "Apple Silicon 기반 로컬 LLM 추론 최적화에 관심 있는 개발자에게 실용적인 참고 자료가 될 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 8.523306598780495,
+    "published_at": "2026-08-11T14:50:33Z"
+  },
+  {
+    "id": "hn-49261514",
+    "section": "community",
+    "title_en": "Grok Bot",
+    "title_ko": "Grok 봇",
+    "url": "https://x.ai/bot",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Grok 봇에 관한 소식이 Hacker News에 공유되었습니다. 상세한 설명이 제공되지 않아 추가 정보는 확인이 필요합니다.",
+    "why_it_matters": "Grok 관련 봇 동향은 AI 에이전트 및 자동화 분야에서 주목할 만한 주제일 수 있습니다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 7.9951586411681,
+    "published_at": "2026-08-11T17:23:09Z"
+  },
+  {
+    "id": "youtube-gsavCq1Ge98",
+    "section": "video",
+    "title_en": "무료 사용자에게 사용량을 퍼주기 시작한 오픈AI",
+    "title_ko": "오픈AI, 무료 사용자 대상 사용량 혜택 확대",
+    "url": "https://www.youtube.com/shorts/gsavCq1Ge98",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "오픈AI가 무료 사용자에게 제공하는 사용량을 늘리기 시작했다는 소식을 다룬 영상이다. 조코딩 채널에서 해당 변화를 소개하고 있으며, 구체적인 내용은 영상을 통해 확인할 수 있다.",
+    "why_it_matters": "무료 사용자도 ChatGPT를 더 많이 활용할 수 있게 되어 AI 접근성이 높아질 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7678869047619048,
+    "published_at": "2026-08-11T09:00:17Z"
+  },
+  {
+    "id": "youtube-GJyLMytijNE",
+    "section": "video",
+    "title_en": "980억원이 털린 비트코인 지갑 해킹 사태 ㄷㄷ",
+    "title_ko": "980억 원 규모 비트코인 지갑 해킹 사태",
+    "url": "https://www.youtube.com/shorts/GJyLMytijNE",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "약 980억 원 규모의 비트코인이 탈취된 지갑 해킹 사태가 발생했다. 조코딩 채널에서 해당 사건을 다루며 해킹 경위와 보안 이슈를 소개한다.",
+    "why_it_matters": "대규모 암호화폐 해킹 사례로, 디지털 자산 보안의 취약성을 다시 한번 상기시키는 사건이다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.750026455026455,
+    "published_at": "2026-08-11T06:00:15Z"
+  },
+  {
+    "id": "youtube-Z3jUPEKm35Q",
+    "section": "video",
+    "title_en": "AI 뉴스 - Google 떠나는 인재들, GPT-6 Astra 소식, Luna 무제한, 콜드카드 하드월렛 해킹, Muse Spark 1.2, Imagine Image 2.0 등",
+    "title_ko": "구글 인재 이탈·GPT-6 지연·Luna 무제한 등 AI 주간 뉴스 총정리",
+    "url": "https://www.youtube.com/watch?v=Z3jUPEKm35Q",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "구글 DeepMind 리더십 개편으로 핵심 인재들이 떠나는 가운데, GPT-6(Astra)는 출시가 더 늦어질 것으로 알려졌다. OpenAI는 무료·Go 사용자에게도 GPT-5.6 Luna 텍스트 채팅을 무제한으로 제공하기 시작했으며, 메타의 Muse Spark 1.2, xAI의 Imagine Image 2.0, FLUX 3 Video 등 다양한 생성 AI 모델 업데이트도 잇따랐다. 또한 Claude Code가 콜드카드 하드월렛의 RNG 취약점을 발견한 사건과 클로드의 생물학 관련 허용 범위 확대도 주목받았다.",
+    "why_it_matters": "구글 인재 이탈과 GPT-6 지연이 겹치며 AI 주도권 경쟁 구도가 흔들리고, 무료 사용자 무제한 제공 등 서비스 확산 속도도 빨라지고 있어 개발자들이 전략 방향을 재점검할 시점이다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.6521511243386243,
+    "published_at": "2026-08-10T13:33:40Z"
+  },
+  {
+    "id": "simon_willison-there-are-no-lossless-transformations-of-natural-language-text",
+    "section": "deepdive",
+    "title_en": "There are no lossless transformations of natural-language text",
+    "title_ko": "자연어 텍스트에는 무손실 변환이 없다",
+    "url": "https://simonwillison.net/2026/Aug/11/there-are-no-lossless-transformations-of-natural-language-text/#atom-everything",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Sophie Alpert가 엔지니어의 AI 글쓰기 활용에 관한 내부 지침을 공개했다. 핵심 원칙은 'AI가 작성했더라도 문서의 모든 아이디어와 문장에 책임을 져야 한다'는 것이다. 또한 자연어 텍스트는 무손실 변환이 불가능하며, AI가 글을 재작성하면 필자가 의도한 정보가 반드시 손실된다고 강조한다.",
+    "why_it_matters": "LLM을 글쓰기에 활용하는 개발자가 늘어나는 시대에, AI 보조 작성의 책임 소재와 의미 손실 문제를 명확히 짚어주는 실용적 지침이다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8560119047619048,
+    "published_at": "2026-08-11T23:48:35Z"
+  }
+]
