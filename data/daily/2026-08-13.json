@@ -1,0 +1,368 @@
+[
+  {
+    "id": "hf-2608.09888",
+    "section": "papers",
+    "title_en": "BDH-CQ: In-Context Learning with Recurrent Latent Reasoning",
+    "title_ko": "BDH-CQ: 순환 잠재 추론과 인컨텍스트 학습의 결합",
+    "url": "https://huggingface.co/papers/2608.09888",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "BDH-CQ는 인컨텍스트 학습과 순환 잠재 추론을 결합한 추론 모델로, 추론 시 입력이 모델의 순환 메모리를 지속적으로 업데이트한다. 중간 추론 과정을 언어로 출력하지 않고 고차원 잠재 공간에서 반복 연산을 통해 쿼리를 해결한다. 1억 5천만 파라미터 구성으로 ARC-AGI-1 평가 세트에서 pass@2 기준 29.5%를 달성했으며, 과제당 추론 비용은 단 $0.0007로 기존 비용-정확도 파레토 프론티어를 돌파했다.",
+    "why_it_matters": "소형 모델로 ARC-AGI-1 벤치마크의 비용 효율성 최고 기록을 세워, 저비용 고효율 추론 모델의 새로운 가능성을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 7.317164686747284,
+    "published_at": "2026-08-09T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.06296",
+    "section": "papers",
+    "title_en": "On-Policy Self-Distillation without Any Supervision",
+    "title_ko": "외부 감독 없이 자체 일관성만으로 LLM 자가 증류 달성하는 U-OPSD",
+    "url": "https://huggingface.co/papers/2608.06296",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "U-OPSD는 외부 정답 레이블, 환경 피드백, 대형 모델 가이드 없이 모델 자신의 생성물만으로 온-폴리시 자가 증류를 수행하는 방법론이다. 다수결 투표로 의사(pseudo) 정답을 구성하고, 모델이 확신을 가지고 틀린 부분만 선별해 자기 교정한다. 수학 추론 5개 벤치마크(AIME24, AIME25, HMMT25, MATH500, AMC23)에서 Qwen3 4B·8B 기준 기반 모델 대비 각각 8.5%, 10.7% 향상을 달성했으며, 정답 레이블을 사용하는 OPSD·GRPO와 동등하거나 그 이상의 성능을 보였다.",
+    "why_it_matters": "레이블 없는 비지도 방식으로도 지도학습 수준의 LLM 후훈련 성능을 달성할 수 있음을 입증해, 데이터 수집 비용을 크게 줄일 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 6.225746673713202,
+    "published_at": "2026-08-08T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.10915",
+    "section": "papers",
+    "title_en": "ComBodied Agents: a New Paradigm of Human-Centric Agentic AI",
+    "title_ko": "콤보디드 에이전트: 인간 중심 에이전틱 AI의 새로운 패러다임",
+    "url": "https://huggingface.co/papers/2608.10915",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "기존 소프트웨어 에이전트와 로봇 에이전트는 각각 디지털·물리적 상태를 변환하지만, 정작 사람의 상태와 자율성을 핵심 모델링 대상으로 삼지 않는다는 구조적 한계가 있다. 이를 해결하기 위해 '콤보디드 에이전트(Combodied Agents)' 패러다임을 제안하며, 멀티모달 인식·장기 기억·개인 세계 모델·적절한 개입 정책을 닫힌 루프로 통합한다. 센서·웨어러블·로봇·인간 서비스를 목적이 아닌 행동 채널로 활용해 개인의 상태 궤적을 시간에 걸쳐 지원하며, 동의·안전성·가역성·사용자 통제를 핵심 원칙으로 삼는다.",
+    "why_it_matters": "단순 작업 완료를 넘어 개인의 장기적 웰빙과 자율성을 지원하는 인간 중심 에이전트 설계 프레임워크를 제시해, 헬스케어·AI 동반자 등 실생활 에이전트 연구의 방향을 재정립할 수 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 6.123963979403259,
+    "published_at": "2026-08-10T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.10299",
+    "section": "papers",
+    "title_en": "Co-Evolution in Agentic Systems: Toward Self-Directed Evolution Beyond Human Design",
+    "title_ko": "에이전트 시스템의 공진화: 인간 설계를 넘어선 자기 주도적 진화",
+    "url": "https://huggingface.co/papers/2608.10299",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "이 서베이 논문은 다수의 에이전트와 환경이 서로 적응 압력을 가하는 '공진화(co-evolution)' 개념을 중심으로 에이전트 시스템의 자기 진화를 체계화한다. 에이전트 간 공진화, 에이전트-환경 공진화, 그리고 진화 메커니즘 자체를 진화시키는 메타 공진화로 이어지는 3단계 분류 체계를 제안한다. 또한 이러한 시스템의 평가, 확장, 안전성 및 제어 가능성에 관한 열린 과제도 함께 논의한다.",
+    "why_it_matters": "고정된 인간 설계를 넘어 스스로 진화하는 에이전트 시스템의 이론적 토대를 제공하며, 자율 AI의 안전성과 확장성 논의에 중요한 기준점이 된다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 5.6913478822291435,
+    "published_at": "2026-08-09T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.10744",
+    "section": "papers",
+    "title_en": "Beyond Pixels: From Video Priors to 4D Worlds",
+    "title_ko": "픽셀을 넘어서: 비디오 프라이어로 4D 세계 생성하기",
+    "url": "https://huggingface.co/papers/2608.10744",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Latent-to-4D는 비디오 확산 모델의 잠재 변수를 직접 4D 장면으로 변환하는 새로운 프레임워크다. RGB 재구성 단계를 건너뛰고 VAE 잠재 공간을 공유하는 다양한 비디오 모델에 단일 체크포인트로 재사용 가능하다는 점이 핵심이다. 약 1K개의 재구성 클립만으로 학습했음에도 Text4D-200 및 I4D-200 벤치마크에서 기존 카스케이드 방식 대비 DINO-F1 지표를 최대 5.81점 향상시켰으며, 사람 평가자들도 기하학적 품질과 시간적 안정성 면에서 더 높이 평가했다.",
+    "why_it_matters": "단일 체크포인트로 여러 비디오 확산 모델에 4D 생성을 재학습 없이 적용할 수 있어, 동적 3D 콘텐츠 생성 파이프라인의 범용성과 확장성을 크게 높인다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.6443908991413725,
+    "published_at": "2026-08-10T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-how-enterprises-put-ai-to-work",
+    "section": "releases",
+    "title_en": "From assistance to execution: How enterprises put AI to work",
+    "title_ko": "지원에서 실행으로: 기업들이 AI를 업무에 활용하는 방법",
+    "url": "https://openai.com/index/how-enterprises-put-ai-to-work",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI 연구에 따르면 기업들이 단순 보조 도구를 넘어 에이전틱 AI를 실제 업무 실행에 적극 도입하고 있다. ChatGPT와 Codex를 활용한 기업 사례가 늘어나고 있으며, AI 도입에 앞선 선도 기업들이 격차를 벌리고 있는 것으로 나타났다.",
+    "why_it_matters": "AI 도입 선도 기업과 후발 기업 간의 격차가 벌어지고 있어, 기업의 에이전틱 AI 전략 수립이 시급해지고 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.7500016534391534,
+    "published_at": "2026-08-12T06:00:00Z"
+  },
+  {
+    "id": "github_trending-msitarzewski/agency-agents",
+    "section": "releases",
+    "title_en": "msitarzewski/agency-agents",
+    "title_ko": "agency-agents: 230개 이상의 특화 AI 에이전트 컬렉션",
+    "url": "https://github.com/msitarzewski/agency-agents",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "다양한 전문 역할을 수행하는 AI 에이전트 230개 이상을 모아놓은 오픈소스 프로젝트입니다. 프론트엔드 개발자, 보안 아키텍트, 마케터, 게임 디자이너 등 엔지니어링·디자인·마케팅·보안 등 10개 이상의 부문으로 구성되어 있습니다. Claude Code, Cursor, GitHub Copilot, Gemini CLI 등 주요 AI 코딩 도구에 스크립트 한 줄로 설치할 수 있으며, 네이티브 앱(macOS·Linux·Windows)도 제공됩니다. 각 에이전트는 단순 프롬프트가 아닌 고유한 성격, 워크플로우, 납품물 기준을 갖춘 전문가 시스템으로 설계되었습니다.",
+    "why_it_matters": "Claude Code·Cursor 등 AI 코딩 도구를 사용하는 개발자가 즉시 활용할 수 있는 고품질 에이전트 컬렉션으로, 역할별 전문화된 AI 워크플로우 구축의 실용적 레퍼런스가 된다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7406580687830688,
+    "published_at": "2026-08-12T04:25:49Z"
+  },
+  {
+    "id": "github_trending-addyosmani/agent-skills",
+    "section": "releases",
+    "title_en": "addyosmani/agent-skills",
+    "title_ko": "AI 코딩 에이전트를 위한 프로덕션급 엔지니어링 스킬 모음 'Agent Skills'",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Addy Osmani가 만든 오픈소스 프로젝트로, AI 코딩 에이전트가 시니어 엔지니어 수준의 개발 워크플로우를 일관되게 따르도록 돕는 24개의 구조화된 스킬을 제공한다. /spec, /plan, /build, /test, /review, /ship 등 8개의 슬래시 커맨드로 개발 전 주기를 커버하며, Claude Code, Cursor, Codex, GitHub Copilot 등 70개 이상의 에이전트에 설치할 수 있다. 각 스킬은 단계별 워크플로우, 검증 게이트, 안티-합리화 테이블을 포함해 에이전트가 스펙·테스트·보안 리뷰를 건너뛰지 않도록 강제한다.",
+    "why_it_matters": "AI 에이전트가 프로덕션 품질 코드를 일관되게 생성하려면 단순 프롬프트를 넘어 구조화된 엔지니어링 프로세스가 필요하며, 이 프로젝트는 그 표준화된 기반을 제공한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7406580687830688,
+    "published_at": "2026-08-12T04:25:49Z"
+  },
+  {
+    "id": "github_trending-ZhuLinsen/daily_stock_analysis",
+    "section": "releases",
+    "title_en": "ZhuLinsen/daily_stock_analysis",
+    "title_ko": "LLM 기반 멀티 마켓 주식 자동 분석 시스템 – daily_stock_analysis",
+    "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "LLM을 활용해 A주·홍콩·미국·일본·한국·대만 주식을 매일 자동 분석하고, 결과를 기업 위챗·슬랙·텔레그램·이메일 등으로 푸시하는 오픈소스 시스템입니다. GitHub Actions를 통해 서버 없이 무료로 정기 실행이 가능하며, OpenAI·Gemini·DeepSeek·Claude·Ollama 등 다양한 LLM을 지원합니다. Web 대시보드, Agent 전략 질의, 백테스트 등 부가 기능도 포함되어 있습니다.",
+    "why_it_matters": "서버 비용 없이 LLM 기반 다국가 주식 분석을 자동화할 수 있는 실용적인 오픈소스 템플릿으로, 개인 투자자 및 AI 금융 앱 개발자에게 즉시 활용 가능한 레퍼런스를 제공합니다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7406580687830688,
+    "published_at": "2026-08-12T04:25:49Z"
+  },
+  {
+    "id": "github_trending-vitali87/code-graph-rag",
+    "section": "releases",
+    "title_en": "vitali87/code-graph-rag",
+    "title_ko": "Code-Graph-RAG: 지식 그래프 기반 모노레포 코드 탐색 및 편집 도구",
+    "url": "https://github.com/vitali87/code-graph-rag",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Tree-sitter로 멀티 언어 코드베이스를 파싱하고 Memgraph에 지식 그래프를 구축해 자연어로 코드를 조회·편집할 수 있는 오픈소스 RAG 시스템입니다. Python, TypeScript, Rust, Go, Java, C/C++, C#, PHP 등 14개 이상의 언어를 지원하며, AST 기반 구조적 검색·치환과 데이터 흐름 추적 기능도 제공합니다. MCP 서버로도 동작하여 Claude Code 등 MCP 클라이언트와 바로 연동할 수 있습니다.",
+    "why_it_matters": "대규모 모노레포를 자연어로 질의·수정할 수 있어 복잡한 멀티 언어 코드베이스 파악 및 유지보수 비용을 크게 줄일 수 있다.",
+    "tags": [
+      "RAG",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7406580687830688,
+    "published_at": "2026-08-12T04:25:49Z"
+  },
+  {
+    "id": "github_trending-anthropics/skills",
+    "section": "releases",
+    "title_en": "anthropics/skills",
+    "title_ko": "Anthropic, Claude용 Agent Skills 공개 저장소 공개",
+    "url": "https://github.com/anthropics/skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 Claude의 'Skills' 시스템을 위한 공개 GitHub 저장소를 공개했다. Skills는 지시문·스크립트·리소스로 구성된 폴더로, Claude가 특정 전문 작업을 반복 가능한 방식으로 수행할 수 있도록 동적으로 로드된다. 창작·디자인, 개발·기술, 기업 커뮤니케이션, 문서 작업(docx/pdf/pptx/xlsx) 등 다양한 예제 스킬이 포함되어 있으며, Claude Code 플러그인, Claude.ai(유료 플랜), Claude API를 통해 사용할 수 있다. 커스텀 스킬은 SKILL.md 파일만으로 간단히 제작 가능하다.",
+    "why_it_matters": "Claude에 도메인 특화 능력을 직접 추가·공유할 수 있는 표준 확장 체계가 공개됨으로써, 기업·개발자가 AI 워크플로를 손쉽게 커스터마이징할 수 있는 생태계가 본격화된다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7406580687830688,
+    "published_at": "2026-08-12T04:25:49Z"
+  },
+  {
+    "id": "github_trending-stablyai/orca",
+    "section": "releases",
+    "title_en": "stablyai/orca",
+    "title_ko": "Orca: 병렬 AI 코딩 에이전트를 한곳에서 관리하는 오픈소스 ADE",
+    "url": "https://github.com/stablyai/orca",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Orca는 Claude Code, Codex, Cursor 등 다양한 CLI 코딩 에이전트를 병렬로 실행하고 관리할 수 있는 AI 개발 환경(ADE)이다. 각 에이전트는 독립된 Git 워크트리에서 실행되며, 결과를 비교해 최적의 코드를 선택할 수 있다. 데스크톱(macOS/Windows/Linux)과 모바일 앱을 통해 어디서든 에이전트를 모니터링하고 제어할 수 있으며, MIT 라이선스 오픈소스로 제공된다.",
+    "why_it_matters": "여러 AI 코딩 에이전트를 동시에 병렬 실행·비교할 수 있어 개발 생산성을 크게 높일 수 있는 통합 오케스트레이션 도구다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7406580687830688,
+    "published_at": "2026-08-12T04:25:49Z"
+  },
+  {
+    "id": "hn-49271994",
+    "section": "community",
+    "title_en": "AI is removing the middle class of software engineering?",
+    "title_ko": "AI가 소프트웨어 엔지니어링의 중간 계층을 없애고 있는가?",
+    "url": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI 도구의 발전으로 소프트웨어 엔지니어링 직군의 중간 계층, 즉 중간 숙련도 개발자의 역할이 축소되고 있다는 논의다. 상위 전문가와 AI를 활용하는 소수만 살아남고, 나머지는 대체될 수 있다는 우려가 제기되고 있다.",
+    "why_it_matters": "AI 코딩 도구의 확산이 개발자 고용 구조 자체를 재편할 수 있다는 점에서 업계 전반에 중요한 논의다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.745057738847468,
+    "published_at": "2026-08-12T13:20:05Z"
+  },
+  {
+    "id": "hn-49274600",
+    "section": "community",
+    "title_en": "DeepSeek V4 Pro 0813",
+    "title_ko": "DeepSeek V4 Pro 0813 출시",
+    "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "DeepSeek의 새로운 모델인 V4 Pro 0813이 공개되었다. 상세한 설명은 제공되지 않아 구체적인 사양이나 벤치마크 정보는 확인되지 않는다.",
+    "why_it_matters": "DeepSeek의 최신 모델 업데이트로, 오픈소스 LLM 경쟁 구도에 영향을 줄 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 10.339956053001005,
+    "published_at": "2026-08-12T16:04:50Z"
+  },
+  {
+    "id": "hn-49272832",
+    "section": "community",
+    "title_en": "Tailscale Traces Database Corruption to 16y/o SQLite WAL-Reset Bug",
+    "title_ko": "Tailscale, 16년 된 SQLite WAL 리셋 버그로 인한 데이터베이스 손상 원인 규명",
+    "url": "https://tailscale.com/blog/sqlite-wal-reset-bug",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Tailscale이 데이터베이스 손상 문제의 원인을 16년 전부터 존재해온 SQLite의 WAL(Write-Ahead Logging) 리셋 버그로 추적해 밝혀냈다. 오랫동안 잠재해 있던 SQLite의 고질적 버그가 실제 프로덕션 환경에서 데이터 손상을 일으킨 사례다.",
+    "why_it_matters": "널리 사용되는 SQLite의 숨겨진 버그가 프로덕션 시스템에 실질적 피해를 줄 수 있음을 보여주는 사례로, SQLite 기반 인프라 운영자라면 주목해야 한다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 10.080921677371085,
+    "published_at": "2026-08-12T14:22:30Z"
+  },
+  {
+    "id": "hn-49274027",
+    "section": "community",
+    "title_en": "Grok 4.6",
+    "title_ko": "Grok 4.6 출시",
+    "url": "https://x.ai/news/grok-4-6",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "xAI의 Grok 모델 신버전인 4.6이 공개되었다. 상세한 설명은 제공되지 않았으나 Grok 시리즈의 업데이트 버전으로 보인다.",
+    "why_it_matters": "xAI의 Grok 모델 업데이트 동향을 파악할 수 있는 소식이나 구체적 정보는 확인이 필요하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.898357245931107,
+    "published_at": "2026-08-12T15:32:50Z"
+  },
+  {
+    "id": "hn-49275385",
+    "section": "community",
+    "title_en": "Grok 4.6 scores 61 on the Artificial Analysis Intelligence Index",
+    "title_ko": "Grok 4.6, Artificial Analysis 인텔리전스 인덱스에서 61점 기록",
+    "url": "https://artificialanalysis.ai/articles/grok-4-6-benchmarks-and-analysis",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Grok 4.6이 Artificial Analysis Intelligence Index에서 61점을 기록했다. 구체적인 세부 정보는 제공되지 않았으나, 해당 지수는 LLM 성능을 종합적으로 평가하는 벤치마크다.",
+    "why_it_matters": "주요 LLM 벤치마크에서 Grok 4.6의 성능 수준을 가늠할 수 있는 지표로 주목된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.599996239063191,
+    "published_at": "2026-08-12T16:54:25Z"
+  },
+  {
+    "id": "youtube-FXS_Szo4-Rg",
+    "section": "video",
+    "title_en": "GPT에는 없는 그록 이미지만의 기능 ㄷㄷ",
+    "title_ko": "GPT에는 없는 그록(Grok)만의 이미지 기능",
+    "url": "https://www.youtube.com/shorts/FXS_Szo4-Rg",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "유튜브 채널 조코딩에서 GPT와 차별화된 그록(Grok)의 이미지 관련 기능을 소개하는 영상이다. 그록만이 갖춘 독자적인 이미지 기능을 중점적으로 다루고 있다.",
+    "why_it_matters": "국내 개발자·크리에이터가 GPT 대비 그록의 이미지 기능 차별점을 한국어로 빠르게 파악할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7678786375661375,
+    "published_at": "2026-08-12T09:00:12Z"
+  },
+  {
+    "id": "youtube-gsavCq1Ge98",
+    "section": "video",
+    "title_en": "무료 사용자에게 사용량을 퍼주기 시작한 오픈AI",
+    "title_ko": "오픈AI, 무료 사용자 대상 사용량 대폭 확대",
+    "url": "https://www.youtube.com/shorts/gsavCq1Ge98",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "오픈AI가 무료 사용자에게 제공하는 서비스 사용량을 늘리기 시작했다는 내용을 다루는 영상이다. 조코딩 채널에서 해당 변화를 소개하고 있다.",
+    "why_it_matters": "무료 사용자 혜택 확대는 AI 서비스 접근성을 높이고 경쟁 구도에도 영향을 줄 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6250297619047619,
+    "published_at": "2026-08-11T09:00:17Z"
+  },
+  {
+    "id": "youtube-GJyLMytijNE",
+    "section": "video",
+    "title_en": "980억원이 털린 비트코인 지갑 해킹 사태 ㄷㄷ",
+    "title_ko": "980억 원 규모 비트코인 지갑 해킹 사태",
+    "url": "https://www.youtube.com/shorts/GJyLMytijNE",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "비트코인 지갑이 해킹당해 약 980억 원 규모의 피해가 발생한 사건을 다룬 영상이다. 조코딩 채널에서 해당 해킹 사태의 경위와 보안 이슈를 소개하고 있다.",
+    "why_it_matters": "대규모 암호화폐 해킹 사례로, 디지털 자산 보안의 취약성을 다시 한번 상기시켜 준다.",
+    "tags": [],
+    "score": 0.6071693121693121,
+    "published_at": "2026-08-11T06:00:15Z"
+  },
+  {
+    "id": "simon_willison-deepseek-v4-pro-0813",
+    "section": "deepdive",
+    "title_en": "DeepSeek V4 Pro 0813 (on OpenRouter)",
+    "title_ko": "DeepSeek V4 Pro 0813, OpenRouter를 통해 API로 출시",
+    "url": "https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "DeepSeek의 최신 모델인 V4 Pro 0813이 API 전용으로 공개되었으며, 공식 발표 페이지 없이 OpenRouter를 통해 접근 가능하다. 이전 모델들(4월 V4 Pro, 7월 V4 Flash)의 가중치가 HuggingFace에 공개된 점을 고려하면 오픈 웨이트 공개 가능성이 높다. 흥미롭게도 추론 수준(low/medium/high)에 따라 SVG 이미지 생성 결과가 크게 달라지는 현상이 관찰되었다. 벤치마크는 DeepSeek 공식 위챗 그룹을 통해 비공식적으로 유포된 상태다.",
+    "why_it_matters": "공식 발표 없이 조용히 출시된 DeepSeek 최신 모델로, 추론 레벨별 출력 차이가 두드러져 실사용 시 추론 설정이 결과에 큰 영향을 줄 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8570833333333333,
+    "published_at": "2026-08-12T23:59:23Z"
+  }
+]
