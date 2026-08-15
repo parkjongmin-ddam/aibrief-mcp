@@ -1,0 +1,383 @@
+[
+  {
+    "id": "hf-2608.13546",
+    "section": "papers",
+    "title_en": "Alaya-EVOKE: From Linear-Scaling Supervision to Endless World",
+    "title_ko": "Alaya-EVOKE: 선형 스케일 감독으로 무한 세계 생성 달성",
+    "url": "https://huggingface.co/papers/2608.13546",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "EVOKE는 인터랙티브 월드 모델의 두 가지 핵심 한계—세션 길이와 메모리 간의 트레이드오프, 저지연 인터랙션—를 동시에 해결한다. 외부 카메라 인덱스 기반 월드 상태 뱅크로 장면 기하 정보를 관리해 디노이저 컨텍스트를 일정하게 유지하고, 스파스 어텐션 기반 교사 모델로 선형 메모리 증가를 달성한다. 3-스텝 학생 모델은 분류기-자유 가이던스 없이도 장기 드리프트 저항성을 갖추며, 단일 H200 GPU에서 384×640 해상도로 1.5초 청크를 2.11초 만에 생성한다. WBench에서 최첨단 성능을 기록하며 VBench-Long 및 VBench-2.0에서도 경쟁력 있는 결과를 보였다.",
+    "why_it_matters": "오픈엔드 인터랙티브 월드 생성의 메모리·속도 딜레마를 실질적으로 해소해 게임·시뮬레이션 AI에 즉각 적용 가능한 기술 전진을 이룬다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.418840607796598,
+    "published_at": "2026-08-12T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.12036",
+    "section": "papers",
+    "title_en": "Mechanist: AI as a Scientific Instrument for Discovering the Mechanisms of Intelligence",
+    "title_ko": "Mechanist: AI 지능의 메커니즘을 자율 탐색하는 과학 도구",
+    "url": "https://huggingface.co/papers/2608.12036",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Mechanist는 AI 모델의 내부 작동 원리를 자율적으로 발견하는 에이전틱 시스템이다. 약 1만 3천 편의 해석 가능성 논문 지식 그래프와 4,300만 편 규모의 다학제 데이터베이스, 그리고 32개의 메커니즘 분석 방법 라이브러리를 통합해 활용한다. Claude Code 및 기존 AI 과학자 시스템 대비 더 유의미한 메커니즘 가설을 생성하며, 안전 위험 탐지·믿음 표현 메커니즘 규명·DNA 서열 제어 등 실질적인 성과를 입증했다.",
+    "why_it_matters": "AI 블랙박스 문제를 자동화된 해석 가능성 연구로 돌파할 수 있는 가능성을 제시해, AI 안전성과 제어 가능성 향상에 직접적 영향을 미친다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.418840607796598,
+    "published_at": "2026-08-11T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.13489",
+    "section": "papers",
+    "title_en": "DreamX-Phi 1.0: Action-Conditioned Video World Model for Robotic Manipulation",
+    "title_ko": "DreamX-Phi 1.0: 로봇 조작을 위한 행동 조건부 비디오 월드 모델",
+    "url": "https://huggingface.co/papers/2608.13489",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "DreamX-Phi 1.0은 관찰 프레임, 언어 지시, 엔드이펙터 포즈 및 그리퍼 상태로 구성된 행동 시퀀스를 입력받아 미래 관찰을 예측하는 로봇 조작용 비디오 월드 모델이다. PRoPE 스타일의 기하학적 인코딩으로 각 팔의 SE(3) 변환을 어텐션에 주입해 팔 정체성과 강체 운동 구조를 보존하며, 깊이 브랜치와 SAM3 마스크·V-JEPA 교사 모델로 장면 기하학과 객체 일관성을 유지한다. 분포 매칭 증류를 통해 멀티스텝 생성기를 소수 스텝 학생 모델로 압축해 효율적인 배포도 지원한다. WorldArena 2.0 챌린지 Track 1 1위, Track 2 2위를 달성했으며, 모델과 코드는 공개 예정이다.",
+    "why_it_matters": "로봇 조작 특화 비디오 월드 모델로 현실감과 행동 충실도를 동시에 달성하고 최신 벤치마크에서 상위권을 기록해, 로봇 학습 데이터 생성 및 시뮬레이션 분야에 직접적인 영향을 미친다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 5.382026634673881,
+    "published_at": "2026-08-12T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.13505",
+    "section": "papers",
+    "title_en": "Intern-S2-Preview: Scientific Agentic Foundation Model",
+    "title_ko": "Intern-S2-Preview: 과학 연구를 위한 에이전틱 파운데이션 모델",
+    "url": "https://huggingface.co/papers/2608.13505",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "Intern-S2-Preview는 멀티모달 과학 이해, 추론, 생성, 장기 태스크를 지원하는 과학 전문 에이전틱 파운데이션 모델 시리즈다. 과학 문서 렌더링, 이미지-텍스트 인터리빙 데이터 등으로 사전학습 후, 지도 미세조정·멀티태스크 강화학습·에이전틱 RL·온-폴리시 증류를 통합한 후처리 파이프라인을 적용했다. 397B 규모의 플래그십 모델은 시계열 모델링과 수치 예측을 지원하며, 별도의 Intern-MemDec-4B 확장 모듈은 397B 백본을 수정하지 않고도 생물학 벤치마크 평균 점수를 56.92에서 60.32로 향상시켰다.",
+    "why_it_matters": "대규모 멀티모달 과학 에이전트 모델이 실제 과학 발견 파이프라인에 통합될 수 있는 가능성을 보여주는 중요한 연구다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "RAG"
+    ],
+    "score": 4.761200115693562,
+    "published_at": "2026-08-12T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.08975",
+    "section": "papers",
+    "title_en": "How Can Rhetoric Reward-Hack AI Reviewers? Dissecting Rhetorical Sensitivity in AI-Based Peer Review",
+    "title_ko": "AI 논문 심사자는 수사학적 표현에 얼마나 취약한가?",
+    "url": "https://huggingface.co/papers/2608.08975",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LLM이 과학 논문 심사에 참여하는 상황에서, 실제 내용은 그대로 두고 수사학적 표현만 바꿨을 때 AI 심사 점수가 어떻게 달라지는지를 분석했다. ICLR 2026 익명 제출 논문 120편을 기반으로 4,200개 manuscript를 구성해 실험한 결과, 증거 프레이밍과 독창성 표현 방식이 점수에 가장 큰 영향을 미쳤다. 원래 낮은 점수를 받은 논문은 수사학 수정으로 점수가 오르고, 높은 점수 논문은 오히려 내려가는 경향이 나타났다. 더 복잡한 재작성 워크플로우가 반드시 더 큰 점수 향상을 보장하지는 않았다.",
+    "why_it_matters": "LLM 기반 논문 심사 시스템이 내용이 아닌 표현 방식만으로 평가가 달라질 수 있다는 점을 실증적으로 보여줌으로써, AI 리뷰의 신뢰성과 공정성에 근본적인 의문을 제기한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.688879454113936,
+    "published_at": "2026-08-09T20:00:00Z"
+  },
+  {
+    "id": "github_trending-anthropics/skills",
+    "section": "releases",
+    "title_en": "anthropics/skills",
+    "title_ko": "Anthropic, Claude용 Agent Skills 공개 저장소 공개",
+    "url": "https://github.com/anthropics/skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 Claude의 'Skills' 시스템을 위한 공식 공개 저장소를 GitHub에 공개했다. Skills는 지시문·스크립트·리소스를 담은 폴더 구조로, Claude가 동적으로 로드해 특정 작업(문서 생성, 데이터 분석, 자동화 등)을 반복적으로 수행할 수 있도록 한다. 창의적·기술적·엔터프라이즈 워크플로우 등 다양한 예제 스킬이 포함되어 있으며, Apache 2.0 오픈소스 및 소스 공개 방식으로 제공된다. Claude Code, Claude.ai, Claude API 모두에서 사용 및 커스텀 스킬 업로드가 가능하다.",
+    "why_it_matters": "Claude에 재사용 가능한 전문 기능을 모듈 형태로 추가할 수 있는 표준 방식이 공개됨으로써, 기업 및 개발자가 Claude 기반 에이전트를 체계적으로 커스터마이징할 수 있는 생태계가 열린다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.734389880952381,
+    "published_at": "2026-08-14T03:22:38Z"
+  },
+  {
+    "id": "github_trending-unslothai/unsloth",
+    "section": "releases",
+    "title_en": "unslothai/unsloth",
+    "title_ko": "Unsloth: LLM·확산 모델을 로컬에서 실행·학습하는 데스크톱 앱",
+    "url": "https://github.com/unslothai/unsloth",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Unsloth는 Qwen3, Kimi K3, DeepSeek-V4, Gemma 4 등 최신 LLM과 확산 모델을 로컬에서 실행하고 파인튜닝할 수 있는 데스크톱 앱 및 웹 UI를 제공한다. Windows·macOS·Linux를 모두 지원하며, NVIDIA·AMD·Intel GPU 및 CPU에서도 동작한다. 파인튜닝 시 최대 2배 빠른 속도와 70% 적은 VRAM 사용을 목표로 하며, LoRA·QLoRA·GRPO·DPO 등 다양한 학습 방식을 지원한다. RAG, 에이전트 연동(Claude Code, Codex 등), MCP 서버, OpenAI 호환 API도 내장되어 있다.",
+    "why_it_matters": "설치 없이 바로 쓸 수 있는 로컬 LLM 올인원 플랫폼으로, 클라우드 의존 없이 최신 모델을 학습·배포까지 처리할 수 있어 실용성이 높다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "에이전트"
+    ],
+    "score": 0.734389880952381,
+    "published_at": "2026-08-14T03:22:38Z"
+  },
+  {
+    "id": "github_trending-holaboss-ai/holaOS",
+    "section": "releases",
+    "title_en": "holaboss-ai/holaOS",
+    "title_ko": "holaOS: 오픈소스 올인원 AI 에이전트 워크스페이스",
+    "url": "https://github.com/holaboss-ai/holaOS",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "holaOS는 Claude Code, Codex 등 다양한 AI 에이전트를 하나의 로컬 우선 워크스페이스에서 실행할 수 있는 오픈소스 데스크톱 앱이다. 100개 이상의 툴 통합, MCP 지원, 공유 메모리 기능을 제공하며, 내장 모델과 BYOK(자체 API 키) 방식을 모두 지원한다. macOS, Windows, Linux를 지원하며 Electron 기반 TypeScript로 구현되어 있다.",
+    "why_it_matters": "여러 AI 에이전트를 하나의 워크스페이스에서 공유 메모리와 통합 툴로 운용할 수 있어, 에이전트 전환 시 컨텍스트 손실 없이 일관된 자동화 환경 구축이 가능하다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.734389880952381,
+    "published_at": "2026-08-14T03:22:38Z"
+  },
+  {
+    "id": "github_trending-msitarzewski/agency-agents",
+    "section": "releases",
+    "title_en": "msitarzewski/agency-agents",
+    "title_ko": "agency-agents: 230개 이상의 특화 AI 에이전트 컬렉션",
+    "url": "https://github.com/msitarzewski/agency-agents",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code, Cursor, GitHub Copilot 등 주요 AI 코딩 도구에 바로 설치할 수 있는 230개 이상의 전문화된 AI 에이전트 모음 오픈소스 프로젝트입니다. 엔지니어링·디자인·마케팅·보안·게임개발 등 10개 이상의 부서로 구분된 에이전트들이 각기 고유한 성격, 워크플로우, 성과 지표를 갖추고 있습니다. macOS·Linux·Windows용 네이티브 앱도 제공되어 클릭 한 번으로 원하는 에이전트를 설치할 수 있습니다.",
+    "why_it_matters": "단순 프롬프트 모음을 넘어 역할별 전문성과 실제 워크플로우를 갖춘 에이전트를 다양한 AI 툴에 즉시 적용할 수 있어, 개발자가 팀 구성 없이 풀스택 AI 에이전시를 구성하는 데 활용 가능합니다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.734389880952381,
+    "published_at": "2026-08-14T03:22:38Z"
+  },
+  {
+    "id": "github_trending-infiniflow/ragflow",
+    "section": "releases",
+    "title_en": "infiniflow/ragflow",
+    "title_ko": "RAGFlow: RAG와 에이전트 기능을 결합한 오픈소스 RAG 엔진",
+    "url": "https://github.com/infiniflow/ragflow",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "RAGFlow는 RAG(검색 증강 생성)와 에이전트 기능을 융합한 선도적인 오픈소스 RAG 엔진입니다. 비정형 데이터에 대한 심층 문서 이해, 템플릿 기반 청킹, 환각 감소를 위한 인용 추적 등의 기능을 제공합니다. Feishu·Discord·Telegram 등 다양한 채팅 채널 연동, DeepSeek v4 지원, AI 에이전트 메모리 기능 등 지속적으로 업데이트되고 있습니다. Docker를 통한 셀프 호스팅을 지원하며 Apache-2.0 라이선스로 공개되어 있습니다.",
+    "why_it_matters": "엔터프라이즈급 RAG 파이프라인을 에이전트 워크플로우와 함께 오픈소스로 구축할 수 있는 사실상의 표준 솔루션으로 주목받고 있습니다.",
+    "tags": [
+      "RAG",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.734389880952381,
+    "published_at": "2026-08-14T03:22:38Z"
+  },
+  {
+    "id": "openai_blog-builders-guide-to-gpt-5-6",
+    "section": "releases",
+    "title_en": "The builder’s guide to GPT‑5.6",
+    "title_ko": "빌더를 위한 GPT-5.6 활용 가이드",
+    "url": "https://openai.com/index/builders-guide-to-gpt-5-6",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "스타트업들이 GPT-5.6을 활용해 더 빠르고 비용 효율적인 AI 에이전트를 구축하는 방법을 소개한다. 스마트한 모델 선택과 새로운 Responses API 기능을 중심으로 실전 활용 전략을 다룬다.",
+    "why_it_matters": "GPT-5.6 기반 에이전트 개발 시 비용과 속도를 최적화할 수 있는 실용적 가이드라인을 제공한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.6369064153439153,
+    "published_at": "2026-08-13T11:00:00Z"
+  },
+  {
+    "id": "openai_blog-previewing-ultrafast",
+    "section": "releases",
+    "title_en": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
+    "title_ko": "울트라패스트 모드 미리보기: GPT-5.6 Sol, 최대 14배 빠른 속도",
+    "url": "https://openai.com/index/previewing-ultrafast",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 새로운 API 서비스 티어인 '울트라패스트(Ultrafast)'를 공개했다. Cerebras의 하드웨어를 기반으로 GPT-5.6 Sol 모델을 기존 대비 최대 14배 빠르게 실행하며, 초당 최대 750개의 출력 토큰을 생성할 수 있다. 현재 OpenAI API를 통해 미리보기 형태로 제공된다.",
+    "why_it_matters": "초당 750토큰이라는 극단적인 추론 속도는 실시간 응답이 필수적인 애플리케이션 개발의 가능성을 크게 확장한다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.6309540343915344,
+    "published_at": "2026-08-13T10:00:00Z"
+  },
+  {
+    "id": "hn-49294997",
+    "section": "community",
+    "title_en": "GLM-5.3: Frontier coding with emergent cyber capabilities",
+    "title_ko": "GLM-5.3: 사이버 능력을 갖춘 최신 코딩 모델",
+    "url": "https://z.ai/blog/glm-5.3",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GLM-5.3은 코딩 분야에서 최전선 성능을 목표로 하며, 사이버 관련 역량이 부각된 모델이다. 구체적인 벤치마크나 상세 정보는 제공되지 않았다.",
+    "why_it_matters": "코딩 특화 LLM 경쟁이 심화되는 가운데 사이버 보안 역량을 갖춘 새로운 모델 등장 여부가 주목된다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 11.04376310059536,
+    "published_at": "2026-08-14T05:19:59Z"
+  },
+  {
+    "id": "hn-49299605",
+    "section": "community",
+    "title_en": "Qwen 3.8 27B",
+    "title_ko": "Qwen 3.8 27B 공개",
+    "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Qwen 3.8 27B 모델이 공개되었다. 상세 설명이 제공되지 않아 추가적인 세부 사항은 확인이 필요하다.",
+    "why_it_matters": "Qwen 시리즈의 새로운 27B 규모 모델 출시로, 오픈소스 LLM 경쟁에 영향을 줄 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 10.893459015003494,
+    "published_at": "2026-08-14T15:00:00Z"
+  },
+  {
+    "id": "hn-49300314",
+    "section": "community",
+    "title_en": "Google is making private AI practical with homomorphic encryption",
+    "title_ko": "구글, 동형 암호화로 프라이빗 AI 실용화 추진",
+    "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "구글이 동형 암호화(Homomorphic Encryption)를 활용해 프라이빗 AI를 실용적으로 구현하는 방안을 추진하고 있다. 동형 암호화는 데이터를 암호화된 상태로 유지하면서 연산을 수행할 수 있는 기술이다.",
+    "why_it_matters": "데이터를 복호화하지 않고도 AI 추론이 가능해진다면, 프라이버시 보호와 AI 활용을 동시에 실현하는 새로운 패러다임이 열릴 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 9.086662992512133,
+    "published_at": "2026-08-14T15:43:10Z"
+  },
+  {
+    "id": "hn-49300800",
+    "section": "community",
+    "title_en": "Maximizing the value of your Claude Code sessions",
+    "title_ko": "Claude Code 세션에서 최대 가치 끌어내기",
+    "url": "https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Claude Code 세션을 효과적으로 활용하는 방법을 다루는 글이다. 구체적인 설명은 제공되지 않았으나, 제목을 통해 Claude Code 사용 효율을 높이는 팁이나 전략을 소개하는 내용으로 보인다.",
+    "why_it_matters": "Claude Code를 실무에 활용하는 개발자라면 세션 활용도를 높이는 실용적 인사이트를 얻을 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 8.019429444154913,
+    "published_at": "2026-08-14T16:15:21Z"
+  },
+  {
+    "id": "hn-49300568",
+    "section": "community",
+    "title_en": "AI by Hand",
+    "title_ko": "손으로 배우는 AI",
+    "url": "https://www.byhand.ai/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "'AI by Hand'는 AI 개념을 손으로 직접 계산하며 익히는 방식을 다루는 콘텐츠로 보인다. 설명이 제공되지 않아 자세한 내용은 확인이 어렵다.",
+    "why_it_matters": "AI 원리를 도구 없이 직접 계산하며 이해하는 접근법은 기초 학습에 유용할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 7.568960858160091,
+    "published_at": "2026-08-14T15:58:59Z"
+  },
+  {
+    "id": "youtube-kDTe4HO4cew",
+    "section": "video",
+    "title_en": "AI로 한단계 업그레이드 된 구글 번역기",
+    "title_ko": "AI로 업그레이드된 구글 번역기",
+    "url": "https://www.youtube.com/shorts/kDTe4HO4cew",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 AI 기술이 적용된 구글 번역기의 변화를 소개하는 영상이다. 온디바이스 AI 기술이 번역기에 적용된 내용을 다루는 것으로 보인다.",
+    "why_it_matters": "온디바이스 AI 번역 기술의 발전이 실생활 언어 도구에 어떻게 적용되는지 확인할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7678869047619048,
+    "published_at": "2026-08-14T09:00:17Z"
+  },
+  {
+    "id": "youtube-sx7VBi4IKW8",
+    "section": "video",
+    "title_en": "이젠 세션까지 넘나들며 작업하는 클로드 ㄷㄷ",
+    "title_ko": "이제 세션을 넘나들며 작업하는 클로드",
+    "url": "https://www.youtube.com/shorts/sx7VBi4IKW8",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 클로드(Claude)가 세션 간 작업을 이어갈 수 있는 기능에 대해 소개하는 영상이다. 기존에는 대화 세션이 끊기면 맥락을 이어받지 못했으나, 이제 세션을 넘나드는 작업이 가능해진 것으로 보인다.",
+    "why_it_matters": "세션 간 컨텍스트 유지는 실제 개발 및 창업 업무 자동화에서 AI 활용도를 크게 높이는 핵심 기능이다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7500314153439154,
+    "published_at": "2026-08-14T06:00:18Z"
+  },
+  {
+    "id": "youtube-S5Z7uwCnORM",
+    "section": "video",
+    "title_en": "🏃💨 당장 달려가서 레어닉 먹으세요!!!",
+    "title_ko": "레어닉(Rarenek) 지금 바로 가입하세요!",
+    "url": "https://www.youtube.com/shorts/S5Z7uwCnORM",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 특정 서비스 또는 혜택('레어닉')을 강력 추천하는 영상입니다. 영상 설명에는 바이브 코딩 관련 저서, AX 컨설팅 문의처, 멤버십 정보 등이 포함되어 있습니다. 태그로 AI, 클라우드플레어, 지갑이 언급되어 있어 관련 주제를 다루는 것으로 보입니다.",
+    "why_it_matters": "구체적인 서비스 내용이 설명에 공개되지 않아 정확한 내용 파악은 영상 시청이 필요합니다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.6309589947089947,
+    "published_at": "2026-08-13T10:00:03Z"
+  },
+  {
+    "id": "simon_willison-dont-classify-hallucinate",
+    "section": "deepdive",
+    "title_en": "Don't classify. Hallucinate!",
+    "title_ko": "분류하지 말고 환각하라! LLM으로 태그 생성 후 벡터 임베딩으로 매핑하는 기법",
+    "url": "https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "LLM에게 기존 태그 목록을 제공하지 않고 자유롭게 태그를 생성하게 한 뒤, 벡터 임베딩을 활용해 실제 태그 코퍼스에서 가장 유사한 태그를 찾아 매핑하는 방법이다. 기존 어휘 목록이 너무 방대해 프롬프트에 모두 담기 어려울 때 유용하다. 프롬프트에 태그의 형태 예시를 포함하면 LLM이 더 유용한 태그를 생성할 수 있다.",
+    "why_it_matters": "수천 개의 태그를 가진 대규모 콘텐츠 분류 문제를 LLM과 벡터 임베딩의 조합으로 효율적으로 해결하는 실용적 접근법을 제시한다.",
+    "tags": [
+      "LLM",
+      "RAG"
+    ],
+    "score": 0.8447023809523809,
+    "published_at": "2026-08-14T21:54:35Z"
+  }
+]
