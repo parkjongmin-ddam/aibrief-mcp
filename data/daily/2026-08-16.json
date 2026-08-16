@@ -1,0 +1,384 @@
+[
+  {
+    "id": "hf-2608.13546",
+    "section": "papers",
+    "title_en": "Alaya-EVOKE: From Linear-Scaling Supervision to Endless World",
+    "title_ko": "Alaya-EVOKE: 선형 확장 슈퍼비전으로 무한한 세계 생성 달성",
+    "url": "https://huggingface.co/papers/2608.13546",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "EVOKE는 인터랙티브 월드 모델의 두 가지 핵심 한계—세션 길이에 따라 증가하는 메모리 비용과 단기 생성의 제약—를 동시에 해결한다. 외부 카메라 인덱스 기반 월드 스테이트 뱅크로 씬 지오메트리를 저장해 디노이저 컨텍스트를 일정하게 유지하고, 청크 단위 그룹핑·원거리 프레임 검색·선형 어텐션을 결합한 교사 모델로 선형 메모리 성장을 실현했다. 3-스텝 학생 모델은 분류자 없는 가이던스 없이도 장기 드리프트에 강하고, 단일 H200 GPU에서 384×640 해상도 기준 1.5초 청크를 2.11초 만에 생성한다. WBench에서 최첨단 성능을 달성하고 VBench-Long 및 VBench-2.0에서도 경쟁력 있는 결과를 보였다.",
+    "why_it_matters": "오픈엔드 인터랙티브 세계 생성에서 메모리와 속도를 동시에 잡은 실용적 아키텍처로, 게임·시뮬레이션·영상 생성 분야에 직접 적용 가능한 돌파구다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "인프라"
+    ],
+    "score": 5.68213122712422,
+    "published_at": "2026-08-12T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.13489",
+    "section": "papers",
+    "title_en": "DreamX-Phi 1.0: Action-Conditioned Video World Model for Robotic Manipulation",
+    "title_ko": "DreamX-Phi 1.0: 로봇 조작을 위한 행동 조건부 비디오 월드 모델",
+    "url": "https://huggingface.co/papers/2608.13489",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "DreamX-Phi 1.0은 관측 프레임, 언어 명령, 엔드이펙터 포즈 및 그리퍼 상태로 구성된 행동 시퀀스를 입력받아 미래 관측을 예측하는 로봇 조작용 비디오 월드 모델이다. 각 팔의 경로를 정확히 따르도록 PRoPE 스타일의 기하학적 인코딩을 어텐션에 주입하며, 깊이 브랜치와 SAM3 마스크 및 V-JEPA 티처를 활용해 장면 기하학과 객체 일관성을 유지한다. 또한 분포 매칭 증류를 통해 멀티스텝 생성기를 효율적인 소수 스텝 모델로 압축했다. WorldArena 2.0 챌린지 Track 1 1위, Track 2 2위를 기록했으며 모델과 코드를 공개 예정이다.",
+    "why_it_matters": "로봇 조작에 특화된 행동 조건부 월드 모델로, 현실감과 물리적 충실도를 동시에 달성해 로봇 학습 및 시뮬레이션 분야에 실질적 기여가 기대된다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 5.418840607796598,
+    "published_at": "2026-08-12T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.12036",
+    "section": "papers",
+    "title_en": "Mechanist: AI as a Scientific Instrument for Discovering the Mechanisms of Intelligence",
+    "title_ko": "Mechanist: AI 지능의 메커니즘을 자율 탐색하는 과학적 AI 에이전트",
+    "url": "https://huggingface.co/papers/2608.12036",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Mechanist는 AI 모델의 내부 작동 원리를 자율적으로 탐구하는 에이전트 시스템으로, 약 1만 3천 편의 해석 가능성 관련 논문으로 구성된 지식 그래프와 4천 3백만 편 규모의 다학제 데이터베이스, 32개의 메커니즘 분석 방법 라이브러리를 통합해 활용한다. Claude Code 및 기존 AI 과학자 시스템과 비교해 더 유의미한 메커니즘 가설을 생성하고 실험을 안정적으로 수행한다. 실제로 안전한 훈련 데이터를 통해 안전하지 않은 특성이 모달리티 간에 전이될 수 있는 역설적 위험을 발견했으며, AI 모델의 신념 표현 및 세계 지식 형성 메커니즘도 규명했다. 이러한 인사이트를 바탕으로 모델 성능을 향상시키고 과학 파운데이션 모델이 특정 속성의 DNA 서열을 생성하도록 유도하는 실용적 개입도 제시한다.",
+    "why_it_matters": "AI 모델의 내부 메커니즘을 자율적으로 발견·제어하는 시스템은 AI 안전성과 해석 가능성 연구를 획기적으로 가속할 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 5.418840607796598,
+    "published_at": "2026-08-11T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.13505",
+    "section": "papers",
+    "title_en": "Intern-S2-Preview: Scientific Agentic Foundation Model",
+    "title_ko": "Intern-S2-Preview: 과학 연구를 위한 에이전틱 파운데이션 모델",
+    "url": "https://huggingface.co/papers/2608.13505",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "Intern-S2-Preview는 멀티모달 과학 이해·추론·생성 및 장기 과제 수행을 지원하는 과학 특화 에이전틱 파운데이션 모델 시리즈다. 렌더링된 과학 문서와 이미지-텍스트 인터리브 데이터로 사전학습한 후, 지도 미세조정·멀티태스크 강화학습·에이전틱 RL·온정책 증류로 구성된 통합 후학습 파이프라인을 적용했다. 397B 규모의 Intern-S2-Preview-397B는 시계열 모델링과 수치 예측을 지원하며, 별도의 Intern-MemDec-4B 확장을 통해 397B 백본을 수정하지 않고도 Biology-Instructions 평균 점수를 56.92에서 60.32로 향상시켰다.",
+    "why_it_matters": "과학 문서·도구·환경과 상호작용하는 멀티모달 과학 에이전트 모델로, AI 기반 과학적 발견 자동화의 새로운 기준을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.7841896339182615,
+    "published_at": "2026-08-12T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.13560",
+    "section": "papers",
+    "title_en": "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
+    "title_ko": "AutoDesign: 장기 에이전트 루프로 학술 논문을 포스터로 자동 변환하는 메타-하네스 최적화 프레임워크",
+    "url": "https://huggingface.co/papers/2608.13560",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "AutoDesign은 멀티모달 소스를 구조화된 미디어 출력으로 변환하는 장기 에이전틱 프로세스를 위한 프레임워크로, 메타-하네스 옵티마이저가 코드 에이전트를 안내해 롤아웃 피드백을 기반으로 하네스를 재귀적으로 개선한다. 논문-to-포스터 생성 태스크에 적용해 PosterBench를 도입했으며, 5개 학문 분야 100편의 논문으로 구성된 메인 트랙에서 78.32점을 기록해 Claude Design보다 7.45점 높은 성능을 달성했다. 완전 자율 루프에서 40분 이내, 3달러 미만의 비용으로 253회 도구 호출과 11회 편집을 수행하며 학술 컨퍼런스 수준의 포스터 품질에 도달했다.",
+    "why_it_matters": "저비용 자율 에이전트가 사람 선호도에서도 상용 클로즈드 시스템을 능가함으로써, 문서→비주얼 콘텐츠 자동화의 실용적 가능성을 입증했다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.58351893845611,
+    "published_at": "2026-08-12T20:00:00Z"
+  },
+  {
+    "id": "github_trending-holaboss-ai/holaOS",
+    "section": "releases",
+    "title_en": "holaboss-ai/holaOS",
+    "title_ko": "holaOS: 오픈소스 올인원 AI 에이전트 워크스페이스",
+    "url": "https://github.com/holaboss-ai/holaOS",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "holaOS는 Claude Code, Codex 등 다양한 AI 에이전트를 하나의 로컬 우선 워크스페이스에서 실행할 수 있는 오픈소스 플랫폼이다. 100개 이상의 통합(Gmail, Notion, Slack 등)과 MCP 지원, 에이전트 간 공유 메모리를 제공한다. 빌트인 프론티어 모델을 사용하거나 자신의 API 키(BYOK)를 연결할 수 있으며, macOS·Windows·Linux 데스크톱 앱으로 제공된다.",
+    "why_it_matters": "에이전트 종류에 상관없이 동일한 툴·메모리·컨텍스트를 공유하는 단일 워크스페이스를 제공해, 에이전트 락인 없이 업무 자동화를 구축할 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.727175925925926,
+    "published_at": "2026-08-15T02:09:55Z"
+  },
+  {
+    "id": "github_trending-infiniflow/ragflow",
+    "section": "releases",
+    "title_en": "infiniflow/ragflow",
+    "title_ko": "RAGFlow: RAG와 에이전트를 결합한 오픈소스 RAG 엔진",
+    "url": "https://github.com/infiniflow/ragflow",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "RAGFlow는 RAG(검색 증강 생성)와 에이전트 기능을 통합한 선도적인 오픈소스 RAG 엔진입니다. 비정형 문서의 심층 이해, 템플릿 기반 청킹, 환각 감소를 위한 근거 기반 인용 등의 기능을 제공합니다. Docker를 통한 셀프호스팅을 지원하며, DeepSeek·GPT-5·Gemini 등 다양한 LLM과 연동 가능합니다. Feishu, Discord, Telegram 등 다양한 채팅 채널 연동도 지원합니다.",
+    "why_it_matters": "에이전트 워크플로우와 MCP 지원, 다양한 데이터 소스 동기화 등 엔터프라이즈급 RAG 파이프라인을 오픈소스로 구축할 수 있는 실용적인 솔루션이다.",
+    "tags": [
+      "RAG",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.727175925925926,
+    "published_at": "2026-08-15T02:09:55Z"
+  },
+  {
+    "id": "github_trending-deepseek-ai/awesome-deepseek-agent",
+    "section": "releases",
+    "title_en": "deepseek-ai/awesome-deepseek-agent",
+    "title_ko": "Awesome DeepSeek Agent: 인기 AI 에이전트 도구에 DeepSeek 모델 통합 가이드 모음",
+    "url": "https://github.com/deepseek-ai/awesome-deepseek-agent",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "DeepSeek가 공식 공개한 큐레이션 리포지토리로, DeepSeek 모델을 주요 AI 에이전트 및 코딩 어시스턴트 도구에 통합하는 방법을 안내한다. Claude Code, GitHub Copilot, Cline, Cursor 등 20여 개 도구에 대해 설치·설정·첫 실행까지 단계별 가이드를 제공한다. 각 가이드를 따르면 DeepSeek 모델을 빠르게 자신이 선호하는 도구에 연동할 수 있다.",
+    "why_it_matters": "DeepSeek 공식 팀이 직접 관리하는 통합 가이드 허브로, 다양한 AI 개발 도구에서 DeepSeek 모델을 손쉽게 활용하려는 개발자에게 실질적인 진입 장벽을 낮춰준다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.727175925925926,
+    "published_at": "2026-08-15T02:09:55Z"
+  },
+  {
+    "id": "github_trending-unslothai/unsloth",
+    "section": "releases",
+    "title_en": "unslothai/unsloth",
+    "title_ko": "Unsloth: LLM 및 확산 모델을 로컬에서 실행·학습하는 데스크탑 앱",
+    "url": "https://github.com/unslothai/unsloth",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Unsloth는 Qwen3, Kimi K3, DeepSeek-V4, Gemma 4 등 최신 LLM과 확산 모델을 로컬에서 실행하고 파인튜닝할 수 있는 데스크탑 앱 및 웹 UI 도구다. Windows, macOS, Linux 등 주요 플랫폼을 지원하며, 학습 속도는 최대 2배 빠르고 VRAM은 최대 80%까지 절약할 수 있다고 밝히고 있다. LoRA, QLoRA, GRPO, DPO 등 다양한 학습 방식과 RAG, MCP, 에이전트 연동 기능도 포함되어 있다. 코어 패키지는 Apache 2.0, Studio UI는 AGPL-3.0 오픈소스 라이선스로 제공된다.",
+    "why_it_matters": "클라우드 없이 로컬에서 최신 LLM을 쉽게 실행·파인튜닝할 수 있는 올인원 환경을 제공해, 개인 개발자와 소규모 팀의 AI 실험 진입 장벽을 크게 낮춘다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "에이전트"
+    ],
+    "score": 0.727175925925926,
+    "published_at": "2026-08-15T02:09:55Z"
+  },
+  {
+    "id": "openai_blog-builders-guide-to-gpt-5-6",
+    "section": "releases",
+    "title_en": "The builder’s guide to GPT‑5.6",
+    "title_ko": "GPT-5.6 빌더 가이드: 더 빠르고 비용 효율적인 AI 에이전트 구축법",
+    "url": "https://openai.com/index/builders-guide-to-gpt-5-6",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 스타트업을 위한 GPT-5.6 활용 가이드를 공개했다. 스마트한 모델 선택과 새로운 Responses API 기능을 활용해 더 빠르고 비용 효율적인 AI 에이전트를 구축하는 방법을 소개한다. 스타트업들이 실제로 GPT-5.6을 어떻게 활용하는지에 초점을 맞추고 있다.",
+    "why_it_matters": "GPT-5.6과 Responses API를 활용한 실전 에이전트 개발 전략을 공식 가이드로 제공해, 비용과 속도를 동시에 개선하려는 개발자에게 직접적인 참고자료가 된다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.49404927248677244,
+    "published_at": "2026-08-13T11:00:00Z"
+  },
+  {
+    "id": "openai_blog-previewing-ultrafast",
+    "section": "releases",
+    "title_en": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
+    "title_ko": "울트라패스트 모드 미리보기: 최대 14배 빠른 GPT-5.6 Sol",
+    "url": "https://openai.com/index/previewing-ultrafast",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 새로운 API 서비스 티어인 '울트라패스트(Ultrafast)'를 공개했다. 이 서비스는 Cerebras의 하드웨어를 기반으로 GPT-5.6 Sol 모델을 기존 대비 최대 14배 빠른 속도로 제공한다. 초당 최대 750개의 출력 토큰을 처리할 수 있다.",
+    "why_it_matters": "초당 750 토큰이라는 극단적 속도는 실시간 응답이 필수적인 에이전트·대화 서비스의 판도를 바꿀 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "인프라"
+    ],
+    "score": 0.4880968915343915,
+    "published_at": "2026-08-13T10:00:00Z"
+  },
+  {
+    "id": "openai_blog-dali-rajic-chief-revenue-officer",
+    "section": "releases",
+    "title_en": "OpenAI appoints Dali Rajic as Chief Revenue Officer",
+    "title_ko": "OpenAI, Dali Rajic를 최고매출책임자(CRO)로 임명",
+    "url": "https://openai.com/index/dali-rajic-chief-revenue-officer",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 Dali Rajic를 최고매출책임자(CRO)로 임명했다. 그는 OpenAI의 글로벌 매출 조직을 이끌며 기업들이 AI의 가치를 최대한 실현할 수 있도록 지원하는 역할을 맡는다.",
+    "why_it_matters": "OpenAI가 기업 시장 공략을 본격화하기 위해 전담 매출 리더십을 강화하는 행보로, 상업화 전략의 가속화를 시사한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.4821445105820106,
+    "published_at": "2026-08-13T09:00:00Z"
+  },
+  {
+    "id": "hn-49312845",
+    "section": "community",
+    "title_en": "AI has access to a vastly larger working memory than the human brain",
+    "title_ko": "AI의 작업 기억 용량, 인간 뇌를 압도한다",
+    "url": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI는 인간 뇌보다 훨씬 큰 작업 기억(working memory) 용량을 보유하고 있다는 주제를 다룬 글이다. 인간의 단기 기억은 매우 제한적인 반면, AI 모델은 방대한 양의 정보를 동시에 처리할 수 있다.",
+    "why_it_matters": "AI와 인간 인지 능력의 근본적 차이를 이해하는 데 중요한 관점을 제공한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.855799428816926,
+    "published_at": "2026-08-15T18:13:02Z"
+  },
+  {
+    "id": "hn-49309451",
+    "section": "community",
+    "title_en": "Working with AI feels more like leadership than coding",
+    "title_ko": "AI와 협업하는 것은 코딩보다 리더십에 가깝다",
+    "url": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI와 함께 작업하는 경험이 단순한 코딩 활동보다 리더십 발휘에 더 가까운 느낌을 준다는 내용을 다루고 있다. 개발자가 AI에게 방향을 제시하고, 결과를 검토하며, 의사결정을 내리는 역할이 강조된다.",
+    "why_it_matters": "AI 도구 확산으로 개발자의 역할이 기술 구현자에서 방향 설정자·의사결정자로 변화하고 있음을 시사한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 9.108072991103597,
+    "published_at": "2026-08-15T10:39:41Z"
+  },
+  {
+    "id": "hn-49313367",
+    "section": "community",
+    "title_en": "AI in drug discovery – what it is, where we stand and the path forward",
+    "title_ko": "신약 개발에서의 AI – 현황과 나아갈 방향",
+    "url": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "이 글은 AI가 신약 개발 분야에서 어떻게 활용되고 있는지, 현재의 위치와 앞으로의 방향성을 다룬다. 신약 개발에서 AI의 역할과 과제를 개괄적으로 정리한 내용으로 보인다.",
+    "why_it_matters": "AI가 제약·바이오 산업에 미치는 실질적 영향과 한계를 이해하는 데 참고할 수 있는 글이다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 7.121105846073023,
+    "published_at": "2026-08-15T19:12:53Z"
+  },
+  {
+    "id": "reddit-1vpfrxw",
+    "section": "community",
+    "title_en": "llama.cpp Windows Manager",
+    "title_ko": "llama.cpp 윈도우 매니저 - GUI로 로컬 LLM 관리",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vpfrxw/llamacpp_windows_manager/",
+    "sources": [
+      "reddit"
+    ],
+    "summary_ko": "llama.cpp를 Windows에서 쉽게 관리할 수 있는 오픈소스 GUI 애플리케이션이다. 여러 모델을 동시에 실행하고, OpenAI 호환 게이트웨이를 통해 접근하며, 런치 프로필 생성·그룹 로딩·유휴 언로드 등 다양한 기능을 제공한다. Windows 인스톨러 또는 포터블 ZIP 형태로 배포되며, 제어 API와 CLI 도구(llwmctl)를 통한 자동화도 지원한다.",
+    "why_it_matters": "스크립트나 수동 서버 관리 없이 llama.cpp를 윈도우에서 편리하게 운용할 수 있어 로컬 LLM 사용 진입 장벽을 낮춘다.",
+    "tags": [
+      "LLM",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.8469312169312169,
+    "published_at": "2026-08-15T22:17:03Z"
+  },
+  {
+    "id": "reddit-1vpf8j1",
+    "section": "community",
+    "title_en": "The perfect way for Google to screw over OAI and Anthropic is by releasing a 120B dense multimodal Gemma model",
+    "title_ko": "구글이 OpenAI·Anthropic을 압박할 방법: 120B 멀티모달 Gemma 오픈소스 모델 출시",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vpf8j1/the_perfect_way_for_google_to_screw_over_oai_and/",
+    "sources": [
+      "reddit"
+    ],
+    "summary_ko": "Reddit 사용자가 구글에게 120B 규모의 고밀도 멀티모달 Gemma 오픈웨이트 모델을 출시할 것을 촉구하는 의견을 제시했다. Qwen 등 중국 오픈소스 모델이 급성장하고 있지만, 서방 기업들은 중국 모델 사용에 거부감이 있다는 점을 근거로 든다. 구글 브랜드의 프론티어급 오픈웨이트 모델이 나온다면 OpenAI·Anthropic의 IPO에도 타격을 줄 수 있다는 주장이다.",
+    "why_it_matters": "오픈소스 LLM 경쟁 구도에서 구글이 대형 오픈웨이트 모델을 출시할 경우 상용 AI 시장 판도에 큰 영향을 미칠 수 있다는 커뮤니티의 기대와 전략적 분석을 보여준다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8445486111111111,
+    "published_at": "2026-08-15T21:53:02Z"
+  },
+  {
+    "id": "youtube-kDTe4HO4cew",
+    "section": "video",
+    "title_en": "AI로 한단계 업그레이드 된 구글 번역기",
+    "title_ko": "AI로 업그레이드된 구글 번역기 소개",
+    "url": "https://www.youtube.com/shorts/kDTe4HO4cew",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 AI 기술이 적용되어 한 단계 발전한 구글 번역기를 소개하는 영상이다. 온디바이스 AI 기술이 번역기에 적용된 내용을 다루고 있다.",
+    "why_it_matters": "온디바이스 AI 기반 구글 번역기의 변화는 일상적인 번역 품질과 개인정보 보호 측면 모두에 영향을 줄 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6250297619047619,
+    "published_at": "2026-08-14T09:00:17Z"
+  },
+  {
+    "id": "youtube-sx7VBi4IKW8",
+    "section": "video",
+    "title_en": "이젠 세션까지 넘나들며 작업하는 클로드 ㄷㄷ",
+    "title_ko": "세션을 넘나들며 작업하는 클로드의 새로운 기능",
+    "url": "https://www.youtube.com/shorts/sx7VBi4IKW8",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "유튜버 조코딩이 클로드(Claude)의 세션 간 작업 연속성 기능을 소개하는 영상이다. 기존 AI 대화는 세션이 끊기면 맥락이 초기화되었으나, 이제 클로드가 세션을 넘나들며 작업을 이어갈 수 있게 된 것으로 보인다. 자세한 기술적 내용은 영상을 통해 확인할 수 있다.",
+    "why_it_matters": "세션 간 맥락 유지는 AI 에이전트의 장기 작업 수행 능력을 크게 향상시키는 핵심 기능이다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.6071742724867725,
+    "published_at": "2026-08-14T06:00:18Z"
+  },
+  {
+    "id": "youtube-S5Z7uwCnORM",
+    "section": "video",
+    "title_en": "🏃💨 당장 달려가서 레어닉 먹으세요!!!",
+    "title_ko": "레어닉(Renik) 지금 바로 사용하세요!",
+    "url": "https://www.youtube.com/shorts/S5Z7uwCnORM",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 'Renik(레어닉)'이라는 서비스나 도구를 강력 추천하는 영상이다. 클라우드플레어와 관련된 내용으로 보이며, AI 활용과 연관된 주제를 다루고 있다. 구체적인 기능이나 수치는 영상 본문에서 확인 가능하다.",
+    "why_it_matters": "클라우드플레어 관련 AI 도구로 추정되나, 영상 설명만으로는 정확한 기능을 파악하기 어려워 직접 확인이 필요하다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.48810185185185184,
+    "published_at": "2026-08-13T10:00:03Z"
+  },
+  {
+    "id": "latent_space-flue-2",
+    "section": "deepdive",
+    "title_en": "React for Agents: Astro Creator Brings Hooks to his Meta-Harness, Flue",
+    "title_ko": "에이전트를 위한 React: Astro 창시자가 Flue에 훅(Hooks)을 도입한 이유",
+    "url": "https://www.latent.space/p/flue-2",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "Astro의 창시자 Fred Schott가 개발한 에이전트 메타 하네스 Flue 2가 React에서 영감을 받아 훅(Hooks) 개념을 도입했다. Latent Space 인터뷰에서 Schott는 왜 훅을 추가했는지, 그리고 에이전트의 본질이 하네스에 의해 정의된다는 자신의 철학을 설명한다.",
+    "why_it_matters": "프론트엔드 개발의 컴포넌트 모델을 에이전트 설계에 접목한 시도로, AI 에이전트 개발 패러다임에 새로운 방향을 제시할 수 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.8081729497354497,
+    "published_at": "2026-08-15T15:46:22Z"
+  }
+]
