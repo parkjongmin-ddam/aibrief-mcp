@@ -1,0 +1,373 @@
+[
+  {
+    "id": "hf-2608.13546",
+    "section": "papers",
+    "title_en": "Alaya-EVOKE: From Linear-Scaling Supervision to Endless World",
+    "title_ko": "Alaya-EVOKE: 선형 스케일링 감독으로 무한한 세계 생성 지원",
+    "url": "https://huggingface.co/papers/2608.13546",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "EVOKE는 인터랙티브 월드 모델의 핵심 한계인 메모리 증가 비용과 긴 시퀀스 생성 문제를 해결하는 새로운 아키텍처다. 외부 카메라 인덱스 기반의 월드 스테이트 뱅크로 장면 정보를 관리해 디노이저 컨텍스트를 일정하게 유지하고, 청크 단위 그룹핑과 선형 어텐션을 결합한 교사 모델로 선형적 메모리 증가를 달성했다. 단일 H200 GPU에서 384×640 해상도로 1.5초 청크를 2.11초 만에 생성하는 3단계 학생 모델을 통해 WBench 최고 성능을 기록했다.",
+    "why_it_matters": "장기 인터랙티브 영상 생성에서 메모리·지연 트레이드오프를 실질적으로 해소한 월드 모델로, 게임·시뮬레이션 AI 개발에 직접적인 영향을 미칠 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 5.762173934797756,
+    "published_at": "2026-08-12T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.13489",
+    "section": "papers",
+    "title_en": "DreamX-Phi 1.0: Action-Conditioned Video World Model for Robotic Manipulation",
+    "title_ko": "DreamX-Phi 1.0: 로봇 조작을 위한 행동 조건부 비디오 월드 모델",
+    "url": "https://huggingface.co/papers/2608.13489",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "DreamX-Phi 1.0은 관찰 프레임, 언어 지시, 행동 시퀀스(엔드이펙터 포즈 및 그리퍼 상태)를 입력받아 미래 관찰을 예측하는 로봇 조작용 월드 모델이다. PRoPE 스타일의 기하학적 인코딩으로 각 팔의 SE(3) 변환을 어텐션에 주입해 팔 정체성과 강체 운동 구조를 보존한다. 경량 깊이 분기와 SAM3 마스크, V-JEPA 교사 모델을 활용해 장면 기하학 및 조작 객체 일관성을 유지하며, 분포 매칭 증류로 빠른 추론이 가능하다. WorldArena 2.0 챌린지 트랙 1 1위, 트랙 2 2위를 달성했으며 모델과 코드를 공개할 예정이다.",
+    "why_it_matters": "로봇 조작에 특화된 행동 충실도 높은 비디오 월드 모델로, 실제 로봇 시뮬레이션 및 플래닝에 직접 활용 가능한 경쟁력 있는 오픈소스 접근법이다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 5.5217885770490405,
+    "published_at": "2026-08-12T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.12036",
+    "section": "papers",
+    "title_en": "Mechanist: AI as a Scientific Instrument for Discovering the Mechanisms of Intelligence",
+    "title_ko": "Mechanist: AI 지능의 메커니즘을 자율 탐색하는 AI 과학 도구",
+    "url": "https://huggingface.co/papers/2608.12036",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Mechanist는 AI 모델의 내부 작동 메커니즘을 자율적으로 발견하기 위한 에이전트 시스템입니다. 약 1만 3천 편의 해석 가능성 논문으로 구성된 지식 그래프와 4천 3백만 편 규모의 다학제 데이터베이스, 32개의 메커니즘 분석 방법 라이브러리를 통합하여 활용합니다. Claude Code 및 기존 AI 과학자 시스템 대비 더 가치 있는 메커니즘 가설을 생성하고 실험을 안정적으로 수행했으며, 안전 위험 발견·신념 메커니즘 이론 수립·모델 성능 개선 개입까지 실증했습니다.",
+    "why_it_matters": "AI 모델의 블랙박스 내부를 자율적으로 해석하고 제어할 수 있는 수단을 제시해, AI 안전성과 해석 가능성 연구의 자동화 가능성을 열어준다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 5.442651256490317,
+    "published_at": "2026-08-11T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.13505",
+    "section": "papers",
+    "title_en": "Intern-S2-Preview: Scientific Agentic Foundation Model",
+    "title_ko": "Intern-S2-Preview: 과학 연구를 위한 에이전틱 파운데이션 모델",
+    "url": "https://huggingface.co/papers/2608.13505",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "Intern-S2-Preview는 멀티모달 과학 이해, 추론, 생성, 장기 태스크를 지원하는 과학 특화 에이전틱 파운데이션 모델 시리즈다. 과학 문서 사전학습부터 지도 미세조정, 멀티태스크 강화학습, 에이전틱 RL, 온폴리시 증류까지 통합 파이프라인을 적용했다. 397B 파라미터 모델(Intern-S2-Preview-397B)은 시계열 모듈을 통해 과학 신호 이해와 수치 예측을 강화하며, 별도의 Intern-MemDec-4B 확장 모듈은 기반 모델을 수정하지 않고도 생물학 벤치마크 점수를 56.92에서 60.32로 향상시켰다.",
+    "why_it_matters": "397B 규모의 과학 전용 에이전틱 모델로, 멀티모달 추론부터 시계열 예측까지 과학 연구 자동화의 새로운 기준을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.007333185232471,
+    "published_at": "2026-08-12T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.13560",
+    "section": "papers",
+    "title_en": "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
+    "title_ko": "AutoDesign: 장기 에이전트 설계를 위한 메타-하네스 최적화 프레임워크",
+    "url": "https://huggingface.co/papers/2608.13560",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "AutoDesign은 멀티모달 소스를 구조화된 미디어 출력으로 변환하는 장기 에이전트 프로세스를 위한 프레임워크로, 메타-하네스 옵티마이저가 코드 에이전트를 통해 하네스를 재귀적으로 개선한다. 학술 논문-포스터 생성 태스크에 적용하여 PosterBench를 도입했으며, 100편의 논문을 대상으로 한 메인 트랙에서 78.32점을 기록해 Claude Design보다 7.45점 높은 성과를 달성했다. 완전 자율 루프에서 40분 내 3달러 미만 비용으로 학회 포스터 수준의 결과물을 생성하며, 인간 선호도 평가에서도 최고 점수를 받았다.",
+    "why_it_matters": "정적인 기존 에이전트 설계 패러다임을 넘어 경험 축적과 자기 개선이 가능한 에이전트 프레임워크를 제시하며, 저비용·고품질 자동화 가능성을 실증했다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.7841896339182615,
+    "published_at": "2026-08-12T20:00:00Z"
+  },
+  {
+    "id": "github_trending-unslothai/unsloth",
+    "section": "releases",
+    "title_en": "unslothai/unsloth",
+    "title_ko": "Unsloth: LLM·확산 모델을 로컬에서 실행·훈련하는 데스크톱 앱",
+    "url": "https://github.com/unslothai/unsloth",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Unsloth는 Qwen3, Kimi K3, DeepSeek-V4, Gemma 4 등 최신 LLM 및 확산 모델을 로컬 환경에서 실행하고 파인튜닝할 수 있는 데스크톱·웹 UI 애플리케이션입니다. Windows, macOS, Linux를 모두 지원하며 NVIDIA·AMD·Intel·Apple Silicon 등 다양한 하드웨어에서 동작합니다. 파인튜닝 속도를 최대 2배 높이고 VRAM 사용량을 최대 70% 줄이는 것을 목표로 하며, RAG·에이전트·MCP 연동 등 다양한 기능을 제공합니다. 코어 라이브러리는 Apache 2.0, Studio UI는 AGPL-3.0 라이선스로 오픈소스로 공개됩니다.",
+    "why_it_matters": "클라우드 없이 최신 대형 모델을 로컬에서 손쉽게 실행·훈련할 수 있는 올인원 환경을 제공해, 개인 개발자도 프라이빗하고 비용 효율적인 AI 워크플로를 구성할 수 있다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "오픈소스"
+    ],
+    "score": 0.7280175264550264,
+    "published_at": "2026-08-16T02:18:24Z"
+  },
+  {
+    "id": "openai_blog-builders-guide-to-gpt-5-6",
+    "section": "releases",
+    "title_en": "The builder’s guide to GPT‑5.6",
+    "title_ko": "개발자를 위한 GPT-5.6 활용 가이드",
+    "url": "https://openai.com/index/builders-guide-to-gpt-5-6",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "스타트업들이 GPT-5.6을 활용해 더 빠르고 비용 효율적인 AI 에이전트를 구축하는 방법을 소개한다. 스마트한 모델 선택과 새로운 Responses API 기능을 통해 개발 속도를 높일 수 있다. OpenAI가 개발자 중심의 실전 가이드를 공식 블로그를 통해 제공한 것이다.",
+    "why_it_matters": "GPT-5.6과 Responses API를 활용한 에이전트 개발의 실질적인 비용 절감 및 속도 향상 방법을 공식 가이드로 확인할 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.35119212962962965,
+    "published_at": "2026-08-13T11:00:00Z"
+  },
+  {
+    "id": "openai_blog-previewing-ultrafast",
+    "section": "releases",
+    "title_en": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
+    "title_ko": "울트라패스트 모드 미리보기: GPT-5.6 Sol, 최대 14배 빠른 속도",
+    "url": "https://openai.com/index/previewing-ultrafast",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 새로운 API 서비스 티어인 'Ultrafast'를 공개했다. Cerebras 인프라를 기반으로 GPT-5.6 Sol 모델을 최대 14배 빠른 속도로 실행하며, 초당 최대 750개의 출력 토큰을 제공한다.",
+    "why_it_matters": "실시간 응답이 중요한 애플리케이션에서 LLM 처리 속도의 한계를 크게 넘어설 수 있는 상용 API 티어 등장으로 개발 패러다임 변화 가능성이 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.3452397486772486,
+    "published_at": "2026-08-13T10:00:00Z"
+  },
+  {
+    "id": "openai_blog-dali-rajic-chief-revenue-officer",
+    "section": "releases",
+    "title_en": "OpenAI appoints Dali Rajic as Chief Revenue Officer",
+    "title_ko": "OpenAI, Dali Rajic를 최고매출책임자(CRO)로 임명",
+    "url": "https://openai.com/index/dali-rajic-chief-revenue-officer",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 Dali Rajic를 최고매출책임자(CRO)로 임명했다. 그는 글로벌 매출 조직을 이끌며 기업들이 AI의 전체적인 가치를 실현할 수 있도록 지원하는 역할을 맡는다.",
+    "why_it_matters": "OpenAI가 기업 대상 매출 확대에 본격적으로 집중하겠다는 의지를 보여주는 조직 변화다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.3392873677248678,
+    "published_at": "2026-08-13T09:00:00Z"
+  },
+  {
+    "id": "openai_blog-how-enterprises-put-ai-to-work",
+    "section": "releases",
+    "title_en": "From assistance to execution: How enterprises put AI to work",
+    "title_ko": "보조에서 실행으로: 기업들이 AI를 실제 업무에 투입하는 방법",
+    "url": "https://openai.com/index/how-enterprises-put-ai-to-work",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI 연구에 따르면 기업들이 단순 AI 보조 도구를 넘어 자율적으로 작업을 수행하는 에이전틱 AI로 전환하고 있다. ChatGPT와 Codex를 활용한 기업 도입 사례와 함께, AI 도입에 앞서가는 선도 기업들이 경쟁 우위를 점하고 있는 양상이 보고서에 담겼다. 특히 프론티어 기업들이 AI 도입 속도에서 일반 기업과 격차를 벌리고 있다는 점이 주목된다.",
+    "why_it_matters": "기업 AI 도입이 '지원 도구' 단계를 넘어 '자율 실행' 단계로 진화하고 있으며, 선도 기업과 후발 기업 간 격차가 빠르게 벌어지고 있음을 시사한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.17857308201058208,
+    "published_at": "2026-08-12T06:00:00Z"
+  },
+  {
+    "id": "openai_blog-ringcentral",
+    "section": "releases",
+    "title_en": "How RingCentral builds AI-native work from engineering to ops",
+    "title_ko": "RingCentral이 ChatGPT Work와 Codex로 AI 네이티브 업무 환경을 구축하는 방법",
+    "url": "https://openai.com/index/ringcentral",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "RingCentral은 OpenAI의 ChatGPT Work와 Codex를 활용해 AI 제품 개발을 가속화하고, 엔지니어링과 운영 전반에 걸쳐 운영 인텔리전스를 중앙화하고 있다. 이를 통해 개발팀은 코드 작성과 운영 업무를 보다 효율적으로 처리할 수 있게 되었다.",
+    "why_it_matters": "실제 기업이 OpenAI 도구를 엔지니어링과 운영 전반에 통합한 구체적인 사례로, AI 도입을 검토 중인 개발 조직에 실질적인 참고가 된다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.14285879629629628,
+    "published_at": "2026-08-12T00:00:00Z"
+  },
+  {
+    "id": "google_blog-amie-video-consultations",
+    "section": "releases",
+    "title_en": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
+    "title_ko": "구글 의료 AI 'AMIE', 실시간 임상 화상 진료 능력 첫 연구서 입증",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글의 연구용 의료 AI 시스템 AMIE가 실시간 임상 화상 상담 기능을 선보이는 최초의 연구가 발표됐다. 해당 연구는 AMIE의 실제 진료 환경에 가까운 화상 진료 수행 능력을 검증한 것으로, 관련 프로모션 영상도 공개됐다.",
+    "why_it_matters": "의료 AI가 텍스트 기반을 넘어 실시간 화상 임상 상담까지 가능함을 입증한 첫 사례로, AI 의료 적용 범위 확장에 중요한 이정표다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.10119212962962965,
+    "published_at": "2026-08-11T17:00:00Z"
+  },
+  {
+    "id": "hn-49319556",
+    "section": "community",
+    "title_en": "Claude: System Prompts",
+    "title_ko": "Claude의 시스템 프롬프트 공개",
+    "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Anthropic이 Claude의 시스템 프롬프트 관련 내용을 공개했다. 제공된 설명이 없어 구체적인 세부 사항은 확인하기 어렵다.",
+    "why_it_matters": "Claude의 시스템 프롬프트 구조를 이해하면 LLM 활용 및 프롬프트 엔지니어링에 직접적인 참고가 된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.915056808573084,
+    "published_at": "2026-08-16T12:48:21Z"
+  },
+  {
+    "id": "hn-49322695",
+    "section": "community",
+    "title_en": "Models Are Getting Dumber on Purpose",
+    "title_ko": "모델이 의도적으로 더 멍청해지고 있다",
+    "url": "https://w4g1.dev/blog/models-are-getting-dumber-on-purpose",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI 모델이 의도적으로 성능을 낮추고 있다는 내용을 다루는 글이다. 구체적인 세부 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "AI 모델의 의도적 성능 저하 현상은 개발자와 사용자 모두에게 신뢰성 문제를 제기할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.919575977058221,
+    "published_at": "2026-08-16T19:04:26Z"
+  },
+  {
+    "id": "hn-49320611",
+    "section": "community",
+    "title_en": "The AI Credit Resale Economy",
+    "title_ko": "AI 크레딧 재판매 경제의 등장",
+    "url": "https://vectoral.com/blog/who-are-the-token-brokers",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI 크레딧 재판매 경제에 관한 주제를 다루고 있다. 상세한 설명이 제공되지 않아 구체적인 내용은 확인이 어렵다.",
+    "why_it_matters": "AI 서비스 비용 구조와 크레딧 거래 생태계의 변화는 개발자와 기업 모두에게 영향을 줄 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 8.61039735806166,
+    "published_at": "2026-08-16T14:44:55Z"
+  },
+  {
+    "id": "hn-49320856",
+    "section": "community",
+    "title_en": "St Lucie Nuclear Reactor Unit 1 manually shutdown, 3 control rods drop into core",
+    "title_ko": "세인트 루시 원자력 발전소 1호기 수동 정지, 제어봉 3개 노심 낙하",
+    "url": "https://www.wptv.com/news/treasure-coast/region-st-lucie-county/saint-lucie-nuclear-power-plant-unit-1-manually-shut-down-after-3-control-rods-drop-into-reactor-core",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "미국 세인트 루시 원자력 발전소 1호기가 수동으로 긴급 정지되었으며, 이 과정에서 제어봉 3개가 원자로 노심에 낙하하는 사건이 발생했다. 추가적인 세부 정보는 제공되지 않았다.",
+    "why_it_matters": "원자력 발전소의 비정상적 정지 및 제어봉 낙하는 안전 측면에서 주목해야 할 사건이다.",
+    "tags": [],
+    "score": 8.342886214878686,
+    "published_at": "2026-08-16T15:16:06Z"
+  },
+  {
+    "id": "hn-49323381",
+    "section": "community",
+    "title_en": "Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
+    "title_ko": "Stripe, AI 회사 OpenRouter를 70억 달러 이상에 인수 추진",
+    "url": "https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Stripe가 AI 라우팅 플랫폼 OpenRouter를 70억 달러 이상 규모의 딜로 인수하는 계약을 체결했다는 소식이 전해졌다. 구체적인 거래 조건이나 배경은 공개된 설명이 없어 확인되지 않는다.",
+    "why_it_matters": "핀테크 대표 기업 Stripe가 AI 인프라 영역으로 대규모 확장을 시도하는 신호탄이 될 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 8.248381133555576,
+    "published_at": "2026-08-16T20:31:16Z"
+  },
+  {
+    "id": "youtube-Hj1PPxRXJWM",
+    "section": "video",
+    "title_en": "IT뉴스 - Grok 4.6 및 Grok Bot, 오픈AI Computer History, Ultrafast, 앤트로픽 리만 가설, Gemini 3.7 Flash 등",
+    "title_ko": "Grok 4.6·앤트로픽 리만 가설·Gemini 3.7 Flash 등 AI 최신 뉴스 모음",
+    "url": "https://www.youtube.com/watch?v=Hj1PPxRXJWM",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널의 AI IT 뉴스 요약 영상으로, Grok 4.6 및 Grok Bot, 오픈AI의 Computer History, Ultrafast, 앤트로픽의 리만 가설 관련 소식, Gemini 3.7 Flash 등 다양한 AI 업계 최신 소식을 다룬다. 구체적인 내용은 영상 본편에서 확인할 수 있다.",
+    "why_it_matters": "주요 AI 기업들의 최신 동향을 한 번에 파악할 수 있는 뉴스 큐레이션 콘텐츠로, 빠르게 변하는 AI 업계 흐름을 따라가는 데 유용하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7809011243386244,
+    "published_at": "2026-08-16T11:11:28Z"
+  },
+  {
+    "id": "youtube-kDTe4HO4cew",
+    "section": "video",
+    "title_en": "AI로 한단계 업그레이드 된 구글 번역기",
+    "title_ko": "AI로 업그레이드된 구글 번역기",
+    "url": "https://www.youtube.com/shorts/kDTe4HO4cew",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 AI 기술이 적용되어 한 단계 발전한 구글 번역기를 소개하는 영상이다. 온디바이스 AI 기술과 관련된 내용을 다루고 있는 것으로 보인다.",
+    "why_it_matters": "구글 번역기의 AI 고도화는 개발자와 일반 사용자 모두의 번역 경험에 직접적인 영향을 미친다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.482172619047619,
+    "published_at": "2026-08-14T09:00:17Z"
+  },
+  {
+    "id": "youtube-sx7VBi4IKW8",
+    "section": "video",
+    "title_en": "이젠 세션까지 넘나들며 작업하는 클로드 ㄷㄷ",
+    "title_ko": "클로드, 이제 세션을 넘나들며 작업 가능",
+    "url": "https://www.youtube.com/shorts/sx7VBi4IKW8",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "클로드가 세션 간 컨텍스트를 유지하며 작업할 수 있게 되었다는 내용을 다룬 영상이다. 조코딩 채널에서 해당 기능을 소개하고 있으며, 바이브 코딩 및 1인 창업과 연관된 활용 사례를 다루는 것으로 보인다.",
+    "why_it_matters": "세션 간 기억 유지는 AI 에이전트의 실용성을 크게 높이는 핵심 기능으로, 개발자 워크플로우에 직접적인 영향을 줄 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.4643171296296297,
+    "published_at": "2026-08-14T06:00:18Z"
+  },
+  {
+    "id": "simon_willison-markdown-svg-upgrades",
+    "section": "deepdive",
+    "title_en": "Markdown SVG upgrades",
+    "title_ko": "마크다운 SVG 렌더러 업그레이드: MP4 변환 기능 추가",
+    "url": "https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Simon Willison이 개발한 마크다운-SVG 렌더러 도구에 새로운 기능들이 추가됐다. 마크다운 문서 내 SVG 코드 블록을 렌더링하고, PNG·JPEG로 변환하거나 GitHub Gist URL을 북마크 가능한 페이지로 공유할 수 있다. 이번 업데이트로 애니메이션 SVG를 MP4 비디오로 변환하는 탭이 추가됐으며, ffmpeg.wasm을 브라우저에서 직접 실행해 WebAssembly 기반으로 인코딩한다.",
+    "why_it_matters": "SVG 애니메이션을 브라우저만으로 MP4로 변환할 수 있어, SVG를 지원하지 않는 플랫폼에서도 결과물을 손쉽게 공유할 수 있다.",
+    "tags": [],
+    "score": 0.8571064814814815,
+    "published_at": "2026-08-16T23:59:37Z"
+  }
+]
