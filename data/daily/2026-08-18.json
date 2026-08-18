@@ -1,0 +1,371 @@
+[
+  {
+    "id": "hf-2608.14391",
+    "section": "papers",
+    "title_en": "Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? A Systematic Evaluation of Detectors, Generators and Social Dissemination",
+    "title_ko": "AI 생성 위기 영상 공격을 방어할 수 있을까? 탐지기·생성기·소셜 확산에 대한 체계적 평가",
+    "url": "https://huggingface.co/papers/2608.14391",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "최신 영상 생성 모델은 전쟁, 재난, 공공 긴급상황 등 현실 위기를 사실적으로 묘사한 허위 영상을 만들어낼 수 있다. 이를 평가하기 위해 연구진은 실제 영상을 기준점으로 삼은 벤치마크 RA-Bench를 구축했으며, 총 17,886개 영상을 포함해 7종의 전통 탐지기, 10종의 제로샷 멀티모달 모델 등을 평가했다. 평가 결과, 어떤 탐지기 계열도 RA-Bench 전체에서 일관된 성능을 보이지 못했으며, 소셜 확산 과정에서 탐지 정확도는 더욱 하락했다. 사람을 속이는 영상은 현재 탐지기로도 잡아내기 어렵다는 점이 확인됐다.",
+    "why_it_matters": "AI 생성 위기 영상이 소셜미디어를 통해 확산될 때 기존 탐지 기술이 무력화됨을 실증적으로 보여줘, 더 강건한 탐지 기술 개발의 필요성을 부각시킨다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 6.556828061699537,
+    "published_at": "2026-08-13T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.14144",
+    "section": "papers",
+    "title_en": "Self-Supervised Visual On-Policy Distillation",
+    "title_ko": "특권 정보 없이 시각 온폴리시 증류를 자기지도 방식으로 달성하는 S²VOPD",
+    "url": "https://huggingface.co/papers/2608.14144",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "S²VOPD는 교사 모델에 특권 정보를 추가하는 대신 학생에게 강한 증강 뷰를 제공해 비대칭성을 만드는 자기지도 시각 온폴리시 증류 방법이다. 별도의 강력한 교사 모델, 정답 레이블, 보상 없이도 효과적인 학습 신호를 생성할 수 있다. Qwen3.5-4B 기준 70.7%에서 77.4%로 성능을 향상시켜 235B 규모의 Qwen3-VL 및 GPT-5.4를 능가했으며, 특권 정보 기반 방법 대비 96%의 성능 향상을 회복했다.",
+    "why_it_matters": "추가 데이터나 강력한 교사 모델 없이도 멀티모달 비전 모델의 세밀한 지각 능력을 크게 끌어올릴 수 있는 경량 자기지도 학습 프레임워크를 제시한다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 5.997212273764115,
+    "published_at": "2026-08-13T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.13417",
+    "section": "papers",
+    "title_en": "Beyond Final Scores: A Systematic Evaluation of Agents for Long-Horizon AI Research and Development",
+    "title_ko": "최종 점수를 넘어서: 장기 AI 연구·개발 에이전트의 체계적 평가",
+    "url": "https://huggingface.co/papers/2608.13417",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "자율 에이전트가 장기적 실험을 통해 모델과 시스템을 개선하는 능력을 평가하기 위해, 7개 프론티어 모델을 36개 장기 태스크에서 체계적으로 분석한 연구다. 새 프레임워크는 단순 최종 점수 대신 솔루션 구성·실행·피드백 제어라는 규칙 기반 지표로 에이전트의 행동을 세밀하게 측정한다. 결과에 따르면 현재 에이전트는 '완전 자율 연구자'보다는 '엔지니어링 옵티마이저'에 가까우며, 기존 기법을 응용·조합하는 데 강하지만 진정한 방법론적 혁신은 드물다. 실행 간 성능 편차, 경험 재사용의 양면성, 하네스 설계의 영향 등 구체적 병목 요인도 밝혀졌다.",
+    "why_it_matters": "AI 에이전트의 자율 연구 능력을 최종 점수가 아닌 과정 단위로 진단함으로써, 모델 훈련·추론 전략·경험 관리 개선 방향을 구체적으로 제시한다는 점에서 중요하다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 4.737669618283368,
+    "published_at": "2026-08-12T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.14290",
+    "section": "papers",
+    "title_en": "Intern-S2-Mobius: Foundation Model with Decoupled Knowledge and Reasoning",
+    "title_ko": "Intern-S2-Mobius: 지식과 추론을 분리한 새로운 파운데이션 모델 아키텍처",
+    "url": "https://huggingface.co/papers/2608.14290",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Mobius-v0는 지식 벡터를 저장하는 공유 메모리(FFN)와 반복적 추론을 수행하는 다중 Reasoner(Self-Attn)를 분리한 새로운 아키텍처다. 7B 모델 기준으로 Transformer 대비 62.6%의 학습 데이터만으로 유사한 성능을 달성했다. Qwen3.5-35B에서 지속 사전학습한 Intern-S2-Mobius는 유사한 다운스트림 성능을 유지하면서 추론 속도를 약 4배 향상시켰다.",
+    "why_it_matters": "지식-추론 분리 아키텍처로 학습 효율과 추론 속도를 동시에 대폭 개선해, LLM 구조 혁신의 실질적 가능성을 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.465735902799727,
+    "published_at": "2026-08-13T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.14277",
+    "section": "papers",
+    "title_en": "SimpleOPD: Simple Tokenizer-Agnostic On-Policy Distillation for Long-Context Reasoning",
+    "title_ko": "SimpleOPD: 긴 문맥 추론을 위한 토크나이저 독립적 온-폴리시 증류",
+    "url": "https://huggingface.co/papers/2608.14277",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SimpleOPD는 강력한 교사 모델의 추론 능력을 단문맥 학생 모델로 전이하는 온-폴리시 증류(OPD) 방법론이다. 토크나이저 불일치, 응답 길이 폭발, 훈련 불안정 등 실용적 문제를 해결하기 위해 공유 텍스트 공간에서 정렬을 수행하고 학생 참조 KL 손실을 도입했다. Qwen3, Gemma-4 등 다양한 학생 모델 실험에서 수학 추론 성능이 일관되게 향상되었으며, Intern-S2-Preview는 ProofBench에서 21.2점 상승해 Gemini-2.5-Pro를 능가했다.",
+    "why_it_matters": "토크나이저가 다른 모델 간에도 안정적으로 추론 능력을 전이할 수 있어 오픈소스 소형 모델의 수학·과학 추론 고도화에 직접 활용 가능하다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 4.178053830347945,
+    "published_at": "2026-08-13T20:00:00Z"
+  },
+  {
+    "id": "google_blog-google-gemini-pixel-football-club-partnerships",
+    "section": "releases",
+    "title_en": "Get closer to the game with Gemini and Pixel",
+    "title_ko": "Gemini와 Pixel로 스포츠 경기를 더 가까이",
+    "url": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글이 Gemini와 Pixel 기기를 활용해 스포츠 경기 경험을 향상시키는 기능을 소개했다. 게시된 이미지는 축구 선수가 공을 차는 역동적인 장면을 담고 있다.",
+    "why_it_matters": "Gemini AI가 Pixel 기기와 결합해 스포츠 콘텐츠 소비 경험을 어떻게 변화시키는지 보여주는 사례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7619064153439153,
+    "published_at": "2026-08-17T08:00:00Z"
+  },
+  {
+    "id": "github_trending-unslothai/unsloth",
+    "section": "releases",
+    "title_en": "unslothai/unsloth",
+    "title_ko": "Unsloth: LLM·확산 모델을 로컬에서 실행·훈련하는 데스크톱 앱",
+    "url": "https://github.com/unslothai/unsloth",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Unsloth는 Qwen3, Kimi K3, DeepSeek-V4, Gemma 4, FLUX 등 최신 LLM 및 확산 모델을 로컬에서 실행하고 파인튜닝할 수 있는 데스크톱 앱이다. Windows, macOS, Linux를 모두 지원하며 NVIDIA·AMD·Intel·Apple Silicon 등 다양한 하드웨어를 커버한다. 파인튜닝 속도는 최대 2배 빠르고 VRAM 사용량은 최대 70% 줄어들며, LoRA·QLoRA·GRPO·DPO·강화학습 등 다양한 훈련 방식을 지원한다. RAG·웹 검색·MCP·에이전트 연동 기능도 내장되어 있다.",
+    "why_it_matters": "설정 없이 바로 쓸 수 있는 로컬 올인원 LLM 플랫폼으로, 클라우드 없이도 최신 대형 모델을 저사양 VRAM 환경에서 훈련·배포까지 완결할 수 있어 실무 개발자의 진입 장벽을 크게 낮춘다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "에이전트"
+    ],
+    "score": 0.7480968915343915,
+    "published_at": "2026-08-17T05:40:48Z"
+  },
+  {
+    "id": "openai_blog-the-defenders-window",
+    "section": "releases",
+    "title_en": "The Defender’s Window",
+    "title_ko": "방어자의 시간: AI가 바꾸는 사이버보안 지형",
+    "url": "https://openai.com/index/the-defenders-window",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "AI는 공격자와 방어자 모두에게 사이버보안 환경을 근본적으로 변화시키고 있다. OpenAI는 자사의 보안 방어 체계를 강화하는 방법을 공개하며, 보안 팀이 지금 당장 취할 수 있는 실질적인 조치들을 제시한다. AI 시대에 방어자가 주도권을 유지하기 위한 전략을 다룬다.",
+    "why_it_matters": "OpenAI가 직접 AI 기반 사이버보안 방어 전략을 공개함으로써, 보안 실무자들에게 즉시 적용 가능한 인사이트를 제공한다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "인프라"
+    ],
+    "score": 0.7470254629629629,
+    "published_at": "2026-08-17T05:30:00Z"
+  },
+  {
+    "id": "openai_blog-openai-joins-ports-pike-project",
+    "section": "releases",
+    "title_en": "OpenAI joins PORTS-Pike project",
+    "title_ko": "OpenAI, PORTS-Pike 프로젝트 참여 발표",
+    "url": "https://openai.com/index/openai-joins-ports-pike-project",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 PORTS-Pike 프로젝트에 합류하며 지역 사회 투자를 확대한다고 밝혔다. 이번 참여를 통해 오하이오주 남부 지역의 수천 개 일자리 창출을 지원할 예정이다.",
+    "why_it_matters": "OpenAI가 기술 개발을 넘어 지역 경제 및 고용 창출에도 직접 투자하는 행보를 보여준다는 점에서 주목할 만하다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.7440492724867724,
+    "published_at": "2026-08-17T05:00:00Z"
+  },
+  {
+    "id": "openai_blog-new-policy-ideas-for-the-intelligence-age",
+    "section": "releases",
+    "title_en": "New policy ideas for the Intelligence Age",
+    "title_ko": "인텔리전스 시대를 위한 새로운 AI 정책 아이디어",
+    "url": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 경제적 기회 확대와 사회적 회복력 강화를 목표로 14개의 독립 프로젝트에 자금을 지원한다. 이 프로젝트들은 인텔리전스 시대에 적합한 새로운 AI 정책 아이디어를 탐구한다.",
+    "why_it_matters": "AI 기술의 사회적·경제적 영향에 대응하는 정책 프레임워크 형성에 OpenAI가 직접 투자한다는 점에서 AI 거버넌스 방향성을 가늠할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7336326058201058,
+    "published_at": "2026-08-17T03:15:00Z"
+  },
+  {
+    "id": "openai_blog-builders-guide-to-gpt-5-6",
+    "section": "releases",
+    "title_en": "The builder’s guide to GPT‑5.6",
+    "title_ko": "GPT-5.6 빌더 가이드",
+    "url": "https://openai.com/index/builders-guide-to-gpt-5-6",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "스타트업이 GPT-5.6을 활용해 더 빠르고 비용 효율적인 AI 에이전트를 구축하는 방법을 소개한다. 스마트한 모델 선택과 새로운 Responses API 기능을 중심으로 실전 활용 전략을 다룬다.",
+    "why_it_matters": "GPT-5.6 기반 에이전트 개발의 실질적인 가이드로, 비용과 성능을 동시에 잡으려는 개발자에게 직접적인 참고 자료가 된다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.20833498677248674,
+    "published_at": "2026-08-13T11:00:00Z"
+  },
+  {
+    "id": "openai_blog-previewing-ultrafast",
+    "section": "releases",
+    "title_en": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
+    "title_ko": "울트라패스트 모드 미리보기: GPT-5.6 Sol, 최대 14배 빠른 속도",
+    "url": "https://openai.com/index/previewing-ultrafast",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 새로운 API 서비스 티어인 '울트라패스트(Ultrafast)'를 공개했다. Cerebras와 협력해 GPT-5.6 Sol 모델을 최대 14배 빠르게 실행하며, 초당 최대 750개의 출력 토큰을 생성할 수 있다.",
+    "why_it_matters": "초고속 추론이 가능해지면서 실시간 응답이 필요한 에이전트·대화형 애플리케이션 개발의 가능성이 크게 확대된다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "인프라"
+    ],
+    "score": 0.2023826058201058,
+    "published_at": "2026-08-13T10:00:00Z"
+  },
+  {
+    "id": "hn-49336573",
+    "section": "community",
+    "title_en": "AI;DR (AI; Didn't Read)",
+    "title_ko": "AI;DR – AI가 대신 읽어주는 서비스",
+    "url": "https://www.rickmanelius.com/p/aidr-ai-didnt-read",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "'AI;DR'는 'TL;DR'에서 착안한 서비스로, AI를 활용해 긴 콘텐츠를 자동으로 요약해 주는 도구로 보인다. 상세한 설명이 제공되지 않아 구체적인 기능은 확인이 어렵다.",
+    "why_it_matters": "정보 과부하 시대에 AI 요약 도구의 수요가 높아지는 가운데, 새로운 자동 요약 서비스로 주목받고 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.188917747850315,
+    "published_at": "2026-08-17T19:47:15Z"
+  },
+  {
+    "id": "hn-49329575",
+    "section": "community",
+    "title_en": "GPT 5.6 Sol is the best \"vision\" model OpenAI ever released",
+    "title_ko": "GPT 5.6 Sol, OpenAI 역대 최고의 비전 모델로 평가",
+    "url": "https://blog.roboflow.com/openai-gpt-5-6/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "OpenAI가 출시한 GPT 5.6 Sol이 역대 최고의 비전 모델로 평가받고 있다. 상세한 설명이 제공되지 않아 추가적인 내용은 확인이 필요하다.",
+    "why_it_matters": "OpenAI 비전 모델의 새로운 기준점이 될 수 있어 관련 개발자들의 주목이 필요하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.19552002776182,
+    "published_at": "2026-08-17T12:09:42Z"
+  },
+  {
+    "id": "hn-49331423",
+    "section": "community",
+    "title_en": "AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake's Jira",
+    "title_ko": "AI 생성 GitHub Copilot 'Autofix'로 Snowflake Jira 계정 침해 가능성",
+    "url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GitHub Copilot의 AI 자동 수정(Autofix) 기능이 Snowflake의 Jira 시스템 침해를 허용하는 데 악용된 것으로 알려졌다. AI가 생성한 코드 수정이 보안 취약점을 초래할 수 있음을 보여주는 사례다.",
+    "why_it_matters": "AI 코드 자동 수정 기능이 오히려 보안 취약점을 유발할 수 있다는 실제 사례로, AI 보조 개발 도구의 신뢰성과 보안 검토의 중요성을 상기시킨다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.133725884754899,
+    "published_at": "2026-08-17T14:18:38Z"
+  },
+  {
+    "id": "hn-49334544",
+    "section": "community",
+    "title_en": "Qwen3.8 27B scores 52 on Artificial Analysis",
+    "title_ko": "Qwen3.8 27B, Artificial Analysis 벤치마크에서 52점 기록",
+    "url": "https://artificialanalysis.ai/models/qwen3-8-27b",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Qwen3.8 27B 모델이 Artificial Analysis 벤치마크에서 52점을 기록했다는 소식이다. 구체적인 비교 대상이나 세부 맥락은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "오픈소스 중형 모델의 벤치마크 성능 추이를 가늠할 수 있는 지표로 주목된다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 9.09489475574402,
+    "published_at": "2026-08-17T17:25:17Z"
+  },
+  {
+    "id": "hn-49331220",
+    "section": "community",
+    "title_en": "How to disable or avoid intrusive AI",
+    "title_ko": "침투적 AI 기능을 끄거나 피하는 방법",
+    "url": "https://www.librarian.net/notoai/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "다양한 서비스와 기기에서 원치 않는 AI 기능을 비활성화하거나 우회하는 방법을 다룬 글이다. 구체적인 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "AI 기능 강제 적용에 피로감을 느끼는 사용자와 개발자에게 실용적인 참고가 될 수 있다.",
+    "tags": [],
+    "score": 8.975638155733812,
+    "published_at": "2026-08-17T14:07:56Z"
+  },
+  {
+    "id": "youtube-VkNEn98sswM",
+    "section": "video",
+    "title_en": "AI 뉴스 - Grok 4.6 및 Grok Bot, 오픈AI Computer History, Ultrafast, 앤트로픽 리만 가설, Gemini 3.7 Flash 등",
+    "title_ko": "주간 AI 뉴스 총정리: Grok 4.6·Gemini 3.7 Flash·앤트로픽 리만 가설 도전 등",
+    "url": "https://www.youtube.com/watch?v=VkNEn98sswM",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "Grok 4.6이 벤치마크 전체 1위를 기록하고, 컴퓨터 한 대를 통째로 사용하는 AI 에이전트 Grok Bot이 공개됐다. 앤트로픽의 미공개 모델이 160년 난제인 리만 가설에서 대기록을 세웠으며, Gemini 3.7 Flash는 반값 프로모션과 함께 출시됐다. 큐원 3.8 27B 오픈웨이트 모델이 소비자용 GPU로 Claude Opus 4.6을 넘어서는 성능을 보였고, 한국은 글로벌 오픈웨이트 기여국 2위에 올랐다.",
+    "why_it_matters": "한 주간 주요 AI 기업들의 모델 출시와 오픈소스 공개가 집중되며 LLM·에이전트·멀티미디어 생성 전 분야에서 경쟁이 급격히 가속화되고 있다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7916832010582011,
+    "published_at": "2026-08-17T13:00:09Z"
+  },
+  {
+    "id": "youtube-kDTe4HO4cew",
+    "section": "video",
+    "title_en": "AI로 한단계 업그레이드 된 구글 번역기",
+    "title_ko": "AI로 한 단계 업그레이드된 구글 번역기",
+    "url": "https://www.youtube.com/shorts/kDTe4HO4cew",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 AI 기술이 적용된 구글 번역기의 업그레이드 내용을 소개하는 영상이다. 온디바이스 AI 관련 내용을 다루고 있으며, 구글 번역기의 변화된 기능을 살펴본다.",
+    "why_it_matters": "온디바이스 AI 기반 번역 기술의 발전이 실생활 언어 도구에 어떤 변화를 가져오는지 확인할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.3393154761904762,
+    "published_at": "2026-08-14T09:00:17Z"
+  },
+  {
+    "id": "youtube-sx7VBi4IKW8",
+    "section": "video",
+    "title_en": "이젠 세션까지 넘나들며 작업하는 클로드 ㄷㄷ",
+    "title_ko": "세션을 넘나들며 작업하는 클로드의 새 기능",
+    "url": "https://www.youtube.com/shorts/sx7VBi4IKW8",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 Claude(클로드)가 세션 간 컨텍스트를 유지하며 작업할 수 있는 기능을 소개하는 영상이다. 기존에는 대화 세션이 끊기면 이전 맥락을 잃었지만, 이제 세션을 넘나드는 작업이 가능해진 것으로 보인다.",
+    "why_it_matters": "세션 간 메모리·컨텍스트 유지는 AI 에이전트의 실용성을 크게 높이는 핵심 기능이다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.32145998677248677,
+    "published_at": "2026-08-14T06:00:18Z"
+  },
+  {
+    "id": "simon_willison-qwen-38-27b-scores-52",
+    "section": "deepdive",
+    "title_en": "Qwen 3.8 27B scores 52 on the Artificial Analysis Intelligence Index",
+    "title_ko": "Qwen 3.8 27B, Artificial Analysis 지능 지수에서 GPT-5.6 Luna와 동점",
+    "url": "https://simonwillison.net/2026/Aug/17/qwen-38-27b-scores-52/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Qwen 3.8 27B 모델이 Artificial Analysis Intelligence Index에서 52점을 기록하며 GPT-5.6 Luna(max)와 동점을 달성했다. GLM-5.2(753B)와 DeepSeek V4 Pro 0813(1.6T 파라미터 추정)보다 단 1점 낮은 수치다. 27B라는 비교적 소형 파라미터로 훨씬 큰 모델들과 대등한 성능을 보인 점이 주목된다.",
+    "why_it_matters": "27B 규모의 소형 모델이 수백B~수천B 파라미터 대형 모델들과 동등한 벤치마크 성능을 기록하며 효율적 LLM의 새로운 기준을 제시했다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.856969246031746,
+    "published_at": "2026-08-17T23:58:14Z"
+  }
+]
