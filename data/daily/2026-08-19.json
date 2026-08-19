@@ -1,0 +1,364 @@
+[
+  {
+    "id": "hf-2608.15089",
+    "section": "papers",
+    "title_en": "StateM: Reaching 95.3% Raw Accuracy, or a \\$15 Frontier Run, on Terminal-Bench 2.1 via Harness Scaling",
+    "title_ko": "StateM: 하네스 스케일링으로 Terminal-Bench 2.1에서 95.3% 정확도 달성",
+    "url": "https://huggingface.co/papers/2608.15089",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "StateM은 모델 가중치를 변경하지 않고 에이전트 실행 시스템을 개선하는 런타임 프레임워크다. 내구성 있는 상태 관리, 단계별 컨텍스트, 복구 가능한 런북 등을 통해 장기 실행 에이전트의 상태 추적 및 절차 유지 문제를 해결한다. Terminal-Bench 2.1에서 GPT-5.6 기반으로 95.3% 정확도를 기록했으며, DeepSeek-V4 Flash에서도 82.7%에서 88.1%로 성능을 향상시켰다. API 비용은 GPT 레퍼런스($574.68) 대비 약 $15 수준으로 대폭 절감되었다.",
+    "why_it_matters": "모델 자체를 바꾸지 않고 실행 하네스만 개선해 최고 수준의 에이전트 성능을 저비용으로 달성했다는 점에서, 에이전트 시스템 설계 패러다임에 중요한 시사점을 준다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 5.762173934797756,
+    "published_at": "2026-08-14T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.16859",
+    "section": "papers",
+    "title_en": "HarnessEval-W: Agentifying the Evaluation of Visual Worlds",
+    "title_ko": "HarnessEval-W: 에이전트 기반 비주얼 월드 모델 평가 파이프라인",
+    "url": "https://huggingface.co/papers/2608.16859",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "HarnessEval-W는 기존 스칼라 점수 방식을 넘어, 에이전트 계층 구조를 활용해 월드 모델의 물리·인과성·세계 상태를 투명하게 평가하는 파이프라인이다. 평가 질문을 측정 가능한 세부 문제로 분해하고 전문 서브 에이전트를 투입해 증거 트리 형태의 추론 체인을 생성한다. 18개 월드 모델, 330개 평가 케이스에 적용한 결과 인간 선호도와 높은 일치를 보였으며, 전체 파이프라인을 오픈소스로 공개했다.",
+    "why_it_matters": "월드 모델 평가의 불투명성 문제를 에이전트 기반 추론 체인으로 해결해, 검증 가능한 벤치마크 패러다임을 제시한다는 점에서 중요하다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 5.718498871295094,
+    "published_at": "2026-08-16T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.15265",
+    "section": "papers",
+    "title_en": "VibeWorlding: Can Multimodal Agents Construct 3D Open Worlds End-to-End?",
+    "title_ko": "VibeWorlding: 멀티모달 에이전트로 3D 오픈 월드를 엔드투엔드로 구축할 수 있을까?",
+    "url": "https://huggingface.co/papers/2608.15265",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "VibeWorlding은 사용자 쿼리로부터 인터랙티브 3D 오픈 월드를 자동 생성하는 멀티모달 에이전트 벤치마크·학습 프레임워크다. 2,616개의 3D 에셋, 323개의 인간 주석 시드 월드, 6,828개의 역합성 멀티모달 쿼리로 구성된 VWE-BENCH를 구축했으며, 강화학습 기반 VibeWorlding-Gym으로 모델을 훈련한다. 실험 결과 GPT-5.5와 Qwen3.8-Max도 성공률 60% 미만에 그치는 가운데, RL 학습을 적용한 오픈소스 모델 VibeWorlder-30B-A3B가 전체 평가 모델 중 최고 Pass@1을 달성했다.",
+    "why_it_matters": "3D 월드 생성 에이전트의 한계를 체계적으로 진단하고, RL 학습으로 오픈소스 모델이 최전선 클로즈드소스를 능가할 수 있음을 보여준 점이 중요하다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.951243718581427,
+    "published_at": "2026-08-14T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.15669",
+    "section": "papers",
+    "title_en": "Large Discovery Models: Empirically-grounded Model-Based Open-Ended Search",
+    "title_ko": "대형 탐색 모델(LDM): 경험 기반 오픈엔드 과학적 발견",
+    "url": "https://huggingface.co/papers/2608.15669",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "과학적 발견에서 분자·단백질·코드 등 방대한 가설 공간 탐색을 위해, 생성 모델과 베이지안 비모수 보상 대리 모델을 결합한 순환 아키텍처 'Large Discovery Model(LDM)'을 제안한다. LLM은 후보 설계를 제안·정제하고, 대리 모델은 성능과 불확실성을 예측해 후보 선택을 유도한다. 신경망 학습, 항체 설계, 분자 최적화 세 가지 도메인에서 평가한 결과, LLM 단독 방식 대비 검증 BPB 2.4배 감소, 결합 에너지 18.2% 감소, 분자 다목적 성능 60% 이상 향상을 달성했다.",
+    "why_it_matters": "LLM의 불확실성 문제를 베이지안 대리 모델로 보완해 범용 과학 탐색 엔진 가능성을 실증적으로 제시한다는 점에서 AI 기반 연구 자동화에 중요한 진전이다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.912023005428146,
+    "published_at": "2026-08-15T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.16072",
+    "section": "papers",
+    "title_en": "Learn What's Left, Not What's Mastered: Saturation Aware Advantage Reweighting for Multi-Reward Policy Optimization",
+    "title_ko": "포화도 인식 다중 보상 정책 최적화: 이미 학습된 것 말고 남은 것을 학습하라",
+    "url": "https://huggingface.co/papers/2608.16072",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "다중 보상 목표를 가진 강화학습에서 기존 방법은 고정 가중합으로 보상을 스칼라화해 이미 충분히 학습된 목표에도 계속 그래디언트를 낭비하는 문제가 있다. SA-MRPO는 각 보상 목표를 독립적으로 표준화하고 배치 수준의 포화도 추정치에 따라 기여도를 적응적으로 조정해, 덜 최적화된 목표에 학습 자원을 동적으로 재배분한다. 수학적 추론, 적응형 추론, 코딩 벤치마크에서 GDPO 대비 최대 5~9.2%의 성능 향상을 달성했으며, 이미 잘 학습된 목표의 성능은 유지했다.",
+    "why_it_matters": "다중 목표 RLHF에서 학습 효율을 높이는 포화도 기반 적응형 재가중치 기법으로, LLM 후학습 최적화에 실질적 개선을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.80666248977032,
+    "published_at": "2026-08-16T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-strengthening-democratic-oversight-in-national-security",
+    "section": "releases",
+    "title_en": "Strengthening democratic oversight in national security",
+    "title_ko": "OpenAI, 국가 안보 분야 민주적 AI 감독 강화 이니셔티브 출범",
+    "url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 국가 안보 분야에서 AI에 대한 민주적 감독을 강화하기 위한 이니셔티브를 출범했다. 정부 기관을 대상으로 도구, 교육, 전문성을 지원하는 것이 핵심 내용이다.",
+    "why_it_matters": "AI가 국가 안보에 깊이 관여되는 시대에 민주적 통제 체계를 선제적으로 구축하려는 시도로, AI 거버넌스의 방향성에 중요한 선례를 남길 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.8273826058201058,
+    "published_at": "2026-08-18T19:00:00Z"
+  },
+  {
+    "id": "openai_blog-partnering-with-codeai",
+    "section": "releases",
+    "title_en": "Partnering with CodeAI to prepare the first AI generation",
+    "title_ko": "OpenAI, CodeAI와 협력해 AI 세대 교육 지원",
+    "url": "https://openai.com/index/partnering-with-codeai",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI와 CodeAI가 파트너십을 체결해 학생들의 AI 리터러시 향상을 지원한다. 이 협력을 통해 학생들이 AI를 비판적으로 이해하고, 책임감 있게 활용하며 발전시킬 수 있는 역량을 키우는 것을 목표로 한다.",
+    "why_it_matters": "AI 교육의 저변 확대를 위한 OpenAI의 공교육 분야 파트너십으로, 차세대 AI 활용 인재 양성 방향을 가늠할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7797635582010582,
+    "published_at": "2026-08-18T11:00:00Z"
+  },
+  {
+    "id": "openai_blog-pacing-model-development-cyber-capabilities",
+    "section": "releases",
+    "title_en": "Pacing model development in an era of cyber-critical capabilities",
+    "title_ko": "사이버 핵심 역량 시대의 AI 모델 개발 속도 조절",
+    "url": "https://openai.com/index/pacing-model-development-cyber-capabilities",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 프론티어 AI 모델에 대한 모니터링, 정렬(alignment), 보안을 강화하고 있다. 새로운 안전장치를 도입해 모델 개발 속도를 조절하는 방식을 공개했다. 이는 AI가 사이버 위협에 활용될 수 있는 수준에 도달함에 따라 책임감 있는 개발을 위한 조치다.",
+    "why_it_matters": "AI가 사이버 공격에 악용될 수 있는 수준으로 발전함에 따라, OpenAI의 개발 속도 조절 및 안전장치 도입 방식이 업계 전반의 규범을 형성할 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.7797635582010582,
+    "published_at": "2026-08-18T11:00:00Z"
+  },
+  {
+    "id": "openai_blog-chatgpt-for-teens",
+    "section": "releases",
+    "title_en": "Introducing ChatGPT for Teens: Built for learning, backed by protections",
+    "title_ko": "청소년을 위한 ChatGPT 출시: 학습 특화 및 보호 기능 강화",
+    "url": "https://openai.com/index/chatgpt-for-teens",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 청소년을 위한 ChatGPT를 새롭게 선보였다. 이 버전은 비판적 사고와 학습을 돕도록 설계되었으며, 강화된 안전 보호 기능과 건강한 사용 습관을 위한 기능이 내장되어 있다. 또한 부모가 자녀의 사용을 관리할 수 있는 추가 제어 기능도 제공된다.",
+    "why_it_matters": "AI 교육 접근성 확대와 함께 청소년 보호 및 책임감 있는 AI 사용 환경 조성이라는 측면에서 중요한 전환점이 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7797635582010582,
+    "published_at": "2026-08-18T11:00:00Z"
+  },
+  {
+    "id": "openai_blog-asana",
+    "section": "releases",
+    "title_en": "Asana cleared 5 years of engineering work in 2 weeks with Codex",
+    "title_ko": "Asana, OpenAI Codex로 5년치 엔지니어링 작업을 2주 만에 완료",
+    "url": "https://openai.com/index/asana",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Asana는 OpenAI Codex를 활용해 노후화된 테스트 시스템을 교체하는 작업을 단 2주 만에 완료했다. 기존에는 5년이 걸릴 것으로 예상되던 작업을 약 1만 2천 달러의 비용으로 처리한 것이다.",
+    "why_it_matters": "Codex가 대규모 레거시 코드 마이그레이션에서 시간과 비용을 획기적으로 절감할 수 있음을 실제 사례로 입증했다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7559540343915344,
+    "published_at": "2026-08-18T07:00:00Z"
+  },
+  {
+    "id": "github_trending-akitaonrails/ai-memory",
+    "section": "releases",
+    "title_en": "akitaonrails/ai-memory",
+    "title_ko": "AI 코딩 에이전트를 위한 장기 메모리 솔루션 'ai-memory'",
+    "url": "https://github.com/akitaonrails/ai-memory",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "ai-memory는 Claude Code, Codex, Cursor 등 다양한 AI 코딩 에이전트 간의 세션 컨텍스트를 유지하고 인계하는 오픈소스 도구다. 세션 종료 시 관찰 내용을 마크다운 위키로 컴파일하고, 다음 에이전트 시작 시 '이전 작업 요약'을 자동으로 전달한다. 벡터 DB 없이 FTS5 기반 검색과 Git 버전 관리 마크다운을 사용하며, MCP 프로토콜을 통해 20개 이상의 에이전트 CLI를 지원한다.",
+    "why_it_matters": "여러 AI 코딩 에이전트를 전환하거나 세션이 끊겼을 때 컨텍스트를 재설명해야 하는 고통을 없애주어 멀티 에이전트 워크플로우의 실용성을 크게 높인다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7274338624338624,
+    "published_at": "2026-08-18T02:12:31Z"
+  },
+  {
+    "id": "github_trending-mukul975/Anthropic-Cybersecurity-Skills",
+    "section": "releases",
+    "title_en": "mukul975/Anthropic-Cybersecurity-Skills",
+    "title_ko": "AI 에이전트를 위한 817개 사이버보안 스킬 오픈소스 라이브러리",
+    "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "AI 에이전트가 시니어 보안 분석가 수준의 사이버보안 작업을 수행할 수 있도록 817개의 구조화된 스킬을 제공하는 오픈소스 프로젝트다. 29개 보안 도메인을 커버하며 MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF, MITRE F3(금융사기 프레임워크) 등 6개 프레임워크에 매핑되어 있다. Claude Code, GitHub Copilot, Cursor, Gemini CLI 등 26개 이상의 AI 플랫폼과 호환되며 agentskills.io 표준을 따른다. Apache 2.0 라이선스로 공개된 커뮤니티 프로젝트로, Anthropic PBC와는 무관하다.",
+    "why_it_matters": "범용 LLM에 실무 보안 전문가의 플레이북을 구조화된 형태로 주입함으로써, AI 에이전트가 위협 헌팅·침투 테스트·포렌식 등 전문 보안 업무를 수행할 수 있는 기반을 마련한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7274338624338624,
+    "published_at": "2026-08-18T02:12:31Z"
+  },
+  {
+    "id": "hn-49332981",
+    "section": "community",
+    "title_en": "Universal health coverage could save $1T and 114k lives a year: study",
+    "title_ko": "보편적 의료보장, 연간 1조 달러 절감·11만 4천 명 생명 구할 수 있다는 연구 결과",
+    "url": "https://ysph.yale.edu/news-article/universal-health-coverage-could-save-one-trillion-dollars-and-114000-lives-every-year/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "새로운 연구에 따르면 보편적 의료보장(UHC)을 실현할 경우 연간 최대 1조 달러를 절감하고 11만 4천 명의 생명을 구할 수 있다고 한다. 제목 외 세부 정보는 제공되지 않았다.",
+    "why_it_matters": "AI·기술 분야와 직접적 연관성은 낮으나, 의료 정책 및 헬스케어 데이터 활용 논의에 참고할 수 있는 거시적 수치를 제시한다.",
+    "tags": [],
+    "score": 10.834473511595935,
+    "published_at": "2026-08-17T15:49:57Z"
+  },
+  {
+    "id": "hn-49349147",
+    "section": "community",
+    "title_en": "Field measurements of neighborhood-scale air temperature impacts of data centers",
+    "title_ko": "데이터센터가 주변 지역 기온에 미치는 영향, 현장 측정 연구",
+    "url": "https://asmedigitalcollection.asme.org/sustainablebuildings/article/7/2/024501/1233035/Data-Center-Waste-Heat-as-an-Emerging-Urban",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "데이터센터가 인근 지역의 기온에 실질적인 영향을 미친다는 현장 측정 연구 결과가 발표되었다. 해당 연구는 데이터센터 주변 지역 규모에서 기온 변화를 직접 측정하는 방식으로 진행되었다.",
+    "why_it_matters": "AI 인프라 확장으로 데이터센터가 급증하는 가운데, 주변 지역 환경에 미치는 열 영향이 실증적으로 확인된 점은 지속가능성 논의에 중요한 근거가 된다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.645351041936713,
+    "published_at": "2026-08-18T17:24:53Z"
+  },
+  {
+    "id": "hn-49348751",
+    "section": "community",
+    "title_en": "Claude Code May–August 2026 weekly limits promotion",
+    "title_ko": "Claude Code 2026년 5~8월 주간 한도 프로모션 안내",
+    "url": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Anthropic이 Claude Code의 2026년 5월부터 8월까지 주간 사용 한도와 관련된 프로모션을 공지했다. 상세 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "Claude Code 사용자라면 해당 기간 프로모션 조건을 직접 확인해 사용 한도 혜택을 놓치지 않아야 한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.226242860687604,
+    "published_at": "2026-08-18T17:02:15Z"
+  },
+  {
+    "id": "hn-49344825",
+    "section": "community",
+    "title_en": "Using the railway network as a flatbed scanner",
+    "title_ko": "철도망을 평판 스캐너로 활용하기",
+    "url": "https://philo.gay/linecam/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "철도 네트워크를 평판 스캐너처럼 활용하는 독창적인 아이디어를 다루는 글이다. 구체적인 내용은 제공된 정보가 없어 추가적인 설명은 어렵다.",
+    "why_it_matters": "철도 인프라를 색다른 방식으로 재해석한 창의적 접근법으로 주목할 만하다.",
+    "tags": [],
+    "score": 8.986803711133506,
+    "published_at": "2026-08-18T12:43:54Z"
+  },
+  {
+    "id": "hn-49351330",
+    "section": "community",
+    "title_en": "Norway should buy OpenAI",
+    "title_ko": "노르웨이, OpenAI를 인수해야 한다는 주장",
+    "url": "https://www.onethousandmeans.com/p/norway-should-buy-openai",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "노르웨이가 OpenAI를 인수해야 한다는 의견이 제기됐다. 구체적인 내용은 제공되지 않아 추가적인 세부 사항은 확인하기 어렵다.",
+    "why_it_matters": "AI 핵심 기업의 국가 소유 가능성에 대한 논의로, AI 거버넌스와 공공 소유 모델에 대한 관심을 반영한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.966276074634944,
+    "published_at": "2026-08-18T19:30:29Z"
+  },
+  {
+    "id": "youtube-rYyJm1tD3d0",
+    "section": "video",
+    "title_en": "The jumping pegs puzzle",
+    "title_ko": "점프하는 말뚝 퍼즐",
+    "url": "https://www.youtube.com/shorts/rYyJm1tD3d0",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "MoMath(미국 수학 박물관)와 함께하는 월간 퍼즐 시리즈의 일환으로 소개된 '점프하는 말뚝' 퍼즐이다. 구체적인 규칙이나 풀이 방식은 영상을 통해 제공된다.",
+    "why_it_matters": "AI와 직접적인 관련은 없으나, 논리·조합 퍼즐은 알고리즘적 사고력 훈련에 활용될 수 있다.",
+    "tags": [],
+    "score": 0.8030059523809524,
+    "published_at": "2026-08-18T14:54:17Z"
+  },
+  {
+    "id": "youtube--raeMYTV1lg",
+    "section": "video",
+    "title_en": "리만 가설에 도전한 클로드의 놀라운 결과 ㄷㄷ",
+    "title_ko": "클로드가 리만 가설에 도전한 결과",
+    "url": "https://www.youtube.com/shorts/-raeMYTV1lg",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "유튜버 조코딩이 AI 모델 클로드(Claude)를 활용해 수학계의 난제인 리만 가설에 도전한 실험 결과를 공유한 영상이다. 구체적인 접근 방식과 결과는 영상 본문에서 확인할 수 있다.",
+    "why_it_matters": "AI가 미해결 수학 난제에 어떻게 접근하는지 보여주는 흥미로운 사례로, LLM의 수학적 추론 능력의 현주소를 가늠할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.767880291005291,
+    "published_at": "2026-08-18T09:00:13Z"
+  },
+  {
+    "id": "youtube-hFrTbX7FRu8",
+    "section": "video",
+    "title_en": "카카오페이증권은 Codex를 어떻게 활용할까? | OpenAI × AX 인재전쟁",
+    "title_ko": "카카오페이증권의 Codex 활용법 — AI 에이전트가 만든 투자 동반자",
+    "url": "https://www.youtube.com/watch?v=hFrTbX7FRu8",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "카카오페이증권 AI 서비스 센터 이형주 센터장이 OpenAI 후원 행사 'AX 인재전쟁'에서 자사의 AI 활용 방식을 공개했다. 고객 상담부터 투자 동반자 역할까지 Codex를 비롯한 AI 에이전트를 핵심 도구로 사용하고 있으며, '에이전트가 없었다면 그냥 판타지였을 것'이라고 평가했다. 속도·퀄리티·모델 선택 등 실무 관점의 인사이트도 함께 소개됐다.",
+    "why_it_matters": "국내 금융사가 Codex 기반 AI 에이전트를 실제 서비스에 적용한 구체적인 사례로, 금융 도메인 AI 도입의 현실적인 수준을 가늠할 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.7678687169312169,
+    "published_at": "2026-08-18T09:00:06Z"
+  },
+  {
+    "id": "latent_space-glean-model-routing",
+    "section": "deepdive",
+    "title_en": "Frontier Model Cost and Open-Weights Popularity is Driving Demand for Model Routing",
+    "title_ko": "프론티어 모델 비용과 오픈소스 인기가 모델 라우팅 수요를 견인",
+    "url": "https://www.latent.space/p/glean-model-routing",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "Glean CEO Arvind Jain은 모델 라우팅이 조직의 AI 비용을 절감하는 데 어떻게 도움이 되는지 설명한다. 프론티어 모델의 높은 비용과 오픈웨이트 모델의 인기 증가가 라우팅 수요를 높이는 주요 요인으로 꼽힌다. 또한 대규모 인간 피드백 루프가 라우팅 시스템의 성능을 지속적으로 개선하는 방식도 소개된다.",
+    "why_it_matters": "AI 비용 최적화가 기업의 핵심 과제로 떠오르면서, 모델 라우팅은 실용적인 비용 절감 전략으로 주목받고 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8433713624338625,
+    "published_at": "2026-08-18T21:41:10Z"
+  }
+]
