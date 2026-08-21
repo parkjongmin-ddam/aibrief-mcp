@@ -1,0 +1,375 @@
+[
+  {
+    "id": "hf-2608.17426",
+    "section": "papers",
+    "title_en": "SemComp-Bench: Benchmarking Semantic Task Completion in Video Generation",
+    "title_ko": "SemComp-Bench: 비디오 생성에서 의미론적 작업 완료 평가 벤치마크",
+    "url": "https://huggingface.co/papers/2608.17426",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SemComp-Bench는 비디오 생성 모델이 의도한 결과를 달성하면서 참조 이미지와의 고수준 의미론적 연관성을 유지하는지 평가하는 새로운 벤치마크다. 6개 도메인을 포괄하는 평가 데이터셋 SemComp-Data를 구축하고, VLM 기반의 구조화된 이진 질문 방식으로 결과 달성(OA Score)과 생성 신뢰도(GR Score)를 측정한다. 실험 결과, 현재 대표적인 비디오 생성 모델들도 의도한 결과와 의미론적 기반을 동시에 충족하는 것이 여전히 어려운 과제임을 보여준다.",
+    "why_it_matters": "비디오 생성 모델의 '결과 중심' 평가 기준을 새롭게 제시해, 기존 외형 일관성 위주 평가의 한계를 극복하는 체계적 프레임워크를 제공한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 6.030437921392435,
+    "published_at": "2026-08-17T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.16590",
+    "section": "papers",
+    "title_en": "Zetta ζ: An Efficient Closed-Loop Embodied Harness for Self-Evolving Physical Intelligence",
+    "title_ko": "Zetta ζ: 물리 환경에서 자가 진화하는 폐루프 구현 에이전트 하네스",
+    "url": "https://huggingface.co/papers/2608.16590",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Zetta는 기존 에이전트 시스템의 한계인 오픈루프 방식을 탈피해, 로봇 실행 중 실시간으로 코드 기반 런타임 비평가와 복구 스킬을 진화시키는 폐루프 하네스다. 세 가지 시간 척도 분리 루프(액션 주파수 거버넌스, 롤아웃 수준 비평-복구, 검증 기반 스킬 업데이트)를 통해 베이스 정책을 고정한 채로 온라인 자기 개선을 수행한다. LIBERO-Pro와 RoboCasa 벤치마크에서 각각 90.8%, 93.6%의 최첨단 성공률을 달성했으며, 11.1배의 추론 속도 향상과 제로샷 스킬 전이도 확인됐다.",
+    "why_it_matters": "로봇 물리 실행 중 실시간 자가 진화가 가능한 폐루프 시스템으로, 신뢰할 수 있는 물리 지능의 스케일링 경로를 열었다는 점에서 주목할 만하다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 5.875197323201151,
+    "published_at": "2026-08-16T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.18565",
+    "section": "papers",
+    "title_en": "SemaPLC: A Project-Grounded, Verification-Gated Agent Harness for PLC Code Generation",
+    "title_ko": "SemaPLC: PLC 코드 생성을 위한 프로젝트 기반 검증 게이트 에이전트 하네스",
+    "url": "https://huggingface.co/papers/2608.18565",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SemaPLC는 산업용 PLC 코드 생성을 위해 외부 검증이 통과될 때만 작업 완료로 선언하는 에이전트 하네스다. 사양 확인, 컴파일, 실제 런타임 동작까지 세 단계 검증을 거치며, 기존 벤치마크 117개 POU 태스크에서 평균 72.6%의 엄격한 검증 통과율을 달성했다. 특히 동적 행동 점수에서 기존 방법(22.4~31.4)을 크게 앞선 52.2를 기록하며, 정적 점수가 아닌 실행 기반 검증의 중요성을 입증했다. 코드는 GitHub에 오픈소스로 공개되어 있다.",
+    "why_it_matters": "LLM이 생성한 산업용 제어 로직의 실제 동작 신뢰성을 검증하는 프레임워크로, 제조·자동화 분야 AI 코드 생성의 실용적 신뢰성을 크게 높일 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 5.718498871295094,
+    "published_at": "2026-08-18T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.17253",
+    "section": "papers",
+    "title_en": "Co-RL: Unsupervised Reasoning Emerges from Diverse Cohort in Multi-agent RL",
+    "title_ko": "Co-RL: 다중 에이전트 강화학습을 통한 비지도 추론 능력 창발",
+    "url": "https://huggingface.co/papers/2608.17253",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Co-RL은 정답 레이블 없이 여러 독립 모델이 서로의 출력을 보상 신호로 활용해 동시에 학습하는 협력적 다중 에이전트 RL 프레임워크다. 모델 패밀리, 크기, 학습 샘플 다양성을 높여 자기강화 피드백 루프로 인한 편향과 훈련 붕괴를 방지한다. 텍스트 전용 벤치마크 7개에서 평균 3.0~8.6%, 멀티모달 벤치마크 4개에서 2.3~7.2% 성능 향상을 달성하며 일부 지도학습 방식과 동등하거나 우수한 결과를 보였다.",
+    "why_it_matters": "고비용의 정답 레이블 없이도 LLM·VLM의 추론 능력을 향상시킬 수 있어, 인간 평가가 어려운 고난도 태스크에서의 RL 적용 가능성을 크게 확장한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.442651256490317,
+    "published_at": "2026-08-18T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.16157",
+    "section": "papers",
+    "title_en": "FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution",
+    "title_ko": "FreeToken: 엣지 환경에서 MoE 모델을 효율적으로 서빙하는 시스템",
+    "url": "https://huggingface.co/papers/2608.16157",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "FreeToken은 데이터센터가 아닌 개인 PC·노트북 등 엣지 하드웨어에서 대형 MoE 모델을 실행하기 위한 서빙 시스템이다. CPU·GPU 이종 자원을 동적으로 활용하고, 에이전트 워크로드의 변화하는 실행 패턴에 맞게 런타임에서 계산과 모델 상태를 유연하게 배치한다. 8GB 노트북 GPU에서 35B 모델, 게이밍 데스크톱에서 284B 모델, 단일 워크스테이션 GPU에서 753B GLM-5.2까지 지원하며, 20개 이상의 MoE 모델과 코딩·도구 사용 에이전트를 실행할 수 있다.",
+    "why_it_matters": "일반 사용자 PC에서 프론티어급 오픈 가중치 모델을 실제로 배포·운영할 수 있는 가능성을 열어, 로컬 AI의 실용적 한계를 크게 끌어올린다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "인프라"
+    ],
+    "score": 5.23410650459726,
+    "published_at": "2026-08-16T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-introducing-ai-futures",
+    "section": "releases",
+    "title_en": "Introducing AI Futures",
+    "title_ko": "AI 미래 블로그 소개: OpenAI의 새로운 거시적 탐구",
+    "url": "https://openai.com/index/introducing-ai-futures",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 'AI Futures'라는 새로운 블로그를 출시했다. 이 블로그는 변혁적 AI가 권력 구조, 거버넌스, 경제, 그리고 개인의 자유를 어떻게 재편할 수 있는지를 탐구한다.",
+    "why_it_matters": "OpenAI가 기술 개발을 넘어 AI의 사회·정치적 영향을 공식적으로 논의하는 채널을 열었다는 점에서 주목할 만하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7559540343915344,
+    "published_at": "2026-08-20T07:00:00Z"
+  },
+  {
+    "id": "github_trending-chaitanyagiri/munder-difflin",
+    "section": "releases",
+    "title_en": "chaitanyagiri/munder-difflin",
+    "title_ko": "Munder Difflin: 로컬 멀티 에이전트 오케스트레이션 데스크톱 앱",
+    "url": "https://github.com/chaitanyagiri/munder-difflin",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Munder Difflin은 Claude Code, OpenAI Codex, xAI Grok 등 다양한 터미널 기반 AI 코딩 CLI를 멀티 에이전트로 묶어 로컬에서 자율 협업시키는 오픈소스 Electron 앱이다. 각 에이전트는 2D 오피스 플로어에서 아바타로 시각화되며, GOD 에이전트(Michael)가 작업 배분과 라우팅을 담당한다. 에이전트 간 메일박스·공유 블랙보드·장기 메모리 레이어를 통해 세션 간 정보를 공유하며 자율적으로 작업을 수행한다. 현재 v0.4.4 워킹 프로토타입으로 macOS, Windows, Linux를 지원한다.",
+    "why_it_matters": "이미 구독 중인 AI 코딩 CLI를 추가 비용 없이 로컬 멀티 에이전트 팀으로 전환해 병렬 자율 작업을 가능하게 한다는 점에서 개발자 생산성 도구의 새로운 방향을 제시한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7274751984126984,
+    "published_at": "2026-08-20T02:12:56Z"
+  },
+  {
+    "id": "github_trending-mukul975/Anthropic-Cybersecurity-Skills",
+    "section": "releases",
+    "title_en": "mukul975/Anthropic-Cybersecurity-Skills",
+    "title_ko": "AI 에이전트를 위한 오픈소스 사이버보안 스킬 라이브러리 817종 공개",
+    "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "AI 에이전트가 시니어 보안 분석가 수준의 판단을 내릴 수 있도록 구조화된 817개의 사이버보안 스킬을 모아놓은 오픈소스 프로젝트다. MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF, MITRE F3 등 6개 프레임워크에 매핑되어 있으며 29개 보안 도메인을 커버한다. Claude Code, GitHub Copilot, Gemini CLI 등 26개 이상의 AI 플랫폼과 호환되며 Apache 2.0 라이선스로 제공된다.",
+    "why_it_matters": "AI 에이전트에게 실무 보안 전문가의 체계적인 플레이북을 제공함으로써, 범용 LLM이 실질적인 보안 업무(침해사고 대응, 위협 헌팅, 포렌식 등)를 수행할 수 있게 하는 첫 번째 대규모 표준화 스킬셋이다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7274751984126984,
+    "published_at": "2026-08-20T02:12:56Z"
+  },
+  {
+    "id": "github_trending-jundot/omlx",
+    "section": "releases",
+    "title_en": "jundot/omlx",
+    "title_ko": "oMLX: Apple Silicon Mac을 위한 LLM 추론 서버",
+    "url": "https://github.com/jundot/omlx",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "oMLX는 Apple Silicon(M1~M4) Mac에 최적화된 LLM 추론 서버로, 연속 배칭(continuous batching)과 RAM+SSD 2단계 KV 캐시를 지원합니다. macOS 메뉴바 앱(Swift/SwiftUI)과 CLI를 통해 편리하게 관리할 수 있으며, OpenAI 및 Anthropic API와 호환됩니다. LLM, VLM, OCR, 임베딩, 리랭커 모델을 하나의 서버에서 멀티 모델로 서빙할 수 있고, 웹 기반 어드민 대시보드도 제공합니다.",
+    "why_it_matters": "로컬 Mac에서 프로덕션 수준의 LLM 서버 환경을 메뉴바 앱으로 간단하게 구축할 수 있어, Claude Code 등 AI 코딩 도구와의 연계가 실용적으로 가능해진다.",
+    "tags": [
+      "LLM",
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 0.7274751984126984,
+    "published_at": "2026-08-20T02:12:56Z"
+  },
+  {
+    "id": "openai_blog-stampli",
+    "section": "releases",
+    "title_en": "Stampli cuts launch hours by 68% using ChatGPT Work",
+    "title_ko": "Stampli, ChatGPT Work로 출시 소요 시간 68% 단축",
+    "url": "https://openai.com/index/stampli",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "기업 결제 자동화 솔루션 Stampli은 고정된 출시 기한과 부족한 디자인 리소스 문제를 해결하기 위해 Codex와 ChatGPT Work를 활용했다. 그 결과 기존에 몇 주가 걸리던 출시 프로덕션 작업을 며칠로 압축하며 소요 시간을 68% 줄이는 데 성공했다.",
+    "why_it_matters": "AI 코딩·업무 도구가 실제 제품 출시 일정을 획기적으로 단축시킬 수 있음을 보여주는 구체적인 기업 사례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-offering-zero-data-retention-for-frontier-models",
+    "section": "releases",
+    "title_en": "Offering Zero Data Retention for frontier models",
+    "title_ko": "OpenAI, 프론티어 모델에 제로 데이터 보존 정책 제공",
+    "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 적격 API 고객을 대상으로 제로 데이터 보존(ZDR) 정책을 재확인했다. 이와 함께 데이터 프라이버시를 침해하지 않으면서 고급 AI 안전성을 확보하는 'Private Safety Processing' 기능을 예고했다. 기업 고객이 민감한 데이터를 다루면서도 OpenAI의 최신 모델을 활용할 수 있는 환경을 강화하는 행보다.",
+    "why_it_matters": "데이터 프라이버시가 중요한 기업 고객이 최신 AI 모델을 안심하고 도입할 수 있는 기반이 마련된다는 점에서 의미가 크다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.6845254629629629,
+    "published_at": "2026-08-19T19:00:00Z"
+  },
+  {
+    "id": "openai_blog-replit",
+    "section": "releases",
+    "title_en": "Replit expands access to software creation with GPT-5.6 Luna",
+    "title_ko": "Replit, GPT-4.1 Luna 기반 무료 모드로 소프트웨어 개발 접근성 확대",
+    "url": "https://openai.com/index/replit",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Replit이 GPT-4.1 Luna를 활용한 Free Mode를 도입해 누구나 토큰 비용 걱정 없이 아이디어를 실제 작동하는 소프트웨어로 구현할 수 있게 됐다. 이를 통해 소프트웨어 개발의 진입 장벽을 낮추는 것이 목표다.",
+    "why_it_matters": "AI 기반 코딩 플랫폼의 무료화로 비개발자도 손쉽게 소프트웨어를 만들 수 있는 시대가 가속화된다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.6130968915343915,
+    "published_at": "2026-08-19T07:00:00Z"
+  },
+  {
+    "id": "hn-49379550",
+    "section": "community",
+    "title_en": "Aaron Swartz was prosecuted for scraping, while Meta does it without consequence",
+    "title_ko": "애런 스워츠는 스크래핑으로 기소됐지만, 메타는 아무런 제재 없이 같은 행위를 한다",
+    "url": "https://blog.curiousquail.com/im-upset-again-about-a-co-creator-of-rss-being-prosecuted-for-something-meta-is-doing-with-little-consequence/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "해커뉴스에서 애런 스워츠가 데이터 스크래핑으로 연방 기소를 받은 반면, 메타 같은 대형 기업은 유사한 행위를 아무런 법적 결과 없이 자행하고 있다는 점을 지적하는 글이 화제가 되고 있다. 이는 법 집행의 형평성과 빅테크에 대한 이중 잣대 문제를 제기한다.",
+    "why_it_matters": "AI 학습 데이터 수집을 위한 대규모 스크래핑이 보편화된 시대에, 법적 기준이 개인과 대기업에 어떻게 다르게 적용되는지에 대한 근본적 질문을 던진다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 10.206131527202128,
+    "published_at": "2026-08-20T20:07:26Z"
+  },
+  {
+    "id": "hn-49373456",
+    "section": "community",
+    "title_en": "Show HN: I trained a 125M model to autocomplete piano on-device",
+    "title_ko": "125M 파라미터 모델로 온디바이스 피아노 자동완성 구현",
+    "url": "https://simedw.com/2026/08/20/midi-autocomplete/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "개발자가 1억 2500만 파라미터 규모의 모델을 학습시켜 기기 내에서 직접 피아노 연주를 자동완성하는 기능을 구현했다. 서버 없이 온디바이스에서 동작하는 점이 특징이다.",
+    "why_it_matters": "소형 언어 모델을 음악 생성에 적용해 온디바이스 추론 가능성을 실증한 사례로, 엣지 AI 활용 범위 확장에 시사점을 준다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 9.50550565095797,
+    "published_at": "2026-08-20T12:04:38Z"
+  },
+  {
+    "id": "hn-49378630",
+    "section": "community",
+    "title_en": "Watching TikTok and Instagram deactivates the cognitive control network: Study",
+    "title_ko": "틱톡·인스타그램 시청, 뇌의 인지 제어 네트워크를 비활성화한다는 연구",
+    "url": "https://www.rathbiotaclan.com/tiktok-videos-deactivate-key-cognitive-brain-regions/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "새로운 연구에 따르면 틱톡과 인스타그램 같은 숏폼 콘텐츠를 시청할 때 뇌의 인지 제어 네트워크가 비활성화되는 것으로 나타났다. 인지 제어 네트워크는 집중력, 의사결정, 자기 조절 등 고차원적 사고와 관련된 뇌 회로다.",
+    "why_it_matters": "숏폼 소셜미디어 사용이 인간의 인지 능력에 미치는 신경학적 영향을 실증적으로 보여주는 연구로, AI 추천 알고리즘의 사회적 영향에 대한 논의를 촉발할 수 있다.",
+    "tags": [],
+    "score": 9.037017176527662,
+    "published_at": "2026-08-20T18:54:32Z"
+  },
+  {
+    "id": "hn-49375996",
+    "section": "community",
+    "title_en": "Vomit: Clean up Claude 5's token output with a separate LLM",
+    "title_ko": "Vomit: 별도 LLM으로 Claude 5의 토큰 출력 정리하기",
+    "url": "https://github.com/zachahn/vomit",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "'Vomit'은 Claude 5의 토큰 출력을 별도의 LLM을 활용해 정제·정리하는 도구로 소개되었다. 제목만으로는 구체적인 구현 방식이나 세부 기능을 파악하기 어렵다.",
+    "why_it_matters": "LLM 출력 후처리 파이프라인에 관심 있는 개발자에게 참고할 만한 접근법일 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.745976349589425,
+    "published_at": "2026-08-20T15:26:02Z"
+  },
+  {
+    "id": "hn-49378768",
+    "section": "community",
+    "title_en": "Show HN: Huzzah – a novel approach to coding with AI",
+    "title_ko": "Huzzah – AI 코딩을 위한 새로운 접근법",
+    "url": "https://www.danielvaughn.dev/posts/huzzah/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Huzzah는 AI를 활용한 코딩에 새로운 방식을 제시하는 프로젝트다. 구체적인 세부 사항은 공개된 설명이 없어 확인하기 어렵다.",
+    "why_it_matters": "AI 코딩 도구의 새로운 접근법으로 주목받고 있으나, 상세 내용 확인이 필요하다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 8.637968829394156,
+    "published_at": "2026-08-20T19:05:36Z"
+  },
+  {
+    "id": "youtube-YvzcLPUTrOg",
+    "section": "video",
+    "title_en": "미친 속도로 결과물이 나온다는 GPT 근황",
+    "title_ko": "GPT로 미친 속도로 결과물 뽑는 방법 (조코딩)",
+    "url": "https://www.youtube.com/shorts/YvzcLPUTrOg",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 GPT를 활용해 빠르게 결과물을 만들어내는 방법을 소개하는 영상이다. 바이브 코딩 기반의 1인 창업 및 AI 활용 노하우를 다루는 콘텐츠로, 관련 책과 컨설팅 서비스도 함께 안내하고 있다.",
+    "why_it_matters": "GPT를 실무에 빠르게 적용하려는 한국 개발자·창업자에게 실용적인 참고 사례가 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7738144841269841,
+    "published_at": "2026-08-20T10:00:02Z"
+  },
+  {
+    "id": "youtube-iXt4pp8BI8A",
+    "section": "video",
+    "title_en": "삼일PwC는 Codex를 어떻게 활용할까? | OpenAI × AX 인재전쟁",
+    "title_ko": "삼일PwC는 OpenAI Codex를 어떻게 활용하나? | AX 인재전쟁 인터뷰",
+    "url": "https://www.youtube.com/watch?v=iXt4pp8BI8A",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "삼일PwC AX Node 파트너 조홍래 공인회계사가 컨설팅 현장에서 ChatGPT Work와 Codex를 활용하는 방식을 공개했습니다. 기존에 PPT·보고서로 끝나던 컨설팅 산출물이 이제는 AI 에이전트로 바뀌어, 컨설턴트가 직접 딜리버리까지 담당하게 됐다고 설명합니다. Codex는 컨설턴트의 아이디어를 에이전트로 구현하거나 개발 초기 방향 설정에 활용되며, 사용자 체감 기준에서 '내 마음속 SOTA 모델'로 평가받고 있습니다.",
+    "why_it_matters": "대형 회계·컨설팅 법인이 AI 에이전트를 실제 업무 산출물로 도입한 구체적 사례로, 기업 AX(AI 전환) 트렌드의 현장 적용 수준을 가늠할 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.7679183201058202,
+    "published_at": "2026-08-20T09:00:36Z"
+  },
+  {
+    "id": "youtube-1jYthEo0pFk",
+    "section": "video",
+    "title_en": "이젠 공짜 리셋은 안해준다는 오픈AI..?",
+    "title_ko": "오픈AI, 무료 리셋 정책 변경?",
+    "url": "https://www.youtube.com/shorts/1jYthEo0pFk",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 오픈AI의 리셋 정책 변화에 대해 다루는 영상이다. 영상 설명에는 구체적인 내용이 포함되어 있지 않아 세부 사항은 확인이 필요하다.",
+    "why_it_matters": "오픈AI의 정책 변화는 GPT를 활용하는 국내 개발자와 1인 창업자에게 직접적인 영향을 줄 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7678918650793651,
+    "published_at": "2026-08-20T09:00:20Z"
+  },
+  {
+    "id": "simon_willison-chatgpt-search-now-uses-the-siteoperator-at-scale",
+    "section": "deepdive",
+    "title_en": "ChatGPT search now uses the site:operator at scale",
+    "title_ko": "ChatGPT 검색, site: 연산자를 대규모로 활용하기 시작",
+    "url": "https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Promptwatch의 추적 데이터에 따르면, GPT-5.6 롤아웃 이후인 8월 8일부터 ChatGPT 검색의 팬아웃 쿼리 중 site: 연산자 사용 비율이 기존 0.3~0.5%에서 16~17%로 급증했다. 이는 OpenAI가 8월 6일 발표한 'GPT-5.6 Sol의 사실 신뢰성 및 집중도 개선'과 시기적으로 일치한다. Simon Willison은 내부 검색 도구가 site: 연산자를 직접 사용하는 대신 domains 파라미터를 포함한 함수 형태로 구현된 것으로 추정하고 있다.",
+    "why_it_matters": "ChatGPT의 검색 방식 변화는 GEO(생성형 엔진 최적화) 전략에 직접적인 영향을 미치며, SEO처럼 AI 답변 내 노출 최적화가 새로운 마케팅 과제로 부상하고 있음을 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8568998015873016,
+    "published_at": "2026-08-20T23:57:32Z"
+  }
+]
