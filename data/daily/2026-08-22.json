@@ -1,0 +1,374 @@
+[
+  {
+    "id": "hf-2608.19880",
+    "section": "papers",
+    "title_en": "EnvHarness: Awakening Static Worlds for Agent Learning",
+    "title_ko": "EnvHarness: 정적 환경을 동적 에이전트 학습 환경으로 전환하는 프레임워크",
+    "url": "https://huggingface.co/papers/2608.19880",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LLM 에이전트는 환경과 상호작용하며 학습하지만, 기존 환경은 정적이어서 에이전트의 약점을 반영하지 못한다. EnvHarness는 기존 환경의 로직을 수정하지 않고 플러그인 컴포넌트로 감싸 동적으로 동작을 재구성하는 프로그래머블 레이어다. EnvRigger를 통해 에이전트의 실행 궤적을 관찰하고 약점을 진단해 자동으로 환경을 조정하며, 4개 도메인 5개 벤치마크에서 최대 9.0포인트 성능 향상과 9.8% 적은 실행 단계를 달성했다.",
+    "why_it_matters": "도메인별 파이프라인 없이도 정적 환경을 적응형 학습 환경으로 전환해 RL 기반 에이전트 훈련의 효율성을 크게 높일 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 6.4638318050256105,
+    "published_at": "2026-08-19T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.17426",
+    "section": "papers",
+    "title_en": "SemComp-Bench: Benchmarking Semantic Task Completion in Video Generation",
+    "title_ko": "SemComp-Bench: 비디오 생성의 의미론적 작업 완료 평가 벤치마크",
+    "url": "https://huggingface.co/papers/2608.17426",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SemComp-Bench는 비디오 생성 모델이 의도한 결과물을 달성하고 참조 이미지와의 고수준 의미론적 일치를 유지하는지 평가하는 새로운 벤치마크다. 6개 도메인을 커버하는 평가 데이터셋 SemComp-Data를 구축하고, VLM 기반의 구조화된 이진 질문 프로토콜로 결과 달성(OA Score)과 생성 신뢰도(GR Score)를 측정한다. 실험 결과, 현재 대표적인 비디오 생성 모델들은 의미론적 접지를 유지하면서 의도한 결과를 달성하는 데 여전히 어려움을 겪고 있음을 보여준다.",
+    "why_it_matters": "비디오 생성 모델의 실질적 활용 가능성을 의미 중심으로 평가하는 새로운 기준을 제시해, 기존 외형 일관성 중심 평가의 한계를 극복한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 6.049856007249537,
+    "published_at": "2026-08-17T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.16590",
+    "section": "papers",
+    "title_en": "Zetta ζ: An Efficient Closed-Loop Embodied Harness for Self-Evolving Physical Intelligence",
+    "title_ko": "Zetta ζ: 물리적 지능을 위한 자기 진화형 폐루프 구현 에이전트 하네스",
+    "url": "https://huggingface.co/papers/2608.16590",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Zetta는 기존 에이전트 시스템의 개방형 루프 한계를 극복하는 폐루프(closed-loop) 구현 에이전트 하네스다. 런타임 비평가(critic)와 복구 스킬을 온라인으로 진화시키면서 기반 정책은 고정 상태로 유지하며, 세 가지 시간 척도로 분리된 루프를 통해 실시간 로봇 제어를 가능하게 한다. LIBERO-Pro에서 90.8%, RoboCasa에서 93.6%의 성공률을 달성했으며, 추론 속도는 11.1배 향상됐다. 학습된 스킬은 제로샷 전이가 가능하고, 자기 탐색 경험이 늘수록 성능도 지속적으로 향상된다.",
+    "why_it_matters": "폐루프 자기 진화 방식으로 로봇 물리 지능의 신뢰성과 확장성을 동시에 확보하는 새로운 경로를 제시한다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 5.948759890378168,
+    "published_at": "2026-08-16T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.18565",
+    "section": "papers",
+    "title_en": "SemaPLC: A Project-Grounded, Verification-Gated Agent Harness for PLC Code Generation",
+    "title_ko": "SemaPLC: 검증 게이트 기반 PLC 코드 생성 에이전트 하네스",
+    "url": "https://huggingface.co/papers/2608.18565",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SemaPLC는 산업용 PLC(프로그래머블 로직 컨트롤러) 코드를 생성하는 LLM 기반 에이전트 하네스로, 모델 자체 판단 대신 외부 검증(컴파일·정적 분석·동적 런타임 실행)이 통과해야만 작업 완료로 간주한다. 기존 벤치마크 117개 독립 POU 태스크에서 7개 모델 모두 최고의 엄격 검증 통과율(평균 72.6%)을 달성했으며, 65개 프로젝트 컨텍스트 태스크에서도 통합 컴파일·정적·동적 행동 모두 최고 성능을 기록했다. 특히 동적 점수에서 기준 모델들이 22.4~31.4점에 그친 반면 SemaPLC는 52.2점을 달성해 런타임 실행 검증의 중요성을 입증했다. 소스코드는 GitHub에 오픈소스로 공개되었다.",
+    "why_it_matters": "산업 제어 시스템에 LLM을 실제 적용할 때 정적 평가만으로는 신뢰할 수 없으며, 런타임 실행 검증이 필수임을 체계적으로 증명한 첫 오픈소스 프레임워크다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 5.74493212836325,
+    "published_at": "2026-08-18T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.18580",
+    "section": "papers",
+    "title_en": "FACET: Preserving Source Intent and Executable State in Terminal Task Synthesis",
+    "title_ko": "FACET: 터미널 에이전트 학습을 위한 실행 가능한 태스크 합성 프레임워크",
+    "url": "https://huggingface.co/papers/2608.18580",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "터미널 에이전트 학습에는 실행 가능한 고품질 태스크가 필요하지만, 지시문·환경·솔루션·검증기 간 불일치로 풀 수 없는 태스크가 생성되는 문제가 있다. FACET은 관련 에이전트 스킬을 일관된 시나리오로 재구성하고, 실행 환경을 먼저 구축한 뒤 최종 태스크 아티팩트를 생성함으로써 아티팩트 간 일관성을 보장한다. 실행 기반 검증과 타깃 수리(repair)를 통해 유효한 구성 요소는 재생성하지 않고 문제만 교정한다. Terminal-Bench 2.1에서 다양한 모델 규모에 걸쳐 성능 향상이 확인되었다.",
+    "why_it_matters": "터미널 에이전트의 확장 가능한 학습 데이터 합성에서 환경 공유 그라운딩과 소스 의도 보존이 핵심임을 실증적으로 확립한 연구다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 5.68213122712422,
+    "published_at": "2026-08-18T20:00:00Z"
+  },
+  {
+    "id": "github_trending-akitaonrails/ai-memory",
+    "section": "releases",
+    "title_en": "akitaonrails/ai-memory",
+    "title_ko": "ai-memory: 여러 AI 코딩 에이전트 간 장기 메모리 공유 도구",
+    "url": "https://github.com/akitaonrails/ai-memory",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "ai-memory는 Claude Code, Codex, Cursor 등 다양한 AI 코딩 CLI 에이전트 간에 세션 컨텍스트를 영구적으로 보존하고 인계(handoff)할 수 있는 오픈소스 도구다. 세션이 끝나도 작업 내용, 결정 사항, 실패한 시도 등을 마크다운 기반 위키로 컴파일해 저장하며, 다음 세션에서 어떤 에이전트를 사용하든 이어서 작업할 수 있다. Rust로 작성된 단일 바이너리로 MCP/HTTP 서버를 실행하며, LLM 없이도 FTS5 검색이 동작하는 제로-LLM 모드를 지원한다.",
+    "why_it_matters": "에이전트 벤더를 바꾸거나 세션을 재시작할 때마다 컨텍스트를 다시 설명해야 하는 개발자의 고질적 문제를 해결하며, 멀티 에이전트 워크플로를 실질적으로 가능하게 한다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7281977513227513,
+    "published_at": "2026-08-21T02:20:13Z"
+  },
+  {
+    "id": "github_trending-agent-substrate/substrate",
+    "section": "releases",
+    "title_en": "agent-substrate/substrate",
+    "title_ko": "Agent Substrate: Google의 대규모 AI 에이전트 실행 인프라 오픈소스 공개",
+    "url": "https://github.com/agent-substrate/substrate",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Agent Substrate는 대규모 에이전트 배포를 위한 고성능 런타임 환경으로, Kubernetes 위에서 동작하며 에이전트 샌드박스의 전체 라이프사이클을 관리한다. 핵심 기능은 1초 미만의 에이전트 일시정지·재개(suspend/resume), 상태 스냅샷을 통한 영구 메모리 보존, 그리고 30배 이상의 오버서브스크립션(8개 파드에 250개 액터 멀티플렉싱)이다. LangChain, Claude Code, MCP 등 다양한 프레임워크와 호환되며, microVM 및 gVisor 기반 샌드박스를 지원한다. 현재 초기 개발 단계로 프로덕션 사용은 권장되지 않는다.",
+    "why_it_matters": "AI 에이전트를 저비용 인프라에서 대규모로 운용하기 위한 핵심 스케줄링·멀티플렉싱 레이어를 오픈소스로 제공해, 에이전트 인프라 표준화에 중요한 기점이 될 수 있다.",
+    "tags": [
+      "에이전트",
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 0.7281977513227513,
+    "published_at": "2026-08-21T02:20:13Z"
+  },
+  {
+    "id": "github_trending-chaitanyagiri/munder-difflin",
+    "section": "releases",
+    "title_en": "chaitanyagiri/munder-difflin",
+    "title_ko": "Munder Difflin: 로컬 멀티에이전트 하네스 오픈소스 공개",
+    "url": "https://github.com/chaitanyagiri/munder-difflin",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Munder Difflin은 Claude Code, OpenAI Codex, xAI Grok 등 다양한 터미널 에이전트 CLI를 하나의 로컬 멀티에이전트 팀으로 묶어주는 오픈소스 데스크톱 앱입니다. 'GOD 에이전트(Michael)'가 작업을 분배·조율하고, 각 에이전트는 장기 메모리와 메일박스를 가지며 2D 오피스 플로어에 아바타로 시각화됩니다. Electron·React·TypeScript·Pixi.js 기반으로 macOS·Windows·Linux를 지원하며, MIT 라이선스로 공개(v0.4.4)되어 있습니다.",
+    "why_it_matters": "이미 구독 중인 AI 코딩 CLI들을 추가 비용 없이 자율 협업 에이전트 팀으로 전환할 수 있어, 로컬 멀티에이전트 워크플로 구축의 진입 장벽을 크게 낮춥니다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7281977513227513,
+    "published_at": "2026-08-21T02:20:13Z"
+  },
+  {
+    "id": "github_trending-Tencent/AI-Infra-Guard",
+    "section": "releases",
+    "title_en": "Tencent/AI-Infra-Guard",
+    "title_ko": "Tencent AI-Infra-Guard: 풀스택 AI 레드팀 보안 플랫폼",
+    "url": "https://github.com/Tencent/AI-Infra-Guard",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "텐센트 주작랩이 개발한 오픈소스 AI 보안 플랫폼으로, 에이전트 스캔·MCP 서버 스캔·AI 인프라 취약점 스캔(2000개 이상 CVE 규칙)·LLM 탈옥 평가 등을 통합 제공한다. Ollama, vLLM, ComfyUI 등 100개 이상의 AI 프레임워크 컴포넌트를 지원하며 Docker로 간편하게 배포할 수 있다. Apache 2.0 라이선스로 공개되어 있으며, Black Hat Europe 2025 Arsenal에 소개된 바 있다.",
+    "why_it_matters": "AI 에이전트·인프라 보안 위협이 급증하는 가운데, 에이전트 스킬부터 MCP·LLM 탈옥까지 전 계층을 단일 플랫폼에서 자동 점검할 수 있는 실용적인 오픈소스 도구다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "인프라"
+    ],
+    "score": 0.7281977513227513,
+    "published_at": "2026-08-21T02:20:13Z"
+  },
+  {
+    "id": "github_trending-RyanCodrai/turbovec",
+    "section": "releases",
+    "title_en": "RyanCodrai/turbovec",
+    "title_ko": "turbovec: Google TurboQuant 기반 Rust 벡터 인덱스 (Python 바인딩 포함)",
+    "url": "https://github.com/RyanCodrai/turbovec",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "turbovec는 Google Research의 TurboQuant 알고리즘을 기반으로 Rust로 작성된 벡터 인덱스 라이브러리로, Python 바인딩을 통해 쉽게 사용할 수 있다. 1천만 문서 코퍼스 기준 float32 대비 메모리를 31GB에서 4GB로 줄이면서 FAISS보다 빠른 검색 속도를 제공한다. 별도 학습 단계 없이 온라인 벡터 추가가 가능하며, LangChain·LlamaIndex·Haystack·Agno 등 주요 RAG 프레임워크와의 드롭인 통합도 지원한다. 완전 로컬 동작으로 데이터가 외부로 전송되지 않아 프라이버시 중심 RAG 스택 구축에 적합하다.",
+    "why_it_matters": "FAISS 대비 최대 3.5배 빠른 검색과 8배 이상의 메모리 압축을 로컬에서 제공해, 프라이버시와 성능 모두를 요구하는 RAG 시스템 구축의 현실적 대안이 된다.",
+    "tags": [
+      "RAG",
+      "오픈소스"
+    ],
+    "score": 0.7281977513227513,
+    "published_at": "2026-08-21T02:20:13Z"
+  },
+  {
+    "id": "openai_blog-introducing-ai-futures",
+    "section": "releases",
+    "title_en": "Introducing AI Futures",
+    "title_ko": "AI Futures 소개: OpenAI의 새로운 AI 미래 탐구 블로그",
+    "url": "https://openai.com/index/introducing-ai-futures",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 'AI Futures'라는 새로운 블로그를 출시했다. 이 블로그는 변혁적 AI가 권력, 거버넌스, 경제, 개인의 자유를 어떻게 재편할 수 있는지를 탐구한다.",
+    "why_it_matters": "OpenAI가 AI의 사회·정치적 영향력을 공식적으로 다루는 채널을 개설함으로써, AI 거버넌스 담론에서의 영향력을 더욱 확대할 것으로 주목된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6130968915343915,
+    "published_at": "2026-08-20T07:00:00Z"
+  },
+  {
+    "id": "openai_blog-stampli",
+    "section": "releases",
+    "title_en": "Stampli cuts launch hours by 68% using ChatGPT Work",
+    "title_ko": "Stampli, ChatGPT Work 활용해 출시 준비 시간 68% 단축",
+    "url": "https://openai.com/index/stampli",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Stampli은 고정된 마감일과 디자인 리소스 부족이라는 제약 속에서 Codex와 ChatGPT Work를 활용해 수 주가 걸리던 출시 작업을 며칠 만에 완료했다. 이를 통해 전체 출시 준비 시간을 68% 줄이는 성과를 달성했다.",
+    "why_it_matters": "AI 코딩 도구가 실제 기업 환경에서 출시 일정을 획기적으로 단축할 수 있음을 보여주는 구체적인 사례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.5714302248677249,
+    "published_at": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "hn-49383026",
+    "section": "community",
+    "title_en": "AI companies destroy physical books – let's scan rare books before it's too late",
+    "title_ko": "AI 기업들이 실물 책을 파괴한다 – 희귀 도서를 늦기 전에 스캔하자",
+    "url": "https://annas-archive.gl/blog/physical-destruction.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI 기업들의 활동으로 인해 물리적 도서가 훼손되거나 소실될 위험이 있다는 우려가 제기되고 있다. 필자는 희귀 도서들이 영구적으로 사라지기 전에 디지털로 보존하는 작업을 서둘러야 한다고 주장한다.",
+    "why_it_matters": "AI 학습 데이터 확보 과정에서 희귀 문화유산 도서의 물리적 보존이 위협받을 수 있다는 경각심을 일깨운다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.605339966634538,
+    "published_at": "2026-08-21T02:37:47Z"
+  },
+  {
+    "id": "hn-49386163",
+    "section": "community",
+    "title_en": "DeepSeek-v4-flash-vision-exp",
+    "title_ko": "DeepSeek-v4-flash-vision-exp 공개",
+    "url": "https://api-docs.deepseek.com/guides/vision/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "DeepSeek에서 v4-flash-vision-exp 모델을 공개했다. 자세한 설명은 제공되지 않았으나, 비전(이미지 이해) 기능을 포함한 실험적 플래시 모델로 보인다.",
+    "why_it_matters": "DeepSeek의 비전 모델 실험적 버전으로, 오픈소스 멀티모달 LLM 생태계에 영향을 줄 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 9.588445202872208,
+    "published_at": "2026-08-21T10:33:56Z"
+  },
+  {
+    "id": "hn-49386699",
+    "section": "community",
+    "title_en": "I'm becoming AI-blind",
+    "title_ko": "나는 AI에 점점 눈이 멀어가고 있다",
+    "url": "https://cymerys.com/w/im-becoming-ai-blind",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "저자는 AI가 생성한 콘텐츠가 넘쳐나면서 이를 무의식적으로 무시하거나 걸러내는 현상, 즉 'AI 맹목성'을 경험하고 있다고 토로한다. 과거 배너 광고에 눈이 익숙해져 보이지 않게 된 '배너 블라인드니스'처럼, AI 콘텐츠에도 유사한 피로 현상이 나타나고 있음을 시사한다.",
+    "why_it_matters": "AI 생성 콘텐츠의 범람이 사용자 신뢰와 주의력에 미치는 영향을 짚는 인사이트로, 개발자와 서비스 기획자 모두가 주목해야 할 UX·콘텐츠 품질 문제다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.280179366030598,
+    "published_at": "2026-08-21T11:48:05Z"
+  },
+  {
+    "id": "hn-49357530",
+    "section": "community",
+    "title_en": "AI boosted homework scores, then exam scores dropped: study",
+    "title_ko": "AI로 숙제 점수는 올랐지만 시험 점수는 떨어진 연구 결과",
+    "url": "https://www.economist.com/graphic-detail/2026/08/18/does-ai-stop-children-from-learning",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI를 활용해 숙제 점수가 향상된 학생들이 실제 시험에서는 오히려 점수가 하락했다는 연구 결과가 나왔다. 이는 AI 도구 사용이 단기적 성과를 높일 수 있지만 실질적인 학습 효과를 저해할 수 있음을 시사한다.",
+    "why_it_matters": "AI 도구의 교육 현장 도입이 학습 역량 강화가 아닌 오히려 저하로 이어질 수 있다는 경고 신호다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.20108048291017,
+    "published_at": "2026-08-19T06:13:31Z"
+  },
+  {
+    "id": "hn-49388752",
+    "section": "community",
+    "title_en": "Claudette: Make Claude stop talking like a BuzzFeed article",
+    "title_ko": "Claudette: Claude가 BuzzFeed 기사체로 말하지 않게 만들기",
+    "url": "https://github.com/adnanakil/nobuzz/blob/main/README.md",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Claudette는 Claude AI의 답변 스타일을 조정하여 과장되거나 자극적인 BuzzFeed 식 문체를 억제하는 도구 또는 프로젝트다. Claude의 기본 응답 톤이 지나치게 흥미 위주로 느껴지는 사용자를 위한 해결책으로 보인다.",
+    "why_it_matters": "LLM 출력 스타일을 세밀하게 제어하고 싶은 개발자에게 실용적인 참고 사례가 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.636095692866402,
+    "published_at": "2026-08-21T14:31:52Z"
+  },
+  {
+    "id": "youtube-EUyJRKopRUY",
+    "section": "video",
+    "title_en": "결국 중국에 한 수 접은 애플...그런데 성능이?",
+    "title_ko": "애플, 중국에 양보한 AI 기능…성능은 어떨까?",
+    "url": "https://www.youtube.com/shorts/EUyJRKopRUY",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 애플이 중국 시장에 맞춰 AI 관련 정책 또는 기능을 양보한 사례를 다루는 영상이다. 구체적인 내용은 영상 본문을 통해 확인할 수 있다.",
+    "why_it_matters": "글로벌 AI 경쟁에서 애플이 중국 시장에 어떤 타협을 했는지 파악하는 데 참고할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7678935185185185,
+    "published_at": "2026-08-21T09:00:21Z"
+  },
+  {
+    "id": "youtube-IoI3LQUctkM",
+    "section": "video",
+    "title_en": "AI 시대, 기업은 어떤 인재를 뽑을까? AX 인재전쟁 본선 스케치 | OpenAI × 조코딩AX파트너스",
+    "title_ko": "AI 실무 능력으로 인재를 뽑는다 – AX 인재전쟁 본선 현장 스케치",
+    "url": "https://www.youtube.com/watch?v=IoI3LQUctkM",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩AX파트너스가 주최하고 OpenAI가 후원한 'AX 인재전쟁' 본선에서 예선 통과 60명이 무신사·카카오페이증권·채널톡 등 6개 기업의 실제 실무 문제를 3시간 안에 AI로 풀었습니다. 기존 토익·수능 같은 시험 대신 AI 활용 실무 역량으로 인재를 평가하는 새로운 선발 방식입니다. 기업 심사위원이 직접 문제를 출제하고 면접까지 진행해 실전성을 높였습니다.",
+    "why_it_matters": "AI 도구 활용 능력을 실무 중심으로 평가하는 채용 모델이 국내 주요 기업에서 실제로 시도되고 있다는 점에서, AI 시대 개발자 채용 기준의 변화를 보여주는 사례다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.7678753306878308,
+    "published_at": "2026-08-21T09:00:10Z"
+  },
+  {
+    "id": "youtube-09omWCAaecY",
+    "section": "video",
+    "title_en": "전문가들도 Suno 쓰는게 개꿀인 이유",
+    "title_ko": "전문가도 Suno를 쓰는 이유",
+    "url": "https://www.youtube.com/shorts/09omWCAaecY",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 AI 음악 생성 도구 Suno가 전문가에게도 유용한 이유를 소개하는 영상이다. 구체적인 내용은 영상 본편에서 다루며, AI 활용 관련 컨설팅 및 교육도 함께 안내하고 있다.",
+    "why_it_matters": "AI 음악 생성 도구 Suno의 실무 활용 가능성을 한국어로 쉽게 접할 수 있는 콘텐츠다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7500033068783069,
+    "published_at": "2026-08-21T06:00:01Z"
+  },
+  {
+    "id": "latent_space-simile",
+    "section": "deepdive",
+    "title_en": "Simulation: the new Scaling Law — Joon Sung Park, Simile AI",
+    "title_ko": "시뮬레이션: 새로운 스케일링 법칙 — Joon Sung Park, Simile AI",
+    "url": "https://www.latent.space/p/simile",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "Simile AI의 CEO Joon Sung Park이 바이럴을 일으킨 'Generative Agents' 연구부터 전 세계 80억 인구의 디지털 트윈을 만드는 프로젝트까지의 여정을 소개한다. 시뮬레이션이 LLM 이후 새로운 스케일링 법칙으로 부상하고 있으며, 단순한 실험적 탐구를 넘어 본격적인 비즈니스 영역으로 진화하고 있다고 밝혔다.",
+    "why_it_matters": "인간 행동을 시뮬레이션하는 디지털 트윈 기술이 AI의 차세대 스케일링 패러다임으로 주목받고 있어, 에이전트 AI 연구와 산업 응용에 큰 영향을 미칠 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.8549255952380952,
+    "published_at": "2026-08-21T23:37:38Z"
+  }
+]
