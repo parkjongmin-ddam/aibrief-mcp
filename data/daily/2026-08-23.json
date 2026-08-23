@@ -1,0 +1,365 @@
+[
+  {
+    "id": "hf-2608.19880",
+    "section": "papers",
+    "title_en": "EnvHarness: Awakening Static Worlds for Agent Learning",
+    "title_ko": "EnvHarness: 정적 환경을 에이전트 학습을 위한 동적 환경으로 전환하는 프레임워크",
+    "url": "https://huggingface.co/papers/2608.19880",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LLM 에이전트 학습에 사용되는 환경은 대부분 수작업으로 구축된 정적 환경으로, 에이전트의 약점을 반영하지 못하는 한계가 있다. EnvHarness는 기존 환경의 내부 로직을 수정하지 않고 플러그인 컴포넌트를 덧씌워 환경 동작을 재구성하는 프로그래머블 레이어다. 자동화 도구인 EnvRigger는 에이전트의 실행 궤적을 관찰해 약점을 진단하고 이를 타겟으로 하는 EnvHarness 컴포넌트를 합성한다. 5개 벤치마크에서 기존 환경 대비 최대 9.0포인트 성능 향상과 9.8% 적은 실행 스텝을 달성했다.",
+    "why_it_matters": "도메인별 파이프라인 재구축 없이 기존 정적 환경을 동적으로 적응시켜 에이전트 강화학습의 효율성과 성능을 동시에 높일 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 6.5093883366279774,
+    "published_at": "2026-08-19T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.17426",
+    "section": "papers",
+    "title_en": "SemComp-Bench: Benchmarking Semantic Task Completion in Video Generation",
+    "title_ko": "SemComp-Bench: 비디오 생성의 의미론적 작업 완료 평가 벤치마크",
+    "url": "https://huggingface.co/papers/2608.17426",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SemComp-Bench는 비디오 생성 모델이 의도한 결과를 달성하면서 참조 이미지와의 고수준 의미론적 대응을 유지하는지 평가하는 새로운 벤치마크다. 6개 도메인을 커버하는 평가 데이터셋 SemComp-Data를 구축했으며, 각 인스턴스는 참조 이미지, 상세 지시문, 간략 지시문, 결과 중심 비디오 클립으로 구성된다. 평가 프로토콜은 VLM을 활용해 Outcome Achievement(OA) 점수와 Generation Reliability(GR) 점수를 측정하며, 실험 결과 현재 모델들은 이 과제에서 여전히 어려움을 겪는 것으로 나타났다.",
+    "why_it_matters": "기존 비디오 생성 평가가 외관 일관성에 집중했던 것과 달리, 의미론적 결과 달성이라는 새로운 평가 축을 제시해 실용적 비디오 생성 연구 방향을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 6.049856007249537,
+    "published_at": "2026-08-17T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.18565",
+    "section": "papers",
+    "title_en": "SemaPLC: A Project-Grounded, Verification-Gated Agent Harness for PLC Code Generation",
+    "title_ko": "SemaPLC: PLC 코드 생성을 위한 프로젝트 기반 검증 게이팅 에이전트 하네스",
+    "url": "https://huggingface.co/papers/2608.18565",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SemaPLC는 산업용 PLC(프로그래머블 로직 컨트롤러) 코드를 LLM으로 생성할 때, 모델 자체 판단이 아닌 외부 검증(컴파일·정적 분석·실제 런타임 실행)이 통과해야만 완료로 인정하는 에이전트 프레임워크다. 117개 독립 POU 태스크에서 평균 72.6%의 엄격한 검증 통과율을 기록하며 비교 모델 7종 모두에서 최고 성능을 달성했다. 특히 동적 실행 점수에서 베이스라인(22.4~31.4)을 크게 앞서 52.2를 기록, 정적 점수만으로는 드러나지 않는 실제 동작 품질 차이를 보여줬다. 오픈소스로 공개됐다.",
+    "why_it_matters": "LLM이 생성한 산업 제어 코드의 신뢰성을 런타임 실행으로 검증하는 체계적 프레임워크로, AI 기반 산업 자동화 코드 품질 평가의 새로운 기준을 제시한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 5.7535901911063645,
+    "published_at": "2026-08-18T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.18580",
+    "section": "papers",
+    "title_en": "FACET: Preserving Source Intent and Executable State in Terminal Task Synthesis",
+    "title_ko": "FACET: 터미널 에이전트 학습을 위한 실행 가능한 태스크 합성 프레임워크",
+    "url": "https://huggingface.co/papers/2608.18580",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "터미널 에이전트 훈련을 위한 고품질 태스크 합성은 명령어·환경·솔루션·검증기 간의 일관성 유지가 핵심 과제다. FACET(Fine-grained Agentic Construction of Executable Tasks)은 관련 에이전트 스킬을 일관된 시나리오로 재구성하고, 실행 환경을 구성·복구한 뒤 최종 태스크 아티팩트를 생성하는 프레임워크다. 공유된 컨테이너 상태를 기반으로 명령어·솔루션·검증기 간의 정합성을 확보하며, 실행 기반 검증과 타겟 수리로 개별 아티팩트 오류를 수정한다. Terminal-Bench 2.1에서 다양한 모델 규모에 걸쳐 일관된 성능 향상을 확인했다.",
+    "why_it_matters": "실행 환경 공유 기반의 태스크 합성 원칙을 제시해 터미널 에이전트의 확장 가능한 학습 데이터 구축 방법론을 진전시킨다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 5.727387818712341,
+    "published_at": "2026-08-18T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.17253",
+    "section": "papers",
+    "title_en": "Co-RL: Unsupervised Reasoning Emerges from Diverse Cohort in Multi-agent RL",
+    "title_ko": "Co-RL: 다중 에이전트 강화학습으로 비지도 추론 능력 창발",
+    "url": "https://huggingface.co/papers/2608.17253",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Co-RL은 정답 레이블 없이 여러 독립 모델이 서로의 출력을 보상 신호로 활용해 동시에 학습하는 협력적 다중 에이전트 강화학습 프레임워크다. 모델 패밀리, 크기, 학습 샘플 다양성을 높여 자기 강화 피드백 루프로 인한 편향과 학습 붕괴를 방지한다. 텍스트 전용 벤치마크 7개에서 평균 3.0~8.6%, 멀티모달 벤치마크 4개에서 2.3~7.2% 성능 향상을 달성하며 지도학습 방식과 대등하거나 이를 능가했다.",
+    "why_it_matters": "고비용의 정답 레이블 없이도 LLM·VLM 추론 능력을 향상시킬 수 있어, 인간 평가가 어려운 고난도 태스크로의 확장 가능성을 열어준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.5217885770490405,
+    "published_at": "2026-08-18T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-introducing-ai-futures",
+    "section": "releases",
+    "title_en": "Introducing AI Futures",
+    "title_ko": "OpenAI, 'AI Futures' 블로그 런칭",
+    "url": "https://openai.com/index/introducing-ai-futures",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 변혁적 AI가 권력, 거버넌스, 경제, 개인의 자유를 어떻게 재편할 수 있는지를 탐구하는 새로운 블로그 'AI Futures'를 공개했다. 이 블로그는 AI가 사회 전반에 미치는 장기적 영향을 심층적으로 다루는 것을 목표로 한다.",
+    "why_it_matters": "OpenAI가 기술 개발을 넘어 AI의 사회적·정치적 미래를 공개적으로 논의하기 시작했다는 점에서 AI 거버넌스 논의의 새로운 흐름을 예고한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.4702397486772487,
+    "published_at": "2026-08-20T07:00:00Z"
+  },
+  {
+    "id": "openai_blog-stampli",
+    "section": "releases",
+    "title_en": "Stampli cuts launch hours by 68% using ChatGPT Work",
+    "title_ko": "Stampli, ChatGPT Work로 출시 시간 68% 단축",
+    "url": "https://openai.com/index/stampli",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Stampli은 고정된 마감 기한과 디자인 리소스 부족 상황에서 Codex와 ChatGPT Work를 활용해 수 주 걸리던 출시 작업을 수 일로 압축했다. 이를 통해 전체 출시 소요 시간을 68% 줄이는 성과를 달성했다.",
+    "why_it_matters": "AI 코딩 도구가 실제 기업 환경에서 개발 생산성을 극적으로 높일 수 있음을 구체적 수치로 입증한 사례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.4285730820105821,
+    "published_at": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-offering-zero-data-retention-for-frontier-models",
+    "section": "releases",
+    "title_en": "Offering Zero Data Retention for frontier models",
+    "title_ko": "OpenAI, 프론티어 모델에 제로 데이터 보존 정책 제공",
+    "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI는 적격 API 고객을 대상으로 제로 데이터 보존(ZDR) 정책을 재확인했다. 또한 데이터 프라이버시를 침해하지 않으면서 고급 AI 안전성을 확보하는 'Private Safety Processing' 기능을 예고했다. 이를 통해 기업 고객이 민감한 데이터를 안심하고 활용할 수 있는 환경을 강화한다.",
+    "why_it_matters": "데이터 프라이버시가 중요한 기업 고객에게 OpenAI API 도입 장벽을 낮추는 핵심 정책 변화다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.3988111772486772,
+    "published_at": "2026-08-19T19:00:00Z"
+  },
+  {
+    "id": "openai_blog-replit",
+    "section": "releases",
+    "title_en": "Replit expands access to software creation with GPT-5.6 Luna",
+    "title_ko": "Replit, GPT-5.6 Luna 기반으로 소프트웨어 제작 접근성 확대",
+    "url": "https://openai.com/index/replit",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Replit이 GPT-5.6 Luna를 활용한 Free Mode를 도입하여 누구나 토큰 비용 걱정 없이 아이디어를 실제 동작하는 소프트웨어로 구현할 수 있게 됐다. 이번 업데이트는 소프트웨어 개발의 진입 장벽을 낮추는 데 초점을 맞추고 있다.",
+    "why_it_matters": "비용 부담 없이 AI 기반 소프트웨어 개발을 시작할 수 있어 비개발자와 초보 개발자의 참여 폭이 크게 넓어진다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.3273826058201058,
+    "published_at": "2026-08-19T07:00:00Z"
+  },
+  {
+    "id": "openai_blog-chatgpt-ads-expands-across-europe",
+    "section": "releases",
+    "title_en": "ChatGPT Ads expands across Europe",
+    "title_ko": "ChatGPT 광고, 유럽 31개국으로 확대",
+    "url": "https://openai.com/index/chatgpt-ads-expands-across-europe",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI의 ChatGPT 광고 서비스가 유럽 31개 시장으로 확장된다. 광고주들은 사용자가 정보를 탐색하고, 옵션을 비교하며, 의사결정을 내리는 순간에 접근할 수 있게 된다.",
+    "why_it_matters": "ChatGPT가 단순 AI 도구를 넘어 광고 플랫폼으로 본격 진화하며, 검색 광고 시장에 새로운 경쟁 구도가 형성될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.2738111772486772,
+    "published_at": "2026-08-18T22:00:00Z"
+  },
+  {
+    "id": "openai_blog-strengthening-democratic-oversight-in-national-security",
+    "section": "releases",
+    "title_en": "Strengthening democratic oversight in national security",
+    "title_ko": "OpenAI, 국가안보 분야 민주적 AI 감독 강화 이니셔티브 발표",
+    "url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 국가안보 분야에서 AI에 대한 민주적 감독을 강화하기 위한 이니셔티브를 출시했다. 정부 기관에 도구, 교육, 전문 지식을 지원하는 것이 핵심 내용이다. 이를 통해 AI가 국가안보 맥락에서 책임감 있게 활용될 수 있도록 돕는 것을 목표로 한다.",
+    "why_it_matters": "AI가 국가안보에 깊이 관여되는 시대에, 민주적 통제 체계 구축은 AI 거버넌스의 핵심 과제로 부상하고 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.2559540343915343,
+    "published_at": "2026-08-18T19:00:00Z"
+  },
+  {
+    "id": "openai_blog-partnering-with-codeai",
+    "section": "releases",
+    "title_en": "Partnering with CodeAI to prepare the first AI generation",
+    "title_ko": "OpenAI, CodeAI와 협력해 AI 교육 세대 양성",
+    "url": "https://openai.com/index/partnering-with-codeai",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI와 CodeAI가 파트너십을 맺고 학생들의 AI 리터러시 향상을 지원한다. 이 협력은 학생들이 AI를 비판적으로 이해하고, 책임감 있게 활용·발전시킬 수 있는 역량을 키우는 것을 목표로 한다.",
+    "why_it_matters": "AI 교육의 주도권을 누가 쥐느냐가 다음 세대의 AI 활용 방향을 결정짓기 때문에 중요하다.",
+    "tags": [],
+    "score": 0.20833498677248674,
+    "published_at": "2026-08-18T11:00:00Z"
+  },
+  {
+    "id": "hn-49398152",
+    "section": "community",
+    "title_en": "Munder Difflin – Agent harness to run an office of your clones",
+    "title_ko": "Munder Difflin – AI 클론 에이전트 오피스 실행 하네스",
+    "url": "https://munderdiffl.in/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Munder Difflin은 사용자의 클론 에이전트 여러 개를 오피스처럼 구성해 실행할 수 있는 에이전트 하네스 프로젝트다. 자신을 복제한 AI 에이전트들을 팀처럼 운영하는 개념으로 보인다.",
+    "why_it_matters": "다수의 자율 에이전트를 협업 구조로 조율하는 새로운 접근 방식으로, 멀티 에이전트 시스템에 관심 있는 개발자에게 주목할 만하다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 8.873724274726353,
+    "published_at": "2026-08-22T09:49:14Z"
+  },
+  {
+    "id": "hn-49399591",
+    "section": "community",
+    "title_en": "New MCP Roadmap",
+    "title_ko": "MCP 새로운 로드맵 공개",
+    "url": "https://blog.modelcontextprotocol.io/posts/mcp-roadmap/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "MCP(Model Context Protocol)의 새로운 로드맵이 공개되었다. 구체적인 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "MCP는 AI 에이전트와 툴 연동의 핵심 프로토콜로, 로드맵 방향이 생태계 전반에 영향을 줄 수 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 8.551804339305178,
+    "published_at": "2026-08-22T13:31:34Z"
+  },
+  {
+    "id": "hn-49393051",
+    "section": "community",
+    "title_en": "A week of using Codex more than Claude",
+    "title_ko": "Claude보다 Codex를 더 많이 사용한 일주일 후기",
+    "url": "https://allaboutcoding.ghinda.com/a-week-of-using-codex-more-than-claude/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "작성자가 일주일간 Claude 대신 OpenAI의 Codex를 주로 사용한 경험을 공유한 글이다. 구체적인 비교 내용은 제공되지 않았으나, 두 AI 코딩 도구에 대한 실사용 후기로 보인다.",
+    "why_it_matters": "개발자 관점에서 Codex와 Claude의 실제 사용 경험을 비교한 현장 후기는 도구 선택에 참고가 된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.121689415303612,
+    "published_at": "2026-08-21T19:51:48Z"
+  },
+  {
+    "id": "hn-49402232",
+    "section": "community",
+    "title_en": "Why your local LLM feels dumber than it is",
+    "title_ko": "로컬 LLM이 실제보다 멍청하게 느껴지는 이유",
+    "url": "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "로컬에서 실행하는 LLM이 기대보다 성능이 낮게 느껴지는 현상을 다루는 글이다. 모델 자체의 성능보다 설정, 실행 환경, 프롬프트 방식 등 외부 요인이 체감 성능에 큰 영향을 미칠 수 있다.",
+    "why_it_matters": "로컬 LLM을 제대로 활용하려는 개발자에게 체감 성능 저하의 원인을 파악하는 데 도움이 된다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 7.924025174766028,
+    "published_at": "2026-08-22T18:14:16Z"
+  },
+  {
+    "id": "hn-49376197",
+    "section": "community",
+    "title_en": "Autolith: A programming agent with a live runtime",
+    "title_ko": "Autolith: 실시간 런타임을 갖춘 프로그래밍 에이전트",
+    "url": "https://www.lambda-symbolics.com/autolith",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Autolith는 실시간 런타임 환경을 갖춘 프로그래밍 에이전트다. 제목 외 상세 정보가 제공되지 않아 구체적인 기능은 확인이 필요하다.",
+    "why_it_matters": "실행 환경과 통합된 프로그래밍 에이전트는 코드 생성·실행·디버깅을 하나의 흐름으로 처리할 가능성을 시사한다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 7.532273903253751,
+    "published_at": "2026-08-20T15:40:57Z"
+  },
+  {
+    "id": "youtube-EUyJRKopRUY",
+    "section": "video",
+    "title_en": "결국 중국에 한 수 접은 애플...그런데 성능이?",
+    "title_ko": "애플, 중국에 양보한 결과는? AI 성능은 어떨까",
+    "url": "https://www.youtube.com/shorts/EUyJRKopRUY",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 애플이 중국 시장에서 타협한 결정과 그에 따른 AI 성능에 대해 다루는 영상이다. 구체적인 기술 내용은 영상을 통해 확인할 수 있다.",
+    "why_it_matters": "애플의 중국 시장 대응 전략이 AI 기능 및 성능에 어떤 영향을 미치는지 관심 있는 개발자에게 참고가 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6250363756613757,
+    "published_at": "2026-08-21T09:00:21Z"
+  },
+  {
+    "id": "youtube-IoI3LQUctkM",
+    "section": "video",
+    "title_en": "AI 시대, 기업은 어떤 인재를 뽑을까? AX 인재전쟁 본선 스케치 | OpenAI × 조코딩AX파트너스",
+    "title_ko": "AX 인재전쟁 본선: OpenAI 후원, AI 시대 새로운 인재 선발 대회",
+    "url": "https://www.youtube.com/watch?v=IoI3LQUctkM",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩AX파트너스가 주최하고 OpenAI가 후원한 'AX 인재전쟁' 본선 현장을 담은 영상입니다. 예선에서 Codex 플러그인을 제작해 통과한 60명의 참가자가 무신사·카카오페이증권·채널톡 등 6개 기업의 실제 실무 문제를 3시간 안에 AI로 해결했습니다. 기업 실무진이 직접 출제·심사하며 각 기업별 도메인 챔피언 1명을 선발하는 방식으로 진행되었습니다.",
+    "why_it_matters": "토익·수능 같은 기존 평가 방식 대신 AI 활용 실무 능력을 기업이 직접 검증하는 새로운 채용 패러다임의 가능성을 보여준다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.6250181878306877,
+    "published_at": "2026-08-21T09:00:10Z"
+  },
+  {
+    "id": "youtube-09omWCAaecY",
+    "section": "video",
+    "title_en": "전문가들도 Suno 쓰는게 개꿀인 이유",
+    "title_ko": "전문가들도 Suno를 쓰는 이유",
+    "url": "https://www.youtube.com/shorts/09omWCAaecY",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 AI 음악 생성 도구 Suno가 전문가들에게도 유용한 이유를 소개하는 영상이다. 구체적인 활용 사례나 기능에 대한 상세 내용은 영상 본문에서 다루고 있다.",
+    "why_it_matters": "AI 음악 생성 도구 Suno의 실무 활용 가능성을 한국어로 소개하는 콘텐츠로, 개발자 및 1인 창업자에게 참고가 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.607146164021164,
+    "published_at": "2026-08-21T06:00:01Z"
+  },
+  {
+    "id": "simon_willison-linus-torvalds",
+    "section": "deepdive",
+    "title_en": "Quoting Linus Torvalds",
+    "title_ko": "리누스 토발즈, AI와 함께한 '지옥 같은 디버깅' 세션 회고",
+    "url": "https://simonwillison.net/2026/Aug/22/linus-torvalds/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "리눅스 커널 창시자 리누스 토발즈가 AI의 도움을 받아 극난이도 버그를 디버깅한 경험을 커밋 메시지에 남겼다. AI가 여러 차례 '불가능하다'며 포기를 선언했지만, 토발즈가 끝까지 밀어붙이자 AI는 디버그 코드 작성과 분석을 충실히 수행했다. 토발즈는 공을 인정하며 해당 커밋 메시지를 AI가 직접 작성하게 했다.",
+    "why_it_matters": "리눅스 커널 같은 최고 난도 시스템 개발 현장에서도 AI가 실질적인 디버깅 보조 도구로 활용되고 있음을 상징적으로 보여주는 사례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8397271825396826,
+    "published_at": "2026-08-22T21:04:26Z"
+  }
+]
