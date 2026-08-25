@@ -1,0 +1,373 @@
+[
+  {
+    "id": "hf-2608.19880",
+    "section": "papers",
+    "title_en": "EnvHarness: Awakening Static Worlds for Agent Learning",
+    "title_ko": "EnvHarness: 정적 환경을 동적 에이전트 학습 환경으로 전환하는 프레임워크",
+    "url": "https://huggingface.co/papers/2608.19880",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LLM 에이전트 학습에 사용되는 환경은 대부분 수동으로 구축된 정적 환경으로, 에이전트의 약점을 반영하지 못한다는 한계가 있다. EnvHarness는 기존 환경의 핵심 로직을 수정하지 않고 플러그인 형태의 컴포넌트를 덧씌워 환경 동작을 동적으로 재구성하는 프로그래머블 레이어다. 이를 자동화하는 EnvRigger는 정책의 실행 궤적을 관찰해 약점을 진단하고 EnvHarness 컴포넌트를 합성한다. 4개 도메인, 5개 벤치마크에서 기존 환경 대비 최대 9.0포인트 성능 향상과 9.8% 실행 단계 감소를 달성했다.",
+    "why_it_matters": "도메인별 파이프라인 재구축 없이 기존 환경을 재활용해 에이전트와 환경의 공진화를 가능하게 하는 실용적 접근법이다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 6.556828061699537,
+    "published_at": "2026-08-19T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.20335",
+    "section": "papers",
+    "title_en": "4DAnyone: Create Anyone in 4D from a Casual Monocular Video",
+    "title_ko": "4DAnyone: 단안 영상 한 장으로 4D 인체 재구성",
+    "url": "https://huggingface.co/papers/2608.20335",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "4DAnyone은 보정되지 않은 단안 모노큘러 비디오로부터 4D 인체를 재구성하는 프레임워크입니다. 기존 카메라 제어 영상 확산 모델이 다수의 뷰를 생성할 때 일관성을 잃는 '제한된 어텐션 컨텍스트 문제'를 식별하고, Reference Context Packing(RCP)과 Target Context Routing(TCR) 두 가지 설계로 이를 해결합니다. DNA-Rendering 및 DyMVHumans 벤치마크에서 기존 방법 대비 새로운 뷰 영상 품질과 4D Gaussian Splatting 재구성 모두에서 우수한 성능을 보였습니다.",
+    "why_it_matters": "일반 카메라로 촬영한 영상만으로 고품질 4D 인체 재구성이 가능해져 게임·메타버스·영상 제작 등 다양한 분야에 실용적 파급력이 크다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 5.304065093204169,
+    "published_at": "2026-08-19T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.19799",
+    "section": "papers",
+    "title_en": "SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?",
+    "title_ko": "SWE-bench Science: 코딩 에이전트는 과학 소프트웨어 엔지니어링 과제를 해결할 수 있는가?",
+    "url": "https://huggingface.co/papers/2608.19799",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SWE-bench Science는 20개 과학 도메인, 98개 GitHub 저장소에서 수집한 119개 과제로 구성된 과학 소프트웨어 엔지니어링 벤치마크다. 최고 성능 에이전트인 Claude Code(Opus-5 max)조차 pass@1이 50% 미만에 그쳐, 과학 소프트웨어 수리의 높은 난이도를 보여준다. 주요 실패 원인으로는 과학 지식 부족, 표면적 수리, 불완전한 커버리지, 지식 일반화 실패 등이 확인됐다. 또한 과학적 가이던스가 항상 유익하지 않으며, 잘못 정렬된 정보는 오히려 성능을 저하시킬 수 있음을 실험으로 밝혔다.",
+    "why_it_matters": "과학 코드 오류가 연구 결론의 신뢰성까지 위협할 수 있는 만큼, 코딩 에이전트의 과학 도메인 한계를 체계적으로 진단하는 이 벤치마크는 AI 코딩 에이전트 연구의 중요한 평가 기준이 된다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.127134385045092,
+    "published_at": "2026-08-19T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.20336",
+    "section": "papers",
+    "title_en": "WithEveryone: Unified Planning and Identity Grounding for Group Image Generation",
+    "title_ko": "WithEveryone: 최대 10명의 신원을 보존하는 그룹 이미지 생성 프레임워크",
+    "url": "https://huggingface.co/papers/2608.20336",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "WithEveryone은 최대 10명의 지정된 인물을 신원을 유지하면서 하나의 이미지에 생성할 수 있는 통합 프레임워크다. 각 인물을 어드레스 토큰으로 주입하고, 구조화된 신원-레이아웃 계획을 예측한 뒤 이를 시각적 조건으로 렌더링한다. 핵심 목표 함수인 Layout-Grounded ID Loss는 얼굴 영역 어노테이션을 통해 신원을 직접 감독함으로써 불안정한 임베딩 기반 매칭을 피한다. GPT-Image-2 대비 얼굴 유사도를 0.462에서 0.499로 향상시키고, 복사-붙여넣기 아티팩트를 0.169에서 0.055로 크게 줄였다.",
+    "why_it_matters": "여러 실존 인물이 등장하는 그룹 사진 생성의 신원 보존 정확도와 확장성을 실질적으로 높인 연구로, 다인물 콘텐츠 제작 분야에 직접적인 영향을 준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.688879454113936,
+    "published_at": "2026-08-19T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.20061",
+    "section": "papers",
+    "title_en": "Let's Scale Step by Step: Compute-Efficient Hyperparameter Transfer for Large-Scale Mixture-of-Experts",
+    "title_ko": "단계별 스케일링: 대규모 MoE 모델을 위한 컴퓨팅 효율적 하이퍼파라미터 전이 프레임워크",
+    "url": "https://huggingface.co/papers/2608.20061",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Mixture-of-Experts(MoE) 아키텍처의 학습률 최적화를 위해 소형 프록시 모델에서 대형 모델로 하이퍼파라미터를 전이하는 2단계 프레임워크를 제안한다. Maximal Update Parameterization(μP)을 MLA와 Muon 옵티마이저를 활용한 MoE에 적용해 모델 너비 스케일링 시 최적 학습률이 일관되게 전이됨을 입증했다. 또한 선형 회귀 기반 스케일링 법칙으로 10조 토큰 수준의 대규모 학습 환경에 학습률을 외삽(R²=0.95)하는 데 성공했으며, 이 방법론을 155B(활성 파라미터 17B) 파운데이션 모델 사전학습에 적용해 검증했다.",
+    "why_it_matters": "수조 토큰 규모의 초대형 MoE 모델 학습에서 비용이 많이 드는 하이퍼파라미터 탐색을 소형 모델로 대체할 수 있어 LLM 사전학습 비용을 획기적으로 절감할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.526360524616162,
+    "published_at": "2026-08-20T09:57:43Z"
+  },
+  {
+    "id": "openai_blog-gpt-5-6-in-kiro",
+    "section": "releases",
+    "title_en": "Advancing price-performance for developers with GPT‑5.6 in Kiro",
+    "title_ko": "Kiro에서 GPT-5.6으로 개발자 가격 대비 성능 향상",
+    "url": "https://openai.com/index/gpt-5-6-in-kiro",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI의 GPT-5.6 모델이 Kiro에 도입되어 개발자들이 소프트웨어 계획, 빌드, 리뷰, 테스트를 더 나은 가격 대비 성능으로 수행할 수 있게 됐다. 이번 업데이트는 개발 워크플로우 전반에 걸친 효율성 향상을 목표로 한다.",
+    "why_it_matters": "GPT-5.6의 Kiro 통합은 개발자들이 더 저렴한 비용으로 고품질 AI 코딩 지원을 받을 수 있음을 의미한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7857159391534392,
+    "published_at": "2026-08-24T12:00:00Z"
+  },
+  {
+    "id": "github_trending-openai/codex",
+    "section": "releases",
+    "title_en": "openai/codex",
+    "title_ko": "OpenAI Codex CLI — 터미널에서 실행하는 경량 코딩 에이전트",
+    "url": "https://github.com/openai/codex",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "OpenAI가 터미널에서 로컬로 동작하는 오픈소스 코딩 에이전트 'Codex CLI'를 공개했다. npm, Homebrew, 전용 설치 스크립트 등을 통해 Mac·Linux·Windows에서 간편하게 설치할 수 있다. ChatGPT Plus·Pro 등 기존 플랜으로 바로 사용 가능하며, VS Code·Cursor·Windsurf 등 주요 IDE 플러그인과 웹 기반 Codex App도 함께 제공된다.",
+    "why_it_matters": "OpenAI가 코딩 에이전트를 오픈소스로 로컬 CLI 형태로 제공함으로써, 개발자가 기존 ChatGPT 구독만으로 터미널에서 AI 코딩 자동화를 바로 활용할 수 있게 됐다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.728057208994709,
+    "published_at": "2026-08-24T02:18:48Z"
+  },
+  {
+    "id": "github_trending-freestylefly/awesome-gpt-image-2",
+    "section": "releases",
+    "title_en": "freestylefly/awesome-gpt-image-2",
+    "title_ko": "GPT-Image-2 산업급 프롬프트 엔진 및 템플릿 라이브러리 (500+ 사례)",
+    "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "GPT-Image-2를 위한 오픈소스 프롬프트 라이브러리로, 532개의 역공학 사례와 20개 이상의 산업급 템플릿을 제공한다. UI/인터페이스, 인포그래픽, 포스터, 제품 촬영 등 12개 카테고리로 구성되어 있으며, 에이전트 및 자동화 워크플로에서 재사용 가능한 구조화된 프롬프트(Prompt-as-Code) 형태로 제공된다. Claude Code, Codex, Cursor 등 주요 AI 코딩 도구에 npm 패키지로 설치 가능한 에이전트 스킬도 포함한다.",
+    "why_it_matters": "이미지 생성 프롬프트를 코드처럼 구조화·재사용 가능한 형태로 체계화해, 배치 생성이나 자동화 파이프라인에 GPT-Image-2를 실용적으로 적용할 수 있는 레퍼런스를 제공한다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.728057208994709,
+    "published_at": "2026-08-24T02:18:48Z"
+  },
+  {
+    "id": "github_trending-Alishahryar1/free-claude-code",
+    "section": "releases",
+    "title_en": "Alishahryar1/free-claude-code",
+    "title_ko": "Free Claude Code: 무료 토큰으로 Claude Code 등 9개 코딩 에이전트 사용하기",
+    "url": "https://github.com/Alishahryar1/free-claude-code",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Free Claude Code(FCC)는 NVIDIA NIM, OpenRouter, Groq 등 49개 무료·유료 프로바이더를 통해 월 13억 개 이상의 무료 토큰을 제공하는 오픈소스 프록시 툴이다. Claude Code, Codex, Cline 등 9개 코딩 에이전트를 터미널, VS Code, JetBrains, Discord, Telegram, 모바일 등 다양한 환경에서 사용할 수 있다. 프로바이더 장애 시 자동 폴백, 토큰 최적화(최대 90% 절감), 음성 입력(Whisper) 지원 등의 기능도 포함되어 있다. MIT 라이선스로 공개되었으며 Anthropic 공식 프로젝트는 아니다.",
+    "why_it_matters": "Claude Code를 비롯한 최신 AI 코딩 에이전트를 무료로, 그리고 ToS를 준수하면서 다양한 프로바이더를 통해 사용할 수 있어 개발자의 비용 부담을 크게 낮출 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.728057208994709,
+    "published_at": "2026-08-24T02:18:48Z"
+  },
+  {
+    "id": "github_trending-tinyhumansai/openhuman",
+    "section": "releases",
+    "title_en": "tinyhumansai/openhuman",
+    "title_ko": "OpenHuman: 로컬 우선 개인 AI 슈퍼 인텔리전스 오픈소스 프로젝트",
+    "url": "https://github.com/tinyhumansai/openhuman",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "OpenHuman은 사용자의 삶을 기억하는 로컬 메모리 브레인, 에이전트 플릿 오케스트레이터, 딥 리서처를 하나로 합친 오픈소스 개인 AI 플랫폼이다. Gmail·Notion·GitHub 등 100개 이상의 OAuth 연동과 5,000개 이상의 MCP 서버를 지원하며, 20분 주기 자동 데이터 동기화로 에이전트가 항상 최신 컨텍스트를 유지한다. 모든 데이터는 온디바이스 암호화되어 저장되며, 프라이버시 모드 활성화 시 추론 요청이 외부로 전혀 나가지 않는다. 출시 일주일 만에 GitHub 트렌딩 1위를 9일 연속 기록했다.",
+    "why_it_matters": "단일 오픈소스 플랫폼에서 로컬 메모리·멀티 에이전트 오케스트레이션·워크플로 자동화를 모두 제공하는 사실상 첫 사례로, 개인 AI 어시스턴트 생태계의 판도를 바꿀 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.728057208994709,
+    "published_at": "2026-08-24T02:18:48Z"
+  },
+  {
+    "id": "github_trending-VoltAgent/awesome-agent-skills",
+    "section": "releases",
+    "title_en": "VoltAgent/awesome-agent-skills",
+    "title_ko": "1,400개 이상의 AI 에이전트 스킬 모음집 — awesome-agent-skills",
+    "url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "VoltAgent가 관리하는 오픈소스 저장소로, Claude Code·Codex·Gemini CLI·Cursor 등 주요 AI 코딩 어시스턴트와 호환되는 에이전트 스킬을 1,400개 이상 수집했습니다. Anthropic·Google·Stripe·Cloudflare·NVIDIA·OpenAI 등 주요 개발팀이 공식 배포한 스킬과 커뮤니티 기여 스킬이 포함됩니다. AI가 대량 생성한 것이 아닌, 실제 엔지니어링 팀이 사용하는 스킬만 선별해 수록한다는 점이 특징입니다.",
+    "why_it_matters": "다양한 도구와 플랫폼을 아우르는 검증된 에이전트 스킬을 한 곳에서 찾을 수 있어, AI 코딩 에이전트의 실무 활용 범위를 빠르게 넓힐 수 있습니다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.728057208994709,
+    "published_at": "2026-08-24T02:18:48Z"
+  },
+  {
+    "id": "github_trending-anthropics/claude-plugins-community",
+    "section": "releases",
+    "title_en": "anthropics/claude-plugins-community",
+    "title_ko": "Anthropic, Claude 커뮤니티 플러그인 마켓플레이스 공개",
+    "url": "https://github.com/anthropics/claude-plugins-community",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 Claude Cowork와 Claude Code를 위한 커뮤니티 플러그인 마켓플레이스를 GitHub에 공개했다. 이 저장소는 읽기 전용 미러로, 커뮤니티가 제출하고 자동 보안 스캔 및 Anthropic 내부 검토를 통과한 플러그인 목록을 매일 밤 동기화한다. 플러그인 제출은 clau.de/plugin-directory-submission을 통해 가능하며, Claude Code에서는 CLI 명령어로 마켓플레이스를 추가하고 플러그인을 설치할 수 있다.",
+    "why_it_matters": "Claude 생태계에 공식 커뮤니티 플러그인 유통 채널이 생기면서 서드파티 확장 개발과 배포가 체계화된다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.728057208994709,
+    "published_at": "2026-08-24T02:18:48Z"
+  },
+  {
+    "id": "hn-49421554",
+    "section": "community",
+    "title_en": "Coding expertise is going to collapse from AI reliance",
+    "title_ko": "AI 의존으로 코딩 전문성이 붕괴될 것이다",
+    "url": "https://larsfaye.com/articles/ai-coding-will-prevent-expertise",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI 코딩 도구에 대한 과도한 의존이 개발자들의 실질적인 코딩 역량을 약화시킬 수 있다는 우려를 다룬 글이다. 제공된 설명이 없어 제목 기반으로만 파악할 수 있다.",
+    "why_it_matters": "AI 도구가 보편화될수록 개발자의 기초 역량 유지 문제가 업계 전반의 화두로 떠오르고 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.092185378392026,
+    "published_at": "2026-08-24T15:52:33Z"
+  },
+  {
+    "id": "hn-49421158",
+    "section": "community",
+    "title_en": "MS Paint and Photos inivisibly watermark even locally generated output with GUID",
+    "title_ko": "MS 페인트·사진 앱, 로컬 생성 이미지에 GUID 비가시 워터마크 삽입",
+    "url": "https://xusheng.dev/posts/reversing/mspaint_invisible_watermark/main/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "MS 페인트와 사진 앱이 로컬에서 생성된 출력물에도 GUID 형태의 비가시 워터마크를 자동으로 삽입하는 것으로 알려졌다. 사용자 동의 없이 식별자가 숨겨진다는 점에서 프라이버시 우려가 제기되고 있다.",
+    "why_it_matters": "로컬 환경에서 생성한 이미지에도 추적 가능한 식별자가 삽입된다면, AI 생성물 워터마킹과 사용자 프라이버시 논쟁이 더욱 심화될 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.951440361091272,
+    "published_at": "2026-08-24T15:28:04Z"
+  },
+  {
+    "id": "hn-49421074",
+    "section": "community",
+    "title_en": "OpenAI: GPT 5.6 Sol price reduction (until at least Nov 21)",
+    "title_ko": "OpenAI, GPT-4.5 Sol 가격 한시 인하 (최소 11월 21일까지)",
+    "url": "https://developers.openai.com/api/docs/pricing",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "OpenAI가 GPT 5.6 Sol 모델의 가격을 최소 11월 21일까지 한시적으로 인하한다고 발표했다. 구체적인 인하 폭이나 세부 내용은 제공된 정보에 포함되어 있지 않다.",
+    "why_it_matters": "OpenAI 모델 사용 비용 절감 기회로, API를 활용하는 개발자에게 직접적인 영향을 줄 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.418386863398922,
+    "published_at": "2026-08-24T15:22:43Z"
+  },
+  {
+    "id": "hn-49421489",
+    "section": "community",
+    "title_en": "IPFS Maintainers Winding Down",
+    "title_ko": "IPFS 메인테이너들, 프로젝트 유지보수 종료 선언",
+    "url": "https://ipshipyard.com/blog/2026-the-end-of-ipfs-at-shipyard/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "IPFS의 메인테이너들이 프로젝트 유지보수를 종료한다고 발표했다. 구체적인 이유나 세부 내용은 제공된 정보에 포함되어 있지 않다.",
+    "why_it_matters": "분산 파일 시스템의 대표 프로젝트인 IPFS의 유지보수 종료는 이를 기반으로 한 서비스와 생태계에 직접적인 영향을 줄 수 있다.",
+    "tags": [
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 9.283790098157066,
+    "published_at": "2026-08-24T15:48:45Z"
+  },
+  {
+    "id": "hn-49422800",
+    "section": "community",
+    "title_en": "Where did all the public bathrooms go?",
+    "title_ko": "공공 화장실은 다 어디로 갔을까?",
+    "url": "https://daily.jstor.org/where-did-all-the-public-bathrooms-go/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "공공 화장실의 감소 현상을 다루는 글로, 제목 외 구체적인 내용은 제공되지 않았다.",
+    "why_it_matters": "AI와 직접적인 관련은 없으나, 도시 인프라 및 공공 서비스 축소 문제를 짚는 사회적 논의로 주목받고 있다.",
+    "tags": [],
+    "score": 8.624526948117383,
+    "published_at": "2026-08-24T17:07:01Z"
+  },
+  {
+    "id": "youtube-i1FoKc5X4_8",
+    "section": "video",
+    "title_en": "AI뉴스 - ox-alpha 열풍, 오픈AI RL 중지, Mythos 5 개방, Gemini 하입과 무료, 모더나 머크, 독파모, 통속의 뇌, 로봇 올림픽 등",
+    "title_ko": "이번 주 AI 뉴스 총정리: ox-alpha 등장, 오픈AI RL 중지, 로봇 올림픽 등",
+    "url": "https://www.youtube.com/watch?v=i1FoKc5X4_8",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "정체불명 모델 ox-alpha가 OpenRouter에 등장해 높은 성능으로 주목받았으며, 오픈AI는 프론티어 RL 훈련을 일시 중지했다. 미소스(Mythos) 5가 클로드 시큐리티 스캔에서 개방되고, 제미나이 학생 요금제 1년 무료 등 다양한 AI 서비스 소식이 쏟아졌다. 로봇 분야에서는 로봇 올림픽에서 우사인 볼트 기록을 넘는 성과와 1회 시연만으로 동작을 따라하는 GEN-1.5 로봇 등 눈에 띄는 발표가 이어졌다.",
+    "why_it_matters": "한 주간 LLM·인프라·로봇까지 AI 전 분야에서 굵직한 업데이트가 동시에 쏟아져, 국내 개발자가 빠르게 트렌드를 파악하기 위한 필수 정리본이다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "인프라"
+    ],
+    "score": 0.7917328042328042,
+    "published_at": "2026-08-24T13:00:39Z"
+  },
+  {
+    "id": "youtube-qFnADa20OOo",
+    "section": "video",
+    "title_en": "여러분의 서비스는 모두에게 열려있나요?",
+    "title_ko": "여러분의 서비스는 모두에게 열려있나요? – 웹 접근성 이야기",
+    "url": "https://www.youtube.com/shorts/qFnADa20OOo",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 웹 접근성을 주제로 한 영상을 공개했습니다. 웹 접근성 관련 서비스인 '웹와치'를 소개하며, 서비스가 모든 사용자에게 열려 있어야 한다는 메시지를 전달합니다.",
+    "why_it_matters": "개발자가 서비스를 만들 때 웹 접근성을 고려해야 더 많은 사용자를 포용할 수 있음을 상기시켜 준다.",
+    "tags": [],
+    "score": 0.7670023148148148,
+    "published_at": "2026-08-24T08:51:22Z"
+  },
+  {
+    "id": "youtube-iP5RUzXhWoc",
+    "section": "video",
+    "title_en": "IT뉴스 - ox-alpha, 오픈AI 트레이닝 중지, Mythos 5 개방, Gemini 하입과 무료, 모더나 머크, 통속의 뇌 등",
+    "title_ko": "ox-alpha·Mythos 5 공개, 오픈AI 훈련 중지, Gemini 무료화 등 AI 주요 뉴스",
+    "url": "https://www.youtube.com/watch?v=iP5RUzXhWoc",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "이번 영상에서는 ox-alpha와 Mythos 5 모델 공개, 오픈AI의 훈련 중지 이슈, Gemini의 무료 제공 및 과대 홍보 논란, 모더나·머크 관련 소식, 그리고 '통속의 뇌' 등 다양한 IT·AI 뉴스를 다룬다. 조코딩 채널의 AI 뉴스 요약 콘텐츠로, 여러 최신 이슈를 한데 묶어 소개한다.",
+    "why_it_matters": "오픈AI 훈련 중지·Gemini 무료화 등 업계 흐름을 한 번에 파악할 수 있는 국내 AI 뉴스 요약 콘텐츠다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.6386937830687831,
+    "published_at": "2026-08-23T11:18:01Z"
+  },
+  {
+    "id": "simon_willison-llm-anthropic",
+    "section": "deepdive",
+    "title_en": "llm-anthropic 0.27",
+    "title_ko": "llm-anthropic 0.27 릴리즈: anthropic Python SDK v1.0 호환성 업데이트",
+    "url": "https://simonwillison.net/2026/Aug/24/llm-anthropic/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "LLM 툴의 Anthropic 플러그인 llm-anthropic 0.27이 출시됐다. 이번 릴리즈의 핵심은 최근 공개된 anthropic Python 라이브러리 v1.0.0과의 호환성 확보로, 기존 httpx에서 httpx2로의 전환이 주요 변경점이다. OpenAI도 2주 전 Python SDK v3.0.0에서 동일한 변경을 적용한 바 있다. 마이그레이션 작업은 Claude Code를 활용해 자동화했다.",
+    "why_it_matters": "Anthropic SDK v1.0의 httpx2 전환에 따른 호환성 업데이트로, LLM CLI 도구 사용자는 플러그인 업그레이드가 필요하다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8122106481481481,
+    "published_at": "2026-08-24T16:27:04Z"
+  }
+]
