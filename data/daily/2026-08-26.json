@@ -1,0 +1,380 @@
+[
+  {
+    "id": "hf-2608.23283",
+    "section": "papers",
+    "title_en": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
+    "title_ko": "Apodex 1.1: 복잡한 작업을 위한 에이전트 지능 스케일링",
+    "url": "https://huggingface.co/papers/2608.23283",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Apodex 1.1은 파일, 검색, 코드 실행 환경과 에이전트 간 협업을 결합한 범용 에이전트 AI 시스템이다. 환경 스케일링과 에이전트 조정 스케일링이라는 두 축으로 장기 작업을 분해·위임·통합·재계획하는 능력을 키웠다. 금융, 과학 연구, 수학, 코딩 등 복잡한 전문 업무에서 훨씬 큰 모델들과 비슷한 수준의 성능을 달성했으며, 35B 파라미터의 Apodex 1.1 Mini는 로컬 배포도 지원한다.",
+    "why_it_matters": "더 작은 모델로 프론티어급 에이전트 성능을 달성하고 로컬 배포까지 지원해, 실무 AI 에이전트의 접근성과 실용성을 동시에 높인 사례다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 6.153291594497779,
+    "published_at": "2026-08-23T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.23189",
+    "section": "papers",
+    "title_en": "EchoWM: Open and Enterable Omnimodal World Models",
+    "title_ko": "EchoWM: 오픈소스 전방향 모달 세계 모델, 720p 영상·음향 동시 생성",
+    "url": "https://huggingface.co/papers/2608.23189",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "EchoWM은 1인칭 및 3인칭 시점 모두에서 연속 내비게이션에 반응하는 옴니모달 세계 모델입니다. 720p 비디오와 함께 환경음, 음악, 음성을 동시에 생성하며, 카메라 인텐트를 기반으로 6-DoF 궤적을 공유 메트릭 스케일로 매핑합니다. 점진적 학습과 자기회귀 사후 학습을 통해 장기 생성에서도 시각·청각 동기화를 유지하는 것이 특징입니다.",
+    "why_it_matters": "영상·음향·내비게이션을 하나의 오픈 세계 모델로 통합한 첫 시도로, 게임·시뮬레이션·인터랙티브 미디어 분야에 큰 파급 효과가 예상된다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 5.174387269895637,
+    "published_at": "2026-08-23T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.20958",
+    "section": "papers",
+    "title_en": "TLive-Omni: An Omni-Modal Understanding Model for E-Commerce Live Streaming",
+    "title_ko": "TLive-Omni: 이커머스 라이브 스트리밍을 위한 멀티모달 이해 모델",
+    "url": "https://huggingface.co/papers/2608.20958",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "TLive-Omni는 이커머스 라이브 방송 환경에 특화된 옴니모달 이해 모델로, 이미지·영상·음성·텍스트를 통합 표현 공간으로 처리한다. 장시간 라이브 스트림 분석을 위해 타임스탬프 기반 토큰 구조인 Per-vGrid를 도입해 영상 프레임과 음성의 시간적 정렬을 지원한다. 3단계 지도학습 후 Faithful-RFT 강화학습 단계를 통해 답변 충실도와 실시간 응답 품질을 높였으며, 이커머스 라이브 벤치마크와 일반 벤치마크 모두에서 우수한 성능을 보였다.",
+    "why_it_matters": "라이브 커머스 영상의 복잡한 멀티모달 정보를 실시간으로 통합 처리하는 특화 AI 모델로, 관련 산업의 자동화 및 AI 적용 가능성을 크게 높인다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.970291913552122,
+    "published_at": "2026-08-20T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.20061",
+    "section": "papers",
+    "title_en": "Let's Scale Step by Step: Compute-Efficient Hyperparameter Transfer for Large-Scale Mixture-of-Experts",
+    "title_ko": "단계별 스케일링: 대규모 MoE 모델을 위한 컴퓨팅 효율적 하이퍼파라미터 전이 프레임워크",
+    "url": "https://huggingface.co/papers/2608.20061",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Mixture-of-Experts(MoE) 아키텍처에서 대규모 학습 시 최적 학습률을 탐색하는 비용이 막대한 문제를 해결하기 위해, 연구진은 두 단계의 하이퍼파라미터 전이 프레임워크를 제안했다. 먼저 μP(Maximal Update Parameterization)를 MLA와 Muon 옵티마이저가 결합된 MoE 구조에 적용해 모델 너비 스케일링 간 학습률 전이를 가능하게 했고, 이후 토큰 차원으로 예측 스케일링 법칙을 수립해 10조 토큰 규모까지 외삽했다(R²=0.95). 이 방법론을 실제 155B(활성 파라미터 17B) 파운데이션 모델 사전학습에 적용해 안정적인 학습 결과를 검증했다.",
+    "why_it_matters": "소형 프록시 모델만으로 초대형 MoE 모델의 최적 학습률을 정확히 예측할 수 있어, 하이퍼파라미터 탐색 비용을 획기적으로 절감할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.663561646129646,
+    "published_at": "2026-08-20T09:57:43Z"
+  },
+  {
+    "id": "hf-2608.23035",
+    "section": "papers",
+    "title_en": "MobilePA-Bench: Benchmarking Mobile Planner Agents on Complex Real-World Tasks",
+    "title_ko": "MobilePA-Bench: 복잡한 실제 작업에서 모바일 플래너 에이전트를 평가하는 벤치마크",
+    "url": "https://huggingface.co/papers/2608.23035",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "MobilePA-Bench는 모바일 환경에서 LLM 에이전트의 도구 호출 및 계획 능력을 평가하는 대화형 벤치마크다. 13개 기능 도메인과 212개 실제 모바일 도구를 포함하며, 서브 에이전트 협업·메모리 활용·스킬 사용이라는 세 가지 고급 평가 차원을 제공한다. 실험 결과 현재 최첨단 LLM들은 엄격한 도구 순서 제한, 권한 제약, 런타임 오류 상황에서 신뢰성이 크게 떨어지는 것으로 나타났다.",
+    "why_it_matters": "기존 벤치마크의 GUI 조작 편향과 오프라인 API 매칭 한계를 동시에 극복한 최초의 실행 가능한 모바일 에이전트 종합 평가 프레임워크로, 실용적인 온디바이스 AI 개발 가속화에 기여할 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.526360524616162,
+    "published_at": "2026-08-23T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-the-full-stack-behind-abundant-intelligence",
+    "section": "releases",
+    "title_en": "The full stack behind abundant intelligence",
+    "title_ko": "풍부한 인텔리전스를 뒷받침하는 풀스택 전략",
+    "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI의 CFO 사라 프리어가 칩, 컴퓨팅, 모델, 제품 전반에 걸친 기술 발전이 어떻게 복합적으로 작용하는지 설명했다. 이러한 스택 전반의 혁신이 더 유용한 인텔리전스를 더 큰 규모로, 더 낮은 비용으로 제공하는 데 기여한다고 밝혔다.",
+    "why_it_matters": "OpenAI가 비용 절감과 확장성 확보를 위해 인프라 전 계층을 수직 통합하는 전략적 방향을 공식화했다는 점에서 주목할 만하다.",
+    "tags": [
+      "인프라",
+      "LLM"
+    ],
+    "score": 0.7564500661375662,
+    "published_at": "2026-08-25T07:05:00Z"
+  },
+  {
+    "id": "openai_blog-jalapeno-first-results",
+    "section": "releases",
+    "title_en": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
+    "title_ko": "OpenAI 자체 개발 추론 칩 '할라페뇨', 업계 최고 수준의 속도와 효율성 달성",
+    "url": "https://openai.com/index/jalapeno-first-results",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 자체 개발한 커스텀 AI 추론 칩 '할라페뇨(Jalapeño)'의 초기 결과를 공개했다. 이 칩은 최신 AI 모델에 대해 더 빠른 처리 속도, 낮은 지연 시간, 높은 처리량, 그리고 향상된 전력 효율성을 제공한다. OpenAI는 이 칩이 AI 추론 분야에서 업계 최고 수준의 성능을 달성했다고 밝혔다.",
+    "why_it_matters": "OpenAI가 자체 추론 칩을 통해 외부 반도체 의존도를 줄이고 AI 인프라 주도권을 직접 확보하려는 전략적 행보로, 업계 전반에 큰 파급 효과가 예상된다.",
+    "tags": [
+      "인프라",
+      "LLM"
+    ],
+    "score": 0.7559540343915344,
+    "published_at": "2026-08-25T07:00:00Z"
+  },
+  {
+    "id": "github_trending-Alishahryar1/free-claude-code",
+    "section": "releases",
+    "title_en": "Alishahryar1/free-claude-code",
+    "title_ko": "무료로 Claude Code·Codex 등 9개 코딩 에이전트를 사용하는 오픈소스 프록시 'Free Claude Code'",
+    "url": "https://github.com/Alishahryar1/free-claude-code",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Free Claude Code(FCC)는 50개 이상의 무료·유료 LLM 프로바이더를 단일 로컬 프록시로 연결해, Claude Code·Codex·Cline 등 9개 코딩 에이전트를 월 13억 토큰 이상 무료로 사용할 수 있게 해주는 오픈소스 프로젝트입니다. 터미널, VS Code, JetBrains, Discord, Telegram, 모바일 등 다양한 환경을 지원하며, 프로바이더 장애 시 자동 폴백 및 토큰 절감 최적화 기능도 포함합니다. 로컬 Whisper 또는 NVIDIA NIM을 통한 음성 입력도 지원합니다.",
+    "why_it_matters": "Claude Code 등 고비용 AI 코딩 에이전트를 무료 프로바이더로 우회해 비용 없이 사용할 수 있어, 개인 개발자와 스타트업의 AI 도구 접근성을 크게 낮춘다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7277496693121693,
+    "published_at": "2026-08-25T02:15:42Z"
+  },
+  {
+    "id": "github_trending-openai/codex",
+    "section": "releases",
+    "title_en": "openai/codex",
+    "title_ko": "OpenAI Codex CLI - 터미널에서 실행하는 경량 코딩 에이전트",
+    "url": "https://github.com/openai/codex",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "OpenAI가 터미널에서 로컬로 실행되는 코딩 에이전트 'Codex CLI'를 오픈소스로 공개했다. Mac, Linux, Windows를 지원하며 npm, Homebrew 등 다양한 패키지 매니저로 설치할 수 있다. ChatGPT Plus/Pro 등 기존 플랜으로 사용 가능하며, VS Code·Cursor·Windsurf 같은 IDE 플러그인과 데스크탑 앱, 클라우드 기반 Codex Web도 함께 제공된다.",
+    "why_it_matters": "OpenAI가 직접 만든 터미널 기반 코딩 에이전트를 오픈소스로 공개해, 개발자가 로컬 환경에서 자유롭게 AI 코딩 자동화를 활용할 수 있는 선택지가 생겼다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7277496693121693,
+    "published_at": "2026-08-25T02:15:42Z"
+  },
+  {
+    "id": "github_trending-MadsLorentzen/ai-job-search",
+    "section": "releases",
+    "title_en": "MadsLorentzen/ai-job-search",
+    "title_ko": "AI 취업 지원 자동화 프레임워크 - Claude Code 기반 오픈소스",
+    "url": "https://github.com/MadsLorentzen/ai-job-search",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "로컬 머신에서 Claude Code를 활용해 채용공고 평가, 맞춤형 CV 작성, 커버레터 생성, 면접 준비까지 지원하는 AI 취업 지원 프레임워크다. /scrape, /apply, /interview 등의 커맨드로 전체 지원 워크플로를 자동화하며, LaTeX로 PDF를 컴파일하고 ATS 파싱 검증까지 수행한다. 덴마크 구직 포털에 최적화되어 있지만 LinkedIn 검색 등 국가 무관 기능도 포함되어 있으며, /add-portal 커맨드로 타 국가 구직 사이트를 추가할 수 있다. 개발자 본인이 이 프레임워크로 69건을 지원해 20번의 1차 면접, 1건의 오퍼를 받아 실제 취업에 성공했다고 밝히고 있다.",
+    "why_it_matters": "AI 에이전트를 활용한 취업 자동화의 실제 사례로, 개발자가 직접 검증한 오픈소스 프레임워크라는 점에서 실용적 참고 가치가 높다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7277496693121693,
+    "published_at": "2026-08-25T02:15:42Z"
+  },
+  {
+    "id": "github_trending-multica-ai/andrej-karpathy-skills",
+    "section": "releases",
+    "title_en": "multica-ai/andrej-karpathy-skills",
+    "title_ko": "Andrej Karpathy 관찰 기반 Claude Code 행동 개선 가이드라인",
+    "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Andrej Karpathy가 지적한 LLM 코딩 문제점(잘못된 가정, 코드 과복잡화, 불필요한 수정 등)을 해결하기 위해 단일 CLAUDE.md 파일로 정리한 가이드라인 프로젝트다. '코딩 전 사고', '단순성 우선', '최소 범위 수정', '목표 기반 실행'의 4가지 원칙으로 구성된다. Claude Code 플러그인 또는 프로젝트별 CLAUDE.md 파일로 설치할 수 있으며, Cursor에서도 동일한 규칙 적용이 가능하다.",
+    "why_it_matters": "LLM 코딩 에이전트의 고질적 문제(과복잡화, 무단 코드 수정, 암묵적 가정)를 즉시 적용 가능한 단일 파일로 제어할 수 있어 실무 활용도가 높다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7277496693121693,
+    "published_at": "2026-08-25T02:15:42Z"
+  },
+  {
+    "id": "github_trending-NousResearch/hermes-agent",
+    "section": "releases",
+    "title_en": "NousResearch/hermes-agent",
+    "title_ko": "NousResearch의 자기 진화형 AI 에이전트 'Hermes Agent' 공개",
+    "url": "https://github.com/NousResearch/hermes-agent",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Nous Research가 오픈소스 AI 에이전트 'Hermes Agent'를 공개했다. 경험에서 스킬을 생성·개선하는 자체 학습 루프를 내장하고 있으며, Telegram·Discord·Slack 등 다양한 메시징 플랫폼과 연동된다. OpenAI, Anthropic, OpenRouter 등 다양한 LLM 프로바이더를 자유롭게 전환할 수 있으며, $5짜리 VPS부터 GPU 클러스터까지 어디서든 실행 가능하다.",
+    "why_it_matters": "벤더 종속 없이 자가 학습·스킬 축적이 가능한 오픈소스 에이전트 프레임워크로, 실용적인 자율 에이전트 구축의 현실적인 기준점을 제시한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7277496693121693,
+    "published_at": "2026-08-25T02:15:42Z"
+  },
+  {
+    "id": "hn-49433292",
+    "section": "community",
+    "title_en": "Apple introduces M6 and M5 Ultra",
+    "title_ko": "애플, M6 및 M5 Ultra 칩 공개",
+    "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "애플이 새로운 M6 및 M5 Ultra 칩을 발표했다. 상세한 사양이나 성능 수치는 제공된 정보에 포함되어 있지 않다.",
+    "why_it_matters": "애플의 최신 칩 라인업은 AI 및 ML 워크로드 처리 성능에 직접적인 영향을 미친다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 11.212056715511283,
+    "published_at": "2026-08-25T13:01:22Z"
+  },
+  {
+    "id": "hn-49434378",
+    "section": "community",
+    "title_en": "OpenAI Jalapeño: Better than Nvidia Blackwell",
+    "title_ko": "OpenAI 할라피뇨: 엔비디아 블랙웰을 능가한다",
+    "url": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "OpenAI의 '할라피뇨(Jalapeño)'라는 이름의 프로젝트 또는 제품이 엔비디아 블랙웰을 능가한다는 주장이 제기됐다. 제공된 정보가 제목뿐이어서 구체적인 내용은 확인되지 않는다.",
+    "why_it_matters": "OpenAI가 자체 하드웨어 또는 관련 기술로 엔비디아에 도전할 가능성을 시사하는 소식이나, 세부 정보가 없어 신중한 접근이 필요하다.",
+    "tags": [
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 9.29853954537488,
+    "published_at": "2026-08-25T14:06:02Z"
+  },
+  {
+    "id": "hn-49435675",
+    "section": "community",
+    "title_en": "Show HN: I made a Raspberry with Qwen my local car AI",
+    "title_ko": "Qwen 모델로 만든 라즈베리파이 기반 차량용 로컬 AI",
+    "url": "https://github.com/ThinkOffApp/CarWatch",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "개발자가 Qwen 언어 모델과 라즈베리파이를 활용해 차량용 로컬 AI를 직접 제작했다. 인터넷 연결 없이 차 안에서 동작하는 온디바이스 AI 시스템이다.",
+    "why_it_matters": "저비용 하드웨어와 오픈소스 LLM의 결합으로 누구나 차량용 AI를 자체 구축할 수 있음을 보여주는 실용적 사례다.",
+    "tags": [
+      "LLM",
+      "오픈소스",
+      "에이전트"
+    ],
+    "score": 6.859257928518424,
+    "published_at": "2026-08-25T15:20:20Z"
+  },
+  {
+    "id": "reddit-1vyewwd",
+    "section": "community",
+    "title_en": "Qwen 3.8 27b has ThreeJs locked down.",
+    "title_ko": "Qwen 3 27B, Three.js 코드 생성 능력 주목받아",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vyewwd/qwen_38_27b_has_threejs_locked_down/",
+    "sources": [
+      "reddit"
+    ],
+    "summary_ko": "로컬 LLM 커뮤니티에서 Qwen 3 27B Q4 Thinking 모델이 Three.js 관련 코드를 인상적으로 생성한다는 사례가 공유됐다. RTX 3090 단일 GPU에서 로컬로 실행된 결과물로, 3D 그래픽 라이브러리 활용에 뛰어난 성능을 보인다는 평가다.",
+    "why_it_matters": "소비자용 GPU에서 로컬 실행 가능한 27B 모델이 Three.js 같은 복잡한 프런트엔드 라이브러리 코드 생성에서도 경쟁력을 보여준다는 점에서 주목할 만하다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8489169973544973,
+    "published_at": "2026-08-25T22:37:04Z"
+  },
+  {
+    "id": "reddit-1vyephx",
+    "section": "community",
+    "title_en": "Peak Portable Personal Datacenter",
+    "title_ko": "휴대용 개인 데이터센터: 런치박스에 담은 96GB VRAM 로컬 LLM 리그",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vyephx/peak_portable_personal_datacenter/",
+    "sources": [
+      "reddit"
+    ],
+    "summary_ko": "Reddit 사용자가 FormD T1 ITX 케이스에 RTX Pro 6000 Blackwell(96GB VRAM)을 탑재한 휴대용 AI 워크스테이션을 공개했다. Qwen3-30B BF16 모델을 262K 컨텍스트로 구동하며, 175K 토큰 프리필을 약 102초에 처리하고 생성 속도는 45 tok/sec를 기록한다. 법률 문서 OCR·이미지 분석 등 고정밀 작업에서 Gemini Pro와 ChatGPT보다 우수하다고 평가했으며, 전체 장비가 런치박스 하나에 들어간다.",
+    "why_it_matters": "96GB VRAM 워크스테이션급 GPU를 ITX 폼팩터에 담아 완전한 BF16 로컬 추론을 실현한 사례로, 클라우드 없이도 대규모 컨텍스트 민감 문서 처리가 가능함을 보여준다.",
+    "tags": [
+      "LLM",
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 0.8480671296296296,
+    "published_at": "2026-08-25T22:28:30Z"
+  },
+  {
+    "id": "youtube-gmSwCPdwfcw",
+    "section": "video",
+    "title_en": "1년동안 제미나이를 무료로 쓰는 미친 이벤트;;;;",
+    "title_ko": "1년간 제미나이 무료 사용 이벤트 소개",
+    "url": "https://www.youtube.com/shorts/gmSwCPdwfcw",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "유튜버 조코딩이 구글 제미나이를 1년 동안 무료로 사용할 수 있는 이벤트를 소개하는 영상이다. 자세한 내용은 영상 본편에서 확인할 수 있다.",
+    "why_it_matters": "제미나이를 장기간 무료로 활용할 수 있는 기회로, 비용 부담 없이 AI 도구를 실험해보려는 개발자에게 유용할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7797949735449736,
+    "published_at": "2026-08-25T11:00:19Z"
+  },
+  {
+    "id": "youtube-D-y_hBD5wdU",
+    "section": "video",
+    "title_en": "한국 대표 AI 선발 기준이..?",
+    "title_ko": "한국 대표 AI 선발 기준 논란",
+    "url": "https://www.youtube.com/shorts/D-y_hBD5wdU",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 한국 대표 AI 선발 기준에 대한 논란을 다룬 영상이다. 영상의 구체적인 내용은 제목과 해시태그(#논란 #심사 #기준)를 통해 선발 기준에 대한 의문이나 비판을 다루는 것으로 보인다.",
+    "why_it_matters": "국내 AI 관련 공식 선발 및 심사 기준의 투명성에 대한 논의로 관심을 끌 수 있다.",
+    "tags": [],
+    "score": 0.7738227513227514,
+    "published_at": "2026-08-25T10:00:07Z"
+  },
+  {
+    "id": "youtube-k6O3cd5Ptx0",
+    "section": "video",
+    "title_en": "로봇들도 모여서 올림픽을 여는 시대",
+    "title_ko": "로봇들이 모여 올림픽을 여는 시대 도래",
+    "url": "https://www.youtube.com/shorts/k6O3cd5Ptx0",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "휴머노이드 로봇들이 참가하는 로봇 올림픽 관련 소식을 다룬 영상이다. 중국 휴머노이드 로봇 기술의 발전과 관련된 내용으로 보인다.",
+    "why_it_matters": "휴머노이드 로봇 기술이 스포츠 경쟁 수준까지 발전했음을 보여주는 상징적 이정표다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.7679083994708995,
+    "published_at": "2026-08-25T09:00:30Z"
+  },
+  {
+    "id": "simon_willison-eve-online-move-to-python-3",
+    "section": "deepdive",
+    "title_en": "EVE Online: The Move to Python 3 Begins!",
+    "title_ko": "EVE Online, 20년 만에 Python 3 전환 시작",
+    "url": "https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "EVE Online이 2003년 출시 이후 사용해온 Stackless Python 2.7에서 Python 3으로의 전환을 공식 발표했다. 240만 줄의 코드에 futurize 스크립트를 적용한 뒤, Python 2와 3의 동작이 다른 약 2만 곳을 수동으로 검토할 예정이다. Stackless 대체 방안은 이번 발표에 포함되지 않았으나, 신작 EVE Frontier의 Carbon 엔진에서는 이미 오픈소스 스케줄러 라이브러리로 Stackless를 대체한 바 있다.",
+    "why_it_matters": "수백만 줄 규모의 레거시 Python 2 코드베이스를 실제 운영 환경에서 전환하는 사례로, 대규모 파이썬 마이그레이션 전략의 현실적 참고자료가 된다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 0.8511425264550265,
+    "published_at": "2026-08-25T22:59:30Z"
+  }
+]
