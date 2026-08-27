@@ -1,0 +1,374 @@
+[
+  {
+    "id": "hf-2608.23189",
+    "section": "papers",
+    "title_en": "EchoWM: Open and Enterable Omnimodal World Models",
+    "title_ko": "EchoWM: 오픈소스 전방위 모달 월드 모델 — 내비게이션·영상·음향 통합 생성",
+    "url": "https://huggingface.co/papers/2608.23189",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "EchoWM은 720p 비디오, 환경음, 음악, 음성을 동시에 생성하는 오픈 월드 모델이다. 1인칭·3인칭 시점 모두를 지원하며, 카메라 인텐트를 중심으로 6-DoF 궤적 제어를 공유 메트릭 스케일로 통합한다. 보완적 데이터 엔진과 점진적 학습 후 자기회귀 사후 학습을 통해 장기 생성에서도 시청각 동기화를 유지한다. 공개 월드 모델 벤치마크에서 강력한 궤적 추적과 높은 시각적 품질을 달성했다.",
+    "why_it_matters": "영상·음향·내비게이션을 하나의 오픈 모델로 통합 제어할 수 있어 게임·시뮬레이션·인터랙티브 미디어 개발에 직접 활용 가능하다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 5.2626798770413155,
+    "published_at": "2026-08-23T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.24053",
+    "section": "papers",
+    "title_en": "WeMM-Embedding: WeChat Multi-Modal Embedding Technical Report",
+    "title_ko": "WeMM-Embedding: 위챗의 멀티모달 임베딩 모델 기술 보고서",
+    "url": "https://huggingface.co/papers/2608.24053",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "텐센트가 텍스트, 이미지, 영상, 시각 문서 등 다양한 형식을 단일 벡터 공간에 표현하는 멀티모달 임베딩 모델 패밀리 WeMM-Embedding을 공개했다. 2B·4B·9B 세 가지 크기로 제공되며, 대규모 멀티모달 정렬 후 정제 데이터와 세밀한 관련성 감독으로 추가 학습하는 2단계 방식으로 훈련된다. 9B 모델은 MMEB-v2에서 80.6의 새로운 최고 점수를 기록했으며, 2B 모델만으로도 기존 8B 오픈소스 기준 모델을 능가했다. 위챗 채널, 공식 계정, 모멘트, 커머스 등 실제 서비스에도 대규모 배포되었으며, 모델 가중치와 코드가 공개됐다.",
+    "why_it_matters": "실서비스 검증과 최고 수준의 벤치마크 성능을 동시에 달성한 오픈소스 멀티모달 임베딩 모델로, RAG·추천·에이전트 시스템 구축에 바로 활용 가능하다.",
+    "tags": [
+      "RAG",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 5.04305126783455,
+    "published_at": "2026-08-24T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.23041",
+    "section": "papers",
+    "title_en": "AutoSaddler: Automatic Harness Optimization with Durable Updates from Agent Execution Traces",
+    "title_ko": "AutoSaddler: 에이전트 실행 추적을 활용한 자동 하네스 최적화 프레임워크",
+    "url": "https://huggingface.co/papers/2608.23041",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LLM 에이전트는 장기 작업에서 작은 실패가 누적되어 전체 태스크 실패로 이어지는 문제가 있다. AutoSaddler는 하네스 개선을 오프라인 학습 문제로 정식화하고, 실패 신호를 기반으로 하네스를 반복적으로 업데이트하는 자동 최적화 프레임워크다. GAIA2, SWE-Bench Pro, Terminal-Bench 2.0 실험에서 각각 9.0, 9.6, 10.0 퍼센트포인트의 성능 향상을 달성했다. 효과적인 최적화를 위해 깊은 디버깅, 타겟형 수정, 일반화 인식 선택이 중요함을 제시한다.",
+    "why_it_matters": "수동으로 설계해야 했던 LLM 에이전트 하네스를 자동으로 최적화함으로써 장기 태스크에서의 신뢰성을 크게 높일 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.912023005428146,
+    "published_at": "2026-08-23T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.24646",
+    "section": "papers",
+    "title_en": "On-Policy Self-Distillation in Diffusion Models",
+    "title_ko": "확산 모델을 위한 온-폴리시 자기 증류 프레임워크 DiffusionOPSD",
+    "url": "https://huggingface.co/papers/2608.24646",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "강화학습 기반으로 확산 모델을 인간 선호도에 맞추는 새로운 프레임워크 DiffusionOPSD가 제안됐다. 이미지 수준의 보상 신호를 중간 디노이징 단계의 명시적 학습 목표로 변환하는 온-폴리시 자기 증류 방식을 사용한다. SD 3.5-M 및 Z-Image-Turbo 두 백본에서 20개 보상 매칭 설정 중 19개에서 최고 성능을 기록했으며, 가장 강력한 경쟁 방법 대비 최대 44.0% 성능 향상과 함께 DiffusionNFT 대비 GPU 학습 시간을 최대 63% 절감했다.",
+    "why_it_matters": "확산 모델의 정렬(alignment) 효율을 크게 높이면서도 학습 비용을 대폭 줄여, 실용적인 이미지 생성 모델 파인튜닝의 새로운 기준을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.891820298110627,
+    "published_at": "2026-08-24T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.23035",
+    "section": "papers",
+    "title_en": "MobilePA-Bench: Benchmarking Mobile Planner Agents on Complex Real-World Tasks",
+    "title_ko": "MobilePA-Bench: 복잡한 실제 작업에서 모바일 플래너 에이전트를 평가하는 벤치마크",
+    "url": "https://huggingface.co/papers/2608.23035",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "MobilePA-Bench는 모바일 환경에서 LLM 에이전트의 도구 호출 및 계획 능력을 평가하는 인터랙티브 벤치마크입니다. 13개 기능 도메인과 212개의 실제 모바일 도구를 포함하며, 실행 가능한 샌드박스 환경에서 실시간 애플리케이션 데이터베이스를 유지합니다. 서브 에이전트 협업, 메모리 활용, 스킬 사용 등 세 가지 고급 차원을 평가하며, 실험 결과 현재 최신 LLM들은 엄격한 도구 순서, 권한 제한, 런타임 오류 상황에서 성능이 크게 저하되는 것으로 나타났습니다.",
+    "why_it_matters": "기존 벤치마크의 GUI 중심 또는 정적 API 매칭 한계를 극복하여 실제 모바일 에이전트의 신뢰성을 종합적으로 평가할 수 있는 기반을 제공합니다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.663561646129646,
+    "published_at": "2026-08-23T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-bringing-chatgpt-for-teachers-to-more-us-school-districts",
+    "section": "releases",
+    "title_en": "Bringing ChatGPT for Teachers to more U.S. school districts",
+    "title_ko": "ChatGPT for Teachers, 미국 55개 학교 시스템으로 확대",
+    "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 교사용 ChatGPT를 미국 55개 학교 시스템으로 확대한다. 이번 확장을 통해 10만 명 이상의 교육자와 교직원이 보안이 강화된 AI 도구, 교육, 지원 서비스를 이용할 수 있게 된다.",
+    "why_it_matters": "OpenAI가 교육 현장 진출을 본격화하며 AI 도구의 K-12 교육 내 표준화 가능성을 높이고 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7738111772486773,
+    "published_at": "2026-08-26T10:00:00Z"
+  },
+  {
+    "id": "openai_blog-learning-never-stops",
+    "section": "releases",
+    "title_en": "Learning never stops: How AI makes learning continuous",
+    "title_ko": "배움은 멈추지 않는다: AI가 학습을 지속적으로 만드는 방법",
+    "url": "https://openai.com/index/learning-never-stops",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 학생과 교육자들이 ChatGPT를 활용해 교실 밖에서도 학습을 이어가는 방식을 분석한 새로운 보고서를 발표했다. 이 보고서는 AI가 기존 교육의 시간적·공간적 한계를 어떻게 극복하는지에 초점을 맞추고 있다. ChatGPT가 지속적인 학습 지원 도구로 활용되는 실제 사례들을 담고 있다.",
+    "why_it_matters": "AI가 교육 현장에서 실질적으로 어떻게 활용되는지를 OpenAI가 직접 분석한 보고서로, 에듀테크 분야에서 LLM의 영향력을 가늠할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7738111772486773,
+    "published_at": "2026-08-26T10:00:00Z"
+  },
+  {
+    "id": "github_trending-freestylefly/awesome-gpt-image-2",
+    "section": "releases",
+    "title_en": "freestylefly/awesome-gpt-image-2",
+    "title_ko": "GPT-Image-2 산업급 프롬프트 엔진 및 템플릿 라이브러리 (530+ 케이스)",
+    "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "GPT-Image-2를 위한 오픈소스 프롬프트 라이브러리로, 530개 이상의 역공학 사례와 20개 이상의 산업급 템플릿을 제공한다. UI, 인포그래픽, 포스터, 제품 사진 등 12개 카테고리로 구성되며, 에이전트 및 자동화 워크플로우와 연동 가능한 구조화된 프롬프트 형식을 채택하고 있다. Claude Code, Codex, Cursor 등에 설치 가능한 에이전트 스킬 패키지도 함께 제공된다.",
+    "why_it_matters": "GPT-Image-2 프롬프트를 코드처럼 구조화해 배치 생성·자동화 워크플로우에 바로 활용할 수 있는 실전 레퍼런스 라이브러리다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7283035714285715,
+    "published_at": "2026-08-26T02:21:17Z"
+  },
+  {
+    "id": "github_trending-anthropics/claude-plugins-community",
+    "section": "releases",
+    "title_en": "anthropics/claude-plugins-community",
+    "title_ko": "Anthropic, Claude 커뮤니티 플러그인 마켓플레이스 공개",
+    "url": "https://github.com/anthropics/claude-plugins-community",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 Claude Cowork 및 Claude Code용 커뮤니티 플러그인 마켓플레이스를 GitHub에 공개했다. 이 저장소는 읽기 전용 미러로, 보안 스캔과 승인 절차를 거친 플러그인 목록을 매일 밤 동기화한다. 플러그인 제출은 clau.de/plugin-directory-submission을 통해 가능하며, Claude Code에서는 CLI 명령어로 설치할 수 있다.",
+    "why_it_matters": "Claude 생태계에 커뮤니티 주도 플러그인 확장이 가능해져 개발자들이 직접 기능을 기여하고 활용할 수 있는 공식 채널이 열렸다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7283035714285715,
+    "published_at": "2026-08-26T02:21:17Z"
+  },
+  {
+    "id": "github_trending-MadsLorentzen/ai-job-search",
+    "section": "releases",
+    "title_en": "MadsLorentzen/ai-job-search",
+    "title_ko": "AI 취업 지원 자동화 프레임워크: Claude Code 기반 오픈소스 구직 도구",
+    "url": "https://github.com/MadsLorentzen/ai-job-search",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code CLI를 기반으로 구축된 오픈소스 AI 취업 지원 프레임워크다. 채용공고 적합도 평가, LaTeX 이력서·자기소개서 맞춤 작성, 드래프터-리뷰어 이중 에이전트 검수, ATS 최적화, 면접 준비까지 전 과정을 자동화한다. 제작자는 실제로 이 도구로 69개 맞춤 지원서를 제출해 20회 1차 면접 후 AI 엔지니어 포지션을 얻었다고 밝혔다. 덴마크 취업 포털에 특화되어 있지만, 다른 국가 포털도 /add-portal 명령으로 추가 가능하다.",
+    "why_it_matters": "실제 취업에 검증된 AI 에이전트 기반 구직 자동화 파이프라인을 오픈소스로 공개해, 개발자가 자신만의 AI 구직 시스템을 직접 소유·확장할 수 있는 기반이 된다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7283035714285715,
+    "published_at": "2026-08-26T02:21:17Z"
+  },
+  {
+    "id": "github_trending-TauricResearch/TradingAgents",
+    "section": "releases",
+    "title_en": "TauricResearch/TradingAgents",
+    "title_ko": "TradingAgents: 다중 에이전트 LLM 금융 트레이딩 프레임워크",
+    "url": "https://github.com/TauricResearch/TradingAgents",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "TradingAgents는 실제 트레이딩 회사의 구조를 모방한 멀티 에이전트 LLM 트레이딩 프레임워크로, 펀더멘털 분석가·감성 분석가·기술적 분석가·트레이더·리스크 관리팀 등 전문화된 에이전트가 협력해 매매 결정을 내린다. OpenAI, Google, Anthropic, DeepSeek, Qwen 등 다양한 LLM 프로바이더를 지원하며 LangGraph 기반으로 구현됐다. 전 세계 주요 시장(미국·홍콩·일본·인도·암호화폐 등)의 티커를 지원하고, 체크포인트 재개 및 의사결정 로그 기능도 제공한다.",
+    "why_it_matters": "금융 트레이딩 도메인에서 멀티 에이전트 LLM 협업 구조를 오픈소스로 완전 공개해, 연구자와 개발자가 실제 트레이딩 시나리오에 AI 에이전트를 적용·실험할 수 있는 기반을 제공한다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7283035714285715,
+    "published_at": "2026-08-26T02:21:17Z"
+  },
+  {
+    "id": "github_trending-AgriciDaniel/claude-obsidian",
+    "section": "releases",
+    "title_en": "AgriciDaniel/claude-obsidian",
+    "title_ko": "Claude + Obsidian 기반 자기 조직화 AI 두 번째 뇌 (claude-obsidian)",
+    "url": "https://github.com/AgriciDaniel/claude-obsidian",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "claude-obsidian은 Claude Code와 Obsidian을 연동해 소스 자료를 자동으로 읽고, 링크하고, 일반 마크다운 파일로 구성된 지식 그래프에 정리해주는 로컬 우선 지식 관리 시스템입니다. 모든 데이터는 사용자 소유의 마크다운 파일로 저장되며, 클라우드 업로드 없이 작동합니다. Andrej Karpathy의 LLM Wiki 패턴을 기반으로 설계되었으며, LYT·PARA·Zettelkasten 등 다양한 노트 방법론을 지원합니다.",
+    "why_it_matters": "AI 기반 노트 테이킹과 개인 지식 관리를 로컬·오픈소스로 구현하는 실용적인 대안을 제시하며, Claude Code 플러그인 생태계 확장에도 의미가 있습니다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7283035714285715,
+    "published_at": "2026-08-26T02:21:17Z"
+  },
+  {
+    "id": "hn-49449507",
+    "section": "community",
+    "title_en": "GLM-5.3-Flash",
+    "title_ko": "GLM-5.3-Flash 공개",
+    "url": "https://z.ai/blog/glm-5.3-flash",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GLM-5.3-Flash 모델이 공개되었다. 상세한 설명이 제공되지 않아 구체적인 사양이나 성능 정보는 확인할 수 없다.",
+    "why_it_matters": "GLM 시리즈의 새로운 Flash 모델로, 경량·고속 추론에 초점을 맞춘 LLM일 가능성이 있어 주목된다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 10.82102103197524,
+    "published_at": "2026-08-26T14:08:50Z"
+  },
+  {
+    "id": "hn-49448210",
+    "section": "community",
+    "title_en": "Qwen3.8-Flash-Next",
+    "title_ko": "Qwen3.8-Flash-Next 공개",
+    "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Qwen3.8-Flash-Next 모델이 공개되었다. 상세한 설명이 제공되지 않아 구체적인 성능이나 특징은 확인이 어렵다.",
+    "why_it_matters": "Qwen 시리즈의 새로운 경량 플래시 모델로, 알리바바의 오픈소스 LLM 생태계 확장 동향을 주목할 필요가 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 10.072238788031864,
+    "published_at": "2026-08-26T12:52:12Z"
+  },
+  {
+    "id": "hn-49445727",
+    "section": "community",
+    "title_en": "RAG Is Simpler Than You Think",
+    "title_ko": "RAG는 생각보다 단순하다",
+    "url": "https://www.lighthousenewsletter.com/p/rag-is-simpler-than-you-think",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "RAG(검색 증강 생성)의 개념과 구현이 많은 개발자들이 생각하는 것보다 훨씬 단순할 수 있다는 내용을 다룬다. 복잡하게 느껴지는 RAG를 쉽게 접근할 수 있도록 안내하는 글로 보인다.",
+    "why_it_matters": "RAG 도입을 망설이는 개발자들에게 진입 장벽을 낮춰줄 수 있는 관점을 제공한다.",
+    "tags": [
+      "RAG"
+    ],
+    "score": 9.65699986524979,
+    "published_at": "2026-08-26T08:39:17Z"
+  },
+  {
+    "id": "hn-49452990",
+    "section": "community",
+    "title_en": "Tailcat – Like netcat, but over Tailscale’s data plane",
+    "title_ko": "Tailcat – Tailscale 데이터 플레인 기반의 netcat 대안",
+    "url": "https://github.com/tailscale/tailcat",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Tailcat은 네트워크 유틸리티 netcat과 유사하지만 Tailscale의 데이터 플레인을 통해 동작하는 도구다. Tailscale의 보안 네트워크 위에서 netcat 스타일의 통신을 가능하게 한다.",
+    "why_it_matters": "Tailscale 환경에서 netcat 방식의 간편한 네트워크 디버깅·데이터 전송이 가능해진다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.410287847274843,
+    "published_at": "2026-08-26T17:42:22Z"
+  },
+  {
+    "id": "hn-49454314",
+    "section": "community",
+    "title_en": "The Hugging Face incident and the road ahead",
+    "title_ko": "Hugging Face 보안 사고와 향후 대응 방향",
+    "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Hugging Face에서 보안 사고가 발생했으며, 이에 대한 경위와 향후 대응 방향을 다루는 내용이다. 구체적인 세부 사항은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "AI 모델 허브의 보안 사고는 수많은 개발자와 기업의 워크플로우에 직접적인 영향을 미칠 수 있다.",
+    "tags": [
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 8.791403704492279,
+    "published_at": "2026-08-26T19:15:23Z"
+  },
+  {
+    "id": "youtube-w5oupYX9rUQ",
+    "section": "video",
+    "title_en": "3D 캐릭터 일일히 만들 필요가 없는 이유",
+    "title_ko": "3D 캐릭터를 직접 만들지 않아도 되는 이유",
+    "url": "https://www.youtube.com/shorts/w5oupYX9rUQ",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 3D 캐릭터 모델링을 일일이 직접 제작하지 않아도 되는 방법을 소개하는 영상이다. 구체적인 도구나 기법에 대한 상세 내용은 영상 본문에서 다루고 있다.",
+    "why_it_matters": "3D 에셋 제작 부담을 줄일 수 있는 방법을 소개해 1인 개발자나 인디 창작자에게 실질적인 도움이 될 수 있다.",
+    "tags": [],
+    "score": 0.7797900132275133,
+    "published_at": "2026-08-26T11:00:16Z"
+  },
+  {
+    "id": "youtube-fNyHVbY8m8g",
+    "section": "video",
+    "title_en": "🚨 알리는 당신이 누군지 다 알고있습니다",
+    "title_ko": "알리익스프레스, 당신의 신원을 파악하고 있다?",
+    "url": "https://www.youtube.com/shorts/fNyHVbY8m8g",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 알리익스프레스(알리)의 개인정보 수집 관련 내용을 다루는 영상이다. 영상은 알리가 사용자 신원을 파악하고 있다는 주제를 중심으로 구성된 것으로 보인다. 구체적인 기술적 내용은 description에서 확인되지 않는다.",
+    "why_it_matters": "중국 플랫폼의 개인정보 수집 이슈는 한국 사용자에게도 직접적인 영향을 미칠 수 있어 주의가 필요하다.",
+    "tags": [],
+    "score": 0.7738343253968254,
+    "published_at": "2026-08-26T10:00:14Z"
+  },
+  {
+    "id": "youtube-3flfON7F8hU",
+    "section": "video",
+    "title_en": "미국의 노션 본사, 직접 다녀왔습니다 - AI로 일하는 실리콘밸리 회사는 뭐가 다를까",
+    "title_ko": "노션 실리콘밸리 본사 방문기 – AI 시대의 업무 방식은 무엇이 다른가",
+    "url": "https://www.youtube.com/watch?v=3flfON7F8hU",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "유튜버 조코딩이 미국 실리콘밸리 노션 본사를 직접 방문해 AI 활용 업무 방식을 취재했다. 현지 개발자 인터뷰를 통해 자가 수정 사내 에이전트, 매니저를 복제한 AI, AI 결과물 평가 방법론 등을 소개한다. 노션 공동창업자 악샤이 코타리와의 인터뷰에서는 노션의 AX(AI 전환) 플레이북과 에이전트 인프라 전략도 다룬다.",
+    "why_it_matters": "실제 AI 선도 기업이 내부에서 에이전트를 어떻게 구축·운용하는지 한국어로 생생하게 확인할 수 있는 드문 현장 취재다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 0.773817791005291,
+    "published_at": "2026-08-26T10:00:04Z"
+  },
+  {
+    "id": "simon_willison-qwen38-flash-next",
+    "section": "deepdive",
+    "title_en": "Qwen3.8-Flash-Next",
+    "title_ko": "Qwen3.8-Flash-Next: Qwen4 아키텍처 미리보기 멀티모달 MoE 모델 공개",
+    "url": "https://simonwillison.net/2026/Aug/26/qwen38-flash-next/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Qwen이 새로운 오픈 웨이트 모델 Qwen3.8-Flash-Next를 공개했다. 이 모델은 멀티모달 MoE 구조로, Qwen4에서 사용될 아키텍처의 얼리 프리뷰 역할을 한다. 총 파라미터는 125B이지만 활성 파라미터는 6B에 불과해 성능 대비 효율이 높다. Simon Willison은 DGX Spark에서 Unsloth의 양자화 모델로 직접 테스트했다.",
+    "why_it_matters": "차세대 Qwen4 아키텍처를 미리 경험할 수 있는 대형 MoE 모델이 오픈 웨이트로 공개되어, 로컬 실행 가능성과 멀티모달 성능을 가늠해볼 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8564467592592593,
+    "published_at": "2026-08-26T23:52:58Z"
+  }
+]
