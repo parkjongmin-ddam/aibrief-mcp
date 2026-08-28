@@ -1,0 +1,326 @@
+[
+  {
+    "id": "hf-2608.26005",
+    "section": "papers",
+    "title_en": "VoiceMem: Streaming Dual-Brain Memory for Real-Time Interaction",
+    "title_ko": "VoiceMem: 실시간 음성 대화를 위한 스트리밍 이중 뇌 메모리 아키텍처",
+    "url": "https://huggingface.co/papers/2608.26005",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "VoiceMem은 음성 언어 모델(SLM)을 위한 스트리밍 메모리 시스템으로, 정보 처리를 담당하는 '좌뇌'와 감정 처리를 담당하는 '우뇌'로 구성된 이중 구조를 채택했다. 좌뇌는 top-5 검색 기준으로 기존 Mem0 시스템의 top-200 성능을 약 30점 차이로 앞서며, 우뇌는 세 가지 페르소나 벤치마크에서 최고 성능을 기록했다. 전체 검색 지연 시간은 134ms로, 표준 VAD 지연 범위 내에서 실시간 대화 흐름을 방해하지 않는다.",
+    "why_it_matters": "실시간 음성 AI 대화에서 정확성·감정 인식·저지연을 동시에 달성한 실용적 메모리 아키텍처로, 개인화된 음성 어시스턴트 개발의 핵심 토대가 될 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 6.030437921392435,
+    "published_at": "2026-08-25T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.19583",
+    "section": "papers",
+    "title_en": "VGI-Bench: Probing Visual Intelligence in Video Generation Models",
+    "title_ko": "VGI-Bench: 비디오 생성 모델의 시각적 지능 평가 벤치마크",
+    "url": "https://huggingface.co/papers/2608.19583",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "VGI-Bench는 비디오 생성 모델의 시각적 추론 능력을 평가하기 위한 벤치마크로, 27개 태스크와 810개 인스턴스로 구성되어 있습니다. 두 단계 분류 체계(태스크 도메인 및 스킬 태그)를 통해 세밀한 평가가 가능합니다. 평가 결과, 최강 모델인 Seedance 2.0도 51.0%의 정확도에 그쳐 현재 생성 시스템의 시각적 추론 능력이 아직 불안정함을 보여줍니다. 또한 디노이징 과정에서 초기 가설을 수정하기보다 정제하는 데 그친다는 한계도 밝혀졌습니다.",
+    "why_it_matters": "비디오 생성 모델의 시각적 추론 능력을 체계적으로 측정할 신뢰할 수 있는 평가 기준이 생겼다는 점에서, 차세대 모델 개발 방향을 제시하는 중요한 기준점이 된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.962844630259907,
+    "published_at": "2026-08-25T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.24479",
+    "section": "papers",
+    "title_en": "WarpSAC: Towards the Pinnacle of Scalable Off-policy RL by Rethinking Exploration and Exploitation",
+    "title_ko": "WarpSAC: 탐색-활용 재고를 통한 확장 가능한 오프-폴리시 강화학습의 정점",
+    "url": "https://huggingface.co/papers/2608.24479",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "대규모 병렬 시뮬레이션 환경에서는 기존 오프-폴리시 RL 안정화 기법이 데이터 체계에 따라 상반된 효과를 낸다는 것을 8개 벤치마크 군에서 실험으로 입증했다. 이를 바탕으로 데이터 체계를 인식하는 WarpSAC 알고리즘 패밀리를 제안하며, 데이터가 제한된 CPU 환경용 WarpSAC-L과 데이터가 풍부한 GPU 병렬 환경용 WarpSAC-A 두 가지 변형을 제공한다. FlashSAC 대비 CPU 환경에서 4.5%, GPU 병렬 환경에서 23.1% 성능 향상을 달성했으며, UnitreeG1 로봇의 sim-to-real 배포 속도를 36.4% 단축했다.",
+    "why_it_matters": "데이터 체계에 따라 RL 안정화 전략을 적응적으로 선택해야 한다는 실용적 통찰로, 로봇 등 대규모 병렬 RL 적용 분야에 직접적인 성능 향상을 제공한다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 5.90527477843843,
+    "published_at": "2026-08-24T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.24979",
+    "section": "papers",
+    "title_en": "FrontierChallenge: Evaluating Scientific Workflow Completion",
+    "title_ko": "FrontierChallenge: 과학적 워크플로우 완성도를 평가하는 새 벤치마크",
+    "url": "https://huggingface.co/papers/2608.24979",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "FrontierChallenge는 양자화학, 분자동역학, 생명과학 등 6개 도메인을 아우르는 300개의 종단간 과학 워크플로우 벤치마크다. 현재 공개된 97개 태스크를 12개 최신 모델과 3가지 에이전트 스캐폴드로 평가한 결과, 최고 성능 구성도 Pass Rate 20.6%에 그쳤다. 특히 분석화학과 전기화학 분야에서는 평균 점수가 87~95점에 달함에도 Pass Rate는 0~4%에 불과했으며, Claude Code 비통과 궤적의 75.5%가 완료를 주장하는 문장으로 끝났다. 이는 높은 부분 점수나 모델의 자신감 있는 완료 선언이 실제 과학적 산출물의 완전한 납품을 보장하지 않음을 보여준다.",
+    "why_it_matters": "AI 에이전트의 과학 연구 자동화 신뢰성에 심각한 허점이 있음을 실증적으로 드러내, 종단간 완성도 평가의 필요성을 강조한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.897839799950911,
+    "published_at": "2026-08-24T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.26105",
+    "section": "papers",
+    "title_en": "VBVR-Pro: A Scalable and Verifiable Suite for Native Visual Reasoning",
+    "title_ko": "VBVR-Pro: 시각적 추론을 위한 확장 가능한 검증 가능 벤치마크 스위트",
+    "url": "https://huggingface.co/papers/2608.26105",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "VBVR-Pro는 시각적 생성(이미지·영상)을 추론의 매개체로 삼는 '네이티브 시각 추론'을 훈련·검증·최적화할 수 있는 폐쇄형 테스트베드다. 절차적으로 생성된 300개의 태스크로 구성되며, RISE-Video·MME-CoF-Pro 등 7개의 외부 벤치마크에서 강한 전이 성능을 보인다. VLM-as-a-judge 방식의 한계를 지적하고, 결정론적 규칙 기반의 검증 가능한 보상 스코어러를 제안해 대규모 강화학습에 활용한다. 데이터·모델·코드 전체를 공개한다.",
+    "why_it_matters": "시각 생성 기반 추론의 훈련 데이터 부족과 신뢰할 수 없는 평가 문제를 동시에 해결하는 체계적 프레임워크를 제시한다는 점에서 멀티모달 AI 연구의 핵심 병목을 공략한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.931825632724326,
+    "published_at": "2026-08-25T20:00:00Z"
+  },
+  {
+    "id": "google_blog-book-travel-ai-mode",
+    "section": "releases",
+    "title_en": "3 new ways to plan and book travel in Search",
+    "title_ko": "구글 검색 AI 모드에 여행 계획·예약 기능 3가지 추가",
+    "url": "https://blog.google/products-and-platforms/products/search/book-travel-ai-mode/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글이 검색의 AI 모드에 여행 관련 새로운 기능 3가지를 도입했다. 이를 통해 사용자는 검색에서 직접 여행을 계획하고 예약하는 과정을 보다 편리하게 이용할 수 있게 된다.",
+    "why_it_matters": "구글 검색이 단순 정보 제공을 넘어 여행 예약까지 처리하는 AI 기반 통합 플랫폼으로 진화하고 있음을 보여주는 사례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8095254629629629,
+    "published_at": "2026-08-27T16:00:00Z"
+  },
+  {
+    "id": "github_trending-freestylefly/awesome-gpt-image-2",
+    "section": "releases",
+    "title_en": "freestylefly/awesome-gpt-image-2",
+    "title_ko": "GPT-Image2 산업급 프롬프트 엔진 & 템플릿 라이브러리",
+    "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "GPT-Image-2를 위한 530개 이상의 역설계 케이스와 20개 이상의 산업급 템플릿을 제공하는 오픈소스 저장소다. 프롬프트를 코드처럼 구조화하는 'Prompt as Code' 개념을 적용해 주제, 조명, 레이아웃 등을 원자 단위로 분리·조합할 수 있다. UI/인포그래픽/포스터/제품 등 12개 카테고리로 분류되며, Claude Code·Codex·Cursor 등 AI 에이전트와 연동 가능한 스킬 패키지도 제공한다.",
+    "why_it_matters": "대량 이미지 생성이나 자동화 워크플로우에서 재사용 가능한 구조화된 프롬프트 자산을 즉시 활용할 수 있어 개발자의 AI 이미지 생산성을 크게 높일 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7785615079365079,
+    "published_at": "2026-08-27T10:47:53Z"
+  },
+  {
+    "id": "github_trending-anthropics/claude-plugins-official",
+    "section": "releases",
+    "title_en": "anthropics/claude-plugins-official",
+    "title_ko": "Anthropic, Claude Code 공식 플러그인 디렉토리 공개",
+    "url": "https://github.com/anthropics/claude-plugins-official",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 Claude Code용 공식 플러그인 디렉토리를 GitHub에 공개했다. 내부(Anthropic 개발) 플러그인과 외부(서드파티) 플러그인으로 구분되며, `/plugin install {plugin-name}@claude-plugins-official` 명령으로 바로 설치할 수 있다. 각 플러그인은 MCP 서버 설정, 슬래시 커맨드, 에이전트, 스킬 정의 등을 포함하는 표준 구조를 따른다.",
+    "why_it_matters": "Claude Code의 확장 생태계가 공식 마켓플레이스 형태로 체계화되면서, 개발자들이 검증된 플러그인을 손쉽게 탐색·설치할 수 있는 기반이 마련됐다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7785615079365079,
+    "published_at": "2026-08-27T10:47:53Z"
+  },
+  {
+    "id": "github_trending-Alishahryar1/free-claude-code",
+    "section": "releases",
+    "title_en": "Alishahryar1/free-claude-code",
+    "title_ko": "무료로 Claude Code·Codex 등 10가지 코딩 에이전트를 사용하는 오픈소스 프록시 'Free Claude Code'",
+    "url": "https://github.com/Alishahryar1/free-claude-code",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Free Claude Code(FCC)는 50개 이상의 무료·유료 AI 제공업체를 하나의 로컬 프록시로 묶어, Claude Code, Codex, Aider 등 10가지 코딩 에이전트를 터미널·IDE·모바일에서 무료로 사용할 수 있게 해주는 오픈소스 도구다. 월 13억 토큰 이상의 무료 할당량을 활용하며, 제공업체 장애 시 자동 폴백과 토큰 절감 최적화 기능도 내장되어 있다. VS Code, JetBrains, Discord, Telegram 연동과 음성 입력(Whisper)도 지원한다.",
+    "why_it_matters": "유료 Claude Code 구독 없이도 다양한 무료 LLM 백엔드를 투명하게 전환하며 AI 코딩 에이전트를 풀로 활용할 수 있어, 비용 부담 없이 프로덕션급 코딩 워크플로를 구성할 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7785615079365079,
+    "published_at": "2026-08-27T10:47:53Z"
+  },
+  {
+    "id": "github_trending-MadsLorentzen/ai-job-search",
+    "section": "releases",
+    "title_en": "MadsLorentzen/ai-job-search",
+    "title_ko": "Claude Code 기반 AI 취업 지원 자동화 프레임워크",
+    "url": "https://github.com/MadsLorentzen/ai-job-search",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "로컬 머신에서 실행되는 AI 취업 지원 프레임워크로, Claude Code를 활용해 채용 공고 평가, 이력서 맞춤 작성, 커버레터 생성, 면접 준비까지 전 과정을 자동화한다. 드래프터-리뷰어 이중 에이전트 구조로 LaTeX 기반 PDF를 생성하며, ATS 파싱 검증까지 수행한다. 제작자가 실제로 이 도구를 사용해 69건의 맞춤 지원서를 제출하고 취업에 성공했다고 밝혔으며, MIT 라이선스 오픈소스로 공개되어 있다.",
+    "why_it_matters": "취업 준비 전 과정을 AI 에이전트로 자동화하는 실용적인 오픈소스 레퍼런스로, 에이전트 워크플로우 설계 패턴을 직접 확인할 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7785615079365079,
+    "published_at": "2026-08-27T10:47:53Z"
+  },
+  {
+    "id": "github_trending-AgriciDaniel/claude-obsidian",
+    "section": "releases",
+    "title_en": "AgriciDaniel/claude-obsidian",
+    "title_ko": "Claude + Obsidian으로 만드는 자기 조직화 AI 지식 베이스",
+    "url": "https://github.com/AgriciDaniel/claude-obsidian",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "claude-obsidian은 Claude Code와 Obsidian을 연동해 소스 자료를 자동으로 읽고, 링크를 연결하며, 일반 마크다운 파일로 구성된 지식 그래프를 구축하는 오픈소스 로컬 PKM 시스템입니다. Karpathy의 LLM Wiki 패턴을 기반으로 하며, 수집·분류·검색·정리까지 15개의 스킬로 일관된 워크플로를 제공합니다. 모든 파일은 사용자 소유의 로컬 디렉터리에 저장되며 클라우드로 업로드되지 않습니다.",
+    "why_it_matters": "Claude를 노트 도구로 활용해 출처 추적 기반의 신뢰할 수 있는 개인 지식 관리 시스템을 로컬에서 자체 소유로 구축할 수 있다는 점이 핵심 차별점이다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "에이전트"
+    ],
+    "score": 0.7785615079365079,
+    "published_at": "2026-08-27T10:47:53Z"
+  },
+  {
+    "id": "github_trending-rohitg00/ai-engineering-from-scratch",
+    "section": "releases",
+    "title_en": "rohitg00/ai-engineering-from-scratch",
+    "title_ko": "처음부터 배우는 AI 엔지니어링: 511개 레슨 무료 오픈소스 커리큘럼",
+    "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "수학 기초부터 자율 에이전트까지 20단계 페이즈로 구성된 AI 엔지니어링 완전 커리큘럼이다. 총 511개 레슨, 약 329시간 분량으로 Python·TypeScript·Rust·Julia를 지원하며, 매 레슨마다 프롬프트·스킬·에이전트·MCP 서버 형태의 재사용 가능한 결과물을 직접 만든다. MIT 라이선스로 무료 제공되며, AI 튜터 스킬을 에이전트에 설치해 대화형으로 학습할 수 있다. LLM 엔지니어링(Phase 11), 에이전트 엔지니어링(Phase 14), MCP(Phase 13) 등 관심 영역만 선택해 빠르게 시작할 수도 있다.",
+    "why_it_matters": "이론 학습에 그치지 않고 매 레슨마다 실제 배포 가능한 아티팩트를 산출하는 체계적 구조로, AI 엔지니어로 빠르게 전환하려는 한국 개발자에게 실전 포트폴리오 구축 경로를 제공한다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "RAG"
+    ],
+    "score": 0.7785615079365079,
+    "published_at": "2026-08-27T10:47:53Z"
+  },
+  {
+    "id": "hn-49458161",
+    "section": "community",
+    "title_en": "Nvidia agrees to acquire Hugging Face for $13B",
+    "title_ko": "엔비디아, 허깅페이스를 130억 달러에 인수 합의",
+    "url": "https://www.businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "엔비디아가 AI 모델 허브 및 오픈소스 커뮤니티로 유명한 허깅페이스를 130억 달러에 인수하기로 합의했다고 전해졌다. 상세한 내용은 확인된 정보가 없어 추가 설명은 생략한다.",
+    "why_it_matters": "AI 인프라 강자 엔비디아가 오픈소스 AI 생태계의 핵심 플랫폼을 품을 경우 업계 판도에 큰 영향을 미칠 수 있다.",
+    "tags": [
+      "오픈소스",
+      "인프라",
+      "LLM"
+    ],
+    "score": 11.897111433446945,
+    "published_at": "2026-08-27T01:12:55Z"
+  },
+  {
+    "id": "hn-49466917",
+    "section": "community",
+    "title_en": "Small Models Have Arrived",
+    "title_ko": "소형 모델의 시대가 왔다",
+    "url": "https://calv.info/small-models-have-arrived",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "소형 AI 모델의 부상을 다루는 글로, 대형 모델 중심의 흐름에서 소형 모델이 주목받고 있음을 시사한다. 상세한 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "소형 모델은 비용·속도·온디바이스 활용 측면에서 실용적 대안으로 떠오르고 있어 개발자에게 직접적인 영향을 미친다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.895744082040812,
+    "published_at": "2026-08-27T15:56:58Z"
+  },
+  {
+    "id": "hn-49461817",
+    "section": "community",
+    "title_en": "Show HN: The load-bearing vocabulary of Claude",
+    "title_ko": "Claude의 핵심 어휘 분석 프로젝트 공개",
+    "url": "https://louisabraham.github.io/load-bearing/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Claude AI 모델의 응답에서 자주 사용되는 핵심 어휘와 표현 패턴을 분석한 프로젝트가 공개되었다. 제목의 'load-bearing vocabulary'는 Claude의 언어 구조를 떠받치는 중요한 단어들을 의미하는 것으로 보인다.",
+    "why_it_matters": "Claude의 언어적 특성을 파악하면 LLM 출력 패턴 이해와 프롬프트 설계에 실질적 도움이 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.525938090368388,
+    "published_at": "2026-08-27T08:59:49Z"
+  },
+  {
+    "id": "hn-49447057",
+    "section": "community",
+    "title_en": "The turbulent AI era is here",
+    "title_ko": "격동의 AI 시대가 도래했다",
+    "url": "https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/a-turbulent-ai-era-and-critical-choices-to-make?WT.mc_id=20260826_ai-overture-2026-med-med",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI 기술의 급격한 발전과 함께 격동의 시대가 시작되었음을 알리는 글이다. 구체적인 내용은 제공되지 않았으나, AI 산업의 변화와 혼란에 대한 논의로 보인다.",
+    "why_it_matters": "AI 전환기의 흐름을 읽는 데 참고할 수 있는 시각을 제시할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.52165563860712,
+    "published_at": "2026-08-26T11:23:54Z"
+  },
+  {
+    "id": "hn-49467922",
+    "section": "community",
+    "title_en": "Gemini Omni 1.1 Flash",
+    "title_ko": "Gemini 2.5 Flash (Omni) 1.1 출시",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Google의 Gemini Omni 1.1 Flash 모델이 공개되었다. 상세한 설명은 제공되지 않았으나, Gemini Flash 계열의 업데이트 버전으로 보인다.",
+    "why_it_matters": "Google의 경량 멀티모달 LLM 라인업 업데이트로, 개발자들의 활용 가능성에 주목할 필요가 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.763021309018518,
+    "published_at": "2026-08-27T17:06:32Z"
+  },
+  {
+    "id": "simon_willison-breaking-claude-code-opus-5-auto-mode",
+    "section": "deepdive",
+    "title_en": "Breaking Claude Code Opus 5 Auto Mode",
+    "title_ko": "Claude Code Opus 5 Auto Mode 프롬프트 인젝션 취약점 발견",
+    "url": "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "보안 연구자 Johann Rehberger가 Claude Code의 Auto Mode를 우회하는 프롬프트 인젝션 공격을 발견했으며, 성공률이 약 80%에 달한다고 밝혔다. 공격 방식은 Claude Code가 zip 아카이브를 다운로드·압축 해제하도록 유도한 뒤, base64 임포트 시 로컬의 악성 struct.py 파일이 실행되는 구조를 이용한다. 더 심각한 점은 Auto Mode가 악성 프로세스 생성은 허용하면서도, Claude가 해당 악성코드를 탐지하고 종료하려는 명령은 오히려 차단하는 역설적 상황이 발생했다는 것이다. 연구자와 Simon Willison 모두 에이전트를 안전하게 운영하려면 컨테이너·VM 샌드박스 사용, 네트워크 송신 제한, 자격증명 노출 금지가 필수라고 결론 내렸다.",
+    "why_it_matters": "Anthropic이 기본값으로 채택한 Auto Mode의 안전성 주장이 80% 성공률의 공격으로 무너져, 코딩 에이전트를 프로덕션에 도입하는 팀에 샌드박스 필수 적용이라는 경각심을 준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8502414021164021,
+    "published_at": "2026-08-27T22:50:25Z"
+  }
+]
