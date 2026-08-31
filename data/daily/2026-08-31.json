@@ -1,0 +1,368 @@
+[
+  {
+    "id": "hf-2608.25518",
+    "section": "papers",
+    "title_en": "Agentic Game Development as a Verifiable Trajectory Data Engine for Scaling World Models",
+    "title_ko": "에이전트 게임 개발을 활용한 월드 모델 확장용 검증 가능한 궤적 데이터 엔진",
+    "url": "https://huggingface.co/papers/2608.25518",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "월드 모델 확장을 위한 기존의 크롤링 비디오 학습 전략은 비효율적이라고 주장하며, 게임 개발 환경을 대안으로 제시한다. 게임 엔진은 충돌, 물리, 탐색 가능성 등을 직접 검증할 수 있어 공간적 생성 모델에 명확한 보상 신호를 제공한다. 이를 기반으로 엔진의 밀집 신호와 개발자의 암묵적 수용 피드백을 결합한 새로운 후훈련 패러다임 RLHEV(Reinforcement Learning with Human-Engine Verification)를 제안한다.",
+    "why_it_matters": "CLIP 점수 같은 모호한 프록시 신호 대신 게임 엔진 기반의 검증 가능한 보상을 활용함으로써 공간적 월드 모델의 RL 후훈련 품질을 크게 높일 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 6.181783550292085,
+    "published_at": "2026-08-25T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.19583",
+    "section": "papers",
+    "title_en": "VGI-Bench: Probing Visual Intelligence in Video Generation Models",
+    "title_ko": "VGI-Bench: 비디오 생성 모델의 시각적 추론 능력 평가 벤치마크",
+    "url": "https://huggingface.co/papers/2608.19583",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "VGI-Bench는 비디오 생성 모델의 시각적 추론 능력을 평가하기 위한 벤치마크로, 27개 태스크와 810개 인스턴스로 구성되어 있다. 현재 최강 모델인 Seedance 2.0도 평가 기준에서 51.0%에 그쳐, 생성 모델의 시각적 추론 능력이 아직 불안정함을 보여준다. 분석 결과, 모델 내부의 디노이징 과정에서 초기 추론 오류를 수정하기보다 초기 가설을 다듬는 데 그치는 한계도 확인됐다.",
+    "why_it_matters": "비디오 생성 모델의 시각적 추론 능력을 체계적으로 측정할 수 있는 공개 벤치마크로, 차세대 모델 개발 방향을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 6.159055299214529,
+    "published_at": "2026-08-25T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.26005",
+    "section": "papers",
+    "title_en": "VoiceMem: Streaming Dual-Brain Memory for Real-Time Interaction",
+    "title_ko": "VoiceMem: 실시간 음성 대화를 위한 스트리밍 이중 뇌 메모리 시스템",
+    "url": "https://huggingface.co/papers/2608.26005",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "VoiceMem은 음성 언어 모델(SLM)을 위한 스트리밍 메모리 아키텍처로, 정보 처리를 담당하는 '좌뇌'와 감정 처리를 담당하는 '우뇌'로 구성된다. 좌뇌는 top-5 검색에서 기존 Mem0 시스템의 top-200 검색보다 약 30포인트 높은 정확도를 달성했으며, 우뇌는 페르소나 벤치마크 3종에서 최고 성능을 기록했다. 검색 지연 시간은 134ms로 실시간 음성 대화에 추가적인 딜레이 없이 동작한다.",
+    "why_it_matters": "실시간 음성 AI 에이전트에 정확성·감정 인식·개인화를 동시에 갖춘 실용적 메모리 기반을 제공한다는 점에서 중요하다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 6.1298987149230735,
+    "published_at": "2026-08-25T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.27345",
+    "section": "papers",
+    "title_en": "PAWBench: How Far Are We from Probabilistically Aligned World Modeling?",
+    "title_ko": "PAWBench: 현재 비디오 생성 모델은 확률적으로 정렬된 세계 모델에 얼마나 가까운가?",
+    "url": "https://huggingface.co/papers/2608.27345",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "최근 비디오 생성 모델들이 '세계 모델'로 평가받고 있지만, 단일 영상의 그럴듯함만 측정할 뿐 동일한 초기 조건에서 발생 가능한 행동의 분포를 제대로 재현하는지는 검증되지 않았다. 연구팀은 이를 '확률적 정렬'이라는 기준으로 정의하고, 50개 시나리오와 11개 시스템을 평가하는 PAWBench와 PAWEval 프로토콜을 도입했다. 평가 결과 어떤 모델도 참조 확률 분포와 유효한 행동 범위를 일관되게 재현하지 못했으며, 언어 프롬프트·초기 노이즈 샘플링·모델 훈련 방식이 예측 분포를 어떻게 변화시키는지도 분석했다.",
+    "why_it_matters": "세계 모델로서의 비디오 생성 AI 평가 기준을 분포 수준으로 끌어올려, 기존 벤치마크의 한계를 명확히 드러내는 새로운 평가 프레임워크다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.844187086458591,
+    "published_at": "2026-08-26T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.25593",
+    "section": "papers",
+    "title_en": "JIT-Agent: Scaling Harness Intelligence via Just-in-Time Harness Evolution",
+    "title_ko": "JIT-Agent: 적시(Just-in-Time) 하네스 진화로 에이전트 성능을 끌어올리다",
+    "url": "https://huggingface.co/papers/2608.25593",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "JIT-Agent는 임의의 에이전트 LLM을 위해 태스크에 맞는 '에이전트 하네스(메모리 관리·계획·액션 프로토콜·도구 조율)'를 실시간으로 자동 생성하도록 훈련된 모델이다. 고정된 4모듈 프로토콜로 하네스를 형식화하고, 실행 안정성을 위한 수리 및 이전 설정에서의 자기 진화 기능을 포함한다. DeepSeek-V4-Flash에 적용 시 DeepSearchQA에서 GPT-5.6 대비 +9.1점, OdysseyBench에서 +4.3점을 기록했으며, GLM-5.2는 최대 +20.2점 향상되었다. OpenCode·Claude Code 등 성숙한 에이전트 런타임과 대등한 성능을 보이며, DeepSeek V4·Mimo-V2.5·Qwen3 등 다양한 모델 패밀리에서 일관된 개선을 달성했다.",
+    "why_it_matters": "모델 스케일링과 독립적으로 하네스 자체를 학습·전이 가능한 역량으로 정립함으로써, 기존 LLM의 성능을 추가 학습 없이 대폭 끌어올릴 수 있는 새로운 에이전트 최적화 방향을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.700480365792417,
+    "published_at": "2026-08-25T20:00:00Z"
+  },
+  {
+    "id": "github_trending-K-Dense-AI/scientific-agent-skills",
+    "section": "releases",
+    "title_en": "K-Dense-AI/scientific-agent-skills",
+    "title_ko": "AI 에이전트를 과학자로: Scientific Agent Skills 라이브러리",
+    "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "K-Dense AI가 공개한 Scientific Agent Skills는 163개의 검증된 과학 연구 스킬과 100개 이상의 과학 데이터베이스를 제공하는 오픈소스 라이브러리다. 생물정보학, 신약 개발, 임상 연구, 재료과학 등 다양한 도메인을 커버하며, Cursor·Claude Code·Codex 등 주요 AI 에이전트와 호환된다. 전 세계 19만 명 이상의 과학자가 사용 중이며, MIT 라이선스로 무료 제공된다.",
+    "why_it_matters": "AI 에이전트에 도메인 특화 과학 워크플로우를 즉시 부여할 수 있어, 연구자의 API 통합 부담을 대폭 줄이고 복잡한 멀티스텝 과학 실험을 자동화할 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "RAG"
+    ],
+    "score": 0.7506117724867725,
+    "published_at": "2026-08-30T06:06:09Z"
+  },
+  {
+    "id": "github_trending-tailscale/tailcat",
+    "section": "releases",
+    "title_en": "tailscale/tailcat",
+    "title_ko": "Tailcat: Tailscale 제어 플레인 없이 쓰는 netcat 대안 도구",
+    "url": "https://github.com/tailscale/tailcat",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Tailcat은 Tailscale의 데이터 플레인(magicsock, WireGuard)을 재활용하여 netcat처럼 두 머신 간 암호화 터널을 제공하는 오픈소스 CLI·Go 라이브러리입니다. Tailscale 계정이나 root 권한 없이 사용 가능하며, 짧은 연결 토큰을 교환하는 것만으로 P2P 암호화 통신, 포트 포워딩, SSH 서버 등을 이용할 수 있습니다. NAT 통과가 가능하면 직접 UDP 연결로 업그레이드되고, 실패 시 DERP 릴레이를 폴백으로 사용합니다. 2026년 8월 TailscaleUp 컨퍼런스에서 공개되었습니다.",
+    "why_it_matters": "Tailscale 인프라에 종속되지 않고 WireGuard 기반 P2P 암호화 터널을 계정·루트 권한 없이 구성할 수 있어, 간편한 보안 네트워크 연결이 필요한 개발자에게 실용적인 대안이 된다.",
+    "tags": [
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 0.7506117724867725,
+    "published_at": "2026-08-30T06:06:09Z"
+  },
+  {
+    "id": "github_trending-THU-MAIC/OpenMAIC",
+    "section": "releases",
+    "title_en": "THU-MAIC/OpenMAIC",
+    "title_ko": "OpenMAIC: 멀티 에이전트 AI 인터랙티브 교실 오픈소스 플랫폼",
+    "url": "https://github.com/THU-MAIC/OpenMAIC",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "청화대(THU-MAIC)에서 개발한 OpenMAIC는 주제나 문서를 입력하면 AI 교사·학생 에이전트들이 슬라이드, 퀴즈, 시뮬레이션, 프로젝트 기반 학습(PBL) 등 풍부한 인터랙티브 수업을 자동 생성하는 오픈소스 플랫폼입니다. v1.0.0에서는 에이전트 워크벤치가 추가되어 커리큘럼 전체를 대화형으로 기획·수정할 수 있으며, PostgreSQL 기반의 영속 세션과 20개 내장 스킬을 지원합니다. LangGraph 기반 멀티 에이전트 오케스트레이션, 화이트보드·TTS·STT, pptx/HTML 내보내기, Vercel·Docker 배포를 지원하며 OpenAI, Anthropic, Google 등 다양한 LLM 프로바이더와 연동됩니다.",
+    "why_it_matters": "LLM 기반 멀티 에이전트를 교육에 적용한 완성도 높은 오픈소스 레퍼런스로, AI 에이전트 설계와 교육 기술 양쪽에서 실용적인 인사이트를 얻을 수 있습니다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7506117724867725,
+    "published_at": "2026-08-30T06:06:09Z"
+  },
+  {
+    "id": "github_trending-JetBrains/go-modern-guidelines",
+    "section": "releases",
+    "title_en": "JetBrains/go-modern-guidelines",
+    "title_ko": "JetBrains, AI 코딩 에이전트용 모던 Go 가이드라인 공개",
+    "url": "https://github.com/JetBrains/go-modern-guidelines",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "JetBrains가 AI 코딩 에이전트가 최신 Go 관용구를 사용해 코드를 생성할 수 있도록 돕는 가이드라인 저장소를 공개했다. 학습 데이터의 시간 지연과 빈도 편향으로 인해 AI 에이전트가 오래된 Go 패턴을 생성하는 문제를 해결하는 것이 목적이다. Go 1.0부터 1.27까지의 주요 기능을 다루며, 프로젝트의 go.mod에서 Go 버전을 자동 감지해 해당 버전에 맞는 현대적 패턴을 적용한다. Junie, Claude Code, Codex, Cursor 등 주요 AI 코딩 에이전트에서 플러그인 형태로 사용할 수 있다.",
+    "why_it_matters": "AI 코딩 에이전트가 구식 Go 코드를 생성하는 고질적 문제를 공식 가이드라인 주입 방식으로 해결해, Go 프로젝트의 코드 품질을 즉시 개선할 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7506117724867725,
+    "published_at": "2026-08-30T06:06:09Z"
+  },
+  {
+    "id": "github_trending-ComposioHQ/awesome-claude-skills",
+    "section": "releases",
+    "title_en": "ComposioHQ/awesome-claude-skills",
+    "title_ko": "Awesome Claude Skills: Claude AI 워크플로우 확장을 위한 스킬 모음집",
+    "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "ComposioHQ가 공개한 'Awesome Claude Skills'는 Claude AI의 기능을 확장하는 1,000개 이상의 프로덕션용 스킬과 플러그인을 정리한 큐레이션 리스트다. Claude Skills는 SKILL.md 파일 기반의 재사용 가능한 워크플로우 패키지로, Claude.ai·Claude Code·API뿐 아니라 Cursor·Codex·Gemini CLI 등 다양한 AI 에이전트 플랫폼을 지원한다. 문서 처리, 개발 도구, 데이터 분석, 비즈니스, 보안 등 카테고리별 스킬과 78개 SaaS 앱 자동화 스킬이 포함되어 있다.",
+    "why_it_matters": "Claude 에이전트에 실제 앱 연동과 복잡한 워크플로우를 손쉽게 추가할 수 있는 표준화된 스킬 포맷과 방대한 레퍼런스를 제공해, 에이전트 기반 자동화 개발의 진입 장벽을 크게 낮춘다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7506117724867725,
+    "published_at": "2026-08-30T06:06:09Z"
+  },
+  {
+    "id": "github_trending-anthropics/claude-plugins-official",
+    "section": "releases",
+    "title_en": "anthropics/claude-plugins-official",
+    "title_ko": "Anthropic 공식 Claude Code 플러그인 디렉터리 공개",
+    "url": "https://github.com/anthropics/claude-plugins-official",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 Claude Code용 공식 플러그인 디렉터리를 GitHub에 공개했다. 내부(Anthropic 제작)와 외부(서드파티 커뮤니티) 플러그인으로 구성되며, `/plugin install {plugin-name}@claude-plugins-official` 명령으로 바로 설치할 수 있다. 플러그인은 MCP 서버 설정, 슬래시 커맨드, 에이전트 정의, 스킬 등 표준 구조를 따른다.",
+    "why_it_matters": "Claude Code 생태계의 공식 플러그인 마켓플레이스가 열려, 개발자들이 검증된 플러그인을 통해 Claude Code의 기능을 체계적으로 확장할 수 있게 됐다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7506117724867725,
+    "published_at": "2026-08-30T06:06:09Z"
+  },
+  {
+    "id": "github_trending-kaifcodec/user-scanner",
+    "section": "releases",
+    "title_en": "kaifcodec/user-scanner",
+    "title_ko": "User Scanner: 이메일·사용자명 OSINT 올인원 도구",
+    "url": "https://github.com/kaifcodec/user-scanner",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "단일 이메일 또는 사용자명 하나로 455개 이상의 플랫폼을 스캔해 디지털 발자국을 추적하는 오픈소스 OSINT 도구다. 이메일 175개·사용자명 280개 이상의 스캔 벡터를 지원하며, 크로스스캔·피벗 엔진으로 연결된 계정을 자동 추적한다. MCP(Model Context Protocol) 서버를 내장해 Claude Desktop, Cursor 등 AI 에이전트와 연동한 자율 OSINT 조사도 가능하다.",
+    "why_it_matters": "AI 에이전트가 직접 OSINT 스캔을 수행할 수 있는 MCP 서버를 제공해, 보안 조사 자동화의 새로운 패러다임을 제시한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7506117724867725,
+    "published_at": "2026-08-30T06:06:09Z"
+  },
+  {
+    "id": "hn-49499394",
+    "section": "community",
+    "title_en": "European Commission Revives Push for Encryption Backdoors in ProtectEU Strategy",
+    "title_ko": "유럽 집행위원회, ProtectEU 전략에서 암호화 백도어 추진 재개",
+    "url": "https://reclaimthenet.org/eu-protecteu-strategy-encryption-backdoor-law-enforcement",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "유럽 집행위원회가 ProtectEU 전략을 통해 암호화 백도어 도입 논의를 다시 추진하고 있다. 이는 수사기관의 암호화된 통신 접근을 가능하게 하려는 시도로, 프라이버시 및 보안 전문가들의 반발을 살 수 있다.",
+    "why_it_matters": "암호화 백도어는 AI 및 디지털 인프라 전반의 보안 신뢰성에 직접적인 영향을 미치는 중대한 정책 이슈다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.337109129562474,
+    "published_at": "2026-08-30T15:12:40Z"
+  },
+  {
+    "id": "hn-49498787",
+    "section": "community",
+    "title_en": "METR and Redwood Offer Holy %^ Postmortem of the HuggingFace Hack",
+    "title_ko": "METR·Redwood, HuggingFace 해킹 사후 분석 공개",
+    "url": "https://thezvi.wordpress.com/2026/08/29/metr-and-redwood-offer-holy-postmortem-of-the-huggingface-hack/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "METR과 Redwood Research가 HuggingFace 해킹 사건에 대한 상세한 사후 분석 보고서를 발표했다. 구체적인 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "AI 인프라 보안 사고에 대한 전문 기관의 공식 분석은 업계 보안 기준 향상에 중요한 참고자료가 된다.",
+    "tags": [
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 8.958576903813897,
+    "published_at": "2026-08-30T14:06:54Z"
+  },
+  {
+    "id": "hn-49499867",
+    "section": "community",
+    "title_en": "Haiku R1/beta6 has been released",
+    "title_ko": "Haiku R1 Beta6 출시",
+    "url": "https://www.haiku-os.org/news/2026-08-26_haiku_r1_beta6",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Haiku R1의 베타6 버전이 릴리스되었다. 상세한 변경 사항은 공개된 설명이 없어 확인이 필요하다.",
+    "why_it_matters": "오픈소스 운영체제 Haiku의 새로운 베타 버전 출시로 관심 있는 개발자들은 업데이트를 확인할 필요가 있다.",
+    "tags": [],
+    "score": 8.64354099025881,
+    "published_at": "2026-08-30T16:01:10Z"
+  },
+  {
+    "id": "hn-49496782",
+    "section": "community",
+    "title_en": "Longest Straight Line Paths on Water or Land on the Earth (2018)",
+    "title_ko": "지구상에서 육지 또는 수면 위를 가로지르는 가장 긴 직선 경로 (2018)",
+    "url": "https://arxiv.org/abs/1804.07389",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "지구 표면에서 물 위 또는 육지 위로만 이동할 수 있는 가장 긴 직선 경로를 탐구한 2018년 연구다. 지구의 구형 특성과 대륙·해양 배치를 고려한 흥미로운 기하학적 문제다.",
+    "why_it_matters": "지리와 수학의 교차점에서 지구 표면의 구조적 특성을 시각적으로 이해할 수 있는 흥미로운 문제다.",
+    "tags": [],
+    "score": 8.268549706077762,
+    "published_at": "2026-08-30T08:23:26Z"
+  },
+  {
+    "id": "hn-49463397",
+    "section": "community",
+    "title_en": "Electric rain can eat through metal",
+    "title_ko": "전기 비가 금속을 부식시킬 수 있다",
+    "url": "https://www.scientificamerican.com/article/electric-rain-can-eat-through-metal/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "전기 비(electric rain)가 금속을 침식할 수 있다는 내용의 글이다. 상세한 설명이 제공되지 않아 추가적인 내용은 확인이 어렵다.",
+    "why_it_matters": "AI와 직접적인 연관성이 불분명하며, 제공된 정보만으로는 기술적 함의를 판단하기 어렵다.",
+    "tags": [],
+    "score": 6.905243041760247,
+    "published_at": "2026-08-27T12:04:11Z"
+  },
+  {
+    "id": "youtube-Xs9wHHv-wak",
+    "section": "video",
+    "title_en": "IT뉴스 - Astra 임박, 할라피뇨, Fable 5.1, 넥토리얼, GLM-5.3, 실시간 H3, Gemini Omni 1.1 등",
+    "title_ko": "AI 주요 소식: Astra 임박, GLM-5.3, Gemini Omni 1.1 등 한 주 IT 뉴스 요약",
+    "url": "https://www.youtube.com/watch?v=Xs9wHHv-wak",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "이번 영상에서는 Google Astra 출시 임박, 할라피뇨, Fable 5.1, GLM-5.3, 실시간 H3, Gemini Omni 1.1 등 다양한 AI 및 IT 신규 소식을 다룬다. 또한 넥슨컴퍼니의 2026 채용연계형 인턴십 '넥토리얼'도 소개되며, 알고리즘 코딩테스트 폐지 및 AI 활용 역량평가 도입이 특징이다. 구체적인 내용은 영상 본편에서 확인할 수 있다.",
+    "why_it_matters": "다수의 최신 AI 모델 및 서비스 업데이트를 한 번에 파악할 수 있는 IT 뉴스 요약 콘텐츠다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7841369047619048,
+    "published_at": "2026-08-30T11:44:05Z"
+  },
+  {
+    "id": "youtube-cEQl99-pZgI",
+    "section": "video",
+    "title_en": "신박하게 변신하는 휴머노이드 등장",
+    "title_ko": "다양하게 변신하는 휴머노이드 로봇 등장",
+    "url": "https://www.youtube.com/shorts/cEQl99-pZgI",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 새롭게 변신하는 형태의 휴머노이드 로봇을 소개하는 영상이 공개되었다. 영상의 상세 내용은 제공되지 않았으나, 휴머노이드 및 로봇 기술을 주제로 다루고 있다.",
+    "why_it_matters": "변신 기능을 갖춘 휴머노이드 로봇은 로봇 활용 범위를 크게 확장할 수 있는 기술적 진전을 시사한다.",
+    "tags": [],
+    "score": 0.4940972222222222,
+    "published_at": "2026-08-28T11:00:29Z"
+  },
+  {
+    "id": "youtube-PCgcmo_uimY",
+    "section": "video",
+    "title_en": "통 속의 뇌를 구현해버린 미친 회사",
+    "title_ko": "실제 뇌세포로 컴퓨터를 만드는 회사",
+    "url": "https://www.youtube.com/shorts/PCgcmo_uimY",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 실제 생물학적 뇌세포(뉴런)를 활용해 컴퓨팅을 구현하는 회사를 소개하는 영상입니다. '통 속의 뇌'라는 철학적 사고실험을 현실로 옮기는 시도로 주목받고 있습니다. 자세한 기술 내용은 영상을 통해 확인할 수 있습니다.",
+    "why_it_matters": "생물학적 뉴런 기반 컴퓨팅은 기존 실리콘 반도체의 한계를 넘는 차세대 인프라 패러다임으로 주목받고 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.48812500000000003,
+    "published_at": "2026-08-28T10:00:17Z"
+  },
+  {
+    "id": "simon_willison-understanding-chatgpt-work",
+    "section": "deepdive",
+    "title_en": "Understanding ChatGPT Work",
+    "title_ko": "ChatGPT Work 완전 분석: 두 가지 제품, 핵심 기능 정리",
+    "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Simon Willison이 OpenAI의 ChatGPT Work를 직접 실험해 정리한 심층 분석이다. ChatGPT Work는 클라우드 기반(Work Cloud)과 로컬 데스크톱 앱(Work Local) 두 가지로 나뉘며, 월 $20 이상 유료 구독자만 사용 가능하다. Chat 탭과 구별되는 Work만의 핵심 기능으로는 인터넷 접근이 가능한 코드 실행 환경, 헤드리스 Chrome 브라우저, 세션 간 공유되는 영구 파일시스템, Cloudflare Workers 기반의 사이트 배포(ChatGPT Sites), 서브 에이전트 실행, 예약 자동화 등이 있다. 다만 비공개 데이터·외부 콘텐츠·외부 통신이 모두 결합된 구조로 프롬프트 인젝션 등 보안 위험에 대한 우려도 제기된다.",
+    "why_it_matters": "인터넷 접근 코드 실행·브라우저·사이트 배포까지 갖춘 ChatGPT Work는 기존 Chat 대비 훨씬 강력한 에이전트 플랫폼으로, 개발자가 실무에 도입하기 전에 기능과 보안 리스크를 명확히 파악해야 한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8571230158730159,
+    "published_at": "2026-08-30T23:59:47Z"
+  }
+]
