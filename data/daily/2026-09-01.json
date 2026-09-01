@@ -1,0 +1,378 @@
+[
+  {
+    "id": "hf-2608.27345",
+    "section": "papers",
+    "title_en": "PAWBench: How Far Are We from Probabilistically Aligned World Modeling?",
+    "title_ko": "PAWBench: 현재 비디오 생성 모델은 확률적으로 정렬된 세계 모델에 얼마나 가까운가?",
+    "url": "https://huggingface.co/papers/2608.27345",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "최근 비디오 생성 모델들이 '세계 모델'로 평가받고 있지만, 단순히 그럴듯한 영상을 생성하는 것을 넘어 동일한 초기 조건에서 가능한 행동들의 분포를 정확히 재현해야 한다는 '확률적 정렬' 기준이 제시됐다. 연구팀은 이를 평가하기 위한 벤치마크 PAWBench와 평가 프로토콜 PAWEval을 도입했다. 50개 시나리오와 11개 현행 시스템을 대상으로 테스트한 결과, 참조 확률 분포를 일관되게 재현하는 모델은 없었다.",
+    "why_it_matters": "비디오 생성 모델이 진정한 세계 모델로 기능하려면 개별 영상의 품질이 아닌 물리적 행동 분포의 정확성이 핵심임을 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.9344739331306915,
+    "published_at": "2026-08-26T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.27456",
+    "section": "papers",
+    "title_en": "UrbanGround: From Local Perception to Spatial Agency in a Real-Scale City",
+    "title_ko": "UrbanGround: 실제 도시 규모에서 MLLM 에이전트의 공간 행동 능력 평가 벤치마크",
+    "url": "https://huggingface.co/papers/2608.27456",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "UrbanGround는 홍콩 전역의 3D 지리공간 데이터를 기반으로 구축된 실제 규모의 도시 샌드박스로, 멀티모달 대형 언어 모델(MLLM) 에이전트의 도시 공간 탐색 능력을 평가하는 최초의 플랫폼이다. 1인칭 시점의 폐쇄 루프 인터랙션과 인터랙티브 지도를 지원하며, 시각 인식·공간 추론·내비게이션·보행자 인식 등 세 단계 연구 질문으로 에이전트 능력을 체계적으로 분석한다. 현재 MLLM 에이전트는 단거리 시각 인식과 공간 추론에서는 유용한 능력을 보이지만, 장거리 탐색에서는 오류가 누적되며 목표 지향적 행동을 지속하지 못하는 한계를 드러냈다.",
+    "why_it_matters": "실제 도시 환경에서 MLLM 에이전트의 공간 행동 능력 한계를 체계적으로 측정할 수 있는 첫 벤치마크로, 자율 에이전트 연구의 중요한 평가 기준이 될 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.672828834461906,
+    "published_at": "2026-08-26T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.28281",
+    "section": "papers",
+    "title_en": "LoopArena: Benchmarking Models as Runtime Controllers for Loop Engineering",
+    "title_ko": "LoopArena: 루프 엔지니어링을 위한 런타임 컨트롤러 모델 벤치마크",
+    "url": "https://huggingface.co/papers/2608.28281",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LoopArena는 코딩 에이전트를 장기 실행 작업에서 지휘하는 '컨트롤러' 모델의 성능을 평가하는 새로운 벤치마크다. 컨트롤러는 각 코딩 라운드 후 구조화된 요약을 받아 별도의 고정된 'Worker' 에이전트에게 다음 행동을 지시하거나 종료를 결정한다. 세 가지 평가 유형(Type I~III)을 제공하며, 최고 수준의 Strict Success Rate는 24.69%로 장기 루프 제어에 여전히 큰 개선 여지가 있음을 보여준다. 추론 비용을 평균 64.4% 절감하면서도 유사한 순위를 유지하는 효율적인 평가 방식도 함께 제안한다.",
+    "why_it_matters": "코딩 에이전트 시대에 에이전트를 지휘하는 컨트롤러 모델의 성능을 독립적으로 측정하는 첫 체계적 벤치마크로, 루프 엔지니어링 연구의 기준점이 될 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.442651256490317,
+    "published_at": "2026-08-27T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.27448",
+    "section": "papers",
+    "title_en": "TTPO: Test-Time Policy Optimization",
+    "title_ko": "TTPO: 테스트 타임 정책 최적화 - 레이블 없이 수학 추론 성능 향상",
+    "url": "https://huggingface.co/papers/2608.27448",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "TTPO는 정답 레이블 없이 테스트 시점에 LLM을 최적화하는 새로운 방법론이다. 다수결 의사 레이블(pseudo-label)을 활용하되, 동의하는 롤아웃은 자기 증류(OPSD)로 강화하고 불일치 롤아웃은 그룹 RL로 페널티를 부여하는 비대칭 목적 함수를 사용한다. Qwen3-1.7B 기준으로 TTT 환경에서 38.0%에서 45.2%로 성능이 향상되었으며, 5개의 경쟁 수준 벤치마크에서 레이블 기반 OPSD와 동등한 성능을 달성했다.",
+    "why_it_matters": "레이블 없이도 테스트 시점에 LLM 수학 추론 능력을 향상시킬 수 있어, 레이블 확보가 어려운 실제 배포 환경에서의 모델 개선 가능성을 크게 높인다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.290459441148391,
+    "published_at": "2026-08-26T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.27550",
+    "section": "papers",
+    "title_en": "Beyond Data Scaling: Representation-Centric Continued Pre-training for Vision-Language-Action Models",
+    "title_ko": "데이터 확장을 넘어서: VLA 모델을 위한 표현 중심 사전학습 VLAct",
+    "url": "https://huggingface.co/papers/2608.27550",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "로봇 데이터 수집의 비용과 희소성 문제를 해결하기 위해, 연구팀은 VLA 모델용 VLM 백본 'VLAct'를 제안했다. VLAct는 다양한 로봇 데이터로 사전학습 후 태스크별 파인튜닝을 수행하며, VLM 사전 지식 보존·다중 헤드 액션 공동 지도학습·통합 액션 레이아웃을 핵심 기법으로 활용한다. LIBERO-Plus에서 82.6%, RoboTwin 2.0에서 92.5%의 성공률을 기록했으며, 학습에 사용되지 않은 휴머노이드 로봇 환경에서도 전체 데이터로 학습한 GR00T-N1.6 기준선을 20% 데이터만으로 능가했다. 16개 GPU의 오픈소스 환경에서 산업용 VLA 시스템을 뛰어넘는 결과를 달성했다.",
+    "why_it_matters": "데이터 확장 없이 표현 품질 개선만으로 VLA 성능을 획기적으로 높일 수 있음을 실증해, 소규모 컴퓨팅 환경에서도 경쟁력 있는 범용 로봇 모델 개발 가능성을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 5.143134726391533,
+    "published_at": "2026-08-26T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-polimill",
+    "section": "releases",
+    "title_en": "Polimill builds Japan's next-generation public AI infrastructure",
+    "title_ko": "Polimill, GPT와 Codex로 일본 차세대 공공 AI 인프라 구축",
+    "url": "https://openai.com/index/polimill",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Polimill은 OpenAI의 GPT 모델과 Codex를 활용해 일본 지방자치단체가 행정 지식을 검색하고 활용할 수 있는 공공 AI 인프라를 구축하고 있다. 이를 통해 행정 업무의 효율화와 개발 가속화를 동시에 실현하고 있다.",
+    "why_it_matters": "AI 기반 공공 행정 인프라의 실제 사례로, 지자체 디지털 전환에 LLM이 어떻게 적용되는지 보여주는 주목할 만한 레퍼런스다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "인프라"
+    ],
+    "score": 0.7559540343915344,
+    "published_at": "2026-08-31T07:00:00Z"
+  },
+  {
+    "id": "github_trending-THU-MAIC/OpenMAIC",
+    "section": "releases",
+    "title_en": "THU-MAIC/OpenMAIC",
+    "title_ko": "OpenMAIC: 멀티 에이전트 인터랙티브 AI 강의실 오픈소스 플랫폼",
+    "url": "https://github.com/THU-MAIC/OpenMAIC",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "청화대(THU-MAIC)에서 공개한 오픈소스 AI 학습 플랫폼으로, 주제나 문서를 입력하면 멀티 에이전트가 슬라이드·퀴즈·시뮬레이션·PBL 활동이 포함된 인터랙티브 강의실을 자동 생성한다. AI 교사와 AI 동급생이 실시간으로 강의·토론·화이트보드 판서를 진행하며, v1.0.0에서는 대화형 커리큘럼 설계 에이전트 워크벤치와 PostgreSQL 기반 지속 세션 기능이 추가됐다. OpenAI, Anthropic, Google, DeepSeek, Ollama 등 다양한 LLM 프로바이더를 지원하며 MIT 라이선스로 배포된다.",
+    "why_it_matters": "교육용 멀티 에이전트 시스템의 실용적 구현체로, LLM 기반 자율 강의 생성·운영의 최신 아키텍처(LangGraph 오케스트레이션 + 플러거블 스토리지)를 오픈소스로 참고할 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7525231481481481,
+    "published_at": "2026-08-31T06:25:25Z"
+  },
+  {
+    "id": "github_trending-K-Dense-AI/scientific-agent-skills",
+    "section": "releases",
+    "title_en": "K-Dense-AI/scientific-agent-skills",
+    "title_ko": "AI 에이전트를 AI 과학자로 변환하는 163개 과학 스킬 라이브러리",
+    "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "K-Dense AI가 공개한 Scientific Agent Skills는 생물정보학, 신약 개발, 임상 연구, 재료과학 등 다양한 과학 분야를 커버하는 163개의 검증된 스킬과 100개 이상의 과학 데이터베이스를 제공한다. Cursor, Claude Code, Codex, Google Antigravity 등 Agent Skills 표준을 지원하는 모든 AI 에이전트와 호환되며, 간단한 명령어 하나로 설치할 수 있다. MIT 라이선스로 배포되며, 전 세계 19만 명 이상의 과학자들이 사용 중이라고 밝히고 있다.",
+    "why_it_matters": "과학 연구용 AI 에이전트의 실용성을 크게 높이는 오픈소스 스킬 모음으로, 복잡한 다단계 과학 워크플로우를 자동화할 수 있어 연구 생산성 향상에 직접적인 영향을 줄 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7525231481481481,
+    "published_at": "2026-08-31T06:25:25Z"
+  },
+  {
+    "id": "github_trending-unclecode/crawl4ai",
+    "section": "releases",
+    "title_en": "unclecode/crawl4ai",
+    "title_ko": "Crawl4AI: LLM 친화적 오픈소스 웹 크롤러 & 스크래퍼",
+    "url": "https://github.com/unclecode/crawl4ai",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Crawl4AI는 웹 페이지를 LLM이 바로 활용할 수 있는 깔끔한 마크다운으로 변환해주는 오픈소스 크롤러입니다. RAG 파이프라인, AI 에이전트, 데이터 수집에 최적화되어 있으며, 비동기 브라우저 풀·캐싱·JS 실행·딥 크롤 등 다양한 기능을 제공합니다. 최신 v0.9.2는 스트리밍 크롤 시 메모리 누수 및 Docker 관련 버그를 수정한 유지보수 패치입니다. GitHub에서 5만 개 이상의 스타를 보유한 가장 인기 있는 오픈소스 크롤러로 자리잡았습니다.",
+    "why_it_matters": "LLM·RAG 파이프라인 구축 시 웹 데이터를 별도 API 키나 비용 없이 고품질 마크다운으로 수집할 수 있어, AI 개발자의 데이터 수집 비용과 복잡도를 크게 낮출 수 있습니다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "오픈소스"
+    ],
+    "score": 0.7525231481481481,
+    "published_at": "2026-08-31T06:25:25Z"
+  },
+  {
+    "id": "github_trending-corsairdev/corsair",
+    "section": "releases",
+    "title_en": "corsairdev/corsair",
+    "title_ko": "Corsair: 사용자와 앱을 연결하는 오픈소스 제품 통합 플랫폼",
+    "url": "https://github.com/corsairdev/corsair",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Corsair는 에이전트, 백엔드 서비스, 멀티테넌트 대시보드 등 다양한 환경에서 써드파티 API를 단일 문법으로 연결할 수 있는 제품 통합 플랫폼이다. MCP 전용 도구와 달리 REST API 기반으로 구축되어 폭넓은 활용이 가능하다. 오픈소스(Apache 2.0)로 자체 호스팅을 지원하며, OAuth 갱신과 웹훅 처리가 필요한 경우 관리형 Hub 서비스도 제공한다.",
+    "why_it_matters": "에이전트 통합 시 반복되는 글루 코드 작성 문제를 단일 통합 레이어로 해결하고, 데이터 주권을 유지하면서 자체 호스팅이 가능한 점이 개발자에게 매력적이다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7525231481481481,
+    "published_at": "2026-08-31T06:25:25Z"
+  },
+  {
+    "id": "github_trending-tashfeenahmed/freellmapi",
+    "section": "releases",
+    "title_en": "tashfeenahmed/freellmapi",
+    "title_ko": "FreeLLMAPI: 34개 무료 LLM 프로바이더를 단일 엔드포인트로 통합하는 오픈소스 라우터",
+    "url": "https://github.com/tashfeenahmed/freellmapi",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "FreeLLMAPI는 Google, Groq, Mistral, Cerebras 등 34개 무료 LLM 프로바이더의 635개 엔드포인트를 하나의 OpenAI 호환 `/v1` 엔드포인트로 통합하는 자체 호스팅 라우터다. 월 약 74억 토큰 규모의 무료 추론 용량을 스마트 라우팅과 자동 장애 전환으로 활용할 수 있으며, 제공자 키는 AES-256-GCM으로 암호화해 로컬 SQLite에 저장된다. Claude Code, Cursor, Aider 등 주요 AI 코딩 에이전트와도 호환되며, 개인 실험 목적으로 설계된 MIT 라이선스 프로젝트다.",
+    "why_it_matters": "유료 API 없이도 수십 개의 LLM 무료 티어를 단일 OpenAI 호환 엔드포인트로 묶어 활용할 수 있어, 개인 개발자의 AI 실험 비용을 대폭 줄일 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.7525231481481481,
+    "published_at": "2026-08-31T06:25:25Z"
+  },
+  {
+    "id": "github_trending-livekit/agents",
+    "section": "releases",
+    "title_en": "livekit/agents",
+    "title_ko": "LiveKit Agents: 실시간 음성 AI 에이전트 구축 프레임워크",
+    "url": "https://github.com/livekit/agents",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "LiveKit Agents는 서버에서 실행되는 실시간 대화형 AI 에이전트를 구축하기 위한 오픈소스 Python 프레임워크다. STT, LLM, TTS, Realtime API를 자유롭게 조합할 수 있으며, 전화 통화 연동, MCP 지원, 멀티 에이전트 핸드오프, 내장 테스트 프레임워크 등 다양한 기능을 제공한다. WebRTC 기반으로 모든 주요 플랫폼의 클라이언트 SDK를 지원하며, 전체 스택을 자체 서버에서 운영할 수 있다.",
+    "why_it_matters": "음성 AI 에이전트를 프로덕션 수준으로 구축하는 데 필요한 STT/LLM/TTS 통합, 전화 연동, 테스트까지 원스톱으로 제공하는 오픈소스 프레임워크로 실무 활용도가 높다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7525231481481481,
+    "published_at": "2026-08-31T06:25:25Z"
+  },
+  {
+    "id": "hn-49508982",
+    "section": "community",
+    "title_en": "Apple caught off guard by AI demand for Mac Mini and Mac Studio",
+    "title_ko": "애플, Mac Mini·Mac Studio의 AI 수요에 대응 못해",
+    "url": "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "애플이 Mac Mini와 Mac Studio에 대한 AI 관련 수요 급증을 예측하지 못한 것으로 알려졌다. 공급이 수요를 따라가지 못하는 상황이 발생한 것으로 보인다.",
+    "why_it_matters": "AI 워크로드를 로컬에서 처리하려는 수요가 애플 실리콘 기기에 빠르게 집중되고 있음을 보여주는 신호다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 9.529182843710318,
+    "published_at": "2026-08-31T12:41:22Z"
+  },
+  {
+    "id": "hn-49510000",
+    "section": "community",
+    "title_en": "ChatGPT Work Tool and Skill Reference",
+    "title_ko": "ChatGPT 업무 도구 및 스킬 레퍼런스",
+    "url": "https://codex-tool-reference.simonw.chatgpt.site/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "ChatGPT를 업무에 활용하기 위한 도구 및 기술 참고 자료로 보인다. 상세 설명이 제공되지 않아 구체적인 내용은 확인하기 어렵다.",
+    "why_it_matters": "ChatGPT 업무 활용에 관심 있는 개발자에게 참고 자료가 될 수 있으나, 내용 확인이 필요하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.120797476637588,
+    "published_at": "2026-08-31T14:07:15Z"
+  },
+  {
+    "id": "hn-49512856",
+    "section": "community",
+    "title_en": "The safest job from AI may be writing",
+    "title_ko": "AI로부터 가장 안전한 직업은 '글쓰기'일 수 있다",
+    "url": "http://muratbuffalo.blogspot.com/2026/08/the-safest-job-from-ai-may-be-writing.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI 시대에 많은 직종이 자동화 위협을 받고 있는 가운데, 글쓰기가 AI로부터 가장 안전한 직업 중 하나일 수 있다는 주장이 제기됐다. 제공된 설명이 없어 구체적인 근거는 확인되지 않는다.",
+    "why_it_matters": "AI가 텍스트를 생성할 수 있음에도 불구하고 인간의 글쓰기가 대체되기 어렵다는 시각은 콘텐츠 및 개발자 커뮤니티에 시사점을 준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 7.914651501691948,
+    "published_at": "2026-08-31T18:12:20Z"
+  },
+  {
+    "id": "hn-49503521",
+    "section": "community",
+    "title_en": "Terence Tao explains 6 essential mathematical concepts [video]",
+    "title_ko": "테렌스 타오가 설명하는 6가지 핵심 수학 개념 [영상]",
+    "url": "https://www.youtube.com/watch?v=OOMx2BHHWtE",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "수학계의 노벨상으로 불리는 필즈상 수상자 테렌스 타오가 6가지 핵심 수학 개념을 설명하는 영상이다. 구체적인 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "세계 최고 수준의 수학자가 직접 핵심 개념을 풀어주는 영상으로, 수학적 사고력을 키우려는 개발자에게 유익할 수 있다.",
+    "tags": [],
+    "score": 7.782682865573561,
+    "published_at": "2026-08-30T22:37:01Z"
+  },
+  {
+    "id": "hn-49496292",
+    "section": "community",
+    "title_en": "Smartphone LED detects hidden cameras with AI",
+    "title_ko": "AI로 스마트폰 LED를 활용해 숨겨진 카메라 탐지",
+    "url": "https://www.chosun.com/english/industry-en/2026/08/30/SBFXUIJQYZEARKP5T4FBAY25HQ/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "스마트폰의 LED와 AI 기술을 결합해 숨겨진 카메라를 탐지하는 방법이 소개됐다. 구체적인 기술 세부사항은 제공되지 않았다.",
+    "why_it_matters": "프라이버시 보호를 위한 AI 응용 기술로, 일상적인 기기로 몰래카메라를 탐지할 수 있는 가능성을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 7.7190131543852605,
+    "published_at": "2026-08-30T06:52:04Z"
+  },
+  {
+    "id": "youtube-911nK2zX9Q0",
+    "section": "video",
+    "title_en": "AI뉴스 - Astra, AGI 올해 달성, Fable 5.1, 할라피뇨, 넥토리얼, GLM-5.3, 실시간 H3, Gemini Omni 1.1 등",
+    "title_ko": "AI 뉴스 종합: OpenAI AGI 선언·할라피뇨 칩·GLM-5.3·Gemini Omni 1.1 등",
+    "url": "https://www.youtube.com/watch?v=911nK2zX9Q0",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "OpenAI가 올해 말 AGI 임계점 도달 및 내부 구축 완료를 선언했으며, 자체 추론 칩 '할라피뇨'가 엔비디아 블랙웰을 앞선다는 소식이 전해졌다. 중국에서는 GLM-5.3-Flash, Qwen3.8-Flash-Next, 텐센트 HY4 등 비용 효율형 모델이 연이어 공개됐고, 구글은 Gemini Omni 1.1 Flash와 4K 영상 출력 기능을 선보였다. 미니맥스 H3는 실시간보다 빠른 영상 생성을 구현했으며, 엔비디아의 허깅페이스 인수설도 주목받았다.",
+    "why_it_matters": "한 주 사이 AGI 선언·자체 AI 칩·고성능 오픈소스 모델 등 굵직한 AI 산업 변화가 동시에 쏟아져 개발자들이 빠르게 파악해야 할 정보가 집약돼 있다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "인프라"
+    ],
+    "score": 0.7976620370370371,
+    "published_at": "2026-08-31T14:00:25Z"
+  },
+  {
+    "id": "youtube-Xs9wHHv-wak",
+    "section": "video",
+    "title_en": "IT뉴스 - Astra 임박, 할라피뇨, Fable 5.1, 넥토리얼, GLM-5.3, 실시간 H3, Gemini Omni 1.1 등",
+    "title_ko": "AI 최신 소식: Astra, GLM-5.3, Gemini Omni 1.1 등 주요 업데이트",
+    "url": "https://www.youtube.com/watch?v=Xs9wHHv-wak",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "구글 Astra 출시 임박, GLM-5.3, Gemini Omni 1.1 등 다양한 AI 모델 및 서비스 업데이트 소식을 다루는 IT 뉴스 영상이다. 넥슨컴퍼니의 채용연계형 인턴십 '넥토리얼'도 함께 소개되며, AI 활용 역량평가를 도입한 채용 프로세스가 눈길을 끈다. 구체적인 모델 성능 수치 등 상세 내용은 영상에서 확인 가능하다.",
+    "why_it_matters": "Astra, Gemini Omni 1.1 등 주요 AI 모델 동향을 한 번에 파악할 수 있는 국내 IT 뉴스 요약 콘텐츠다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6412797619047619,
+    "published_at": "2026-08-30T11:44:05Z"
+  },
+  {
+    "id": "youtube-cEQl99-pZgI",
+    "section": "video",
+    "title_en": "신박하게 변신하는 휴머노이드 등장",
+    "title_ko": "다양한 형태로 변신하는 휴머노이드 로봇 등장",
+    "url": "https://www.youtube.com/shorts/cEQl99-pZgI",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 새롭게 변신 기능을 갖춘 휴머노이드 로봇을 소개하는 영상이 공개됐다. 영상의 구체적인 기술 내용은 제공된 정보만으로는 확인이 어렵다.",
+    "why_it_matters": "휴머노이드 로봇의 형태 변환 기술은 로봇공학의 새로운 가능성을 보여줄 수 있어 주목된다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.3512400793650794,
+    "published_at": "2026-08-28T11:00:29Z"
+  },
+  {
+    "id": "simon_willison-introducing-wrapture",
+    "section": "deepdive",
+    "title_en": "Introducing wrapture",
+    "title_ko": "wrapture 소개: 파이썬 테스트와 트레이싱을 위한 새로운 래핑 라이브러리",
+    "url": "https://simonwillison.net/2026/Aug/31/introducing-wrapture/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "wrapt와 mod_wsgi로 유명한 Graham Dumpleton이 새 Python 라이브러리 wrapture를 공개했다. wrapture는 monkey-patching 개념을 테스트와 트레이싱에 동시에 적용할 수 있도록 확장한 도구로, unittest.mock의 대안이자 OpenTelemetry 기반 트레이싱 구현 수단으로 활용 가능하다. 특히 코드 수정 없이 TOML 설정만으로 기존 프로젝트에 트레이싱을 추가할 수 있는 기능이 눈에 띈다. 프로젝트의 모든 코드와 문서는 AI 에이전트가 작성했으나, 저자는 이를 '바이브 코딩'이 아닌 자신의 깊은 전문 지식 하에 AI를 도구로 활용한 엔지니어링으로 명확히 구분했다.",
+    "why_it_matters": "Python 테스트·관측 생태계에 새로운 접근법을 제시하는 동시에, 숙련 전문가가 AI 에이전트를 활용해 고품질 오픈소스를 개발하는 실제 사례로 주목된다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.857104828042328,
+    "published_at": "2026-08-31T23:59:36Z"
+  }
+]
