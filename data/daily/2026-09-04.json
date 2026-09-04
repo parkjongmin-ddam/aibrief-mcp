@@ -1,0 +1,376 @@
+[
+  {
+    "id": "hf-2609.02749",
+    "section": "papers",
+    "title_en": "Repo-To-Skill: Distilling GitHub Repositories Into AI4AI Skills",
+    "title_ko": "Repo-To-Skill: GitHub 저장소를 AI 연구 에이전트용 스킬로 증류하기",
+    "url": "https://huggingface.co/papers/2609.02749",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "자율 ML 연구 에이전트는 도메인 전문 지식이 부족한 문제를 안고 있다. 이를 해결하기 위해 DisCo는 GitHub 저장소와 논문에서 '운영 지식'을 추출해 재사용 가능한 스킬로 압축한다. 1,000개의 주요 ML 저장소에서 5,000개 이상의 검증된 스킬을 담은 AREX-Skill Library를 구축했으며, GPT-5.5 기반 에이전트에 적용 시 MLE-bench에서 134.3%, PaperBench에서 34.4% 성능 향상을 달성했다.",
+    "why_it_matters": "ML 연구 에이전트의 고질적인 도메인 지식 부재 문제를 스킬 라이브러리로 해결해, 에이전트 성능을 획기적으로 높일 수 있음을 실증했다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 7.208590026096629,
+    "published_at": "2026-09-01T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.01437",
+    "section": "papers",
+    "title_en": "HarnessDev: Can LLMs Create and Evolve Their Own Agent Harness?",
+    "title_ko": "HarnessDev: LLM이 스스로 에이전트 실행 환경을 만들고 개선할 수 있을까?",
+    "url": "https://huggingface.co/papers/2609.01437",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "HarnessDev는 LLM이 에이전트 실행 인프라(하네스)를 직접 생성하고 반복 개선하는 능력을 평가하는 새로운 벤치마크다. 6개 LLM, 4개 도메인, 총 2,207개 인스턴스를 대상으로 평가한 결과, 생성된 하네스는 코드 및 검색·리서치 영역에서 인간이 설계한 참조 하네스에 크게 못 미쳤으나, 글쓰기와 머신러닝 실험 영역에서는 동등하거나 이를 초과하는 성능을 보였다. 진화(Evolution) 단계에서 일부 성능 향상이 있었지만, 불안정하고 미학습 태스크로의 전이도 제한적이었다.",
+    "why_it_matters": "모델 가중치가 아닌 실행 인프라 자체를 평가 단위로 삼아, LLM의 에이전트 자율 설계 능력의 현주소와 한계를 체계적으로 드러낸다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 6.420534999272286,
+    "published_at": "2026-08-31T20:00:00Z"
+  },
+  {
+    "id": "hf-2608.31111",
+    "section": "papers",
+    "title_en": "Aspire: Can Models Self-Evolve from Vague Goals?",
+    "title_ko": "Aspire: LLM이 모호한 목표로 스스로 진화할 수 있을까?",
+    "url": "https://huggingface.co/papers/2608.31111",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "ASPIRE는 '더 나은 물리학자가 되기'처럼 모호한 자연어 목표만 주어진 상황에서 LLM이 스스로 학습 방법을 결정하고 진화할 수 있는지 평가하는 벤치마크다. 에이전트는 목표를 해석하고, 데이터와 학습 방법을 선택하며, 평가 시점을 스스로 결정해야 한다. 실험 결과 현재 에이전트는 학습 루프를 완료하지만 가중치 수준의 성능 향상은 드물고 불안정하며, 최강 진화 하네스도 엔지니어링된 Qwen-Agent 기준선에 미치지 못했다. 에이전트가 불일치 데이터로 학습하고 편협한 자기 평가를 신뢰해 로컬 성과가 숨겨진 평가로 전이되지 않는 문제가 확인됐다.",
+    "why_it_matters": "인간 감독 없이 모호한 목표로부터 자율 진화하는 AI의 현실적 한계를 최초로 체계적으로 측정한 벤치마크로, LLM 자기개선 연구의 중요한 기준점이 된다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 6.3230099791384085,
+    "published_at": "2026-08-30T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.02886",
+    "section": "papers",
+    "title_en": "SolarWM: Open Data and Scalable Training for Long-Horizon Video World Models",
+    "title_ko": "SolarWM: 장기 비디오 월드 모델을 위한 오픈 데이터 및 확장 가능한 학습 프레임워크",
+    "url": "https://huggingface.co/papers/2609.02886",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SolarWM은 인터랙티브 비디오 월드 모델 구축을 위한 완전 오픈소스 기반 프레임워크입니다. 10개 데이터셋에서 143만 개의 클립을 통합 형식으로 변환하는 멀티소스 데이터 엔진과 Wan2.2, LTX-2.5, MiniMax-H3 기반의 5B~33B 규모 모델 4종을 포함합니다. 5초 시퀀스로만 학습된 모델이 실시간으로 수 분~수 시간 분량의 롤아웃을 생성할 수 있으며, 데이터·파이프라인·레시피·가중치·프레임워크를 모두 공개합니다.",
+    "why_it_matters": "이기종 데이터와 다양한 비디오 생성 백본을 통합한 재현 가능한 오픈소스 월드 모델 연구 기반을 제공해 장기 인터랙티브 시뮬레이션 연구의 진입 장벽을 낮춘다.",
+    "tags": [
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 5.897839799950911,
+    "published_at": "2026-09-01T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.02783",
+    "section": "papers",
+    "title_en": "EarlyEval: Cheaper Agent Evaluation via Early Outcome Prediction",
+    "title_ko": "EarlyEval: 조기 결과 예측으로 에이전트 평가 비용 절감",
+    "url": "https://huggingface.co/papers/2609.02783",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LLM 에이전트 벤치마크 평가는 단 한 번 실행에 수백~수천 달러가 드는 등 비용이 매우 높다. EarlyEval은 에이전트 실행 중간 행동 패턴을 분석해 최종 결과를 조기 예측하는 경량 프레임워크로, LightGBM 분류기를 활용해 신뢰도 임계값을 넘는 순간 실행을 중단한다. SWE-bench Verified 등 3개 벤치마크에서 에이전트 스텝의 13~26%, 입력 토큰의 최대 44.1%를 절감하면서도 89~97%의 예측 정확도를 달성했다.",
+    "why_it_matters": "반복 개발 주기마다 발생하는 에이전트 평가 비용을 대폭 줄일 수 있어 LLM 에이전트 연구의 실용성과 접근성을 크게 높인다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.709530201312334,
+    "published_at": "2026-09-01T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-daybreak-for-frontline-defenders",
+    "section": "releases",
+    "title_en": "Daybreak for Frontline Defenders: $1B to protect essential services",
+    "title_ko": "프론트라인 디펜더스를 위한 데이브레이크: 필수 서비스 보호에 10억 달러 투자",
+    "url": "https://openai.com/index/daybreak-for-frontline-defenders",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 '데이브레이크 포 프론트라인 디펜더스(Daybreak for Frontline Defenders)' 프로그램을 발표했다. 이는 필수 서비스를 보호하기 위해 10억 달러를 투자하는 계획으로, 최첨단 사이버 AI 기술과 교육, 지원에 대한 접근성을 확대하는 것을 목표로 한다. 병원, 전력망 등 사회 핵심 인프라를 사이버 위협으로부터 방어하는 데 초점을 맞추고 있다.",
+    "why_it_matters": "OpenAI가 사이버 보안 분야에 대규모 자원을 투입함으로써 AI가 국가·사회 인프라 방어의 핵심 도구로 자리잡는 흐름을 가속화할 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.7931564153439153,
+    "published_at": "2026-09-03T13:15:00Z"
+  },
+  {
+    "id": "openai_blog-legora-financial-statement-review-with-astra",
+    "section": "releases",
+    "title_en": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
+    "title_ko": "Legora, GPT-6 Astra로 41개 문서를 수분 만에 검토",
+    "url": "https://openai.com/index/legora-financial-statement-review-with-astra",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Legora는 GPT-6 Astra를 활용해 금융 문서 검토 워크플로우에서 41개 문서를 수분 만에 처리했다. 사전에 심어둔 4개의 오류를 모두 발견했으며, 전체 성능을 약 40% 향상시키는 성과를 거뒀다.",
+    "why_it_matters": "최신 LLM이 금융 문서 검토 실무에서 정확성과 속도를 동시에 크게 높일 수 있음을 실증한 사례다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7857159391534392,
+    "published_at": "2026-09-03T12:00:00Z"
+  },
+  {
+    "id": "openai_blog-playco-game-prototyping-with-astra",
+    "section": "releases",
+    "title_en": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
+    "title_ko": "Playco, GPT-6 Astra로 게임 프로토타입 수작업 수정 50% 절감",
+    "url": "https://openai.com/index/playco-game-prototyping-with-astra",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Playco는 GPT-6 Astra를 활용해 하나의 기본 그레이박스 토대에서 세 가지 테마의 게임 프로토타입을 제작했다. 이전 모델 대비 수작업 수정 횟수가 50% 감소했다고 보고했다. 이를 통해 게임 프로토타이핑 워크플로우가 크게 효율화됐음을 보여준다.",
+    "why_it_matters": "LLM 기반 코드 생성이 실제 게임 개발 현장에서 생산성을 절반 수준으로 끌어올릴 수 있음을 구체적 수치로 입증한 사례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7857159391534392,
+    "published_at": "2026-09-03T12:00:00Z"
+  },
+  {
+    "id": "github_trending-DietrichGebert/ponytail",
+    "section": "releases",
+    "title_en": "DietrichGebert/ponytail",
+    "title_ko": "Ponytail: AI 에이전트를 '게으른 시니어 개발자'처럼 만드는 플러그인",
+    "url": "https://github.com/DietrichGebert/ponytail",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Ponytail은 AI 코딩 에이전트가 꼭 필요한 코드만 작성하도록 유도하는 오픈소스 플러그인이다. YAGNI 원칙에 기반한 7단계 의사결정 사다리를 통해 에이전트가 과도한 코드 생성을 피하고, 표준 라이브러리나 네이티브 기능을 우선 활용하도록 한다. Claude Code 실제 세션 벤치마크에서 코드량 54% 감소, 비용 20% 절감, 속도 27% 향상을 기록하면서도 안전성은 100% 유지했다. Claude Code, Codex, GitHub Copilot CLI 등 20개 이상의 에이전트를 지원한다.",
+    "why_it_matters": "AI 에이전트의 과도한 코드 생성 문제를 실측 데이터 기반으로 해결하며, 비용·속도·유지보수성을 동시에 개선할 수 있는 실용적 도구다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7461590608465609,
+    "published_at": "2026-09-03T05:21:16Z"
+  },
+  {
+    "id": "github_trending-sngyai/Sequoia-X",
+    "section": "releases",
+    "title_en": "sngyai/Sequoia-X",
+    "title_ko": "Sequoia-X: A주식 자동 종목 선별 시스템 V2",
+    "url": "https://github.com/sngyai/Sequoia-X",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Sequoia-X V2는 중국 A주 시장을 대상으로 한 퀀트 종목 선별 시스템으로, OOP 아키텍처와 벡터화 연산을 기반으로 완전히 재구축되었습니다. baostock을 통해 무료로 일봉 데이터를 수집하고 로컬 SQLite에 저장하며, 해龟 돌파·RPS 상대강도 등 6가지 전략을 지원합니다. 매일 장 마감 후 자동으로 실행되어 Feishu(飞书) 웹훅으로 선별 결과를 푸시하며, 전체 시장 5,200개 종목의 히스토리 데이터 적재에 약 12분이 소요됩니다.",
+    "why_it_matters": "크롤링 이슈 없이 무료 데이터 소스를 활용한 A주 퀀트 자동화 파이프라인의 실용적인 오픈소스 구현체다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 0.7461590608465609,
+    "published_at": "2026-09-03T05:21:16Z"
+  },
+  {
+    "id": "github_trending-NousResearch/hermes-agent",
+    "section": "releases",
+    "title_en": "NousResearch/hermes-agent",
+    "title_ko": "NousResearch의 자기 개선 AI 에이전트 'Hermes Agent' 오픈소스 공개",
+    "url": "https://github.com/NousResearch/hermes-agent",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Nous Research가 자기 학습 루프를 내장한 AI 에이전트 Hermes Agent를 MIT 라이선스로 공개했다. 경험에서 스킬을 자동 생성하고 세션 간 기억을 유지하며, Telegram·Discord·Slack 등 다양한 메시징 플랫폼과 연동된다. OpenAI, OpenRouter 등 다양한 LLM 프로바이더를 지원하며, $5짜리 VPS부터 GPU 클러스터까지 어디서나 실행 가능하다.",
+    "why_it_matters": "단순 챗봇을 넘어 스킬 자동 생성·장기 메모리·크론 스케줄링을 갖춘 자기 개선형 오픈소스 에이전트 프레임워크로, 실용적인 개인/팀 AI 자동화의 새로운 기준을 제시한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7461590608465609,
+    "published_at": "2026-09-03T05:21:16Z"
+  },
+  {
+    "id": "github_trending-Gitlawb/openclaude",
+    "section": "releases",
+    "title_en": "Gitlawb/openclaude",
+    "title_ko": "OpenClaude: 다양한 LLM을 지원하는 오픈소스 코딩 에이전트 CLI",
+    "url": "https://github.com/Gitlawb/openclaude",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "OpenClaude는 클라우드 및 로컬 LLM 제공자를 하나의 터미널 워크플로우로 통합하는 오픈소스 코딩 에이전트 CLI입니다. OpenAI 호환 API, Gemini, Ollama, GitHub Models, Codex 등 다양한 백엔드를 지원하며, MCP·슬래시 명령·스트리밍 출력·에이전트 라우팅 등의 기능을 제공합니다. VS Code 확장 플러그인도 함께 제공되며, Anthropic과는 무관한 독립 커뮤니티 프로젝트입니다.",
+    "why_it_matters": "특정 LLM 제공자에 종속되지 않고 단일 CLI로 다양한 클라우드·로컬 모델을 활용할 수 있어 코딩 에이전트 환경의 벤더 잠금(lock-in)을 해소한다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7461590608465609,
+    "published_at": "2026-09-03T05:21:16Z"
+  },
+  {
+    "id": "hn-49554643",
+    "section": "community",
+    "title_en": "GPT-6 Astra",
+    "title_ko": "GPT-6 아스트라",
+    "url": "https://openai.com/index/gpt-6-astra/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GPT-6 아스트라에 관한 소식이 Hacker News에 공유되었다. 현재 제공된 설명이 없어 구체적인 내용은 확인하기 어렵다.",
+    "why_it_matters": "GPT-6 또는 'Astra'라는 명칭의 새로운 모델 관련 동향으로, 추가 정보 확인이 필요하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 11.53492324476008,
+    "published_at": "2026-09-03T18:41:05Z"
+  },
+  {
+    "id": "hn-49551096",
+    "section": "community",
+    "title_en": "Ask HN: Why were OpenAI, Claude, and Grok simultaneously down?",
+    "title_ko": "OpenAI, Claude, Grok 동시 장애 발생 — 원인은?",
+    "url": "https://news.ycombinator.com/item?id=49551096",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Hacker News 커뮤니티에서 OpenAI, Claude(Anthropic), Grok(xAI)이 동시에 서비스 장애를 겪은 원인에 대해 질문이 제기되었다. 여러 주요 AI 서비스가 같은 시점에 다운된 것은 이례적인 사건으로 주목받았다. 구체적인 원인은 제공된 정보만으로는 확인되지 않는다.",
+    "why_it_matters": "주요 AI 서비스들이 동시에 장애를 겪는 사태는 공통 인프라 의존성이나 공급망 취약성 문제를 시사할 수 있어 중요하다.",
+    "tags": [
+      "인프라",
+      "LLM"
+    ],
+    "score": 9.902639944352398,
+    "published_at": "2026-09-03T15:07:01Z"
+  },
+  {
+    "id": "hn-49554520",
+    "section": "community",
+    "title_en": "Qwen 3.8 27B available on Cerebras at 1500 tokens/s",
+    "title_ko": "Qwen 3.8 27B, Cerebras에서 초당 1500 토큰 속도로 제공",
+    "url": "https://inference-docs.cerebras.ai/models/overview",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Qwen 3.8 27B 모델이 Cerebras 인프라를 통해 초당 1500 토큰의 속도로 서비스되고 있다. Cerebras는 자체 AI 전용 칩을 활용해 기존 GPU 대비 월등히 빠른 추론 속도를 제공하는 것으로 알려져 있다.",
+    "why_it_matters": "초당 1500 토큰이라는 극고속 추론은 실시간 AI 응용 개발의 가능성을 크게 넓힌다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 9.47887755645792,
+    "published_at": "2026-09-03T18:32:13Z"
+  },
+  {
+    "id": "hn-49551760",
+    "section": "community",
+    "title_en": "K2 Horizon: A connected fleet of six open models",
+    "title_ko": "K2 Horizon: 6개의 오픈 모델로 구성된 연결 플리트",
+    "url": "https://ifm.ai/blog/k2/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "K2 Horizon은 6개의 오픈 모델이 연결된 플리트 형태의 AI 시스템이다. 구체적인 세부 사항은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "여러 오픈 모델을 연결하는 플리트 방식은 단일 모델 한계를 극복하는 새로운 접근법으로 주목할 만하다.",
+    "tags": [
+      "LLM",
+      "오픈소스",
+      "에이전트"
+    ],
+    "score": 8.68407476067749,
+    "published_at": "2026-09-03T15:36:43Z"
+  },
+  {
+    "id": "hn-49526453",
+    "section": "community",
+    "title_en": "The largest electric aircraft just flew [video]",
+    "title_ko": "역대 최대 규모의 전기 항공기 첫 비행 [영상]",
+    "url": "https://www.youtube.com/watch?v=nM86DBOqgPM",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "역대 가장 큰 전기 항공기가 비행에 성공했다는 소식이 영상과 함께 공개되었다. 자세한 제원이나 제조사 정보는 제공되지 않았다.",
+    "why_it_matters": "전기 항공 분야의 규모 한계를 넘는 이정표로, 지속 가능한 항공 운송의 가능성을 보여준다.",
+    "tags": [],
+    "score": 8.450106610720407,
+    "published_at": "2026-09-01T19:02:34Z"
+  },
+  {
+    "id": "youtube-nYlCKEN3aDw",
+    "section": "video",
+    "title_en": "AI 교육은 이벤트고, AX는 시스템이다 | 조코딩AX파트너스 웨비나",
+    "title_ko": "AI 교육은 이벤트, AX는 시스템이다 | 기업 AI 전환 웨비나",
+    "url": "https://www.youtube.com/watch?v=nYlCKEN3aDw",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩AX파트너스 공동대표 조동근·문경원이 기업의 AI 전환(AX) 정착 전략을 다루는 웨비나입니다. 단순 AI 교육이 현업 정착으로 이어지지 않는 이유와, 성공한 조직들의 공통점을 데이터 기반으로 분석합니다. 우리 회사에서 무엇부터 시작해야 하는지 실질적인 방향을 제시합니다.",
+    "why_it_matters": "AI 교육 이후 실질적 정착에 어려움을 겪는 국내 기업들에게 시스템적 AX 접근법을 제시한다는 점에서 실무자에게 유용합니다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.8549074074074074,
+    "published_at": "2026-09-03T23:37:27Z"
+  },
+  {
+    "id": "youtube-n4dU5JjbNHg",
+    "section": "video",
+    "title_en": "100조 토큰까지 처리할 수 있는 모델의 충격적인 진실",
+    "title_ko": "100조 토큰 처리 가능 모델의 충격적인 진실 (GLM 오픈소스)",
+    "url": "https://www.youtube.com/shorts/n4dU5JjbNHg",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 최대 100조 토큰까지 처리할 수 있다고 알려진 AI 모델(GLM 계열 오픈소스)의 실제 성능과 한계를 다룬 영상이다. 과장된 마케팅 수치 뒤에 숨겨진 실제 동작 방식을 분석한다.",
+    "why_it_matters": "초대형 컨텍스트 윈도우를 표방하는 오픈소스 모델의 실체를 검증함으로써, 개발자들이 스펙 수치를 맹신하지 않고 실사용 가능성을 판단하는 데 도움이 된다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7678984788359788,
+    "published_at": "2026-09-03T09:00:24Z"
+  },
+  {
+    "id": "youtube-3aGnGKBLfmk",
+    "section": "video",
+    "title_en": "챗GPT 이용권 등 혜택이 가득한 Namuh PLUG 출시 이벤트 2가지",
+    "title_ko": "NH투자증권 Namuh PLUG 출시 기념 이벤트: ChatGPT Plus 이용권 제공",
+    "url": "https://www.youtube.com/shorts/3aGnGKBLfmk",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "NH투자증권이 Namuh PLUG 출시를 기념해 두 가지 이벤트를 진행한다. 국내주식 매매수수료 1년 우대(신규 고객은 24개월 무료) 혜택과 함께, 첫 거래 시 선착순 8,000명에게 ChatGPT Plus 1개월 이용권을 제공한다. 자세한 대상 및 신청 방법은 공식 프로모션 페이지에서 확인할 수 있다.",
+    "why_it_matters": "증권 서비스가 ChatGPT Plus 구독권을 마케팅 수단으로 활용하는 사례로, AI 서비스가 금융권 고객 유치 혜택으로 자리잡고 있음을 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7648859126984127,
+    "published_at": "2026-09-03T08:30:02Z"
+  },
+  {
+    "id": "latent_space-astra",
+    "section": "deepdive",
+    "title_en": "GPT-6 Astra: an automated AI Engineer you can hire for <$6 an hour",
+    "title_ko": "시간당 6달러 미만으로 고용 가능한 AI 엔지니어, GPT-6 Astra",
+    "url": "https://www.latent.space/p/astra",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "Latent Space 팀이 200억 개 이상의 토큰을 사용해 GPT-6 Astra를 심층 분석했다. GPT-6 Astra는 자동화된 AI 엔지니어로서 시간당 6달러 미만의 비용으로 활용할 수 있다고 소개된다. 팀은 대규모 실험을 통해 얻은 주요 인사이트를 공유했다.",
+    "why_it_matters": "GPT-6 Astra가 저비용 자동화 AI 엔지니어로 실용화될 경우, 소프트웨어 개발 비용과 인력 구조에 근본적인 변화를 가져올 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8402480158730159,
+    "published_at": "2026-09-03T21:09:41Z"
+  }
+]
