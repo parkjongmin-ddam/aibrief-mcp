@@ -1,0 +1,374 @@
+[
+  {
+    "id": "hf-2609.04199",
+    "section": "papers",
+    "title_en": "Compile by Training: Turning Natural-Language Specifications into Local Neural Functions",
+    "title_ko": "자연어 명세를 로컬 신경망 함수로 컴파일하기",
+    "url": "https://huggingface.co/papers/2609.04199",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "자연어로 명세된 텍스트 함수를 소형 신경망 어댑터로 변환하는 '훈련을 통한 컴파일' 방법을 제안한다. 컴파일 시점에 교사 모델이 태스크별 예제를 생성하고, 이를 소형 인터프리터에 어댑터로 학습시킨다. 완성된 함수는 대형 원격 모델 없이 독립 실행되며, 일반 소프트웨어처럼 저장·버전 관리·조합이 가능하다. FuzzyBench-Hard에서 83.6%의 의미론적 정확도를 달성했다.",
+    "why_it_matters": "대형 LLM 호출 없이 자연어 명세만으로 경량 로컬 함수를 생성할 수 있어, 반복 비용·지연·외부 의존성을 근본적으로 줄일 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 6.54907608489522,
+    "published_at": "2026-09-02T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.04148",
+    "section": "papers",
+    "title_en": "Terminal-Universe: Turning Agent Trajectories into Scalable Terminal Environments",
+    "title_ko": "Terminal-Universe: 에이전트 궤적을 재사용 가능한 터미널 환경으로 변환하는 프레임워크",
+    "url": "https://huggingface.co/papers/2609.04148",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Terminal-Universe는 기존 터미널 에이전트 궤적(trajectory)에 기록된 파일 연산 이력을 역재생해 실행 가능한 워크스페이스를 복원하고, 이를 새로운 학습 태스크 합성에 재활용하는 프레임워크다. 태스크를 '폭(breadth)'과 '깊이(depth)' 두 축으로 확장하여 다중 코드베이스 쿼리와 멀티 라운드 세션을 생성한다. 공개 궤적 데이터에 적용해 37,300개의 태스크 충족 환경을 구축했으며, Qwen3.5-27B를 파인튜닝한 결과 Terminal-Bench 2.1에서 11.9점, EvoCode-Bench v2 MT@4에서 13.8점 성능 향상을 달성했다.",
+    "why_it_matters": "실행 환경 부족이라는 에이전트 포스트 트레이닝의 핵심 병목을 기존 궤적 데이터 재활용으로 해결하는 실용적 접근법이다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 6.365976015021851,
+    "published_at": "2026-09-02T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.03796",
+    "section": "papers",
+    "title_en": "LLaDA-Image: Building Strong Image Generators with Fully Open Training Recipes",
+    "title_ko": "LLaDA-Image: 완전 공개 학습 레시피로 구축한 강력한 이미지 생성 모델",
+    "url": "https://huggingface.co/papers/2609.03796",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LLaDA-Image는 60억 파라미터 규모의 Diffusion Transformer(DiT)와 LLaDA2.0-Mini 기반의 동결된 비전-언어 이해 모듈을 결합한 통합 프레임워크입니다. 이미지 전용 사전학습 및 중간학습으로 생성 사전(prior)을 먼저 구축하고, 총 2억 2천만 샘플로 학습했습니다. Qwen-Image-Bench 영어·중국어 트랙에서 오픈소스 모델 중 최고 성능(53.53/53.38)을 기록했으며, 2~4 스텝 빠른 추론이 가능한 LLaDA-Image-Turbo도 함께 공개했습니다. 모델 가중치, 학습 코드, 상세 레시피를 모두 공개합니다.",
+    "why_it_matters": "완전 공개된 학습 레시피와 코드로 오픈소스 이미지 생성 모델의 새로운 기준을 제시해 연구자 누구나 재현·개선이 가능하다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 6.2832037287379885,
+    "published_at": "2026-09-02T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.03430",
+    "section": "papers",
+    "title_en": "Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning",
+    "title_ko": "랜덤 어텐션: KV 캐시 제거에서 점수 계산이 불필요하다는 새로운 발견",
+    "url": "https://huggingface.co/papers/2609.03430",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "대형 언어 모델의 추론 과정에서 KV 캐시가 메모리 병목이 되는 문제를 해결하기 위해, 기존 방법들은 토큰 중요도를 점수화해 보존했다. 그러나 이 연구는 프롬프트를 유지하고 나머지를 무작위로 제거하는 '랜덤 어텐션'이 기존 최강 방법과 동등한 성능을 내면서 vLLM 배포 환경에서 32~43% 더 높은 처리량을 달성함을 4개 모델, 6개 추론 과제에서 입증했다. 이는 추론 트레이스가 텍스트 수준과 어텐션 헤드 수준에서 중복성을 통해 스스로를 보호하기 때문에 점수 기반 선택이 실질적으로 기여하는 바가 거의 없기 때문이다.",
+    "why_it_matters": "KV 캐시 압축에서 복잡한 점수 계산이 불필요하다는 것을 실증해, LLM 추론 효율화 연구의 방향을 근본적으로 재고하게 만드는 발견이다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 5.820281565605037,
+    "published_at": "2026-09-02T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.01507",
+    "section": "papers",
+    "title_en": "LatentPress: Context Compression Beyond Text and Vision",
+    "title_ko": "LatentPress: 텍스트·이미지를 넘어선 컨텍스트 압축 기술",
+    "url": "https://huggingface.co/papers/2609.01507",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LatentPress는 대화 이력이나 긴 문서를 텍스트나 이미지가 아닌 '연속 메모리 토큰'으로 압축해 언어 모델이 직접 읽을 수 있게 하는 기술입니다. 소형 어댑터(4.2M~26.2M 파라미터)만 학습해 4~16배 압축을 달성하며, LongMemEval에서 비압축 대비 동등하거나 높은 정확도(0.504 vs 0.490)를 기록했습니다. 쓰기 속도는 텍스트 요약 대비 약 10배 빠른 43ms, 읽기는 원본 컨텍스트 대비 5~9배 빠릅니다.",
+    "why_it_matters": "LLM의 긴 컨텍스트 처리 비용을 획기적으로 줄이면서도 성능을 유지하는 실용적인 소프트 토큰 압축 방식을 제시해, RAG 및 대화형 AI 시스템의 효율화에 직접 적용 가능합니다.",
+    "tags": [
+      "LLM",
+      "RAG"
+    ],
+    "score": 5.634728988229636,
+    "published_at": "2026-08-31T20:00:00Z"
+  },
+  {
+    "id": "github_trending-NousResearch/hermes-agent",
+    "section": "releases",
+    "title_en": "NousResearch/hermes-agent",
+    "title_ko": "NousResearch, 자기 개선 AI 에이전트 'Hermes Agent' 오픈소스 공개",
+    "url": "https://github.com/NousResearch/hermes-agent",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Nous Research가 학습 루프를 내장한 자기 개선형 AI 에이전트 'Hermes Agent'를 MIT 라이선스로 공개했다. 대화에서 스킬을 자동 생성·개선하고, 세션 간 기억을 유지하며, Telegram·Discord·Slack 등 다양한 메시징 플랫폼과 연동된다. OpenAI, Anthropic, OpenRouter 등 300개 이상의 모델을 지원하며, $5 VPS부터 GPU 클러스터, 서버리스 환경까지 어디서나 실행 가능하다. 40개 이상의 도구, 크론 스케줄러, 병렬 서브에이전트 등 광범위한 기능을 제공한다.",
+    "why_it_matters": "경험에서 스킬을 자동 생성하고 세션을 넘어 사용자를 기억하는 자기 개선 루프를 갖춘 실용적 오픈소스 에이전트로, 개인 및 팀 AI 워크플로우에 즉시 적용 가능하다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.745625,
+    "published_at": "2026-09-04T05:15:53Z"
+  },
+  {
+    "id": "github_trending-DietrichGebert/ponytail",
+    "section": "releases",
+    "title_en": "DietrichGebert/ponytail",
+    "title_ko": "Ponytail: AI 에이전트를 '게으른 시니어 개발자'처럼 만드는 플러그인",
+    "url": "https://github.com/DietrichGebert/ponytail",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Ponytail은 AI 코딩 에이전트가 불필요한 코드를 작성하지 않도록 유도하는 오픈소스 플러그인이다. YAGNI 원칙 기반의 7단계 의사결정 사다리를 통해 에이전트가 기존 기능·표준 라이브러리·네이티브 플랫폼 기능을 먼저 활용하도록 강제한다. Claude Code, Codex, Copilot CLI, Gemini CLI 등 20개 이상의 에이전트를 지원하며, 실제 벤치마크에서 코드 줄 수 54% 감소, 비용 20% 절감, 속도 27% 향상을 달성했다. 안전성(보안, 접근성, 에러 처리)은 100% 유지하면서 과잉 구현만 제거한다는 점이 특징이다.",
+    "why_it_matters": "AI 에이전트의 과잉 코드 생성 문제를 실측 데이터 기반으로 해결하며, 비용·속도·유지보수성을 동시에 개선하는 실용적 도구다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.745625,
+    "published_at": "2026-09-04T05:15:53Z"
+  },
+  {
+    "id": "github_trending-anthropics/skills",
+    "section": "releases",
+    "title_en": "anthropics/skills",
+    "title_ko": "Anthropic, Claude용 에이전트 스킬 공개 저장소 공개",
+    "url": "https://github.com/anthropics/skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 Claude의 에이전트 스킬(Agent Skills) 공개 저장소를 GitHub에 공개했다. 스킬은 지침·스크립트·리소스로 구성된 폴더로, Claude가 동적으로 로드해 문서 작성, 데이터 분석, 웹앱 테스트 등 특화 작업을 반복적으로 수행할 수 있게 한다. Claude Code, Claude.ai(유료 플랜), Claude API를 통해 사용 가능하며, SKILL.md 파일 하나로 커스텀 스킬을 직접 만들 수 있다. 문서 생성·편집 스킬(docx, pdf, pptx, xlsx)은 소스 공개 형태로 포함되어 있다.",
+    "why_it_matters": "Claude의 기능을 특정 업무에 맞게 확장할 수 있는 공식 스킬 시스템이 공개됨으로써, 개발자가 커스텀 에이전트 워크플로우를 표준화된 방식으로 구축할 수 있게 된다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.745625,
+    "published_at": "2026-09-04T05:15:53Z"
+  },
+  {
+    "id": "github_trending-addyosmani/agent-skills",
+    "section": "releases",
+    "title_en": "addyosmani/agent-skills",
+    "title_ko": "AI 코딩 에이전트를 위한 프로덕션급 엔지니어링 스킬 팩: agent-skills",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Addy Osmani가 공개한 'agent-skills'는 AI 코딩 에이전트가 소프트웨어 개발 전 주기(정의→계획→구현→검증→리뷰→배포)에서 시니어 엔지니어 수준의 워크플로를 일관되게 따르도록 설계된 25개의 구조화된 스킬 팩입니다. `/spec`, `/plan`, `/build`, `/test`, `/review`, `/ship` 등 9개의 슬래시 명령어로 각 단계를 활성화할 수 있으며, Claude Code, Cursor, Codex, Copilot, Gemini CLI 등 70개 이상의 에이전트에 `npx skills add` 한 줄로 설치됩니다. 각 스킬은 단계별 워크플로, 검증 게이트, '핑계 대응 테이블(anti-rationalization)'을 포함해 에이전트가 테스트·스펙·보안 리뷰를 건너뛰지 못하도록 강제합니다. Google의 엔지니어링 문화(Hyrum's Law, Beyonce Rule, 트렁크 기반 개발 등)에서 검증된 원칙들이 직접 워크플로에 내장되어 있습니다.",
+    "why_it_matters": "AI 에이전트가 프로덕션 품질 코드를 생산하려면 '최단 경로'가 아닌 시니어 엔지니어의 프로세스를 따라야 하며, 이 스킬 팩은 그 규율을 구조적으로 강제하는 실용적 도구다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.745625,
+    "published_at": "2026-09-04T05:15:53Z"
+  },
+  {
+    "id": "github_trending-Gitlawb/openclaude",
+    "section": "releases",
+    "title_en": "Gitlawb/openclaude",
+    "title_ko": "OpenClaude: 어떤 LLM이든 연결되는 오픈소스 코딩 에이전트 CLI",
+    "url": "https://github.com/Gitlawb/openclaude",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "OpenClaude는 클라우드 및 로컬 모델 제공자를 하나의 터미널 워크플로우로 통합하는 오픈소스 코딩 에이전트 CLI입니다. OpenAI 호환 API, Gemini, Ollama, GitHub Models, Codex 등 다양한 백엔드를 지원하며, 파일 편집·bash·grep·MCP·슬래시 명령어 등 코딩 에이전트 워크플로우 전반을 제공합니다. VS Code 익스텐션과 헤드리스 gRPC 서버 모드도 포함되어 있으며, Anthropic과는 무관한 독립 커뮤니티 프로젝트입니다.",
+    "why_it_matters": "특정 LLM 제공자에 종속되지 않고 로컬·클라우드 모델을 단일 CLI로 교체해 사용할 수 있어, 개발자의 AI 코딩 환경 유연성을 크게 높인다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.745625,
+    "published_at": "2026-09-04T05:15:53Z"
+  },
+  {
+    "id": "github_trending-f/prompts.chat",
+    "section": "releases",
+    "title_en": "f/prompts.chat",
+    "title_ko": "prompts.chat — 세계 최대 오픈소스 AI 프롬프트 라이브러리",
+    "url": "https://github.com/f/prompts.chat",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "기존 'Awesome ChatGPT Prompts'에서 발전한 prompts.chat은 ChatGPT, Claude, Gemini, Llama 등 다양한 AI 모델과 호환되는 커뮤니티 기반 프롬프트 공유 플랫폼입니다. GitHub 스타 14만 3천 개 이상을 보유하며, MCP 서버·CLI·Claude 플러그인 등 다양한 통합 방식을 지원합니다. 조직 내 완전한 프라이버시 보장을 위한 셀프호스팅도 지원하며, 프롬프트 데이터는 CC0 라이선스로 공개되어 있습니다.",
+    "why_it_matters": "개발자와 기업 모두가 즉시 활용 가능한 대규모 오픈소스 프롬프트 자산을 MCP·CLI 등 현대적 도구와 함께 무료로 셀프호스팅할 수 있다는 점에서 실용적 가치가 높다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.745625,
+    "published_at": "2026-09-04T05:15:53Z"
+  },
+  {
+    "id": "openai_blog-daybreak-for-frontline-defenders",
+    "section": "releases",
+    "title_en": "Daybreak for Frontline Defenders: $1B to protect essential services",
+    "title_ko": "최전선 방어자를 위한 Daybreak: 핵심 서비스 보호에 10억 달러 투자",
+    "url": "https://openai.com/index/daybreak-for-frontline-defenders",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 'Daybreak for Frontline Defenders' 프로그램을 발표하며 10억 달러 규모의 지원을 약속했다. 이 프로그램은 병원, 에너지, 수도 등 필수 서비스 기관들이 최첨단 사이버 AI 기술, 교육, 지원에 접근할 수 있도록 확대하는 것을 목표로 한다. 사이버 위협으로부터 핵심 인프라를 보호하기 위한 OpenAI의 대규모 이니셔티브다.",
+    "why_it_matters": "AI 기반 사이버 보안을 필수 공공 인프라에 적용하는 OpenAI의 대규모 공익 프로그램으로, 사이버 방어의 민주화에 중요한 전환점이 될 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.6502992724867724,
+    "published_at": "2026-09-03T13:15:00Z"
+  },
+  {
+    "id": "hn-49563355",
+    "section": "community",
+    "title_en": "Discovery of a new OpenAI agent message board",
+    "title_ko": "새로운 OpenAI 에이전트 메시지 보드 발견",
+    "url": "https://collusion.wiki/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "OpenAI 에이전트와 관련된 새로운 메시지 보드가 발견되었다. 상세한 내용은 공개된 정보가 없어 추가적인 내용은 확인이 필요하다.",
+    "why_it_matters": "OpenAI 에이전트 인프라의 숨겨진 구성 요소가 드러날 수 있어 내부 동작 방식 이해에 도움이 될 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 11.802135980443747,
+    "published_at": "2026-09-04T11:54:53Z"
+  },
+  {
+    "id": "hn-49568506",
+    "section": "community",
+    "title_en": "Formalizing Fermat's Last Theorem",
+    "title_ko": "페르마의 마지막 정리 형식화",
+    "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "페르마의 마지막 정리를 형식적으로 증명하는 작업에 관한 소식이다. 수학적 증명을 컴퓨터가 검증할 수 있는 형태로 변환하는 형식화 프로젝트로 보인다.",
+    "why_it_matters": "수학 난제의 형식 증명은 AI 및 자동 정리 증명 분야의 중요한 이정표가 될 수 있다.",
+    "tags": [],
+    "score": 9.951659301816335,
+    "published_at": "2026-09-04T18:42:56Z"
+  },
+  {
+    "id": "hn-49567437",
+    "section": "community",
+    "title_en": "Show HN: Open-Source eInk Bike Computer",
+    "title_ko": "오픈소스 e잉크 자전거 컴퓨터 공개",
+    "url": "https://opentrailpaper.com/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "e잉크 디스플레이를 탑재한 오픈소스 자전거 컴퓨터 프로젝트가 공개되었다. 상세 설명은 제공되지 않았으나, 오픈소스로 누구나 제작·수정할 수 있는 자전거용 컴퓨터 장치로 보인다.",
+    "why_it_matters": "e잉크 디스플레이와 오픈소스 하드웨어의 결합으로 저전력 DIY 자전거 컴퓨터 제작에 관심 있는 개발자에게 참고가 될 수 있다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 8.563529371660918,
+    "published_at": "2026-09-04T17:18:08Z"
+  },
+  {
+    "id": "hn-49569366",
+    "section": "community",
+    "title_en": "Can AI design circuit boards yet?",
+    "title_ko": "AI가 회로 기판을 설계할 수 있을까?",
+    "url": "https://eebench.org/blog/can-ai-design-circuit-boards-yet/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI의 회로 기판(PCB) 설계 가능성을 탐구하는 글이다. 제공된 설명이 없어 제목 기반으로만 요약한다.",
+    "why_it_matters": "AI의 하드웨어 설계 분야 적용 가능성에 관심 있는 개발자·엔지니어에게 흥미로운 주제다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.160069207596127,
+    "published_at": "2026-09-04T19:48:29Z"
+  },
+  {
+    "id": "hn-49570669",
+    "section": "community",
+    "title_en": "Actively exploited sandbox RCE in all Chromium versions",
+    "title_ko": "크로미움 전 버전에서 샌드박스 RCE 취약점 악용 중",
+    "url": "https://nvd.nist.gov/vuln/detail/cve-2026-85046",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "모든 크로미움 버전에 영향을 미치는 샌드박스 원격 코드 실행(RCE) 취약점이 실제 공격에 활발히 악용되고 있다. 크로미움 기반 브라우저(Chrome, Edge 등) 사용자 모두가 잠재적 위험에 노출된 상태다.",
+    "why_it_matters": "크로미움 기반 브라우저를 사용하는 모든 환경이 즉각적인 위협에 처해 있어 긴급 패치 적용이 필요하다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 8.147491173691066,
+    "published_at": "2026-09-04T21:52:01Z"
+  },
+  {
+    "id": "youtube-Spuza-KwTJ4",
+    "section": "video",
+    "title_en": "GPT 6 Astra, so good even OpenAI are worried",
+    "title_ko": "GPT-6 Astra, OpenAI조차 우려할 만큼 강력한 성능",
+    "url": "https://www.youtube.com/watch?v=Spuza-KwTJ4",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "OpenAI가 GPT-6 Astra를 공개했으며, 벤치마크 제작자들을 압도하고 트레이더들을 흥분시킬 만큼 뛰어난 성능을 보였다. ARC-AGI 3, FrontierMath 등 주요 벤치마크에서 획기적인 결과를 기록했으며, Anthropic의 Fable 5.1과의 비교에서도 우수한 성능을 나타냈다. 그러나 GPT-6 Astra의 사고 연쇄(Chain of Thought)에 대한 모니터링 가능성이 약화되는 우려스러운 경향이 AI 안전 연구자들 사이에서 제기되고 있다.",
+    "why_it_matters": "GPT-6 Astra는 성능 면에서 새로운 기준을 세웠지만, 내부 추론 과정의 모니터링이 어려워지는 안전 문제가 동시에 부각되어 AI 개발 방향에 중요한 논의를 촉발한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.783478835978836,
+    "published_at": "2026-09-04T11:37:27Z"
+  },
+  {
+    "id": "youtube-8ANHSyLnNNM",
+    "section": "video",
+    "title_en": "나날이 발전하기만 하는 영상 AI 근황",
+    "title_ko": "나날이 발전하는 영상 AI 최신 동향",
+    "url": "https://www.youtube.com/shorts/8ANHSyLnNNM",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 최근 급격히 발전하고 있는 영상 AI의 현황을 소개하는 영상이다. Gemini 등 멀티모달 AI 기술을 중심으로 영상 생성·편집 분야의 최신 근황을 다루는 것으로 보인다.",
+    "why_it_matters": "영상 AI 기술의 빠른 발전 속도를 파악하고 싶은 개발자와 크리에이터에게 유용한 트렌드 요약 콘텐츠다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7797767857142857,
+    "published_at": "2026-09-04T11:00:08Z"
+  },
+  {
+    "id": "youtube-51sbHSPa_yk",
+    "section": "video",
+    "title_en": "오픈소스라고 돈 못번다?? 충격적인 딥시크 근황",
+    "title_ko": "오픈소스도 돈이 된다? 딥시크의 충격적인 근황",
+    "url": "https://www.youtube.com/shorts/51sbHSPa_yk",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 오픈소스 AI 모델인 딥시크(DeepSeek)의 최근 근황을 다루는 영상이다. 오픈소스임에도 불구하고 수익 창출이 가능한지에 대한 주제를 다루고 있다. 구체적인 내용은 영상을 통해 확인할 수 있다.",
+    "why_it_matters": "딥시크 같은 오픈소스 AI 모델의 비즈니스 가능성에 관심 있는 개발자라면 주목할 만한 주제다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7738144841269841,
+    "published_at": "2026-09-04T10:00:02Z"
+  },
+  {
+    "id": "simon_willison-astra-pelicans",
+    "section": "deepdive",
+    "title_en": "The Pelican comparison grid for Astra is pretty interesting",
+    "title_ko": "GPT-6 Astra vs GPT-5.6 시리즈: 펠리컨 SVG 생성 비교 그리드",
+    "url": "https://simonwillison.net/2026/Sep/4/astra-pelicans/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Simon Willison이 GPT-6 Astra에 접근권을 얻어 다양한 추론 수준(low~max)에서 자전거를 탄 펠리컨 SVG를 생성하고, GPT-5.6 Sol·Terra·Luna와 비교 그리드를 만들었다. Astra는 가장 낮은 추론 수준(low)에서도 GPT-5.6 Sol의 어떤 수준보다 뛰어난 SVG를 생성했으며, 가격은 입력 $10/백만 토큰·출력 $50/백만 토큰으로 Sol보다 비싸지만 실제 사용 토큰 수가 훨씬 적어 실질 비용 차이는 줄어든다. 또한 Astra와 Luna가 동일하게 16개의 입력 토큰을 사용한 점이 눈에 띄어, 두 모델의 연관성에 의문이 제기된다.",
+    "why_it_matters": "GPT-6 Astra의 SVG 생성 품질과 실제 비용 효율을 실증적으로 비교한 사례로, 모델 선택 시 가격 대비 성능 판단에 유용한 기준을 제공한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8570535714285714,
+    "published_at": "2026-09-04T23:59:05Z"
+  }
+]
