@@ -1,0 +1,376 @@
+[
+  {
+    "id": "hf-2609.04199",
+    "section": "papers",
+    "title_en": "Compile by Training: Turning Natural-Language Specifications into Local Neural Functions",
+    "title_ko": "훈련으로 컴파일: 자연어 명세를 로컬 신경망 함수로 변환",
+    "url": "https://huggingface.co/papers/2609.04199",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "자연어로 설명한 텍스트 처리 작업을 대형 원격 모델 없이 실행 가능한 소형 신경망 함수로 컴파일하는 '훈련 기반 컴파일' 방법을 제안한다. 컴파일 시점에 교사 모델이 태스크별 예제를 생성하고, 이를 이용해 소형 어댑터를 학습시킨다. FuzzyBench-Hard 벤치마크에서 기존 빠른 컴파일러가 정확 매칭을 전혀 달성하지 못한 반면, 이 방법은 83.6%의 의미적 정확도를 기록했다.",
+    "why_it_matters": "LLM 호출 비용·지연 없이 자연어 명세를 재사용 가능한 로컬 함수로 변환함으로써, AI 기능을 일반 소프트웨어처럼 저장·버전 관리·조합할 수 있는 새로운 패러다임을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 6.762051382780177,
+    "published_at": "2026-09-02T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.04148",
+    "section": "papers",
+    "title_en": "Terminal-Universe: Turning Agent Trajectories into Scalable Terminal Environments",
+    "title_ko": "Terminal-Universe: 에이전트 궤적을 재사용 가능한 터미널 환경으로 변환하는 프레임워크",
+    "url": "https://huggingface.co/papers/2609.04148",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "Terminal-Universe는 기존 코드 에이전트의 실행 궤적(trajectory)을 재사용 가능한 터미널 환경으로 복원하고, 이를 기반으로 새로운 학습 태스크를 합성하는 프레임워크다. 궤적에 기록된 파일 조작 이력을 재생해 에이전트가 수정하기 전 워크스페이스를 복원한 뒤, 누락된 파일과 의존성을 보완하는 방식으로 동작한다. 너비(다중 코드베이스 쿼리)와 깊이(멀티라운드 피드백 세션) 두 축으로 태스크를 확장하여 37,300개의 환경을 생성했으며, Qwen3.5-27B 파인튜닝 결과 Terminal-Bench 2.1에서 11.9점, EvoCode-Bench v2 MT@4에서 13.8점 향상을 달성했다.",
+    "why_it_matters": "희소한 실행 가능 환경 문제를 기존 궤적 데이터 재활용으로 해결해 코드 에이전트 포스트 트레이닝의 데이터 병목을 크게 완화할 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 6.60947179518496,
+    "published_at": "2026-09-02T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.03796",
+    "section": "papers",
+    "title_en": "LLaDA-Image: Building Strong Image Generators with Fully Open Training Recipes",
+    "title_ko": "LLaDA-Image: 완전 공개 학습 레시피로 구축한 강력한 이미지 생성 모델",
+    "url": "https://huggingface.co/papers/2609.03796",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LLaDA-Image는 60억 파라미터 규모의 Diffusion Transformer(DiT)와 LLaDA2.0-Mini 기반의 비전-언어 이해 모듈을 결합한 통합 프레임워크입니다. 이미지 전용 사전학습과 중간 학습을 통해 강력한 시각적 생성 사전 지식을 구축하며, 2억 2천만 개 샘플로 파이프라인을 구성했습니다. Qwen-Image-Bench에서 영어·중국어 트랙 모두 오픈소스 모델 중 최고 성능을 달성했으며, 2~4 스텝 빠른 추론을 지원하는 LLaDA-Image-Turbo도 공개했습니다. 모델 가중치, 학습 코드, 상세 레시피를 모두 오픈소스로 공개합니다.",
+    "why_it_matters": "완전 공개 학습 레시피와 함께 오픈소스 최고 수준의 이미지 생성 성능을 제공해 연구 재현성과 커뮤니티 발전에 기여한다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 6.429345628954441,
+    "published_at": "2026-09-02T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.03430",
+    "section": "papers",
+    "title_en": "Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning",
+    "title_ko": "랜덤 어텐션: KV 캐시 축출 전략 재고를 통한 효율적 추론",
+    "url": "https://huggingface.co/papers/2609.03430",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "대형 언어 모델의 긴 추론 체인은 KV 캐시를 심각한 메모리 병목으로 만든다. 기존 KV 캐시 압축 방법들은 토큰별 중요도 점수를 계산해 상위 토큰을 유지하는 방식을 사용하지만, 이 연구는 그 선택 신호가 거의 기여하지 않음을 보인다. 'Random Attention'은 프롬프트를 보존하고 나머지는 무작위로 축출하는 방식으로, 4개 모델·6개 추론 태스크에서 기존 최강 축출 방식과 동등한 성능을 내면서 vLLM 배포 환경에서 32~43% 높은 처리량을 달성했다. 그 이유는 추론 트레이스가 텍스트 수준과 어텐션 헤드 수준 두 가지 방식으로 중복성을 통해 스스로를 보호하기 때문이다.",
+    "why_it_matters": "복잡한 점수 계산 없이 무작위 축출만으로도 최고 수준의 KV 캐시 압축 성능을 달성할 수 있다는 사실은 추론 효율화 연구의 패러다임 전환을 시사한다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 6.099866427824199,
+    "published_at": "2026-09-02T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.03199",
+    "section": "papers",
+    "title_en": "RoboTok: An Internet-Scale Data Engine for Human Demonstration Retrieval and Dexterous Manipulation Learning",
+    "title_ko": "RoboTok: 인터넷 규모의 인간 시연 검색 엔진으로 로봇 손재주 학습",
+    "url": "https://huggingface.co/papers/2609.03199",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "RoboTok은 쿼리 인간 조작 영상이 주어지면 웹 비디오에서 관련 인간 시연을 검색해 로봇 정책 학습에 활용하는 인터넷 규모 데이터 엔진이다. 3D 손 궤적을 액터 중심 좌표계로 표현한 잠재 모션 공간을 학습해 카메라 시점·장면 외관·신체 가림 등의 변화에도 조작 행동을 효과적으로 비교할 수 있다. 검색 벤치마크와 실제 로봇 정책 성능 평가에서 기존 방법 대비 더 관련성 높은 시연을 검색하고 태스크 성공률을 향상시켰다.",
+    "why_it_matters": "값비싼 로봇 데이터 수집 없이 웹 비디오를 확장 가능한 지속적 학습 데이터 소스로 활용하는 길을 열어 로봇 학습의 데이터 병목 문제를 근본적으로 해결할 수 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 5.7535901911063645,
+    "published_at": "2026-09-01T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-an-alien-mind",
+    "section": "releases",
+    "title_en": "An Alien Mind",
+    "title_ko": "외계적 사고방식: AI 정렬의 도전",
+    "url": "https://openai.com/index/an-alien-mind",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI의 Jakub Pachocki가 점점 더 강력해지는 AI 시스템과 이를 인간의 의도에 맞게 정렬(alignment)하는 과제에 대해 성찰했다. 그는 더 강력한 안전장치와 국제적 협력 체계가 필요하다고 주장한다.",
+    "why_it_matters": "OpenAI 내부 핵심 인물이 AI 정렬 문제의 긴박성과 글로벌 공조의 필요성을 공개적으로 강조했다는 점에서 주목할 만하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7678587962962963,
+    "published_at": "2026-09-06T09:00:00Z"
+  },
+  {
+    "id": "openai_blog-research-acceleration-view-inside-openai",
+    "section": "releases",
+    "title_en": "Research acceleration: The view inside OpenAI",
+    "title_ko": "OpenAI 내부에서 본 연구 가속화: 코딩 에이전트의 영향",
+    "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI 내부에서 코딩 에이전트가 AI 연구 방식을 재편하고 있다. OpenAI는 에이전트 사용 현황, 실험 속도, 태스크 복잡도, 연구 가속화에 관한 초기 데이터를 공개했다. 이를 통해 AI 에이전트가 실제 연구 조직의 생산성에 미치는 구체적인 영향을 살펴볼 수 있다.",
+    "why_it_matters": "AI 연구 조직이 코딩 에이전트를 내부적으로 어떻게 활용하는지 실증 데이터로 확인할 수 있는 드문 사례다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.7619064153439153,
+    "published_at": "2026-09-06T08:00:00Z"
+  },
+  {
+    "id": "github_trending-DietrichGebert/ponytail",
+    "section": "releases",
+    "title_en": "DietrichGebert/ponytail",
+    "title_ko": "Ponytail: AI 에이전트를 '게으른 시니어 개발자'처럼 만드는 플러그인",
+    "url": "https://github.com/DietrichGebert/ponytail",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Ponytail은 AI 코딩 에이전트가 불필요한 코드를 최소화하도록 유도하는 오픈소스 플러그인이다. 'YAGNI → 재사용 → 표준 라이브러리 → 네이티브 기능' 순의 7단계 사다리 규칙을 적용해, 에이전트가 코드를 작성하기 전 반드시 해당 단계를 거치게 한다. 실제 Claude Code 세션 벤치마크에서 코드량 -54%, 비용 -20%, 처리 시간 -27%를 달성하면서도 안전성 100%를 유지했다. Claude Code, Codex, GitHub Copilot CLI, Gemini CLI 등 20개 이상의 에이전트를 지원한다.",
+    "why_it_matters": "AI 에이전트의 과잉 구현(over-engineering) 문제를 구조적으로 억제해 비용·속도·코드 품질을 동시에 개선할 수 있는 실용적 접근법이다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.746046626984127,
+    "published_at": "2026-09-06T05:20:08Z"
+  },
+  {
+    "id": "github_trending-NousResearch/hermes-agent",
+    "section": "releases",
+    "title_en": "NousResearch/hermes-agent",
+    "title_ko": "NousResearch의 자기 학습형 AI 에이전트 'Hermes Agent' 오픈소스 공개",
+    "url": "https://github.com/NousResearch/hermes-agent",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Nous Research가 자체 개선 루프를 갖춘 오픈소스 AI 에이전트 'Hermes Agent'를 공개했다. 경험을 통해 스킬을 생성·개선하고, 대화 기록을 검색하며, 세션 간 사용자 모델을 구축하는 폐쇄형 학습 루프가 특징이다. OpenAI, Anthropic, OpenRouter 등 다양한 LLM 제공사와 연동되며, Telegram·Discord·Slack 등 메시징 플랫폼에서도 사용할 수 있다. $5 VPS부터 GPU 클러스터까지 다양한 환경에서 실행 가능하고 MIT 라이선스로 배포된다.",
+    "why_it_matters": "단순 챗봇을 넘어 스스로 스킬을 학습·개선하는 자율 에이전트 아키텍처를 오픈소스로 제공해, 개인화된 장기 실행 AI 워크플로우 구현의 새로운 기준을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.746046626984127,
+    "published_at": "2026-09-06T05:20:08Z"
+  },
+  {
+    "id": "github_trending-anthropics/skills",
+    "section": "releases",
+    "title_en": "anthropics/skills",
+    "title_ko": "Anthropic, Claude용 에이전트 스킬 공개 저장소 공개",
+    "url": "https://github.com/anthropics/skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 Claude의 에이전트 스킬(Agent Skills) 구현체를 담은 공개 GitHub 저장소를 공개했다. 스킬은 명령어·스크립트·리소스를 담은 폴더 형태로, Claude가 동적으로 로드해 특정 작업(문서 작성, 데이터 분석, 자동화 등)을 반복 가능한 방식으로 수행하게 한다. 창작·디자인, 개발·기술, 엔터프라이즈 커뮤니케이션 등 다양한 예시 스킬이 포함되며, Claude Code 플러그인, Claude.ai 유료 플랜, Claude API를 통해 활용할 수 있다. 대부분은 Apache 2.0 오픈소스이며, docx·pdf·pptx·xlsx 문서 스킬은 소스 공개(source-available) 형태로 제공된다.",
+    "why_it_matters": "Claude를 특정 워크플로우에 맞춰 커스터마이징할 수 있는 공식 스킬 표준과 예시가 공개됨으로써, 개발자들이 재사용 가능한 에이전트 기능을 손쉽게 구축·배포할 수 있게 된다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.746046626984127,
+    "published_at": "2026-09-06T05:20:08Z"
+  },
+  {
+    "id": "github_trending-WorldFlowAI/everything-claude-code",
+    "section": "releases",
+    "title_en": "WorldFlowAI/everything-claude-code",
+    "title_ko": "Claude Code 완전 툴킷 - 에이전트·명령어·훅·규칙 모음집",
+    "url": "https://github.com/WorldFlowAI/everything-claude-code",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic 해커톤 수상자가 10개월 이상 실무에서 사용하며 다듬은 Claude Code 설정 모음이다. 전문화된 서브에이전트, 슬래시 명령어, 훅 기반 자동화, 토큰 최적화·메모리 유지·병렬화 등 고급 기법을 포함한다. Windows·macOS·Linux 크로스플랫폼을 지원하며 플러그인 방식으로 간단히 설치할 수 있다.",
+    "why_it_matters": "실전 검증된 Claude Code 설정을 바로 가져다 쓸 수 있어 AI 보조 개발 생산성을 빠르게 끌어올릴 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.746046626984127,
+    "published_at": "2026-09-06T05:20:08Z"
+  },
+  {
+    "id": "openai_blog-daybreak-for-frontline-defenders",
+    "section": "releases",
+    "title_en": "Daybreak for Frontline Defenders: $1B to protect essential services",
+    "title_ko": "프론트라인 디펜더스를 위한 데이브레이크: 필수 서비스 보호에 10억 달러 투자",
+    "url": "https://openai.com/index/daybreak-for-frontline-defenders",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 'Daybreak for Frontline Defenders' 프로그램을 발표하며 10억 달러 규모의 투자를 약속했다. 이 프로그램은 필수 서비스 기관들이 최첨단 사이버 AI 기술, 교육, 지원에 접근할 수 있도록 확대하는 것을 목표로 한다. 의료, 에너지, 금융 등 핵심 인프라를 사이버 위협으로부터 보호하는 데 초점을 맞추고 있다.",
+    "why_it_matters": "OpenAI가 사이버 보안 분야에 10억 달러를 투입해 필수 인프라 방어에 AI를 본격 활용하려는 의지를 공식화했다는 점에서 주목된다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.36458498677248674,
+    "published_at": "2026-09-03T13:15:00Z"
+  },
+  {
+    "id": "hn-49586898",
+    "section": "community",
+    "title_en": "A/I shuts down – Stay human",
+    "title_ko": "A/I 서비스 종료 – Stay human",
+    "url": "https://keepitfree.ai/announcements/a/i-shuts-down-stay-human/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "A/I 서비스가 종료를 발표했다. 공개된 설명은 없으며, 'Stay human'이라는 메시지만 남긴 것으로 보인다.",
+    "why_it_matters": "AI 서비스의 갑작스러운 종료 사례로, 지속 가능성에 대한 시사점을 던진다.",
+    "tags": [],
+    "score": 10.169588685012544,
+    "published_at": "2026-09-06T14:34:34Z"
+  },
+  {
+    "id": "hn-49588080",
+    "section": "community",
+    "title_en": "An Alien Mind",
+    "title_ko": "외계적 사고방식",
+    "url": "https://openai.com/index/an-alien-mind/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "'An Alien Mind'라는 제목의 글로, 제공된 설명이 없어 구체적인 내용을 파악하기 어렵습니다. 제목만으로는 인간과 다른 사고 방식이나 인공지능의 사고 체계에 관한 주제를 다루는 것으로 보입니다.",
+    "why_it_matters": "제공된 정보가 부족하여 구체적인 중요성을 판단하기 어렵습니다.",
+    "tags": [],
+    "score": 9.527455472774495,
+    "published_at": "2026-09-06T16:27:05Z"
+  },
+  {
+    "id": "hn-49587217",
+    "section": "community",
+    "title_en": "Research acceleration: The view inside OpenAI",
+    "title_ko": "OpenAI 내부에서 바라본 연구 가속화",
+    "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "OpenAI 내부 시각에서 바라본 연구 가속화에 관한 내용을 다루고 있다. 구체적인 세부 정보는 제공되지 않았으나, OpenAI의 연구 개발 속도와 방향성에 관한 내용으로 보인다.",
+    "why_it_matters": "OpenAI 내부 관점에서의 AI 연구 가속화 동향은 업계 전반의 방향성을 가늠하는 데 중요한 참고가 된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 7.756312751804929,
+    "published_at": "2026-09-06T15:08:44Z"
+  },
+  {
+    "id": "reddit-1w9c8u7",
+    "section": "community",
+    "title_en": "4xRadeon AI Pro R9700 people, how are your benchmarks?",
+    "title_ko": "4x Radeon AI Pro R9700 구성 벤치마크 공유 요청",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w9c8u7/4xradeon_ai_pro_r9700_people_how_are_your/",
+    "sources": [
+      "reddit"
+    ],
+    "summary_ko": "Reddit 사용자가 오피스용 AI 서버로 4x Radeon AI Pro R9700 구성을 검토 중이며, 실제 사용자들의 벤치마크 결과를 묻고 있다. 주요 관심 모델은 DeepSeek V4 Flash와 Qwen 3.8 Flash로, 오프로딩 또는 고압축 양자화 방식의 운용을 고려하고 있다.",
+    "why_it_matters": "AMD GPU 기반 로컬 LLM 서버 구축을 고려하는 개발자에게 실제 성능 데이터를 참고할 수 있는 커뮤니티 논의로 의미 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.8566253306878306,
+    "published_at": "2026-09-06T23:54:46Z"
+  },
+  {
+    "id": "reddit-1w9bz4i",
+    "section": "community",
+    "title_en": "Trying to create my own server and consuming it for code with my phone remotely (Mac OS)",
+    "title_ko": "맥북을 로컬 LLM 서버로 활용해 원격 코딩 환경 구축하기",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w9bz4i/trying_to_create_my_own_server_and_consuming_it/",
+    "sources": [
+      "reddit"
+    ],
+    "summary_ko": "32GB 맥북 프로에서 LM Studio와 MLX로 로컬 모델을 서빙하고, 외출 중 스마트폰으로 접속해 코딩·리뷰를 하려는 사용자가 도움을 요청했다. 주요 과제는 맥 자동 절전 방지, 모바일 호환 IDE/에이전트 에디터 선택, 에이전트 변경사항 자동 배포 방법, 그리고 LM Studio의 공인 인터넷 노출 방법 등이다.",
+    "why_it_matters": "로컬 LLM 서버를 개인 원격 개발 환경으로 구성하려는 실용적 사례로, 비슷한 셋업을 고민하는 개발자에게 참고가 된다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "인프라"
+    ],
+    "score": 0.8553984788359789,
+    "published_at": "2026-09-06T23:42:24Z"
+  },
+  {
+    "id": "youtube-UnWoCJPRjYg",
+    "section": "video",
+    "title_en": "IT뉴스 - GPT-6 Astra 미쳤다, Fable 5.1, Gemini 3.8 Flash, Muse Spark 1.3, World Labs Atlas 등",
+    "title_ko": "GPT-6 Astra, Gemini 3.8 Flash, World Labs Atlas 등 최신 AI 뉴스 총정리",
+    "url": "https://www.youtube.com/watch?v=UnWoCJPRjYg",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "GPT-6 Astra를 비롯해 Fable 5.1, Gemini 3.8 Flash, Muse Spark 1.3, World Labs Atlas 등 다양한 AI 모델 및 서비스 관련 소식을 다루는 IT 뉴스 영상이다. 구체적인 내용은 영상 내에서 확인할 수 있다.",
+    "why_it_matters": "주요 AI 모델들의 최신 업데이트 동향을 한눈에 파악할 수 있는 뉴스 모음이다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7884689153439153,
+    "published_at": "2026-09-06T12:27:45Z"
+  },
+  {
+    "id": "youtube-fNIYliCqEzE",
+    "section": "video",
+    "title_en": "[LIVE] AI 인플루언서 H3 실시간 자율주행 방송 (ft. RTX Pro 6000 Blackwell)",
+    "title_ko": "AI 인플루언서 H3, RTX Pro 6000 Blackwell으로 실시간 자율주행 방송",
+    "url": "https://www.youtube.com/watch?v=fNIYliCqEzE",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "AI 인플루언서 H3가 NVIDIA RTX Pro 6000 Blackwell을 활용한 실시간 자율주행 라이브 방송을 진행했다. 상세한 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "AI 인플루언서가 최신 GPU를 활용해 자율주행을 실시간으로 시연하는 사례로, AI·인프라 기술의 대중화 흐름을 보여준다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 0.7778058862433863,
+    "published_at": "2026-09-06T10:40:16Z"
+  },
+  {
+    "id": "youtube-Spuza-KwTJ4",
+    "section": "video",
+    "title_en": "GPT 6 Astra, so good even OpenAI are worried",
+    "title_ko": "GPT-6 Astra, OpenAI조차 우려하는 강력한 성능",
+    "url": "https://www.youtube.com/watch?v=Spuza-KwTJ4",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "OpenAI가 GPT-6 Astra를 공개하며 비용 효율적인 AI의 새 시대를 열었다. ARC-AGI, FrontierMath 등 주요 벤치마크에서 놀라운 성과를 보였으나, 모델의 사고 과정(Chain of Thought)에 대한 모니터링 가능성이 약화되는 문제가 AI 안전 연구자들 사이에서 우려를 낳고 있다. Anthropic의 Fable 5.1과 비교에서도 두드러진 성능을 보였으며, 동시에 트레이더들의 관심도 끌었다.",
+    "why_it_matters": "GPT-6 Astra의 Chain of Thought 모니터링 한계는 AI 안전성과 통제 가능성에 대한 근본적인 질문을 제기한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.49776455026455024,
+    "published_at": "2026-09-04T11:37:27Z"
+  },
+  {
+    "id": "simon_willison-research-acceleration-the-view-inside-openai",
+    "section": "deepdive",
+    "title_en": "Research acceleration: The view inside OpenAI",
+    "title_ko": "OpenAI 내부에서 본 연구 가속화: RSI와 코딩 에이전트의 부상",
+    "url": "https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "OpenAI가 'RSI(Recursive Self-Improvement)'를 새로운 AGI 개념으로 제시하며 관련 글 두 편을 공개했다. 수석 과학자 Jakub Pachocki의 에세이 'An Alien Mind'도 이 주제를 다룬다. 내부 데이터에 따르면 2026년 들어 코딩 에이전트 사용이 급증했으며, 특히 7월 말 연구자 1인당 AI 일일 지출이 약 150달러에서 600달러 수준으로 가파르게 상승했다.",
+    "why_it_matters": "OpenAI가 RSI를 AGI의 핵심 개념으로 공식화하고, 내부 연구자들의 에이전트 활용이 폭발적으로 늘었다는 점에서 AI 연구 방식의 근본적 변화를 시사한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8569130291005291,
+    "published_at": "2026-09-06T23:57:40Z"
+  }
+]
