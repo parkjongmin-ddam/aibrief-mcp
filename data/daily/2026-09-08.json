@@ -1,0 +1,375 @@
+[
+  {
+    "id": "hf-2609.04199",
+    "section": "papers",
+    "title_en": "Compile by Training: Turning Natural-Language Specifications into Local Neural Functions",
+    "title_ko": "자연어 명세를 로컬 신경망 함수로 컴파일하기: 훈련 기반 컴파일",
+    "url": "https://huggingface.co/papers/2609.04199",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "자연어로 명세된 텍스트 함수를 소형 로컬 신경망 함수로 변환하는 '훈련 기반 컴파일' 방법을 제안한다. 컴파일 시점에 교사 모델이 태스크별 예제를 생성하고, 이를 통해 소형 어댑터를 훈련시켜 교사 모델 없이 독립 실행 가능한 함수를 만든다. FuzzyBench-Hard 벤치마크에서 기존 빠른 컴파일러가 정확 매칭을 전혀 달성하지 못한 반면, 이 방법은 83.6%의 의미적 정확도를 달성했다. 컴파일 시간은 수초 대신 약 1분이 소요되는 트레이드오프가 있다.",
+    "why_it_matters": "대형 원격 LLM 호출 없이 자연어 명세만으로 경량 로컬 신경망 함수를 생성할 수 있어, 비용·지연·공급자 의존성 문제를 동시에 해결할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 6.926926025970411,
+    "published_at": "2026-09-02T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.03430",
+    "section": "papers",
+    "title_en": "Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning",
+    "title_ko": "랜덤 어텐션: KV 캐시 축출을 재고한 효율적 추론",
+    "url": "https://huggingface.co/papers/2609.03430",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "대형 언어 모델의 긴 추론 체인은 KV 캐시 메모리 병목을 유발한다. 기존 압축 방법들은 토큰에 점수를 매겨 중요한 것을 선별하지만, 이 연구는 선택 신호가 거의 기여하지 않음을 밝혔다. 'Random Attention'은 프롬프트를 보존하고 나머지는 무작위로 축출하는 방식으로, 4개 모델·6개 추론 태스크에서 기존 최강 방법과 동등한 성능을 유지하면서 vLLM 배포 기준 32~43% 높은 처리량을 달성했다. 프롬프트가 캐시의 핵심이며, 추론 트레이스는 텍스트와 어텐션 헤드 간 중복성으로 자체 보호된다는 사실이 이를 설명한다.",
+    "why_it_matters": "복잡한 점수 계산 없이 무작위 축출만으로도 동등한 성능과 더 높은 처리량을 얻을 수 있어, LLM 추론 효율화의 패러다임을 근본적으로 바꿀 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 6.117993812416755,
+    "published_at": "2026-09-02T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.04172",
+    "section": "papers",
+    "title_en": "Rethinking On-Policy Distillation of Large Language Models II: One Training Example",
+    "title_ko": "LLM 온-폴리시 증류, 훈련 예제 단 1개로도 충분하다",
+    "url": "https://huggingface.co/papers/2609.04172",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "온-폴리시 증류(OPD)에서 훈련 데이터의 역할을 극단적으로 줄여 단 하나의 쿼리만으로 학습했을 때, 전체 데이터 OPD 성능의 대부분을 회복할 수 있음을 실험으로 확인했다. 단 1개 쿼리도 전체 데이터가 방문하는 상태의 71.5%를 커버하며, 16개의 의미적으로 다양한 쿼리면 98.9%에 도달해 전체 데이터 훈련과 동등해진다. 이는 OPD가 데이터 측면에서는 과잉 공급되어 있고 알고리즘 측면에서는 부족하다는 것을 의미하며, 학생 모델이 교사의 감독 신호를 흡수하는 속도가 병목임을 시사한다.",
+    "why_it_matters": "LLM 증류 효율화 연구에서 데이터 양보다 알고리즘 스텝 효율이 핵심 병목임을 밝혀, 향후 포스트트레이닝 방법론 설계 방향을 재정립할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.406719247264253,
+    "published_at": "2026-09-02T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.04196",
+    "section": "papers",
+    "title_en": "Puffin-World: Scaling a Unified Multimodal Model with Native 3D World States",
+    "title_ko": "Puffin-World: 네이티브 3D 세계 상태를 통합한 멀티모달 모델",
+    "url": "https://huggingface.co/papers/2609.04196",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Puffin-World는 물리(중력장·위도), 기하(깊이), 외관(이미지)의 세 가지 네이티브 세계 상태를 외부 모듈 없이 단일 아키텍처로 통합 모델링합니다. 통합 Omni-Camera 표현을 통해 다양한 태스크와 유연한 카메라 움직임을 지원하며, 미래 프레임에 물리 역학을 전파하는 전략도 도입했습니다. 학습을 위해 1,500만 개의 비전-언어-카메라 트리플렛과 100만 개의 궤적으로 구성된 Puffin-16M 데이터셋을 구축했으며, 코드·모델·데이터셋을 모두 공개했습니다.",
+    "why_it_matters": "외부 모듈 없이 물리·기하·외관을 통합한 3D 세계 생성 모델로, 자율주행 시뮬레이션 등 실제 세계 이해가 필요한 AI 응용에 새로운 가능성을 제시합니다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 5.204692619390966,
+    "published_at": "2026-09-02T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.04304",
+    "section": "papers",
+    "title_en": "Iris: Climbing to the Search Frontier",
+    "title_ko": "Iris: 최강 오픈소스 검색 에이전트 등장",
+    "url": "https://huggingface.co/papers/2609.04304",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Hugging Face가 35B와 397B 규모의 검색 에이전트 Iris-mini와 Iris-pro를 공개했다. 웹 코퍼스의 하이퍼링크 구조를 역방향으로 재구성해 멀티홉 질문 데이터를 생성하고, SFT와 RL을 교대로 적용하는 'SFT-RL 클라이밍' 방식으로 훈련했다. BrowseComp, DeepSearchQA, HLE 등 주요 벤치마크에서 동급 오픈소스 검색 에이전트 중 최고 성능을 달성했으며, 모델 가중치와 전체 레시피를 공개할 예정이다.",
+    "why_it_matters": "오픈소스 검색 에이전트 중 최고 수준의 성능을 단일 ReAct 에이전트로 달성해, 복잡한 멀티홉 웹 검색 태스크의 새로운 기준을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 4.931825632724326,
+    "published_at": "2026-09-02T20:00:00Z"
+  },
+  {
+    "id": "github_trending-NousResearch/hermes-agent",
+    "section": "releases",
+    "title_en": "NousResearch/hermes-agent",
+    "title_ko": "NousResearch, 자가 학습 AI 에이전트 'Hermes Agent' 오픈소스 공개",
+    "url": "https://github.com/NousResearch/hermes-agent",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Nous Research가 스스로 학습하고 성장하는 AI 에이전트 'Hermes Agent'를 MIT 라이선스로 오픈소스 공개했다. 경험을 통해 스킬을 생성·개선하고, 과거 대화를 검색하며, 세션 간 사용자 모델을 축적하는 폐쇄형 학습 루프가 핵심이다. Telegram, Discord, Slack 등 다양한 메시징 플랫폼과 연동되며, OpenAI·OpenRouter 등 여러 LLM 제공자를 코드 변경 없이 교체할 수 있다. $5 VPS부터 GPU 클러스터, 서버리스 인프라까지 다양한 환경에서 실행 가능하다.",
+    "why_it_matters": "자가 개선 학습 루프와 멀티플랫폼 지원을 갖춘 오픈소스 에이전트로, 개발자가 LLM 종속 없이 프로덕션급 AI 에이전트를 직접 구축·운용할 수 있는 현실적인 선택지를 제공한다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7467724867724868,
+    "published_at": "2026-09-07T05:27:27Z"
+  },
+  {
+    "id": "github_trending-openai/skills",
+    "section": "releases",
+    "title_en": "openai/skills",
+    "title_ko": "OpenAI, Codex용 에이전트 스킬 카탈로그 공개",
+    "url": "https://github.com/openai/skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "OpenAI가 Codex AI 에이전트를 위한 스킬 카탈로그 저장소를 공개했다. 스킬은 AI 에이전트가 특정 작업을 반복적으로 수행할 수 있도록 지침·스크립트·리소스를 묶은 폴더 단위 패키지다. 시스템 기본 스킬 외에도 큐레이션·실험적 스킬을 `$skill-installer` 명령어로 설치할 수 있다. 단, 현재 해당 저장소는 deprecated 상태로, 신규 예시는 OpenAI Plugins 저장소로 이전되었다.",
+    "why_it_matters": "Codex 에이전트의 기능을 모듈화·재사용 가능한 스킬로 확장하는 공개 표준 생태계의 시작점으로, AI 에이전트 개발 방식에 영향을 줄 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7467724867724868,
+    "published_at": "2026-09-07T05:27:27Z"
+  },
+  {
+    "id": "github_trending-DietrichGebert/ponytail",
+    "section": "releases",
+    "title_en": "DietrichGebert/ponytail",
+    "title_ko": "Ponytail: AI 에이전트를 '게으른 시니어 개발자'처럼 만드는 플러그인",
+    "url": "https://github.com/DietrichGebert/ponytail",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Ponytail은 AI 코딩 에이전트가 꼭 필요한 코드만 작성하도록 유도하는 오픈소스 플러그인이다. '이미 존재하는가? 표준 라이브러리로 되는가? 한 줄로 되는가?'와 같은 단계적 판단 사다리를 에이전트에 주입해, 과도한 코드 생성을 방지한다. 실제 Claude Code 세션 벤치마크에서 코드 줄 수 54% 감소, 비용 20% 절감, 속도 27% 향상을 기록하면서도 안전성은 100% 유지했다. Claude Code, Codex, GitHub Copilot CLI, Cursor 등 다양한 에이전트 환경을 지원한다.",
+    "why_it_matters": "AI 에이전트의 과잉 코드 생성 문제를 비용·속도·안전성을 모두 지키면서 실질적으로 줄일 수 있음을 실측 데이터로 증명한 도구다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7467724867724868,
+    "published_at": "2026-09-07T05:27:27Z"
+  },
+  {
+    "id": "github_trending-coreyhaines31/marketingskills",
+    "section": "releases",
+    "title_en": "coreyhaines31/marketingskills",
+    "title_ko": "AI 에이전트를 위한 마케팅 스킬 컬렉션 (Claude Code 지원)",
+    "url": "https://github.com/coreyhaines31/marketingskills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code, Cursor, Windsurf 등 AI 코딩 에이전트에 마케팅 전문 지식을 추가하는 오픈소스 스킬 라이브러리다. CRO, 카피라이팅, SEO, 광고, 이메일, 분석 등 50개 이상의 마케팅 스킬을 마크다운 파일 형태로 제공하며, npx 명령어 한 줄로 설치할 수 있다. 각 스킬은 서로 참조·연동되며, product-marketing 스킬이 모든 스킬의 기반 컨텍스트 역할을 한다.",
+    "why_it_matters": "기술 창업자나 마케터가 AI 에이전트에 마케팅 도메인 지식을 손쉽게 주입할 수 있어, 에이전트 기반 마케팅 자동화의 실용적 진입점이 된다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7467724867724868,
+    "published_at": "2026-09-07T05:27:27Z"
+  },
+  {
+    "id": "github_trending-aipoch/open-science",
+    "section": "releases",
+    "title_en": "aipoch/open-science",
+    "title_ko": "AIPOCH Open Science: 오픈소스 로컬 우선 AI 과학 연구 워크벤치",
+    "url": "https://github.com/aipoch/open-science",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "AIPOCH Open Science는 macOS, Windows, Linux를 지원하는 오픈소스 데스크톱 AI 연구 워크벤치로, 과학 에이전트, Python/R 노트북, 24개의 과학 데이터 커넥터, 재현 가능한 출처 추적 기능을 제공한다. 모델에 구애받지 않는 설계로 OpenAI, Anthropic 등 다양한 LLM 공급자를 연결할 수 있으며, 프로젝트·세션 단위로 연구 결과물과 근거를 로컬에 저장한다. BiomniBench-DA Public 50 벤치마크에서 79.05점으로 1위를 기록했으며, Apache 2.0 라이선스로 무료 사용이 가능하다.",
+    "why_it_matters": "연구자가 채팅·노트북·데이터베이스·파일 관리 도구를 따로 쓰던 분산된 워크플로우를 하나의 로컬 AI 워크스페이스로 통합하고, 모든 결과물의 재현 가능한 출처를 자동 추적한다는 점에서 과학 연구의 AI 활용 패러다임을 바꿀 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7467724867724868,
+    "published_at": "2026-09-07T05:27:27Z"
+  },
+  {
+    "id": "openai_blog-supporting-independent-journalism-in-ukraine",
+    "section": "releases",
+    "title_en": "Supporting independent journalism in Ukraine",
+    "title_ko": "오픈AI, 우크라이나 독립 언론 지원 AI 프로그램 출범",
+    "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "오픈AI가 AIRPPU, WAN-IFRA와 협력하여 우크라이나 뉴스 기관을 위한 AI 프로그램을 출범했다. 이 프로그램은 우크라이나 언론사들의 혁신 역량 강화, 회복력 증진, 독립 저널리즘 지원을 목표로 한다.",
+    "why_it_matters": "AI 기술이 전시 상황에서 독립 언론의 지속가능성을 지원하는 실질적 사례로, AI의 사회적 활용 가능성을 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-09-07T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-an-alien-mind",
+    "section": "releases",
+    "title_en": "An Alien Mind",
+    "title_ko": "이질적인 지성: AI 정렬의 도전",
+    "url": "https://openai.com/index/an-alien-mind",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI의 Jakub Pachocki가 점점 더 강력해지는 AI와 이를 인간의 가치에 맞게 정렬하는 과제에 대해 성찰했다. 그는 더 강력한 안전장치와 국제적 협력의 필요성을 강조한다.",
+    "why_it_matters": "AI 능력이 급격히 향상되는 시점에 OpenAI 내부 핵심 인물이 정렬 문제와 글로벌 거버넌스의 긴급성을 직접 언급했다는 점에서 주목할 만하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6250016534391535,
+    "published_at": "2026-09-06T09:00:00Z"
+  },
+  {
+    "id": "hn-49552299",
+    "section": "community",
+    "title_en": "WeatherNext 3",
+    "title_ko": "WeatherNext 3",
+    "url": "https://deepmind.google/science/weathernext/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "WeatherNext 3가 공개되었다. 제목 외 구체적인 설명이 제공되지 않아 상세 내용은 확인이 필요하다.",
+    "why_it_matters": "AI 기반 날씨 예측 분야의 새로운 버전으로 추정되나, 추가 정보 확인이 필요하다.",
+    "tags": [],
+    "score": 8.23442906892394,
+    "published_at": "2026-09-03T16:06:08Z"
+  },
+  {
+    "id": "hn-49575515",
+    "section": "community",
+    "title_en": "Trusting-Trust Attack against an Entire Linux Distribution",
+    "title_ko": "리눅스 배포판 전체를 겨냥한 Trusting-Trust 공격",
+    "url": "https://arxiv.org/abs/2607.24888",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Ken Thompson의 고전적인 'Trusting Trust' 컴파일러 백도어 공격이 리눅스 배포판 전체 수준에서 실현 가능함을 다루는 내용이다. 소스 코드를 신뢰하더라도 컴파일러나 빌드 체인이 오염되면 전체 시스템이 위협받을 수 있다.",
+    "why_it_matters": "공급망 보안의 근본적 취약점을 상기시키며, 오픈소스 배포판 빌드 인프라 전체에 대한 신뢰 모델을 재점검하게 만든다.",
+    "tags": [
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 7.638602908954994,
+    "published_at": "2026-09-05T11:25:18Z"
+  },
+  {
+    "id": "hn-49589190",
+    "section": "community",
+    "title_en": "The Dataflow Model Revisited",
+    "title_ko": "데이터플로우 모델 재고찰",
+    "url": "https://www.vldb.org/pvldb/volumes/19/paper/The%20Dataflow%20Model%20Revisited",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "데이터플로우 모델을 다시 살펴보는 내용으로, 제공된 설명이 없어 제목 기반으로만 요약한다. 스트리밍 및 배치 데이터 처리의 기반이 되는 데이터플로우 모델에 대한 재검토를 다루는 것으로 보인다.",
+    "why_it_matters": "데이터플로우 모델은 현대 대규모 데이터 처리 시스템의 이론적 토대로, 이를 재검토하는 논의는 인프라 설계에 영향을 줄 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 6.7360517352249865,
+    "published_at": "2026-09-06T18:10:53Z"
+  },
+  {
+    "id": "reddit-1wa84sa",
+    "section": "community",
+    "title_en": "I made Warrior Quest, a local LLM-powered dark-fantasy RPG where the model only plays NPCs and the actual game state stays deterministic",
+    "title_ko": "로컬 LLM으로 NPC를 구동하는 다크 판타지 RPG 'Warrior Quest' 공개",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wa84sa/i_made_warrior_quest_a_local_llmpowered/",
+    "sources": [
+      "reddit"
+    ],
+    "summary_ko": "개발자가 로컬 LLM을 NPC 대화에만 한정적으로 활용한 다크 판타지 RPG 'Warrior Quest'를 Steam에 데모로 출시했다. 게임 상태, 퀘스트, 스토리 등 핵심 로직은 결정론적 시스템으로 처리해 LLM의 환각 문제를 방지했다. 60~90분 분량의 데모이며, 8GB VRAM GPU만 있으면 API 키나 클라우드 없이 완전히 로컬에서 실행된다.",
+    "why_it_matters": "LLM을 NPC 롤플레이에만 제한하고 게임 로직은 결정론적으로 유지하는 하이브리드 설계가 실용적인 로컬 LLM 활용 모델을 제시한다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8548958333333334,
+    "published_at": "2026-09-07T23:37:20Z"
+  },
+  {
+    "id": "reddit-1wa5dp9",
+    "section": "community",
+    "title_en": "My Qwen3.8-27B task-aware quant reaches 99% of BF16 reasoning performance at 15% of the size.",
+    "title_ko": "Qwen3 27B 모델을 BF16 대비 15% 크기로 99% 추론 성능 달성한 태스크 인식 양자화",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wa5dp9/my_qwen3827b_taskaware_quant_reaches_99_of_bf16/",
+    "sources": [
+      "reddit"
+    ],
+    "summary_ko": "TAK(Task Aware Knapsack)이라는 새로운 양자화 파이프라인을 통해 Qwen3 27B 모델을 BF16 대비 약 15% 크기로 줄이면서 추론 벤치마크에서 82.81%를 달성했다(BF16은 83.59%). 기존 Unsloth UD IQ2_S 대비 +5.47포인트 높은 수치다. TAK은 태스크 특화 코퍼스로 빌드한 imatrix와 텐서 수준 정밀도 할당을 결합한 방식으로, 파인튜닝이나 모델 병합 없이 순수 양자화만 사용한다. Gemma 3/4, Qwen3.5/3.8 등 다양한 아키텍처에서 Unsloth 대비 일관되게 우수한 결과를 보였다.",
+    "why_it_matters": "로컬 LLM 환경에서 대형 모델을 극소 크기로 압축하면서도 거의 동등한 추론 성능을 유지할 수 있음을 실증해, 엣지 및 저사양 환경 배포 가능성을 크게 높인다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8434689153439153,
+    "published_at": "2026-09-07T21:42:09Z"
+  },
+  {
+    "id": "youtube-jjLLO7rU6Pk",
+    "section": "video",
+    "title_en": "AI뉴스 - GPT-6 Astra 미쳤다, Fable 5.1, Gemini 3.8 Flash, Muse Spark 1.3, World Labs Atlas 등",
+    "title_ko": "GPT-6 Astra·Gemini 3.8 Flash·Fable 5.1 등 주요 AI 신모델 총정리",
+    "url": "https://www.youtube.com/watch?v=jjLLO7rU6Pk",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "이번 주 AI 업계에서는 GPT-6 Astra 공개(ARC-AGI 3 포화·수능 만점 달성), 앤트로픽의 Claude Fable 5.1·Mythos 5.1 출시, 구글 Gemini 3.8 Flash 및 음악 생성 모델 Lyria 3.5 발표 등 굵직한 소식이 쏟아졌다. 메타의 자율 AI 연구 시스템 AIRA₃, 페이페이 리의 World Labs 월드 모델 Atlas, 마이크로소프트의 Muse Spark 1.3·MAI-Transcribe-2·MAI-Image-2.6도 공개됐다. 미니맥스 H3 기반 실시간 영상 생성, Grok Imagine Video 1.5 에이전트, Qwen3.8-Max 등 오픈소스·영상 생성 분야 신모델도 대거 등장했다.",
+    "why_it_matters": "한 주 만에 주요 AI 기업들이 LLM·멀티모달·월드 모델·음성 인식 등 전 분야에서 동시다발적으로 신모델을 출시해 AI 기술 경쟁이 극도로 가속화되고 있음을 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.791724537037037,
+    "published_at": "2026-09-07T13:00:34Z"
+  },
+  {
+    "id": "youtube-Spuza-KwTJ4",
+    "section": "video",
+    "title_en": "GPT 6 Astra, so good even OpenAI are worried",
+    "title_ko": "GPT-6 Astra, OpenAI조차 우려하는 강력한 성능",
+    "url": "https://www.youtube.com/watch?v=Spuza-KwTJ4",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "OpenAI가 GPT-6 Astra를 공개하며 AI 업계에 큰 파장을 일으켰다. 벤치마크 제작자들이 당혹감을 드러낼 만큼 뛰어난 성능을 보였으며, Fable(Claude) 등 경쟁 모델을 압도하는 결과를 기록했다. 그러나 모델의 추론 과정(Chain of Thought)에 대한 모니터링 가능성이 약화되어 AI 안전 연구자들 사이에서 우려가 제기되고 있다.",
+    "why_it_matters": "GPT-6 Astra의 등장으로 AI 능력이 급격히 도약했지만, 내부 추론 과정의 불투명성 문제가 AI 안전성에 새로운 경고를 던지고 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.35490740740740734,
+    "published_at": "2026-09-04T11:37:27Z"
+  },
+  {
+    "id": "youtube-8ANHSyLnNNM",
+    "section": "video",
+    "title_en": "나날이 발전하기만 하는 영상 AI 근황",
+    "title_ko": "나날이 발전하는 영상 AI 최신 근황",
+    "url": "https://www.youtube.com/shorts/8ANHSyLnNNM",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 최근 급격히 발전하고 있는 영상 생성 AI의 현황을 소개하는 영상이다. Gemini 등 멀티모달 AI 관련 내용을 다루는 것으로 보인다. 구체적인 기술 세부 내용은 영상 본편에서 확인할 수 있다.",
+    "why_it_matters": "영상 AI 기술의 빠른 발전 흐름을 한국어로 쉽게 파악할 수 있는 콘텐츠다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.35120535714285706,
+    "published_at": "2026-09-04T11:00:08Z"
+  },
+  {
+    "id": "simon_willison-creepy-crawlies",
+    "section": "deepdive",
+    "title_en": "Creepy crawlies",
+    "title_ko": "악성 크롤러의 급증, Linux 커널 Git 서버를 마비시키다",
+    "url": "https://simonwillison.net/2026/Sep/7/creepy-crawlies/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "git.kernel.org 운영자 Konstantin Ryabitsev에 따르면, 악성 크롤러로 인해 합법적인 git 클론 등 모든 정상 접근보다 더 많은 CPU 자원이 크롤러 요청 처리에 소모되고 있다. 5개의 지리적으로 분산된 노드에서 14개의 CPU 코어가 오직 크롤러를 위한 HTML 렌더링에만 사용되고 있는 상황이다. Simon Willison 또한 자신의 오픈소스 프로젝트 Datasette가 유사한 위협에 노출될 수 있다고 우려를 표명했다.",
+    "why_it_matters": "AI 학습 데이터 수집 목적의 무분별한 크롤러가 공개 인프라에 실질적인 운영 부담을 주는 문제가 현실화되고 있음을 보여준다.",
+    "tags": [
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 0.8520816798941799,
+    "published_at": "2026-09-07T23:08:58Z"
+  }
+]
