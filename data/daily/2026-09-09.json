@@ -1,0 +1,361 @@
+[
+  {
+    "id": "hf-2609.05416",
+    "section": "papers",
+    "title_en": "WorldSculpt: Generating Compositional Worlds from Grounded Videos",
+    "title_ko": "WorldSculpt: 영상 기반 수백 개 객체로 구성된 3D 세계 생성",
+    "url": "https://huggingface.co/papers/2609.05416",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "WorldSculpt는 복잡하게 혼잡한 장면에서 수백 개의 개별 객체 메시로 구성된 3D 표현을 생성하는 연구다. 단일 객체 3D 생성 모델(Pixal3D)을 다중 뷰 조건화 방식으로 확장해, 씬 레벨 학습 없이도 심한 가림 현상이 있는 대규모 장면에 일반화한다. 또한 수백 개 객체, 객체별 어노테이션, 정답 메시를 포함한 포토리얼리스틱 벤치마크 UE-MeshyScene을 새롭게 공개했으며, 장면 복잡도가 높을수록 기존 방법 대비 더 큰 성능 향상을 보인다.",
+    "why_it_matters": "게임·AR/VR·로보틱스 등에서 요구되는 대규모 합성 3D 씬 자동 생성의 확장성을 입증해, 실사 수준 씬 구성의 실용화 가능성을 높였다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 4.091042453358316,
+    "published_at": "2026-09-03T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.05258",
+    "section": "papers",
+    "title_en": "Ask Before You Optimize: Dynamic Pre-Formulation Clarification for Interactive Optimization",
+    "title_ko": "최적화 전에 먼저 물어봐라: 대화형 최적화를 위한 동적 사전 명확화",
+    "url": "https://huggingface.co/papers/2609.05258",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LLM을 활용한 최적화 모델링에서 목표·제약·비즈니스 규칙이 누락된 불완전한 문제 명세는 흔히 발생한다. 연구팀은 이를 평가하기 위한 벤치마크 OR-Clarify와, 미해결 공백을 파악해 질문 여부를 동적으로 결정하는 프레임워크 InterOPT를 제안했다. 선택형 실험에서 InterOPT는 슬롯 복원 정확도에서 모든 베이스라인을 크게 상회했으며, 개방형 설정에서도 경쟁력 있는 성능을 보였다.",
+    "why_it_matters": "OR 모델링 에이전트가 '언제 질문하고 언제 멈출지'를 스스로 판단하는 능력을 체계적으로 평가·개선하는 최초의 프레임워크로, 실무 활용 가능성을 높인다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 3.9444389791664403,
+    "published_at": "2026-09-03T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.05275",
+    "section": "papers",
+    "title_en": "Don't Drop Dropout: Optimizing Layer Sparsity for Efficient LLM Training and Inference",
+    "title_ko": "드롭아웃을 버리지 마라: LLM 학습·추론 효율을 위한 레이어 희소성 최적화",
+    "url": "https://huggingface.co/papers/2609.05275",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "레이어 드롭아웃(확률적 깊이)은 비전·언어 트랜스포머에서 학습 속도 향상과 정확도 개선에 효과적이지만, 대규모 LLM 사전학습에서는 점차 사라지는 추세였다. 본 연구는 2400회 이상의 학습 실험(2.71억~82억 파라미터, 최대 1600억 토큰)을 통해, 최적의 레이어 분포·스케줄·옵티마이저 설정을 적용하면 동일한 학습 FLOPs 대비 더 낮은 손실을 달성하거나, 동일 손실 기준으로 학습 FLOPs를 최대 25%까지 절감할 수 있음을 입증했다. 또한 레이어 드롭아웃은 조기 종료, 중간 레이어 스킵, 자기-추측 디코딩 등 추론 최적화를 가능하게 해 정확도 손실 없이 최대 1.5배 추론 속도 향상을 달성한다.",
+    "why_it_matters": "LLM 사전학습에서 레이어 드롭아웃을 올바르게 적용하면 학습 비용과 추론 지연을 동시에 줄일 수 있어 대규모 모델 개발 효율성에 직접적인 영향을 미친다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 3.9444389791664403,
+    "published_at": "2026-09-03T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.04753",
+    "section": "papers",
+    "title_en": "Beneath the Surface of Chains-of-Thought: A Mechanistic Interpretation of Reasoning Operations in LLMs",
+    "title_ko": "사고의 흐름 이면: LLM 추론 연산의 기계론적 해석",
+    "url": "https://huggingface.co/papers/2609.04753",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "대규모 언어 모델이 Chain-of-Thought 추론을 수행할 때, 문제 공식화·목표 분해·추론 등 다양한 연산이 내부 표현 공간에서 기하학적으로 어떻게 구조화되는지 분석한 연구다. 실험 결과, 서로 다른 추론 연산은 중간 레이어에서 가장 뚜렷하게 분리 가능한 기하학적 구조를 형성하며, 동일한 표면 토큰도 주변 문맥의 연산 유형에 따라 다르게 표현됨을 밝혔다. 어텐션 마스킹 실험을 통해 연산 정렬 표현이 이전 추론 문맥에 의존함도 확인했다. 코드와 프로젝트 자료는 GitHub에 공개되어 있다.",
+    "why_it_matters": "LLM이 추론 과정을 내부적으로 어떻게 표현하는지 기계론적으로 규명함으로써, 모델의 해석 가능성과 추론 신뢰성 향상 연구에 중요한 기반을 제공한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 3.70805020110221,
+    "published_at": "2026-09-03T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.05415",
+    "section": "papers",
+    "title_en": "UniMate: One Unified Model to Animate Diverse Skeletons",
+    "title_ko": "UniMate: 다양한 스켈레톤을 하나의 모델로 애니메이션화하는 통합 파운데이션 모델",
+    "url": "https://huggingface.co/papers/2609.05415",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "UniMate는 리깅된 3D 에셋과 텍스트 프롬프트만으로 임의의 스켈레톤에 대한 관절 모션을 생성하는 통합 파운데이션 모델이다. 기존 방식과 달리 카테고리별 템플릿이나 스켈레톤별 파인튜닝 없이 제로샷으로 동작한다. 위상 인식 디퓨전 트랜스포머를 도입하여 그래프 기반 어텐션 바이어스, 스펙트럴 RoPE, 전역 위상 컨디셔너를 통해 다양한 골격 구조를 처리한다. 이족·사족·조류·해양·곤충·뱀 형태 등 13,006개 모션 시퀀스로 구성된 UniML3D 데이터셋으로 학습하여 최신 베이스라인을 능가한다.",
+    "why_it_matters": "토폴로지에 구애받지 않는 단일 모션 생성 모델로, 3D 콘텐츠 제작 파이프라인의 핵심 병목인 모션 생성을 텍스트 기반으로 자동화할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 3.639057329615259,
+    "published_at": "2026-09-03T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-codex-quantum-computing-experiments",
+    "section": "releases",
+    "title_en": "How GPT-5.6 Sol helps run quantum computing experiments",
+    "title_ko": "GPT-5.6 Sol, 양자 컴퓨팅 실험 자율 수행에 활용되다",
+    "url": "https://openai.com/index/codex-quantum-computing-experiments",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "MIT 연구자가 GPT-5.6 Sol과 Codex를 결합해 양자 컴퓨팅 실험을 자율적으로 실행하고, 결과를 분석하며 큐비트를 교정하는 사례가 공개됐다. 이는 AI가 실제 과학 연구 워크플로우에 깊이 통합되고 있음을 보여주는 구체적인 예시다.",
+    "why_it_matters": "LLM이 코드 실행 에이전트와 결합해 양자 컴퓨팅 같은 첨단 과학 실험을 자율 수행할 수 있음을 실증한 사례로, AI의 연구 자동화 가능성을 가늠할 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8154778439153438,
+    "published_at": "2026-09-08T17:00:00Z"
+  },
+  {
+    "id": "openai_blog-the-work-now-within-reach",
+    "section": "releases",
+    "title_en": "The Work Now Within Reach",
+    "title_ko": "이제 손닿는 곳에 있는 업무들",
+    "url": "https://openai.com/index/the-work-now-within-reach",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "더욱 강력하고 경제적인 AI가 개인과 기업이 수행할 수 있는 업무의 범위를 확장하고 있다. OpenAI는 AI의 발전이 성장을 보다 효율적이고 경제적으로 만들 수 있다고 설명한다. 비용 대비 성능이 향상됨에 따라 더 많은 사람과 조직이 AI 혜택을 누릴 수 있게 된다.",
+    "why_it_matters": "AI의 가격 대비 성능 향상이 기업과 개인의 생산성 한계를 실질적으로 끌어올리는 전환점이 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7916683201058201,
+    "published_at": "2026-09-08T13:00:00Z"
+  },
+  {
+    "id": "openai_blog-introducing-chatgpt-images-2-5",
+    "section": "releases",
+    "title_en": "Introducing ChatGPT Images 2.5",
+    "title_ko": "ChatGPT 이미지 2.5 출시",
+    "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 ChatGPT Images 2.5를 공개했다. 이 기능은 사용자의 아이디어, 스케치, 참고 사진을 더욱 개인화되고 완성도 높은 이미지로 변환해 준다. 기존보다 사용자의 의도를 더 정확히 반영한 이미지 생성이 가능해졌다.",
+    "why_it_matters": "ChatGPT의 이미지 생성 품질이 향상되어 스케치나 참고 사진 기반의 창작 작업이 한층 쉬워질 전망이다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7827397486772487,
+    "published_at": "2026-09-08T11:30:00Z"
+  },
+  {
+    "id": "openai_blog-navier-stokes-solution",
+    "section": "releases",
+    "title_en": "On the Navier–Stokes Millennium Prize Problem",
+    "title_ko": "OpenAI, 나비에-스토크스 밀레니엄 수학 문제 AI 풀이 공개",
+    "url": "https://openai.com/index/navier-stokes-solution",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 수학계의 난제인 나비에-스토크스 밀레니엄 상금 문제에 대한 AI 생성 풀이를 공개했다. 해당 풀이에는 상세한 설명 문서와 함께 형식 증명 언어인 Lean으로 작성된 공식 증명이 포함되어 있다.",
+    "why_it_matters": "AI가 인류 미해결 수학 난제 중 하나를 풀어냈다면, 과학·공학 전반에 걸친 AI의 수학적 추론 능력이 새로운 단계에 진입했음을 의미한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7738111772486773,
+    "published_at": "2026-09-08T10:00:00Z"
+  },
+  {
+    "id": "openai_blog-teen-development-research-grants",
+    "section": "releases",
+    "title_en": "Funding grants for new research into AI and teen development",
+    "title_ko": "OpenAI, 청소년 발달과 AI 연구를 위한 500만 달러 보조금 프로그램 발표",
+    "url": "https://openai.com/index/teen-development-research-grants",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 생성형 AI가 청소년의 발달, 웰빙, 안전에 미치는 영향을 연구하는 독립 연구자들을 지원하기 위해 500만 달러 규모의 보조금 프로그램을 출범했다. 연구자들은 현재 해당 프로그램에 지원할 수 있다.",
+    "why_it_matters": "AI 기업이 청소년에 대한 AI 영향 연구를 독립적으로 지원한다는 점에서 책임 있는 AI 개발의 새로운 선례가 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7678587962962963,
+    "published_at": "2026-09-08T09:00:00Z"
+  },
+  {
+    "id": "github_trending-coreyhaines31/marketingskills",
+    "section": "releases",
+    "title_en": "coreyhaines31/marketingskills",
+    "title_ko": "AI 에이전트를 위한 마케팅 스킬 모음집",
+    "url": "https://github.com/coreyhaines31/marketingskills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code, OpenAI Codex, Cursor 등 다양한 AI 코딩 에이전트에 마케팅 전문 지식을 부여하는 오픈소스 스킬 라이브러리다. CRO, SEO, 카피라이팅, 애널리틱스, 성장 엔지니어링 등 50여 개의 마케팅 스킬을 마크다운 파일 형태로 제공하며, npx 명령어로 간편하게 설치할 수 있다. 각 스킬은 서로 참조하며 연동되고, MIT 라이선스로 자유롭게 활용 가능하다.",
+    "why_it_matters": "AI 코딩 에이전트에 전문 마케팅 지식을 체계적으로 주입할 수 있어, 기술 창업자와 마케터가 AI를 활용해 실질적인 마케팅 업무를 자동화할 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7469609788359788,
+    "published_at": "2026-09-08T05:29:21Z"
+  },
+  {
+    "id": "github_trending-openai/skills",
+    "section": "releases",
+    "title_en": "openai/skills",
+    "title_ko": "OpenAI Codex용 에이전트 스킬 카탈로그 (openai/skills)",
+    "url": "https://github.com/openai/skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "OpenAI가 Codex AI 에이전트를 위한 스킬 카탈로그 저장소를 공개했다. 스킬은 지시문·스크립트·리소스로 구성된 폴더로, AI 에이전트가 특정 작업을 반복적으로 수행할 수 있도록 돕는다. 다만 해당 저장소는 현재 deprecated 상태이며, 신규 스킬 및 플러그인 예제는 OpenAI Plugins 저장소로 이전되었다.",
+    "why_it_matters": "Codex 에이전트에 재사용 가능한 스킬을 모듈화해 배포하는 표준 방식을 제시해, 팀 단위 AI 자동화 워크플로우 구축에 직접 활용 가능하다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7469609788359788,
+    "published_at": "2026-09-08T05:29:21Z"
+  },
+  {
+    "id": "hn-49613262",
+    "section": "community",
+    "title_en": "On the Navier–Stokes Millennium Prize Problem",
+    "title_ko": "나비에-스토크스 밀레니엄 상금 문제에 관하여",
+    "url": "https://openai.com/index/navier-stokes-solution/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "나비에-스토크스 방정식은 유체 역학의 핵심 방정식으로, 클레이 수학연구소가 지정한 7대 밀레니엄 난제 중 하나다. 이 글은 해당 문제를 다루고 있으나 구체적인 내용은 제공되지 않았다.",
+    "why_it_matters": "수학계 최고 난제 중 하나인 나비에-스토크스 문제에 대한 논의는 수학·과학계 전반에 중요한 의미를 가진다.",
+    "tags": [],
+    "score": 11.382222340854021,
+    "published_at": "2026-09-08T17:13:21Z"
+  },
+  {
+    "id": "hn-49611251",
+    "section": "community",
+    "title_en": "AlphaGenome Atlas: a high-resolution map of human DNA",
+    "title_ko": "AlphaGenome Atlas: 고해상도 인간 DNA 지도",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphagenome-atlas/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AlphaGenome Atlas는 인간 DNA를 고해상도로 매핑한 프로젝트다. 제목만으로는 세부 내용을 확인하기 어려우나, 유전체 데이터를 정밀하게 시각화하거나 분석하는 도구 또는 데이터셋으로 보인다.",
+    "why_it_matters": "고해상도 유전체 지도는 유전자 연구 및 AI 기반 생물정보학 발전에 기여할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.548495692964098,
+    "published_at": "2026-09-08T14:55:45Z"
+  },
+  {
+    "id": "hn-49610631",
+    "section": "community",
+    "title_en": "I-have-ADHD: A skill to stop coding agents from burying the answer",
+    "title_ko": "I-have-ADHD: 코딩 에이전트가 핵심 답변을 묻어버리는 것을 막는 스킬",
+    "url": "https://github.com/ayghri/i-have-adhd",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "코딩 에이전트가 장황한 출력 속에 핵심 답변을 묻어버리는 문제를 해결하기 위한 스킬(도구/기법)이다. 'I-have-ADHD'라는 이름으로, 에이전트가 답변을 명확하게 전달하도록 유도한다.",
+    "why_it_matters": "AI 코딩 에이전트의 출력 가독성과 집중도를 높이는 실용적인 접근법으로, 개발자 생산성에 직결된다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 9.424754044184255,
+    "published_at": "2026-09-08T14:13:26Z"
+  },
+  {
+    "id": "hn-49615537",
+    "section": "community",
+    "title_en": "Muse – Meta’s personal AI agent",
+    "title_ko": "Muse – Meta의 개인 AI 에이전트",
+    "url": "https://ai.meta.com/muse/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Meta가 'Muse'라는 이름의 개인 AI 에이전트를 선보였다. 구체적인 기능이나 세부 사항은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "Meta가 개인용 AI 에이전트 시장에 본격 진출했다는 신호일 수 있어 주목된다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 9.197271942231357,
+    "published_at": "2026-09-08T19:25:00Z"
+  },
+  {
+    "id": "hn-49611051",
+    "section": "community",
+    "title_en": "The two Christian saints who are the Buddha",
+    "title_ko": "부처가 된 두 기독교 성인",
+    "url": "https://signoregalilei.com/2026/08/30/the-two-christian-saints-who-are-secretly-the-buddha/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "제목만 제공되어 상세 내용을 확인할 수 없습니다. 불교의 부처가 기독교 성인으로 편입된 역사적 현상을 다루는 것으로 보입니다.",
+    "why_it_matters": "AI와 직접적인 관련이 없는 역사·종교 관련 주제로, 개발자 독자에게 변별력 있는 기술 정보를 제공하지 않습니다.",
+    "tags": [],
+    "score": 8.858559427644742,
+    "published_at": "2026-09-08T14:44:25Z"
+  },
+  {
+    "id": "youtube-4NxmnE-Vdfw",
+    "section": "video",
+    "title_en": "마인크래프트로 매트릭스를 만들어버림;;;",
+    "title_ko": "마인크래프트로 매트릭스 구현하기 (조코딩 바이브 코딩)",
+    "url": "https://www.youtube.com/shorts/4NxmnE-Vdfw",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "유튜버 조코딩이 마인크래프트를 활용해 매트릭스를 구현하는 프로젝트를 선보였다. 영상은 AI와 바이브 코딩 기법을 활용한 창작 개발 콘텐츠로 보인다.",
+    "why_it_matters": "AI 보조 코딩(바이브 코딩)을 활용한 창의적 프로젝트 사례로, 개발 입문자에게 흥미로운 영감을 줄 수 있다.",
+    "tags": [],
+    "score": 0.7678968253968255,
+    "published_at": "2026-09-08T09:00:23Z"
+  },
+  {
+    "id": "youtube-ffSpxalmi9E",
+    "section": "video",
+    "title_en": "진짜 사람처럼 컴퓨터를 쓴다는 GPT의 새 모델 ㄷㄷ",
+    "title_ko": "사람처럼 컴퓨터를 조작하는 GPT 신모델 공개",
+    "url": "https://www.youtube.com/shorts/ffSpxalmi9E",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 실제 사람처럼 컴퓨터를 사용하는 GPT의 새로운 모델을 소개하는 영상이다. 영상에서는 GPT6 및 아스트라(Astra) 관련 내용을 다루는 것으로 보인다.",
+    "why_it_matters": "AI가 사람처럼 직접 컴퓨터를 조작하는 에이전트 기술은 업무 자동화의 새로운 전환점이 될 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7500396825396826,
+    "published_at": "2026-09-08T06:00:23Z"
+  },
+  {
+    "id": "youtube-jjLLO7rU6Pk",
+    "section": "video",
+    "title_en": "AI뉴스 - GPT-6 Astra 미쳤다, Fable 5.1, Gemini 3.8 Flash, Muse Spark 1.3, World Labs Atlas 등",
+    "title_ko": "GPT-6 Astra·Gemini 3.8 Flash·Fable 5.1 등 주요 AI 신규 모델 총정리",
+    "url": "https://www.youtube.com/watch?v=jjLLO7rU6Pk",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "GPT-6 Astra가 ARC-AGI 3 포화 및 수능 만점 수준의 성능으로 공개됐으며, Anthropic의 Claude Fable 5.1·Mythos 5.1, 구글의 Gemini 3.8 Flash·Lyria 3.5 등 다수 모델이 동시에 발표됐다. 마이크로소프트의 Muse Spark 1.3·MAI-Transcribe-2·MAI-Image-2.6, 페이페이 리의 World Labs Atlas 월드 모델, 미니맥스 H3 등 영상·음성·세계 모델 분야에서도 신제품이 쏟아졌다. 오픈소스 진영에서는 0.8B 소형 모델이 GPT-5.6-sol을 능가하는 사례도 등장해 주목을 받았다.",
+    "why_it_matters": "한 주 사이에 주요 빅테크와 스타트업이 LLM·음악·영상·세계 모델을 동시다발로 출시해 AI 경쟁이 전 영역으로 확산되고 있음을 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.6488673941798941,
+    "published_at": "2026-09-07T13:00:34Z"
+  },
+  {
+    "id": "simon_willison-terence-tao",
+    "section": "deepdive",
+    "title_en": "Quoting Terence Tao",
+    "title_ko": "테렌스 타오: AI가 오픈 사이언스 전통을 위협하고 있다",
+    "url": "https://simonwillison.net/2026/Sep/9/terence-tao/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "필즈상 수상자 테렌스 타오는 AI가 수학 분야의 미해결 난제들을 무분별하게 '채굴'하고 있다고 경고했다. 누군가 특정 문제를 연구한다는 소문만으로도 AI 기반의 대규모 시도가 촉발되어 원래 연구가 완성되기 전에 문제가 소진될 수 있다. 이로 인해 연구자들이 유망한 연구 방향을 공개적으로 공유하지 않으려는 유인이 생기고, 수세기에 걸친 오픈 사이언스 전통이 역전될 수 있다고 우려했다.",
+    "why_it_matters": "AI의 문제 풀이 경쟁이 수학·과학계의 지식 공유 문화 자체를 붕괴시킬 수 있다는 구체적인 경고로, AI 윤리와 연구 생태계 전반에 중요한 시사점을 던진다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.859156746031746,
+    "published_at": "2026-09-09T00:20:17Z"
+  }
+]
