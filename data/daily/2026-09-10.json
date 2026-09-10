@@ -1,0 +1,368 @@
+[
+  {
+    "id": "hf-2609.08183",
+    "section": "papers",
+    "title_en": "NeoHorse-1: Towards Recursive Self-Improvement via Agentic Post-Training with Routing Harness",
+    "title_ko": "NeoHorse-1: 에이전트 사후 훈련을 통한 재귀적 자기 개선 프레임워크",
+    "url": "https://huggingface.co/papers/2609.08183",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "NeoHorse-1은 AI 시스템이 자신의 능력을 관찰하고 이를 다음 학습 라운드로 전환하는 재귀적 자기 개선(RSI)을 탐구하는 에이전트 네이티브 모델 패밀리다. 이기종 모델 풀과 지능형 라우팅을 결합해 사용자 인터랙션 기록을 훈련 데이터로 변환하며, 3단계 커리큘럼 기반 지도 미세조정과 라우팅 가이드 온-폴리시 증류를 적용한다. 11개 벤치마크에서 사후 훈련 후 매크로 평균이 4B 모델에서 58.94→64.87, 9B 모델에서 65.60→69.04로 향상되었으며, 사후 훈련된 4B 모델이 9B 베이스 모델과의 격차를 크게 줄였다.",
+    "why_it_matters": "평가-선택-업데이트 루프를 닫는 자기 개선 메커니즘을 구체적으로 구현함으로써, 소형 모델이 대형 모델 수준으로 스스로 성장하는 실질적 경로를 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 6.934894195619588,
+    "published_at": "2026-09-07T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.08936",
+    "section": "papers",
+    "title_en": "AuK Technical Report: An Open-Source Foundational Model for Speech Generation and Editing",
+    "title_ko": "AuK: 음성 생성 및 편집 통합 오픈소스 파운데이션 모델 공개",
+    "url": "https://huggingface.co/papers/2609.08936",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "AuK는 자연어 명령과 오디오 컨텍스트를 공통 인터페이스로 활용해 음성 생성과 편집을 통합하는 오픈소스 파운데이션 모델이다. 약 30억 3천만 개의 명령-오디오 인스턴스와 195만 시간의 감독 데이터를 기반으로 5개 태스크 패밀리를 지원하며, 멀티모달 LLM, VAE, 하이브리드 Rectified-Flow Transformer를 결합한 아키텍처를 사용한다. 경량화 버전인 AuK-Flash는 4단계 추론만으로 풀 모델 대비 4.5배 빠른 속도를 달성하며, 소스코드와 모델 가중치를 모두 공개했다.",
+    "why_it_matters": "음성 생성·편집·향상·분리 등 다양한 오디오 태스크를 단일 모델로 처리하는 오픈소스 파운데이션 모델이 등장해 오디오 AI 연구의 접근성이 크게 높아진다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 6.187385805840755,
+    "published_at": "2026-09-07T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.08977",
+    "section": "papers",
+    "title_en": "Omni Interaction Agent Technical Report",
+    "title_ko": "Gander: 옴니 인터랙션 에이전트 기술 보고서",
+    "url": "https://huggingface.co/papers/2609.08977",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Hugging Face에서 공개된 Gander는 비디오, 음성, 텍스트 등 다중 모달 스트리밍 입력을 실시간으로 처리하는 엔드투엔드 모델이다. 기존 턴 기반 방식과 달리 풀 듀플렉스(full-duplex) 상호작용을 지원해 사용자가 언제든 대화를 끊거나 모델이 먼저 피드백을 제공할 수 있다. 소뇌(Cerebellum)-뇌(Brain) 협력 프레임워크와 스트리밍 Thinker-Talker 아키텍처를 채택해 저지연 연속 상호작용을 구현했으며, 모델·코드·데이터 모두 오픈소스로 공개된다.",
+    "why_it_matters": "실시간 풀 듀플렉스 멀티모달 에이전트를 오픈소스로 공개함으로써 대화형 AI 에이전트 연구의 진입 장벽을 크게 낮춘다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 5.762173934797756,
+    "published_at": "2026-09-07T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.08798",
+    "section": "papers",
+    "title_en": "Eliciting Weak-to-Strong Generalization with On-Policy Reverse Distillation",
+    "title_ko": "약한 교사로부터 더 강한 학생 모델을 이끌어내는 On-Policy Reverse Distillation(OPRD)",
+    "url": "https://huggingface.co/papers/2609.08798",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "OPRD는 약한 교사 모델이 학생 모델의 롤아웃에서 보이는 정책 변화를 측정하고, 검증기 기반 정책 그래디언트 업데이트를 해당 방향으로 증폭시키는 새로운 증류 방식이다. 기존 증류는 교사를 최적화 목표로 삼아 교사의 성능 한계를 학생에게 전이할 위험이 있지만, OPRD는 검증기가 지지하는 업데이트만 재조정하여 정책 최적화의 고정점을 유지하면서 교사를 초월하는 학습을 가능하게 한다. 연속적 세대 전이 및 다중 교사 증류 실험 모두에서 OPRD는 기존 RL·증류 방법 대비 더 적은 업데이트로 높은 성능을 달성했다.",
+    "why_it_matters": "프론티어 모델 재훈련 비용 없이 약한 교사로부터 더 강한 모델을 효율적으로 생성할 수 있어 차세대 모델 개발 파이프라인에 실질적 영향을 미친다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.382026634673881,
+    "published_at": "2026-09-07T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.06055",
+    "section": "papers",
+    "title_en": "DriveZero: End-to-End Driving Beyond Human Demonstrations",
+    "title_ko": "DriveZero: 인간 시연 없이 학습하는 엔드투엔드 자율주행 시스템",
+    "url": "https://huggingface.co/papers/2609.06055",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "DriveZero는 인간 주행 로그 모방에 의존하지 않는 엔드투엔드 자율주행 시스템으로, 인식 모델(DriveVFM)과 행동 모델(DriveRL)을 분리해 각각 최적의 방식으로 사전학습한 뒤 통합한다. DriveVFM은 DINOv3, SigLIP2, SAM, Depth Anything V2 등 다양한 비전 파운데이션 모델을 단일 백본으로 통합하며, DriveRL은 실제 주행 로그를 인터랙티브 환경으로 변환해 PPO 기반 강화학습으로 교사 정책을 훈련한다. nuPlan 벤치마크에서 Val14·Test14-hard·Test14-random 세 분할 모두에서 Log-Replay 전문가를 초과하는 평균 93.57점을 기록했으며, NAVSIMv1·NAVSIMv2·HUGSIM 벤치마크에서도 인간 궤적 감독 없이 최고 성능을 달성했다.",
+    "why_it_matters": "인간 주행 데이터의 질과 커버리지 한계를 강화학습으로 극복해 자율주행 학습의 새로운 패러다임을 제시한다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 4.931825632724326,
+    "published_at": "2026-09-04T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-paul-christiano-joins-openai-foundation-board",
+    "section": "releases",
+    "title_en": "Paul Christiano joins OpenAI Foundation Board",
+    "title_ko": "폴 크리스티아노, OpenAI 재단 이사회 합류",
+    "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "AI 정렬 및 안전 분야 전문가인 폴 크리스티아노가 OpenAI 재단 이사회와 안전·보안 위원회에 합류했다. 그는 AI 정렬, 안전, 표준화 분야에서 폭넓은 경험을 보유하고 있다.",
+    "why_it_matters": "AI 안전 연구의 핵심 인물이 OpenAI 거버넌스 구조에 직접 참여함으로써 안전 중심의 의사결정이 강화될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8154778439153438,
+    "published_at": "2026-09-09T17:00:00Z"
+  },
+  {
+    "id": "google_blog-love-rendered-film",
+    "section": "releases",
+    "title_en": "Recreating a 70-year love story frame by frame",
+    "title_ko": "70년 사랑 이야기를 한 프레임씩 재현하다",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글이 70년에 걸친 노부부의 사랑 이야기를 영상 프레임 단위로 재현하는 프로젝트를 소개했다. 이 작품은 텔루라이드 영화제와 연관된 'Love, Rendered'라는 제목으로 공개되었다.",
+    "why_it_matters": "AI 기술이 개인의 서사를 영상 예술로 재현하는 창작 도구로 활용될 수 있음을 보여주는 사례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8095254629629629,
+    "published_at": "2026-09-09T16:00:00Z"
+  },
+  {
+    "id": "openai_blog-ai-policy-window",
+    "section": "releases",
+    "title_en": "The AI policy window is open. We need to act.",
+    "title_ko": "AI 정책의 창이 열려 있다. 지금 행동해야 한다.",
+    "url": "https://openai.com/index/ai-policy-window",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI의 Chris Lehane은 AI 역량이 강화될수록 더 강력한 안전 근거와 공유된 기준, 그리고 지속 가능한 정책 행동이 필요하다고 주장한다. 현재 AI 정책을 수립할 수 있는 기회의 창이 열려 있는 만큼, 지금이 행동할 적기라고 강조한다.",
+    "why_it_matters": "AI 규제와 안전 기준 형성의 골든타임에 산업계·정책입안자 모두의 적극적 참여를 촉구하는 메시지로, 향후 글로벌 AI 거버넌스 방향에 영향을 미칠 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.7916683201058201,
+    "published_at": "2026-09-09T13:00:00Z"
+  },
+  {
+    "id": "openai_blog-gpt-6-astra-next-generation-work",
+    "section": "releases",
+    "title_en": "GPT-6 Astra: The next generation in intelligence for work",
+    "title_ko": "GPT-6 Astra: 업무용 차세대 AI 모델 출시",
+    "url": "https://openai.com/index/gpt-6-astra-next-generation-work",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 비즈니스 특화 최신 모델 GPT-6 Astra를 공개했다. 고급 추론 능력, 컴퓨터 직접 사용(computer use), 그리고 향상된 글쓰기 및 디자인 판단력을 갖춘 것이 특징이다. OpenAI의 업무용 라인업 중 가장 강력한 모델로 소개되고 있다.",
+    "why_it_matters": "OpenAI의 차세대 비즈니스 모델이 고급 추론과 컴퓨터 자율 사용 기능을 탑재해 기업 AI 도입의 기준을 높일 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7797635582010582,
+    "published_at": "2026-09-09T11:00:00Z"
+  },
+  {
+    "id": "github_trending-openai/skills",
+    "section": "releases",
+    "title_en": "openai/skills",
+    "title_ko": "OpenAI Codex용 에이전트 스킬 카탈로그 저장소",
+    "url": "https://github.com/openai/skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "OpenAI가 Codex AI 에이전트를 위한 스킬(Skills) 카탈로그 저장소를 공개했다. 스킬은 AI 에이전트가 특정 작업을 반복적으로 수행할 수 있도록 지침·스크립트·리소스를 폴더 단위로 패키징한 것으로, 시스템 기본 설치 스킬과 큐레이션·실험적 스킬로 구분된다. 다만 이 저장소는 현재 deprecated 상태이며, 최신 예제는 OpenAI Plugins 저장소로 이전되었다.",
+    "why_it_matters": "Codex 에이전트의 기능을 스킬 단위로 재사용·배포할 수 있는 표준 방식을 제시하며, AI 에이전트 개발 생태계 확장에 중요한 참고 자료가 된다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7473925264550265,
+    "published_at": "2026-09-09T05:33:42Z"
+  },
+  {
+    "id": "github_trending-coreyhaines31/marketingskills",
+    "section": "releases",
+    "title_en": "coreyhaines31/marketingskills",
+    "title_ko": "AI 에이전트를 위한 마케팅 스킬 라이브러리 공개",
+    "url": "https://github.com/coreyhaines31/marketingskills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code, OpenAI Codex, Cursor 등 AI 코딩 에이전트에 마케팅 전문 지식을 부여하는 오픈소스 스킬 컬렉션이다. CRO, SEO, 카피라이팅, 광고, 분석, 성장 엔지니어링 등 50여 개의 마크다운 기반 스킬을 제공하며 npx로 간편하게 설치할 수 있다. 각 스킬은 제품 마케팅 컨텍스트를 공유하며 서로 참조하는 구조로 설계되어 있다.",
+    "why_it_matters": "AI 코딩 에이전트에 마케팅 도메인 지식을 체계적으로 주입할 수 있어, 개발자가 별도 마케터 없이도 전문적인 마케팅 워크플로를 자동화할 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7473925264550265,
+    "published_at": "2026-09-09T05:33:42Z"
+  },
+  {
+    "id": "github_trending-multica-ai/andrej-karpathy-skills",
+    "section": "releases",
+    "title_en": "multica-ai/andrej-karpathy-skills",
+    "title_ko": "Andrej Karpathy의 LLM 코딩 함정을 해결하는 Claude Code 가이드라인 파일",
+    "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Andrej Karpathy가 지적한 LLM 코딩 문제(잘못된 가정, 과도한 복잡화, 불필요한 코드 수정 등)를 해결하기 위한 단일 CLAUDE.md 파일 프로젝트다. '코딩 전 사고', '단순함 우선', '외과적 변경', '목표 기반 실행' 4가지 원칙으로 구성되며, Claude Code 플러그인 또는 프로젝트별 CLAUDE.md 파일로 설치할 수 있다. Cursor 프로젝트 룰로도 동일 가이드라인 적용이 가능하다.",
+    "why_it_matters": "LLM 코딩 에이전트의 고질적인 문제를 구체적인 행동 원칙으로 제어할 수 있어, Claude Code 실무 활용 품질을 높이는 데 즉시 적용 가능하다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7473925264550265,
+    "published_at": "2026-09-09T05:33:42Z"
+  },
+  {
+    "id": "hn-49623754",
+    "section": "community",
+    "title_en": "Claude, change the “Add to Cart” button to blue",
+    "title_ko": "Claude에게 '장바구니 담기' 버튼을 파란색으로 바꿔달라고 하다",
+    "url": "https://opusfived.dev/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "제목만으로는 구체적인 내용을 파악하기 어렵지만, AI 어시스턴트 Claude를 활용해 UI 요소(버튼 색상 등)를 자연어 명령으로 직접 수정하는 사례를 다루는 것으로 보인다.",
+    "why_it_matters": "자연어 명령으로 UI를 직접 변경하는 AI 에이전트 활용 가능성을 보여주는 사례다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 10.87394508834715,
+    "published_at": "2026-09-09T09:39:46Z"
+  },
+  {
+    "id": "hn-49615537",
+    "section": "community",
+    "title_en": "Muse – Meta’s personal AI agent",
+    "title_ko": "Muse – 메타의 개인용 AI 에이전트",
+    "url": "https://ai.meta.com/muse/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "메타가 'Muse'라는 이름의 개인용 AI 에이전트를 공개했다. 상세한 설명은 제공되지 않았으나, 메타가 개인 AI 에이전트 영역에 본격 진출하는 것으로 보인다.",
+    "why_it_matters": "빅테크인 메타가 개인용 AI 에이전트 시장에 뛰어들면서 해당 분야 경쟁이 더욱 치열해질 전망이다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 10.735304985357695,
+    "published_at": "2026-09-08T19:25:00Z"
+  },
+  {
+    "id": "hn-49626190",
+    "section": "community",
+    "title_en": "Shopify acquires Tailwind",
+    "title_ko": "Shopify, Tailwind 인수",
+    "url": "https://tailwindcss.com/blog/tailwind-is-joining-shopify",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Shopify가 Tailwind를 인수했다. 세부 조건 및 배경은 공개된 정보가 없어 확인되지 않는다.",
+    "why_it_matters": "이커머스 플랫폼 Shopify의 Tailwind 인수는 개발 생태계에 영향을 줄 수 있는 움직임이다.",
+    "tags": [],
+    "score": 10.680151776776416,
+    "published_at": "2026-09-09T13:27:11Z"
+  },
+  {
+    "id": "hn-49630253",
+    "section": "community",
+    "title_en": "AirPods 5",
+    "title_ko": "에어팟 5 출시",
+    "url": "https://www.apple.com/newsroom/2026/09/apple-introduces-airpods-5-with-best-in-class-open-ear-active-noise-cancellation/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "애플의 새로운 에어팟 5가 공개되었다. 자세한 사양이나 기능에 대한 설명은 제공되지 않았다.",
+    "why_it_matters": "AI 관련 직접적인 내용이 없어 개발자에게 미치는 영향은 제한적이다.",
+    "tags": [],
+    "score": 9.721223459949549,
+    "published_at": "2026-09-09T17:39:24Z"
+  },
+  {
+    "id": "hn-49627370",
+    "section": "community",
+    "title_en": "GPT-6 Astra, looped transformers, and hidden reasoning",
+    "title_ko": "GPT-6 Astra, 루프 트랜스포머, 그리고 숨겨진 추론",
+    "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GPT-6 Astra, 루프 트랜스포머 구조, 숨겨진 추론 메커니즘에 관한 내용을 다루고 있다. 제공된 설명이 없어 제목 기반으로만 요약한다.",
+    "why_it_matters": "차세대 GPT 모델과 새로운 트랜스포머 아키텍처 방향성에 관심 있는 개발자에게 주목할 만한 주제다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.19047728114932,
+    "published_at": "2026-09-09T14:37:47Z"
+  },
+  {
+    "id": "youtube-1skF_R3kwPA",
+    "section": "video",
+    "title_en": "여러 계정 연동이 가능해진 코덱스",
+    "title_ko": "여러 계정 연동이 가능해진 코덱스",
+    "url": "https://www.youtube.com/shorts/1skF_R3kwPA",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 코덱스(Codex)의 여러 계정 연동 기능을 소개하는 영상이다. 영상 설명에는 바이브 코딩 관련 책 및 AX 컨설팅 정보가 함께 안내되어 있다.",
+    "why_it_matters": "코덱스에서 다중 계정 연동이 가능해져 개발자의 워크플로우 유연성이 높아질 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7679232804232804,
+    "published_at": "2026-09-09T09:00:39Z"
+  },
+  {
+    "id": "youtube-x3X9rMEpFOE",
+    "section": "video",
+    "title_en": "🚨 GPT 새 모델 사용시 주의사항 ㄷㄷ",
+    "title_ko": "GPT 새 모델 사용 시 주의사항",
+    "url": "https://www.youtube.com/shorts/x3X9rMEpFOE",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 GPT 신규 모델 사용 시 유의해야 할 사항을 다루는 영상이다. 구체적인 내용은 영상 본편에서 확인할 수 있으며, AI 활용 실무 팁을 중심으로 소개하는 것으로 보인다.",
+    "why_it_matters": "GPT 새 모델 도입 시 실수를 줄이기 위한 실용적 주의사항을 한국어로 빠르게 파악할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7500330687830687,
+    "published_at": "2026-09-09T06:00:19Z"
+  },
+  {
+    "id": "youtube-4NxmnE-Vdfw",
+    "section": "video",
+    "title_en": "마인크래프트로 매트릭스를 만들어버림;;;",
+    "title_ko": "마인크래프트로 매트릭스 구현하기 (조코딩 바이브 코딩)",
+    "url": "https://www.youtube.com/shorts/4NxmnE-Vdfw",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "유튜버 조코딩이 마인크래프트를 활용해 매트릭스를 구현하는 프로젝트를 소개하는 영상이다. 바이브 코딩 방식으로 1인 개발 형태의 창의적인 AI 활용 사례를 다루고 있다.",
+    "why_it_matters": "AI와 바이브 코딩을 결합한 창의적 개발 사례로, 비전문가도 흥미로운 프로젝트를 구현할 수 있다는 가능성을 보여준다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.6250396825396826,
+    "published_at": "2026-09-08T09:00:23Z"
+  },
+  {
+    "id": "latent_space-ainews-openai-reports-navier-stokes",
+    "section": "deepdive",
+    "title_en": "[AINews] OpenAI reports Navier-Stokes singularity find in 88 hours using Astra-next, roughly 10,000 agents and 130B tokens (>$40M), a contender for second ever Millennium Prize awarded",
+    "title_ko": "OpenAI, 88시간 만에 나비에-스토크스 특이점 발견 주장 — 역사상 두 번째 밀레니엄 상 후보 등극",
+    "url": "https://www.latent.space/p/ainews-openai-reports-navier-stokes",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "OpenAI가 Astra-next 모델과 약 1만 개의 에이전트, 1,300억 토큰(4,000만 달러 이상 소요)을 활용해 88시간 만에 수학 난제인 나비에-스토크스 방정식의 특이점을 발견했다고 보고했다. 이는 역사상 두 번째 밀레니엄 상 수상 후보로 거론된다. 같은 날 Cognition의 480억 달러 시리즈 E, Mistral의 240억 달러 시리즈 D, Meta의 Muse 에이전트, GPT Image 2.5 발표 등이 겹쳐 AI 역사상 가장 뉴스가 밀집된 하루로 기록됐다.",
+    "why_it_matters": "수백 년 난제인 나비에-스토크스 특이점을 AI 에이전트 군집이 단 88시간 만에 풀었다면, 순수 수학·과학 연구에서 AGI 수준의 능력을 입증한 첫 사례가 될 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.7445304232804233,
+    "published_at": "2026-09-09T05:04:51Z"
+  }
+]
