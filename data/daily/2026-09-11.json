@@ -1,0 +1,374 @@
+[
+  {
+    "id": "hf-2609.10522",
+    "section": "papers",
+    "title_en": "Show-Harness: Just a VLM Agent Can Play Robots",
+    "title_ko": "Show-Harness: VLM 에이전트만으로 로봇을 제어하다",
+    "url": "https://huggingface.co/papers/2609.10522",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "Show-Harness는 비전-언어 모델(VLM)이 로봇을 직접 제어할 수 있도록 의미론적 인터페이스를 제공하는 구현 프레임워크입니다. 이산적 시맨틱 액션 유닛을 통해 클로즈드소스 VLM의 제로샷 로봇 제어와 소규모 오픈소스 VLM의 저비용 파인튜닝(수 GPU-시간)을 동시에 지원합니다. 또한 GUI 기반 데모 수집 인터페이스 GUMI를 통해 전문 텔레오퍼레이션 장비 없이도 다양한 로봇 구현체에서 시연 데이터를 수집할 수 있습니다. 실험 결과, 대표적인 에이전트 및 VLA 패러다임을 능가하는 일반화 성능을 보였습니다.",
+    "why_it_matters": "추가적인 모델 용량이나 고비용 사전학습 없이 기존 VLM만으로 로봇 제어가 가능함을 입증해, 로봇공학 접근 비용을 획기적으로 낮출 수 있습니다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 5.836281906951478,
+    "published_at": "2026-09-08T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.08572",
+    "section": "papers",
+    "title_en": "AgentGrad: Intervention-guided Prompt Optimization for Multi Agent Systems",
+    "title_ko": "AgentGrad: 다중 에이전트 시스템을 위한 개입 기반 프롬프트 최적화 프레임워크",
+    "url": "https://huggingface.co/papers/2609.08572",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "AgentGrad는 LLM 기반 다중 에이전트 시스템(MAS)의 프롬프트 최적화를 위한 새로운 프레임워크다. 기존 텍스트 그래디언트 방식의 두 가지 한계인 그래디언트 추출과 집계 문제를 해결하기 위해, 순차적 개입(sequential intervention)으로 실패 원인 에이전트를 특정하고 의미론적 그래디언트 추상화로 유사한 오류 패턴을 클러스터링한다. 5개의 MAS 벤치마크에서 최고 성능을 달성했으며, 최적화 시간도 차선 대비 평균 2.5배 단축했다.",
+    "why_it_matters": "다중 에이전트 시스템의 프롬프트 설계 비용과 최적화 시간을 대폭 줄이는 실용적 방법론을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.406719247264253,
+    "published_at": "2026-09-07T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.10540",
+    "section": "papers",
+    "title_en": "Programmable World Model",
+    "title_ko": "프로그래머블 월드 모델: 명시적 상태 관리와 영상 생성의 분리",
+    "url": "https://huggingface.co/papers/2609.10540",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "기존 비디오 월드 모델은 사실적인 시각 경험을 생성하지만 지속적인 세계 상태 유지 및 규칙 적용이 어렵다는 한계가 있었다. 이 연구는 세계 상태 진화와 시각적 관찰 생성을 분리하는 '프로그래머블 월드 모델' 프레임워크를 제안한다. 에이전트가 자연어 명령을 실행 가능한 프로그램으로 변환하고, 경량 엔진이 이를 실행해 화면 밖 엔티티까지 포함한 전역 상태를 지속적으로 관리한다. 자체 벤치마크 CombatStateBench에서 Count Accuracy 94%, State Accuracy 98%를 달성해 기존 모델을 크게 앞섰다.",
+    "why_it_matters": "상태 관리와 렌더링을 분리하는 접근법은 일관된 장기 시뮬레이션과 게임 생성이 가능한 월드 모델 구축의 핵심 돌파구가 될 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.382026634673881,
+    "published_at": "2026-09-08T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.07398",
+    "section": "papers",
+    "title_en": "OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining",
+    "title_ko": "OpenWAM: 모듈형 월드-액션 모델 사전학습을 위한 오픈 리서치 스택",
+    "url": "https://huggingface.co/papers/2609.07398",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "OpenWAM은 비디오 생성 사전 지식을 로봇 제어 신호로 연결하는 '월드-액션 모델(WAM)' 연구를 위한 오픈소스 실험 프레임워크다. 기존 시스템이 단일 구조로 설계 선택의 근거를 파악하기 어려웠던 문제를 해결하고자, 모듈화된 학습·추론·평가 인프라(OpenWAM-Infra)를 제공한다. 약 6,400시간의 1인칭 인간 및 로봇 데이터로 사전학습된 OpenWAM-α는 단일 팔, 양팔, 정교한 손 조작 등 8개 시뮬레이션 벤치마크와 실제 로봇 실험에서 우수한 성능을 보였다. 인프라, 평가 프로토콜, 사전학습 모델, 데이터 레시피 전체가 공개된다.",
+    "why_it_matters": "로봇 제어를 위한 월드-액션 모델의 설계 원칙을 체계적으로 분석하고 전체 스택을 오픈소스로 공개해, 구현 재현성과 후속 연구 가속화에 크게 기여한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 5.110873864173311,
+    "published_at": "2026-09-06T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.08084",
+    "section": "papers",
+    "title_en": "Marigold V2: Revisiting Diffusion Transformers for Monocular Depth Estimation",
+    "title_ko": "Marigold V2: 단안 깊이 추정을 위한 확산 트랜스포머 재조명",
+    "url": "https://huggingface.co/papers/2609.08084",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Marigold V2는 확산 트랜스포머(DiT) 아키텍처를 기반으로 단안 깊이 추정 성능을 크게 향상시킨 모델이다. 단일 스텝 추론을 목표로 하며, 의미론적 특징 정렬과 Sinkhorn 기반 손실 함수를 활용한 2단계 파인튜닝 프로토콜을 적용했다. 그 결과 KITTI 및 ETH3D 벤치마크에서 이전 최고 모델 대비 AbsRel 기준 16~26% 향상을 달성했으며, 털·나뭇잎·얇은 경계선 등 세밀한 디테일 표현도 크게 개선되었다.",
+    "why_it_matters": "단안 깊이 추정의 일반화 한계와 디테일 부족 문제를 동시에 해결하며 로보틱스·장면 재구성 등 다양한 하위 응용에 실질적 영향을 줄 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 4.912023005428146,
+    "published_at": "2026-09-07T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-using-codex-chatgpt-to-search-for-new-antimicrobials",
+    "section": "releases",
+    "title_en": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+    "title_ko": "연구자가 Codex와 ChatGPT로 새로운 항균 분자를 탐색하는 방법",
+    "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "César de la Fuente 연구팀은 OpenAI의 Codex와 ChatGPT를 활용해 살아있는 생물과 멸종된 생물의 유전체에서 항균 후보 물질을 탐색하고 있다. 이 접근법은 약물 내성 감염에 대응할 수 있는 새로운 항균 분자를 발굴하는 데 초점을 맞추고 있다.",
+    "why_it_matters": "AI가 생물정보학 연구에 직접 활용되어 슈퍼박테리아 등 약물 내성 감염 문제 해결의 실마리를 제공할 수 있음을 보여주는 사례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8095254629629629,
+    "published_at": "2026-09-10T16:00:00Z"
+  },
+  {
+    "id": "google_blog-running-race-training-tips",
+    "section": "releases",
+    "title_en": "3 ways to prep for your next big race with Search",
+    "title_ko": "Google 검색으로 다음 레이스를 준비하는 3가지 방법",
+    "url": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "Google이 검색과 Gemini를 활용해 마라톤 등 대형 레이스를 준비하는 방법을 소개했다. 검색 기능과 AI를 결합해 레이스 준비 과정을 더 효율적으로 도울 수 있음을 강조한다.",
+    "why_it_matters": "Gemini 기반 검색이 일상적인 스포츠 준비에까지 적용되는 구체적 사례를 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8095254629629629,
+    "published_at": "2026-09-10T16:00:00Z"
+  },
+  {
+    "id": "openai_blog-put-data-to-work",
+    "section": "releases",
+    "title_en": "Now everyone can put data to work",
+    "title_ko": "ChatGPT Work의 데이터 에이전트, 이제 모든 사람에게 공개",
+    "url": "https://openai.com/index/put-data-to-work",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "ChatGPT Work에 새로운 데이터 에이전트가 도입되어 누구나 자연어로 회사 데이터를 연결하고 인사이트를 도출할 수 있게 되었다. 별도의 코딩 없이 대화형 대시보드를 구축할 수 있는 기능을 제공한다. 이를 통해 데이터 분석 작업을 AI가 보조하며 업무 효율을 높일 수 있다.",
+    "why_it_matters": "비개발자도 자연어만으로 기업 데이터를 분석하고 대시보드를 만들 수 있어 데이터 민주화에 큰 전환점이 될 수 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.803573082010582,
+    "published_at": "2026-09-10T15:00:00Z"
+  },
+  {
+    "id": "openai_blog-introducing-chatgpt-financial-services",
+    "section": "releases",
+    "title_en": "Introducing ChatGPT for Financial Services",
+    "title_ko": "금융 서비스용 ChatGPT 출시",
+    "url": "https://openai.com/index/introducing-chatgpt-financial-services",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 금융 서비스 전용 ChatGPT를 공개했다. 내장된 금융 데이터와 GPT-6 Astra를 결합하여 리서치, 모델링, 고객용 자료 작성 등을 지원한다.",
+    "why_it_matters": "금융 업계 특화 AI 도구로, 리서치부터 고객 자료까지 금융 워크플로우 전반을 자동화할 수 있는 잠재력을 가진다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7559540343915344,
+    "published_at": "2026-09-10T07:00:00Z"
+  },
+  {
+    "id": "openai_blog-expanding-ai-access-us-government",
+    "section": "releases",
+    "title_en": "Expanding AI access and cyber defense for federal, state, local, and tribal governments",
+    "title_ko": "OpenAI, 미국 연방·주·지방·부족 정부에 AI 접근성 및 사이버 방어 지원 확대",
+    "url": "https://openai.com/index/expanding-ai-access-us-government",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI와 미국 조달청(GSA)이 협력하여 연방, 주, 지방, 부족 정부를 대상으로 라이선스 비용 전액 면제 및 사용료 50% 할인 혜택을 제공한다. 또한 사이버 방어 지원도 확대될 예정이다. 이번 조치는 정부 기관의 AI 도입 장벽을 낮추기 위한 것이다.",
+    "why_it_matters": "공공 부문의 AI 접근성을 대폭 낮춤으로써 미국 정부 전반의 AI 활용이 빠르게 확산될 수 있는 전환점이 될 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.7559540343915344,
+    "published_at": "2026-09-10T07:00:00Z"
+  },
+  {
+    "id": "github_trending-Tencent/teamai-cli",
+    "section": "releases",
+    "title_en": "Tencent/teamai-cli",
+    "title_ko": "Tencent/teamai-cli: 팀 전체를 AI 네이티브로 만드는 CLI 도구",
+    "url": "https://github.com/Tencent/teamai-cli",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "텐센트가 오픈소스로 공개한 teamai-cli는 팀의 스킬, 규칙, MCP, 지식 베이스를 공유 Git 저장소를 통해 Claude Code, Codex, Cursor 등 다양한 AI 에이전트에 자동으로 배포·동기화하는 CLI 도구다. push → 코드 리뷰 → merge → pull 흐름으로 팀 전체의 AI 설정을 일관되게 유지할 수 있으며, 세션 종료 시 마찰(friction) 신호를 분석해 팀 지식 공유를 자동으로 제안하는 기능도 포함된다. 코드베이스 지식 그래프 구축(tree-sitter AST 기반), 팀 지식 검색(BM25+그래프 부스트), 사용량 대시보드 등 팀 개선 기능도 베타로 제공된다.",
+    "why_it_matters": "여러 AI 코딩 에이전트를 사용하는 팀이 스킬·규칙·MCP 설정을 중앙에서 관리하고 자동 배포할 수 있어, 팀 단위 AI 도입의 일관성과 지식 축적 문제를 체계적으로 해결할 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7469940476190476,
+    "published_at": "2026-09-10T05:29:41Z"
+  },
+  {
+    "id": "github_trending-TauricResearch/TradingAgents",
+    "section": "releases",
+    "title_en": "TauricResearch/TradingAgents",
+    "title_ko": "TradingAgents: 멀티 에이전트 LLM 금융 트레이딩 프레임워크",
+    "url": "https://github.com/TauricResearch/TradingAgents",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "TradingAgents는 실제 트레이딩 회사의 구조를 모방한 멀티 에이전트 금융 트레이딩 프레임워크로, 펀더멘털 분석가·감성 분석가·기술 분석가·트레이더·리스크 관리팀 등 역할별 LLM 에이전트가 협력하여 투자 판단을 내린다. LangGraph 기반으로 구축되었으며 OpenAI, Anthropic, Google, DeepSeek 등 다양한 LLM 프로바이더를 지원한다. v0.4.0까지 활발히 업데이트되고 있으며, 연구 목적으로 완전 오픈소스로 공개되었다.",
+    "why_it_matters": "금융 트레이딩 도메인에서 멀티 에이전트 LLM 협업 구조를 실용적으로 구현한 오픈소스 연구 프레임워크로, AI 에이전트 설계 및 금융 AI 연구에 직접 활용 가능하다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7469940476190476,
+    "published_at": "2026-09-10T05:29:41Z"
+  },
+  {
+    "id": "hn-49639408",
+    "section": "community",
+    "title_en": "More questions about whether researchers can trust OpenAI with unpublished math",
+    "title_ko": "연구자들, 미발표 수학 연구를 OpenAI에 맡길 수 있는가에 대한 의문 증폭",
+    "url": "https://mathstodon.xyz/@andreasthom/117240535270608201",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "연구자들 사이에서 미발표 수학 연구를 OpenAI에 공유하는 것의 신뢰성에 대한 의문이 커지고 있다. 구체적인 사건이나 배경은 제공된 정보만으로 확인하기 어렵지만, 학계에서 OpenAI의 데이터 활용 방식에 대한 우려가 제기되고 있는 것으로 보인다.",
+    "why_it_matters": "AI 기업과 학술 연구자 간의 신뢰 문제는 연구 데이터 보호 및 지적재산권 측면에서 중요한 선례가 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.616898950202014,
+    "published_at": "2026-09-10T06:49:43Z"
+  },
+  {
+    "id": "hn-49645443",
+    "section": "community",
+    "title_en": "Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra",
+    "title_ko": "Cognition, 새로운 SWE-2 모델 출시 — Fable 5.1 및 GPT-Astra와 경쟁",
+    "url": "https://cognition.com/blog/swe-2",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Cognition이 SWE-2 모델을 새롭게 출시했다. 이 모델은 Fable 5.1과 GPT-Astra에 견줄 만한 성능을 갖춘 것으로 알려졌다. 상세한 벤치마크나 기술 사양은 제공된 정보 내에서 확인되지 않는다.",
+    "why_it_matters": "소프트웨어 엔지니어링 특화 AI 모델 경쟁이 심화되고 있음을 보여주는 신호탄.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 9.315021602562481,
+    "published_at": "2026-09-10T15:29:47Z"
+  },
+  {
+    "id": "hn-49650326",
+    "section": "community",
+    "title_en": "OpenAI’s Navier-Stokes release included a Lean 4 formal proof",
+    "title_ko": "OpenAI, Navier-Stokes 문제에 Lean 4 공식 증명 포함 공개",
+    "url": "https://www.johndcook.com/blog/2026/09/09/formal-method-revolution/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "OpenAI가 Navier-Stokes 관련 연구를 공개하면서 Lean 4로 작성된 공식 수학 증명을 함께 포함했다. Lean 4는 수학 정리를 컴퓨터가 검증할 수 있는 형태로 표현하는 형식 증명 언어다.",
+    "why_it_matters": "AI가 수학 난제 풀이에서 기계 검증 가능한 형식 증명까지 제시하기 시작했다는 점에서 수학·AI 연구 분야에 중요한 이정표다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 8.270171217395356,
+    "published_at": "2026-09-10T21:22:59Z"
+  },
+  {
+    "id": "hn-49647300",
+    "section": "community",
+    "title_en": "Detecting and countering misuse of AI: September 2026",
+    "title_ko": "AI 오용 탐지 및 대응: 2026년 9월 보고",
+    "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI 오용 탐지 및 대응에 관한 2026년 9월 보고서다. 상세 내용은 제공되지 않았으나, AI 시스템의 악용 사례 탐지와 방지 노력을 다루는 것으로 보인다.",
+    "why_it_matters": "AI 오용 대응은 안전한 AI 생태계 유지를 위한 핵심 과제다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 7.771302059769515,
+    "published_at": "2026-09-10T17:23:42Z"
+  },
+  {
+    "id": "hn-49649213",
+    "section": "community",
+    "title_en": "OpenAI Agents API",
+    "title_ko": "OpenAI 에이전트 API 공개",
+    "url": "https://developers.openai.com/api/docs/guides/agents-api/overview",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "OpenAI가 에이전트 구축을 위한 공식 API를 공개했다. 개발자들이 자율적으로 작업을 수행하는 AI 에이전트를 보다 쉽게 만들 수 있도록 지원하는 것으로 보인다.",
+    "why_it_matters": "OpenAI의 공식 에이전트 API는 AI 에이전트 개발의 표준화와 생태계 확장에 직접적인 영향을 줄 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 7.7420260655829,
+    "published_at": "2026-09-10T19:43:22Z"
+  },
+  {
+    "id": "youtube-bw_hO8QvsWE",
+    "section": "video",
+    "title_en": "H3로 더 좋아져버린 춤 복사 오픈소스",
+    "title_ko": "H3 모델로 업그레이드된 오픈소스 춤 복사 AI",
+    "url": "https://www.youtube.com/shorts/bw_hO8QvsWE",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 H3 모델을 활용해 성능이 향상된 오픈소스 춤 동작 복사 프로젝트를 소개하는 영상입니다. 미니맥스의 H3 모델이 적용되어 기존보다 더 정교한 동작 재현이 가능해진 것으로 보입니다.",
+    "why_it_matters": "오픈소스 기반 동작 복사 AI에 최신 모델이 접목되어 개발자들이 직접 활용·실험할 수 있는 가능성이 높아졌다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 0.7738657407407408,
+    "published_at": "2026-09-10T10:00:33Z"
+  },
+  {
+    "id": "youtube-okWsZFTUdYU",
+    "section": "video",
+    "title_en": "🚨 클로드 요금제의 충격적인 진실",
+    "title_ko": "클로드 요금제의 충격적인 진실",
+    "url": "https://www.youtube.com/shorts/okWsZFTUdYU",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "유튜버 조코딩이 클로드(Claude) 요금제에 관한 내용을 다루는 영상이다. 구체적인 세부 사항은 영상 본문에서 확인할 수 있으며, AI 서비스 요금제 관련 논란을 주제로 하고 있다.",
+    "why_it_matters": "클로드 요금제 구조에 대한 논란은 AI 서비스를 활용하는 국내 개발자와 창업자에게 비용 계획 수립에 직접적인 영향을 줄 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7678703703703704,
+    "published_at": "2026-09-10T09:00:07Z"
+  },
+  {
+    "id": "youtube-RtPmzHLD7as",
+    "section": "video",
+    "title_en": "사진 한장으로 세상을 복제해버리는 AI",
+    "title_ko": "사진 한 장으로 세상을 복제하는 AI 기술",
+    "url": "https://www.youtube.com/shorts/RtPmzHLD7as",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 사진 한 장만으로 현실 세계를 3D로 복제하는 AI 기술을 소개하는 영상이다. 해당 영상은 #아틀라스 #가상현실 키워드와 연관된 AI 활용 사례를 다루고 있다.",
+    "why_it_matters": "단일 이미지로 3D 공간을 재현하는 AI 기술은 가상현실·디지털 트윈 등 다양한 분야에 활용 가능성이 높다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7500529100529101,
+    "published_at": "2026-09-10T06:00:31Z"
+  },
+  {
+    "id": "simon_willison-trynix",
+    "section": "deepdive",
+    "title_en": "Any Nix package, live in your browser",
+    "title_ko": "브라우저에서 13년치 Nix 패키지를 바로 실행하는 trynix.dev",
+    "url": "https://simonwillison.net/2026/Sep/10/trynix/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "trynix.dev는 WebAssembly 기반 QEMU를 활용해 브라우저 안에서 x86_64 리눅스 가상머신을 구동하며, 지난 13년간의 모든 Nix 패키지를 URL 하나로 즉시 실행할 수 있다. 예를 들어 2017년 출시된 Python 3.6.2를 별도 설치 없이 브라우저 셸에서 바로 테스트할 수 있다. 이를 확장한 GitHub Action 'trynix-preview'는 PR에 자동으로 링크를 댓글로 달아, 리뷰어가 서버 없이 브라우저에서 PR 빌드를 직접 부팅해 검토할 수 있게 해준다.",
+    "why_it_matters": "서버 없이 브라우저만으로 임의 버전의 패키지 환경을 재현할 수 있어 코드 리뷰와 재현성 검증 방식을 근본적으로 바꿀 수 있다.",
+    "tags": [
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 0.8555820105820106,
+    "published_at": "2026-09-10T23:44:15Z"
+  }
+]
