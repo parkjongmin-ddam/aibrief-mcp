@@ -1,0 +1,368 @@
+[
+  {
+    "id": "hf-2609.10715",
+    "section": "papers",
+    "title_en": "NCP-ArchPreview Technical Report: Moving towards Latent Space Language Models through Next Concept Prediction",
+    "title_ko": "NCP-ArchPreview: 차세대 개념 예측으로 잠재 공간 언어 모델 구현",
+    "url": "https://huggingface.co/papers/2609.10715",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "NCP-ArchPreview는 기존 다음 토큰 예측(NTP) 외에 여러 토큰에 걸친 '개념'을 예측하는 Next Concept Prediction(NCP) 목표를 도입한 잠재 공간 언어 모델이다. 8.9B 파라미터 규모로 5.73T 토큰을 학습했으며, 전체 학습 토큰의 51.3%만 사용하고도 OLMo-3-7B의 최종 사전학습 손실에 도달했다. 다운스트림 벤치마크 평균에서 OLMo-3-7B 대비 2.45포인트 앞서며, GSM8K에서는 5.99포인트의 두드러진 성능 향상을 기록했다.",
+    "why_it_matters": "토큰 수준을 넘어선 개념 수준 학습으로 훨씬 적은 연산으로 더 높은 성능을 달성, 차세대 언어 모델 사전학습 패러다임의 가능성을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 6.44673737166631,
+    "published_at": "2026-09-08T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.11929",
+    "section": "papers",
+    "title_en": "SenseNova-U1.5: Towards Native Unified Visual Intelligence",
+    "title_ko": "SenseNova-U1.5: 네이티브 통합 멀티모달 비전 모델 공개",
+    "url": "https://huggingface.co/papers/2609.11929",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SenseNova-U1.5는 인코더와 VAE 없이 시각 콘텐츠의 이해·추론·생성을 하나의 프레임워크에서 처리하는 8B MoT 네이티브 통합 멀티모달 모델이다. 최대 4K 해상도를 지원하며, 시각적 미학·이중 언어 텍스트 렌더링·인포그래픽 생성·이미지 편집에 특화된 전문가 모듈을 멀티 전문가 온폴리시 증류로 통합했다. 학습 코드(SFT, RL, 온폴리시 증류 포함)를 오픈소스로 공개할 예정이다.",
+    "why_it_matters": "인코더·VAE 없이 이해와 생성을 단일 모델로 통합하는 아키텍처 방향을 제시하며, 훈련 코드 오픈소스화로 연구 접근성이 높아진다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 6.214935757608986,
+    "published_at": "2026-09-09T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.08572",
+    "section": "papers",
+    "title_en": "AgentGrad: Intervention-guided Prompt Optimization for Multi Agent Systems",
+    "title_ko": "AgentGrad: 다중 에이전트 시스템을 위한 개입 기반 프롬프트 최적화 프레임워크",
+    "url": "https://huggingface.co/papers/2609.08572",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "AgentGrad는 LLM 기반 다중 에이전트 시스템(MAS)의 프롬프트 최적화를 위한 새로운 프레임워크다. 기존 텍스트 그래디언트 방식의 두 가지 한계(그래디언트 추출 및 집계)를 해결하기 위해, 순차적 개입으로 실패 원인 에이전트를 정확히 식별하고 의미 기반 클러스터링으로 관련 없는 실패 패턴 혼합을 방지한다. 5개의 MAS 벤치마크에서 최고 성능을 달성했으며, 최적화 시간을 기존 대비 평균 2.5배 단축했다.",
+    "why_it_matters": "다중 에이전트 시스템의 프롬프트 최적화 효율과 정확성을 동시에 높여, 실용적인 MAS 개발 비용을 크게 줄일 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.532599493153256,
+    "published_at": "2026-09-07T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.11042",
+    "section": "papers",
+    "title_en": "T1: Terminal Agent Reinforcement Learning for Long-Horizon Tasks",
+    "title_ko": "T1: 장기 태스크를 위한 터미널 에이전트 강화학습 모델",
+    "url": "https://huggingface.co/papers/2609.11042",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "T1은 122B 파라미터의 Mixture-of-Experts 모델로, 강화학습을 통해 훈련되어 클라우드 샌드박스에서 실제 셸을 조작하며 태스크당 최대 300회 이상의 도구 호출을 수행한다. TITO 구성과 롤아웃 라우팅 재플레이(R3) 기법으로 학습 안정성을 높였으며, Terminal-Bench 2.1에서 기본 모델의 43.8%에서 64.0%로 성능을 끌어올렸다. Long-Horizon Terminal Bench에서는 27.9%를 기록하며 GPT-5.4와 GLM-5.1을 능가했다.",
+    "why_it_matters": "장기 코딩·과학 탐색 태스크에서 GPT-5.4를 넘어서는 터미널 에이전트 RL 학습 레시피를 공개해, 실용적 에이전트 개발에 직접적인 참고 기준이 된다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.9889840465642745,
+    "published_at": "2026-09-09T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.11317",
+    "section": "papers",
+    "title_en": "Mi-Ripple: Restoring Images Degraded by Iterative AI Editing",
+    "title_ko": "Mi-Ripple: 반복적 AI 편집으로 손상된 이미지 복원 워크플로우",
+    "url": "https://huggingface.co/papers/2609.11317",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "반복적인 참조 기반 이미지 편집 과정에서 발생하는 격자형·입자형 텍스처(디지털 리플) 문제를 해결하는 Mi-Ripple 워크플로우가 공개됐다. 주기적 격자 아티팩트와 콘텐츠에 혼재된 입자 텍스처를 분리한 뒤, 선택적 스펙트럼 노칭, 구조 인식 스무딩, 정제된 참조 재생성을 결합해 이미지 구조를 보호하면서 노이즈를 제거한다. 14회 노칭 실행에서 잔차 표준편차 0.08~0.44(CIELAB 명도 단위)를 기록했으며, 재생성 예시에서는 아티팩트 밀도를 45% 감소시켰다.",
+    "why_it_matters": "반복 AI 편집 시 누적되는 시각적 열화 문제를 정량적으로 진단·복원하는 실용적 접근법을 제시해, 생성 이미지 품질 관리에 직접 활용 가능하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.637586159726386,
+    "published_at": "2026-09-09T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-perplexity-improving-accuracy-with-astra",
+    "section": "releases",
+    "title_en": "Perplexity trusts GPT-6 Astra with end-to-end systems",
+    "title_ko": "Perplexity, GPT-6 Astra에 엔드투엔드 시스템 전권 위임",
+    "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Perplexity는 Astra를 활용해 커뮤니케이션 작성, 소프트웨어 변경, 프로덕션 시스템 모니터링 등 핵심 업무를 자율적으로 처리하고 있다. 이전 모델 대비 사람의 개입 빈도가 크게 줄었으며, 실질적인 엔드투엔드 자율 운영 체계를 구축한 사례로 주목받고 있다.",
+    "why_it_matters": "AI 에이전트가 단순 보조 도구를 넘어 프로덕션 인프라를 자율 관리하는 실제 사례로, 기업 AI 도입의 새로운 기준점이 될 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "인프라"
+    ],
+    "score": 1.0,
+    "published_at": "2026-09-14T00:00:00Z"
+  },
+  {
+    "id": "github_trending-armory3d/armorpaint",
+    "section": "releases",
+    "title_en": "armory3d/armorpaint",
+    "title_ko": "ArmorPaint - 오픈소스 3D PBR 텍스처 페인팅 툴",
+    "url": "https://github.com/armory3d/armorpaint",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "ArmorPaint는 3D PBR 텍스처 페인팅을 위한 그래픽스 제작 도구다. 소스코드는 공개되어 있으며, Windows·Linux·macOS·Android·iOS·WASM 등 다양한 플랫폼을 지원한다. 단, 컴파일된 바이너리 배포판은 프로젝트 재정 지원을 위해 유료로 제공된다.",
+    "why_it_matters": "다양한 플랫폼을 지원하는 오픈소스 3D 텍스처 페인팅 툴로, 개발자라면 직접 빌드해 무료로 활용할 수 있다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 0.7457423941798942,
+    "published_at": "2026-09-12T05:17:04Z"
+  },
+  {
+    "id": "github_trending-nashsu/llm_wiki",
+    "section": "releases",
+    "title_en": "nashsu/llm_wiki",
+    "title_ko": "LLM Wiki: 문서를 자동으로 구조화된 위키 지식베이스로 변환하는 데스크톱 앱",
+    "url": "https://github.com/nashsu/llm_wiki",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "LLM Wiki는 Andrej Karpathy의 LLM 위키 패턴을 기반으로 구현된 크로스플랫폼 데스크톱 애플리케이션으로, PDF·DOCX·EPUB 등 다양한 문서를 자동으로 분석해 상호 연결된 위키 지식베이스를 점진적으로 구축·유지한다. 기존 RAG처럼 매 쿼리마다 재검색하는 방식 대신, LLM이 2단계 Chain-of-Thought 방식으로 지식을 한 번 컴파일하고 지속적으로 갱신한다. 지식 그래프 시각화, Louvain 커뮤니티 탐지, 벡터 시맨틱 검색(LanceDB), Rust 백엔드 에이전트, Chrome 웹 클리퍼, MCP 서버 등 풍부한 기능을 제공하며 Obsidian 볼트와도 호환된다.",
+    "why_it_matters": "RAG의 한계를 넘어 LLM이 지식을 누적·구조화하는 새로운 개인 지식관리 패러다임을 오픈소스 데스크톱 앱으로 완성한 프로젝트다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "에이전트"
+    ],
+    "score": 0.7457423941798942,
+    "published_at": "2026-09-12T05:17:04Z"
+  },
+  {
+    "id": "github_trending-jihe520/MathModelAgent",
+    "section": "releases",
+    "title_en": "jihe520/MathModelAgent",
+    "title_ko": "MathModelAgent: 수학 모델링 자동화 AI 에이전트",
+    "url": "https://github.com/jihe520/MathModelAgent",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "MathModelAgent는 수학 경시대회용 문제 분석부터 모델링, 코드 작성, 논문 생성까지 전 과정을 자동화하는 오픈소스 멀티 에이전트 프로젝트입니다. 멀티 LLM 지원, RAG 지식베이스, Human-in-the-Loop, 웹 검색 등 다양한 기능을 갖추고 있으며, 17종의 Typst 논문 템플릿을 내장해 제출 가능한 PDF를 바로 생성합니다. Docker 및 데스크톱 앱 형태로도 제공되어 별도 환경 설정 없이 사용할 수 있습니다.",
+    "why_it_matters": "수학 모델링 경진대회의 3일 작업을 1시간으로 단축하는 엔드투엔드 자동화 파이프라인으로, 에이전트 기반 학술 작업 자동화의 실질적 가능성을 보여주는 사례입니다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "RAG"
+    ],
+    "score": 0.7457423941798942,
+    "published_at": "2026-09-12T05:17:04Z"
+  },
+  {
+    "id": "openai_blog-cognition-devin-testing-with-astra",
+    "section": "releases",
+    "title_en": "Cognition helps Devin test its own work with GPT‑6 Astra",
+    "title_ko": "Cognition, GPT-6 Astra로 Devin의 자체 테스트 능력 강화",
+    "url": "https://openai.com/index/cognition-devin-testing-with-astra",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Cognition이 GPT-6 Astra를 활용해 AI 소프트웨어 엔지니어 Devin의 소프트웨어 테스트 및 검증 능력을 향상시켰다. 이를 통해 Devin이 자신이 작성한 코드를 스스로 테스트하고 동작을 시연할 수 있게 된다. 궁극적인 목표는 엔지니어가 검토해야 할 코드 양을 줄이고 더 빠르게 배포할 수 있도록 돕는 것이다.",
+    "why_it_matters": "AI 에이전트가 코드 작성을 넘어 자체 테스트까지 수행하게 되면 소프트웨어 개발 사이클 전반의 자동화가 한 단계 더 진전된다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.6666683201058201,
+    "published_at": "2026-09-11T16:00:00Z"
+  },
+  {
+    "id": "openai_blog-scaling-storage-one-billion-users-part-one",
+    "section": "releases",
+    "title_en": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+    "title_ko": "ChatGPT 10억 사용자를 위한 글로벌 분산 스토리지 플랫폼 확장기",
+    "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 Habitat이라는 내부 스토리지 시스템을 Python 라이브러리에서 전 세계에 분산된 스토리지 플랫폼으로 발전시킨 과정을 공개했다. 이 플랫폼은 현재 10억 명의 ChatGPT 사용자와 초당 2,200만 건의 요청을 처리하고 있다. 급격한 사용자 증가에 대응하기 위해 스토리지 인프라를 대규모로 재설계한 사례다.",
+    "why_it_matters": "초당 2,200만 요청을 처리하는 글로벌 분산 스토리지 아키텍처의 실제 설계 및 확장 경험을 직접 엿볼 수 있는 드문 사례다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.6309540343915344,
+    "published_at": "2026-09-11T10:00:00Z"
+  },
+  {
+    "id": "openai_blog-using-codex-chatgpt-to-search-for-new-antimicrobials",
+    "section": "releases",
+    "title_en": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+    "title_ko": "연구자가 Codex와 ChatGPT로 항균 분자를 탐색하는 방법",
+    "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "César de la Fuente의 연구실은 OpenAI의 Codex와 ChatGPT를 활용해 살아있는 생물과 멸종된 생물의 게놈에서 항균 후보 물질을 탐색하고 있다. 이 접근법은 약물 내성 감염에 대응할 새로운 항균 분자를 발굴하는 데 초점을 맞추고 있다.",
+    "why_it_matters": "LLM이 생명과학 연구에 실질적으로 적용되어 슈퍼박테리아 등 약물 내성 문제 해결에 기여할 수 있음을 보여주는 사례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.5238111772486773,
+    "published_at": "2026-09-10T16:00:00Z"
+  },
+  {
+    "id": "hn-49645480",
+    "section": "community",
+    "title_en": "LG denies TV spying claims, says tracking and snooping concerns 'not true'",
+    "title_ko": "LG, TV 스파이 행위 의혹 부인…추적·감청 우려 '사실 아니다'",
+    "url": "https://www.tomshardware.com/tech-industry/big-tech/lg-strongly-denies-tv-security-claims-says-tracking-and-snooping-concerns-not-true-online-investigation-claims-216-000-000-spy-tvs-record-audio",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "LG가 자사 TV가 사용자를 추적하거나 감청한다는 주장을 공식 부인했다. LG 측은 해당 우려가 사실이 아니라고 밝혔다.",
+    "why_it_matters": "스마트 TV의 개인정보 수집 논란은 소비자 신뢰와 직결되며, AI 기반 가전의 데이터 프라이버시 문제를 다시 부각시킨다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.92720841304592,
+    "published_at": "2026-09-10T15:31:37Z"
+  },
+  {
+    "id": "hn-49673098",
+    "section": "community",
+    "title_en": "Nvidia is the central bank of AI",
+    "title_ko": "엔비디아는 AI의 중앙은행",
+    "url": "https://www.economist.com/interactive/briefing/2026/09/03/nvidia-is-the-central-bank-of-ai",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "엔비디아를 AI 생태계의 중앙은행에 비유한 글이다. 설명이 제공되지 않아 제목만으로 핵심 주장을 파악할 수 있다.",
+    "why_it_matters": "AI 인프라와 반도체 시장에서 엔비디아의 독점적 지위를 금융 시스템의 중앙은행에 빗댄 시각은 업계 권력 구조를 이해하는 데 중요하다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.684134778217484,
+    "published_at": "2026-09-12T15:08:27Z"
+  },
+  {
+    "id": "hn-49626718",
+    "section": "community",
+    "title_en": "A Design Space Exploration of Async/Await",
+    "title_ko": "비동기/어웨이트(Async/Await)의 설계 공간 탐구",
+    "url": "https://cel.cs.brown.edu/blog/design-space-async-await/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Async/Await 패턴의 다양한 설계 선택지와 그 트레이드오프를 탐구하는 글이다. 프로그래밍 언어 및 런타임 설계 관점에서 비동기 프로그래밍 모델의 여러 구현 방식을 분석한다.",
+    "why_it_matters": "비동기 프로그래밍 패턴의 설계 결정이 언어와 시스템 성능에 미치는 영향을 이해하는 데 도움이 된다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.4527736164849,
+    "published_at": "2026-09-09T13:59:50Z"
+  },
+  {
+    "id": "hn-49670032",
+    "section": "community",
+    "title_en": "Retrospectively Reverse-Engineering Apple's Neural Engine",
+    "title_ko": "애플 뉴럴 엔진 역방향 엔지니어링 회고",
+    "url": "https://eiln.github.io/posts/ane.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "애플의 뉴럴 엔진(ANE)을 사후적으로 역분석한 내용을 다루는 글이다. 공개된 정보 없이 하드웨어 및 소프트웨어 구조를 분석하는 작업으로, 애플 실리콘의 AI 가속 메커니즘을 이해하는 데 초점을 맞추고 있다.",
+    "why_it_matters": "애플 뉴럴 엔진의 내부 동작을 이해하면 Apple 기기에서 AI 모델 최적화 및 온디바이스 추론 활용 가능성이 높아진다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 8.126495497752224,
+    "published_at": "2026-09-12T07:54:03Z"
+  },
+  {
+    "id": "hn-49658672",
+    "section": "community",
+    "title_en": "I fixed a tractor using John Deere's self-repair service. Farmers aren't sold",
+    "title_ko": "존 디어 자가 수리 서비스로 트랙터를 고쳤다 — 농부들의 반응은?",
+    "url": "https://www.wired.com/story/i-fixed-a-tractor-john-deere-self-repair-service/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "존 디어의 자가 수리 서비스를 실제로 사용해 트랙터를 수리한 경험을 다룬 기사다. 서비스가 존재하긴 하지만, 실제 농부들 사이에서는 여전히 회의적인 시각이 많은 것으로 보인다.",
+    "why_it_matters": "수리권(Right to Repair) 논의의 실제 현장 검증 사례로, 기업의 자가 수리 정책이 얼마나 실용적인지 가늠할 수 있다.",
+    "tags": [],
+    "score": 7.906430525559417,
+    "published_at": "2026-09-11T14:07:08Z"
+  },
+  {
+    "id": "youtube-b79rStjx3nU",
+    "section": "video",
+    "title_en": "[LIVE] 초파리 24시간 DOOM 시키기 (ft. RTX PRO 6000 Blackwell)",
+    "title_ko": "[라이브] 초파리로 24시간 DOOM 플레이시키기 (ft. RTX PRO 6000 Blackwell)",
+    "url": "https://www.youtube.com/watch?v=b79rStjx3nU",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "초파리를 이용해 24시간 동안 DOOM을 플레이하는 실험적인 라이브 방송이다. RTX PRO 6000 Blackwell GPU가 함께 활용된 것으로 보인다.",
+    "why_it_matters": "AI·GPU와 직접적인 관련성이 낮은 엔터테인먼트 콘텐츠로, 개발자 대상 기술 정보로서의 가치는 제한적이다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.7442741402116402,
+    "published_at": "2026-09-12T05:02:16Z"
+  },
+  {
+    "id": "youtube-aV2mjr0x_Rw",
+    "section": "video",
+    "title_en": "E-Book에 돈을 쓸 필요가 없는 이유",
+    "title_ko": "E-Book에 돈을 쓸 필요가 없는 이유",
+    "url": "https://www.youtube.com/shorts/aV2mjr0x_Rw",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 E-Book을 유료로 구매하지 않아도 되는 이유를 소개하는 영상이다. 바이브 코딩 및 1인 창업 관련 콘텐츠를 다루며, AI 활용 교육과 컨설팅 서비스도 함께 안내하고 있다.",
+    "why_it_matters": "AI·바이브코딩 관련 학습 자료를 무료로 접근하는 방법을 소개해 개발자들의 학습 비용 절감에 도움이 될 수 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.63692791005291,
+    "published_at": "2026-09-11T11:00:13Z"
+  },
+  {
+    "id": "youtube-yOLncawiRVM",
+    "section": "video",
+    "title_en": "땅을 치고 후회할 앤트로픽의 선택",
+    "title_ko": "앤트로픽의 선택, 후회할 결정인가?",
+    "url": "https://www.youtube.com/shorts/yOLncawiRVM",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 앤트로픽의 특정 선택에 대해 비판적으로 분석하는 영상이다. 영상의 구체적인 내용은 설명에 포함되어 있지 않으나, 제목을 통해 앤트로픽의 결정을 부정적으로 평가하는 내용임을 알 수 있다. 조코딩은 AI 관련 정보를 한국 개발자·창업자에게 전달하는 채널이다.",
+    "why_it_matters": "앤트로픽의 전략적 선택에 대한 국내 AI 커뮤니티의 시각을 엿볼 수 있는 콘텐츠다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6310019841269842,
+    "published_at": "2026-09-11T10:00:29Z"
+  },
+  {
+    "id": "simon_willison-astra-running-routes",
+    "section": "deepdive",
+    "title_en": "Generating running routes with GPT-6 Astra and ChatGPT Work",
+    "title_ko": "GPT-6 Astra로 달리기 경로 자동 생성하기",
+    "url": "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Simon Willison이 ChatGPT Work와 GPT-6 Astra(Max)를 이용해 자택 주소를 입력하는 것만으로 5K·10K 달리기 루프 경로를 자동 생성했다. AI는 Nominatim으로 주소를 찾고, Overpass API로 OSM 도로 데이터를 내려받아 경로를 계산했으며, 결과물로 지도 시각화·GPX·GeoJSON 파일을 27분 만에 제공했다. 다만 실제 실행된 코드가 UI에 노출되지 않는 투명성 부재는 한계로 지적됐다.",
+    "why_it_matters": "에이전트 기반 LLM이 외부 지리 데이터(OSM)를 자율적으로 활용해 실용적인 결과물을 생성하는 실제 사례로, AI 에이전트의 도구 활용 가능성과 투명성 문제를 동시에 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8568171296296296,
+    "published_at": "2026-09-12T23:56:42Z"
+  }
+]
