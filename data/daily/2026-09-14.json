@@ -1,0 +1,369 @@
+[
+  {
+    "id": "hf-2609.10715",
+    "section": "papers",
+    "title_en": "NCP-ArchPreview Technical Report: Moving towards Latent Space Language Models through Next Concept Prediction",
+    "title_ko": "NCP-ArchPreview: 다음 개념 예측으로 잠재 공간 언어 모델 향해 나아가다",
+    "url": "https://huggingface.co/papers/2609.10715",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "NCP-ArchPreview는 기존 다음 토큰 예측(NTP)을 넘어 다중 토큰을 아우르는 '개념' 단위를 예측하는 Next Concept Prediction(NCP) 목표를 함께 학습하는 잠재 공간 언어 모델이다. 8.9B 파라미터 규모로 Dolma-3 데이터셋의 5.73T 토큰으로 학습되었으며, 학습 토큰의 51.3%만 소비하고도 OLMo-3-7B의 최종 사전학습 손실에 도달했다. 다운스트림 평가에서 OLMo-3-7B 대비 평균 2.45점, GSM8K에서는 5.99점 높은 성능을 기록했으며, 17M 파라미터의 VQ 모듈만 업데이트하는 경량 도메인 적응 인터페이스도 제공한다.",
+    "why_it_matters": "토큰 수준을 초월한 개념 단위 학습으로 동일 계산량 대비 더 높은 성능을 달성해, 차세대 LLM 사전학습 패러다임의 방향성을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 6.673323267171493,
+    "published_at": "2026-09-08T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.11929",
+    "section": "papers",
+    "title_en": "SenseNova-U1.5: Towards Native Unified Visual Intelligence",
+    "title_ko": "SenseNova-U1.5: 통합 시각 지능을 향한 8B MoT 멀티모달 모델",
+    "url": "https://huggingface.co/papers/2609.11929",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SenseNova-U1.5는 인코더와 VAE 없이 시각 콘텐츠의 이해·추론·생성을 하나의 아키텍처로 처리하는 8B MoT 네이티브 통합 멀티모달 모델이다. 4K 해상도 지원, 이중 언어 텍스트 렌더링, 인포그래픽 생성, 이미지 편집 등 다양한 시각 작업에서 성능을 크게 향상시켰다. 지도 미세조정, 강화학습, 온폴리시 증류를 포함한 학습 코드를 오픈소스로 공개할 예정이다.",
+    "why_it_matters": "인코더·VAE 없는 완전 엔드투엔드 통합 시각 모델이 고품질 생성·편집을 달성하며, 오픈소스 공개로 연구 접근성이 높아진다는 점에서 주목할 만하다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 6.4680601411351315,
+    "published_at": "2026-09-09T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.11042",
+    "section": "papers",
+    "title_en": "T1: Terminal Agent Reinforcement Learning for Long-Horizon Tasks",
+    "title_ko": "T1: 장기 과제를 위한 터미널 에이전트 강화학습 모델",
+    "url": "https://huggingface.co/papers/2609.11042",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "T1은 122B 파라미터의 Mixture-of-Experts 모델로, 강화학습을 통해 학습되며 클라우드 샌드박스 내 실제 셸을 조작해 300회 이상의 툴 호출 턴을 수행한다. 안정적인 학습을 위해 TITO 구성 및 롤아웃 라우팅 리플레이(R3) 기법을 도입해 학습-추론 간 로그 확률 차이를 크게 줄였다. Terminal-Bench 2.1에서 기본 모델 43.8%에서 64.0%로 성능을 높였고, Long-Horizon Terminal Bench에서는 GPT-5와 GLM-5를 능가하는 27.9%를 달성했다.",
+    "why_it_matters": "코딩·과학적 발견 등 장기 터미널 작업에서 GPT-5 수준을 뛰어넘는 오픈 레시피 에이전트 모델이 등장해 실무 적용 가능성이 높다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 5.04305126783455,
+    "published_at": "2026-09-09T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.11317",
+    "section": "papers",
+    "title_en": "Mi-Ripple: Restoring Images Degraded by Iterative AI Editing",
+    "title_ko": "Mi-Ripple: 반복 AI 편집으로 손상된 이미지 복원 워크플로우",
+    "url": "https://huggingface.co/papers/2609.11317",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "반복적인 참조 기반 이미지 편집 시 격자형·입자형 텍스처 아티팩트(디지털 리플)가 발생하는 문제를 해결하는 Mi-Ripple을 제안한다. 이 워크플로우는 주기적 격자 아티팩트와 콘텐츠에 엉킨 입자 텍스처를 분리한 뒤, 선택적 스펙트럼 노칭, 구조 인식 스무딩, 정제된 참조 재생성을 결합한다. 14회 노칭 실험에서 잔차 표준편차는 CIELAB 명도 기준 0.08~0.44 수준이며, 참조 정제를 통해 출력 잔해 밀도를 45% 줄인 사례도 확인됐다.",
+    "why_it_matters": "AI 이미지 편집 반복 사용 시 누적되는 아티팩트를 체계적으로 진단·제거하는 실용적 복원 방법론을 제시한다는 점에서 주목할 만하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.912023005428146,
+    "published_at": "2026-09-09T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.11412",
+    "section": "papers",
+    "title_en": "X-AuT: Progressive Audio-Encoder Compression for Speech LLMs with Cross-Scale Distillation",
+    "title_ko": "X-AuT: 크로스-스케일 증류를 활용한 음성 LLM용 오디오 인코더 점진적 압축 프레임워크",
+    "url": "https://huggingface.co/papers/2609.11412",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "X-AuT는 음성 대형 언어 모델의 오디오 인코더 레이어를 점진적으로 줄여 추론 비용을 낮추는 프레임워크다. 레이어 제거 시 발생하는 임베딩 교란과 오류를 표현 정렬, 크로스-스케일 증류, LoRA 파인튜닝으로 복구한다. Qwen3-ASR-0.6B 기준으로 18→16 레이어 압축 시 평균 오류율이 5.61%에서 5.27%로 개선되었고, 14레이어 모델도 오디오 타워 파라미터를 20.7% 줄이면서 5.75% 오류율을 달성했다.",
+    "why_it_matters": "음성 LLM의 오디오 인코더를 정확도 손실 없이 경량화하는 실용적 방법론을 제시하여 엣지·실시간 음성 AI 배포 비용 절감에 직접적으로 기여한다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 4.761200115693562,
+    "published_at": "2026-09-09T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-perplexity-improving-accuracy-with-astra",
+    "section": "releases",
+    "title_en": "Perplexity trusts GPT-6 Astra with end-to-end systems",
+    "title_ko": "Perplexity, GPT-6 Astra로 엔드투엔드 시스템 운영 신뢰",
+    "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Perplexity는 GPT-6 Astra를 활용해 커뮤니케이션 작성, 소프트웨어 변경, 프로덕션 시스템 모니터링을 수행하고 있다. 이전 모델 대비 사람의 개입 빈도가 크게 줄었다고 밝혔다.",
+    "why_it_matters": "AI 에이전트가 실제 프로덕션 환경에서 자율적으로 운영되는 수준에 도달했음을 보여주는 사례로, 소프트웨어 개발 및 운영 패러다임 변화를 시사한다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.8571445105820106,
+    "published_at": "2026-09-14T00:00:00Z"
+  },
+  {
+    "id": "github_trending-asgeirtj/system_prompts_leaks",
+    "section": "releases",
+    "title_en": "asgeirtj/system_prompts_leaks",
+    "title_ko": "주요 AI 챗봇 시스템 프롬프트 유출 모음집",
+    "url": "https://github.com/asgeirtj/system_prompts_leaks",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude, ChatGPT, Gemini, Grok 등 주요 AI 챗봇이 사용자 대화 전에 받는 숨겨진 시스템 프롬프트를 수집·공개하는 GitHub 저장소다. Anthropic, OpenAI, Google, xAI, Meta, Microsoft 등 거의 모든 주요 AI 제품의 프롬프트가 포함되어 있으며, 정기적으로 업데이트된다. 워싱턴 포스트 등 주요 언론도 이 저장소의 데이터를 활용한 바 있다.",
+    "why_it_matters": "AI 제품이 사용자에게 보이지 않게 어떤 지침으로 동작하는지 직접 확인할 수 있어, 프롬프트 엔지니어링과 AI 투명성 연구에 핵심 참고자료가 된다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7473660714285715,
+    "published_at": "2026-09-13T05:33:26Z"
+  },
+  {
+    "id": "github_trending-jihe520/MathModelAgent",
+    "section": "releases",
+    "title_en": "jihe520/MathModelAgent",
+    "title_ko": "MathModelAgent: 수학 모델링 자동화 AI 에이전트",
+    "url": "https://github.com/jihe520/MathModelAgent",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "MathModelAgent는 수학 경시대회(수학 모델링 대회) 참가를 위해 문제 분석, 모델링, 코드 작성, 논문 생성까지 전 과정을 자동화하는 오픈소스 멀티 에이전트 프로젝트입니다. 건모자(建模者), 코더, 논문 작성자 등 역할별 에이전트가 협력하며, RAG 지식베이스·웹 검색·인간-AI 협업(HIL) 기능을 지원합니다. 데스크탑 앱(macOS/Windows)과 Docker 배포를 모두 지원하며, 17종의 Typst 논문 템플릿이 내장되어 있습니다.",
+    "why_it_matters": "경진대회용 수학 모델링 논문 전 과정을 자동화하는 실용적인 멀티 에이전트 오픈소스 사례로, RAG·HIL·멀티 LLM 조합 등 에이전트 설계 패턴을 직접 학습할 수 있다.",
+    "tags": [
+      "에이전트",
+      "RAG",
+      "LLM"
+    ],
+    "score": 0.7473660714285715,
+    "published_at": "2026-09-13T05:33:26Z"
+  },
+  {
+    "id": "github_trending-Shubhamsaboo/awesome-llm-apps",
+    "section": "releases",
+    "title_en": "Shubhamsaboo/awesome-llm-apps",
+    "title_ko": "Awesome LLM Apps: 100개 이상의 AI 에이전트·RAG 앱 오픈소스 모음",
+    "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude, Gemini, GPT, DeepSeek, Llama 등 주요 LLM을 지원하는 100개 이상의 AI 에이전트·RAG 앱 템플릿을 Apache-2.0 라이선스로 제공하는 오픈소스 레포지토리다. 스타터 에이전트부터 멀티에이전트 팀, 음성 AI, MCP 에이전트, RAG 파이프라인, LLM 파인튜닝까지 다양한 카테고리를 포괄한다. 모든 템플릿은 엔드투엔드 테스트를 거쳤으며, 단일 명령어로 설치하거나 클론 후 즉시 실행 가능하다.",
+    "why_it_matters": "실무 수준의 다양한 LLM·RAG·에이전트 앱을 바로 복제·배포·상용화할 수 있어 개발 진입 장벽을 크게 낮춘다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "에이전트"
+    ],
+    "score": 0.7473660714285715,
+    "published_at": "2026-09-13T05:33:26Z"
+  },
+  {
+    "id": "github_trending-armory3d/armorpaint",
+    "section": "releases",
+    "title_en": "armory3d/armorpaint",
+    "title_ko": "ArmorPaint - 오픈소스 3D PBR 텍스처 페인팅 툴",
+    "url": "https://github.com/armory3d/armorpaint",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "ArmorPaint는 3D PBR 텍스처 페인팅을 위한 그래픽 제작 소프트웨어다. 이 저장소는 개발자용이며 안정성이 보장되지 않을 수 있고, 배포 바이너리는 프로젝트 운영 자금 마련을 위해 유료로 제공된다. Windows, Linux, macOS, Android, iOS, WASM 등 다양한 플랫폼을 지원하며, 소스 코드는 누구나 접근할 수 있도록 공개되어 있다.",
+    "why_it_matters": "3D 텍스처 페인팅 툴을 직접 빌드·수정할 수 있는 오픈소스 대안으로, 멀티플랫폼 지원이 강점이다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 0.7473660714285715,
+    "published_at": "2026-09-13T05:33:26Z"
+  },
+  {
+    "id": "github_trending-SnailSploit/Claude-Red",
+    "section": "releases",
+    "title_en": "SnailSploit/Claude-Red",
+    "title_ko": "Claude-Red: Claude를 레드팀 오퍼레이터로 변환하는 공격 보안 스킬 라이브러리",
+    "url": "https://github.com/SnailSploit/Claude-Red",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "claude-red는 Claude 스킬 시스템에 드롭인 방식으로 사용할 수 있는 공격 보안 SKILL.md 파일 모음입니다. SQLi, XSS, EDR 우회, 익스플로잇 개발, Active Directory 공격 등 23개 카테고리에 걸쳐 78개의 스킬이 구조화되어 있으며, 대화 트리거에 따라 필요한 스킬만 자동 로드됩니다. 버그바운티, CTF, 레드팀 참여, 보안 연구 등 인가된 용도를 위한 도구로 설계되었으며, MIT 라이선스로 공개되어 있습니다.",
+    "why_it_matters": "Claude를 도메인 전문가 수준의 컨텍스트 인식 레드팀 오퍼레이터로 활용할 수 있어, 공격 보안 연구 및 교육 효율을 크게 높일 수 있습니다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7473660714285715,
+    "published_at": "2026-09-13T05:33:26Z"
+  },
+  {
+    "id": "github_trending-multimodal-art-projection/YuE",
+    "section": "releases",
+    "title_en": "multimodal-art-projection/YuE",
+    "title_ko": "YuE2: 심볼릭 플래닝 기반 오픈소스 음악 생성 모델",
+    "url": "https://github.com/multimodal-art-projection/YuE",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "YuE2는 가사와 스타일 프롬프트를 입력받아 멜로디·코드 플랜을 먼저 생성한 뒤 보컬과 반주가 포함된 완성 곡을 만드는 오픈소스 음악 생성 모델이다. WildSongBench 192개 프롬프트 평가에서 best-of-8 기준 SongBench Avg 6.9632로 Suno v5/v6 등 상용 모델을 포함한 평가 대상 중 최고 평균을 기록했다. 제로샷 커버, 에이전트 기반 편집, 악보 수정 후 재렌더링 등 화이트박스 방식의 음악 편집 기능을 지원하며, 모델 가중치는 CC BY-NC 4.0, 코드는 Apache 2.0으로 공개되어 있다.",
+    "why_it_matters": "Suno 등 상용 음악 AI와 경쟁하는 품질을 오픈소스로 제공하면서 악보 수준의 편집 가능성과 에이전트 연동까지 지원해 음악 생성 연구·개발 진입 장벽을 크게 낮춘다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7473660714285715,
+    "published_at": "2026-09-13T05:33:26Z"
+  },
+  {
+    "id": "hn-49688695",
+    "section": "community",
+    "title_en": "Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher",
+    "title_ko": "우화 5.1, 370년 된 암호 '사이프럴 디스티크' 해독",
+    "url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Fable 5.1이 370년 된 고대 암호인 '사이프럴 디스티크(Cyphral Distich)'를 해독하는 데 성공했다. 구체적인 방법이나 세부 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "AI 또는 최신 기술이 수백 년간 미해결된 역사적 암호 해독에 활용될 수 있음을 시사한다.",
+    "tags": [],
+    "score": 9.425443266061407,
+    "published_at": "2026-09-13T21:06:13Z"
+  },
+  {
+    "id": "hn-49685253",
+    "section": "community",
+    "title_en": "Garry Tan wants US open-weight AI labs to 'distill' frontier models, too",
+    "title_ko": "개리 탄, 미국 오픈웨이트 AI 랩의 프런티어 모델 '증류' 촉구",
+    "url": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Y Combinator 대표 개리 탄이 미국의 오픈웨이트 AI 연구소들도 프런티어 모델을 증류(distill)해야 한다고 주장했다. 구체적인 내용은 제공되지 않았으나, 오픈소스 AI 경쟁력 강화와 관련된 발언으로 보인다.",
+    "why_it_matters": "미국 오픈웨이트 AI 생태계의 방향성에 영향을 줄 수 있는 주요 인사의 발언이다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 9.399691692731908,
+    "published_at": "2026-09-13T15:44:38Z"
+  },
+  {
+    "id": "hn-49688157",
+    "section": "community",
+    "title_en": "Mark Zuckerberg: \"Cambridge Analytica\" (2017)",
+    "title_ko": "마크 저커버그: '케임브리지 애널리티카' (2017)",
+    "url": "https://twitter.com/TechEmails/status/2099214399840059428",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "2017년 마크 저커버그가 케임브리지 애널리티카 관련 사안에 대해 언급한 내용을 다루는 게시물이다. 구체적인 설명이 제공되지 않아 상세 내용은 확인하기 어렵다.",
+    "why_it_matters": "AI·빅데이터 시대의 개인정보 남용 문제를 상징하는 사건으로, 플랫폼 데이터 거버넌스 논의의 출발점이다.",
+    "tags": [],
+    "score": 8.871271534465906,
+    "published_at": "2026-09-13T20:08:45Z"
+  },
+  {
+    "id": "hn-49684356",
+    "section": "community",
+    "title_en": "CUDA for AMD on Windows",
+    "title_ko": "Windows에서 AMD GPU로 CUDA 실행하기",
+    "url": "https://github.com/Speedstu/CUDA-for-AMD-Windows",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AMD GPU 환경에서 Windows 상에서 CUDA를 사용할 수 있는 방법에 관한 내용이다. 구체적인 설명은 제공되지 않았으나, AMD 하드웨어에서 CUDA 호환성을 지원하는 접근법으로 보인다.",
+    "why_it_matters": "NVIDIA GPU 없이도 CUDA 기반 AI 워크로드를 AMD GPU에서 실행할 수 있다면 개발 환경 선택의 폭이 크게 넓어진다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 8.007593652538965,
+    "published_at": "2026-09-13T14:25:13Z"
+  },
+  {
+    "id": "hn-49651567",
+    "section": "community",
+    "title_en": "Sean Carroll explains the biggest ideas in the universe – Full Interview [video] (2025)",
+    "title_ko": "숀 캐럴이 설명하는 우주의 가장 큰 아이디어 – 풀 인터뷰 (2025)",
+    "url": "https://www.youtube.com/watch?v=_TBNJyztai0",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "물리학자 숀 캐럴이 우주의 근본 개념들을 설명하는 인터뷰 영상이다. 제목 외 구체적인 내용은 제공되지 않았다.",
+    "why_it_matters": "AI·개발과 직접적인 연관성이 낮은 과학 교양 콘텐츠로, 관심 있는 개발자에게 배경 지식을 제공할 수 있다.",
+    "tags": [],
+    "score": 6.648974238161206,
+    "published_at": "2026-09-10T23:32:12Z"
+  },
+  {
+    "id": "youtube-l7frz_bd5vM",
+    "section": "video",
+    "title_en": "IT뉴스 - 초파리 열풍, OpenAI 밀레니엄 난제 해결, Images 2.5, AI의 발전 속도를 늦춰야하나, Google ARTEMIS, AlphaGenome Atlas 등",
+    "title_ko": "IT뉴스: 초파리 열풍·OpenAI 밀레니엄 난제 도전·Images 2.5·Google ARTEMIS·AlphaGenome Atlas 등",
+    "url": "https://www.youtube.com/watch?v=l7frz_bd5vM",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "이번 IT뉴스에서는 AI 업계의 다양한 소식을 다룬다. OpenAI의 밀레니엄 난제 관련 성과, 이미지 생성 모델 Images 2.5, Google의 ARTEMIS와 AlphaGenome Atlas 등 최신 AI 기술 동향이 소개된다. 또한 AI 발전 속도를 늦춰야 하는지에 대한 논의도 포함된다.",
+    "why_it_matters": "OpenAI·Google 등 주요 AI 기업들의 최신 연구 성과와 AI 거버넌스 논쟁을 한눈에 파악할 수 있는 종합 뉴스 영상이다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7839269179894179,
+    "published_at": "2026-09-13T11:41:58Z"
+  },
+  {
+    "id": "youtube-aV2mjr0x_Rw",
+    "section": "video",
+    "title_en": "E-Book에 돈을 쓸 필요가 없는 이유",
+    "title_ko": "E-Book을 무료로 구할 수 있는 이유",
+    "url": "https://www.youtube.com/shorts/aV2mjr0x_Rw",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 E-Book에 돈을 쓸 필요가 없는 이유를 주제로 한 영상입니다. 바이브 코딩, AI 활용 1인 창업 관련 콘텐츠를 다루고 있으며, AX 컨설팅 및 교육 서비스도 함께 소개하고 있습니다.",
+    "why_it_matters": "E-Book 무료 습득 방법을 공유해 개발자·창업자의 학습 비용 절감에 도움이 될 수 있다.",
+    "tags": [],
+    "score": 0.49407076719576726,
+    "published_at": "2026-09-11T11:00:13Z"
+  },
+  {
+    "id": "youtube-yOLncawiRVM",
+    "section": "video",
+    "title_en": "땅을 치고 후회할 앤트로픽의 선택",
+    "title_ko": "앤트로픽의 선택, 후회할 결정인가?",
+    "url": "https://www.youtube.com/shorts/yOLncawiRVM",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 앤트로픽의 특정 결정에 대해 비판적으로 다루는 영상이다. 구체적인 내용은 제목 외에 확인되지 않으나, AI 업계의 주요 기업인 앤트로픽의 전략적 선택을 문제 삼는 것으로 보인다.",
+    "why_it_matters": "앤트로픽은 Claude 등 주요 LLM을 개발하는 핵심 AI 기업으로, 그 전략적 결정은 업계 전반에 영향을 미친다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.48814484126984126,
+    "published_at": "2026-09-11T10:00:29Z"
+  },
+  {
+    "id": "simon_willison-astra-running-routes",
+    "section": "deepdive",
+    "title_en": "Generating running routes with GPT-6 Astra and ChatGPT Work",
+    "title_ko": "GPT-6 Astra로 러닝 경로 자동 생성하기",
+    "url": "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Simon Willison이 ChatGPT Work와 GPT-6 Astra(Max)를 활용해 집 주소를 입력하는 것만으로 5K·10K 러닝 루트를 자동 생성했다. 에이전트는 Nominatim으로 주소를 찾고, Overpass API로 OpenStreetMap 도로 데이터를 내려받아 루프 경로를 계산한 뒤, 지도 시각화(HTML/D3)와 GPX·GeoJSON 파일을 함께 생성했다. 다만 실행된 Python 코드가 대화 컴팩션으로 인해 소실되는 투명성 문제가 발견됐으며, 저자는 컴팩션 이전 텍스트 보존을 LLM 시스템의 필수 요건으로 지적했다.",
+    "why_it_matters": "GPT-6 Astra 기반 에이전트가 외부 API와 지리 데이터를 결합해 실용적인 결과물을 자율 생성할 수 있음을 보여주는 동시에, 에이전트 투명성·컴팩션 문제라는 현실적 한계도 드러낸다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7139599867724868,
+    "published_at": "2026-09-12T23:56:42Z"
+  }
+]
