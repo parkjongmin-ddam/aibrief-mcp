@@ -1,0 +1,361 @@
+[
+  {
+    "id": "hf-2609.11929",
+    "section": "papers",
+    "title_en": "SenseNova-U1.5: Towards Native Unified Visual Intelligence",
+    "title_ko": "SenseNova-U1.5: 인코더·VAE 없는 8B 통합 멀티모달 모델 공개",
+    "url": "https://huggingface.co/papers/2609.11929",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SenseNova-U1.5는 인코더와 VAE 없이 시각 콘텐츠의 이해·추론·생성을 하나의 아키텍처에서 처리하는 8B MoT 기반 네이티브 통합 멀티모달 모델이다. 최대 4K 해상도를 지원하며, 이중 언어 텍스트 렌더링·인포그래픽 생성·이미지 편집 등 특화 전문가 모듈을 다중 전문가 온폴리시 증류로 통합했다. 지도 미세조정, 강화학습, 온폴리시 증류를 포함한 학습 코드를 오픈소스로 공개할 예정이다.",
+    "why_it_matters": "인코더·VAE 없는 완전 엔드투엔드 멀티모달 프레임워크의 가능성을 8B 규모에서 입증하며, 관련 학습 코드 전체를 오픈소스로 제공한다는 점에서 연구·개발 저변 확대에 기여할 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 6.517452896464707,
+    "published_at": "2026-09-09T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.11115",
+    "section": "papers",
+    "title_en": "Benchmark Radar: A Living Database and Search Engine for AI Benchmarks and Evaluation",
+    "title_ko": "Benchmark Radar: AI 벤치마크 검색·발견을 위한 살아있는 데이터베이스",
+    "url": "https://huggingface.co/papers/2609.11115",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Benchmark Radar는 LLM 평가, 에이전트·도구 사용, 코딩, 추론, 안전성 등 다양한 AI 벤치마크를 수집·검색할 수 있는 라이브 데이터베이스 및 검색 엔진이다. 37개 소스(직접 커넥터 13개, 자체 연구 피드 24개)를 통해 매일 벤치마크 논문·저장소·데이터셋을 자동 수집하며, 현재 1,283개 소스 레코드와 790개 레코드에 대한 12,916개의 수치 관측값을 보유하고 있다. 벤치마크 리더보드, 파레토 프론티어 뷰, 포화도·트렌드 분석, CLI 등 다양한 도구를 오픈 웹 대시보드 형태로 제공한다.",
+    "why_it_matters": "AI 평가 설계 시 중복·포화된 벤치마크를 피하고 적합한 선행 평가를 체계적으로 탐색할 수 있는 공개 인프라가 생겼다는 점에서 연구자와 개발자 모두에게 실질적인 가치를 제공한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.356708826689592,
+    "published_at": "2026-09-09T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.12641",
+    "section": "papers",
+    "title_en": "Breaking the Vision-Action Shortcut: Latent Interface Training for Generalizable Robotics Foundation Models",
+    "title_ko": "시각-행동 단축키 제거: 로봇 기반 모델의 일반화를 위한 잠재 인터페이스 학습(LIT)",
+    "url": "https://huggingface.co/papers/2609.12641",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "로봇 기반 모델은 훈련 분포 내에서는 강력한 성능을 보이지만, 시각적 분포 변화에 취약한 '시각-행동 단축키' 문제가 있다. 이를 해결하기 위해 제안된 LIT(Latent Interface Training)는 2단계 전략으로, 1단계에서는 이미지 없이 공간적 목표 조건 기반 행동 사전(prior)을 학습하고, 2단계에서는 포즈 감독 잠재 인터페이스를 통해 시각적 조건화를 제한한다. Pi0.5, MolmoAct2 등 4가지 아키텍처에서 LIBERO-Plus 성공률을 최대 10.70%p 향상시켰으며, 실제 환경에서도 미지의 카메라 구성·조명 변화·방해물 조건 하에 최대 16.70%p 성능 향상을 달성했다.",
+    "why_it_matters": "시각적 환경 변화에 취약한 로봇 기반 모델의 핵심 약점을 구조적으로 해결해 실제 배포 가능성을 크게 높이는 범용 프레임워크다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 5.1588830833596715,
+    "published_at": "2026-09-10T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.13141",
+    "section": "papers",
+    "title_en": "SAS: Simple Attention Sparsification via End-to-End Optimization of Context Ranking",
+    "title_ko": "SAS: 언어 모델 손실로 어텐션 희소화를 엔드투엔드 최적화하는 기법",
+    "url": "https://huggingface.co/papers/2609.13141",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SAS(Simple Attention Sparsification)는 사전학습된 트랜스포머의 어텐션 비용을 줄이기 위해 컨텍스트 유닛 선택을 언어 모델링 손실과 함께 엔드투엔드로 최적화하는 기법이다. 기존 방법들은 Top-K 선택 시 그래디언트가 차단되어 실제 예측 영향력과 랭킹이 불일치하는 문제가 있었다. SAS는 선택기의 연속 점수를 어텐션 로짓에 직접 주입해 표준 역전파로 업데이트하며, 메모리 효율적인 Triton 커널로 FlashAttention 방식의 긴 시퀀스 학습도 지원한다. 추론, 장문 이해, 에이전틱 태스크 전반에서 기존 희소 어텐션 기준선을 일관되게 상회하며, 특히 제한된 어텐션 버짓 환경에서 큰 성능 향상을 보인다.",
+    "why_it_matters": "긴 컨텍스트 처리의 이차 비용을 실질적으로 줄이면서도 예측 성능을 유지할 수 있어, 장문 LLM 추론 효율화에 직접적인 영향을 미친다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.931825632724326,
+    "published_at": "2026-09-10T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.11317",
+    "section": "papers",
+    "title_en": "Mi-Ripple: Restoring Images Degraded by Iterative AI Editing",
+    "title_ko": "Mi-Ripple: 반복적 AI 편집으로 손상된 이미지 복원 워크플로우",
+    "url": "https://huggingface.co/papers/2609.11317",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "반복적인 레퍼런스 기반 이미지 편집 시 발생하는 격자형·입자형 텍스처(디지털 리플) 문제를 해결하는 Mi-Ripple을 소개한다. 이 워크플로우는 주기적 격자 아티팩트와 콘텐츠에 얽힌 입자 텍스처를 분리한 뒤, 선택적 스펙트럼 노칭, 구조 인식 스무딩, 정제된 레퍼런스 재생성을 결합한다. 14회 노칭 실행에서 CIELAB 명도 기준 잔차 표준편차는 0.08~0.44였으며, 쌍 재생성 예시에서는 레퍼런스 정제로 출력 잡음 밀도가 45% 감소했다.",
+    "why_it_matters": "생성형 이미지 반복 편집 시 누적되는 아티팩트를 스펙트럼 점수 최적화가 아닌 시각적 품질 복원 중심으로 해결한다는 점에서 실용적 의미가 크다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.912023005428146,
+    "published_at": "2026-09-09T20:00:00Z"
+  },
+  {
+    "id": "google_blog-dialogues-christina-koch",
+    "section": "releases",
+    "title_en": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+    "title_ko": "우주비행사 크리스티나 코크와 구글 제임스 마니카의 대담: 우주·기술·탐험",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "우주비행사 크리스티나 코크가 구글의 리서치·기술·사회 담당 수석 부사장 제임스 마니카와 대화를 나눴다. 두 사람은 우주, 기술, 그리고 발견이라는 주제를 중심으로 이야기를 나눈다.",
+    "why_it_matters": "AI·기술 리더와 우주 탐험가의 대담으로, 기술과 인간 탐구의 접점을 엿볼 수 있는 자리다.",
+    "tags": [],
+    "score": 0.8273826058201058,
+    "published_at": "2026-09-14T19:00:00Z"
+  },
+  {
+    "id": "google_blog-devfest2026",
+    "section": "releases",
+    "title_en": "DevFest is back",
+    "title_ko": "DevFest 2026 개최 예정 발표",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "Google Developer Groups(GDG)가 주최하는 개발자 축제 DevFest가 돌아온다. 2026년 DevFest 참가를 독려하는 공식 발표가 구글 블로그를 통해 게재되었다.",
+    "why_it_matters": "GDG DevFest는 전 세계 개발자들이 모이는 대규모 커뮤니티 행사로, 국내 개발자들에게도 참여 기회가 열릴 수 있다.",
+    "tags": [],
+    "score": 0.8095254629629629,
+    "published_at": "2026-09-14T16:00:00Z"
+  },
+  {
+    "id": "openai_blog-fyxer",
+    "section": "releases",
+    "title_en": "How Fyxer built an AI executive assistant people trust",
+    "title_ko": "Fyxer, 사용자 신뢰를 얻은 AI 임원 비서 구축 방법",
+    "url": "https://openai.com/index/fyxer",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Fyxer는 OpenAI 모델과 파인튜닝, 메모리 기능, 실제 사용자 피드백을 활용해 받은 편지함을 정리하고 각 사용자의 문체로 이메일 초안을 작성하는 AI 임원 비서를 구축했다. 사용자 개개인의 목소리를 반영한 이메일 작성이 핵심 차별점이다.",
+    "why_it_matters": "파인튜닝과 메모리를 결합해 개인화된 AI 비서를 실제 서비스로 구현한 사례로, 업무 자동화 AI 제품 개발에 실질적인 인사이트를 제공한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7857159391534392,
+    "published_at": "2026-09-14T12:00:00Z"
+  },
+  {
+    "id": "github_trending-tech-leads-club/agent-skills",
+    "section": "releases",
+    "title_en": "tech-leads-club/agent-skills",
+    "title_ko": "AI 코딩 에이전트용 보안 검증 스킬 레지스트리 'Agent Skills'",
+    "url": "https://github.com/tech-leads-club/agent-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Agent Skills는 Claude Code, Cursor, GitHub Copilot 등 주요 AI 코딩 에이전트를 확장할 수 있는 검증된 스킬(플러그인) 레지스트리입니다. 오픈 마켓플레이스의 스킬 중 13.4%가 보안 취약점을 포함한다는 점에 착안해, 모든 스킬을 정적 분석·Snyk Agent Scan 등으로 검증하고 100% 오픈소스로 제공합니다. npx 명령 하나로 대화형 설치 마법사를 실행할 수 있으며, MCP 서버를 통해 AI 에이전트가 직접 스킬 카탈로그를 탐색·설치하는 것도 지원합니다.",
+    "why_it_matters": "AI 코딩 에이전트 확장 시 보안 위협이 현실화되는 상황에서, 검증된 스킬만 제공하는 중앙 레지스트리는 개발팀의 안전한 에이전트 활용 기반이 된다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7476917989417989,
+    "published_at": "2026-09-14T05:36:43Z"
+  },
+  {
+    "id": "github_trending-asgeirtj/system_prompts_leaks",
+    "section": "releases",
+    "title_en": "asgeirtj/system_prompts_leaks",
+    "title_ko": "주요 AI 챗봇 시스템 프롬프트 유출 모음집",
+    "url": "https://github.com/asgeirtj/system_prompts_leaks",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude, ChatGPT, Gemini, Grok 등 주요 AI 챗봇이 첫 메시지 전 받는 숨겨진 시스템 프롬프트를 수집해 공개하는 GitHub 저장소다. Anthropic, OpenAI, Google, xAI, Meta, Microsoft 등 다양한 업체의 최신 모델 프롬프트가 포함되어 있으며 정기적으로 업데이트된다. Washington Post 등 주요 언론에서도 이 저장소의 자료를 활용한 바 있다.",
+    "why_it_matters": "AI 제품의 실제 동작 방식을 규정하는 시스템 프롬프트를 직접 확인할 수 있어, 프롬프트 엔지니어링 및 AI 투명성 연구에 핵심 참고 자료가 된다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7476917989417989,
+    "published_at": "2026-09-14T05:36:43Z"
+  },
+  {
+    "id": "github_trending-multimodal-art-projection/YuE",
+    "section": "releases",
+    "title_en": "multimodal-art-projection/YuE",
+    "title_ko": "YuE2: 심볼릭 플래닝 기반 오픈소스 음악 생성 모델",
+    "url": "https://github.com/multimodal-art-projection/YuE",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "YuE2는 가사와 스타일 프롬프트를 입력받아 멜로디·코드 악보를 먼저 생성한 뒤 보컬과 반주가 포함된 완성곡을 만드는 음악 생성 모델이다. WildSongBench 192개 프롬프트 평가에서 best-of-8 설정 기준 SongBench Avg 6.9632로 Suno v5/v6 등 상용 서비스를 앞섰다. 제로샷 커버, 에이전트 기반 편집, 악보 직접 수정 등 화이트박스 방식의 창작 흐름을 지원하며, 코드와 모델 가중치가 공개되어 있다.",
+    "why_it_matters": "Suno 등 상용 음악 생성 서비스와 대등한 품질을 오픈소스로 구현하면서, 악보를 통한 투명한 편집·에이전트 연동이 가능해 음악 AI 개발 생태계에 실질적인 대안을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7476917989417989,
+    "published_at": "2026-09-14T05:36:43Z"
+  },
+  {
+    "id": "github_trending-SnailSploit/Claude-Red",
+    "section": "releases",
+    "title_en": "SnailSploit/Claude-Red",
+    "title_ko": "Claude-Red: Claude를 레드팀 전문가로 만드는 공격적 보안 스킬 라이브러리",
+    "url": "https://github.com/SnailSploit/Claude-Red",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "claude-red는 Claude의 스킬 시스템에 드롭인 방식으로 사용할 수 있는 공격적 보안 스킬 모음(SKILL.md 파일)이다. SQL 인젝션, EDR 우회, 익스플로잇 개발, Active Directory 공격 등 23개 카테고리에 걸쳐 78개 스킬을 제공하며, 대화 트리거 기반으로 필요한 스킬만 자동 로드된다. 레드팀 참여, 버그바운티, CTF 준비, 보안 연구 등 인가된 용도를 대상으로 설계되었다.",
+    "why_it_matters": "Claude를 도메인 특화 레드팀 오퍼레이터로 즉시 전환할 수 있는 구조화된 스킬 프레임워크로, AI 기반 공격 보안 연구의 활용 범위와 방식을 넓힌다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7476917989417989,
+    "published_at": "2026-09-14T05:36:43Z"
+  },
+  {
+    "id": "hn-49701004",
+    "section": "community",
+    "title_en": "iOS 27, iPadOS 27, and macOS 27",
+    "title_ko": "iOS 27, iPadOS 27, macOS 27 발표",
+    "url": "https://www.apple.com/newsroom/2026/09/major-updates-for-apples-software-platforms-are-now-available/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "애플이 iOS 27, iPadOS 27, macOS 27을 공개했다. 세부 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "애플의 주요 OS 업데이트로 개발자 대응이 필요할 수 있다.",
+    "tags": [],
+    "score": 9.751456072785636,
+    "published_at": "2026-09-14T17:50:29Z"
+  },
+  {
+    "id": "hn-49695876",
+    "section": "community",
+    "title_en": "OpenAI bots knew about the RubyGems caching vulnerability",
+    "title_ko": "OpenAI 봇, RubyGems 캐싱 취약점 사전 인지 의혹",
+    "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "OpenAI의 봇이 RubyGems의 캐싱 취약점에 대해 알고 있었다는 내용이 제기됐다. 구체적인 경위나 세부 사항은 제공된 정보만으로 확인하기 어렵다.",
+    "why_it_matters": "AI 크롤러 봇이 보안 취약점 정보를 수집하거나 노출할 수 있다는 점에서 보안 우려를 야기한다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 9.745114939464468,
+    "published_at": "2026-09-14T12:40:57Z"
+  },
+  {
+    "id": "hn-49700477",
+    "section": "community",
+    "title_en": "Pion, an agent designed to run any company autonomously",
+    "title_ko": "Pion: 회사 전체를 자율적으로 운영하는 에이전트",
+    "url": "https://andonlabs.com/blog/why-we-built-pion",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Pion은 회사를 자율적으로 운영하도록 설계된 AI 에이전트다. 제공된 정보가 제목뿐이어서 구체적인 기능이나 기술 세부사항은 확인하기 어렵다.",
+    "why_it_matters": "기업 운영 전반을 자율화하는 에이전트 개념으로, AI의 실제 비즈니스 적용 가능성을 탐색하는 사례다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 9.428525515117617,
+    "published_at": "2026-09-14T17:16:06Z"
+  },
+  {
+    "id": "hn-49696453",
+    "section": "community",
+    "title_en": "People who can't picture anything are rewriting the science of imagination",
+    "title_ko": "머릿속에 아무것도 그릴 수 없는 사람들이 상상력 과학을 다시 쓰고 있다",
+    "url": "https://dailyneuron.com/aphantasia-mental-imagery-brain-network/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "일부 사람들은 머릿속에 이미지를 전혀 떠올리지 못하는 '아판타시아(Aphantasia)' 상태를 가지고 있다. 이들에 대한 연구가 상상력과 시각적 사고의 과학적 이해를 근본적으로 재정립하고 있다.",
+    "why_it_matters": "인간의 상상력과 인지 구조에 대한 기존 통념을 뒤흔드는 연구로, AI의 시각적 표현 및 인지 모델 설계에도 시사점을 줄 수 있다.",
+    "tags": [],
+    "score": 7.9307808682197365,
+    "published_at": "2026-09-14T13:23:53Z"
+  },
+  {
+    "id": "hn-49703003",
+    "section": "community",
+    "title_en": "GPT-5.6 Luna vs. GPT-6 Astra: Is a $1.20 Model Good Enough for Code Review?",
+    "title_ko": "GPT-5.6 Luna vs. GPT-6 Astra: 코드 리뷰에 $1.20 모델로 충분한가?",
+    "url": "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GPT-5.6 Luna와 GPT-6 Astra를 코드 리뷰 용도로 비교한 글이다. 저가 모델인 $1.20 수준의 모델이 고성능 모델 대비 코드 리뷰에서 충분한 성능을 발휘하는지를 다룬다.",
+    "why_it_matters": "비용 대비 성능이 중요한 코드 리뷰 자동화 도구 선택에 실질적인 판단 기준을 제공할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 7.89606773852387,
+    "published_at": "2026-09-14T19:56:20Z"
+  },
+  {
+    "id": "youtube-vmzKqn5GOaw",
+    "section": "video",
+    "title_en": "AI뉴스 - AI 멈추지 않으면 다 죽는다, OpenAI 밀레니엄 난제 해결, Images 2.5, Google ARTEMIS, AlphaGenome Atlas 등",
+    "title_ko": "AI 멈추지 않으면 다 죽는다 — OpenAI 밀레니엄 난제 해결, Images 2.5, Google ARTEMIS 등 주간 AI 뉴스",
+    "url": "https://www.youtube.com/watch?v=vmzKqn5GOaw",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "이번 주 AI 뉴스에서는 다리오 아모데이 앤트로픽 CEO의 'AI 발전 속도를 늦춰야 한다'는 경고와 앤트로픽 연구원의 자기개선형 초지능 위험성 지적이 화제가 됐습니다. OpenAI는 수학계 난제인 나비에-스토크스 방정식 해법을 제시했으며, ChatGPT Images 2.5·GPT-Live-1 API·Agents API 등 새로운 기능도 공개했습니다. 구글은 ARTEMIS와 AlphaGenome Atlas를 선보였고, Unitree 휴머노이드 파운데이션 모델 오픈소스 공개 등 로봇 분야 소식도 이어졌습니다.",
+    "why_it_matters": "AI 안전성 논쟁과 동시에 OpenAI·Google·Meta 등 빅테크의 신규 모델·API·로봇 기술이 한꺼번에 쏟아지며 AI 개발 경쟁이 전방위로 가속화되고 있음을 보여주는 한 주였습니다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8006316137566137,
+    "published_at": "2026-09-14T14:30:21Z"
+  },
+  {
+    "id": "youtube-l7frz_bd5vM",
+    "section": "video",
+    "title_en": "IT뉴스 - 초파리 열풍, OpenAI 밀레니엄 난제 해결, Images 2.5, AI의 발전 속도를 늦춰야하나, Google ARTEMIS, AlphaGenome Atlas 등",
+    "title_ko": "IT 뉴스: 초파리 열풍·OpenAI 밀레니엄 난제 도전·Images 2.5·Google ARTEMIS·AlphaGenome Atlas 등",
+    "url": "https://www.youtube.com/watch?v=l7frz_bd5vM",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "최근 AI 업계 주요 소식을 한데 모은 영상으로, OpenAI의 밀레니엄 수학 난제 관련 성과, 이미지 생성 모델 Images 2.5, Google의 ARTEMIS 및 AlphaGenome Atlas 등 다양한 발표가 다뤄진다. 또한 AI 발전 속도를 늦춰야 하는지에 대한 논쟁도 포함되어 있다.",
+    "why_it_matters": "한 주간 쏟아진 굵직한 AI 발표들을 한국어로 한번에 정리해 주어 국내 개발자의 정보 접근성을 높인다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.6410697751322751,
+    "published_at": "2026-09-13T11:41:58Z"
+  },
+  {
+    "id": "youtube-aV2mjr0x_Rw",
+    "section": "video",
+    "title_en": "E-Book에 돈을 쓸 필요가 없는 이유",
+    "title_ko": "E-Book을 무료로 구할 수 있는 이유",
+    "url": "https://www.youtube.com/shorts/aV2mjr0x_Rw",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 E-Book에 돈을 쓸 필요가 없다는 주제의 영상을 공개했습니다. 영상은 바이브 코딩 및 AI 관련 내용을 다루며, 조코딩의 1인 창업 관련 책 및 AX 컨설팅 서비스도 함께 소개하고 있습니다.",
+    "why_it_matters": "AI·코딩 학습 비용을 줄이고 싶은 개발자에게 무료 E-Book 활용법을 제시한다는 점에서 실용적 관심을 끌 수 있습니다.",
+    "tags": [],
+    "score": 0.35121362433862424,
+    "published_at": "2026-09-11T11:00:13Z"
+  },
+  {
+    "id": "simon_willison-the-contagion-of-fear",
+    "section": "deepdive",
+    "title_en": "The contagion of fear",
+    "title_ko": "AI 공포의 전염: 근거 없는 종말론적 주장에 대한 경고",
+    "url": "https://simonwillison.net/2026/Sep/14/the-contagion-of-fear/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "전직 Anthropic 직원 Jacob Coxon이 많은 Anthropic 연구자들이 AI가 '10년 안에 인류를 멸종시킬 수 있다'고 믿는다고 트윗한 것에 대해, Bryan Cantrill이 비판적인 글을 게재했다. Cantrill은 AI 전문가라 해도 핵심 인프라, 생물무기, 멸종 생물학 등 전문 외 분야에 대해 근거 없는 공포를 조장해서는 안 된다고 경고한다. 특히 생물무기 위협 주장이 구체적 근거 없이 상상력에 의존한 공포를 부추긴다고 지적한다.",
+    "why_it_matters": "AI 안전 담론에서 전문가의 책임 있는 발언이 중요하며, 근거 없는 종말론적 주장이 공공의 신뢰를 남용할 수 있다는 점에서 AI 윤리 논의의 핵심 쟁점을 건드린다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8410945767195768,
+    "published_at": "2026-09-14T21:18:13Z"
+  }
+]
