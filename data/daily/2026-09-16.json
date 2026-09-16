@@ -1,0 +1,367 @@
+[
+  {
+    "id": "hf-2609.15818",
+    "section": "papers",
+    "title_en": "Atria Dawn: The Dawn of Agentic Superintelligence",
+    "title_ko": "Atria Dawn: 에이전틱 초지능의 새벽",
+    "url": "https://huggingface.co/papers/2609.15818",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Atria Dawn Preview는 과학 연구 및 엔지니어링 워크플로우를 위한 기반 에이전틱 언어 모델로, 16개 벤치마크 중 5개에서 최고 점수를 기록하며 프론티어 에이전트들과 경쟁력 있는 성능을 보였다. 검증 가능한 경험 파이프라인(Verifiable Experience Pipeline)을 통해 도구 기반 상호작용과 실행 환경, 외부 검증 결과를 연결해 훈련되었다. 56명 참가자의 769개 작업 기록 분석 결과, AI 보조 완료 작업의 약 1/3이 AI 없이는 불가능했다고 평가되었으며, 에이전트는 방법 제안 및 수정을 주로 담당하고 인간은 최종 결정과 연구 방향 설정에 집중하는 협업 구조가 확인됐다.",
+    "why_it_matters": "AI 에이전트가 연구개발의 실질적 파트너로 부상하면서 인간-AI 협업의 역할 분담과 감독 체계가 어떻게 재편될지를 실증적으로 제시한 사례다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 6.91350300563827,
+    "published_at": "2026-09-13T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.13356",
+    "section": "papers",
+    "title_en": "ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search",
+    "title_ko": "ZGCM-1: 수학·에이전틱 검색을 위한 완전 오픈 7B 기반 모델",
+    "url": "https://huggingface.co/papers/2609.13356",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "ZGCM-1은 처음부터 학습된 완전 오픈소스 7B 밀집 모델로, 내부 추론과 외부 도구 사용을 결합해 소형 모델의 파라메트릭 한계를 극복하는 것을 핵심 목표로 한다. 256K 컨텍스트를 지원하며, 인터리브드 슬라이딩 윈도우·풀 어텐션, FP8 Muon 옵티마이저, MDP 기반 미드트레이닝 등 효율적인 학습 레시피를 적용했다. 수학적 추론 및 에이전틱 검색 벤치마크에서 Qwen3-235B-A22B 등 훨씬 큰 프론티어 모델과 경쟁력 있는 성능을 보이며, 16K 사전학습 시간 대비 손실 기준 약 4.2배 효율 개선을 달성했다. 사전·중간·사후 학습 가중치, 중간 체크포인트, 학습 코드, 데이터 레시피, W&B 로그까지 전면 오픈소스로 공개한다.",
+    "why_it_matters": "7B 소형 모델이 에이전트 검색과 수학 추론에서 초대형 모델과 경쟁하면서도 학습 전 과정을 완전 공개해, 오픈소스 AI 연구의 재현성과 효율성 기준을 한 단계 높인다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 6.676753802268282,
+    "published_at": "2026-09-10T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.14858",
+    "section": "papers",
+    "title_en": "Dream-RSI: Recursive Self-Improvement through Evolving Worlds",
+    "title_ko": "Dream-RSI: 진화하는 월드를 통한 재귀적 자기개선 프레임워크",
+    "url": "https://huggingface.co/papers/2609.14858",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Dream-RSI는 자율 AI 에이전트의 탐색 전략을 재귀적으로 개선하는 프레임워크다. 핵심 아이디어는 누적된 발견 이력을 리플레이 시뮬레이터로 활용해, 비용이 큰 온라인 평가 없이 오프폴리시 피드백으로 탐색 정책을 빠르게 개선하는 것이다. 알고리즘 엔지니어링, 수학적 최적화, GPU 커널 엔지니어링 등 다양한 도메인에서 발견 품질을 유지하거나 향상시키면서 탐색 비용을 크게 절감했다.",
+    "why_it_matters": "탐색 비용 없이 AI 에이전트가 스스로 탐색 전략을 개선하는 루프를 구현해, 대규모 자율 에이전트의 실용적 확장 가능성을 높인다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 6.572154032177765,
+    "published_at": "2026-09-13T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.14973",
+    "section": "papers",
+    "title_en": "PhysBrain 1.5: From Vision-Language Models to Physical Foundation Models",
+    "title_ko": "PhysBrain 1.5: 비전-언어 모델에서 물리적 기반 모델로",
+    "url": "https://huggingface.co/papers/2609.14973",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "PhysBrain 1.5는 물리적 환경 이해, 행동 생성, 미래 상태 예측을 통합한 8B 파라미터 모델이다. 언어 응답, 엔드이펙터 모션, 시각적 타겟을 이산 시퀀스로 인코딩하고 자기회귀 방식으로 공동 최적화한다. 28개의 구현 이해 벤치마크에서 평균 72.5점을 기록하며 오픈소스 최고 성능을 달성했고, 14개 벤치마크에서 오픈소스 최고 결과를 냈다. GPT-6-Astra, Gemini 3.6 Flash 등 주요 상용 모델과 동등한 수준의 성능을 보인다.",
+    "why_it_matters": "오픈소스 모델이 로봇·구현 AI 분야에서 상용 최고 수준 모델과 경쟁하는 새로운 기준을 제시했다는 점에서 중요하다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 6.135798437050262,
+    "published_at": "2026-09-13T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.15364",
+    "section": "papers",
+    "title_en": "RSIAgent: Autonomous Exploration for Recursive Self-improvement in New Environments",
+    "title_ko": "RSIAgent: 새로운 환경에서 재귀적 자기개선을 위한 자율 탐색 프레임워크",
+    "url": "https://huggingface.co/papers/2609.15364",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "RSIAgent는 학습 없이(training-free) 동작하는 멀티에이전트 프레임워크로, 새로운 환경에 자율적으로 적응하기 위해 재귀적 자기개선을 수행합니다. 커리큘럼·액터·검증 에이전트가 협력하여 환경을 탐색하고 인과 관계 등 환경 특화 지식을 메모리에 축적하며, 이 메모리는 모델 파라미터 업데이트 없이 다운스트림 작업에 바로 재사용됩니다. OSWorld-v2 및 Agent's Last Exam 실험에서 Kimi-K3, GLM-5.3 등 오픈소스 모델이 GPT-6을 포함한 최신 클로즈드소스 모델을 능가하는 성과를 보였습니다.",
+    "why_it_matters": "모델 재학습 없이 새로운 환경에 빠르게 적응하는 에이전트 프레임워크로, 오픈소스 모델이 최신 클로즈드소스 모델을 뛰어넘는 실용적 경쟁력을 입증했다는 점에서 주목할 만합니다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 5.060443010546419,
+    "published_at": "2026-09-13T20:00:00Z"
+  },
+  {
+    "id": "google_blog-ai-for-societal-impact",
+    "section": "releases",
+    "title_en": "AI for Societal Impact",
+    "title_ko": "사회적 영향을 위한 AI: 전문가들의 활용 사례",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글이 AI 기술이 사회 전반에 미치는 긍정적 영향을 조명하는 컬렉션을 공개했다. 전문가와 지역 리더들이 AI 혁신을 활용해 모든 사람이 AI의 기회를 누릴 수 있도록 노력하는 사례를 소개한다.",
+    "why_it_matters": "AI 기술의 사회적 형평성 확대와 포용적 활용 방향을 구체적 사례로 확인할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8095254629629629,
+    "published_at": "2026-09-15T16:00:00Z"
+  },
+  {
+    "id": "google_blog-ai-applications-science-people",
+    "section": "releases",
+    "title_en": "Building AI to accelerate science and improve lives",
+    "title_ko": "AI로 과학 발전과 삶의 질 향상을 가속화하는 구글의 노력",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글이 AI를 활용해 과학 발전을 가속화하고 사람들의 삶을 개선하려는 방향성을 소개하는 콘텐츠다. 교실 속 교사와 학생, 환자와 의사 등 다양한 현장 모습을 담고 있다.",
+    "why_it_matters": "구글이 교육·의료 등 실생활 분야에서 AI 활용을 확대하는 전략적 방향을 시사한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8095254629629629,
+    "published_at": "2026-09-15T16:00:00Z"
+  },
+  {
+    "id": "google_blog-ai-for-every-language",
+    "section": "releases",
+    "title_en": "AI for everyone in every language",
+    "title_ko": "모든 언어로 모두를 위한 AI",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "Google이 다양한 언어를 지원하는 AI 접근성 확대 이니셔티브를 발표했다. 여러 언어로 AI 혜택을 누릴 수 있도록 하는 것이 핵심 목표다.",
+    "why_it_matters": "언어 장벽 없이 AI를 활용할 수 있는 포용적 AI 생태계 구축 방향을 제시한다는 점에서 주목할 만하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8095254629629629,
+    "published_at": "2026-09-15T16:00:00Z"
+  },
+  {
+    "id": "google_blog-ai-economy-atlas-september-2026",
+    "section": "releases",
+    "title_en": "New insights from Google’s AI & Economy ATLAS",
+    "title_ko": "구글 AI & 경제 아틀라스의 새로운 인사이트 공개",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/ai-economy-atlas-september-2026/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글이 AI와 경제의 관계를 분석한 'AI & Economy Atlas v1.0 2026'을 공개했다. 이 보고서는 AI가 경제에 미치는 영향을 종합적으로 정리한 자료로 보인다.",
+    "why_it_matters": "구글이 AI와 경제 전반의 관계를 정리한 공식 보고서로, AI 산업 동향 파악에 참고할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7916683201058201,
+    "published_at": "2026-09-15T13:00:00Z"
+  },
+  {
+    "id": "github_trending-multimodal-art-projection/YuE",
+    "section": "releases",
+    "title_en": "multimodal-art-projection/YuE",
+    "title_ko": "YuE2: 심볼릭 플래닝 기반 프론티어급 오픈소스 음악 생성 모델",
+    "url": "https://github.com/multimodal-art-projection/YuE",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "YuE2는 가사와 스타일 프롬프트를 입력하면 멜로디·코드 악보를 먼저 생성한 뒤, 이를 보컬과 반주가 포함된 완성곡으로 구현하는 음악 생성 모델이다. WildSongBench 192개 프롬프트 평가에서 best-of-8 설정 기준 SongBench Avg 6.9632를 기록해 Suno v5/v6 등 상용 모델을 앞섰다. 제로샷 커버 생성, 에이전트를 통한 대화형 악보 편집 기능도 제공하며, 코드는 Apache 2.0, 모델 가중치는 CC BY-NC 4.0으로 공개됐다.",
+    "why_it_matters": "Suno 등 상용 서비스에 필적하는 품질을 오픈소스로 달성하면서 악보 단계에서의 직접 편집·에이전트 연동까지 지원해 AI 음악 생성 연구와 응용의 폭을 크게 넓힌다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7478091931216931,
+    "published_at": "2026-09-15T05:37:54Z"
+  },
+  {
+    "id": "github_trending-Panniantong/Agent-Reach",
+    "section": "releases",
+    "title_en": "Panniantong/Agent-Reach",
+    "title_ko": "Agent Reach: AI 에이전트에 인터넷 접근 능력을 부여하는 오픈소스 CLI 도구",
+    "url": "https://github.com/Panniantong/Agent-Reach",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Agent Reach는 AI 에이전트가 Twitter, Reddit, YouTube, GitHub, Bilibili, 소홍서(小红书) 등 주요 플랫폼을 API 비용 없이 읽고 검색할 수 있도록 해주는 오픈소스 CLI 도구입니다. 각 플랫폼마다 '첫 번째 선택 + 대안' 방식의 다중 백엔드 라우팅을 제공하며, 플랫폼 차단이나 API 변경 시 사용자 개입 없이 자동으로 대체 경로로 전환됩니다. 설치는 AI 에이전트에게 설치 URL을 전달하는 한 줄 명령으로 완료되며, `agent-reach doctor` 명령으로 각 채널 상태를 진단할 수 있습니다.",
+    "why_it_matters": "API 비용 없이 주요 소셜 플랫폼에 접근 가능한 에이전트 인프라를 제공해, AI 에이전트의 실용적 인터넷 활용 범위를 크게 확장시킨다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.7478091931216931,
+    "published_at": "2026-09-15T05:37:54Z"
+  },
+  {
+    "id": "github_trending-asgeirtj/system_prompts_leaks",
+    "section": "releases",
+    "title_en": "asgeirtj/system_prompts_leaks",
+    "title_ko": "주요 AI 챗봇 시스템 프롬프트 유출 모음 (Claude, ChatGPT, Gemini, Grok 등)",
+    "url": "https://github.com/asgeirtj/system_prompts_leaks",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic Claude, OpenAI ChatGPT, Google Gemini, xAI Grok 등 주요 AI 서비스의 숨겨진 시스템 프롬프트를 수집·공개하는 GitHub 저장소입니다. Claude Fable 5.1, GPT-6-Astra Codex, Gemini 3.8 Flash 등 최신 모델의 프롬프트가 포함되어 있으며 정기적으로 업데이트됩니다. The Washington Post 등 주요 미디어에서도 이 저장소의 데이터를 활용한 바 있습니다.",
+    "why_it_matters": "AI 서비스가 사용자에게 보여주지 않는 내부 지침을 직접 확인할 수 있어, LLM 동작 원리 이해와 프롬프트 엔지니어링 연구에 핵심 참고 자료가 됩니다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7478091931216931,
+    "published_at": "2026-09-15T05:37:54Z"
+  },
+  {
+    "id": "hn-49717558",
+    "section": "community",
+    "title_en": "Introducing System One Models and Jev",
+    "title_ko": "System One 모델과 Jev 소개",
+    "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "System One 모델과 Jev가 새롭게 공개되었다. 제공된 정보가 충분하지 않아 상세한 내용은 확인이 필요하다.",
+    "why_it_matters": "새로운 AI 모델 및 도구 출시 소식으로, 추가 정보 확인이 권장된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.190429249757706,
+    "published_at": "2026-09-15T19:25:03Z"
+  },
+  {
+    "id": "hn-49710253",
+    "section": "community",
+    "title_en": "Suspected sabotage causes major Netherlands rail disruption",
+    "title_ko": "네덜란드 철도 대규모 운행 장애, 파괴 공작 의심",
+    "url": "https://www.bbc.com/news/articles/c8ly49w9g1edo",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "네덜란드 철도 시스템에 심각한 운행 장애가 발생했으며, 파괴 공작이 원인으로 의심되고 있다.",
+    "why_it_matters": "AI와 직접적인 관련은 없으나, 핵심 인프라에 대한 물리적 공격 위협을 상기시키는 사례다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 10.014693779039646,
+    "published_at": "2026-09-15T10:22:46Z"
+  },
+  {
+    "id": "hn-49704132",
+    "section": "community",
+    "title_en": "A single firm is behind OpenAI, Anthropic, and Meta hacking scandals",
+    "title_ko": "한 기업이 OpenAI, Anthropic, Meta 해킹 스캔들 배후에 있다",
+    "url": "https://www.effort.news/irregular",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "OpenAI, Anthropic, Meta와 관련된 해킹 스캔들 뒤에 단일 기업이 있다는 보도가 제기됐다. 구체적인 수법이나 피해 규모 등 세부 내용은 제공된 정보만으로는 확인되지 않는다.",
+    "why_it_matters": "주요 AI 기업 세 곳을 동시에 겨냥한 단일 위협 주체의 존재는 AI 업계 전반의 보안 리스크를 시사한다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.568081243076477,
+    "published_at": "2026-09-14T21:15:01Z"
+  },
+  {
+    "id": "hn-49710109",
+    "section": "community",
+    "title_en": "Let's make quality the norm again",
+    "title_ko": "품질을 다시 표준으로 만들자",
+    "url": "https://www.forbrukerradet.no/short-life/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "제목만으로는 구체적인 내용을 파악하기 어렵습니다. 소프트웨어 또는 제품 개발에서 품질 기준을 회복하자는 주제를 다루는 글로 보입니다.",
+    "why_it_matters": "품질 저하가 업계 전반의 문제로 인식되는 가운데, 개발 문화와 기준에 대한 성찰을 촉구하는 내용으로 추정됩니다.",
+    "tags": [],
+    "score": 9.523436055354956,
+    "published_at": "2026-09-15T10:00:16Z"
+  },
+  {
+    "id": "hn-49715947",
+    "section": "community",
+    "title_en": "Gemini 3.8 Live and 3.8 Live Extended Thinking",
+    "title_ko": "Gemini 3.8 Live 및 3.8 Live Extended Thinking 출시",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "구글이 Gemini 3.8 Live와 Extended Thinking 기능을 공개했다. Extended Thinking은 모델이 응답 전 더 깊이 추론하는 기능으로 추정된다.",
+    "why_it_matters": "구글 Gemini의 실시간 추론 기능 확장은 LLM 경쟁 구도에 영향을 줄 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.205889837802868,
+    "published_at": "2026-09-15T17:38:18Z"
+  },
+  {
+    "id": "youtube-MwCEDOa8c20",
+    "section": "video",
+    "title_en": "🚨 앤트로픽 개발자가 퇴사하며 털어놓은 충격 고백",
+    "title_ko": "앤트로픽 전직 개발자의 충격적인 내부 고백",
+    "url": "https://www.youtube.com/shorts/MwCEDOa8c20",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "앤트로픽 출신 개발자가 퇴사 후 내부에서 경험한 내용을 털어놓은 영상입니다. 영상은 조코딩 채널에서 AI의 위험성과 관련된 경고 메시지를 다루고 있습니다. 구체적인 내용은 영상 본편을 통해 확인할 수 있습니다.",
+    "why_it_matters": "AI 최전선 기업 내부자의 경고는 업계의 안전성과 개발 방향에 대한 실질적인 시사점을 제공할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7830489417989418,
+    "published_at": "2026-09-15T11:33:07Z"
+  },
+  {
+    "id": "youtube--vdvA0A_6Jg",
+    "section": "video",
+    "title_en": "초파리 : 죽여줘...",
+    "title_ko": "초파리 뇌 시뮬레이션 관련 AI 이야기",
+    "url": "https://www.youtube.com/shorts/-vdvA0A_6Jg",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널의 영상으로, 초파리와 뇌 시뮬레이션을 주제로 한 AI 관련 콘텐츠다. 바이브 코딩 및 1인 창업 책 출간과 AX 컨설팅 교육 등 다양한 활동도 함께 소개된다.",
+    "why_it_matters": "description에 구체적인 내용이 없어 핵심 내용 파악이 어려우나, 초파리 뇌 시뮬레이션이라는 AI·생물학 교차 주제를 다루는 콘텐츠로 보인다.",
+    "tags": [],
+    "score": 0.7678753306878308,
+    "published_at": "2026-09-15T09:00:10Z"
+  },
+  {
+    "id": "youtube-TKWPuVuJD_8",
+    "section": "video",
+    "title_en": "밀레니엄 난제를 해결해버린 오픈AI ㄷㄷ",
+    "title_ko": "오픈AI가 밀레니엄 난제를 풀었다?",
+    "url": "https://www.youtube.com/shorts/TKWPuVuJD_8",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "유튜브 채널 조코딩에서 오픈AI가 밀레니엄 난제를 해결했다는 주제를 다룬 영상이다. 구체적인 내용은 영상 본편에서 다루고 있으며, 관련 정보는 제공된 설명만으로는 확인하기 어렵다.",
+    "why_it_matters": "밀레니엄 난제는 수학계 최고 난제로, 오픈AI의 관련 성과가 사실이라면 AI 연구의 역사적 이정표가 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7530406746031746,
+    "published_at": "2026-09-15T06:30:38Z"
+  },
+  {
+    "id": "simon_willison-gemini-live",
+    "section": "deepdive",
+    "title_en": "Gemini Live audio",
+    "title_ko": "Gemini 3.8 Live 출시 및 브라우저 기반 음성 대화 도구 공개",
+    "url": "https://simonwillison.net/2026/Sep/15/gemini-live/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Google이 음성-음성(speech-to-speech) 모델인 Gemini 3.8 Live와 3.8 Live Extended Thinking을 출시했다. Simon Willison은 이를 즉시 활용해 라이브러리 없이 WebSocket과 Web Audio API만으로 브라우저에서 바로 사용할 수 있는 음성 대화 UI를 직접 제작해 공개했다. 이 도구는 모델 및 음성 프리셋 선택, 시스템 프롬프트 입력, 발화 중단(interrupt) 기능 등을 지원한다.",
+    "why_it_matters": "OpenAI GPT-Live에 대응하는 Google의 실시간 음성 AI 모델이 공개되면서, 브라우저만으로 구현 가능한 구체적인 예시 코드까지 제공돼 개발자가 바로 실험해볼 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.8499140211640211,
+    "published_at": "2026-09-15T22:47:07Z"
+  }
+]
