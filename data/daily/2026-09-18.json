@@ -1,0 +1,368 @@
+[
+  {
+    "id": "hf-2609.16679",
+    "section": "papers",
+    "title_en": "AI for Games in the Foundation Model Era",
+    "title_ko": "파운데이션 모델 시대의 게임 AI 종합 정리",
+    "url": "https://huggingface.co/papers/2609.16679",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "파운데이션 모델과 학습된 게임 월드 모델의 발전이 게임 전 생애주기에 걸친 AI 활용 방식을 재편하고 있다. 이 연구는 게임 AI의 역할을 플레이·행동, 플레이어/게임 모델링, 게임 디자인, 개발·유지보수, 런타임 생성·적응, 테스트·평가 등 6가지로 분류하고 문헌을 체계적으로 정리한다. 각 역할 간 연결고리(예: 궤적으로 월드 모델 학습, 디자인 명세에서 실행 코드 생성 등)를 규명하면서도, 제어 방식·규칙·엔진 인터페이스 등은 여전히 설정 특화적이어서 다른 환경에 적용 시 별도 검증이 필요하다고 강조한다.",
+    "why_it_matters": "게임 AI 연구의 분산된 흐름을 하나의 프레임워크로 통합해, 어떤 역량이 범용적으로 전이되고 어떤 것이 특정 게임에 종속되는지를 명확히 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.736198448394496,
+    "published_at": "2026-09-14T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.17488",
+    "section": "papers",
+    "title_en": "LimiX-2: A Contextual Mechanism Network Towards General Structured-Data Intelligence",
+    "title_ko": "LimiX-2: 구조적 데이터 지능을 위한 맥락적 메커니즘 네트워크",
+    "url": "https://huggingface.co/papers/2609.17488",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LimiX-2는 LimiX 패밀리의 새로운 모델로, 맥락적 메커니즘 네트워크(CMN) 패러다임을 채택하고 구조적 인과 모델(SCM)로 생성된 합성 데이터셋으로 사전학습되었다. 기존 테이블형 PFN의 p(y|x, D) 목표 대신 p(x, y|D) 공동 구조 학습을 중심으로 설계되었다. TabArena, TALENT, BCCO 벤치마크에서 기존 데이터셋별 모델 및 테이블형 파운데이션 모델을 능가하며, 인과 골격 복원도 가능하다.",
+    "why_it_matters": "테이블 데이터에 특화된 파운데이션 모델이 예측 성능뿐 아니라 인과 관계 추론까지 지원한다는 점에서 실무 데이터 분석 패러다임 전환 가능성을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.663439094112067,
+    "published_at": "2026-09-14T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.19134",
+    "section": "papers",
+    "title_en": "ScienceIDE: Turning World's Scientific Codebase into Agent Learnable Environments",
+    "title_ko": "ScienceIDE: 전 세계 과학 코드베이스를 AI 에이전트 학습 환경으로 변환",
+    "url": "https://huggingface.co/papers/2609.19134",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "ScienceIDE는 수십 년간 축적된 과학 코드 저장소를 AI 에이전트가 학습할 수 있는 프로그래머블 환경으로 전환하는 인프라다. 전문가가 정의한 과학적 케이스와 수용 기준을 바탕으로, 에이전트가 저장소를 실행 가능한 환경으로 변환해 태스크 생성·실행·검증을 지원한다. 이를 통해 학습된 PhAI-IDE-72B/9B/4B 모델 패밀리는 과학 코드 수정 및 코드·추론·지식 벤치마크에서 성능 향상을 보였으며, 과학적 경험이 범용 능력으로 전이됨을 입증했다.",
+    "why_it_matters": "과학 코드 저장소 전체를 에이전트 학습 기반으로 활용하는 체계적 인프라를 제시함으로써, 과학 도메인 특화 AI 개발의 새로운 패러다임을 제안한다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "인프라"
+    ],
+    "score": 5.2626798770413155,
+    "published_at": "2026-09-15T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.18708",
+    "section": "papers",
+    "title_en": "Rethinking Critic Learning in PPO: Understanding and Mitigating Value Flattening",
+    "title_ko": "PPO 크리틱 학습의 'Value Flattening' 문제 규명 및 해결책 SP³O 제안",
+    "url": "https://huggingface.co/papers/2609.18708",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LLM 강화학습에서 PPO 크리틱이 중간 상태의 가치를 실제보다 평탄하게 예측하는 'Value Flattening' 현상이 발견됐다. 이는 크리틱 손실의 암묵적 분산 패널티와 시간적으로 상관된 상태들의 중복 업데이트에서 기인한다. 이를 해결하기 위해 각 응답에서 간격이 넓은 소수의 상태에만 가치 손실을 적용하는 SP³O를 제안했으며, Qwen3-Base 실험에서 응답당 3개 상태만으로도 성능이 일관되게 향상됐다.",
+    "why_it_matters": "LLM RLHF에서 표준 PPO의 간과된 크리틱 실패 원인을 밝히고 간단한 희소 지도 방식으로 이를 개선할 수 있음을 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.110873864173311,
+    "published_at": "2026-09-15T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.17708",
+    "section": "papers",
+    "title_en": "Confidence Comes from Experience: Experiential Confidence Estimation from Reasoning to Agents",
+    "title_ko": "경험 기반 신뢰도 추정: XConf로 추론부터 에이전트까지",
+    "url": "https://huggingface.co/papers/2609.17708",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "XConf(eXperiential Confidence)는 현재 추론 과정만 보는 기존 신뢰도 추정 방식과 달리, 모델이 과거에 수행한 유사 태스크의 성공/실패 기록을 활용해 신뢰도를 추정한다. 과거 에피소드를 검색(Recall)하고 반성(Reflect)하는 두 단계로 구성되며, 로짓 접근이나 가중치 업데이트 없이 단 한 번의 추론 생성으로 동작한다. 9개 벤치마크·4개 모델 실험에서 10샘플 자기일관성 대비 24개 중 23개 비교에서 AUROC를 같거나 높이면서 ECE(보정 오차)는 낮추고 비용은 10분의 1로 줄였다. 에이전트 태스크에서 신뢰도 하위 10% 에피소드를 기권 처리하면 성공률이 최대 8.7포인트 상승했다.",
+    "why_it_matters": "LLM·에이전트의 출력 신뢰도를 저비용으로 정밀하게 측정할 수 있어 실서비스 배포 판단(통과/에스컬레이션/재시도)에 직접 활용 가능하다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "RAG"
+    ],
+    "score": 4.891820298110627,
+    "published_at": "2026-09-14T20:00:00Z"
+  },
+  {
+    "id": "google_blog-google-un-data-commons-platform",
+    "section": "releases",
+    "title_en": "Making global data easier to explore",
+    "title_ko": "UN 시스템 데이터 커먼즈: 글로벌 데이터 탐색을 더 쉽게",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글이 UN 시스템 데이터 커먼즈(UN System Data Commons)를 소개하며 글로벌 데이터를 보다 쉽게 탐색할 수 있는 방법을 공유했다. 이 이니셔티브는 UN의 방대한 데이터를 누구나 접근하고 활용할 수 있도록 지원하는 것을 목표로 한다.",
+    "why_it_matters": "UN의 글로벌 데이터를 구조화·개방해 연구자와 개발자가 더 쉽게 활용할 수 있는 기반이 마련된다는 점에서 의미 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.8333349867724867,
+    "published_at": "2026-09-17T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-cooley-gopublic",
+    "section": "releases",
+    "title_en": "How Cooley is accelerating IPO work with ChatGPT",
+    "title_ko": "쿨리 로펌, ChatGPT로 IPO 업무 가속화",
+    "url": "https://openai.com/index/cooley-gopublic",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "글로벌 로펌 쿨리(Cooley)는 ChatGPT를 활용해 'GO Public'이라는 IPO 전용 도구를 구축했다. 이 도구는 변호사들이 IPO 과정에서 잠재적 이슈를 더 빠르게 파악하고, 판단이 필요한 핵심 업무에 집중할 수 있도록 지원한다.",
+    "why_it_matters": "법률 업계의 고부가가치 업무인 IPO 프로세스에 LLM이 실제 도입된 사례로, AI의 전문직 활용 가능성을 보여주는 구체적 예시다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7857159391534392,
+    "published_at": "2026-09-17T12:00:00Z"
+  },
+  {
+    "id": "github_trending-anthropics/knowledge-work-plugins",
+    "section": "releases",
+    "title_en": "anthropics/knowledge-work-plugins",
+    "title_ko": "Anthropic, Claude용 지식 근로자 플러그인 11종 오픈소스 공개",
+    "url": "https://github.com/anthropics/knowledge-work-plugins",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 Claude Cowork 및 Claude Code와 호환되는 지식 근로자용 플러그인 11종을 오픈소스로 공개했습니다. 영업, 마케팅, 법무, 재무, 데이터 분석, 생물의학 연구 등 직무별 플러그인이 포함되며, Slack·Notion·Jira·Snowflake 등 주요 업무 도구와 MCP를 통해 연동됩니다. 플러그인은 마크다운과 JSON 파일로 구성되어 코드 없이 커스터마이징 가능하며, 슬래시 커맨드와 자동 실행 스킬을 지원합니다.",
+    "why_it_matters": "Anthropic이 직접 설계한 직무 특화 플러그인을 오픈소스로 공개함으로써, 기업이 Claude를 자사 워크플로우에 빠르게 통합하고 확장할 수 있는 실질적인 기반이 마련됐습니다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7479381613756614,
+    "published_at": "2026-09-17T05:39:12Z"
+  },
+  {
+    "id": "github_trending-anthropics/claude-code",
+    "section": "releases",
+    "title_en": "anthropics/claude-code",
+    "title_ko": "Anthropic의 터미널 기반 에이전트 코딩 도구 'Claude Code' 공개",
+    "url": "https://github.com/anthropics/claude-code",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code는 터미널에서 동작하는 에이전트형 코딩 도구로, 자연어 명령만으로 코드 설명, 루틴 작업 실행, Git 워크플로우 처리 등을 지원한다. macOS/Linux/Windows 모두 지원하며, 공식 설치 스크립트 또는 Homebrew·WinGet을 통해 설치할 수 있다. IDE 내 사용은 물론 GitHub에서 @claude를 태그하는 방식으로도 활용 가능하며, 플러그인을 통해 기능 확장도 지원한다.",
+    "why_it_matters": "Anthropic이 직접 공개한 터미널 네이티브 AI 코딩 에이전트로, 개발 워크플로우 전반을 자연어로 자동화할 수 있어 실무 도입 가능성이 높다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.7479381613756614,
+    "published_at": "2026-09-17T05:39:12Z"
+  },
+  {
+    "id": "github_trending-SnailSploit/Claude-Red",
+    "section": "releases",
+    "title_en": "SnailSploit/Claude-Red",
+    "title_ko": "Claude-Red: Claude를 레드팀 오퍼레이터로 변환하는 공격적 보안 스킬 라이브러리",
+    "url": "https://github.com/SnailSploit/Claude-Red",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude-Red는 Claude의 스킬 시스템에 적용할 수 있는 78개의 공격적 보안 스킬(SKILL.md 파일) 모음입니다. SQL 인젝션, EDR 우회, 익스플로잇 개발, 무선 해킹, 클라우드 공격 등 23개 카테고리를 포괄합니다. 대화 맥락에 따라 해당 스킬이 자동 로드되어 Claude가 도메인 전문가처럼 동작하며, 승인된 레드팀 업무·버그바운티·CTF 등의 용도를 명시하고 있습니다.",
+    "why_it_matters": "Claude 스킬 시스템을 활용해 AI를 문맥 인식형 레드팀 오퍼레이터로 전환하는 구조화된 프레임워크로, AI와 공격적 보안의 결합 방식을 잘 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7479381613756614,
+    "published_at": "2026-09-17T05:39:12Z"
+  },
+  {
+    "id": "github_trending-multimodal-art-projection/YuE",
+    "section": "releases",
+    "title_en": "multimodal-art-projection/YuE",
+    "title_ko": "YuE2: 심볼릭 플래닝 기반 프론티어급 음악 생성 오픈소스 모델",
+    "url": "https://github.com/multimodal-art-projection/YuE",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "YuE2는 가사와 스타일 프롬프트를 입력하면 멜로디·코드 악보를 자동으로 생성한 뒤 보컬과 반주가 포함된 완성된 곡을 만들어주는 음악 생성 모델이다. WildSongBench 192개 프롬프트 평가에서 best-of-8 설정 기준 SongBench Avg 6.9632로 Suno v5/v6, Mureka 9 등 상용 서비스를 제치고 최고 점수를 기록했다. 제로샷 커버 생성, 에이전트 기반 악보 편집 기능을 제공하며, 모델 가중치는 CC BY-NC 4.0(창작자 추가 허용), 코드는 Apache 2.0으로 공개되어 있다. Linux 환경에서 24GB VRAM NVIDIA GPU로 구동 가능하다.",
+    "why_it_matters": "오픈소스 음악 생성 모델이 Suno 등 상용 서비스 수준의 품질에 도달하면서, 개발자가 직접 편집 가능한 악보 기반의 화이트박스 음악 생성 파이프라인을 구축할 수 있게 됐다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7479381613756614,
+    "published_at": "2026-09-17T05:39:12Z"
+  },
+  {
+    "id": "github_trending-addyosmani/agent-skills",
+    "section": "releases",
+    "title_en": "addyosmani/agent-skills",
+    "title_ko": "AI 코딩 에이전트를 위한 프로덕션급 엔지니어링 스킬 모음 'agent-skills'",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Addy Osmani가 공개한 'agent-skills'는 AI 코딩 에이전트가 소프트웨어 개발의 전 과정(명세→계획→구현→검증→리뷰→배포)에서 시니어 엔지니어 수준의 워크플로우를 일관되게 따르도록 설계된 25개의 구조화된 스킬 팩이다. `/spec`, `/plan`, `/build`, `/test`, `/review`, `/ship` 등 9개의 슬래시 명령어로 각 단계를 활성화하며, Google 엔지니어링 문화(Hyrum's Law, Beyonce Rule, trunk-based development 등)에서 검증된 원칙들이 워크플로우에 직접 내장되어 있다. Claude Code, Cursor, Codex, GitHub Copilot 등 70개 이상의 AI 에이전트 도구에 `npx skills add` 명령어 하나로 설치할 수 있다.",
+    "why_it_matters": "AI 코딩 에이전트가 스펙·테스트·보안 리뷰를 건너뛰는 문제를 구조화된 강제 워크플로우로 해결해, 프로토타입 수준이 아닌 프로덕션 품질의 코드 생성을 유도한다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7479381613756614,
+    "published_at": "2026-09-17T05:39:12Z"
+  },
+  {
+    "id": "hn-49737922",
+    "section": "community",
+    "title_en": "How GLM built its own inference infrastructure",
+    "title_ko": "GLM이 자체 추론 인프라를 구축한 방법",
+    "url": "https://z.ai/blog/glm-built-its-inference-infrastructure",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GLM이 자체 추론 인프라를 어떻게 구축했는지에 관한 내용이다. 상세한 설명은 제공되지 않아 구체적인 기술 내용은 확인하기 어렵다.",
+    "why_it_matters": "자체 추론 인프라 구축 경험은 LLM 서비스 운영을 고려하는 팀에게 실질적인 참고 사례가 될 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 9.687622051715918,
+    "published_at": "2026-09-17T08:27:09Z"
+  },
+  {
+    "id": "hn-49745940",
+    "section": "community",
+    "title_en": "Astra for Law",
+    "title_ko": "법률 분야를 위한 Astra",
+    "url": "https://openai.com/index/astra-for-law/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Astra의 법률 분야 특화 서비스가 소개되었다. 제공된 정보가 제한적이어서 세부 기능이나 내용은 확인하기 어렵다.",
+    "why_it_matters": "법률 분야에 특화된 AI 서비스로, 법조계의 AI 도입 동향을 보여줄 수 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 9.400767935524062,
+    "published_at": "2026-09-17T20:17:48Z"
+  },
+  {
+    "id": "hn-49737787",
+    "section": "community",
+    "title_en": "CCC invites all model citizens to 40C3",
+    "title_ko": "CCC, 40C3 행사에 모든 '모범 시민'을 초대하다",
+    "url": "https://events.ccc.de/en/2026/09/12/40c3-model-citizens/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "카오스 컴퓨터 클럽(CCC)이 40C3 행사 참가자를 모집하고 있다. 제목만으로는 구체적인 세부 사항을 확인하기 어렵다.",
+    "why_it_matters": "유럽 최대 해커 컨퍼런스 CCC의 행사 소식으로, 보안 및 기술 커뮤니티 관심사.",
+    "tags": [],
+    "score": 9.378035037184167,
+    "published_at": "2026-09-17T08:03:54Z"
+  },
+  {
+    "id": "hn-49740260",
+    "section": "community",
+    "title_en": "The American Religion of Self-Storage Facilities",
+    "title_ko": "미국의 '셀프 스토리지' 문화, 하나의 종교처럼 자리잡다",
+    "url": "https://www.newyorker.com/magazine/2026/09/21/the-american-religion-of-self-storage-facilities",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "제목만으로는 구체적인 내용을 확인할 수 없으나, 미국의 셀프 스토리지 시설 문화를 종교적 현상에 빗대어 분석하는 글로 보인다. 미국에서 셀프 스토리지 산업이 얼마나 깊이 일상에 파고들었는지를 다루는 것으로 추정된다.",
+    "why_it_matters": "AI와 직접적인 연관성이 낮은 문화·사회 분석 콘텐츠로, 개발자 독자에게 변별력 있는 인사이트를 제공하기 어렵다.",
+    "tags": [],
+    "score": 9.083457574015435,
+    "published_at": "2026-09-17T13:12:28Z"
+  },
+  {
+    "id": "hn-49746163",
+    "section": "community",
+    "title_en": "Bend – A language that blocks AI mistakes via proof, on CPU and GPU",
+    "title_ko": "Bend – CPU·GPU에서 AI 실수를 증명으로 차단하는 언어",
+    "url": "https://bend-lang.com/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Bend는 AI의 오류를 형식 증명(proof)을 통해 방지하도록 설계된 프로그래밍 언어입니다. CPU와 GPU 모두에서 동작하며, 코드의 정확성을 수학적으로 보장하는 것을 목표로 합니다.",
+    "why_it_matters": "AI가 생성한 코드의 신뢰성 문제를 형식 검증으로 근본적으로 해결하려는 시도로, AI 코딩 도구의 안전성 향상에 중요한 시사점을 제공한다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 8.89436421690077,
+    "published_at": "2026-09-17T20:36:13Z"
+  },
+  {
+    "id": "youtube-2pMB34RXAaQ",
+    "section": "video",
+    "title_en": "다시 반격을 시작한 딥시크 ㄷㄷ",
+    "title_ko": "딥시크, 다시 반격 시작?",
+    "url": "https://www.youtube.com/shorts/2pMB34RXAaQ",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "유튜브 채널 조코딩에서 딥시크(DeepSeek)의 최근 동향을 다룬 영상이 공개됐다. 영상은 딥시크가 다시 주목받는 움직임을 보이고 있다는 내용을 담고 있는 것으로 보인다.",
+    "why_it_matters": "중국 AI 모델 딥시크의 재부상은 글로벌 AI 경쟁 구도에 영향을 줄 수 있어 주목할 필요가 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7798164682539683,
+    "published_at": "2026-09-17T11:00:32Z"
+  },
+  {
+    "id": "youtube-UXbGIQt0Jsk",
+    "section": "video",
+    "title_en": "사람보다 휴대폰을 더 잘쓰는 AI 등장",
+    "title_ko": "스마트폰을 사람보다 더 잘 다루는 AI 등장",
+    "url": "https://www.youtube.com/shorts/UXbGIQt0Jsk",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "구글의 새로운 AI가 스마트폰 조작에서 사람보다 뛰어난 성능을 보인다는 내용을 다룬 영상이다. 조코딩 채널에서 해당 AI(아르테미스 관련)를 소개하고 있다. 구체적인 벤치마크나 기술 세부사항은 영상 설명에 포함되지 않았다.",
+    "why_it_matters": "AI가 모바일 기기를 자율적으로 제어하는 수준이 사람을 넘어선다면, 에이전트 기반 자동화의 실용화가 크게 앞당겨질 수 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7738227513227514,
+    "published_at": "2026-09-17T10:00:07Z"
+  },
+  {
+    "id": "youtube-obmT608yBOg",
+    "section": "video",
+    "title_en": "API 개발할 때 조심해야 하는 이유",
+    "title_ko": "API 개발 시 주의해야 할 이유",
+    "url": "https://www.youtube.com/shorts/obmT608yBOg",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 API 개발 시 조심해야 할 사항을 다루는 영상입니다. 구체적인 내용은 영상 본편에서 확인할 수 있으며, 개발자 및 1인 창업자를 대상으로 한 실용적인 정보를 제공합니다.",
+    "why_it_matters": "API 개발 실수는 보안·장애·비용 문제로 직결될 수 있어 개발자라면 반드시 숙지해야 할 주제다.",
+    "tags": [],
+    "score": 0.7678968253968255,
+    "published_at": "2026-09-17T09:00:23Z"
+  },
+  {
+    "id": "simon_willison-targeted-attacks-on-rustaceans",
+    "section": "deepdive",
+    "title_en": "Be alert: targeted attacks on prominent Rustaceans",
+    "title_ko": "Rust 개발자를 노린 표적 공격 경보",
+    "url": "https://simonwillison.net/2026/Sep/17/targeted-attacks-on-rustaceans/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Rust 언어 팀과 인기 크레이트 소유자를 대상으로 악성코드 유포를 위한 표적 공격 캠페인이 진행 중이다. 공격자는 취업·프로젝트·계약 등 긍정적인 명목으로 화상 통화를 유도한 뒤, 가짜 오디오 코덱 설치나 클립보드 명령 실행 등으로 기기를 침해한다. 지난달 이 수법으로 arrayref 크레이트에 대한 공급망 공격이 실제로 성공했다. 대응책으로 새 패키지 릴리스를 며칠간 관망하는 '의존성 쿨다운' 방식이 제안되고 있다.",
+    "why_it_matters": "오픈소스 생태계 전체가 공급망 공격에 취약하며, Rust 커뮤니티를 직접 겨냥한 사회공학 기반 공격이 실제 피해를 낳고 있어 모든 개발자가 경계해야 한다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 0.8570767195767196,
+    "published_at": "2026-09-17T23:59:19Z"
+  }
+]
