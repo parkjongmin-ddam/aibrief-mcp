@@ -1,0 +1,371 @@
+[
+  {
+    "id": "hf-2609.17488",
+    "section": "papers",
+    "title_en": "LimiX-2: A Contextual Mechanism Network Towards General Structured-Data Intelligence",
+    "title_ko": "LimiX-2: 구조적 데이터 지능을 위한 맥락적 메커니즘 네트워크",
+    "url": "https://huggingface.co/papers/2609.17488",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LimiX-2는 LimiX 패밀리의 신규 모델로, 맥락적 메커니즘 네트워크(CMN) 패러다임과 컨텍스트 조건부 마스킹 모델링(CCMM)을 기반으로 사전 학습되었다. 기존 테이블형 PFN이 p(y|x, D_context) 목표 중심인 것과 달리, 데이터 생성의 결합 구조를 학습하는 p(x, y|D_context)를 중심으로 설계되었다. TabArena, TALENT, BCCO 벤치마크에서 기존 데이터셋별 모델 및 테이블형 파운데이션 모델을 능가하는 성능을 보였으며, 인과 관계 인식 능력도 갖추고 있다.",
+    "why_it_matters": "테이블형 데이터에 특화된 파운데이션 모델이 예측 성능과 인과 구조 파악 능력을 동시에 달성한 점에서 정형 데이터 AI 연구의 새로운 방향을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 6.71042701737487,
+    "published_at": "2026-09-14T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.19969",
+    "section": "papers",
+    "title_en": "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression",
+    "title_ko": "DeepSeek-V4.1-Flash: KV 캐시 압축의 한계를 밀어붙이다",
+    "url": "https://huggingface.co/papers/2609.19969",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "DeepSeek-V4.1-Flash는 5520억 파라미터(활성화: 디코딩 시 160억, 프리필 시 80억)를 갖춘 멀티모달 MoE 모델로, 최대 100만 토큰 컨텍스트를 지원한다. CSA2(Compressed Sparse Attention 2)와 FP4 KV 캐싱을 결합해 글로벌 KV 캐시 풋프린트를 토큰당 890바이트로 줄여, 이전 버전(DeepSeek-V4-Flash) 대비 약 1/4 수준을 달성했다. SWA Bounded Replay 최적화를 통해 영구 KV 캐시 풋프린트도 이전 버전의 약 1/8로 축소하면서도 성능은 오히려 향상되었으며, 45조 토큰 멀티모달 코퍼스로 사전학습을 완료했다.",
+    "why_it_matters": "장기 에이전트 워크로드의 핵심 병목인 KV 캐시의 HBM·SSD 부담을 획기적으로 줄여 대규모 LLM 배포 비용 절감에 직접적인 돌파구를 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "인프라"
+    ],
+    "score": 5.564348191467836,
+    "published_at": "2026-09-16T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.18323",
+    "section": "papers",
+    "title_en": "Can MiniMax-H3 Reason About the Physical World? An Evaluation of Omni-Modal Generative Model",
+    "title_ko": "MiniMax-H3는 물리적 세계를 추론할 수 있을까? 옴니-모달 생성 모델 평가",
+    "url": "https://huggingface.co/papers/2609.18323",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "MiniMax-H3는 텍스트, 이미지, 비디오, 오디오를 통합 모델링하는 옴니-모달 생성 모델이다. 본 연구는 물리적 세계 추론 능력을 4가지 차원(암묵적 프롬프트+다중 프레임, 오디오-이미지, 프리픽스 비디오, 오디오-비디오)으로 평가하는 새로운 프레임워크를 제안한다. 517개 평가 인스턴스에서 MiniMax-H3의 전체 성공률은 41.97%로, 비디오 기반 의사결정 추론(56.00%)이 가장 높고 오디오 기반 모호성 해소 추론(27.40%)이 가장 낮았다. 결과는 다양한 입력 모달리티를 완전히 활용하려면 효과적인 멀티모달 통합이 핵심임을 시사한다.",
+    "why_it_matters": "옴니-모달 AI 모델의 실제 세계 추론 능력을 체계적으로 측정하는 새로운 평가 기준을 제시해, 멀티모달 모델의 한계와 개선 방향을 명확히 한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.543294782270004,
+    "published_at": "2026-09-15T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.20511",
+    "section": "papers",
+    "title_en": "When EOS Tokens Disagree: Understanding Length Inflation in On-Policy Distillation",
+    "title_ko": "EOS 토큰 불일치가 유발하는 온-폴리시 증류의 응답 길이 팽창 문제 분석",
+    "url": "https://huggingface.co/papers/2609.20511",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "온-폴리시 증류(OPD)에서 학생 모델의 응답이 지나치게 길어지는 '길이 팽창' 현상을 연구한 논문이다. Qwen3, Llama, Gemma 모델 패밀리에서 베이스 학생 모델과 사후 학습된 교사 모델이 동일한 종료 토큰 집합을 선언했음에도 서로 다른 EOS 토큰에 종료 확률을 집중시키는 '종료 토큰 불일치'를 핵심 원인으로 규명했다. 기능적으로 동등한 EOS 토큰을 공유된 의미론적 종료 액션으로 처리하면 길이 팽창이 크게 완화되나, 이것만으로는 모든 문제가 해결되지 않음도 확인했다. 해당 수정 사항을 반영한 구현체를 공개했다.",
+    "why_it_matters": "LLM 증류 과정에서 발생하는 응답 길이 팽창의 메커니즘을 구체적으로 규명해, 효율적인 소형 모델 훈련에 실질적 개선 방향을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.343805421853684,
+    "published_at": "2026-09-16T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.19134",
+    "section": "papers",
+    "title_en": "ScienceIDE: Turning World's Scientific Codebase into Agent Learnable Environments",
+    "title_ko": "ScienceIDE: 전 세계 과학 코드베이스를 에이전트 학습 환경으로 전환",
+    "url": "https://huggingface.co/papers/2609.19134",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "ScienceIDE는 수십 년간 축적된 과학 코드 저장소를 AI 에이전트가 학습할 수 있는 프로그래머블 환경으로 변환하는 인프라다. 전문가가 정의한 과학적 케이스와 수용 기준을 바탕으로 에이전트가 저장소를 실행 가능한 환경으로 구성하며, 지도 학습·강화 학습·평가를 위한 공통 기반을 제공한다. 이를 활용해 PhAI-IDE-72B, 9B, 4B 모델을 훈련했으며, 과학 코드 수정 및 코딩·추론·지식 벤치마크에서 성능 향상을 확인했다.",
+    "why_it_matters": "인류의 과학 소프트웨어 자산을 AI 에이전트 학습의 공유 기반으로 체계화함으로써, 과학 분야 특화 AI 개발의 새로운 패러다임을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "인프라"
+    ],
+    "score": 5.31748811353631,
+    "published_at": "2026-09-15T20:00:00Z"
+  },
+  {
+    "id": "github_trending-anthropics/claude-code",
+    "section": "releases",
+    "title_en": "anthropics/claude-code",
+    "title_ko": "Anthropic의 터미널 기반 에이전틱 코딩 도구 'Claude Code' 공개",
+    "url": "https://github.com/anthropics/claude-code",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code는 터미널에서 동작하는 에이전틱 코딩 도구로, 자연어 명령을 통해 코드베이스를 이해하고 반복 작업 수행, 복잡한 코드 설명, Git 워크플로 처리 등을 지원한다. MacOS, Linux, Windows 모두 지원하며 curl 스크립트나 Homebrew, WinGet 등으로 설치할 수 있다. 터미널, IDE, GitHub(@claude 태그)에서 사용 가능하며 플러그인을 통해 기능 확장도 지원한다.",
+    "why_it_matters": "Anthropic이 직접 공개한 공식 에이전틱 코딩 CLI 도구로, 개발자가 자연어만으로 코드 작업 전반을 자동화할 수 있는 새로운 개발 패러다임을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7458465608465609,
+    "published_at": "2026-09-19T05:18:07Z"
+  },
+  {
+    "id": "github_trending-addyosmani/agent-skills",
+    "section": "releases",
+    "title_en": "addyosmani/agent-skills",
+    "title_ko": "AI 코딩 에이전트를 위한 프로덕션급 엔지니어링 스킬 팩 'agent-skills'",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "addyosmani/agent-skills는 AI 코딩 에이전트가 소프트웨어 개발 전 주기(정의→계획→구현→검증→리뷰→배포)에서 시니어 엔지니어 수준의 워크플로를 일관되게 따르도록 설계된 25개 스킬 모음이다. `/spec`, `/plan`, `/build`, `/test`, `/review`, `/ship` 등 9개의 슬래시 커맨드로 진입하며, Claude Code, Cursor, Codex, GitHub Copilot 등 70개 이상의 에이전트에 `npx skills add` 한 줄로 설치할 수 있다. Google의 소프트웨어 엔지니어링 문화(Hyrum's Law, Beyonce Rule, Chesterton's Fence 등)를 각 스킬 워크플로에 직접 내재화했으며, 각 스킬은 단계별 절차, 검증 게이트, 안티-합리화 테이블로 구성된다.",
+    "why_it_matters": "AI 에이전트가 스펙·테스트·보안 검토를 건너뛰는 기본 동작을 구조화된 강제 워크플로로 제어해, 프로토타입 수준을 넘어 프로덕션 품질의 코드를 생산할 수 있게 한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7458465608465609,
+    "published_at": "2026-09-19T05:18:07Z"
+  },
+  {
+    "id": "github_trending-Fission-AI/OpenSpec",
+    "section": "releases",
+    "title_en": "Fission-AI/OpenSpec",
+    "title_ko": "OpenSpec: AI 코딩 어시스턴트를 위한 스펙 주도 개발 프레임워크",
+    "url": "https://github.com/Fission-AI/OpenSpec",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "OpenSpec은 AI 코딩 어시스턴트와 함께 사용하는 경량 스펙 주도 개발(SDD) 프레임워크다. `/opsx:propose`, `/opsx:apply`, `/opsx:archive` 등의 슬래시 커맨드를 통해 코드 작성 전 AI와 요구사항을 합의하고 구조화된 변경 계획을 관리할 수 있다. 30개 이상의 AI 도구(Cursor, GitHub Copilot, Amazon Q 등)를 지원하며, MIT 라이선스 오픈소스로 npm을 통해 설치할 수 있다.",
+    "why_it_matters": "AI 코딩 어시스턴트의 예측 불가능성을 줄이기 위해 코드 작성 전 스펙 합의를 강제하는 워크플로를 표준화한다는 점에서, AI 기반 개발 생산성과 품질 관리에 실질적인 변화를 줄 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7458465608465609,
+    "published_at": "2026-09-19T05:18:07Z"
+  },
+  {
+    "id": "github_trending-anthropics/knowledge-work-plugins",
+    "section": "releases",
+    "title_en": "anthropics/knowledge-work-plugins",
+    "title_ko": "Anthropic, 지식 근로자용 Claude 플러그인 11종 오픈소스 공개",
+    "url": "https://github.com/anthropics/knowledge-work-plugins",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 Claude Cowork 및 Claude Code와 연동되는 업무용 플러그인 11종을 오픈소스로 공개했다. 영업·마케팅·법무·재무·데이터 분석·바이오 연구 등 직군별 플러그인으로 구성되며, Slack·Notion·HubSpot·Snowflake 등 다양한 외부 툴과 MCP 서버를 통해 연결된다. 플러그인은 마크다운과 JSON 파일로만 이루어져 별도 코드나 인프라 없이 커스터마이징이 가능하며, 슬래시 커맨드와 자동 발동 스킬 기능을 지원한다.",
+    "why_it_matters": "기업이 Claude를 자사 도구·프로세스·용어에 맞게 직접 커스터마이징하여 팀 전용 AI 전문가로 만들 수 있는 실용적인 오픈소스 플러그인 생태계가 공식 제공된다는 점에서 주목할 만하다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7458465608465609,
+    "published_at": "2026-09-19T05:18:07Z"
+  },
+  {
+    "id": "github_trending-supermemoryai/supermemory",
+    "section": "releases",
+    "title_en": "supermemoryai/supermemory",
+    "title_ko": "Supermemory: AI를 위한 메모리·컨텍스트 엔진",
+    "url": "https://github.com/supermemoryai/supermemory",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Supermemory는 AI 에이전트와 앱에 영구 메모리를 부여하는 오픈소스 엔진으로, LongMemEval·LoCoMo·ConvoMem 등 주요 AI 메모리 벤치마크에서 1위를 기록했습니다. 대화에서 사실을 자동 추출하고 사용자 프로필을 구성하며, RAG와 메모리 검색을 단일 쿼리로 처리합니다. 로컬 완전 실행을 지원하고, Cursor·Claude Code 등 주요 AI 도구와의 플러그인 및 MCP 서버 연동도 제공합니다.",
+    "why_it_matters": "AI가 대화 간 컨텍스트를 잊는 문제를 API 하나로 해결하며, 완전 로컬 실행까지 지원해 프라이버시와 성능을 동시에 충족할 수 있다.",
+    "tags": [
+      "RAG",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7458465608465609,
+    "published_at": "2026-09-19T05:18:07Z"
+  },
+  {
+    "id": "google_blog-expanding-ai-economy-research-bench",
+    "section": "releases",
+    "title_en": "New experts join Google’s AI & Economy team",
+    "title_ko": "Google AI & 경제팀에 새 전문가 합류",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "Google의 AI & 경제 연구 프로그램에 새로운 전문가들이 합류했다. 해당 프로그램은 AI가 경제에 미치는 영향을 연구하는 팀이다.",
+    "why_it_matters": "Google이 AI의 경제적 영향 연구를 강화하는 움직임으로, 관련 정책 및 산업 동향에 영향을 줄 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6547635582010582,
+    "published_at": "2026-09-18T14:00:00Z"
+  },
+  {
+    "id": "google_blog-google-flow-fashion-week",
+    "section": "releases",
+    "title_en": "Co-creating the future of fashion with Google",
+    "title_ko": "구글과 함께 패션의 미래를 공동 창조하다",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/google-flow-fashion-week/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글이 패션 디자이너 제인 웨이드와 세르지오 허드슨과 협업하여 패션의 미래를 모색하는 프로젝트를 진행하고 있다. 구체적인 내용은 공개된 정보가 제한적이나, 구글의 AI 및 기술 역량을 패션 산업에 접목하는 시도로 보인다.",
+    "why_it_matters": "구글이 크리에이티브 산업인 패션과의 협업을 통해 AI 기술의 적용 범위를 확장하고 있음을 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6488111772486773,
+    "published_at": "2026-09-18T13:00:00Z"
+  },
+  {
+    "id": "hn-49764791",
+    "section": "community",
+    "title_en": "AI-generated posters don’t have to be horrible",
+    "title_ko": "AI 생성 포스터, 꼭 형편없을 필요는 없다",
+    "url": "https://john.hartnup.uk/2026/06/07/ai-event-posters.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI로 생성한 포스터가 반드시 낮은 품질일 필요는 없다는 주제를 다루는 글이다. 제목만으로는 구체적인 내용을 파악하기 어려우나, AI 이미지 생성 도구를 활용한 디자인 품질 개선 가능성을 시사한다.",
+    "why_it_matters": "AI 생성 비주얼 콘텐츠의 품질에 대한 인식 전환 및 실용적 활용 가능성을 논의한다는 점에서 주목할 만하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 11.518087147801818,
+    "published_at": "2026-09-19T09:20:58Z"
+  },
+  {
+    "id": "hn-49765348",
+    "section": "community",
+    "title_en": "I built non-autoregressive decision models with RL a year ago",
+    "title_ko": "1년 전 강화학습으로 비자기회귀 결정 모델을 직접 구현한 경험 공유",
+    "url": "https://laya.convaiinnovations.com/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "작성자가 약 1년 전 강화학습(RL)을 활용해 비자기회귀(non-autoregressive) 방식의 결정 모델을 직접 구현한 경험을 공유한 글이다. 설명이 제공되지 않아 구체적인 내용은 확인하기 어렵다.",
+    "why_it_matters": "비자기회귀 방식과 RL을 결합한 결정 모델은 추론 속도와 의사결정 효율을 높일 수 있는 연구 방향으로 주목받고 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 10.731460537074648,
+    "published_at": "2026-09-19T10:46:58Z"
+  },
+  {
+    "id": "hn-49747070",
+    "section": "community",
+    "title_en": "How to Write with an LLM",
+    "title_ko": "LLM을 활용한 글쓰기 방법",
+    "url": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "LLM을 효과적으로 활용해 글을 쓰는 방법을 다룬 글이다. 구체적인 내용은 제공된 정보만으로 확인하기 어렵다.",
+    "why_it_matters": "LLM 기반 글쓰기 활용법은 개발자와 콘텐츠 제작자 모두에게 실용적인 관심사다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.392120291755386,
+    "published_at": "2026-09-17T21:48:38Z"
+  },
+  {
+    "id": "hn-49763697",
+    "section": "community",
+    "title_en": "Two parallel neural ectoderm progenitors contribute to the developing brain",
+    "title_ko": "두 가지 병렬 신경 외배엽 전구세포가 뇌 발달에 기여한다",
+    "url": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "신경 외배엽 전구세포가 두 가지 병렬 경로로 뇌 발달에 기여한다는 연구 결과다. 세부 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "뇌 발달 메커니즘에 대한 새로운 생물학적 통찰로, AI 신경망 설계에 영감을 줄 수 있다.",
+    "tags": [],
+    "score": 10.147489027734924,
+    "published_at": "2026-09-19T05:48:50Z"
+  },
+  {
+    "id": "hn-49763987",
+    "section": "community",
+    "title_en": "GPT-6 Astra Solves a WWI German Radio Cipher",
+    "title_ko": "GPT-6 Astra, 1차 세계대전 독일군 무선 암호 해독",
+    "url": "https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GPT-6 Astra가 1차 세계대전 당시 독일군 무선 암호를 해독했다는 내용이다. 상세한 정보는 제공되지 않아 구체적인 방법이나 맥락은 확인하기 어렵다.",
+    "why_it_matters": "최신 LLM이 역사적 암호 해독에도 활용될 수 있음을 시사하는 사례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.45638482396648,
+    "published_at": "2026-09-19T06:41:44Z"
+  },
+  {
+    "id": "youtube-bRQEWPA832A",
+    "section": "video",
+    "title_en": "The last IMO problem AI could not solve",
+    "title_ko": "AI가 풀지 못한 마지막 IMO 문제",
+    "url": "https://www.youtube.com/shorts/bRQEWPA832A",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "이 영상은 AI가 해결하지 못한 국제수학올림피아드(IMO) 문제를 다룬다. 전체 영상 링크만 제공되어 있어 세부 내용은 확인되지 않는다.",
+    "why_it_matters": "AI의 수학적 추론 한계를 보여주는 사례로, LLM의 현재 능력치를 가늠하는 데 의미가 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6740228174603174,
+    "published_at": "2026-09-18T17:14:08Z"
+  },
+  {
+    "id": "youtube-O8QEib0XZ64",
+    "section": "video",
+    "title_en": "SUNO 구독이 진짜 필요없는 이유",
+    "title_ko": "SUNO 구독이 필요 없는 이유",
+    "url": "https://www.youtube.com/shorts/O8QEib0XZ64",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 AI 음악 생성 서비스인 SUNO의 유료 구독 없이도 활용할 수 있는 방법을 소개하는 영상이다. 구체적인 대안이나 무료 활용 팁을 다루는 것으로 보인다.",
+    "why_it_matters": "AI 음악 생성 도구를 비용 없이 활용하는 방법에 관심 있는 개발자·크리에이터에게 유용할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6250297619047619,
+    "published_at": "2026-09-18T09:00:17Z"
+  },
+  {
+    "id": "youtube-RdAhGBLzQu0",
+    "section": "video",
+    "title_en": "중국에서 등장한 끝판왕 오디오모델 ㄷㄷ",
+    "title_ko": "중국에서 등장한 강력한 오디오 AI 모델",
+    "url": "https://www.youtube.com/shorts/RdAhGBLzQu0",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "중국에서 새로운 오디오 AI 모델이 등장해 주목을 받고 있다. 조코딩 채널에서 해당 모델을 소개하는 영상을 공개했다. 구체적인 모델명이나 세부 벤치마크 수치는 영상 설명에 명시되지 않았다.",
+    "why_it_matters": "중국발 오디오 AI 모델의 부상은 글로벌 AI 경쟁 구도에서 오디오 분야의 새로운 강자 등장을 시사할 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.6071544312169312,
+    "published_at": "2026-09-18T06:00:06Z"
+  },
+  {
+    "id": "simon_willison-datasette-auth-github",
+    "section": "deepdive",
+    "title_en": "datasette-auth-github 1.0",
+    "title_ko": "datasette-auth-github 1.0 출시",
+    "url": "https://simonwillison.net/2026/Sep/19/datasette-auth-github/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Datasette용 GitHub 로그인 플러그인인 datasette-auth-github가 1.0 버전으로 릴리스됐다. 쿠키에 `Max-Age` 파라미터가 없어 브라우저 세션 종료 시(특히 Mobile Safari에서 자주 발생) 인증이 만료되던 버그를 수정했다. Datasette 0.65.x와 1.0ax 모두에서 테스트된 안정적인 플러그인임을 인정해 1.0으로 버전을 올렸다.",
+    "why_it_matters": "장기 운영 중인 Datasette 인증 플러그인이 모바일 환경의 세션 지속성 문제를 해결하고 안정 버전으로 공식 승격됐다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.8325446428571428,
+    "published_at": "2026-09-19T19:52:02Z"
+  }
+]
