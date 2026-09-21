@@ -1,0 +1,372 @@
+[
+  {
+    "id": "hf-2609.19969",
+    "section": "papers",
+    "title_en": "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression",
+    "title_ko": "DeepSeek-V4.1-Flash: KV 캐시 압축의 한계를 넘다",
+    "url": "https://huggingface.co/papers/2609.19969",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "DeepSeek-V4.1-Flash는 552B 파라미터의 멀티모달 MoE 모델로, 최대 100만 토큰 컨텍스트를 지원한다. Causal Encoder-Decoder(CED) 아키텍처를 통해 프리필 시 8B, 디코드 시 16B 파라미터만 활성화하여 에이전트 워크로드 비용 효율을 크게 높였다. CSA2(Compressed Sparse Attention 2)와 FP4 KV 캐싱을 결합해 글로벌 KV 캐시 크기를 토큰당 890바이트(DeepSeek-V4-Flash 대비 약 1/4)로 줄였으며, SWA Bounded Replay 최적화로 영구 KV 캐시도 약 1/8 수준으로 감소시켰다. 45T 토큰의 멀티모달 데이터로 사전학습했으며, 모델 체크포인트는 HuggingFace에 공개되어 있다.",
+    "why_it_matters": "KV 캐시 압축과 비대칭 파라미터 활성화로 장문 컨텍스트 에이전트 배포 비용을 대폭 낮출 수 있는 실용적 돌파구를 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "인프라"
+    ],
+    "score": 5.912654885736052,
+    "published_at": "2026-09-16T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.18323",
+    "section": "papers",
+    "title_en": "Can MiniMax-H3 Reason About the Physical World? An Evaluation of Omni-Modal Generative Model",
+    "title_ko": "MiniMax-H3는 물리적 세계를 추론할 수 있는가? 옴니모달 생성 모델 평가",
+    "url": "https://huggingface.co/papers/2609.18323",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "MiniMax-H3는 텍스트, 이미지, 비디오, 오디오를 통합 처리하는 옴니모달 생성 모델로, 물리 세계 추론 능력을 4가지 차원에서 평가하는 프레임워크가 소개됐다. 517개 평가 인스턴스에서 전체 성공률은 41.97%를 기록했으며, 비디오 기반 의사결정 추론이 56.00%로 가장 높고 오디오 기반 모호성 해소 추론이 27.40%로 가장 낮았다. 각 모달리티가 부분적 단서만 제공하는 상황에서 모델이 복합 정보를 통합 추론해야 하는 새로운 태스크 설계가 특징이다.",
+    "why_it_matters": "멀티모달 통합 추론 능력의 한계를 구체적 수치로 제시해, 옴니모달 AI 모델의 실질적 성능 기준을 마련한다는 점에서 중요하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.74493212836325,
+    "published_at": "2026-09-15T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.20511",
+    "section": "papers",
+    "title_en": "When EOS Tokens Disagree: Understanding Length Inflation in On-Policy Distillation",
+    "title_ko": "EOS 토큰 불일치가 유발하는 온-폴리시 증류의 응답 길이 팽창 분석",
+    "url": "https://huggingface.co/papers/2609.20511",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "온-폴리시 증류(OPD)에서 학생 모델의 응답이 비정상적으로 길어지는 '길이 팽창' 현상을 연구한 논문이다. Qwen3, Llama, Gemma 세 모델 패밀리에서 교사·학생 모델 간 EOS 토큰 종료 확률이 서로 다른 토큰에 집중되는 '종료 토큰 불일치'가 주요 원인임을 밝혔다. 기능적으로 동등한 EOS 토큰을 공유 의미 종료 액션으로 통합하면 불일치로 인한 길이 팽창이 크게 완화되지만, 이것이 유일한 원인은 아님도 확인했다. 수정된 종료 처리 구현체를 공개했다.",
+    "why_it_matters": "LLM 증류 시 생성 예산을 낭비하는 길이 팽창의 구체적 원인과 실용적 해결책을 제시해, 소형 모델 훈련 효율을 높이는 데 직결된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.553876891600541,
+    "published_at": "2026-09-16T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.20519",
+    "section": "papers",
+    "title_en": "SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness",
+    "title_ko": "SoL-Pi: 재귀적 자동 연구 루프로 에이전트 효율 대폭 향상",
+    "url": "https://huggingface.co/papers/2609.20519",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SoL-Pi는 코딩 에이전트의 하네스 레이어에서 재귀적 자기개선(RSI) 방식을 적용해 자동 연구 루프를 다양한 환경으로 확장하는 접근법이다. 액션 실행, 컨텍스트 압축, 관측 처리, 위임 읽기 등 4가지 핵심 메커니즘으로 구성된다. EdgeBench 51개 태스크 평가에서 기존 Pi와 동등한 성능을 유지하면서 토큰 사용량을 44.7~49.0% 줄이고 API 비용을 약 1/3 절감했다.",
+    "why_it_matters": "장시간 자율 운영되는 코딩 에이전트의 토큰·비용 효율을 대폭 개선해 실제 프로덕션 수준의 AI 에이전트 운영 비용을 크게 낮출 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "인프라"
+    ],
+    "score": 5.553876891600541,
+    "published_at": "2026-09-16T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.19134",
+    "section": "papers",
+    "title_en": "ScienceIDE: Turning World's Scientific Codebase into Agent Learnable Environments",
+    "title_ko": "ScienceIDE: 전 세계 과학 코드베이스를 AI 에이전트 학습 환경으로 전환",
+    "url": "https://huggingface.co/papers/2609.19134",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "ScienceIDE는 수십 년간 축적된 과학 코드 저장소를 AI 에이전트가 학습할 수 있는 프로그래머블 환경으로 변환하는 인프라다. 전문가가 정의한 과학적 케이스와 검증 기준을 바탕으로 에이전트가 저장소를 실행 가능한 환경으로 구축하며, 이를 통해 SFT·강화학습·평가를 위한 공통 기반을 제공한다. 이 환경으로 학습된 PhAI-IDE-72B/9B/4B 모델은 과학 코드 수정 및 코드·추론·지식 관련 범용 벤치마크에서 성능 향상을 보였다.",
+    "why_it_matters": "단편화된 과학 코드베이스를 에이전트 학습용 환경으로 체계화함으로써, 과학 도메인 특화 AI 개발의 핵심 병목인 '학습 경험 부족' 문제를 정면으로 해결한다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 5.382026634673881,
+    "published_at": "2026-09-15T20:00:00Z"
+  },
+  {
+    "id": "github_trending-addyosmani/agent-skills",
+    "section": "releases",
+    "title_en": "addyosmani/agent-skills",
+    "title_ko": "AI 코딩 에이전트를 위한 프로덕션급 엔지니어링 스킬 모음: agent-skills",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "addyosmani/agent-skills는 AI 코딩 에이전트가 소프트웨어 개발 전 주기(정의→계획→구현→검증→리뷰→배포)를 시니어 엔지니어 수준의 규율로 따를 수 있도록 설계된 25개의 구조화된 워크플로우 스킬 모음이다. `/spec`, `/plan`, `/build`, `/test`, `/review`, `/ship` 등 9개의 슬래시 커맨드로 각 단계를 활성화하며, Claude Code·Cursor·Codex·Copilot 등 70개 이상의 에이전트에 `npx skills add` 한 줄로 설치할 수 있다. 각 스킬은 구체적인 단계, 검증 게이트, '나중에 테스트 추가할게'처럼 에이전트가 단계를 건너뛰려는 흔한 합리화를 반박하는 표를 포함한다. Google 엔지니어링 문화(Hyrum's Law, Beyonce Rule, 트렁크 기반 개발 등)의 모범 사례를 워크플로우에 직접 녹여냈다.",
+    "why_it_matters": "AI 코딩 에이전트가 스펙·테스트·보안 리뷰를 생략하고 최단 경로를 택하는 문제를 구조화된 강제 워크플로우로 해결해, 프로토타입 수준을 넘어 프로덕션 품질의 코드를 일관성 있게 생성할 수 있게 한다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7475760582010582,
+    "published_at": "2026-09-20T05:35:33Z"
+  },
+  {
+    "id": "github_trending-anthropics/claude-code",
+    "section": "releases",
+    "title_en": "anthropics/claude-code",
+    "title_ko": "Anthropic의 터미널 기반 AI 코딩 에이전트 'Claude Code' 공개",
+    "url": "https://github.com/anthropics/claude-code",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 터미널에서 동작하는 에이전트형 코딩 도구 Claude Code를 공개했다. 자연어 명령으로 코드 설명, 루틴 작업 실행, Git 워크플로우 처리 등을 지원하며, 터미널·IDE·GitHub(@claude 태그)에서 모두 사용 가능하다. macOS, Linux, Windows를 지원하며 curl, Homebrew, WinGet 등 다양한 설치 방법을 제공한다.",
+    "why_it_matters": "Anthropic이 직접 만든 공식 코딩 에이전트로, 개발자의 코드베이스를 이해하고 자연어로 복잡한 개발 작업을 자동화할 수 있어 실무 활용 가능성이 높다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.7475760582010582,
+    "published_at": "2026-09-20T05:35:33Z"
+  },
+  {
+    "id": "github_trending-higgsfield-ai/higgsfield",
+    "section": "releases",
+    "title_en": "higgsfield-ai/higgsfield",
+    "title_ko": "Higgsfield: 수천억 파라미터 모델 훈련을 위한 오픈소스 GPU 오케스트레이션 프레임워크",
+    "url": "https://github.com/higgsfield-ai/higgsfield",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Higgsfield는 수십억~수조 개의 파라미터를 가진 LLM 훈련을 위한 내결함성(fault-tolerant) 고확장성 GPU 오케스트레이션 오픈소스 프레임워크다. ZeRO-3 DeepSpeed API 및 PyTorch의 완전 샤딩 데이터 병렬 처리를 지원하며, GitHub Actions와 연동해 멀티 노드 훈련 배포를 자동화한다. 복잡한 설정 파일이나 수백 개의 인자 없이 간단한 Python 데코레이터 방식으로 분산 훈련 실험을 정의하고 실행할 수 있다.",
+    "why_it_matters": "복잡한 설정과 환경 문제 없이 초대형 LLM 분산 훈련을 손쉽게 구성할 수 있어, 대규모 모델 학습 인프라 진입 장벽을 크게 낮춘다.",
+    "tags": [
+      "LLM",
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 0.7475760582010582,
+    "published_at": "2026-09-20T05:35:33Z"
+  },
+  {
+    "id": "github_trending-anthropics/knowledge-work-plugins",
+    "section": "releases",
+    "title_en": "anthropics/knowledge-work-plugins",
+    "title_ko": "Anthropic, 지식 노동자용 오픈소스 Claude 플러그인 11종 공개",
+    "url": "https://github.com/anthropics/knowledge-work-plugins",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 Claude Cowork 및 Claude Code와 연동되는 지식 노동자용 오픈소스 플러그인 11종을 GitHub에 공개했다. 영업, 마케팅, 법무, 재무, 데이터 분석, 바이오 리서치 등 직무별 플러그인이 포함되며, Slack·Notion·Jira·Snowflake 등 주요 업무 도구와 MCP 서버를 통해 연결된다. 각 플러그인은 마크다운과 JSON 파일로만 구성되어 코드나 별도 인프라 없이 커스터마이징이 가능하다.",
+    "why_it_matters": "Anthropic이 직접 설계한 직무별 AI 워크플로우 템플릿을 오픈소스로 공개함으로써, 기업이 Claude를 자사 도구·프로세스에 맞게 빠르게 내재화할 수 있는 실용적 출발점이 생겼다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7475760582010582,
+    "published_at": "2026-09-20T05:35:33Z"
+  },
+  {
+    "id": "google_blog-expanding-ai-economy-research-bench",
+    "section": "releases",
+    "title_en": "New experts join Google’s AI & Economy team",
+    "title_ko": "Google AI & 경제 팀에 새로운 전문가 합류",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "Google의 AI & 경제 리서치 프로그램에 새로운 전문가들이 합류했다. 해당 프로그램은 AI와 경제 간의 관계를 연구하는 팀이다.",
+    "why_it_matters": "Google의 AI 경제 연구 역량 강화는 AI의 경제적 영향 분석 및 정책 방향에 영향을 줄 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.5119064153439153,
+    "published_at": "2026-09-18T14:00:00Z"
+  },
+  {
+    "id": "google_blog-google-flow-fashion-week",
+    "section": "releases",
+    "title_en": "Co-creating the future of fashion with Google",
+    "title_ko": "구글과 함께 패션의 미래를 공동 창조하다",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/google-flow-fashion-week/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글이 패션 디자이너 제인 웨이드(Jane Wade)와 세르지오 허드슨(Sergio Hudson)과 협업을 진행했다. 이번 프로젝트는 구글의 기술을 활용해 패션 산업의 미래를 함께 모색하는 시도다.",
+    "why_it_matters": "구글이 AI 및 기술 역량을 패션 크리에이티브 분야에 접목하는 사례로, 기술과 예술의 융합 방향을 보여준다.",
+    "tags": [],
+    "score": 0.5059540343915344,
+    "published_at": "2026-09-18T13:00:00Z"
+  },
+  {
+    "id": "openai_blog-australian-youth-safety-blueprint",
+    "section": "releases",
+    "title_en": "Introducing the Australian Youth Safety Blueprint",
+    "title_ko": "호주 청소년 안전 청사진 발표",
+    "url": "https://openai.com/index/australian-youth-safety-blueprint",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 호주 청소년 안전 청사진(Australian Youth Safety Blueprint)을 발표했다. 이 청사진은 청소년을 보호하고 역량을 강화하는 더 안전한 AI 경험을 위한 6가지 핵심 축으로 구성된 로드맵이다. 젊은 사용자들이 AI를 안전하게 활용할 수 있는 환경 조성을 목표로 한다.",
+    "why_it_matters": "AI 기업이 청소년 보호를 위한 구체적 정책 프레임워크를 공식화함으로써, 향후 글로벌 청소년 AI 안전 규제의 기준점이 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.5000016534391535,
+    "published_at": "2026-09-18T12:00:00Z"
+  },
+  {
+    "id": "hn-49776729",
+    "section": "community",
+    "title_en": "ChatGPT now knows what you do on other websites via ad collector",
+    "title_ko": "ChatGPT, 광고 수집기를 통해 타 웹사이트 사용자 활동 파악 가능",
+    "url": "https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "ChatGPT가 광고 수집기를 통해 사용자가 다른 웹사이트에서 하는 활동을 인식할 수 있게 되었다는 내용이다. 이는 개인정보 및 데이터 추적과 관련된 우려를 제기한다.",
+    "why_it_matters": "AI 서비스의 크로스사이트 사용자 행동 추적 가능성은 프라이버시 침해 논란으로 이어질 수 있어 주목된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.182872813084423,
+    "published_at": "2026-09-20T15:18:44Z"
+  },
+  {
+    "id": "hn-49775499",
+    "section": "community",
+    "title_en": "Qwen Image 2.1",
+    "title_ko": "Qwen Image 2.1 출시",
+    "url": "https://qwen.ai/blog?id=qwen-image-2.1",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Qwen에서 새로운 이미지 관련 모델인 Qwen Image 2.1을 공개했다. 상세한 설명이 제공되지 않아 구체적인 기능이나 성능 수치는 확인되지 않는다.",
+    "why_it_matters": "Qwen 시리즈의 최신 이미지 모델 업데이트로, 오픈소스 멀티모달 AI 분야의 동향을 파악하는 데 중요하다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 9.671954722442104,
+    "published_at": "2026-09-20T13:09:25Z"
+  },
+  {
+    "id": "hn-49778029",
+    "section": "community",
+    "title_en": "Samsung is expected to more than double output of its HBM4 and HBM4E DRAM",
+    "title_ko": "삼성, HBM4 및 HBM4E DRAM 생산량 두 배 이상 확대 전망",
+    "url": "https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "삼성이 차세대 고대역폭 메모리인 HBM4 및 HBM4E의 생산량을 두 배 이상 늘릴 것으로 예상된다. 자세한 수치나 일정은 제공된 정보에 포함되어 있지 않다.",
+    "why_it_matters": "AI 가속기 수요 급증에 따라 고성능 HBM 공급 확대는 AI 인프라 전반에 직접적인 영향을 미친다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.488122976427414,
+    "published_at": "2026-09-20T17:38:50Z"
+  },
+  {
+    "id": "hn-49776699",
+    "section": "community",
+    "title_en": "Pirate Face Rescues LLM Models from Deletion",
+    "title_ko": "해적 얼굴이 LLM 모델 삭제 위기에서 구해내다",
+    "url": "https://pirateface.co/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "'Pirate Face'라는 인물 또는 프로젝트가 삭제 위기에 처한 LLM 모델들을 보존하는 데 기여했다는 내용이다. 구체적인 세부 사항은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "AI 모델의 무단 삭제나 소실은 연구 재현성과 오픈소스 생태계에 중요한 문제이므로, 모델 보존 활동은 커뮤니티에 의미 있는 사안이다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 9.480231495282958,
+    "published_at": "2026-09-20T15:16:07Z"
+  },
+  {
+    "id": "hn-49780797",
+    "section": "community",
+    "title_en": "Google's Open Agentic Orchestrator",
+    "title_ko": "구글의 오픈 에이전틱 오케스트레이터",
+    "url": "https://agentexecutor.io/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "구글이 오픈 에이전틱 오케스트레이터를 공개했다. 자세한 설명은 제공되지 않아 추가적인 세부 내용은 확인이 필요하다.",
+    "why_it_matters": "구글이 에이전트 워크플로우 조율을 위한 오픈소스 도구를 공개한 것으로, AI 에이전트 생태계에 영향을 줄 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 7.64826337324841,
+    "published_at": "2026-09-20T22:32:43Z"
+  },
+  {
+    "id": "youtube-hJj7Xrc5N6c",
+    "section": "video",
+    "title_en": "IT뉴스 - 200배 빠른 Jev 열풍, OpenAI 해킹, Astra for Law, 구글도 드디어 해킹, Gemini 4 Pro 소문, RSI 등",
+    "title_ko": "IT 뉴스 종합: 200배 빠른 Jev, OpenAI·구글 해킹, Astra for Law, Gemini 4 Pro 소문 등",
+    "url": "https://www.youtube.com/watch?v=hJj7Xrc5N6c",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "200배 빠르다고 알려진 Jev가 주목받고 있으며, OpenAI와 구글 모두 해킹 관련 이슈가 발생했다는 소식이 전해졌다. 법률 분야를 겨냥한 Astra for Law와 Gemini 4 Pro 출시 소문도 함께 다뤄졌다. 다양한 AI·IT 업계 최신 동향을 한데 묶어 소개하는 뉴스 영상이다.",
+    "why_it_matters": "OpenAI·구글 보안 사고와 차세대 AI 모델 소문 등 업계 핵심 이슈가 한 번에 정리되어 빠른 동향 파악에 유용하다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.7831927910052909,
+    "published_at": "2026-09-20T11:34:34Z"
+  },
+  {
+    "id": "youtube-bRQEWPA832A",
+    "section": "video",
+    "title_en": "The last IMO problem AI could not solve",
+    "title_ko": "AI가 풀지 못한 마지막 IMO 문제",
+    "url": "https://www.youtube.com/shorts/bRQEWPA832A",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "이 영상은 AI가 해결하지 못한 국제수학올림피아드(IMO) 문제를 다룬다. 전체 영상 링크만 제공되어 있어 구체적인 내용은 확인하기 어렵다.",
+    "why_it_matters": "AI의 수학적 추론 한계를 보여주는 사례로, LLM의 현재 능력과 한계를 가늠할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.5311656746031745,
+    "published_at": "2026-09-18T17:14:08Z"
+  },
+  {
+    "id": "youtube-O8QEib0XZ64",
+    "section": "video",
+    "title_en": "SUNO 구독이 진짜 필요없는 이유",
+    "title_ko": "SUNO 구독 없이도 AI 음악 생성이 가능한 이유",
+    "url": "https://www.youtube.com/shorts/O8QEib0XZ64",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 SUNO 유료 구독 없이도 AI 음악을 활용할 수 있는 방법을 소개하는 영상이다. 구체적인 대안 도구나 방법론을 다루는 것으로 보인다.",
+    "why_it_matters": "AI 음악 생성 비용을 줄이고 싶은 개발자·크리에이터에게 실용적인 대안을 제시할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.482172619047619,
+    "published_at": "2026-09-18T09:00:17Z"
+  },
+  {
+    "id": "simon_willison-voxium",
+    "section": "deepdive",
+    "title_en": "Quoting voxium",
+    "title_ko": "'모두가 Claude와 대화만 한다' — 대기업 AI 의존 실태 폭로",
+    "url": "https://simonwillison.net/2026/Sep/20/voxium/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "한 대형 기업에 입사한 지 반 달 만에, 스펙·코드·테스트·티켓·보고서 등 모든 산출물이 Claude Code로 생성되고 있다는 내부 증언이 나왔다. 팀원 누구도 이 방식을 원하지 않지만, 최대한 많은 코드를 출시하라는 상부 압박이 계속된다. L1부터 L7 엔지니어까지 하루 12~13시간씩 일하면서 실제로는 AI 출력에 엔터만 누를 뿐, 아무도 내용을 제대로 읽지 않는다고 한다.",
+    "why_it_matters": "AI가 개발 속도를 높이는 도구가 아닌 '사고 대체제'로 전락할 때 조직 전체의 이해도와 품질이 어떻게 무너질 수 있는지를 보여주는 현장 사례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8399537037037037,
+    "published_at": "2026-09-20T21:06:43Z"
+  }
+]
