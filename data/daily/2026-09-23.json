@@ -1,0 +1,377 @@
+[
+  {
+    "id": "hf-2609.24972",
+    "section": "papers",
+    "title_en": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
+    "title_ko": "RRSI: 에이전트 하네스의 정규화된 재귀적 자기 개선",
+    "url": "https://huggingface.co/papers/2609.24972",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "LLM 에이전트의 성능은 프롬프트, 제어 흐름, 툴링, 메모리 등 '하네스'에 크게 좌우되는데, 기존 재귀적 자기 개선(RSI) 방식은 학습 태스크에 과적합되어 분포 외 벤치마크에서 성능이 크게 떨어지는 문제가 있었다. RRSI는 정규화 원칙을 적용해 후보 제안 시 시간적으로 점진 감소하는 편집 예산을 사용하고, 선택 단계에서는 비평가와 가지치기 모듈로 벤치마크 특화 변경을 걸러낸다. 8개 벤치마크에서 학습 분포 내 최대 14.1점, 분포 외 벤치마크에서 최대 4.7점 향상을 달성했으며, 비정규화 방식 대비 정책 토큰을 30% 줄였다. 코드는 GitHub에 공개되어 있다.",
+    "why_it_matters": "에이전트 시스템의 자기 개선이 과적합 없이 범용성을 유지할 수 있음을 보여줘, 실용적인 자율 에이전트 개발에 중요한 진전이다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 6.0369526024136295,
+    "published_at": "2026-09-20T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.24984",
+    "section": "papers",
+    "title_en": "WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory",
+    "title_ko": "WorldCrafter: 암묵적 3D 인식 메모리를 갖춘 일관된 비디오 월드 모델",
+    "url": "https://huggingface.co/papers/2609.24984",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "WorldCrafter는 장시간·다양한 시점에서의 일관성을 유지하는 비디오 월드 모델로, 카메라 시점에 따라 다중 뷰 정보를 압축하는 암묵적 3D 인식 메모리를 학습합니다. 메모리 인코더와 포즈 조건부 읽기 모듈이 역사적 관측 데이터를 대상 시점별 토큰으로 통합하며, 명시적 깊이 기반 대응 없이도 작동합니다. 단일 이미지 또는 텍스트 프롬프트로부터 분 단위의 스트리밍 장면 탐색이 가능하며, 정적·동적 장면 모두에서 장기 일관성과 카메라 제어 정확도가 크게 향상됐습니다.",
+    "why_it_matters": "단일 이미지나 텍스트만으로 장기적·다시점 일관성을 갖춘 인터랙티브 3D 장면 탐색이 가능해져 게임·시뮬레이션·로보틱스 분야에 큰 파급 효과가 예상된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.727387818712341,
+    "published_at": "2026-09-20T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.25001",
+    "section": "papers",
+    "title_en": "GameHorizon Suite: Multi-Horizon Data and Evaluation in Gameplay",
+    "title_ko": "GameHorizon Suite: 멀티-호라이즌 게임플레이 AI 평가 벤치마크",
+    "url": "https://huggingface.co/papers/2609.25001",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "GameHorizon Suite는 다양한 AI 모델의 게임플레이 능력을 다양한 시간적 호라이즌에서 측정하는 통합 데이터·평가 프레임워크다. 21개 AAA 게임에서 100명의 전문 플레이어가 수집한 5,000시간 분량의 영상·행동·멀티-호라이즌 지시문으로 구성된 대규모 데이터셋을 제공한다. 오프라인 표준화 평가와 온라인 스텝별 실제 게임플레이 테스트를 모두 지원하며, 47개 모델을 100만 회 이상 호출해 평가한 결과 모델 간 뚜렷한 성능 차이가 확인됐다.",
+    "why_it_matters": "시각 이해·계획·행동 제어를 포괄하는 게임플레이 벤치마크로, 에이전트 AI의 장기 의사결정 능력을 표준화된 방식으로 비교할 수 있는 기반을 제공한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.718498871295094,
+    "published_at": "2026-09-20T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.22966",
+    "section": "papers",
+    "title_en": "Transferring the Intelligence of VLMs to Robotic Control",
+    "title_ko": "VLM의 지능을 로봇 제어로 전이하는 RoboDawn",
+    "url": "https://huggingface.co/papers/2609.22966",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "RoboDawn은 비전-언어 모델(VLM)이 이산적인 이동·회전·그리퍼 명령을 통해 로봇을 폐루프로 제어할 수 있게 해주는 인터페이스다. 태스크별 로봇 학습 없이도 강력한 성능을 발휘하며, RoboTwin 2.0 C2R 벤치마크에서 제로샷 53.2%, 원샷 73.6%의 성공률로 기존 베이스라인 π0.5(46.0%)를 크게 상회했다. 인컨텍스트 학습(ICL)으로 소수의 시연만으로도 성능이 대폭 향상되며, 실제 Franka 로봇에서도 동작함이 검증됐다.",
+    "why_it_matters": "태스크별 로봇 훈련 없이 VLM의 디지털 지능을 물리 세계 로봇 제어로 직접 전이할 수 있음을 보여줘, 범용 로봇 제어의 새로운 가능성을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.624972813284271,
+    "published_at": "2026-09-18T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.21346",
+    "section": "papers",
+    "title_en": "IntBMoE: Integrating Block-Level Conditioning into Expert Composition for Full-Participation Mixture-of-Experts",
+    "title_ko": "IntBMoE: 블록 레벨 조건부 전문가 구성으로 완전 참여 MoE 실현",
+    "url": "https://huggingface.co/papers/2609.21346",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "IntBMoE는 Mixture-of-Experts(MoE)의 참여(participation), 실행(execution), 구체화(materialization) 세 가지 요소를 독립적으로 제어하는 새로운 MoE 아키텍처다. 소규모 학습된 코드북과 경량 하이퍼네트워크를 결합해 모든 전문가 지식을 활용하면서도 희소 블록 실행으로 연산 비용을 낮춘다. 이미지 분류, 언어 모델링, 순차 추천 실험에서 기존 희소·밀집 MoE 대비 일관된 성능 향상을 보였으며, 실제로 수억 명의 사용자를 대상으로 하는 AMap 추천 시스템에 60ms 지연 예산 내에 배포되어 온라인 A/B 테스트에서 UVCTR 2.4% 상대적 향상을 달성했다.",
+    "why_it_matters": "MoE의 참여·연산·메모리 트리드오프를 동시에 해결한 설계가 대규모 실서비스에서 검증된 점이 중요하다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.532599493153256,
+    "published_at": "2026-09-17T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-better-prompt-caching-for-gpt-6",
+    "section": "releases",
+    "title_en": "Better prompt caching for GPT-6",
+    "title_ko": "GPT-6의 향상된 프롬프트 캐싱",
+    "url": "https://openai.com/index/better-prompt-caching-for-gpt-6",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "GPT-6는 더 높은 캐시 히트율과 새로운 진단 도구, 명시적 중단점 및 제어 기능을 도입해 프롬프트 캐싱을 크게 개선했다. 이를 통해 응답 지연 시간과 비용을 줄일 수 있다.",
+    "why_it_matters": "프롬프트 캐싱 효율이 높아지면 API 호출 비용과 레이턴시가 동시에 줄어 실서비스 운영 부담이 크게 감소한다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.8392873677248678,
+    "published_at": "2026-09-22T21:00:00Z"
+  },
+  {
+    "id": "openai_blog-introducing-gpt-6-sol-and-luna",
+    "section": "releases",
+    "title_en": "Introducing GPT-6 Sol and Luna",
+    "title_ko": "GPT-6 Sol과 Luna 소개",
+    "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 GPT-6 Sol과 Luna 두 가지 모델을 공개했다. 두 모델은 각각 성능과 비용의 균형을 다르게 조정하여 일상적인 업무에 최첨단 AI 기능을 제공한다.",
+    "why_it_matters": "GPT-6가 두 가지 변형으로 출시되며 사용 목적과 예산에 따라 선택 가능한 프런티어 모델 옵션이 확대된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8214302248677249,
+    "published_at": "2026-09-22T18:00:00Z"
+  },
+  {
+    "id": "openai_blog-parallel-cuts-time-and-cost-with-astra",
+    "section": "releases",
+    "title_en": "Parallel cut research time and cost in half with GPT‑6 Astra",
+    "title_ko": "GPT-6 Astra로 연구 시간과 비용 절반 감소 – Parallel 사례",
+    "url": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Parallel은 GPT-6 Astra를 활용해 노동시장 데이터 조사 및 합성 작업 시간과 비용을 기존 모델 대비 절반으로 줄이는 성과를 거뒀다. GPT-6 Astra를 탑재한 에이전트가 이 효율화를 주도했다.",
+    "why_it_matters": "최신 LLM이 실제 비즈니스 에이전트 워크플로우에서 비용·속도를 동시에 대폭 개선할 수 있음을 보여주는 구체적 사례다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7857159391534392,
+    "published_at": "2026-09-22T12:00:00Z"
+  },
+  {
+    "id": "github_trending-BuilderIO/agent-native",
+    "section": "releases",
+    "title_en": "BuilderIO/agent-native",
+    "title_ko": "Agent-Native: UI와 에이전트를 통합하는 오픈소스 TypeScript 프레임워크",
+    "url": "https://github.com/BuilderIO/agent-native",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "BuilderIO가 공개한 Agent-Native는 에이전트와 UI가 동일한 '액션' 레이어를 공유하는 오픈소스 TypeScript 프레임워크다. 하나의 액션을 정의하면 에이전트 도구, UI 코드, HTTP, MCP, CLI 등 모든 인터페이스에서 동일하게 사용할 수 있다. 인증·권한, 스킬·메모리, 자동화, 에이전트 팀, PostgreSQL 백엔드 등이 기본 포함되어 있으며, 회의 녹화·디자인·메일 등 다양한 오픈소스 예제 앱도 제공된다.",
+    "why_it_matters": "에이전트와 UI를 단일 액션 계층으로 통합해 '에이전트 네이티브 앱' 개발 복잡성을 크게 줄여주는 실용적 프레임워크다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7476736111111111,
+    "published_at": "2026-09-22T05:36:32Z"
+  },
+  {
+    "id": "github_trending-akitaonrails/ai-memory",
+    "section": "releases",
+    "title_en": "akitaonrails/ai-memory",
+    "title_ko": "ai-memory: 여러 AI 코딩 에이전트 간 장기 메모리 공유 오픈소스 도구",
+    "url": "https://github.com/akitaonrails/ai-memory",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "ai-memory는 Claude Code, Codex, Cursor, Gemini CLI 등 20여 개 AI 코딩 에이전트 사이에서 장기 메모리를 공유할 수 있는 Rust 기반 오픈소스 도구다. 작업 중 에이전트를 바꾸거나 다른 기기로 이동해도 이전 작업 맥락(진행 상황, 실패 시도, 미결 사항 등)이 자동으로 이어진다. 메모리는 git으로 관리되는 마크다운 파일로 저장되며, 기본적으로 LLM API 호출 없이도 동작한다. 팀 단위 공유, 멀티유저 인증, 감사 로그까지 내장되어 있다.",
+    "why_it_matters": "에이전트 벤더 종속 없이 여러 AI 코딩 도구의 작업 맥락을 하나의 공유 메모리로 연결해, 팀 전체의 AI 개발 워크플로우 연속성을 실현하는 실용적 인프라 솔루션이다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.7476736111111111,
+    "published_at": "2026-09-22T05:36:32Z"
+  },
+  {
+    "id": "github_trending-anthropics/financial-services",
+    "section": "releases",
+    "title_en": "anthropics/financial-services",
+    "title_ko": "Anthropic, 금융 서비스 전용 Claude 레퍼런스 에이전트 저장소 공개",
+    "url": "https://github.com/anthropics/financial-services",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 투자은행, 주식 리서치, 사모펀드, 자산관리 등 금융 서비스 워크플로우에 특화된 Claude 레퍼런스 에이전트·스킬·데이터 커넥터 모음을 오픈소스로 공개했다. Pitch Agent, GL Reconciler, KYC Screener 등 10개 이상의 에이전트를 Claude Cowork 플러그인 또는 Managed Agents API 방식으로 동일한 소스에서 배포할 수 있다. Morningstar, FactSet, PitchBook, Moody's 등 주요 금융 데이터 제공업체와의 MCP 커넥터도 포함되어 있으며, Microsoft 365 애드인 배포 툴링도 제공된다. 모든 출력물은 전문가의 최종 검토를 전제로 하며 투자·법률 조언을 구성하지 않는다고 명시되어 있다.",
+    "why_it_matters": "금융 기관이 Claude 기반 AI 에이전트를 실제 업무 워크플로우에 빠르게 도입할 수 있는 프로덕션 수준의 레퍼런스 구현체가 공개됨으로써, 금융 AI 도입 장벽이 크게 낮아질 수 있다.",
+    "tags": [
+      "에이전트",
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 0.7476736111111111,
+    "published_at": "2026-09-22T05:36:32Z"
+  },
+  {
+    "id": "openai_blog-priorities-principles-third-party-assessments",
+    "section": "releases",
+    "title_en": "Priorities and principles for effective third party assessments",
+    "title_ko": "프론티어 AI 모델의 효과적인 제3자 평가를 위한 원칙 공개",
+    "url": "https://openai.com/index/priorities-principles-third-party-assessments",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 프론티어 모델 및 안전 장치에 대한 엄격하고 독립적인 제3자 AI 안전성 평가를 위한 우선순위와 원칙을 발표했다. 평가의 보안성과 독립성을 핵심 요소로 강조하며, 외부 기관이 AI 시스템을 평가하는 방식에 대한 구체적인 가이드라인을 제시한다. 이는 AI 안전성 평가 체계를 보다 체계적으로 정립하려는 시도다.",
+    "why_it_matters": "독립적인 제3자 AI 안전성 평가 기준이 산업 표준으로 자리잡을 수 있어, 향후 AI 거버넌스와 규제 논의에 큰 영향을 미칠 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-09-22T00:00:00Z"
+  },
+  {
+    "id": "hn-49803892",
+    "section": "community",
+    "title_en": "Claude Opus 5.5",
+    "title_ko": "Claude Opus 5.5 공개",
+    "url": "https://www.anthropic.com/claude-opus-5-5",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Anthropic이 Claude Opus 5.5를 출시했다. 상세한 설명은 제공되지 않았으나 Claude Opus 시리즈의 새로운 버전으로 보인다.",
+    "why_it_matters": "Anthropic의 최상위 모델 라인업 업데이트로 LLM 시장 경쟁에 영향을 줄 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 11.37623740744989,
+    "published_at": "2026-09-22T16:29:05Z"
+  },
+  {
+    "id": "hn-49805509",
+    "section": "community",
+    "title_en": "GPT-6 Sol and Luna",
+    "title_ko": "GPT-6 Sol과 Luna",
+    "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GPT-6와 관련된 Sol과 Luna라는 이름이 언급되었다. 상세한 설명이 제공되지 않아 추가적인 내용은 확인이 필요하다.",
+    "why_it_matters": "GPT-6의 구체적인 모델 라인업 정보가 공개될 경우 AI 업계 전반에 큰 영향을 미칠 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 11.185690202480956,
+    "published_at": "2026-09-22T18:00:34Z"
+  },
+  {
+    "id": "hn-49801324",
+    "section": "community",
+    "title_en": "OpenAI GPT–6 Astra breaks Enigma message that has resisted solution since 2005",
+    "title_ko": "OpenAI GPT-6 Astra, 2005년부터 미해독된 에니그마 메시지 해독 성공",
+    "url": "https://www.cryptocellar.org/bgac/the-mvueh-break.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "OpenAI의 GPT-6 Astra가 2005년부터 해독되지 않았던 에니그마 암호 메시지를 해결했다는 소식이다. 구체적인 방법이나 세부 정보는 제공되지 않았다.",
+    "why_it_matters": "AI가 수십 년간 미해결된 역사적 암호 해독에 활용될 수 있음을 시사하는 사례일 수 있으나, 세부 정보가 없어 신중한 접근이 필요하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.236844689400952,
+    "published_at": "2026-09-22T13:52:15Z"
+  },
+  {
+    "id": "hn-49806430",
+    "section": "community",
+    "title_en": "Pentagon says overreliance on AI contributed to missile strike on Iran school",
+    "title_ko": "미 국방부, AI 과의존이 이란 학교 미사일 오타격에 기여했다고 밝혀",
+    "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "미 국방부(펜타곤)가 이란 학교에 대한 미사일 오타격 사건에서 AI에 대한 과도한 의존이 원인 중 하나였다고 인정했다. 구체적인 상세 내용은 제공되지 않았으나, 군사 작전에서 AI 시스템에 지나치게 의존한 것이 문제로 지적됐다.",
+    "why_it_matters": "군사 분야에서 AI 오작동 또는 과의존이 실제 민간인 피해로 이어질 수 있음을 보여주는 심각한 사례로, AI 안전성과 인간 감독의 필요성을 다시금 부각시킨다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 9.499055870872043,
+    "published_at": "2026-09-22T19:03:38Z"
+  },
+  {
+    "id": "hn-49802161",
+    "section": "community",
+    "title_en": "OpenAI is well positioned to fast-follow Jev",
+    "title_ko": "OpenAI, Jev를 빠르게 추격할 유리한 위치에 있다",
+    "url": "https://arcturus-labs.com/blog/2026/09/21/will-openai-eat-jevs-lunch/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "OpenAI가 Jev를 빠르게 추격(fast-follow)할 수 있는 위치에 있다는 내용의 소식이다. 구체적인 세부 정보는 제공되지 않았다.",
+    "why_it_matters": "OpenAI의 경쟁 전략과 시장 내 포지셔닝에 관한 논의로 주목할 수 있으나, 상세 내용이 부족해 보수적으로 해석이 필요하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.15426299625734,
+    "published_at": "2026-09-22T14:42:59Z"
+  },
+  {
+    "id": "youtube-cR6rp110f50",
+    "section": "video",
+    "title_en": "[LIVE] Mac Studio 2대 연결해서 돌려보기 with M5 Ultra, 512GB 통합 메모리",
+    "title_ko": "M5 Ultra Mac Studio 2대 연결 실험 – 512GB 통합 메모리 라이브 테스트",
+    "url": "https://www.youtube.com/watch?v=cR6rp110f50",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "Apple로부터 대여받은 M5 Ultra Mac Studio 2대를 연결해 512GB 통합 메모리 환경에서 실제 구동을 테스트하는 라이브 콘텐츠다. 두 대의 Mac Studio를 연동해 대용량 메모리가 필요한 작업을 어떻게 처리하는지 직접 시연한다.",
+    "why_it_matters": "512GB 통합 메모리를 활용한 대규모 AI 모델 로컬 실행 가능성을 실제 하드웨어로 검증하는 사례로 주목할 만하다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.6680142195767196,
+    "published_at": "2026-09-21T16:13:34Z"
+  },
+  {
+    "id": "youtube-vrIBLHcqPRs",
+    "section": "video",
+    "title_en": "AI뉴스 - Jev 열풍, OpenAI 해킹, Astra for Law, 구글도 드디어 해킹, Gemini 4 Pro 소문, RSI 등",
+    "title_ko": "AI 뉴스 종합: Jev 열풍, OpenAI·구글 해킹, Gemini 4 Pro 소문 등",
+    "url": "https://www.youtube.com/watch?v=vrIBLHcqPRs",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "이번 주 AI 뉴스를 조코딩이 정리한 영상으로, 200배 빠르다는 Jev 모델 열풍과 OpenAI의 대규모 출시 예고, OpenAI 및 구글 해킹 소식이 주요 이슈로 다뤄졌습니다. 또한 법률 특화 AI 서비스 'Astra for Law', Gemini 4 Pro 관련 루머, 앤트로픽의 AI가 AI를 개발하는 시도, Qwen 신모델 및 로보틱스 등 다양한 분야의 소식이 포함됐습니다. 앤드류 응의 AI 시대 개발자 역량 지도도 소개되었습니다.",
+    "why_it_matters": "한 주간의 주요 AI 모델·보안·인프라 동향을 한국어로 빠르게 파악할 수 있는 종합 뉴스 큐레이션이다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "인프라"
+    ],
+    "score": 0.6458432539682539,
+    "published_at": "2026-09-21T12:30:05Z"
+  },
+  {
+    "id": "youtube-bRQEWPA832A",
+    "section": "video",
+    "title_en": "The last IMO problem AI could not solve",
+    "title_ko": "AI가 풀지 못한 마지막 IMO 문제",
+    "url": "https://www.youtube.com/shorts/bRQEWPA832A",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "이 영상은 AI가 해결하지 못한 국제수학올림피아드(IMO) 문제를 다루고 있다. 전체 영상 링크만 제공되어 있어 상세 내용은 확인이 어렵다.",
+    "why_it_matters": "AI의 수학적 추론 한계를 보여주는 사례로, LLM의 문제 해결 능력의 현주소를 가늠할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.24545138888888896,
+    "published_at": "2026-09-18T17:14:08Z"
+  },
+  {
+    "id": "simon_willison-opus-and-sol-and-luna",
+    "section": "deepdive",
+    "title_en": "Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war",
+    "title_ko": "Claude Opus 5.5, GPT-6 Sol/Luna 출시와 LLM 가격 전쟁",
+    "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Anthropic이 Claude Opus 5.5를 출시하며 입력 가격을 $4/M(20% 인하), 캐시 읽기 비용을 60% 인하했다. 약 1시간 후 OpenAI는 GPT-6 Sol과 GPT-6 Luna를 공개했으며, Luna는 GPT-5.6 Luna 대비 절반 가격인 $0.10/$0.50(입력/출력)으로 책정됐다. 단, Claude Opus 5.5의 'max' 사고 모드는 SVG 생성 테스트에서 128,000 토큰 출력 한도를 초과해 응답 실패하는 문제가 발견됐다. Haiku 5.5와 Sonnet 5.5도 곧 출시 예정이며, 하위 가격대 경쟁이 더욱 치열해질 전망이다.",
+    "why_it_matters": "GPT-6 Luna의 극단적 저가 책정($0.10/M)이 LLM API 시장 전반의 가격 기준을 빠르게 재편하고 있어, AI 애플리케이션 비용 구조에 직접적 영향을 미친다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8558234126984128,
+    "published_at": "2026-09-22T23:46:41Z"
+  }
+]
