@@ -1,0 +1,369 @@
+[
+  {
+    "id": "hf-2609.25804",
+    "section": "papers",
+    "title_en": "The Tasteful Agent: Measuring and Improving Taste in Long-Horizon Tasks",
+    "title_ko": "에이전트의 '감각(Taste)' 측정 및 개선: 장기 과제 의사결정 능력 벤치마크",
+    "url": "https://huggingface.co/papers/2609.25804",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LLM 에이전트가 장기 과제를 수행할 때 중간 의사결정의 질이 최종 결과를 좌우하는데, 이를 '감각(taste)'이라 정의하고 측정하는 Taste-Bench를 제안했다. 이 벤치마크는 에이전트가 실제 수행한 궤적에서 여러 선택지 중 더 나은 방향을 고르는 '결정 분기점' 문제를 자동으로 생성하며, 인간 어노테이션 없이 구축된다. 최고 성능 모델도 정답률이 59.7%에 불과했으며, 결정적 증거가 궤적 후반에 등장하는 경우 모든 모델의 성능이 크게 떨어졌다. 또한 결과를 본 교사 모델의 판단을 학생 모델에 증류하면 감각을 향상시킬 수 있음을 SWE-bench Pro 실험으로 검증했다.",
+    "why_it_matters": "장기 과제에서 에이전트의 중간 의사결정 품질을 정량화하고 개선하는 최초의 체계적 접근으로, 실용적인 AI 에이전트 성능 향상에 직결된다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.787491742782046,
+    "published_at": "2026-09-21T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.26780",
+    "section": "papers",
+    "title_en": "SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue",
+    "title_ko": "SpeakerMem-R1: 다자간 대화를 위한 화자 중심 이중 트랙 메모리 시스템",
+    "url": "https://huggingface.co/papers/2609.26780",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "다자간 대화에서 누가 무엇을 말했는지, 개인 간 관계와 그룹 정보를 정확히 추적하는 장기 대화 메모리 시스템 SpeakerMem-R1을 제안한다. 화자 레이블이 붙은 원문 메시지와 구조화된 상태 정보를 개인/그룹 레벨로 이중 저장한 뒤, 쿼리 시 두 트랙을 결합해 답변한다. EverMemBench 리더보드에서 62.33%를 기록해 최신 프레임워크 중 최고 성능을 달성했으며, RL 학습을 통해 SFT 대비 평균 정확도를 57.38%에서 68.20%로 향상시켰다.",
+    "why_it_matters": "기존 LLM 메모리 시스템이 다자간 대화에서 놓치던 화자 귀속 오류와 관계 추적 문제를 체계적으로 해결해 실제 그룹 대화 AI 적용 가능성을 높인다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "에이전트"
+    ],
+    "score": 5.3694478524670215,
+    "published_at": "2026-09-21T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.24981",
+    "section": "papers",
+    "title_en": "GAE: Learning a Geometry-Native Latent Space for 3D-Consistent World Generation",
+    "title_ko": "GAE: 3D 일관성 세계 생성을 위한 기하학 기반 잠재 공간 학습",
+    "url": "https://huggingface.co/papers/2609.24981",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "GAE(Geometry-native AutoEncoder)는 외형 중심 잠재 공간 대신 기하학 기반 잠재 공간을 사용해 시각적 생성과 3D 인식을 통합하는 프레임워크다. GAE의 잠재 표현은 외형, 깊이, 카메라, 포인트 맵을 동시에 디코딩할 수 있다. 기존 잠재 공간을 GAE로 교체했을 때 RealEstate10K와 DL3DV에서 FVD가 각각 12.7%, 23.1% 감소했으며, 카메라 궤적 오차는 절반으로 줄었다.",
+    "why_it_matters": "영상 생성 모델의 3D 일관성 문제를 모델 구조가 아닌 잠재 공간 표현 자체에서 해결한다는 새로운 접근법으로, 지각과 생성의 통합 인터페이스 가능성을 제시한다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 4.80666248977032,
+    "published_at": "2026-09-20T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.24308",
+    "section": "papers",
+    "title_en": "HappyWorld-Bench",
+    "title_ko": "HappyWorld-Bench: 월드 모델 종합 평가 벤치마크 공개",
+    "url": "https://huggingface.co/papers/2609.24308",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "HappyWorld-Bench는 생성된 가상 세계가 에이전트와 상호작용할 때 얼마나 신뢰성 있게 동작하는지를 평가하는 종합 벤치마크다. 6단계 능력 계층(W1-W6)을 기반으로 비디오·공간·구현(embodied) 세 가지 트랙을 아우르며, 1,138개 비디오 프롬프트, 300개 공간 장면, 254개 구현 테스트 케이스로 구성된다. 14개 비디오, 9개 공간, 8개 구현 후보 모델을 평가한 결과, 모든 트랙에서 상태 일관성과 행동 반응 정확도 측면의 신뢰성 격차가 드러났다. 공간 모델의 배치 정확도는 최대 70.14%, 편집 실행률은 73.33%에 그쳤으며, 비디오 모델은 장기 롤아웃 시 일관성이 저하되는 문제를 보였다.",
+    "why_it_matters": "시각적 품질만이 아닌 상태 일관성과 행동 반응 정확도까지 포괄하는 최초의 통합 월드 모델 평가 프레임워크로, AI 에이전트 개발의 실질적 기준을 높인다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.688879454113936,
+    "published_at": "2026-09-20T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.24058",
+    "section": "papers",
+    "title_en": "All-in-One Multilingual Scene Text Recognition with Script-aware Mixture-of-Experts",
+    "title_ko": "스크립트 인식 MoE 기반 다국어 장면 텍스트 인식 통합 모델 ScriptMoE",
+    "url": "https://huggingface.co/papers/2609.24058",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "ScriptMoE는 10개 문자 체계와 229개 언어를 단일 모델로 처리하는 다국어 장면 텍스트 인식(STR) 아키텍처다. 대규모 합성 데이터셋 TextMuSS-10M을 구축하고, 이미지별로 문자 체계에 맞는 전문가 모듈 2개를 선택하는 희소 MoE 디코더를 도입했다. TextMuSS-Bench 벤치마크에서 82.06% 정확도로 최강 STR 기준 모델 대비 1.31%p 향상을 달성했으며, CC-OCR 다국어 태스크에서는 F1 점수를 65.71%에서 80.89%로 끌어올려 대형 VLM(80.73%)을 소폭 앞섰다.",
+    "why_it_matters": "거대 VLM 수준의 다국어 OCR 성능을 훨씬 적은 파라미터로 달성해, 실용적인 다국어 문서 처리 비용을 대폭 낮출 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 4.688879454113936,
+    "published_at": "2026-09-20T20:00:00Z"
+  },
+  {
+    "id": "github_trending-anthropics/financial-services",
+    "section": "releases",
+    "title_en": "anthropics/financial-services",
+    "title_ko": "Anthropic, 금융 서비스용 Claude 레퍼런스 에이전트 공개",
+    "url": "https://github.com/anthropics/financial-services",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 투자은행, 주식 리서치, 사모펀드, 자산관리 등 금융 서비스 워크플로우를 위한 레퍼런스 에이전트 모음을 오픈소스로 공개했다. Pitch Agent, GL Reconciler, KYC Screener 등 10개 이상의 에이전트가 포함되며, Claude Cowork 플러그인 또는 Claude Managed Agents API 두 가지 방식으로 배포할 수 있다. Morningstar, FactSet, Moody's, PitchBook 등 주요 금융 데이터 제공업체와의 MCP 커넥터도 함께 제공된다. 모든 결과물은 전문가의 검토를 위한 초안으로, 투자 추천이나 거래 실행 기능은 포함하지 않는다.",
+    "why_it_matters": "금융 기관이 Claude 기반 AI 에이전트를 자사 워크플로우에 빠르게 도입할 수 있는 검증된 레퍼런스 구현체로, 실무 적용 진입장벽을 크게 낮춘다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.7480952380952381,
+    "published_at": "2026-09-24T05:40:47Z"
+  },
+  {
+    "id": "github_trending-davila7/claude-code-templates",
+    "section": "releases",
+    "title_en": "davila7/claude-code-templates",
+    "title_ko": "Claude Code 템플릿 모음 – CLI 설정·모니터링 도구",
+    "url": "https://github.com/davila7/claude-code-templates",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic의 Claude Code를 위한 즉시 사용 가능한 설정 모음 프로젝트다. AI 에이전트, 커스텀 슬래시 명령어, MCP 외부 서비스 연동, 훅, 설정 파일 등 100여 개 이상의 컴포넌트를 npx 명령 한 줄로 설치할 수 있다. 분석 대시보드, 대화 모니터, 헬스 체크 등 개발 워크플로우 보조 도구도 포함되어 있으며, MIT 라이선스 오픈소스로 공개되어 있다.",
+    "why_it_matters": "Claude Code 도입을 고려하는 개발자가 복잡한 설정 없이 검증된 에이전트·MCP 통합을 즉시 활용할 수 있어 생산성 향상에 직결된다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7480952380952381,
+    "published_at": "2026-09-24T05:40:47Z"
+  },
+  {
+    "id": "github_trending-BuilderIO/agent-native",
+    "section": "releases",
+    "title_en": "BuilderIO/agent-native",
+    "title_ko": "Agent-Native: UI와 에이전트를 통합하는 오픈소스 TypeScript 프레임워크",
+    "url": "https://github.com/BuilderIO/agent-native",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "BuilderIO가 공개한 Agent-Native는 에이전트와 UI가 동일한 액션 레이어를 공유하는 오픈소스 TypeScript 프레임워크입니다. 하나의 액션을 정의하면 에이전트 툴, React UI, HTTP, MCP, CLI 등 모든 인터페이스에서 동일하게 호출할 수 있습니다. 인증·권한, 스킬·메모리, 자동화, 에이전트 팀, PostgreSQL 백엔드 등이 기본 포함되며 MIT 라이선스로 제공됩니다.",
+    "why_it_matters": "에이전트와 UI를 하나의 액션 레이어로 통합함으로써, 자율 작업과 사용자 인터페이스를 동시에 갖춘 프로덕션급 에이전트 앱 개발이 크게 단순화된다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7480952380952381,
+    "published_at": "2026-09-24T05:40:47Z"
+  },
+  {
+    "id": "github_trending-agent-substrate/substrate",
+    "section": "releases",
+    "title_en": "agent-substrate/substrate",
+    "title_ko": "Agent Substrate: Google의 AI 에이전트 대규모 실행 런타임 오픈소스 공개",
+    "url": "https://github.com/agent-substrate/substrate",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Agent Substrate는 수백만 개의 샌드박스를 표준 컨테이너 런타임 대비 10배 높은 밀도로 실행할 수 있는 에이전트 전용 실행 런타임입니다. 500ms 미만의 재개(resume) 속도와 초당 500회 이상의 suspend/resume을 지원하며, microVM 및 gVisor 기반의 제로 트러스트 격리를 제공합니다. Kubernetes 위에서 동작하며 LangChain, ADK, MCP 서버, Claude Code 등 다양한 에이전트 프레임워크를 지원합니다. 현재 초기 개발 단계로 프로덕션 사용은 권장되지 않습니다.",
+    "why_it_matters": "대규모 자율 에이전트 워크로드를 효율적으로 실행·스케줄링하는 인프라 레이어가 오픈소스로 공개되어, 에이전트 시스템의 실 운영 환경 구축 방식에 직접적인 영향을 줄 수 있습니다.",
+    "tags": [
+      "에이전트",
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 0.7480952380952381,
+    "published_at": "2026-09-24T05:40:47Z"
+  },
+  {
+    "id": "github_trending-strands-agents/harness-sdk",
+    "section": "releases",
+    "title_en": "strands-agents/harness-sdk",
+    "title_ko": "Strands Agents: Python·TypeScript용 오픈소스 AI 에이전트 SDK",
+    "url": "https://github.com/strands-agents/harness-sdk",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Strands Agents는 Python과 TypeScript로 프로덕션 AI 에이전트를 구축할 수 있는 오픈소스 SDK입니다. Amazon Bedrock, Anthropic, OpenAI, Gemini 등 다양한 모델 공급자를 지원하며, MCP, 멀티에이전트 패턴, 스트리밍, 가드레일, 메모리·세션 관리 등을 기본 내장합니다. `create_harness()` 한 줄로 최적화된 에이전트를 즉시 생성할 수 있으며, 필요에 따라 에이전트 루프 전체를 직접 제어하는 것도 가능합니다.",
+    "why_it_matters": "특정 클라우드나 모델에 종속되지 않고 프로덕션 수준의 AI 에이전트를 빠르게 구축할 수 있는 오픈소스 선택지가 생겼다는 점에서 주목할 만합니다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7480952380952381,
+    "published_at": "2026-09-24T05:40:47Z"
+  },
+  {
+    "id": "google_blog-google-beam-expansion",
+    "section": "releases",
+    "title_en": "Google Beam expands with new regions, partners, and customers",
+    "title_ko": "Google Beam, 새로운 지역·파트너·고객으로 확장",
+    "url": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "Google Beam이 새로운 지역과 파트너, 고객군으로 확장을 이어가고 있다. Google 공식 블로그를 통해 이번 확장 소식이 발표되었으며, 구체적인 세부 내용은 공개된 설명에 포함되지 않았다.",
+    "why_it_matters": "Google Beam의 글로벌 확장은 해당 서비스의 성장 방향성을 가늠할 수 있는 신호다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.678573082010582,
+    "published_at": "2026-09-23T18:00:00Z"
+  },
+  {
+    "id": "openai_blog-two-years-of-openai-academy",
+    "section": "releases",
+    "title_en": "Two years of OpenAI Academy",
+    "title_ko": "OpenAI 아카데미 2주년 — AI 역량 교육 확대",
+    "url": "https://openai.com/index/two-years-of-openai-academy",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI 아카데미가 출범 2주년을 맞이했다. OpenAI는 이를 기념하며 더 많은 커뮤니티에 AI 관련 기술과 역량을 전달하는 교육 활동을 지속 확대하고 있다.",
+    "why_it_matters": "AI 교육 접근성 확대 흐름 속에서 OpenAI의 공식 교육 플랫폼이 어떻게 성장하고 있는지 확인할 수 있다.",
+    "tags": [],
+    "score": 0.6666683201058201,
+    "published_at": "2026-09-23T16:00:00Z"
+  },
+  {
+    "id": "hn-49826565",
+    "section": "community",
+    "title_en": "Early rogue AI agent activity and attempts to hack found on urlquery.net",
+    "title_ko": "urlquery.net에서 초기 로그 AI 에이전트의 악성 활동 및 해킹 시도 포착",
+    "url": "https://transluce.org/agent-activity",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "urlquery.net에서 비정상적인 AI 에이전트 활동과 해킹 시도가 발견되었다는 보고가 등장했다. 구체적인 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "자율 AI 에이전트가 실제 환경에서 악의적 행동을 시도할 수 있다는 초기 사례로 주목받고 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 9.182732955612352,
+    "published_at": "2026-09-24T05:21:10Z"
+  },
+  {
+    "id": "hn-49817680",
+    "section": "community",
+    "title_en": "Rails World 2026 Opening Keynote [video]",
+    "title_ko": "Rails World 2026 오프닝 키노트 [영상]",
+    "url": "https://www.youtube.com/watch?v=vDjW_dRyKXY",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Rails World 2026 오프닝 키노트 영상이 공개되었다. 상세 내용은 제공된 설명이 없어 확인이 필요하다.",
+    "why_it_matters": "Ruby on Rails 생태계의 방향성을 가늠할 수 있는 공식 키노트 영상이다.",
+    "tags": [],
+    "score": 9.100006085589417,
+    "published_at": "2026-09-23T15:33:33Z"
+  },
+  {
+    "id": "hn-49830606",
+    "section": "community",
+    "title_en": "Google’s Project Suncatcher to put ML infrastructure in space",
+    "title_ko": "구글 '프로젝트 선캐처', 우주에 ML 인프라 구축 추진",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "구글이 'Project Suncatcher'라는 이름으로 머신러닝 인프라를 우주에 배치하는 프로젝트를 추진 중인 것으로 알려졌다. 상세한 내용은 공개되지 않았으나, 우주 기반 ML 인프라 구축을 목표로 하고 있다.",
+    "why_it_matters": "지상 데이터센터의 한계를 넘어 우주 공간에 AI 인프라를 구축하려는 시도로, 향후 AI 인프라 패러다임 변화를 예고할 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 8.110108022149763,
+    "published_at": "2026-09-24T13:53:29Z"
+  },
+  {
+    "id": "hn-49836374",
+    "section": "community",
+    "title_en": "Opus 5.5 is good at explainer videos",
+    "title_ko": "Opus 5.5, 설명 영상 제작에 뛰어난 성능 보여",
+    "url": "https://launchvideo.io/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Opus 5.5가 설명 영상(explainer video) 제작에 우수한 성능을 발휘한다는 평가가 나왔다. 구체적인 세부 정보는 제공되지 않았다.",
+    "why_it_matters": "설명 영상 생성 분야에서 Opus 5.5의 활용 가능성이 주목받고 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 7.996912046680345,
+    "published_at": "2026-09-24T20:28:47Z"
+  },
+  {
+    "id": "hn-49837006",
+    "section": "community",
+    "title_en": "Show HN: Koi.rest – watch some fish and regain your balance",
+    "title_ko": "Koi.rest – 물고기를 보며 마음의 균형을 되찾아보세요",
+    "url": "https://koi.rest/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Koi.rest는 물고기를 감상하며 잠시 휴식을 취할 수 있는 웹 서비스다. 제목만으로 판단하면 스트레스 해소나 집중력 회복을 위한 간단한 시각적 휴식 도구로 보인다.",
+    "why_it_matters": "개발자 번아웃이 화두인 시대에 짧은 휴식을 유도하는 미니멀한 웹 도구로 주목받고 있다.",
+    "tags": [],
+    "score": 7.329541349199669,
+    "published_at": "2026-09-24T21:33:03Z"
+  },
+  {
+    "id": "youtube-R9momwXV9w4",
+    "section": "video",
+    "title_en": "Opus 5.5: How Close Are We to Automated AI Research?",
+    "title_ko": "Claude Opus 5.5 출시: 자동화된 AI 연구(재귀적 자기개선)에 얼마나 가까워졌나?",
+    "url": "https://www.youtube.com/watch?v=R9momwXV9w4",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "Anthropic이 Claude Opus 5.5를 출시했으며, 230페이지 분량의 시스템 카드를 통해 최전선 AI 개발 동향을 엿볼 수 있다. 영상에서는 재귀적 자기개선(RSI) 목표 기준의 변화, 현 AI 모델의 실제 평가 가능성, 그리고 AI 연구가 자동화되는 방향에 대해 심층적으로 다룬다. 또한 AI 안전 정책과 실제 사고 사례, 각 연구소들의 약속 이행 기록도 함께 검토한다.",
+    "why_it_matters": "최전선 AI 모델이 재귀적 자기개선 임계점에 접근하고 있다는 신호가 나타나고 있어, AI 개발 속도와 안전 거버넌스에 대한 이해가 개발자에게 필수적이다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8503885582010582,
+    "published_at": "2026-09-24T22:51:54Z"
+  },
+  {
+    "id": "youtube-NUSOQdxr6u0",
+    "section": "video",
+    "title_en": "드디어(?) 저질러버린 제미나이",
+    "title_ko": "드디어(?) 저질러버린 제미나이 - 조코딩",
+    "url": "https://www.youtube.com/shorts/NUSOQdxr6u0",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 구글 제미나이(Gemini)와 관련된 내용을 다루는 영상이다. 구체적인 내용은 영상 시청을 통해 확인할 수 있으며, AI 및 해킹 관련 주제를 다루고 있다.",
+    "why_it_matters": "국내 개발자 커뮤니티에서 인기 있는 조코딩 채널이 제미나이 관련 실험적 시도를 소개하는 콘텐츠로, 실용적 AI 활용에 관심 있는 개발자에게 참고가 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6428786375661376,
+    "published_at": "2026-09-23T12:00:12Z"
+  },
+  {
+    "id": "youtube-F9ppxTBO_mM",
+    "section": "video",
+    "title_en": "264만 구독자 엔조이커플 맥미니 AI 직원 세팅해드렸습니다 (ft. 맥북가이버)",
+    "title_ko": "맥미니 한 대로 AI 직원 만들기 – 엔조이커플 업무 자동화 세팅 사례",
+    "url": "https://www.youtube.com/watch?v=F9ppxTBO_mM",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "264만 구독자 유튜버 엔조이커플 회사에 맥미니와 ChatGPT Codex를 활용해 AI 직원을 구축한 사례를 소개하는 영상입니다. 트렌드 자동 탐색, Slack 아이디어 정리, 광고 문의 메일 답장 초안, 재무 데이터 분석, 쇼츠 멀티 업로드까지 총 5가지 업무를 자동화했습니다. 스마트폰과 맥미니 원격 연결 보너스 팁도 포함되어 있습니다.",
+    "why_it_matters": "중소 규모 크리에이터 팀도 저비용 하드웨어와 Codex 조합으로 실무 전반을 자동화할 수 있음을 구체적인 사례로 보여준다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.6369361772486772,
+    "published_at": "2026-09-23T11:00:18Z"
+  },
+  {
+    "id": "simon_willison-commit-rewriter",
+    "section": "deepdive",
+    "title_en": "commit-rewriter 0.2",
+    "title_ko": "commit-rewriter 0.2 출시 – 기본 브랜치 외 지원 추가",
+    "url": "https://simonwillison.net/2026/Sep/24/commit-rewriter/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Simon Willison의 commit-rewriter가 0.2 버전으로 업데이트됐다. 이번 릴리스에서는 기본 브랜치 외의 다른 브랜치에서도 동작할 수 있도록 지원이 추가됐다. `uvx commit-rewriter --branch other` 명령어로 원하는 브랜치를 지정해 실행할 수 있다.",
+    "why_it_matters": "LLM 기반 커밋 메시지 재작성 도구가 다양한 브랜치 워크플로우에서도 활용 가능해졌다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8340178571428571,
+    "published_at": "2026-09-24T20:06:53Z"
+  }
+]
