@@ -1,0 +1,366 @@
+[
+  {
+    "id": "hf-2609.31620",
+    "section": "papers",
+    "title_en": "FuseReg: Regularizing Layer Fusion Mitigates the Reconstruction-Generation Gap in Representation Autoencoders",
+    "title_ko": "FuseReg: 레이어 융합 정규화로 표현 오토인코더의 재구성-생성 격차 해소",
+    "url": "https://huggingface.co/papers/2609.31620",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "표현 오토인코더(RAE)는 사전 학습된 시각 인코더의 피처를 재구성과 확산 잠재 공간에 재사용하는데, 어느 인코더 레이어를 융합할지에 따라 재구성 품질과 생성 품질 간 트레이드오프가 발생한다. FuseReg는 고정 휴리스틱 대신 인코더 레이어의 무작위 서브셋으로 학습하는 방식을 도입해 이 문제를 해결한다. ImageNet-256 실험에서 디코더 교체만으로 비유도 gFID를 27% 감소시켰으며, 확산 학습까지 정규화를 확장하면 DiT-Base 기준 29%까지 개선되었다. 사전 학습된 인코더를 수정하지 않고도 재구성-생성 격차를 좁힐 수 있음을 보여준다.",
+    "why_it_matters": "기존 RAE의 고정 레이어 선택 문제를 정규화로 해결해 이미지 재구성과 생성 품질을 동시에 향상시키는 실용적 방법을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.7535901911063645,
+    "published_at": "2026-09-24T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.29845",
+    "section": "papers",
+    "title_en": "Your Transformer Can Hold Two Thoughts at Once: Evidence of Linear Superposition in LLMs",
+    "title_ko": "트랜스포머는 두 가지 생각을 동시에 할 수 있다: LLM의 선형 중첩(Superposition) 현상 규명",
+    "url": "https://huggingface.co/papers/2609.29845",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "이 연구는 LLM이 서로 다른 텍스트 스트림의 입력을 선형 결합할 때 각 입력에 대한 다음 토큰 분포의 중첩(superposition)을 출력한다는 '중첩 선형성 가설(Superposition Linearity Hypothesis)'을 제시한다. 이 선형성은 학습의 결과가 아닌 트랜스포머 아키텍처의 본질적 특성이며, 사전학습이 진행될수록 약해지는 경향이 있다. 경량 파인튜닝으로 선형성을 상당 부분 복원할 수 있으며, 이를 활용한 가이드 디코딩 절차를 통해 단 한 번의 포워드 패스로 두 가지 일관된 텍스트를 동시에 생성할 수 있음을 보였다.",
+    "why_it_matters": "트랜스포머의 내재적 선형성을 활용해 단일 포워드 패스로 복수의 텍스트를 동시 생성하는 가능성을 열어, 추론 효율성과 LLM 내부 표현 이해에 새로운 시각을 제공한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.394449154672439,
+    "published_at": "2026-09-23T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.30221",
+    "section": "papers",
+    "title_en": "WanPE: Towards Cinematic Prompt Enhancement for Modern Text-to-Video Generation",
+    "title_ko": "WanPE: 텍스트-비디오 생성을 위한 영화적 프롬프트 강화 모델",
+    "url": "https://huggingface.co/papers/2609.30221",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "WanPE는 105만 개의 실제 영상으로 학습된 3970억 파라미터 규모의 프롬프트 강화 모델로, 감독 수준의 영화적 기획 능력을 목표로 한다. 샷 단위의 영화적 계획을 수립하는 역방향 구성 방식과 SC-GRPO 기법을 활용해 여러 샷에 걸쳐 사용자 요구를 일관되게 반영한다. Wan3.0 비디오 생성기에 적용 시 5~15초 영상에서 인간 선호도를 최대 18.84포인트, 30초 영상에서는 50.86포인트까지 향상시켰다. 5~15초 구간에서는 평가된 모든 상용 서비스를 능가하는 성능을 보였다.",
+    "why_it_matters": "텍스트 프롬프트만으로 장편 고품질 영상을 제어하는 능력을 대폭 끌어올려, AI 영상 생성의 실용성과 표현력을 한 단계 높인다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.610917912644224,
+    "published_at": "2026-09-23T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.29421",
+    "section": "papers",
+    "title_en": "Rufus-Air: An Open LLM Post-Training Recipe",
+    "title_ko": "Rufus-Air: 오픈소스 LLM 포스트 트레이닝 레시피 공개",
+    "url": "https://huggingface.co/papers/2609.29421",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Rufus-Air는 GLM-4.5-Air-Base(106B-A12B) 기반의 재현 가능한 오픈 포스트 트레이닝 레시피로, SFT부터 RLHF까지 8단계 직렬 파이프라인으로 구성됩니다. 데이터, 보상 설계, 인프라, 단계 순서 등 재현에 필요한 모든 정보를 문서화하며, 추가 인간 어노테이션이나 독자적인 증류 교사 없이 오픈소스 컴포넌트와 공개 데이터만 활용합니다. 주요 발견으로는 고품질 SFT의 중요성, RL 프롬프트 난이도 필터링의 효과, 보상 신뢰성 기반의 단계 순서 원칙 등이 있으며, 공식 GLM-4.5-Air 포스트 트레이닝 릴리스를 능가하는 성능을 보입니다.",
+    "why_it_matters": "대규모 LLM 포스트 트레이닝 전 과정을 완전 재현 가능한 형태로 공개해, 오픈소스 커뮤니티의 고성능 모델 개발 허들을 크게 낮춘다.",
+    "tags": [
+      "LLM",
+      "오픈소스",
+      "에이전트"
+    ],
+    "score": 4.091042453358316,
+    "published_at": "2026-09-23T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.31093",
+    "section": "papers",
+    "title_en": "Block Sparse Attention with Log-Linear Complexity",
+    "title_ko": "로그-선형 복잡도의 블록 희소 어텐션 PISA",
+    "url": "https://huggingface.co/papers/2609.31093",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "긴 컨텍스트를 처리할 때 셀프 어텐션의 이차(O(N²)) 복잡도 문제를 해결하기 위해 PISA라는 블록 희소 어텐션 메커니즘을 제안한다. 피라미드 Top-K 선택 전략을 사용해 거친 단계에서 세밀한 단계로 후보 키를 좁혀가며, 전체 복잡도를 O(N log N)으로 줄인다. 하드웨어 최적화된 Triton 커널을 통해 학습·추론 모두 지원하며, 상식 추론 벤치마크에서는 동등하고 검색 태스크에서는 더 나은 성능을 보인다.",
+    "why_it_matters": "긴 시퀀스 처리 비용을 이차에서 로그-선형으로 낮춰 LLM의 장문 컨텍스트 확장 가능성을 실질적으로 높인다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.044522437723423,
+    "published_at": "2026-09-24T20:00:00Z"
+  },
+  {
+    "id": "google_blog-winner-future-vision-xprize",
+    "section": "releases",
+    "title_en": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
+    "title_ko": "퓨처 비전 XPRIZE 우승작 '더 기프티드' 트레일러 공개",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글 블로그에서 퓨처 비전 XPRIZE의 우승 트레일러 '더 기프티드(The Gifted)'를 공개했다. 해당 영상은 AI 관련 미래 비전을 주제로 한 경쟁에서 선정된 작품이다.",
+    "why_it_matters": "AI 미래 비전을 창의적으로 표현한 콘텐츠 경쟁에서 우승한 작품으로, AI의 사회적 영향력에 대한 대중적 담론을 이끌 수 있다.",
+    "tags": [],
+    "score": 0.8273826058201058,
+    "published_at": "2026-09-28T19:00:00Z"
+  },
+  {
+    "id": "openai_blog-lenfest-ai-collaborative-expansion",
+    "section": "releases",
+    "title_en": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+    "title_ko": "OpenAI, Lenfest 연구소 AI 협력 프로그램에 1000만 달러 규모 지원 확대",
+    "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 Lenfest AI 협력 및 펠로우십 프로그램을 확대하며 500만 달러의 자금과 최대 500만 달러 상당의 소프트웨어 크레딧 및 엔지니어링 지원을 제공한다. 이번 지원은 Lenfest 연구소의 랜드마크 프로그램 성장을 목표로 한다.",
+    "why_it_matters": "OpenAI가 미디어·저널리즘 분야 AI 활용을 지원하는 대규모 투자로, AI와 언론 생태계의 협력 모델을 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7559540343915344,
+    "published_at": "2026-09-28T07:00:00Z"
+  },
+  {
+    "id": "github_trending-paperclipai/paperclip",
+    "section": "releases",
+    "title_en": "paperclipai/paperclip",
+    "title_ko": "Paperclip: AI 에이전트 팀을 위한 오픈소스 회사 운영 플랫폼",
+    "url": "https://github.com/paperclipai/paperclip",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Paperclip은 여러 AI 에이전트를 조직도, 예산, 목표, 거버넌스를 갖춘 '회사' 형태로 운영할 수 있는 오픈소스 Node.js + React 기반 플랫폼입니다. Claude Code, Codex, Cursor 등 다양한 에이전트를 연결해 태스크를 할당하고, 비용을 모니터링하며, 승인 게이트를 통한 거버넌스까지 한 대시보드에서 관리할 수 있습니다. MIT 라이선스로 자체 호스팅이 가능하며, 에이전트별 예산 한도 초과 시 자동 중단 등 비용 통제 기능도 내장되어 있습니다.",
+    "why_it_matters": "다수의 AI 에이전트를 동시에 운영하는 팀에게, 개별 에이전트 도구로는 해결하기 어려운 조직 수준의 조율·비용 통제·감사 문제를 오픈소스로 해결하는 플랫폼이다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.7507886904761905,
+    "published_at": "2026-09-28T06:07:56Z"
+  },
+  {
+    "id": "github_trending-rohitg00/ai-engineering-from-scratch",
+    "section": "releases",
+    "title_en": "rohitg00/ai-engineering-from-scratch",
+    "title_ko": "AI 엔지니어링 처음부터 배우기: 523개 레슨 무료 오픈소스 커리큘럼",
+    "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "수학 기초부터 자율 에이전트 스웜까지 20개 페이즈, 523개 레슨으로 구성된 무료 MIT 라이선스 AI 엔지니어링 커리큘럼이다. Python·TypeScript·Rust·Julia로 각 레슨마다 직접 구현 가능한 산출물(프롬프트, 스킬, 에이전트, MCP 서버)을 제공한다. Claude Code·Codex 등 AI 코딩 에이전트에 설치해 대화형 튜터로 활용할 수 있으며, 총 수강 시간은 배경에 따라 약 60~342시간으로 추산된다.",
+    "why_it_matters": "LLM·에이전트·RAG·인프라를 처음부터 손으로 구현하는 체계적 무료 커리큘럼으로, API 호출 수준을 넘어 AI 내부 원리를 이해하려는 한국 개발자에게 실질적 참고 자료가 된다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "RAG"
+    ],
+    "score": 0.7507886904761905,
+    "published_at": "2026-09-28T06:07:56Z"
+  },
+  {
+    "id": "openai_blog-codex-originals",
+    "section": "releases",
+    "title_en": "Are you a Codex Original?",
+    "title_ko": "Codex Originals 프로그램 참가자 모집",
+    "url": "https://openai.com/form/codex-originals",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 Codex를 활용해 놀라운 작업을 하고 있는 개발자, 연구자, 크리에이터들의 실제 사례를 수집하고 있다. Codex Originals 프로그램의 다음 챕터에 참여하고 싶다면 자신의 스토리와 프로젝트를 제출하면 된다.",
+    "why_it_matters": "OpenAI가 Codex 실사용 사례를 공개적으로 발굴·홍보하려는 움직임으로, Codex 생태계 확장 전략의 일환이다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-09-28T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-basis-tax-workbook-with-astra",
+    "section": "releases",
+    "title_en": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
+    "title_ko": "Basis, GPT-6 Astra로 세금 워크북 작성 속도 2배 향상",
+    "url": "https://openai.com/index/basis-tax-workbook-with-astra",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI의 GPT-6 Astra가 50개 탭으로 구성된 세금 워크북을 GPT-5.6 Sol 대비 2배 빠르게 완성했다. 또한 사용자 의도를 더 정확히 파악하는 능력 덕분에 Basis는 실제 업무 환경에서 더 높은 신뢰도를 확보할 수 있게 됐다.",
+    "why_it_matters": "GPT-6 Astra의 속도와 의도 이해력 향상이 세무·회계 등 복잡한 실무 자동화에서 실질적인 생산성 개선을 입증한 사례다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-09-28T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-proaction",
+    "section": "releases",
+    "title_en": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+    "title_ko": "Proaction, Codex로 매출 60% 증가·75시간 이상 절감 달성",
+    "url": "https://openai.com/index/proaction",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Proaction은 OpenAI의 Codex, GPT-Live-1, GPT-6 Astra를 활용해 현대적인 차량 관제 솔루션을 더 빠르게 구축·운영·판매하고 있다. 이를 통해 매출이 60% 증가했으며 75시간 이상의 작업 시간을 절감하는 성과를 거뒀다.",
+    "why_it_matters": "실제 기업 사례를 통해 코딩 AI 에이전트가 영업·운영 전반에 걸쳐 측정 가능한 비즈니스 성과를 낼 수 있음을 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.3988111772486772,
+    "published_at": "2026-09-25T19:00:00Z"
+  },
+  {
+    "id": "hn-49881850",
+    "section": "community",
+    "title_en": "Sonnet 5.5",
+    "title_ko": "Sonnet 5.5 출시",
+    "url": "https://www.anthropic.com/claude-sonnet-5-5",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Anthropic의 Claude Sonnet 5.5가 공개되었다. 상세한 설명은 제공되지 않았으나, 모델 시리즈의 새로운 버전으로 추정된다.",
+    "why_it_matters": "Anthropic의 주력 모델 라인업 업데이트로, LLM 생태계에 영향을 줄 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.251520310150198,
+    "published_at": "2026-09-28T17:58:11Z"
+  },
+  {
+    "id": "hn-49879000",
+    "section": "community",
+    "title_en": "MongoDB CEO resigns to join Meta",
+    "title_ko": "MongoDB CEO, 메타 합류 위해 사임",
+    "url": "https://www.reuters.com/technology/mongodb-ceo-desai-steps-down-lead-metas-enterprise-platform-2026-09-28/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "MongoDB의 CEO가 메타(Meta)에 합류하기 위해 사임했다. 구체적인 역할이나 배경에 대한 추가 정보는 제공되지 않았다.",
+    "why_it_matters": "주요 데이터베이스 기업의 리더십 공백이 MongoDB의 방향성에 영향을 줄 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.56062856163329,
+    "published_at": "2026-09-28T14:54:21Z"
+  },
+  {
+    "id": "hn-49875913",
+    "section": "community",
+    "title_en": "Parley: Federated, decentralised chat that speaks plain IRC",
+    "title_ko": "Parley: IRC 기반의 연합형 분산 채팅",
+    "url": "https://git.mills.io/prologic/parley",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Parley는 IRC 프로토콜을 기반으로 한 연합형·분산형 채팅 시스템이다. 중앙 서버 없이 탈중앙화된 방식으로 동작하며 기존 IRC와 호환된다.",
+    "why_it_matters": "탈중앙화 커뮤니케이션 인프라에 관심 있는 개발자에게 IRC 호환 분산 채팅의 새로운 선택지를 제시한다.",
+    "tags": [
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 9.253087380683677,
+    "published_at": "2026-09-28T10:30:54Z"
+  },
+  {
+    "id": "hn-49883471",
+    "section": "community",
+    "title_en": "It's Time to Investigate the AI Labs",
+    "title_ko": "AI 연구소들을 조사할 때가 됐다",
+    "url": "https://calnewport.com/its-time-to-investigate-the-ai-labs/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI 연구소들에 대한 조사가 필요하다는 주장을 담은 글이다. 구체적인 내용은 제공되지 않았으나, AI 개발 주체들의 책임과 투명성에 대한 문제를 제기하는 것으로 보인다.",
+    "why_it_matters": "AI 연구소의 책임 및 규제 논의는 AI 산업 전반에 영향을 미치는 중요한 정책 이슈다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.635734515952453,
+    "published_at": "2026-09-28T19:53:35Z"
+  },
+  {
+    "id": "hn-49883844",
+    "section": "community",
+    "title_en": "Jeff – Jev-compatible 0.8B decision models, trained at home, ~30 ms",
+    "title_ko": "Jeff – 가정용 PC에서 학습된 0.8B 결정 모델, ~30ms 응답",
+    "url": "https://github.com/firelex/jeff",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Jeff는 Jev 호환 0.8B 파라미터 결정 모델로, 일반 가정용 환경에서 학습되었으며 약 30ms의 빠른 응답 속도를 제공한다. 소규모 모델임에도 실용적인 의사결정 태스크에 활용 가능한 것으로 보인다.",
+    "why_it_matters": "소형 언어 모델을 가정용 장비로 학습하고 초저지연 추론까지 달성한 사례로, 엣지·온디바이스 AI 가능성을 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.541010441380307,
+    "published_at": "2026-09-28T20:23:36Z"
+  },
+  {
+    "id": "youtube-wRJSUbnRQFg",
+    "section": "video",
+    "title_en": "AI뉴스 - Opus 5.5, OpenAI DevDay o, GPT-6 Sol, Muse & Meta Connect, Grok 4.7, Qwen-Image-2.1 등",
+    "title_ko": "주간 AI 뉴스 총정리: Opus 5.5, GPT-6, Meta Connect, Grok 4.7, Qwen 이미지 2.1 등",
+    "url": "https://www.youtube.com/watch?v=wRJSUbnRQFg",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "이번 주 주요 AI 소식을 한 번에 정리한 영상으로, Anthropic의 Opus 5.5, OpenAI의 GPT-6(Sol/Luna)와 DevDay 예고, Meta Connect에서 공개된 Muse·VR 안경 등 하드웨어, xAI의 Grok 4.7, 알리바바 Qwen 이미지 2.1 등 다양한 모델과 서비스 업데이트를 다룬다. 또한 에이전트 시대의 산업 영향, 로봇 관련 소식(Unitree, Skild AI), Gemini·Copilot 업데이트도 포함된다. NH투자증권 Namuh PLUG를 활용한 AI 투자 리포트 자동화 예제도 소개된다.",
+    "why_it_matters": "한 주간 쏟아진 주요 AI 모델·서비스·하드웨어 업데이트를 한국어로 빠르게 파악할 수 있는 종합 뉴스 영상이다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.791698082010582,
+    "published_at": "2026-09-28T13:00:18Z"
+  },
+  {
+    "id": "youtube-YP4IFpmCQZ4",
+    "section": "video",
+    "title_en": "학력·나이·스펙 안 봅니다. 오직 AI 능력만 | AX 인재전쟁 본선 예고편 | OpenAI × 조코딩AX파트너스",
+    "title_ko": "학력·나이·스펙 없이 AI 실력만으로 겨루는 'AX 인재전쟁' 본선 예고",
+    "url": "https://www.youtube.com/watch?v=YP4IFpmCQZ4",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩AX파트너스 주최, OpenAI 후원의 'AX 인재전쟁' 본선 예고편이 공개됐다. 무신사, 카카오페이증권, 채널톡 등 6개 실제 기업의 문제를 단 3시간 안에 AI로 풀어내는 방식으로 진행됐으며, 학력·나이·스펙은 전혀 고려하지 않고 오직 AI 활용 능력만으로 참가자를 평가한다. 본선 전체 내용은 9월 30일 공개될 예정이다.",
+    "why_it_matters": "전통적 스펙 대신 AI 실전 능력을 채용 기준으로 삼는 새로운 인재 선발 모델의 가능성을 보여준다는 점에서 주목할 만하다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.7798148148148147,
+    "published_at": "2026-09-28T11:00:31Z"
+  },
+  {
+    "id": "youtube-ausLKMojXaY",
+    "section": "video",
+    "title_en": "The Phone Number puzzle",
+    "title_ko": "전화번호 퍼즐",
+    "url": "https://www.youtube.com/shorts/ausLKMojXaY",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "MoMath(미국 국립 수학 박물관)의 월간 퍼즐 시리즈 중 하나인 '전화번호 퍼즐'을 소개하는 영상이다. 수학적 사고력을 자극하는 문제를 매달 제공하는 시리즈의 일환이다.",
+    "why_it_matters": "AI·개발과 직접적인 연관성은 낮으나, 수학적 문제 해결 능력 향상에 관심 있는 개발자에게 참고할 만한 콘텐츠다.",
+    "tags": [],
+    "score": 0.36657242063492057,
+    "published_at": "2026-09-25T13:35:02Z"
+  },
+  {
+    "id": "simon_willison-claude-sonnet-5-5",
+    "section": "deepdive",
+    "title_en": "Claude Sonnet 5.5",
+    "title_ko": "Claude Sonnet 5.5 출시 – 더 빠르고 저렴하며 무료 티어에 적용",
+    "url": "https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Anthropic이 Claude Sonnet 5.5를 출시했다. 기존 Sonnet 5 대비 30% 이상 빠르고 최대 30% 저렴하게 운영 가능하며, 모든 벤치마크에서 Sonnet 5를 능가한다고 밝혔다. 가격은 Sonnet 5와 동일하게 책정됐다. 주목할 점은 이 모델이 claude.ai의 무료 티어에 적용됐다는 것으로, OpenAI의 ChatGPT 무료 티어(Luna 5.6)보다 훨씬 강력한 무료 제공으로 평가받고 있다. 한편 일부 코딩 작업에서는 Opus 5.5에 근접한 성능을 보인다.",
+    "why_it_matters": "무료 티어에 고성능 모델을 탑재한 Anthropic의 전략이 OpenAI와의 경쟁 구도를 바꿀 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8459970238095238,
+    "published_at": "2026-09-28T22:07:38Z"
+  }
+]
