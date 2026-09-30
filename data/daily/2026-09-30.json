@@ -1,0 +1,366 @@
+[
+  {
+    "id": "hf-2609.33325",
+    "section": "papers",
+    "title_en": "VisionHOPE: Visual Backbones as Self-Modifying Learning Systems",
+    "title_ko": "VisionHOPE: 자기 수정 학습 시스템으로서의 비전 백본",
+    "url": "https://huggingface.co/papers/2609.33325",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "VisionHOPE는 기존 CNN, ViT, SSM, TTT 레이어의 발전을 잇는 최초의 자기 수정 학습 시스템 기반 비전 백본입니다. Nested Learning(NL)의 자기 참조 구조를 기반으로, 다섯 가지 결합 메모리를 통해 모델이 이미지를 처리하는 동안 무엇을 기억하고 어떻게 학습할지를 동시에 진화시킵니다. 불안정성 문제를 해결하기 위해 소프트 캡과 스펙트럴 클램프를 결합한 안정성 매칭 스텝 사이즈 제어 방식을 도입했으며, ImageNet-1K, COCO, ADE20K에서 경쟁력 있는 성능을 달성했습니다.",
+    "why_it_matters": "비전 백본이 입력에 따라 학습 규칙 자체를 적응적으로 바꾸는 자기 수정 패러다임을 최초로 실용화해, 범용 시각 기반 모델의 새로운 방향을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.68213122712422,
+    "published_at": "2026-09-26T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.32577",
+    "section": "papers",
+    "title_en": "Groupwise Agentic Grading and Advantage Redistribution for Code Agent RL",
+    "title_ko": "코드 에이전트 강화학습을 위한 그룹별 에이전틱 채점 및 어드밴티지 재분배(GAGAR)",
+    "url": "https://huggingface.co/papers/2609.32577",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "GAGAR는 코드 에이전트 강화학습에서 GRPO의 한계를 극복하는 프레임워크다. 기존 GRPO는 테스트를 통과한 모든 궤적에 동일한 어드밴티지를 부여해 구현 품질 차이를 무시했으나, GAGAR는 SFT 학습된 에이전틱 채점기가 통과 궤적들을 공동 검사하고 순위를 매겨 품질 기반으로 어드밴티지를 재분배한다. MiMo-V2.6-Flash(310B)와 MiMo-V2.6-Pro(1.02T) 모델로 산업 규모 실험을 수행한 결과, 코드 에이전트 성능 향상과 궤적 길이 증가 억제, 학습 안정성 개선을 확인했다.",
+    "why_it_matters": "테스트 통과 여부만으로 보상을 주는 이진 RL의 품질 신호 부재 문제를 해결해 대규모 코드 에이전트 학습의 품질과 안정성을 동시에 높일 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.574710978503383,
+    "published_at": "2026-09-25T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.35457",
+    "section": "papers",
+    "title_en": "How Far Are We from Removing the Visual Encoder? Scaling Laws for Encoder-Free Multimodal Pretraining",
+    "title_ko": "비주얼 인코더 없이 얼마나 갈 수 있나? 인코더-프리 멀티모달 사전학습의 스케일링 법칙",
+    "url": "https://huggingface.co/papers/2609.35457",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "현대 멀티모달 LLM(MLLM)은 대부분 사전학습된 비주얼 인코더에 의존하지만, 이 연구는 인코더 없이 원시 픽셀에서 직접 시각 표현을 학습하는 '인코더-프리' 구조의 스케일링 법칙을 체계적으로 분석했다. 핵심 발견은 인코더-프리 모델이 소규모에서는 성능이 뒤처지지만, 약 10²² FLOPs 수준에서 인코더 기반 모델을 따라잡을 것으로 예측된다는 점이다. 또한 학습 컴퓨팅이 늘어날수록 언어 모델이 비주얼 인코더의 역할을 스스로 대체하며, 시각 토큰 간 양방향 상호작용과 초기 레이어 처리가 강화되는 경향이 관찰됐다.",
+    "why_it_matters": "충분한 스케일에서 별도의 비주얼 인코더 없이도 경쟁력 있는 멀티모달 성능이 가능함을 시사해, 더 단순하고 통합된 멀티모달 아키텍처의 가능성을 열어준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.02535169073515,
+    "published_at": "2026-09-27T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.35767",
+    "section": "papers",
+    "title_en": "Learning Native Reflection in Unified Models with Interleaved Reinforcement Learning",
+    "title_ko": "통합 멀티모달 모델의 자기 반성 학습: 인터리브드 강화학습 기반 UMM-Reflection",
+    "url": "https://huggingface.co/papers/2609.35767",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "통합 멀티모달 모델은 이미지를 생성하고 동시에 평가할 수 있어, 자체적으로 생성물을 수정하는 '자기 반성' 능력을 갖출 수 있다. 기존 SFT 방식은 콜드 스타트에는 유효하나 최적의 수정 경로를 찾지 못하는 한계가 있어, 이를 해결하기 위해 UMM-Reflection이 제안되었다. 이 방법은 전체 반성 궤적에 걸쳐 강화학습을 적용하며, 외부 검증자 없이 반성 토큰과 이미지 생성을 함께 학습한다. BAGEL 모델 기준 GenEval에서 SFT 대비 12.05포인트 향상을 달성했으며, 훈련에 사용되지 않은 다양한 벤치마크에서도 성능 향상이 확인되었다.",
+    "why_it_matters": "외부 critic 없이 단일 모델 내에서 이미지 생성과 자기 수정을 함께 학습하는 새로운 패러다임으로, 멀티모달 생성 모델의 자율적 품질 개선 가능성을 크게 높인다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.610917912644224,
+    "published_at": "2026-09-27T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.33378",
+    "section": "papers",
+    "title_en": "Recursive Harness Distillation across Agents for Robot Manipulation",
+    "title_ko": "로봇 조작을 위한 재귀적 하네스 증류 프레임워크",
+    "url": "https://huggingface.co/papers/2609.33378",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "비전-언어-액션(VLA) 모델 기반 로봇 조작 시 실패 진단 및 적응에 어려움이 있는 문제를 해결하기 위해 '재귀적 하네스 증류(Recursive Harness Distillation)'를 제안한다. 강력한 에이전트가 개입 경험을 플레이북으로 증류하고, 경량 에이전트의 실행 피드백을 통해 재귀적으로 정제하는 방식이다. 실제 환경에서 성공률이 37.3%에서 64.0%로 향상되었으며, SimplerEnv Bridge 벤치마크에서 경량 에이전트가 플레이북 적용 시 66.7% 성공률을 달성해 GR00T 단독 기준선(41.7%)을 크게 앞질렀다.",
+    "why_it_matters": "모델 파라미터 업데이트 없이 개입 지식을 재사용 가능한 플레이북으로 누적·전달해, 다양한 로봇 조작 태스크에 즉시 적용 가능한 실용적 프레임워크를 제시한다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 4.401197381662156,
+    "published_at": "2026-09-26T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-introducing-gpt-6-1-sol",
+    "section": "releases",
+    "title_en": "Introducing GPT-6.1 Sol",
+    "title_ko": "GPT-6.1 Sol 출시 발표",
+    "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 GPT-6.1 Sol을 공개했다. 코딩, 컴퓨터 사용, 전문 업무에 특화된 모델로, Astra에 근접한 지능 수준을 제공하면서 가격은 Astra 표준 API 입출력 토큰 가격의 5분의 1 수준이다.",
+    "why_it_matters": "고성능 모델을 대폭 낮은 비용으로 이용할 수 있어 개발자와 기업의 AI 도입 장벽이 크게 낮아진다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7738111772486773,
+    "published_at": "2026-09-29T10:00:00Z"
+  },
+  {
+    "id": "openai_blog-devday-2026-recap",
+    "section": "releases",
+    "title_en": "DevDay 2026 Recap",
+    "title_ko": "OpenAI DevDay 2026 주요 발표 총정리",
+    "url": "https://openai.com/index/devday-2026-recap",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI DevDay 2026에서 GPT-6 Astra, ChatGPT, Codex 등 20개 이상의 발표가 이루어졌다. API, 보안, 개발자용 새 도구 등 다양한 분야의 업데이트가 포함됐다. 개발자와 빌더를 위한 폭넓은 생태계 확장이 핵심이다.",
+    "why_it_matters": "GPT-6 Astra를 비롯한 20여 개의 신규 발표로 OpenAI의 개발자 플랫폼 전략 방향을 한눈에 파악할 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7738111772486773,
+    "published_at": "2026-09-29T10:00:00Z"
+  },
+  {
+    "id": "github_trending-paperclipai/paperclip",
+    "section": "releases",
+    "title_en": "paperclipai/paperclip",
+    "title_ko": "Paperclip: AI 에이전트 팀을 관리하는 오픈소스 오케스트레이션 플랫폼",
+    "url": "https://github.com/paperclipai/paperclip",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Paperclip은 여러 AI 에이전트(Claude Code, Codex, Cursor 등)를 하나의 대시보드에서 조직도, 예산, 목표, 거버넌스 체계로 통합 관리하는 오픈소스 Node.js 서버 및 React UI입니다. 태스크 매니저처럼 보이지만 내부적으로 에이전트별 예산 한도, 하트비트 기반 스케줄링, 승인 워크플로우, 전체 감사 로그를 갖춘 본격적인 제어 플레인입니다. MIT 라이선스로 셀프호스팅이 가능하며, npx 명령 하나로 즉시 체험할 수 있습니다.",
+    "why_it_matters": "단일 에이전트 도구가 아닌 '에이전트 조직 운영' 개념을 오픈소스로 구현한 첫 본격적인 플랫폼으로, 다수의 AI 에이전트를 실무에 투입하려는 팀에게 거버넌스·비용 통제 기반을 제공한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.7525347222222223,
+    "published_at": "2026-09-29T06:25:32Z"
+  },
+  {
+    "id": "openai_blog-introducing-dots",
+    "section": "releases",
+    "title_en": "Introducing dots",
+    "title_ko": "OpenAI, 'dots' 소개 - 능동적 AI 어시스턴트",
+    "url": "https://openai.com/index/introducing-dots",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 'dots'라는 새로운 능동형 어시스턴트를 공개했습니다. dots는 복잡한 프로젝트부터 일상적인 작업까지 사용자 대신 지속적으로 작업을 수행할 수 있습니다. 사용자가 통제권을 유지하면서도 작업이 자동으로 진행될 수 있도록 설계되었습니다.",
+    "why_it_matters": "OpenAI가 단순 응답형 AI를 넘어 자율적으로 작업을 수행하는 에이전트 제품을 공식 출시함으로써 AI 어시스턴트의 패러다임 전환을 예고합니다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-09-29T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-towards-safety-cases-for-frontier-ai-training",
+    "section": "releases",
+    "title_en": "Towards safety cases for frontier AI training",
+    "title_ko": "프론티어 AI 훈련을 위한 안전 사례 수립 방향",
+    "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 프론티어 AI 훈련 단계에서의 안전 사례(safety cases) 초기 가이드라인을 공개했다. 이 가이드라인은 기술적 안전장치, 운영 관행, 그리고 정렬 불일치(misalignment) 사고 조사 등 세 가지 핵심 영역을 다룬다. 이는 대규모 AI 훈련 과정에서 발생할 수 있는 위험을 체계적으로 관리하기 위한 초석으로 마련되었다.",
+    "why_it_matters": "프론티어 AI 훈련 단계부터 안전 사례를 구조화함으로써, AI 정렬 문제와 운영 리스크를 사전에 방지하는 업계 표준 수립의 시작점이 될 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.6845254629629629,
+    "published_at": "2026-09-28T19:00:00Z"
+  },
+  {
+    "id": "openai_blog-how-we-will-do-better-for-australia",
+    "section": "releases",
+    "title_en": "How we will do better for Australia",
+    "title_ko": "OpenAI, 호주에 대한 개선 방안 발표",
+    "url": "https://openai.com/index/how-we-will-do-better-for-australia",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI는 호주 정부 웹사이트와 관련된 사건들에 대해 공식 사과했다. 이번 성명에서 OpenAI는 더 강력한 안전장치를 마련하고 호주의 사이버 방어 역량 강화를 지원하겠다는 계획을 밝혔다. 이는 AI 기업이 특정 국가 정부와의 신뢰 회복을 위해 공식적으로 대응한 사례다.",
+    "why_it_matters": "AI 기업이 정부 기관 관련 사고에 공식 사과 및 개선책을 제시한 것은 AI 거버넌스와 국가 간 신뢰 구축 측면에서 중요한 선례가 된다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.6845254629629629,
+    "published_at": "2026-09-28T19:00:00Z"
+  },
+  {
+    "id": "google_blog-winner-future-vision-xprize",
+    "section": "releases",
+    "title_en": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
+    "title_ko": "Future Vision XPRIZE 수상작 '더 기프티드' 트레일러 공개",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글이 Future Vision XPRIZE의 수상 트레일러 '더 기프티드(The Gifted)'를 공개했다. 해당 영상은 AI와 관련된 미래 비전을 주제로 한 경쟁에서 선정된 작품이다.",
+    "why_it_matters": "AI 미래 비전을 영상으로 표현하는 크리에이티브 경쟁의 수상작으로, AI에 대한 대중 인식 형성에 영향을 줄 수 있다.",
+    "tags": [],
+    "score": 0.6845254629629629,
+    "published_at": "2026-09-28T19:00:00Z"
+  },
+  {
+    "id": "hn-49896586",
+    "section": "community",
+    "title_en": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+    "title_ko": "GPT 6.1 Sol: Astra급 지능을 5분의 1 가격에",
+    "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GPT 6.1 Sol이 Astra 수준의 지능을 훨씬 낮은 비용으로 제공한다는 내용을 다루고 있다. 상세 설명이 제공되지 않아 제목 기반으로만 파악 가능하다.",
+    "why_it_matters": "고성능 LLM을 저비용으로 이용할 수 있다면 개발자 접근성이 크게 높아질 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.90775243151647,
+    "published_at": "2026-09-29T17:06:45Z"
+  },
+  {
+    "id": "hn-49896604",
+    "section": "community",
+    "title_en": "Dots: Always-on agents",
+    "title_ko": "Dots: 항상 켜져 있는 에이전트",
+    "url": "https://openai.com/index/introducing-dots/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Dots는 항상 실행 중인 에이전트 서비스를 표방하는 프로젝트다. 제목 외 추가적인 세부 정보는 제공되지 않았다.",
+    "why_it_matters": "'Always-on 에이전트' 개념은 지속적으로 동작하는 AI 에이전트 인프라에 관심 있는 개발자들에게 주목할 만한 키워드다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 10.033297494014336,
+    "published_at": "2026-09-29T17:07:57Z"
+  },
+  {
+    "id": "hn-49890226",
+    "section": "community",
+    "title_en": "A Privacy Analysis of Web and Mobile Conversational AI Agents [pdf]",
+    "title_ko": "웹 및 모바일 대화형 AI 에이전트의 개인정보 보호 분석",
+    "url": "https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-(clean).pdf",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "웹과 모바일 환경에서 동작하는 대화형 AI 에이전트의 개인정보 보호 실태를 분석한 연구 논문이다. 제목 외 구체적인 내용은 제공되지 않아 세부 사항은 알 수 없다.",
+    "why_it_matters": "AI 에이전트의 개인정보 처리 방식에 대한 학술적 분석은 개발자와 기업이 프라이버시 리스크를 이해하는 데 중요한 기초 자료가 된다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 9.441173376584997,
+    "published_at": "2026-09-29T09:03:41Z"
+  },
+  {
+    "id": "hn-49891290",
+    "section": "community",
+    "title_en": "Jeeves. Reasoning improves Jev-like decision models",
+    "title_ko": "Jeeves: 추론을 통한 Jev 계열 의사결정 모델 개선",
+    "url": "https://github.com/PostHog/jeeves",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Jeeves는 Jev 계열 의사결정 모델에 추론 능력을 접목해 성능을 향상시키는 프로젝트다. 제목 외 상세 정보가 제공되지 않아 구체적인 내용은 확인이 필요하다.",
+    "why_it_matters": "추론(Reasoning) 기법을 의사결정 모델에 통합하는 방향은 AI 에이전트 성능 향상의 핵심 화두다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 8.629851029999033,
+    "published_at": "2026-09-29T11:13:54Z"
+  },
+  {
+    "id": "hn-49871018",
+    "section": "community",
+    "title_en": "NAND-16: a computer built from 277,248 NAND gates",
+    "title_ko": "NAND-16: NAND 게이트 277,248개로 만든 컴퓨터",
+    "url": "https://somethingbig.ai/computer",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "NAND-16은 277,248개의 NAND 게이트만을 사용해 직접 구축한 컴퓨터 프로젝트다. NAND 게이트는 모든 논리 회로의 기본 구성 요소로, 이 프로젝트는 극단적으로 기초적인 수준에서 컴퓨터를 직접 구현한 사례다.",
+    "why_it_matters": "컴퓨터 하드웨어의 가장 기본 원리를 실제로 구현해 보여주는 교육적·기술적으로 인상적인 사례다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 7.685504679829481,
+    "published_at": "2026-09-27T21:26:06Z"
+  },
+  {
+    "id": "youtube-KBlCLO7u-QY",
+    "section": "video",
+    "title_en": "[LIVE] OpenAI DevDay 2026 함께봐요!!",
+    "title_ko": "[라이브] OpenAI DevDay 2026 함께보기",
+    "url": "https://www.youtube.com/watch?v=KBlCLO7u-QY",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "OpenAI DevDay 2026 행사를 실시간으로 함께 시청하는 라이브 방송이다. 구체적인 발표 내용은 제공된 정보에서 확인되지 않는다.",
+    "why_it_matters": "OpenAI의 연례 개발자 행사로, 새로운 기술 및 제품 발표가 예상되는 주요 이벤트다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.827853835978836,
+    "published_at": "2026-09-29T19:04:45Z"
+  },
+  {
+    "id": "youtube-vRYP8Q1Yf4o",
+    "section": "video",
+    "title_en": "오픈AI가 곧 공개한다는 AI 에이전트와 500달러 요금제ㄷㄷ",
+    "title_ko": "오픈AI, AI 에이전트 신규 공개 및 월 500달러 요금제 출시 예정",
+    "url": "https://www.youtube.com/shorts/vRYP8Q1Yf4o",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "오픈AI가 조만간 새로운 AI 에이전트 기능과 월 500달러의 고가 요금제를 공개할 예정이라는 소식이 전해졌다. 해당 내용은 조코딩 채널을 통해 소개된 오픈AI 관련 최신 동향이다.",
+    "why_it_matters": "오픈AI의 고가 에이전트 요금제 출시는 AI 서비스의 기업·전문가 시장 공략 전략을 보여주는 중요한 신호다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.7797784391534391,
+    "published_at": "2026-09-29T11:00:09Z"
+  },
+  {
+    "id": "youtube-QWLnCrDtyR0",
+    "section": "video",
+    "title_en": "이제 사람 다 됐다는 제미나이 말하기 실력 근황 ㄷㄷ",
+    "title_ko": "사람처럼 말하는 제미나이(Gemini)의 TTS 실력 근황",
+    "url": "https://www.youtube.com/shorts/QWLnCrDtyR0",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "유튜브 채널 조코딩에서 구글 제미나이의 최신 음성(TTS) 생성 실력을 소개하는 영상이다. 제목에서 '사람 다 됐다'고 표현할 만큼 자연스러운 말하기 수준에 도달했음을 강조하고 있다.",
+    "why_it_matters": "AI 음성 합성 기술이 사람과 구분하기 어려운 수준에 근접했다는 점에서 TTS 활용 개발자들에게 주목할 만하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7738707010582011,
+    "published_at": "2026-09-29T10:00:36Z"
+  },
+  {
+    "id": "simon_willison-anthropic-frontier-red-team",
+    "section": "deepdive",
+    "title_en": "Quoting Anthropic Frontier Red Team",
+    "title_ko": "Anthropic 프런티어 레드팀: GLM-5.3의 고급 사이버 공격 능력 평가 결과",
+    "url": "https://simonwillison.net/2026/Sep/29/anthropic-frontier-red-team/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Anthropic 프런티어 레드팀이 내부 바이너리 익스플로잇 벤치마크 100개 과제를 대상으로 여러 모델을 평가한 결과, GLM-5.3은 4%의 시도에서 완전한 제어 흐름 하이재킹에 성공했고 Claude Mythos Preview는 6%를 기록했다. 이전 세대 모델인 Claude Opus 4.6과 GLM-5.2는 단 하나도 성공하지 못했다는 점에서, 이번 결과는 의미 있는 임계점을 넘어선 것으로 평가된다.",
+    "why_it_matters": "최신 LLM이 실제 바이너리 익스플로잇을 자율적으로 수행할 수 있는 수준에 도달했음을 공식 레드팀 평가가 확인함으로써, AI 보안 위협의 현실화가 가속화되고 있음을 시사한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.847270171957672,
+    "published_at": "2026-09-29T22:20:28Z"
+  }
+]
