@@ -1,0 +1,371 @@
+[
+  {
+    "id": "hf-2609.32722",
+    "section": "papers",
+    "title_en": "Scaling Properties of Same-Family On-Policy Distillation",
+    "title_ko": "동일 계열 온-폴리시 증류의 스케일링 특성 연구",
+    "url": "https://huggingface.co/papers/2609.32722",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "강화학습(RL)으로 향상된 LLM의 추론 능력이 온-폴리시 증류(OPD)를 통해 다른 크기의 모델로 얼마나 잘 전이되는지를 분석한 연구다. 학생 모델의 초기화 대비 KL 발산의 제곱근에 따라 정확도가 선형적으로 상승하는 '유용한 전이' 구간이 일관되게 나타났으며, 약한 교사 모델로부터 더 큰 학생 모델로 증류할 때 학생이 교사의 성능을 초과하는 현상도 관찰됐다. 또한 교사 스케일이 학생 스케일을 초과하면 성능 향상이 정체되고, 동일한 성능 수준에서는 소형 교사가 더 효율적으로 전이함을 파워 법칙으로 규명했다.",
+    "why_it_matters": "RL 전문화된 소형 모델을 교사로 활용한 대형 모델 증류 전략의 최적 설계 방향을 수치적으로 제시한다는 점에서 실용적 가치가 높다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 6.365976015021851,
+    "published_at": "2026-09-25T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.32607",
+    "section": "papers",
+    "title_en": "VoxMem: Benchmarking Multimodal Memory in Large Audio Language Models",
+    "title_ko": "VoxMem: 대형 오디오 언어 모델의 멀티모달 메모리 벤치마크",
+    "url": "https://huggingface.co/papers/2609.32607",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "VoxMem은 대형 오디오 언어 모델(LALM)의 대화 메모리 능력을 평가하기 위한 새로운 벤치마크로, 34,743개의 음성 세션(177시간)에 걸쳐 3,196개의 평가 인스턴스를 제공한다. 음성 의미, 화자 식별, 준언어적 단서, 환경음 등 4가지 음향 증거 유형과 정보 추출, 다중 세션 추론, 시간 추적, 답변 거부 등 4가지 메모리 연산을 교차 평가한다. 15개 모델을 평가한 결과, 32K 토큰 컨텍스트에서 40%를 초과한 모델이 없었으며, 모델들은 '무엇이 말해졌는가'보다 '누가, 어떻게, 어떤 환경에서 말했는가'를 훨씬 더 잘 기억하지 못하는 것으로 나타났다.",
+    "why_it_matters": "기존 벤치마크가 간과했던 음향 정보 기반 멀티세션 메모리 능력을 체계적으로 평가함으로써, 음성 대화 AI의 실질적 한계를 드러내고 발전 방향을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.836281906951478,
+    "published_at": "2026-09-25T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.36322",
+    "section": "papers",
+    "title_en": "Periodic Weak Spots: Phase Sensitivity from Chunked KV-Cache Compression",
+    "title_ko": "청크 KV-캐시 압축의 위상 민감성: 주기적 취약점 발견",
+    "url": "https://huggingface.co/papers/2609.36322",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "청크 KV-캐시 압축은 긴 컨텍스트 추론의 메모리와 어텐션 비용을 줄이지만, 토큰이 압축 윈도우 내 어느 위치(위상)에 있느냐에 따라 검색 성능이 크게 달라지는 '위상 민감성' 문제를 유발한다. 대형 오픈웨이트 모델에서 위상에 따라 긴 컨텍스트 검색 정확도가 최대 40%p까지 차이 나는 주기적 취약점이 확인됐다. 연구팀은 다양한 KV-압축 설계로 트랜스포머를 처음부터 사전학습하여 이 현상을 재현하고, 인과적 개입 분석을 통해 어텐션 구성 요소가 위상별로 비대칭적으로 작동하는 '위상 특화' 메커니즘을 규명했다.",
+    "why_it_matters": "평균 벤치마크 점수가 높아도 특정 위상에서 체계적 실패가 숨어 있을 수 있어, KV-캐시 압축 모델의 평가 방법론 자체를 재검토해야 한다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 5.584967478670572,
+    "published_at": "2026-09-27T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.37226",
+    "section": "papers",
+    "title_en": "Follow the Entities: A Corpus Map for Agentic Search",
+    "title_ko": "엔티티 중심의 코퍼스 탐색 레이어 CorpusMap 소개",
+    "url": "https://huggingface.co/papers/2609.37226",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "대규모 문서 컬렉션에서 여러 문서에 분산된 증거를 연결하는 질의응답은 LLM 에이전트에게 큰 도전 과제다. CorpusMap은 문서에서 반복 등장하는 엔티티를 중심으로 코퍼스를 구조화하는 탐색 레이어로, 각 엔티티를 'Entity Page'로 표현하고 관련 문서들을 그래프로 연결한다. 이 구조는 오프라인으로 사전 구축되어 쿼리마다 관계를 재탐색할 필요가 없으며, 7개 모델과 3개 벤치마크에서 원시 코퍼스 기반 에이전틱 검색 대비 증거 발견율과 답변 품질을 개선하면서도 평균 토큰 사용량을 줄였다.",
+    "why_it_matters": "엔티티 기반 그래프 구조로 RAG의 다중 문서 추론 한계를 극복하고 에이전트의 토큰 효율까지 동시에 개선한 실용적 접근법이다.",
+    "tags": [
+      "RAG",
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.290459441148391,
+    "published_at": "2026-09-28T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.32522",
+    "section": "papers",
+    "title_en": "Beyond Dyadic Memory: Interaction-Aware Multimodal Memory with Adaptive Agentic Retrieval for Multi-Party Spoken Conversations",
+    "title_ko": "다자간 음성 대화를 위한 상호작용 인식 멀티모달 메모리 프레임워크 VoxPolyMem",
+    "url": "https://huggingface.co/papers/2609.32522",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "기존 장기 메모리 연구가 양자 간 텍스트/이미지 대화에 집중된 반면, VoxPolyMem은 다자간 음성 대화에 특화된 멀티모달 메모리 프레임워크를 제안한다. 상호작용 메모리, 사실 메모리, 참여자 프로필로 구성된 계층적 메모리와 증분적 화자 식별 기능을 결합하며, 검색을 순차적 의사결정으로 정식화하여 에이전트가 쿼리를 재작성하고 메모리 레이어를 선택한다. 새롭게 제안한 EG-GRPO 학습 방식과 함께 VoxPolyBench에서 85.0점을 기록하며 최강 베이스라인 대비 23.6점 초과 달성했다.",
+    "why_it_matters": "다자간 음성 대화에서의 장기 기억·화자 추적 문제를 체계적으로 다뤄, 실제 멀티파티 AI 어시스턴트 개발에 실질적 기여 가능성이 높다.",
+    "tags": [
+      "에이전트",
+      "RAG",
+      "LLM"
+    ],
+    "score": 5.1588830833596715,
+    "published_at": "2026-09-25T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-disrupting-a-coordinated-model-distillation-campaign",
+    "section": "releases",
+    "title_en": "Disrupting a coordinated model-distillation campaign",
+    "title_ko": "OpenAI, 모델 증류 공격 캠페인 차단",
+    "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 보호된 모델의 추론 능력을 무단으로 추출하려는 조직적인 모델 증류 캠페인을 탐지하고 차단했다. 이번 조치와 함께 적대적 증류 공격에 대한 방어 체계도 강화하고 있다.",
+    "why_it_matters": "LLM의 지적 재산권 보호와 적대적 모델 증류 방어가 업계 전반의 주요 보안 과제로 부상하고 있음을 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7767873677248678,
+    "published_at": "2026-09-30T10:30:00Z"
+  },
+  {
+    "id": "openai_blog-helping-small-businesses-put-ai-to-work",
+    "section": "releases",
+    "title_en": "Helping small businesses put AI to work",
+    "title_ko": "OpenAI, 중소기업 AI 도입 지원 나서",
+    "url": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 미국 중소기업개발센터(SBDC)와 파트너십을 맺고 소규모 기업을 위한 실습 AI 교육과 현지 지원을 확대한다. 이와 함께 소규모 팀들이 AI를 어떻게 활용하고 있는지에 대한 새로운 보고서도 발표했다.",
+    "why_it_matters": "대기업 중심의 AI 도입 흐름이 중소기업으로 확산되는 중요한 계기가 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7738111772486773,
+    "published_at": "2026-09-30T10:00:00Z"
+  },
+  {
+    "id": "github_trending-paperclipai/paperclip",
+    "section": "releases",
+    "title_en": "paperclipai/paperclip",
+    "title_ko": "Paperclip: AI 에이전트 팀을 관리하는 오픈소스 오케스트레이션 플랫폼",
+    "url": "https://github.com/paperclipai/paperclip",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Paperclip은 여러 AI 에이전트(Claude Code, Codex, Cursor 등)를 하나의 '회사'처럼 운영할 수 있는 오픈소스 Node.js 서버 및 React UI입니다. 조직도, 목표 정렬, 예산 관리, 거버넌스, 스케줄 기반 하트비트 실행 등을 태스크 매니저 형태의 대시보드로 제공합니다. MIT 라이선스로 제공되며 자체 호스팅이 가능하고, npx 한 줄로 바로 체험할 수 있습니다.",
+    "why_it_matters": "수십 개의 AI 에이전트를 동시에 운영하는 팀에게 비용 통제·감사·조직 관리를 단일 플랫폼으로 제공하는 오픈소스 에이전트 오케스트레이션 도구의 등장은 멀티에이전트 시스템 운영 방식을 실질적으로 바꿀 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.7511375661375661,
+    "published_at": "2026-09-30T06:11:27Z"
+  },
+  {
+    "id": "github_trending-rohitg00/ai-engineering-from-scratch",
+    "section": "releases",
+    "title_en": "rohitg00/ai-engineering-from-scratch",
+    "title_ko": "AI 엔지니어링 처음부터 배우기: 523개 레슨 오픈소스 커리큘럼",
+    "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "수학 기초부터 자율 에이전트 시스템까지 20개 페이즈, 523개 레슨으로 구성된 무료 오픈소스 AI 엔지니어링 커리큘럼이다. Python·TypeScript·Rust·Julia를 활용해 매 레슨마다 프롬프트, 스킬, 에이전트, MCP 서버 등 재사용 가능한 아티팩트를 직접 만든다. LLM·RAG·에이전트·인프라·안전성까지 폭넓게 다루며, Claude Code·Codex 등 코딩 에이전트에 바로 설치 가능한 학습 스킬도 제공한다. MIT 라이선스로 누구나 무료로 이용할 수 있다.",
+    "why_it_matters": "이론 학습에 그치지 않고 각 레슨 결과물을 실제 에이전트 워크플로우에 즉시 적용할 수 있는 체계적인 풀스택 AI 엔지니어링 커리큘럼이라는 점에서 한국 개발자에게 실질적 가치가 크다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "에이전트"
+    ],
+    "score": 0.7511375661375661,
+    "published_at": "2026-09-30T06:11:27Z"
+  },
+  {
+    "id": "github_trending-VectifyAI/PageIndex",
+    "section": "releases",
+    "title_en": "VectifyAI/PageIndex",
+    "title_ko": "PageIndex: 벡터 DB 없이 추론 기반으로 동작하는 RAG 엔진",
+    "url": "https://github.com/VectifyAI/PageIndex",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "PageIndex는 벡터 데이터베이스와 청킹 없이 문서를 계층적 트리 인덱스로 구조화하고, LLM이 사람처럼 트리를 탐색하며 관련 정보를 추론·검색하는 오픈소스 RAG 엔진이다. FinanceBench에서 98.7% 정확도를 기록해 벡터 RAG(약 50%) 대비 압도적인 성능을 보였으며, 420페이지 문서 기준 질의 비용도 네이티브 PDF 전체 입력 방식보다 16.6배 저렴하다. `pip install pageindex`로 로컬 모드와 클라우드 모드 모두 지원하며, OpenAI Agents SDK 등 기존 에이전트 프레임워크와도 통합 가능하다.",
+    "why_it_matters": "유사도 기반 벡터 검색의 한계를 추론 기반 트리 탐색으로 대체해, 금융·법률·의료 등 복잡한 전문 문서 RAG의 정확도와 비용 효율을 동시에 개선할 수 있다.",
+    "tags": [
+      "RAG",
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7511375661375661,
+    "published_at": "2026-09-30T06:11:27Z"
+  },
+  {
+    "id": "openai_blog-introducing-gpt-6-1-sol",
+    "section": "releases",
+    "title_en": "Introducing GPT-6.1 Sol",
+    "title_ko": "GPT-6.1 Sol 공개: Astra 수준의 지능을 5분의 1 가격에",
+    "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 GPT-6.1 Sol을 출시했다. 코딩, 컴퓨터 사용, 전문 업무에 특화된 이 모델은 Astra에 근접한 성능을 제공하면서도 API 입출력 토큰 가격이 Astra 표준 가격의 5분의 1 수준이다. 고성능 모델을 보다 저렴하게 활용할 수 있는 옵션이 생긴 셈이다.",
+    "why_it_matters": "Astra급 성능을 대폭 낮은 비용으로 사용할 수 있어, 개발자와 기업의 AI 도입 비용 장벽을 크게 낮출 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6309540343915344,
+    "published_at": "2026-09-29T10:00:00Z"
+  },
+  {
+    "id": "openai_blog-devday-2026-recap",
+    "section": "releases",
+    "title_en": "DevDay 2026 Recap",
+    "title_ko": "OpenAI DevDay 2026 주요 발표 총정리",
+    "url": "https://openai.com/index/devday-2026-recap",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI DevDay 2026에서 GPT-6 Astra, ChatGPT, Codex, API 업데이트 등 20개 이상의 신규 발표가 이루어졌다. 개발자를 위한 새로운 도구와 보안 기능도 함께 공개됐다. 빌더와 기업 모두를 겨냥한 광범위한 업데이트가 포함된 행사였다.",
+    "why_it_matters": "GPT-6 Astra를 포함한 20여 개의 발표로 OpenAI 생태계 전반에 걸친 대규모 업데이트가 이뤄져 개발자 워크플로우에 직접적인 영향을 미칠 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.6309540343915344,
+    "published_at": "2026-09-29T10:00:00Z"
+  },
+  {
+    "id": "hn-49913571",
+    "section": "community",
+    "title_en": "Gemini 4 Argon",
+    "title_ko": "Gemini 4 Argon 출시",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Google의 Gemini 4 Argon이 공개되었다. 상세한 설명은 제공되지 않아 추가적인 정보는 확인이 필요하다.",
+    "why_it_matters": "Google Gemini 시리즈의 새로운 모델로, AI 업계의 주목을 받을 가능성이 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 11.015029807321769,
+    "published_at": "2026-09-30T20:04:37Z"
+  },
+  {
+    "id": "hn-49906637",
+    "section": "community",
+    "title_en": "You said no MCP",
+    "title_ko": "'MCP는 안 된다고 했잖아요'",
+    "url": "https://earendil.com/posts/you-said-no-mcp/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "제목만으로는 구체적인 내용을 파악하기 어렵다. MCP(Model Context Protocol) 사용 거부 또는 관련 논쟁을 다루는 글로 추정된다.",
+    "why_it_matters": "내용 확인 불가로 실질적인 판단이 어렵다.",
+    "tags": [],
+    "score": 10.316921451245495,
+    "published_at": "2026-09-30T09:55:23Z"
+  },
+  {
+    "id": "hn-49911995",
+    "section": "community",
+    "title_en": "Launch HN: Magnitude (YC S25) – Self-optimizing inference engine for agents",
+    "title_ko": "Magnitude (YC S25) – 에이전트를 위한 자기 최적화 추론 엔진 출시",
+    "url": "https://github.com/magnitudedev/magnitude",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Y Combinator S25 배치 소속 스타트업 Magnitude가 에이전트를 위한 자기 최적화 추론 엔진을 공개했다. 에이전트 워크로드에 특화된 인퍼런스 최적화를 목표로 한다.",
+    "why_it_matters": "AI 에이전트의 추론 효율을 자동으로 높이는 인프라 솔루션으로, 에이전트 성능 최적화에 관심 있는 개발자에게 주목할 만하다.",
+    "tags": [
+      "에이전트",
+      "인프라",
+      "LLM"
+    ],
+    "score": 7.808466390964316,
+    "published_at": "2026-09-30T17:37:40Z"
+  },
+  {
+    "id": "hn-49903713",
+    "section": "community",
+    "title_en": "Responsible Release of AI-Generated Mathematics",
+    "title_ko": "AI 생성 수학의 책임 있는 공개",
+    "url": "https://agmai.org/general-sep29/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI가 생성한 수학적 결과물을 공개할 때의 책임 있는 방식에 대한 논의다. 제목만으로는 구체적인 내용을 확인하기 어렵다.",
+    "why_it_matters": "AI가 수학 연구에 깊이 관여하면서, 그 결과물의 검증과 공개 방식에 대한 윤리적 기준 마련이 중요해지고 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 7.599662209270228,
+    "published_at": "2026-09-30T02:36:12Z"
+  },
+  {
+    "id": "hn-49912955",
+    "section": "community",
+    "title_en": "Surprisingly complex waves reveal the brain's inner workings",
+    "title_ko": "놀랍도록 복잡한 뇌파가 뇌의 내부 작동 방식을 밝히다",
+    "url": "https://www.quantamagazine.org/surprisingly-complex-waves-reveal-the-brains-inner-workings-20260930/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "뇌에서 관측되는 복잡한 파동이 뇌의 내부 작동 메커니즘을 이해하는 데 새로운 단서를 제공하고 있다.",
+    "why_it_matters": "뇌파 연구의 새로운 발견은 AI 및 신경망 설계에 영감을 줄 수 있다.",
+    "tags": [],
+    "score": 7.5449200928493845,
+    "published_at": "2026-09-30T19:04:50Z"
+  },
+  {
+    "id": "youtube-1eyDhaKx--w",
+    "section": "video",
+    "title_en": "5,300명 중 단 1명, 기업이 고른 AI 인재는 누구였을까 | AX 인재전쟁 본선 풀영상 | OpenAI × 조코딩AX파트너스",
+    "title_ko": "5,341명 중 단 6명 선발 – OpenAI 후원 'AX 인재전쟁' 본선 풀영상",
+    "url": "https://www.youtube.com/watch?v=1eyDhaKx--w",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩AX파트너스가 주최하고 OpenAI가 후원한 'AX 인재전쟁'의 본선 전 과정을 담은 영상이다. 5,341명의 지원자 중 예선을 통과한 60명이 무신사·카카오페이증권·채널톡 등 6개 기업의 실제 문제를 AI 도구 제한 없이 3시간 안에 풀었고, 기업별 면접을 거쳐 도메인 챔피언 6명이 선발됐다. 최종 우승자를 포함해 일부 참가자는 실제 채용으로까지 이어졌다.",
+    "why_it_matters": "AI 활용 능력을 실제 기업 문제 해결과 면접으로 검증하는 새로운 채용·선발 모델의 구체적 사례를 확인할 수 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7738359788359788,
+    "published_at": "2026-09-30T10:00:15Z"
+  },
+  {
+    "id": "youtube-5_q01QSN0lY",
+    "section": "video",
+    "title_en": "다 쓰면 대출해준다는 클로드 근황",
+    "title_ko": "다 쓰면 대출해준다는 클로드 최근 근황",
+    "url": "https://www.youtube.com/shorts/5_q01QSN0lY",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "유튜버 조코딩이 AI 코딩 도구 클로드(Claude)의 사용량 관련 근황을 다룬 영상이다. 클로드를 다 쓰면 대출을 해준다는 내용이 화제가 되었으며, 바이브 코딩 및 1인 창업과 관련된 맥락에서 소개되고 있다.",
+    "why_it_matters": "Claude의 사용량 정책 변화나 크레딧 관련 이슈가 개발자들의 실제 워크플로우에 직접적인 영향을 미칠 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7679232804232804,
+    "published_at": "2026-09-30T09:00:39Z"
+  },
+  {
+    "id": "youtube-o0fuBWCl6Pg",
+    "section": "video",
+    "title_en": "앱스토어 다음은 플러그인 스토어?",
+    "title_ko": "앱스토어 다음은 플러그인 스토어?",
+    "url": "https://www.youtube.com/shorts/o0fuBWCl6Pg",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 AI 플러그인 스토어의 가능성을 다루는 영상이다. 앱스토어가 모바일 생태계를 바꾼 것처럼, AI 플러그인 스토어가 새로운 생태계를 형성할 수 있는지 살펴본다.",
+    "why_it_matters": "AI 플러그인 마켓플레이스가 개발자에게 새로운 수익 및 유통 기회를 열 수 있는 화두다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.7531398809523809,
+    "published_at": "2026-09-30T06:31:38Z"
+  },
+  {
+    "id": "latent_space-devday-2026",
+    "section": "deepdive",
+    "title_en": "Why Dwarkesh is Wrong about Computer Use + How OpenAI shipped its Jev competitor in 1 Week",
+    "title_ko": "OpenAI가 1주일 만에 컴퓨터 사용 에이전트를 출시한 방법 — DevDay 현장 리포트",
+    "url": "https://www.latent.space/p/devday-2026",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "Latent Space 팟캐스트가 OpenAI DevDay 커버리지의 첫 번째 에피소드로, OpenAI의 CUA(Computer Use Agent) 팀 및 API 플랫폼 리더들과 심층 대화를 나눴다. 에피소드에서는 OpenAI가 단 1주일 만에 경쟁 제품(Jev)에 대응하는 컴퓨터 사용 기능을 출시할 수 있었던 배경을 다룬다. 또한 Dwarkesh가 컴퓨터 사용(Computer Use)에 대해 제기한 주장에 반론을 펼친다.",
+    "why_it_matters": "OpenAI의 빠른 에이전트 출시 전략과 CUA 팀의 내부 의사결정 과정을 직접 들을 수 있어, AI 에이전트 개발 방향을 가늠하는 데 중요한 참고 자료다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.8475876322751323,
+    "published_at": "2026-09-30T22:23:40Z"
+  }
+]
