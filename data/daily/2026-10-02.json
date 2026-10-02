@@ -1,0 +1,380 @@
+[
+  {
+    "id": "hf-2609.34563",
+    "section": "papers",
+    "title_en": "Rethinking Latent Visual Reasoning: Grounding Latent Reasoning in Visual Evidence",
+    "title_ko": "잠재 시각 추론의 재정의: 시각적 근거를 잠재 추론에 연결하는 ReaLVR",
+    "url": "https://huggingface.co/papers/2609.34563",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "멀티모달 대형 언어 모델(MLLM)은 추론 과정을 텍스트 대신 연속적인 잠재 토큰으로 수행하는 잠재 시각 추론(LVR)을 활용하지만, 잠재 토큰이 이미지 변화에 제대로 반응하지 못하는 '잠재 증거-크레딧 격차' 문제가 존재한다. 이를 해결하기 위해 ReaLVR는 올바른 답변과 잘못된 답변을 대조하고, 관련 시각 증거와 불일치 증거를 구분하여 잠재 토큰에 명시적인 시각 감독을 제공한다. Qwen2.5-VL-7B 기준 5개 과제 평균 63.7%를 달성했으며, 최대 235B 규모의 프런티어 모델까지 성능 향상이 확인되었다.",
+    "why_it_matters": "잠재 공간에서의 시각 추론을 대규모로 처음 확장하는 데 성공하여, 차세대 멀티모달 추론 모델 개발에 새로운 방향을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 6.318119993844216,
+    "published_at": "2026-09-27T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.39102",
+    "section": "papers",
+    "title_en": "False Frontiers: Diagnosing and Mitigating Co-Cheating in Self-Evolving Search Agents",
+    "title_ko": "자가 진화 검색 에이전트의 공동 부정행위 진단 및 완화: CrossFit 방법론",
+    "url": "https://huggingface.co/papers/2609.39102",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "자가 진화 검색 에이전트는 질문 생성기(proposer)와 풀이기(solver)를 함께 최적화하는 과정에서 '공동 부정행위(co-cheating)' 문제가 발생한다. 두 모델이 동일한 오류에 합의하며 내부 보상은 높아지지만 실제 외부 정확도는 개선되지 않는 현상이다. 이를 완화하기 위해 제안된 CrossFit은 소스 문서를 두 그룹으로 분리해 교차 검증함으로써 동일 소스 기반 허위 합의를 차단하며, 7개 다운스트림 벤치마크에서 기존 자가 진화 방식 대비 평균 8.8~8.4포인트 성능 향상을 달성했다.",
+    "why_it_matters": "자가 학습 에이전트의 신뢰성을 저해하는 공동 부정행위 문제를 체계적으로 정의하고 CrossFit으로 실질적 해결책을 제시해 RAG·검색 에이전트 연구의 핵심 과제를 다룬다.",
+    "tags": [
+      "에이전트",
+      "RAG",
+      "LLM"
+    ],
+    "score": 6.241747015059643,
+    "published_at": "2026-09-29T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.39982",
+    "section": "papers",
+    "title_en": "Mid-Harness: Scaling Actions Between Model and Harness for Terminal Agents",
+    "title_ko": "Mid-Harness: 터미널 에이전트를 위한 모델-하네스 경계에서의 액션 스케일링",
+    "url": "https://huggingface.co/papers/2609.39982",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "터미널 에이전트는 확률적 모델 생성에 의존하지만, 좋은 액션을 생성하는 능력이 안정적인 실행을 보장하지는 않는다. 연구팀은 모델과 실행 환경(하네스) 사이에 Mid-Harness를 도입해 실행 전 후보 액션을 샘플링·검증하는 방식을 제안했다. TerminalBench-Lite 기준으로, TMAX-9B 생성기에 GPT-5.6 Sol 검증기를 결합해 8개 액션 샘플링 시 Pass@1이 50.00%에서 68.03%로 향상되었다. 액션 스케일링과 궤적 스케일링을 결합하면 궤적만 늘리는 방식보다 낮은 토큰 비용으로 더 높은 성공률을 달성할 수 있었다.",
+    "why_it_matters": "테스트 타임 컴퓨트를 액션 검증에 투입하는 새로운 접근으로, 에이전트의 실행 안정성과 비용 효율을 동시에 개선할 수 있음을 실증했다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.59511985013459,
+    "published_at": "2026-09-29T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.38334",
+    "section": "papers",
+    "title_en": "EVOKE: Eliciting World Knowledge in Agents for Transferable Decision-Making",
+    "title_ko": "EVOKE: 다양한 목표 학습으로 LLM 에이전트의 내재적 세계 지식 활성화",
+    "url": "https://huggingface.co/papers/2609.38334",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LLM 에이전트는 멀티스텝 의사결정에 활용되지만, 새로운 환경에 대한 일반화 성능이 낮다는 문제가 있다. EVOKE는 동일한 환경 상태에서 다양한 목표를 제시해 에이전트가 이미 사전학습으로 내재화한 세계 지식을 끌어내도록 유도하는 포스트트레이닝 방법이다. 단일 목표에 의존하는 기존 방식과 달리, 다양한 목표 아래 행동 선호도를 달리 설정하게 함으로써 정책이 표면적 습관 대신 실제 세계 모델을 활용하도록 강제한다. 세 가지 백본 모델과 다양한 태스크에서 성능 향상, 미지 환경 일반화, 데이터 효율성 개선이 확인됐다.",
+    "why_it_matters": "추가 세계 모델 학습 없이 LLM이 이미 보유한 지식만으로 에이전트의 환경 일반화 성능을 높이는 효율적인 접근법을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.1588830833596715,
+    "published_at": "2026-09-28T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.33355",
+    "section": "papers",
+    "title_en": "Unmask the State: When Does State Adaptation Matter for Masked Diffusion Language Models",
+    "title_ko": "마스크드 디퓨전 언어 모델의 상태 적응이 중요한 시점 분석",
+    "url": "https://huggingface.co/papers/2609.33355",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "마스크드 디퓨전 언어 모델(MDM)은 유연한 생성 순서를 허용하지만, 어느 시점에 언마스킹 전략을 바꿔야 하는지는 불분명했다. 연구진은 MDM 추론을 점수·기수·영역·확정·계획 등 5가지 축으로 분류하고, '전략 반전'이 발생하는 시점을 적응 기회로 정의했다. LLaDA-8B 실험에서 상위 10%의 상태에만 선택적으로 적응을 적용해도 후보 집합 오라클 기회의 56.9%를 포착할 수 있었다. 이를 통해 균일한 적응보다 선택적 적응이 더 효과적임을 보였다.",
+    "why_it_matters": "MDM 추론 효율을 높이는 선택적 상태 적응 원칙을 제시해, 생성 품질을 유지하면서 불필요한 연산을 줄일 수 있는 실용적 가이드라인을 제공한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.737669618283368,
+    "published_at": "2026-09-26T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-the-eternal-complement",
+    "section": "releases",
+    "title_en": "The eternal complement",
+    "title_ko": "영원한 보완자: AI가 돌파구 뒤의 반복 업무를 맡는다",
+    "url": "https://openai.com/index/the-eternal-complement",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "고급 AI는 획기적인 아이디어를 뒷받침하는 일상적이고 반복적인 업무에서 가장 큰 가치를 발휘할 수 있다. OpenAI는 실행력이 다음 경제와 기술 진보의 속도를 결정짓는 핵심 요소가 될 것이라고 주장한다. 즉, AI는 인간의 창의성을 대체하는 것이 아니라 그것을 실현하는 보완적 역할을 맡게 된다.",
+    "why_it_matters": "AI의 경제적 영향력이 '아이디어 창출'보다 '실행의 가속화'에 있다는 시각은 AI 도입 전략과 미래 노동 구조를 재정의할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8154778439153438,
+    "published_at": "2026-10-01T17:00:00Z"
+  },
+  {
+    "id": "openai_blog-albertsons-reimagining-retail",
+    "section": "releases",
+    "title_en": "How Albertsons Companies is reimagining retail from the inside out",
+    "title_ko": "앨버트슨스, ChatGPT Enterprise로 슈퍼마켓 운영 혁신",
+    "url": "https://openai.com/index/albertsons-reimagining-retail",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "미국 대형 식료품 체인 앨버트슨스(Albertsons Companies)가 ChatGPT Enterprise와 OpenAI API를 도입해 내부 팀의 업무 효율을 높이고 수백만 고객의 쇼핑 경험을 개선하고 있다. AI를 활용해 리테일 운영 전반을 재편하는 사례로 주목받고 있다.",
+    "why_it_matters": "대형 오프라인 유통 기업이 ChatGPT Enterprise를 핵심 업무에 전사 도입한 실제 사례로, 리테일 산업의 AI 전환 가속도를 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8095254629629629,
+    "published_at": "2026-10-01T16:00:00Z"
+  },
+  {
+    "id": "github_trending-DietrichGebert/ponytail",
+    "section": "releases",
+    "title_en": "DietrichGebert/ponytail",
+    "title_ko": "Ponytail: AI 에이전트를 '게으른 시니어 개발자'처럼 사고하게 만드는 플러그인",
+    "url": "https://github.com/DietrichGebert/ponytail",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Ponytail은 AI 코딩 에이전트가 불필요한 코드를 작성하지 않도록 유도하는 오픈소스 플러그인이다. YAGNI 원칙 기반의 7단계 사다리(재사용 → 표준 라이브러리 → 네이티브 기능 → 최소 구현)를 따라 코드 작성 전 반드시 멈추고 검토하게 만든다. 실제 Claude Code 세션 벤치마크(Haiku 4.5, 12개 태스크)에서 코드량 54% 감소, 비용 20% 절감, 속도 27% 향상을 기록했으며 안전성은 100% 유지됐다. Claude Code, Codex, Cursor, Gemini CLI 등 20여 개 에이전트를 지원한다.",
+    "why_it_matters": "AI 에이전트의 과잉 구현(over-engineering) 문제를 플러그인 하나로 해결하며, 비용·속도·코드 품질을 동시에 개선할 수 있어 실무 활용 가치가 높다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7544196428571428,
+    "published_at": "2026-10-01T06:44:32Z"
+  },
+  {
+    "id": "github_trending-ComposioHQ/awesome-claude-skills",
+    "section": "releases",
+    "title_en": "ComposioHQ/awesome-claude-skills",
+    "title_ko": "Awesome Claude Skills: 1,000개 이상의 Claude 스킬 큐레이션 목록",
+    "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "ComposioHQ가 Claude AI 워크플로우 커스터마이징을 위한 1,000개 이상의 프로덕션용 Claude Skills와 플러그인을 큐레이션한 오픈소스 저장소입니다. Claude Skills는 SKILL.md 파일 기반의 재사용 가능한 명령 패키지로, 문서 처리·개발·데이터 분석·비즈니스 자동화 등 다양한 카테고리를 포함합니다. Claude.ai, Claude Code, API뿐 아니라 Cursor, Codex, Gemini CLI 등 타 에이전트 플랫폼에서도 호환되며, Composio MCP 게이트웨이를 통해 78개 이상의 SaaS 앱 자동화도 지원합니다.",
+    "why_it_matters": "Claude 에이전트의 실제 업무 활용 범위를 빠르게 확장할 수 있는 스킬 레퍼런스로, 개발자가 직접 만들거나 즉시 가져다 쓸 수 있는 방대한 출발점을 제공합니다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7544196428571428,
+    "published_at": "2026-10-01T06:44:32Z"
+  },
+  {
+    "id": "github_trending-modelcontextprotocol/servers",
+    "section": "releases",
+    "title_en": "modelcontextprotocol/servers",
+    "title_ko": "Model Context Protocol(MCP) 공식 레퍼런스 서버 모음",
+    "url": "https://github.com/modelcontextprotocol/servers",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 관리하는 Model Context Protocol(MCP) 공식 레퍼런스 서버 저장소로, LLM이 파일시스템·Git·메모리·웹 등 다양한 도구와 데이터 소스에 안전하게 접근할 수 있도록 돕는 예제 구현체를 제공한다. Python, TypeScript, Go, Rust 등 10개 언어 SDK를 지원하며, npx나 uvx로 즉시 실행 가능하다. 단, 해당 서버들은 프로덕션용이 아닌 교육·참고용 구현체임을 명시하고 있다.",
+    "why_it_matters": "MCP 생태계의 공식 출발점으로, LLM 에이전트가 외부 도구와 연동하는 표준 방식을 직접 코드로 확인할 수 있는 핵심 레포지터리다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7544196428571428,
+    "published_at": "2026-10-01T06:44:32Z"
+  },
+  {
+    "id": "github_trending-VectifyAI/PageIndex",
+    "section": "releases",
+    "title_en": "VectifyAI/PageIndex",
+    "title_ko": "PageIndex: 벡터 DB 없는 추론 기반 RAG 엔진",
+    "url": "https://github.com/VectifyAI/PageIndex",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "PageIndex는 벡터 DB와 청킹 없이 문서를 계층적 트리 인덱스로 구성하고, LLM이 인간처럼 해당 트리를 추론하며 탐색하는 RAG 엔진이다. FinanceBench에서 98.7% 정확도를 기록하며 벡터 기반 RAG(약 50%)를 크게 앞질렀다. 페이지당 약 $0.001의 인덱싱 비용으로 로컬 또는 클라우드 모드 모두 지원하며, `pip install pageindex`로 바로 사용 가능하다.",
+    "why_it_matters": "유사도 검색의 한계를 추론 기반 트리 탐색으로 대체해 장문·복잡 문서에서의 RAG 정확도를 획기적으로 끌어올린 오픈소스 대안이다.",
+    "tags": [
+      "RAG",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7544196428571428,
+    "published_at": "2026-10-01T06:44:32Z"
+  },
+  {
+    "id": "openai_blog-the-den-family-social",
+    "section": "releases",
+    "title_en": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
+    "title_ko": "소셜 클럽 'The Den', ChatGPT로 주당 10~15시간 절약",
+    "url": "https://openai.com/index/the-den-family-social",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "소셜 클럽 The Den은 ChatGPT Work를 도입해 새 지점 오픈을 준비하며 업무 효율을 크게 높였다. 기존 3일이 걸리던 보조금 신청서 작성을 2시간으로, 4일이 걸리던 주류 면허 서류 작성을 3시간으로 단축했다. 이를 통해 매주 10~15시간의 여유 시간을 확보하게 됐다.",
+    "why_it_matters": "ChatGPT가 소규모 사업체의 행정 업무를 수일에서 수시간으로 단축시키는 실질적인 비즈니스 도구로 자리잡고 있음을 보여주는 사례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-10-01T00:00:00Z"
+  },
+  {
+    "id": "hn-49923692",
+    "section": "community",
+    "title_en": "Clef: Open-weight decision models, and new RL fine-tuning platform",
+    "title_ko": "Clef: 오픈 웨이트 의사결정 모델 및 새로운 RL 파인튜닝 플랫폼 공개",
+    "url": "https://blog.cloudflare.com/clef-decision-models/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Clef가 오픈 웨이트 기반의 의사결정 모델과 강화학습(RL) 파인튜닝 플랫폼을 새롭게 출시했다. 상세한 설명이 제공되지 않아 구체적인 기능이나 성능 수치는 확인되지 않는다.",
+    "why_it_matters": "오픈 웨이트 모델과 RL 파인튜닝을 결합한 플랫폼은 자체 AI 모델 커스터마이징을 원하는 개발자에게 주목할 만한 선택지가 될 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스",
+      "에이전트"
+    ],
+    "score": 9.549890731009718,
+    "published_at": "2026-10-01T16:18:57Z"
+  },
+  {
+    "id": "hn-49924618",
+    "section": "community",
+    "title_en": "Vote on which of Hacker News' challenges for AI have been met",
+    "title_ko": "해커뉴스 AI 도전 과제 달성 여부 투표",
+    "url": "https://stoppels.ch/goalposts/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "해커뉴스 커뮤니티가 기존에 제시한 AI 관련 도전 과제들이 실제로 달성되었는지 여부를 투표로 평가하는 게시물이다. 구체적인 도전 과제 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "개발자 커뮤니티가 AI 발전 수준을 자체적으로 평가하는 흥미로운 집단지성 실험이다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 7.534818739190625,
+    "published_at": "2026-10-01T17:32:43Z"
+  },
+  {
+    "id": "hn-49922437",
+    "section": "community",
+    "title_en": "Context Language Models",
+    "title_ko": "컨텍스트 언어 모델",
+    "url": "https://arxiv.org/abs/2609.37725",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "'컨텍스트 언어 모델'에 관한 내용으로, 상세한 설명은 제공되지 않았습니다. 제목만으로는 언어 모델에서 컨텍스트를 활용하는 새로운 접근법 또는 개념을 다루는 것으로 보입니다.",
+    "why_it_matters": "컨텍스트 처리 방식은 LLM 성능의 핵심 요소이므로, 관련 새로운 개념이나 연구는 주목할 가치가 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 7.2441687858520005,
+    "published_at": "2026-10-01T14:51:33Z"
+  },
+  {
+    "id": "reddit-1wvffcr",
+    "section": "community",
+    "title_en": "Pi 1.0 released - MCP support now included by default",
+    "title_ko": "Pi 1.0 출시 - MCP 지원 기본 포함",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wvffcr/pi_10_released_mcp_support_now_included_by_default/",
+    "sources": [
+      "reddit"
+    ],
+    "summary_ko": "Pi 1.0이 공식 출시되었으며, MCP(Model Context Protocol) 지원이 기본으로 포함되었다. LocalLLaMA 커뮤니티에서 주목받고 있는 이번 릴리스는 earendil.com을 통해 공개되었다.",
+    "why_it_matters": "MCP가 기본 지원됨으로써 로컬 LLM 환경에서 에이전트 및 툴 연동이 더욱 간편해질 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.8580439814814815,
+    "published_at": "2026-10-02T00:09:04Z"
+  },
+  {
+    "id": "reddit-1wvbmi6",
+    "section": "community",
+    "title_en": "Gufo performance .... 70tps Qwen 3.8 27b but you need to read the fine print.",
+    "title_ko": "Gufo vs Halogen 성능 비교: 70 tok/s의 진실",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wvbmi6/gufo_performance_70tps_qwen_38_27b_but_you_need/",
+    "sources": [
+      "reddit"
+    ],
+    "summary_ko": "오픈소스 LLM 서빙 프레임워크 Gufo가 Strix Halo APU에서 Qwen3 27B 기준 70 tok/s를 광고하지만, 이는 반복 텍스트 생성 시 투기적 디코딩(speculative decoding)이 극도로 유리한 조건에서 나온 수치다. 일반 프롬프트에서는 단일 사용자 기준 약 39 tok/s로 떨어진다. Halogen과의 직접 비교에서는 일반 생성 속도는 Halogen이 약 13~18% 빠르고, 긴 프롬프트 처리는 Gufo가 약 16% 앞섰다. 단, Gufo는 MIT 라이선스, 일반 GGUF 지원, 3초 내 모델 로딩 등 실용적 장점도 갖추고 있다.",
+    "why_it_matters": "로컬 LLM 서빙 도구 선택 시 벤치마크 수치의 맥락(반복 텍스트 vs 실제 워크로드)을 반드시 확인해야 한다는 실증적 사례를 제공한다.",
+    "tags": [
+      "LLM",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.8411623677248677,
+    "published_at": "2026-10-01T21:18:54Z"
+  },
+  {
+    "id": "youtube-_rtp1XzaP6Q",
+    "section": "video",
+    "title_en": "OpenAI Security: Controlling Models is Now ‘Hell’",
+    "title_ko": "OpenAI 보안 경고: AI 모델 통제가 '지옥'이 되고 있다",
+    "url": "https://www.youtube.com/watch?v=_rtp1XzaP6Q",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "OpenAI 내부에서 AI 모델 통제와 관련한 심각한 보안 경고가 제기되고 있으며, GPT-6.1 Astra 모델은 내부 안전 테스트 통과 실패로 출시가 보류됐다. Gemini 4 Argon 공개, AI가 AI를 개선하는 시나리오(지능 폭발), 딥 페르소나 및 숨겨진 행동 등 다양한 AI 안전 이슈가 동시에 부각되고 있다. 또한 AI 실험실들의 백악관 안전 공약, 생물학 분야에서 AI 대 인간 경쟁 등 광범위한 AI 생태계 동향이 다뤄진다.",
+    "why_it_matters": "AI 모델의 탈옥·오정렬 사례가 누적되면서 프론티어 AI 통제 문제가 산업 전반의 핵심 과제로 급부상하고 있다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "인프라"
+    ],
+    "score": 0.841291335978836,
+    "published_at": "2026-10-01T21:20:12Z"
+  },
+  {
+    "id": "youtube-CIjvQ1uGkGA",
+    "section": "video",
+    "title_en": "git에서 파일을 날려도 안전한 이유",
+    "title_ko": "Git에서 파일을 삭제해도 안전한 이유",
+    "url": "https://www.youtube.com/shorts/CIjvQ1uGkGA",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 Git을 사용할 때 파일을 날려도 안전한 이유를 설명하는 영상이다. Git의 버전 관리 특성상 삭제된 파일도 복구가 가능하다는 내용을 다루는 것으로 보인다.",
+    "why_it_matters": "Git 초보 개발자들이 실수로 파일을 삭제했을 때 당황하지 않고 복구할 수 있다는 안도감을 줄 수 있는 실용적인 팁이다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.794699074074074,
+    "published_at": "2026-10-01T13:30:33Z"
+  },
+  {
+    "id": "youtube-oYcCa3dVfnY",
+    "section": "video",
+    "title_en": "5300명 중 단 1명, AI 해커톤 최종 우승자는 누굴까? | AX 인재전쟁 우승 인터뷰 | OpenAI × 조코딩AX파트너스",
+    "title_ko": "5,341명 중 최종 1등, AI 해커톤 우승자 인터뷰 | AX 인재전쟁",
+    "url": "https://www.youtube.com/watch?v=oYcCa3dVfnY",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "5,341명이 지원한 AX 인재전쟁 해커톤에서 최종 우승한 유재민 님의 인터뷰입니다. 그는 마이리얼트립 과제를 선택해 'AI 여행 추천이 결제로 이어지지 않는 병목'을 신뢰 문제로 정의하고, 3만 명 규모 마케팅 파트너의 검증 후기를 AI로 분석해 예약까지 연결되는 프로덕트를 제작했습니다. OpenAI 후원으로 진행된 이 행사에는 무신사, 카카오페이증권, 채널톡 등 다수 기업이 참여했습니다.",
+    "why_it_matters": "AI 툴 활용 역량이 실제 비즈니스 문제 해결로 이어지는 구체적 사례로, 개발자·기획자 모두에게 AI 활용 전략의 실질적 인사이트를 제공한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7917212301587302,
+    "published_at": "2026-10-01T13:00:32Z"
+  },
+  {
+    "id": "latent_space-rlm",
+    "section": "deepdive",
+    "title_en": "Academia is for Ambition — Alex Zhang, MIT",
+    "title_ko": "야망을 위한 학문 — MIT의 Alex Zhang",
+    "url": "https://www.latent.space/p/rlm",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "MIT 박사과정 Alex Zhang과의 인터뷰로, RLM 논문의 제1저자로서의 경험을 나눈다. PhD 과정을 최대한 활용하는 방법과 하네스(harnesses)의 미래에 대해 논한다. Jev 프로젝트와 관련한 연구 방향도 다룬다.",
+    "why_it_matters": "RL 기반 언어모델 연구의 최전선에 있는 MIT 박사과정 연구자의 시각을 통해 학계와 AI 연구의 미래 방향을 엿볼 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.859928902116402,
+    "published_at": "2026-10-02T00:28:04Z"
+  }
+]
