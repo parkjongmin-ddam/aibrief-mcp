@@ -1,0 +1,367 @@
+[
+  {
+    "id": "hf-2610.01762",
+    "section": "papers",
+    "title_en": "OneStreamer: Unifying Perception, Memory, and Proactive Response in Streaming Video Interaction",
+    "title_ko": "OneStreamer: 스트리밍 비디오 상호작용을 위한 지각·기억·능동적 응답 통합 모델",
+    "url": "https://huggingface.co/papers/2610.01762",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "OneStreamer는 스트리밍 비디오 LLM의 핵심 과제인 실시간 지각과 재사용 가능한 사실 기억 형성을 동시에 해결하는 모델이다. 계층적 캡션 메모리(PHCM)로 시간 기반 로컬 캡션과 이벤트 요약을 생성하고, 능동적 상태 전환 학습(PSTL)으로 대기 상태 과잉 표현 문제를 완화했다. 100만 건 이상의 스트리밍 비디오 데이터셋 OneStreamer-1M을 구축했으며, 4B 파라미터 모델이 8개 스트리밍 비디오 이해 벤치마크 전체에서 최고 성능을 달성했다.",
+    "why_it_matters": "실시간 스트리밍 비디오를 이해하고 적시에 응답하는 능력은 로봇·감시·라이브 방송 등 다양한 실세계 응용의 핵심으로, 이를 통합적으로 해결한 첫 대규모 프레임워크라는 점에서 중요하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.990432586778736,
+    "published_at": "2026-09-30T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.35259",
+    "section": "papers",
+    "title_en": "On-Policy or Off-Policy Learning? A Systematic Study of Distillation Dynamics",
+    "title_ko": "온-폴리시 vs 오프-폴리시 학습: 증류 다이나믹스 체계적 연구",
+    "url": "https://huggingface.co/papers/2609.35259",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "이 연구는 강-약 증류(strong-to-weak distillation) 환경에서 롤아웃 정책, 토큰 수준 KL 방향, 학습률을 독립적으로 변화시켜 각 요소의 기여를 분리 분석했다. 분석 결과, 롤아웃 정책보다 토큰 수준 KL 방향이 태스크 성능과 출력 커버리지를 더 명확히 결정하며, 학습률이 망각과 업데이트 희소성을 좌우하는 것으로 나타났다. 순방향 KL은 롤아웃 정책 변화에 강건한 반면, 역방향 KL은 학생 생성 롤아웃에 민감하게 반응했다. 온-폴리시 데이터가 일부 산술 태스크 일반화에는 도움이 되지만, 이 이점이 RLVR 이후에는 지속되지 않는 것으로 확인됐다.",
+    "why_it_matters": "온-폴리시 롤아웃이 항상 우월하다는 통념을 실험적으로 반박하며, LLM 증류 및 파인튜닝 전략 설계 시 KL 방향과 학습률이 더 중요한 변수임을 밝혔다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.74493212836325,
+    "published_at": "2026-09-27T20:00:00Z"
+  },
+  {
+    "id": "hf-2609.37533",
+    "section": "papers",
+    "title_en": "E-MoE: Enhanced Mixture-of-Experts for Non-Factorized Diffusion Language Models",
+    "title_ko": "E-MoE: 비인수분해 확산 언어 모델을 위한 강화된 전문가 혼합 기법",
+    "url": "https://huggingface.co/papers/2609.37533",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "마스크 확산 모델(MDM)은 디노이징 단계마다 여러 토큰을 동시에 언마스킹하지만, 기존 역방향 프로세스는 위치별로 인수분해되어 소수 단계 생성 품질이 낮다는 한계가 있다. 연속 가우시안 잠재 변수를 활용하는 기존 접근법은 사후 붕괴(posterior collapse) 문제에 취약하다. E-MoE는 MoE 백본의 전문가 라우팅 결정을 이산 공유 잠재 변수로 활용해 인수분해된 분포의 혼합으로 역방향 프로세스를 구성하며, 활성 파라미터 수를 늘리지 않고도 합성 멀티모달 벤치마크, 이진화 MNIST, LM1B에서 소수 단계 생성 성능을 향상시켰다.",
+    "why_it_matters": "오토회귀 디코딩 대비 속도 이점이 부각되는 소수 단계 영역에서 확산 언어 모델의 샘플 품질을 실질적으로 개선하는 방법론을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.912023005428146,
+    "published_at": "2026-09-28T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.00574",
+    "section": "papers",
+    "title_en": "Make Sparse Rewards Count: Density-Aware Reward Aggregation for Multi-Reward RL",
+    "title_ko": "희소 보상을 효과적으로 활용하는 밀도 인식 보상 집계(DARA)",
+    "url": "https://huggingface.co/papers/2610.00574",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "다중 보상 강화학습에서 LLM을 여러 행동 목표에 맞게 동시에 훈련할 때, 보상마다 학습 진행 속도가 불균형해지는 문제가 발생한다. 연구팀은 이를 '어드밴티지 에너지'와 '활성 그룹 밀도' 개념으로 분석하고, 덜 활성화된 보상에 더 큰 가중치를 부여하는 역제곱근 밀도 보정 기법인 DARA를 제안했다. DARA는 각 롤아웃 배치에서 가중치를 동적으로 계산하며, 도구 호출 태스크에서 최대 26%, 수학적 추론에서 최대 65% 더 적은 학습 스텝으로 목표 행동에 도달했다.",
+    "why_it_matters": "희소한 보상 신호의 불균형 문제를 해결해 LLM 강화학습의 훈련 효율을 크게 높일 수 있는 실용적 방법론이다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.761200115693562,
+    "published_at": "2026-09-29T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.02196",
+    "section": "papers",
+    "title_en": "InterEvolve: Test-Time Evolution of Reward Programs for Humanoid Loco-Manipulation",
+    "title_ko": "InterEvolve: 휴머노이드 로코-매니퓰레이션을 위한 테스트 타임 보상 프로그램 진화",
+    "url": "https://huggingface.co/papers/2610.02196",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "InterEvolve는 휴머노이드 로봇이 재훈련 없이 새로운 작업을 수행할 수 있도록, 테스트 타임에 보상 프로그램을 진화시키는 프레임워크다. LLM 에이전트가 실행 피드백과 검증된 스킬 라이브러리를 활용해 보상 프로그램 구조를 수정하고, 수치 최적화기가 상수를 조정하는 방식으로 동작한다. 객체 인식 순방향-역방향(FB) 행동 기반 모델을 통해 기존 컨트롤러의 운동 능력을 새로운 작업에 재활용하며, 실제 Unitree G1 로봇에서도 자율적으로 동작하는 것을 입증했다.",
+    "why_it_matters": "재훈련 없이 LLM 기반 보상 프로그램 진화만으로 휴머노이드 로봇의 미학습 작업 수행이 가능함을 보여줘, 로봇 일반화 능력의 새로운 패러다임을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.610917912644224,
+    "published_at": "2026-09-30T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-practical-guide-building-gpt-6",
+    "section": "releases",
+    "title_en": "A model guide for the GPT-6 family",
+    "title_ko": "GPT-6 패밀리 모델 선택 가이드",
+    "url": "https://openai.com/index/practical-guide-building-gpt-6",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "스타트업이 GPT-6 모델 패밀리를 효과적으로 활용할 수 있도록 OpenAI가 가이드를 공개했다. 모델 선택, 추론 노력 조정, 프롬프트 및 스킬 개선, 도구 연동, 프로덕션 워크플로우 준비 등 실용적인 내용을 다룬다.",
+    "why_it_matters": "스타트업 개발자가 GPT-6 모델을 실제 서비스에 적용할 때 필요한 핵심 의사결정 기준을 한눈에 파악할 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8110135582010582,
+    "published_at": "2026-10-02T16:15:00Z"
+  },
+  {
+    "id": "google_blog-google-ai-updates-september-2026",
+    "section": "releases",
+    "title_en": "The latest AI news we announced in September 2026",
+    "title_ko": "2026년 9월 구글 AI 업데이트 소식",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글이 2026년 9월에 발표한 최신 AI 관련 소식을 영상으로 공개했다. 구체적인 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "구글의 월간 AI 업데이트는 업계 동향을 파악하는 데 참고할 수 있으나, 상세 내용은 영상을 직접 확인해야 한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.803573082010582,
+    "published_at": "2026-10-02T15:00:00Z"
+  },
+  {
+    "id": "openai_blog-chatham-financial",
+    "section": "releases",
+    "title_en": "Chatham scales its capital markets expertise with OpenAI",
+    "title_ko": "Chatham Financial, OpenAI로 자본시장 업무 혁신 — 거래 검증 30분→4분 이하",
+    "url": "https://openai.com/index/chatham-financial",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Chatham Financial은 OpenAI의 Codex와 GPT-4.5를 활용해 자체 기술을 구축하고 업무 워크플로우를 재설계했다. 그 결과 거래 검증 시간을 기존 30분에서 4분 이하로 단축하는 데 성공했다. 자본시장 전문성을 AI 기반으로 확장한 대표적인 금융 분야 적용 사례다.",
+    "why_it_matters": "AI가 금융 실무의 핵심 프로세스를 대폭 가속화할 수 있음을 실제 수치로 입증한 사례로, 금융·엔터프라이즈 AI 도입의 벤치마크가 된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-10-02T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-the-eternal-complement",
+    "section": "releases",
+    "title_en": "The eternal complement",
+    "title_ko": "영원한 보완자: AI가 돌파구 뒤의 루틴 업무를 바꾼다",
+    "url": "https://openai.com/index/the-eternal-complement",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "첨단 AI는 획기적인 아이디어 뒤에 숨은 반복적·실행적 업무에서 가장 큰 영향을 발휘할 수 있다. OpenAI는 실행력이 다음 경제와 기술 발전 속도를 결정짓는 핵심 요소가 될 것이라고 주장한다. AI는 인간의 창의성을 대체하는 것이 아니라, 아이디어를 현실로 만드는 과정을 가속화하는 '영원한 보완자' 역할을 한다.",
+    "why_it_matters": "AI가 혁신의 아이디어보다 '실행' 단계를 혁신함으로써 경제 전반의 생산성과 진보 속도를 근본적으로 바꿀 수 있다는 시각을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.672620701058201,
+    "published_at": "2026-10-01T17:00:00Z"
+  },
+  {
+    "id": "openai_blog-albertsons-reimagining-retail",
+    "section": "releases",
+    "title_en": "How Albertsons Companies is reimagining retail from the inside out",
+    "title_ko": "앨버트슨스, ChatGPT Enterprise로 식료품 쇼핑 혁신",
+    "url": "https://openai.com/index/albertsons-reimagining-retail",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "미국 대형 식료품 체인 앨버트슨스(Albertsons Companies)가 ChatGPT Enterprise와 OpenAI API를 도입해 내부 팀의 업무 효율을 높이고 있다. 이를 통해 수백만 고객의 장보기 경험도 개선하는 것을 목표로 하고 있다.",
+    "why_it_matters": "대형 오프라인 유통 기업이 LLM을 실제 업무와 고객 서비스에 적용한 실사례로, 리테일 산업 전반의 AI 도입 방향을 가늠할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6666683201058201,
+    "published_at": "2026-10-01T16:00:00Z"
+  },
+  {
+    "id": "github_trending-DietrichGebert/ponytail",
+    "section": "releases",
+    "title_en": "DietrichGebert/ponytail",
+    "title_ko": "Ponytail: AI 에이전트를 '게으른 시니어 개발자'처럼 만드는 플러그인",
+    "url": "https://github.com/DietrichGebert/ponytail",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Ponytail은 AI 코딩 에이전트가 불필요한 코드를 작성하지 않도록 유도하는 오픈소스 플러그인이다. YAGNI 원칙 기반의 7단계 사다리 규칙을 적용해, 이미 존재하는 기능·표준 라이브러리·네이티브 플랫폼 기능을 우선 활용하고 최소한의 코드만 작성하게 한다. Claude Code, Codex, Cursor, Gemini CLI 등 20개 이상의 에이전트를 지원하며, 실제 벤치마크에서 코드량 54% 감소, 비용 20% 절감, 속도 27% 향상을 기록했다고 밝혔다.",
+    "why_it_matters": "AI 에이전트의 과잉 코드 생성 문제를 구조적으로 억제하면서 안전성은 100% 유지한다는 점에서, 실무 AI 코딩 워크플로우의 효율을 실질적으로 높일 수 있는 도구다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.6115625,
+    "published_at": "2026-10-01T06:44:32Z"
+  },
+  {
+    "id": "github_trending-ComposioHQ/awesome-claude-skills",
+    "section": "releases",
+    "title_en": "ComposioHQ/awesome-claude-skills",
+    "title_ko": "Awesome Claude Skills: 1,000개 이상의 Claude 스킬 모음집",
+    "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "ComposioHQ가 Claude AI 워크플로우를 커스터마이징하기 위한 1,000개 이상의 프로덕션 레디 Claude Skills를 큐레이션한 오픈소스 목록을 공개했다. Claude Skills는 SKILL.md 파일 기반의 재사용 가능한 명령 패키지로, 문서 처리·개발·데이터 분석·비즈니스 자동화 등 다양한 카테고리를 포함한다. Claude.ai, Claude Code, Claude API는 물론 Cursor, Codex, Gemini CLI 등 다른 AI 에이전트 플랫폼에서도 동작하며, Composio MCP Gateway를 통해 78개 이상의 SaaS 앱 자동화 스킬도 제공된다.",
+    "why_it_matters": "Claude 에이전트의 실전 활용 범위를 즉시 확장할 수 있는 커뮤니티 스킬 허브로, 개발자가 처음부터 워크플로우를 구축하는 시간을 크게 줄여준다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.6115625,
+    "published_at": "2026-10-01T06:44:32Z"
+  },
+  {
+    "id": "hn-49927747",
+    "section": "community",
+    "title_en": "Sites in ChatGPT",
+    "title_ko": "ChatGPT에 사이트 기능 추가",
+    "url": "https://chatgpt.com/features/sites/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "ChatGPT에 'Sites' 기능이 추가된 것으로 보인다. 상세한 설명은 제공되지 않았으나, ChatGPT 내에서 웹사이트 관련 기능이 도입된 것으로 추정된다.",
+    "why_it_matters": "ChatGPT의 새로운 Sites 기능은 플랫폼 확장 가능성을 시사하지만, 구체적인 내용은 확인이 필요하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.973950907579205,
+    "published_at": "2026-10-01T22:22:21Z"
+  },
+  {
+    "id": "hn-49925974",
+    "section": "community",
+    "title_en": "FLUX 3 Image",
+    "title_ko": "FLUX 3 이미지 공개",
+    "url": "https://bfl.ai/models/flux-3-image",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "FLUX 3 이미지 모델이 공개되었다. 상세한 설명이 제공되지 않아 추가적인 정보는 확인이 필요하다.",
+    "why_it_matters": "FLUX 시리즈의 새 이미지 생성 모델로, 이미지 AI 분야의 최신 동향을 파악하는 데 주목할 필요가 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 8.609951331259431,
+    "published_at": "2026-10-01T19:24:29Z"
+  },
+  {
+    "id": "hn-49928566",
+    "section": "community",
+    "title_en": "Show HN: Giving Opus 5.5 a simulated paint canvas",
+    "title_ko": "Opus 5.5에 시뮬레이션 페인트 캔버스 제공 실험",
+    "url": "https://stillwet.art/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Hacker News에 공유된 프로젝트로, Opus 5.5 모델에 시뮬레이션된 페인트 캔버스 환경을 제공하는 실험적 시도다. 구체적인 구현 방식이나 결과에 대한 추가 설명은 제공되지 않았다.",
+    "why_it_matters": "LLM에 창의적 도구 환경을 연동하는 에이전트 방식의 가능성을 탐색하는 실험으로 주목할 만하다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 8.294675809377132,
+    "published_at": "2026-10-02T00:27:56Z"
+  },
+  {
+    "id": "hn-49933740",
+    "section": "community",
+    "title_en": "With most information hidden, the game Stratego had stumped AI until now",
+    "title_ko": "숨겨진 정보가 많은 보드게임 '스트라테고', AI가 드디어 정복",
+    "url": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "불완전 정보 환경으로 인해 AI에게 난제였던 보드게임 스트라테고를 AI가 마침내 해결했다는 소식이다. 스트라테고는 대부분의 말 정보가 상대에게 숨겨져 있어 체스나 바둑보다 훨씬 어려운 게임으로 꼽혀왔다.",
+    "why_it_matters": "불완전 정보 게임 정복은 현실 세계의 불확실한 환경에서 AI 의사결정 능력 발전을 의미한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.284763518143702,
+    "published_at": "2026-10-02T14:11:24Z"
+  },
+  {
+    "id": "hn-49929391",
+    "section": "community",
+    "title_en": "Greg Kroah-Hartman – Security in the LLM Age [video]",
+    "title_ko": "Greg Kroah-Hartman – LLM 시대의 보안 [영상]",
+    "url": "https://www.youtube.com/watch?v=NnV_cWeoo5Q",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "리눅스 커널 메인테이너 Greg Kroah-Hartman이 LLM 시대의 보안 주제를 다룬 영상이다. 구체적인 내용은 제공된 정보만으로는 확인이 어렵다.",
+    "why_it_matters": "리눅스 커널 핵심 개발자가 바라보는 LLM 시대의 보안 관점을 직접 들을 수 있는 드문 기회다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 7.856930463114843,
+    "published_at": "2026-10-02T02:51:27Z"
+  },
+  {
+    "id": "youtube-4Y0ir6YcgeQ",
+    "section": "video",
+    "title_en": "로봇이 손흥민을 이길 수 있을까?",
+    "title_ko": "로봇이 손흥민을 이길 수 있을까?",
+    "url": "https://www.youtube.com/shorts/4Y0ir6YcgeQ",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 휴머노이드 로봇과 축구 선수 손흥민을 비교하는 주제를 다룬 영상이다. AI 및 로봇 기술의 발전과 관련된 내용을 다루는 것으로 보인다.",
+    "why_it_matters": "휴머노이드 로봇의 운동 능력이 인간 수준에 얼마나 근접했는지 대중적 관점에서 살펴볼 수 있는 콘텐츠다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7798164682539683,
+    "published_at": "2026-10-02T11:00:32Z"
+  },
+  {
+    "id": "youtube-q0eEt9h7_Eo",
+    "section": "video",
+    "title_en": "이미지도 미친 수준으로 찍어내는 중국 모델 근황",
+    "title_ko": "중국 AI 이미지 생성 모델 최근 동향",
+    "url": "https://www.youtube.com/shorts/q0eEt9h7_Eo",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 중국의 이미지 생성 AI 모델의 최근 성능과 동향을 소개하는 영상이다. 영상 제목에 따르면 중국 모델이 이미지 생성 분야에서 눈에 띄는 수준에 도달했음을 다루고 있다.",
+    "why_it_matters": "중국 AI 이미지 생성 모델의 급성장이 글로벌 생성형 AI 경쟁 구도에 영향을 줄 수 있어 주목할 만하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7738442460317461,
+    "published_at": "2026-10-02T10:00:20Z"
+  },
+  {
+    "id": "youtube-XFqq6VjRhFQ",
+    "section": "video",
+    "title_en": "사다리타기는 공평한게 맞을까?",
+    "title_ko": "사다리타기는 정말 공평할까? AI로 알아보기",
+    "url": "https://www.youtube.com/shorts/XFqq6VjRhFQ",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 사다리타기의 공평성을 주제로 한 영상을 공개했다. 확률과 버블정렬 개념을 활용해 사다리타기 알고리즘을 분석하는 내용으로 보인다. 바이브 코딩 방식으로 직접 구현하며 개념을 설명하는 것으로 추정된다.",
+    "why_it_matters": "사다리타기 알고리즘의 공평성을 코딩으로 검증하는 접근은 확률과 정렬 개념을 실생활 예시로 쉽게 이해하는 데 도움이 된다.",
+    "tags": [],
+    "score": 0.7712814153439154,
+    "published_at": "2026-10-02T09:34:30Z"
+  },
+  {
+    "id": "latent_space-airbnb",
+    "section": "deepdive",
+    "title_en": "Inside-Out AI: Rebuilding Airbnb Behind the Scenes and Across the Guest Experience",
+    "title_ko": "에어비앤비의 AI 혁신: 내부 개발 프로세스부터 게스트 경험까지",
+    "url": "https://www.latent.space/p/airbnb",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "메타의 Llama 모델을 이끌었던 Ahmad Al-Dahle이 에어비앤비로 이동해 AI 혁신을 주도하고 있다. 그는 제품 개발 방식과 게스트 서비스 전반에 걸쳐 AI를 적용하는 작업을 진행 중이다.",
+    "why_it_matters": "LLM 개발 최전선 출신 인재가 대형 소비자 플랫폼의 AI 전환을 어떻게 이끄는지 보여주는 실제 사례다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7980985449735449,
+    "published_at": "2026-10-02T14:04:49Z"
+  }
+]
