@@ -1,0 +1,366 @@
+[
+  {
+    "id": "hf-2610.09823",
+    "section": "papers",
+    "title_en": "UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation",
+    "title_ko": "UltraText Bench: 이미지 생성의 시각적 텍스트 렌더링 평가를 위한 이중 언어 벤치마크",
+    "url": "https://huggingface.co/papers/2610.09823",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "UltraText Bench는 이미지 생성 모델의 고밀도 시각적 텍스트 렌더링 능력을 평가하는 영어·중국어 이중 언어 벤치마크다. 24개 실세계 장면 카테고리와 3단계 난이도로 구성된 432개 프롬프트를 포함하며, 각 프롬프트는 4~12개의 텍스트 영역에 대한 정확한 문자열과 배치·시각 속성 정보를 제공한다. Q-Judger 비전-언어 모델로 텍스트 충실도, 선명도, 공간 품질, 장면 품질을 평가하며, 24개 모델 구성에서 난이도 상승에 따라 성능이 크게 저하됨을 확인했다.",
+    "why_it_matters": "짧은 문자열 렌더링을 넘어 복잡한 다중 영역 고밀도 텍스트까지 체계적으로 평가할 수 있는 표준 벤치마크로, 이미지 생성 모델의 텍스트 렌더링 한계를 객관적으로 비교할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.110873864173311,
+    "published_at": "2026-10-06T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.06293",
+    "section": "papers",
+    "title_en": "VepAgent: Bridging Causal-Transition via Tool-Augmented Reinforcement Learning for Video Event Prediction",
+    "title_ko": "VepAgent: 도구 강화 학습으로 영상 이벤트 예측의 인과 전환 추론 구현",
+    "url": "https://huggingface.co/papers/2610.06293",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "VepAgent는 멀티모달 대형 언어 모델(MLLM)의 영상 이벤트 예측(VEP) 한계를 극복하기 위한 에이전트 프레임워크다. 관찰된 마지막 상태에서 미래 이벤트로의 논리적 진행을 명시적으로 모델링하며, 상태 추적·프레임 검색·영역 확대 등의 진단 도구 라이브러리를 통합해 추론 중 시공간적 증거를 동적으로 보완한다. 또한 고품질 CoT 데이터셋 FutureBench-4K를 구축하고, 예측 정확도·인과 일관성·시각적 근거를 공동 최적화하는 복합 보상 메커니즘을 도입했다. FutureBench 및 NEPBench 평가에서 더 큰 MLLM보다 우수한 최첨단 성능을 달성했다.",
+    "why_it_matters": "텍스트 편향에 의존하던 기존 영상 예측 모델의 한계를 강화학습 기반 에이전트 설계로 극복해, 미래 지향적 시각 추론의 새로운 방향을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.9889840465642745,
+    "published_at": "2026-10-04T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.10539",
+    "section": "papers",
+    "title_en": "Tetris3D: 3D Scene Generation With Objects That Fit Together",
+    "title_ko": "Tetris3D: 단일 이미지에서 물리적으로 일관된 3D 장면 생성",
+    "url": "https://huggingface.co/papers/2610.10539",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Tetris3D는 단일 이미지로부터 물리적·기하학적으로 일관된 3D 장면을 복원하는 생성 프레임워크다. 기존 방법들이 객체를 독립적으로 생성해 인접 객체 간 공간적 호환성이 부족했던 문제를 해결하기 위해, 주변 객체의 형상과 물리적 관계를 명시적으로 조건으로 활용한다. 또한 120만 개의 장면으로 구성된 물리 시뮬레이션 기반 데이터셋 ComOb을 함께 공개하며, 합성 및 실제 장면 실험에서 생성 품질과 물리적 안정성 모두 최고 수준의 성능을 달성했다.",
+    "why_it_matters": "가려진 영역에서도 물리적으로 안정적인 3D 장면을 복원할 수 있어 로보틱스, AR/VR 등 공간 이해가 중요한 응용 분야에 실질적 기여가 기대된다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 4.58351893845611,
+    "published_at": "2026-10-06T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.10444",
+    "section": "papers",
+    "title_en": "RunningTab: Direct Workspace Interaction with Environment-Side Tabs",
+    "title_ko": "RunningTab: 환경 측 탭을 활용한 직접 작업공간 상호작용 프레임워크",
+    "url": "https://huggingface.co/papers/2610.10444",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "RunningTab은 LLM 에이전트가 파일 시스템을 직접 탐색·읽는 '직접 작업공간 상호작용(DWI)' 방식에서 발생하는 컨텍스트 손실 문제를 해결하는 프레임워크다. 에이전트가 수행해야 할 요구사항, 읽은 파일의 발췌 내용, 목록에는 있지만 열지 않은 파일 후보를 환경 측에서 별도로 기록·관리한다. 세 가지 벤치마크와 세 가지 LLM으로 검증한 결과, 일반 DWI 및 모델 내부에 기록을 유지하는 기존 방식보다 일관되게 높은 성능을 보였다.",
+    "why_it_matters": "인덱싱 없이 대용량 파일 코퍼스를 처리하는 LLM 에이전트의 핵심 약점인 컨텍스트 유실 문제를 환경 측 상태 관리로 체계적으로 해결한 점이 중요하다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.555348061489413,
+    "published_at": "2026-10-06T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.10409",
+    "section": "papers",
+    "title_en": "RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments",
+    "title_ko": "RobotWorld: 다양한 로봇 과제에서 멀티모달 에이전트를 평가하는 벤치마크",
+    "url": "https://huggingface.co/papers/2610.10409",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "RobotWorld는 로봇 조작, 이동, 주행, 공중 제어 등 84개 과제로 구성된 시뮬레이션 벤치마크로, 멀티모달 에이전트가 물리적 세계에서 얼마나 효과적으로 작동하는지 평가한다. 현재 에이전트들은 이미지 분할, 카메라 보정, 공간 추정 등 정교한 워크플로우를 구성할 수 있지만, 이러한 능력이 일관된 성공으로 이어지지는 않는 것으로 나타났다. 모델별로도 차이가 있어, Astra는 공간·접촉 과제에서, Opus 5.5는 균형·타이밍 과제에서 상대적으로 높은 성공률을 보였다.",
+    "why_it_matters": "물리적 세계 에이전트의 구체적인 성능 격차와 실패 원인을 체계적으로 분석함으로써, 신뢰할 수 있는 로봇 AI 개발을 위한 명확한 개선 목표를 제시한다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 4.401197381662156,
+    "published_at": "2026-10-06T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-oracle",
+    "section": "releases",
+    "title_en": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+    "title_ko": "Oracle, ChatGPT와 Codex로 며칠 걸리던 작업을 몇 분 만에 처리",
+    "url": "https://openai.com/index/oracle",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Oracle은 ChatGPT Enterprise와 Codex를 활용해 채용, 엔지니어링, 운영 전반에 걸친 업무를 혁신하고 있다. 전문가 지식을 빠르고 반복 가능한 워크플로우로 전환함으로써 기존에 며칠이 걸리던 작업을 몇 분 내로 완료할 수 있게 됐다.",
+    "why_it_matters": "글로벌 대기업이 AI를 단순 보조 도구가 아닌 핵심 업무 자동화 인프라로 실제 도입한 구체적 사례로, 기업용 AI 활용의 방향성을 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8095254629629629,
+    "published_at": "2026-10-08T16:00:00Z"
+  },
+  {
+    "id": "openai_blog-pollo-ai",
+    "section": "releases",
+    "title_en": "Pollo AI turns creative ideas into campaigns with OpenAI",
+    "title_ko": "Pollo AI, OpenAI 기술로 크리에이티브 아이디어를 광고 캠페인으로 전환",
+    "url": "https://openai.com/index/pollo-ai",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Pollo AI는 GPT-5.6, GPT-6 Astra, GPT-Image-2.5 등 OpenAI 모델을 활용해 크리에이터들이 아이디어를 상세한 이미지와 영화적 영상 광고로 제작할 수 있도록 지원한다. 이를 통해 창작자들은 복잡한 제작 과정 없이 광고 캠페인을 빠르게 완성할 수 있다.",
+    "why_it_matters": "OpenAI 최신 멀티모달 모델을 결합한 AI 기반 광고 제작 워크플로우가 실제 서비스로 구현된 사례로, 크리에이티브 산업의 AI 도입 가능성을 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7857159391534392,
+    "published_at": "2026-10-08T12:00:00Z"
+  },
+  {
+    "id": "openai_blog-legalon-halves-codex-costs",
+    "section": "releases",
+    "title_en": "LegalOn halves Codex costs while maintaining development speed",
+    "title_ko": "LegalOn, Codex 비용 65% 절감하면서 개발 속도 유지",
+    "url": "https://openai.com/index/legalon-halves-codex-costs",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "LegalOn은 OpenAI Codex 사용 비용을 예상 일일 비용 기준 65% 절감하는 데 성공했다. Astra, Sol, Luna 등 다양한 모델을 작업 유형에 맞게 적절히 배분하고 예산을 전략적으로 관리한 것이 핵심이었다. 비용을 절반 이하로 줄이면서도 개발 속도는 그대로 유지했다.",
+    "why_it_matters": "AI 코딩 도구 도입 시 비용 최적화 전략으로, 모델 선택과 예산 관리만으로 대폭적인 절감이 가능함을 실증한 사례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7857159391534392,
+    "published_at": "2026-10-08T12:00:00Z"
+  },
+  {
+    "id": "github_trending-addyosmani/agent-skills",
+    "section": "releases",
+    "title_en": "addyosmani/agent-skills",
+    "title_ko": "AI 코딩 에이전트를 위한 프로덕션급 엔지니어링 스킬 팩 'Agent Skills'",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Addy Osmani가 공개한 'Agent Skills'는 AI 코딩 에이전트가 시니어 엔지니어 수준의 개발 워크플로우를 일관되게 따르도록 설계된 25개의 구조화된 스킬 모음이다. 스펙 작성(/spec)부터 계획(/plan), 구현(/build), 테스트(/test), 리뷰(/review), 배포(/ship)까지 개발 전 주기를 9개의 슬래시 커맨드로 커버한다. Claude Code, Cursor, Codex, GitHub Copilot 등 70개 이상의 AI 코딩 도구에 npx 한 줄로 설치할 수 있으며, Google의 소프트웨어 엔지니어링 문화(Hyrum's Law, Beyonce Rule 등)에서 검증된 베스트 프랙티스가 워크플로우에 직접 내장되어 있다.",
+    "why_it_matters": "AI 코딩 에이전트가 스펙·테스트·보안 리뷰 같은 단계를 건너뛰는 문제를 구조화된 스킬로 강제함으로써, 프로토타입 수준의 코드 대신 프로덕션 품질의 결과물을 얻을 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7550578703703703,
+    "published_at": "2026-10-08T06:50:58Z"
+  },
+  {
+    "id": "github_trending-thedotmack/claude-mem",
+    "section": "releases",
+    "title_en": "thedotmack/claude-mem",
+    "title_ko": "claude-mem: 에이전트 세션 간 영구 컨텍스트 유지 도구",
+    "url": "https://github.com/thedotmack/claude-mem",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "claude-mem은 AI 에이전트가 세션 중에 수행한 작업을 자동으로 캡처하고, AI로 압축한 뒤 이후 세션에 관련 컨텍스트를 자동 주입하는 오픈소스 플러그인이다. Claude Code를 비롯해 OpenCode, Codex, Gemini, Copilot 등 다양한 IDE와 에이전트 환경을 지원한다. SQLite와 Chroma 벡터 DB를 활용한 하이브리드 검색, MCP 도구를 통한 자연어 메모리 검색 기능도 제공하며, Apache 2.0 라이선스로 배포된다.",
+    "why_it_matters": "세션이 끊길 때마다 컨텍스트를 잃는 AI 코딩 에이전트의 핵심 한계를 영구 메모리 레이어로 해소하는 실용적 솔루션이다.",
+    "tags": [
+      "에이전트",
+      "RAG",
+      "오픈소스"
+    ],
+    "score": 0.7550578703703703,
+    "published_at": "2026-10-08T06:50:58Z"
+  },
+  {
+    "id": "github_trending-manaflow-ai/cmux",
+    "section": "releases",
+    "title_en": "manaflow-ai/cmux",
+    "title_ko": "cmux: AI 코딩 에이전트를 위한 오픈소스 macOS 터미널",
+    "url": "https://github.com/manaflow-ai/cmux",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "cmux는 Ghostty 렌더링 엔진 기반의 네이티브 macOS 터미널 앱으로, AI 코딩 에이전트 병렬 실행에 최적화되어 있습니다. 세로형 탭 사이드바, 에이전트 알림 링, 내장 브라우저, CLI/소켓 API를 통한 자동화 기능을 제공합니다. Swift/AppKit으로 구현되어 Electron 기반 앱 대비 빠른 성능을 자랑하며, Claude Code Teams 등 다양한 AI 에이전트와 연동됩니다. GPL-3.0 라이선스 오픈소스로 무료 사용 가능합니다.",
+    "why_it_matters": "여러 AI 코딩 에이전트를 동시에 관리해야 하는 개발자에게 알림·멀티탭·브라우저 자동화를 하나의 네이티브 터미널로 통합 제공한다는 점에서 실용적 가치가 높다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.7550578703703703,
+    "published_at": "2026-10-08T06:50:58Z"
+  },
+  {
+    "id": "openai_blog-disrupting-ai-enabled-false-front-operations",
+    "section": "releases",
+    "title_en": "Disrupting AI-enabled “false front” operations",
+    "title_ko": "OpenAI, AI 활용 '위장 전선' 영향력 공작 차단",
+    "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 가짜 저널리스트와 싱크탱크로 위장해 지정학적 메시지를 확산시키려 한 두 건의 AI 활용 영향력 공작을 적발·차단했다. 실제 언론인이나 연구기관처럼 위장한 허위 전선 조직이 AI를 이용해 여론을 조작하려 했다.",
+    "why_it_matters": "AI가 정교한 허위정보 공작에 악용될 수 있음을 보여주는 실제 사례로, AI 오남용 대응의 중요성을 상기시킨다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-10-08T00:00:00Z"
+  },
+  {
+    "id": "hn-50000488",
+    "section": "community",
+    "title_en": "Why isn't the industry freaking out about DeepSeek 4.1 Flash?",
+    "title_ko": "업계는 왜 DeepSeek 4.1 Flash에 대해 크게 반응하지 않는가?",
+    "url": "https://www.dgt.is/blog/2026-10-07-deepseek-freek-out/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "DeepSeek 4.1 Flash 모델이 공개되었음에도 불구하고 업계의 반응이 예상보다 조용하다는 의문을 제기하는 글이다. 이전 DeepSeek 모델 공개 때와 달리 큰 화제가 되지 않고 있는 상황을 다루고 있다.",
+    "why_it_matters": "DeepSeek 신모델에 대한 업계 반응 온도차를 통해 AI 모델 경쟁 구도의 변화를 가늠할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.741159655573238,
+    "published_at": "2026-10-08T00:14:48Z"
+  },
+  {
+    "id": "hn-49995495",
+    "section": "community",
+    "title_en": "Man discovers his parents' coffee machine used 1TB of data in 10 days",
+    "title_ko": "부모님 커피머신이 10일 만에 1TB 데이터 사용한 사실 발견",
+    "url": "https://www.dexerto.com/entertainment/man-discovers-his-parents-coffee-machine-used-1tb-of-data-in-10-days-3416399/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "한 남성이 부모님의 커피머신이 10일 동안 무려 1TB의 데이터를 사용했다는 사실을 발견했다. 이는 가정용 IoT 기기가 예상치 못한 대량의 네트워크 트래픽을 발생시킬 수 있음을 보여주는 사례다.",
+    "why_it_matters": "일상적인 IoT 가전기기의 과도한 데이터 수집·전송 문제가 개인 프라이버시와 네트워크 보안에 미치는 영향을 환기시킨다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.562569934694114,
+    "published_at": "2026-10-07T16:56:30Z"
+  },
+  {
+    "id": "hn-50004790",
+    "section": "community",
+    "title_en": "I gave Opus 5.5 one prompt and six hours to visualize Invisible Cities",
+    "title_ko": "Opus 5.5에게 프롬프트 하나와 6시간으로 '보이지 않는 도시들' 시각화 작업",
+    "url": "https://quesma.com/blog/invisible-cities-one-shot/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Claude Opus 5.5 모델에게 단 하나의 프롬프트와 6시간을 주어 이탈로 칼비노의 소설 '보이지 않는 도시들'을 시각화하는 실험을 진행했다. 구체적인 결과물이나 방법론에 대한 설명은 제공되지 않았다.",
+    "why_it_matters": "LLM의 장시간 자율 창작 능력과 문학 시각화 가능성을 탐색한 실험 사례로 주목할 만하다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 9.443094254920517,
+    "published_at": "2026-10-08T12:00:20Z"
+  },
+  {
+    "id": "hn-50007764",
+    "section": "community",
+    "title_en": "Step 5 Preview, a 1M-context MoE from StepFun, shows up on OpenRouter",
+    "title_ko": "StepFun의 100만 컨텍스트 MoE 모델 'Step 5 Preview', OpenRouter에 등장",
+    "url": "https://openrouter.ai/stepfun/step-5-preview",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "StepFun이 개발한 100만 토큰 컨텍스트 윈도우를 지원하는 MoE(혼합 전문가) 모델 'Step 5 Preview'가 OpenRouter에 모습을 드러냈다. 구체적인 성능 벤치마크나 세부 사항은 아직 알려지지 않았다.",
+    "why_it_matters": "100만 토큰 컨텍스트를 갖춘 MoE 모델의 등장은 초장문 처리 경쟁이 더욱 치열해지고 있음을 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 6.983476069846412,
+    "published_at": "2026-10-08T16:20:20Z"
+  },
+  {
+    "id": "reddit-1x15a8w",
+    "section": "community",
+    "title_en": "Strata rewrote their Github history to wipe evidence of Claude-authoring",
+    "title_ko": "Strata, Claude AI 공동 작성 흔적 지우려 GitHub 커밋 히스토리 재작성",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x15a8w/strata_rewrote_their_github_history_to_wipe/",
+    "sources": [
+      "reddit"
+    ],
+    "summary_ko": "한 사용자가 Strata의 GitHub 저장소에서 UPDATE 스크립트를 실행하다가 공통 조상 커밋이 없다는 오류를 발견했다. 조사 결과, 기존 커밋 메시지에서 'Co-Authored by Claude' 문구가 모두 삭제된 것으로 확인됐다. 제보자는 이 행위가 프로젝트의 AI 기여 사실을 숨기려는 의도적인 불투명한 행동이라고 비판했다.",
+    "why_it_matters": "AI 생성 코드의 출처를 사후에 삭제하는 행위는 오픈소스 커뮤니티의 신뢰와 투명성에 대한 심각한 문제를 제기한다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8504034391534392,
+    "published_at": "2026-10-08T22:52:03Z"
+  },
+  {
+    "id": "youtube-kKHFaD3maTk",
+    "section": "video",
+    "title_en": "광고 문의 오면 AI가 알아서 확인하고 초안 작성해줌 ㄷㄷ",
+    "title_ko": "AI가 광고 문의를 자동으로 확인하고 초안까지 작성해주는 자동화 시스템",
+    "url": "https://www.youtube.com/shorts/kKHFaD3maTk",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 광고 문의가 들어오면 AI가 자동으로 내용을 확인하고 답변 초안을 작성해주는 자동화 워크플로우를 소개한다. 1인 창업자나 크리에이터가 반복적인 문의 처리 업무를 AI로 줄일 수 있는 실용적인 사례다.",
+    "why_it_matters": "AI 에이전트를 활용한 업무 자동화를 1인 창업·크리에이터 환경에 바로 적용할 수 있는 실전 예시로 주목할 만하다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7857589285714286,
+    "published_at": "2026-10-08T12:00:26Z"
+  },
+  {
+    "id": "youtube-jZbeBkuRmvU",
+    "section": "video",
+    "title_en": "🚨 인간을 속이는 데 성공한 영상 AI..?",
+    "title_ko": "인간을 속이는 데 성공한 영상 AI, Tavus 소개",
+    "url": "https://www.youtube.com/shorts/jZbeBkuRmvU",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 실제 인간처럼 보이는 영상을 생성하는 AI 기술을 소개했다. 해당 영상은 '#tavus' 태그를 통해 Tavus라는 영상 AI 서비스를 다루고 있으며, 튜링 테스트를 통과할 수준의 영상 생성 능력이 핵심 주제로 보인다.",
+    "why_it_matters": "영상 AI가 사람을 속일 수 있는 수준에 도달했다는 점에서 딥페이크·신원 인증·콘텐츠 신뢰성 전반에 큰 영향을 미칠 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.779811507936508,
+    "published_at": "2026-10-08T11:00:29Z"
+  },
+  {
+    "id": "youtube-adKPe4h01Nk",
+    "section": "video",
+    "title_en": "한손만 짚으면 정말 미로를 빠져나갈 수 있을까?",
+    "title_ko": "한 손만 짚으면 미로를 빠져나갈 수 있을까?",
+    "url": "https://www.youtube.com/shorts/adKPe4h01Nk",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 미로 탈출 알고리즘 관련 주제를 다루는 영상이다. '한 손만 짚으면 미로를 빠져나갈 수 있다'는 알고리즘적 개념을 탐구하는 내용으로 보인다. 깊이 탐색 및 길 찾기 알고리즘과 관련된 코딩 실습 콘텐츠로 추정된다.",
+    "why_it_matters": "길 찾기·탐색 알고리즘의 직관적 이해를 도와주는 개발자 교육 콘텐츠로, 알고리즘 학습에 관심 있는 한국 개발자에게 유용하다.",
+    "tags": [],
+    "score": 0.7691071428571429,
+    "published_at": "2026-10-08T09:12:35Z"
+  },
+  {
+    "id": "latent_space-ainews-not-much-happened-today-60f",
+    "section": "deepdive",
+    "title_en": "[AINews] not much happened today",
+    "title_ko": "[AI 뉴스] 오늘은 특별한 소식이 없었습니다",
+    "url": "https://www.latent.space/p/ainews-not-much-happened-today-60f",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "오늘은 AI 분야에서 특별히 주목할 만한 소식이 없는 조용한 하루였습니다.",
+    "why_it_matters": "큰 이슈가 없는 날도 있으며, 다음 소식을 기다릴 수 있습니다.",
+    "tags": [],
+    "score": 0.8541402116402117,
+    "published_at": "2026-10-08T23:29:43Z"
+  }
+]
