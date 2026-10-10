@@ -1,0 +1,368 @@
+[
+  {
+    "id": "hf-2610.11959",
+    "section": "papers",
+    "title_en": "MiMo-V2.6: Scaling Reinforcement Learning Towards Self-Improvement",
+    "title_ko": "MiMo-V2.6: 강화학습 스케일링을 통한 모델 자기개선 추구",
+    "url": "https://huggingface.co/papers/2610.11959",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "MiMo-V2.6은 대규모 강화학습(RL) 컴퓨팅을 활용해 옴니모달 모델의 지능을 높이는 시리즈입니다. RL 이전에 광범위한 멀티모달 코퍼스로 중간 학습을 수행하며, 배치 크기 확대·다양한 환경(코드, 일반, 시각, 사이버)·그룹 방식 에이전트 채점 등 세 가지 축으로 RL 컴퓨팅을 스케일합니다. 안정적 학습을 위해 MoE 라우터를 동결하고 보상 해킹 방지를 위한 다층 방어 체계를 구축했으며, 훈련 역학·RL 환경·RL 프레임워크를 오픈소스로 공개합니다.",
+    "why_it_matters": "대규모 RL 기반 자기개선 학습의 인프라와 방법론을 오픈소스로 공개해 연구 재현성과 후속 연구 가속화에 기여한다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 5.04305126783455,
+    "published_at": "2026-10-07T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.12299",
+    "section": "papers",
+    "title_en": "Multi-Agent Egocentric World Model with Fine-Grained Embodied Interaction",
+    "title_ko": "다중 에이전트 자기중심 세계 모델: 세밀한 구현 상호작용",
+    "url": "https://huggingface.co/papers/2610.12299",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "기존 자기중심 세계 모델은 단일 에이전트에 초점을 맞췄지만, ME-World는 다중 에이전트가 공유 환경에서 세밀한 행동으로 상호작용하는 상황을 모델링한다. 여러 에고 스트림을 공유 토큰 시퀀스에서 동시에 디노이징하고, 공유 환경 메모리로 생성을 고정시키는 방식을 사용한다. 실제 및 합성 다중 에이전트 데이터로 학습·평가하며, 환경·업데이트·정체성 일관성을 측정하는 새 메트릭을 도입해 기존 방법 대비 우수한 성능을 보였다.",
+    "why_it_matters": "다중 에이전트 간 세밀한 상호작용을 일관성 있게 모델링함으로써 구현 AI와 멀티 에이전트 시뮬레이션 연구의 새로운 가능성을 열어준다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 4.7841896339182615,
+    "published_at": "2026-10-07T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.12461",
+    "section": "papers",
+    "title_en": "OuroWorld: Bringing Any 3D World Alive as Diverse, Endlessly Looping 3D Cinemagraphs",
+    "title_ko": "OuroWorld: 정적인 3D 장면을 무한 루프 3D 시네마그래프로 변환하는 프레임워크",
+    "url": "https://huggingface.co/papers/2610.12461",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "OuroWorld는 정적인 3D 가우시안 스플래팅(3DGS) 장면을 마스크 없이 동적인 3D 시네마그래프로 변환하는 프레임워크다. 비전-언어 모델이 장면의 동작을 추론하고, 비디오 모델로 참조 영상을 합성한 뒤 이를 멀티뷰 비디오로 확장한다. 푸리에 급수 기반 변형 필드로 루프를 보장하고, Grounded Drift Field로 뷰 간 불일치를 흡수하는 'Inconsistency-Robust Periodic 4DGS'를 제안한다. 39개 장면 실험에서 모든 베이스라인을 능가하며 사용자 연구에서 70.8~99.0%의 선호도를 기록했다.",
+    "why_it_matters": "기존 유체 동작에 한정된 방법과 달리 일반적인 객체 움직임과 조명 변화까지 처리하며, 정적 3D 장면을 몰입감 있는 루프 영상으로 자동 변환할 수 있어 3D 콘텐츠 제작에 새로운 가능성을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.465735902799727,
+    "published_at": "2026-10-07T20:00:00Z"
+  },
+  {
+    "id": "hf-2501.09223",
+    "section": "papers",
+    "title_en": "Foundations of Large Language Models",
+    "title_ko": "대규모 언어 모델의 기초 (교재)",
+    "url": "https://huggingface.co/papers/2501.09223",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "이 책은 대규모 언어 모델(LLM)의 핵심 개념을 체계적으로 다루는 교재다. 사전 학습, 생성 모델, 프롬프팅, 정렬, 추론(인퍼런스), 추론(리즈닝) 등 6개의 주요 챕터로 구성되어 있다. 자연어 처리 분야의 대학생, 전문가, 실무자를 대상으로 하며 LLM에 관심 있는 누구에게나 참고서로 활용 가능하다.",
+    "why_it_matters": "LLM의 핵심 원리를 체계적으로 학습하려는 개발자와 연구자에게 탄탄한 이론적 토대를 제공하는 공개 교재다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.433987204485146,
+    "published_at": "2026-10-07T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.09087",
+    "section": "papers",
+    "title_en": "U-Space: Uncovering When and Why Uncertainty Arises in Language Models",
+    "title_ko": "U-Space: 언어 모델의 불확실성이 언제, 왜 발생하는지 파악하는 새로운 방법",
+    "url": "https://huggingface.co/papers/2610.09087",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "대형 언어 모델이 틀린 답을 자신 있게 제시하는 문제를 해결하기 위해 U-Space라는 저차원 부분공간 기법이 제안되었습니다. 이 방법은 모델 내부의 '의심'과 '확신'에 대한 의미적 앵커를 식별하고, 잔차 공간에 투영하여 토큰 수준의 불확실성 맵을 생성합니다. 정답 레이블, 반복 생성, 별도 학습 없이도 동작하며, 추론 벤치마크에서 기존 기준선보다 우수한 성능을 보였습니다.",
+    "why_it_matters": "학습이나 반복 생성 없이 LLM 내부에서 불확실성을 해석 가능한 형태로 직접 측정할 수 있어, 고위험 의사결정에서 모델 신뢰도 평가의 실용성을 크게 높입니다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.401197381662156,
+    "published_at": "2026-10-05T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-sophos",
+    "section": "releases",
+    "title_en": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+    "title_ko": "Sophos, OpenAI Daybreak로 사이버 위협 조사 시간 96% 단축",
+    "url": "https://openai.com/index/sophos",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Sophos는 OpenAI의 Daybreak를 활용해 사이버 위협 조사 시간을 96% 줄이는 데 성공했다. 또한 MDR(관리형 탐지 및 대응) 케이스의 52%를 자동화하면서도 인간의 감독 체계는 유지했다. 이를 통해 보안 운영의 효율성을 대폭 향상시켰다.",
+    "why_it_matters": "LLM 기반 자동화가 실제 엔터프라이즈 사이버보안 운영에서 검증 가능한 수치로 효율성을 입증한 사례로, AI의 실전 보안 적용 가능성을 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7559540343915344,
+    "published_at": "2026-10-09T07:00:00Z"
+  },
+  {
+    "id": "openai_blog-asana-browser-agent",
+    "section": "releases",
+    "title_en": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+    "title_ko": "Asana, GPT-4.1 기반으로 브라우저 테스트 비용 76배 절감 달성",
+    "url": "https://openai.com/index/asana-browser-agent",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Asana는 Codex에서 GPT-4.1을 활용해 브라우저 에이전트의 비용을 76배 절감하고 속도를 5배 향상시키는 데 성공했다. 이를 통해 고객에게 더욱 강력한 AI 모델을 제공할 수 있게 되었다.",
+    "why_it_matters": "AI 에이전트의 실용적 비용 장벽을 획기적으로 낮춘 사례로, 기업용 브라우저 자동화 도입 가속화에 중요한 신호탄이 될 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.7559540343915344,
+    "published_at": "2026-10-09T07:00:00Z"
+  },
+  {
+    "id": "github_trending-thedotmack/claude-mem",
+    "section": "releases",
+    "title_en": "thedotmack/claude-mem",
+    "title_ko": "claude-mem: AI 에이전트를 위한 세션 간 영구 메모리 시스템",
+    "url": "https://github.com/thedotmack/claude-mem",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "claude-mem은 AI 에이전트가 세션 종료 후에도 컨텍스트를 유지할 수 있도록 도와주는 오픈소스 플러그인이다. 세션 중 에이전트의 활동을 자동으로 캡처하고 AI로 압축한 뒤, 다음 세션 시작 시 관련 컨텍스트를 자동으로 주입한다. Claude Code, OpenCode, Codex, Gemini 등 다양한 AI 코딩 도구를 지원하며, SQLite와 Chroma 벡터 DB 기반의 하이브리드 검색 기능도 제공한다.",
+    "why_it_matters": "세션이 끊길 때마다 컨텍스트를 잃는 AI 코딩 에이전트의 근본적 한계를 자동화된 영구 메모리로 해결해, 복잡한 장기 프로젝트에서의 연속성을 확보할 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7558581349206349,
+    "published_at": "2026-10-09T06:59:02Z"
+  },
+  {
+    "id": "github_trending-anthropics/knowledge-work-plugins",
+    "section": "releases",
+    "title_en": "anthropics/knowledge-work-plugins",
+    "title_ko": "Anthropic, 지식 노동자용 오픈소스 Claude 플러그인 11종 공개",
+    "url": "https://github.com/anthropics/knowledge-work-plugins",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 Claude Cowork 및 Claude Code에서 사용할 수 있는 지식 노동자 전용 플러그인 11종을 오픈소스로 공개했다. 영업, 마케팅, 법무, 재무, 데이터 분석, 바이오 리서치 등 직무별로 특화된 플러그인이 포함되며, Slack·Notion·HubSpot·Snowflake 등 외부 도구와 MCP 서버를 통해 연결된다. 각 플러그인은 마크다운과 JSON 파일로만 구성돼 별도 코드나 인프라 없이 커스터마이징이 가능하다.",
+    "why_it_matters": "기업이 Claude를 자사 도구·워크플로우에 맞게 직접 커스터마이징할 수 있는 공식 오픈소스 기반이 마련되어, 실무 AI 에이전트 도입의 진입 장벽이 크게 낮아진다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7558581349206349,
+    "published_at": "2026-10-09T06:59:02Z"
+  },
+  {
+    "id": "openai_blog-oracle",
+    "section": "releases",
+    "title_en": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+    "title_ko": "Oracle, ChatGPT와 Codex로 며칠 걸리던 작업을 몇 분으로 단축",
+    "url": "https://openai.com/index/oracle",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Oracle은 ChatGPT Enterprise와 Codex를 채용, 엔지니어링, 운영 등 다양한 부서에 도입해 전문 지식 기반의 작업을 빠르고 반복 가능한 워크플로우로 전환했다. 기존에 며칠이 소요되던 업무가 몇 분 만에 처리 가능해졌다. 전문가 지식을 자동화된 프로세스로 전환하는 실제 기업 사례로 주목받고 있다.",
+    "why_it_matters": "글로벌 대기업 Oracle의 실제 도입 사례를 통해 LLM 기반 업무 자동화의 구체적인 비즈니스 효과를 확인할 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.6666683201058201,
+    "published_at": "2026-10-08T16:00:00Z"
+  },
+  {
+    "id": "openai_blog-pollo-ai",
+    "section": "releases",
+    "title_en": "Pollo AI turns creative ideas into campaigns with OpenAI",
+    "title_ko": "Pollo AI, OpenAI 기술로 크리에이티브 아이디어를 캠페인으로 전환",
+    "url": "https://openai.com/index/pollo-ai",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Pollo AI는 GPT-5.6, GPT-6 Astra, GPT-Image-2.5 등 OpenAI 모델을 활용해 크리에이터들이 아이디어를 상세한 이미지와 영상 광고로 제작할 수 있도록 지원한다. 이를 통해 창작자들은 복잡한 광고 캠페인 제작 과정을 AI로 간소화할 수 있다.",
+    "why_it_matters": "최신 OpenAI 멀티모달 모델을 결합해 광고 크리에이티브 제작 워크플로우를 자동화하는 실제 적용 사례로, AI 기반 콘텐츠 제작의 상용화 가능성을 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6428587962962964,
+    "published_at": "2026-10-08T12:00:00Z"
+  },
+  {
+    "id": "openai_blog-legalon-halves-codex-costs",
+    "section": "releases",
+    "title_en": "LegalOn halves Codex costs while maintaining development speed",
+    "title_ko": "LegalOn, Codex 비용 65% 절감하면서 개발 속도 유지",
+    "url": "https://openai.com/index/legalon-halves-codex-costs",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "LegalOn은 OpenAI Codex 사용 비용을 예상 일일 비용 기준 65% 절감하는 데 성공했다. Astra, Sol, Luna 등 각 AI 에이전트를 작업 유형에 맞게 매칭하고 예산을 전략적으로 관리한 것이 핵심이었다. 이를 통해 비용 절감과 함께 기존 개발 속도도 그대로 유지했다.",
+    "why_it_matters": "AI 코딩 도구 비용 최적화 전략의 실제 사례로, 에이전트별 역할 분담이 효율적인 비용 관리의 열쇠임을 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.6428587962962964,
+    "published_at": "2026-10-08T12:00:00Z"
+  },
+  {
+    "id": "hn-50026555",
+    "section": "community",
+    "title_en": "YouTuber Says Cops Visited Him After He Built a Flock-Style Camera to Track Cops",
+    "title_ko": "유튜버, 경찰 추적용 카메라 제작 후 경찰 방문 받아",
+    "url": "https://gizmodo.com/youtuber-says-cops-paid-him-a-visit-after-he-built-flock-style-camera-to-track-cops-2000824306",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "한 유튜버가 경찰 차량을 추적하는 Flock 스타일의 카메라를 직접 제작한 후, 경찰이 그를 직접 찾아왔다고 밝혔다. 구체적인 경위나 법적 결과에 대한 상세 정보는 제공되지 않았다.",
+    "why_it_matters": "시민이 경찰 감시 기술을 역으로 활용할 경우 어떤 법적·사회적 반응이 따르는지를 보여주는 사례다.",
+    "tags": [],
+    "score": 9.541499217951486,
+    "published_at": "2026-10-09T21:06:59Z"
+  },
+  {
+    "id": "hn-50018817",
+    "section": "community",
+    "title_en": "Show HN: Let your AI agents paint big arrows, boxes and text on your screen",
+    "title_ko": "AI 에이전트가 화면에 화살표·박스·텍스트를 그릴 수 있게 해주는 도구",
+    "url": "https://github.com/franzenzenhofer/big-arrow-on-the-screen",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI 에이전트가 화면 위에 큰 화살표, 박스, 텍스트 등을 직접 그릴 수 있도록 지원하는 도구다. 에이전트가 시각적 요소를 화면에 오버레이하여 사용자에게 정보를 전달할 수 있다.",
+    "why_it_matters": "AI 에이전트의 화면 상호작용 방식을 시각적으로 확장해, 에이전트가 사용자에게 직관적인 안내를 제공할 수 있는 새로운 접근법이다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 9.454594811656719,
+    "published_at": "2026-10-09T11:03:48Z"
+  },
+  {
+    "id": "hn-50023450",
+    "section": "community",
+    "title_en": "Typesafe AI raises $870M at $7.5B",
+    "title_ko": "Typesafe AI, 75억 달러 기업가치로 8억 7천만 달러 투자 유치",
+    "url": "https://typesafe.ai/blog/series-ai",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Typesafe AI가 75억 달러(약 10조 원)의 기업가치를 인정받으며 8억 7천만 달러 규모의 투자를 유치했다. 구체적인 사업 내용이나 투자자 정보는 제공되지 않았다.",
+    "why_it_matters": "AI 스타트업에 대한 대규모 투자가 지속되고 있음을 보여주는 사례로, AI 산업의 자본 집중 흐름을 확인할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.14554071567758,
+    "published_at": "2026-10-09T17:02:31Z"
+  },
+  {
+    "id": "hn-50024913",
+    "section": "community",
+    "title_en": "Microsoft-Decision-1, our model for fast decision-making",
+    "title_ko": "Microsoft, 빠른 의사결정을 위한 모델 'Decision-1' 공개",
+    "url": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Microsoft가 빠른 의사결정을 위한 자체 모델 'Decision-1'을 발표했다. 상세한 설명은 제공되지 않았으나, 제목에서 의사결정 속도에 특화된 모델임을 알 수 있다.",
+    "why_it_matters": "Microsoft가 의사결정 특화 AI 모델을 독자 공개했다는 점에서 에이전트·자동화 분야에 새로운 선택지가 될 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 7.843156309746296,
+    "published_at": "2026-10-09T18:38:44Z"
+  },
+  {
+    "id": "hn-50019056",
+    "section": "community",
+    "title_en": "Pointing AI at archives found a forgotten meteorite, lost rhinos, and more",
+    "title_ko": "AI로 기록 보관소 분석해 잊혀진 운석·멸종 위기 코뿔소 등 발견",
+    "url": "https://jessewaites.com/blog/post/i-pointed-ai-at-400-years-of-archives/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI를 역사적 기록 보관소에 적용해 잊혀진 운석과 사라진 코뿔소 등 다양한 숨겨진 발견을 이끌어냈다는 내용이다. 기존에 디지털화되어 있지만 검토되지 않았던 방대한 자료를 AI가 분석해 새로운 통찰을 제공했다.",
+    "why_it_matters": "AI가 방대한 역사 기록을 재분석해 기존 연구에서 놓친 과학적 발견을 가능하게 함을 보여주는 사례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 7.551131352848663,
+    "published_at": "2026-10-09T11:36:20Z"
+  },
+  {
+    "id": "youtube-7WP8rRcHwYU",
+    "section": "video",
+    "title_en": "AI가 못 받은 돈 받아줌 ㄷㄷ",
+    "title_ko": "AI가 미수금 회수를 도와준다?",
+    "url": "https://www.youtube.com/shorts/7WP8rRcHwYU",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 AI를 활용해 받지 못한 돈을 받는 방법을 소개하는 영상이다. 바이브 코딩 기반의 1인 창업 및 AI 활용 실전 사례를 다루는 콘텐츠로 보인다. 구체적인 기술 스택이나 구현 방법은 영상 내용을 통해 확인할 수 있다.",
+    "why_it_matters": "AI를 실생활 문제(미수금 회수)에 직접 적용하는 사례로, 비개발자도 AI 도구로 실질적 문제를 해결할 수 있음을 보여준다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7857258597883598,
+    "published_at": "2026-10-09T12:00:06Z"
+  },
+  {
+    "id": "youtube-JVi7pFYyYvw",
+    "section": "video",
+    "title_en": "누구나 AI 하드웨어를 만들 수 있는 세상 ㄷㄷ",
+    "title_ko": "누구나 AI 하드웨어를 만들 수 있는 시대",
+    "url": "https://www.youtube.com/shorts/JVi7pFYyYvw",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 AI 하드웨어 제작의 대중화를 주제로 한 영상을 공개했다. 메타와 오픈소스 기술을 중심으로 누구나 AI 하드웨어를 직접 만들 수 있는 환경이 만들어지고 있음을 다룬다.",
+    "why_it_matters": "오픈소스 AI 생태계 확산으로 하드웨어 진입 장벽이 낮아지는 트렌드를 확인할 수 있다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 0.7678968253968255,
+    "published_at": "2026-10-09T09:00:23Z"
+  },
+  {
+    "id": "youtube-kKHFaD3maTk",
+    "section": "video",
+    "title_en": "광고 문의 오면 AI가 알아서 확인하고 초안 작성해줌 ㄷㄷ",
+    "title_ko": "AI가 광고 문의를 자동으로 확인하고 초안까지 작성해주는 자동화 시스템",
+    "url": "https://www.youtube.com/shorts/kKHFaD3maTk",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "유튜버 조코딩이 광고 문의가 들어오면 AI가 자동으로 내용을 확인하고 초안을 작성해주는 자동화 워크플로우를 소개하는 영상이다. 1인 창업자나 크리에이터가 반복적인 이메일 업무를 AI로 효율화하는 사례를 다룬다.",
+    "why_it_matters": "AI 에이전트를 활용한 업무 자동화가 1인 창업·크리에이터 환경에서도 실용적으로 적용되고 있음을 보여주는 사례다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.6429017857142858,
+    "published_at": "2026-10-08T12:00:26Z"
+  },
+  {
+    "id": "simon_willison-deno-is-joining-cloudflare",
+    "section": "deepdive",
+    "title_en": "Deno is joining Cloudflare",
+    "title_ko": "Deno, Cloudflare에 인수된다 — 런타임은 1년 후 개발 종료",
+    "url": "https://simonwillison.net/2026/Oct/9/deno-is-joining-cloudflare/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Cloudflare가 Deno를 인수하며, 오픈소스 Durable Objects 구현체인 celld를 기반으로 Workers 프로그래밍 모델의 셀프호스팅을 공식 지원하는 방향으로 나아간다. 단, Deno 런타임 자체는 향후 1년간 버그 수정·보안 업데이트만 제공되고 이후 공식 개발이 종료된다. Deno·Node.js 창시자 Ryan Dahl은 Deno가 Node 호환성의 중력에 빨려들어 독자적인 큰 문제를 풀지 못했다고 인정하며, celld의 새로운 서버 개발 모델에 집중하겠다고 밝혔다. Deno는 오픈소스로 유지되며 커뮤니티의 자체 개발은 환영한다.",
+    "why_it_matters": "JavaScript 런타임 생태계의 주요 대안이었던 Deno가 사실상 종료 수순에 들어감에 따라, Node.js와 Cloudflare Workers 중심으로 서버사이드 JS 판도가 재편될 전망이다.",
+    "tags": [
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 0.8500628306878306,
+    "published_at": "2026-10-09T22:48:37Z"
+  }
+]
