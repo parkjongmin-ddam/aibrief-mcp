@@ -1,0 +1,339 @@
+[
+  {
+    "id": "hf-2610.18773",
+    "section": "papers",
+    "title_en": "Jeva: System One Models from First Principles",
+    "title_ko": "Jeva: 원칙 기반의 시스템 원 모델 아키텍처",
+    "url": "https://huggingface.co/papers/2610.18773",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Jeva는 저지연 직접 의사결정을 위한 '결정 네이티브' 아키텍처로, 기존 텍스트 직렬화 방식의 구조적 한계를 해결한다. 요청과 각 선택지를 독립적으로 인코딩하고, 순열 불변성·널 인식·옵션 확장성·캐시 재사용성이라는 네 가지 핵심 요건을 동시에 충족한다. 평가 결과, 순열 변경 시 결정 반전이 없고, 수천 개의 후보 처리가 가능하며, 크로스 요청 재사용으로 지연 시간을 크게 줄였다.",
+    "why_it_matters": "의사결정 특화 아키텍처로 기존 LLM 기반 선택 모델의 구조적 결함(순열 민감성, 후보 확장 불가, 널 처리 부재)을 체계적으로 해결해 실시간 추론 시스템에 직접 활용 가능하다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 6.58724865840025,
+    "published_at": "2026-10-12T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.17953",
+    "section": "papers",
+    "title_en": "Agent-Reflex: Teaching Language Agents to Act Reflectively",
+    "title_ko": "Agent-Reflex: 언어 에이전트에게 반성적 행동 능력을 부여하는 훈련 프레임워크",
+    "url": "https://huggingface.co/papers/2610.17953",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Agent-Reflex는 LLM 기반 에이전트가 노이즈가 많은 툴 피드백이나 사용자 개입 상황에서도 스스로 반성하고 실패를 복구할 수 있도록 훈련하는 범용 프레임워크다. 환경 반성 스킬 발견(RSD), 반성적 지도 파인튜닝(ReSFT), 온-폴리시 반성 정책 최적화(ORPO)의 3단계로 구성된다. Qwen3-8B 기반으로 구축된 Agent-Reflex는 5개의 장기 툴 사용 벤치마크에서 58.6점, AgentNoiseBench에서 29.1점을 달성하며 기존 베이스라인을 능가했다. 코드는 공개되어 있다.",
+    "why_it_matters": "실제 배포 환경의 노이즈와 사용자 개입에 강인한 에이전트 훈련 방법론을 제시하며, 확장 가능한 에이전트 학습의 새로운 방향을 제안한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 6.267858159063328,
+    "published_at": "2026-10-12T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.18356",
+    "section": "papers",
+    "title_en": "Urbex: Agentic Spatial Grounding for City-Scale 3D Scenes",
+    "title_ko": "Urbex: 도시 규모 3D 장면을 위한 에이전틱 공간 그라운딩 프레임워크",
+    "url": "https://huggingface.co/papers/2610.18356",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Urbex는 도시 규모 3D 장면에서의 공간 그라운딩을 후보 랭킹 방식 대신 능동적 공간 탐색으로 접근하는 비전-언어 에이전트 프레임워크다. VLM 에이전트가 랜드마크 쿼리, 로컬 영역 확대, 사선 뷰 렌더링 등 다양한 도구를 활용해 바운딩 박스를 직접 결정한다. CityRefer 벤치마크에서 Hit@1과 IoU 최고 성능을 달성했으며, 강화학습 기반 도구 사용 정책 최적화를 통해 기존 최강 랭킹 베이스라인 대비 속도도 크게 향상됐다. STPLS3D-Refer에서의 제로샷 결과도 향상된 크로스씬 강건성을 보여준다.",
+    "why_it_matters": "사전 계산된 인스턴스 제안 없이 도시 규모 3D 그라운딩을 에이전트 방식으로 해결함으로써, 대규모 실외 환경에서의 공간 이해 효율성과 확장성을 크게 높인다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.709530201312334,
+    "published_at": "2026-10-12T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.18868",
+    "section": "papers",
+    "title_en": "Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards",
+    "title_ko": "Tev: 밀집 진행 보상으로 장기 에이전트 환경 확장",
+    "url": "https://huggingface.co/papers/2610.18868",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "장기 자율 에이전트 학습을 위한 최초의 검증 가능한 밀집 보상 데이터셋 Tev-Gym을 공개했다. 7개 도메인에 걸쳐 1,170개의 태스크 환경을 포함하며, 잠재 세계(latent world) 기반 설계로 단계별 진행 지표를 자연스럽게 생성한다. 이를 기반으로 한 진행-포텐셜 보상 형성(PPRS) 학습법으로 훈련된 Tev-27B 모델은 ALE-CM 벤치마크에서 GPT-6 Astra 및 Claude Opus 5와 Pass@5 성능을 맞추고, Terminal-Bench 3.0·4.0에서도 GLM 5.2와 Gemini 3.7 Flash를 능가했다. 학습에 사용되지 않은 벤치마크에서도 일반화 성능을 보였다.",
+    "why_it_matters": "장기 자율 에이전트 학습의 핵심 병목인 희소 보상과 학습 데이터 부족 문제를 동시에 해결할 오픈소스 기반 레시피를 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.51085950651685,
+    "published_at": "2026-10-12T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.18774",
+    "section": "papers",
+    "title_en": "GreenWAM: A World Foundation Model for Robotics",
+    "title_ko": "GreenWAM: 로봇공학을 위한 월드 파운데이션 모델",
+    "url": "https://huggingface.co/papers/2610.18774",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "GreenWAM은 20개 로봇 패밀리(양팔 로봇~인간형 로봇)를 공통 관절 좌표계로 통합하고, 시각·행동 조건부·월드-액션 모드로 공동 학습한 로봇용 월드 파운데이션 모델이다. 월드 모델로서 WorldArena 1.0에서 최상위 궤적·깊이·3D 정확도를 기록했으며, 정책 모델로서도 RoboTwin 2.0 리더보드 상위권과 LIBERO-plus 제로샷 최고 성능을 달성했다. 실제 휴머노이드 로봇에 적용 시 π₀.₅ 및 Cosmos 3 Edge 기반 정책보다 높은 성공률을 보였고, 실시간 제어를 위한 단일 스텝 정책으로도 증류(distill)되었다.",
+    "why_it_matters": "단일 모델이 월드 예측과 행동 정책 두 역할을 동시에 수행하며 다양한 로봇 플랫폼에 범용 적용 가능하다는 점에서 로봇 파운데이션 모델 연구의 새로운 기준을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 5.418840607796598,
+    "published_at": "2026-10-12T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-amp-beyond-coding",
+    "section": "releases",
+    "title_en": "Amp puts AI agents to work beyond code with OpenAI models",
+    "title_ko": "Amp, OpenAI 모델로 코드 너머의 AI 에이전트 구현",
+    "url": "https://openai.com/index/amp-beyond-coding",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Amp는 OpenAI 모델을 활용해 코드 작성을 넘어선 다양한 영역에서 AI 에이전트를 구동한다. GPT-6 Astra, Ultrafast, GPT-Live-1, Sign in with ChatGPT 등 OpenAI의 최신 기술을 적용해 에이전트의 가능성을 확장하고 있다.",
+    "why_it_matters": "AI 에이전트가 코딩 보조를 넘어 더 광범위한 실무 작업에 적용되는 사례로, 에이전트 활용 범위의 새로운 기준을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.7857159391534392,
+    "published_at": "2026-10-14T12:00:00Z"
+  },
+  {
+    "id": "openai_blog-sentinelone",
+    "section": "releases",
+    "title_en": "SentinelOne cuts malware analysis from weeks to hours",
+    "title_ko": "SentinelOne, 악성코드 분석 시간을 몇 주에서 몇 시간으로 단축",
+    "url": "https://openai.com/index/sentinelone",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "SentinelOne은 OpenAI Daybreak를 활용해 악성코드 분석에 걸리던 몇 주의 시간을 몇 시간으로 획기적으로 줄였다. 이를 통해 더 많은 위협을 조사할 수 있는 역량을 확보하게 되었다.",
+    "why_it_matters": "AI 기반 사이버 보안 분석의 실질적 효율화 사례로, 보안 운영 팀의 대응 속도와 처리 규모를 동시에 높일 수 있음을 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7857159391534392,
+    "published_at": "2026-10-14T12:00:00Z"
+  },
+  {
+    "id": "openai_blog-third-moment-research",
+    "section": "releases",
+    "title_en": "How Third Moment Research runs 10,000 agents for 36+ hours",
+    "title_ko": "Third Moment Research, 1만 개 에이전트를 36시간 이상 운영하는 방법",
+    "url": "https://openai.com/index/third-moment-research",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Third Moment Research는 OpenAI의 GPT-6 Astra, GPT-6.1 Sol, Codex, 그리고 사이버보안 특화 모델 Daybreak를 활용해 수만 개의 AI 에이전트를 36시간 이상 지속 운영하는 시스템을 구축했다. 이 에이전트들은 장시간 집중력을 유지하며 사용할수록 성능이 향상되는 특성을 갖추고 있다. AI 연구소가 대규모 장기 에이전트 운영의 실제 사례를 공개한 것이다.",
+    "why_it_matters": "대규모 장기 에이전트 운영의 실전 사례로, 에이전트 인프라 설계와 확장성에 관심 있는 개발자에게 중요한 레퍼런스가 된다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.7559540343915344,
+    "published_at": "2026-10-14T07:00:00Z"
+  },
+  {
+    "id": "openai_blog-block-ai-powered-security",
+    "section": "releases",
+    "title_en": "How Block is building AI-powered security with OpenAI technology",
+    "title_ko": "Block, OpenAI 기술로 AI 기반 보안 시스템 구축",
+    "url": "https://openai.com/index/block-ai-powered-security",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Block의 보안팀은 OpenAI 기술을 활용해 AI 기반 보안 시스템을 구축하고 있다. 이를 통해 위협을 더 빠르게 분석하고 불과 몇 분 만에 보안 패치를 제안할 수 있게 됐다.",
+    "why_it_matters": "실제 기업 보안 현장에서 LLM이 위협 탐지와 패치 제안을 자동화하는 구체적인 사례로, AI의 사이버보안 적용 가능성을 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7559540343915344,
+    "published_at": "2026-10-14T07:00:00Z"
+  },
+  {
+    "id": "github_trending-lyogavin/airllm",
+    "section": "releases",
+    "title_en": "lyogavin/airllm",
+    "title_ko": "AirLLM: 4GB GPU 한 장으로 2.8조 파라미터 LLM 추론",
+    "url": "https://github.com/lyogavin/airllm",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "AirLLM은 양자화·증류·가지치기 없이 한 번에 GPU에 레이어 하나만 올리는 방식으로 VRAM 사용량을 극적으로 줄이는 오픈소스 라이브러리입니다. 4GB GPU로 Llama 70B, 3.72GB로 Kimi K3(2.8T), ~12GB로 DeepSeek-V3(671B) 추론이 가능합니다. 최근에는 125B 모델을 6GB 이하에서 파인튜닝하는 LoRA 기반 학습 기능도 추가됐습니다.",
+    "why_it_matters": "고가 GPU 없이도 수백~수천억 파라미터 최신 오픈소스 모델을 로컬에서 실행·파인튜닝할 수 있어 하드웨어 접근성 장벽을 크게 낮춥니다.",
+    "tags": [
+      "LLM",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.7479232804232805,
+    "published_at": "2026-10-14T05:39:03Z"
+  },
+  {
+    "id": "openai_blog-the-eus-next-chapter-in-ai-is-agentic",
+    "section": "releases",
+    "title_en": "The EU’s next chapter in AI is agentic",
+    "title_ko": "EU의 AI 에이전트 시대: 기업 도입 현황과 성장 가능성",
+    "url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "새로운 분석에 따르면 EU 기업과 중소기업 전반에서 에이전트 AI 도입이 증가하고 있다. 이 보고서는 에이전트 AI의 더 깊은 활용이 EU 내에서 어떤 부가가치를 창출할 수 있는지를 조명한다.",
+    "why_it_matters": "EU 기업들의 에이전트 AI 채택 동향은 유럽 시장 진출 또는 글로벌 AI 전략을 수립하는 개발자와 기업에 중요한 벤치마크가 된다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-10-14T00:00:00Z"
+  },
+  {
+    "id": "google_blog-introducing-gemini-4-argon",
+    "section": "releases",
+    "title_en": "Gemini 4 Argon: Built to solve your hardest problems",
+    "title_ko": "Gemini 4 Argon: 가장 어려운 문제를 해결하기 위해 설계된 모델",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "Google이 Gemini 4 Argon을 발표했다. 제목에 따르면 복잡하고 어려운 문제 해결에 초점을 맞춘 모델로 소개되고 있다.",
+    "why_it_matters": "Google의 새로운 Gemini 모델 라인업 확장으로, 고난이도 작업 처리 능력이 주목된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6666683201058201,
+    "published_at": "2026-10-13T16:00:00Z"
+  },
+  {
+    "id": "hn-50091788",
+    "section": "community",
+    "title_en": "Containment and monitoring failures are to blame for AI hacking reports: experts",
+    "title_ko": "AI 해킹 보고의 원인은 봉쇄 및 모니터링 실패",
+    "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "전문가들에 따르면 AI 관련 해킹 사건 보고의 주된 원인은 AI 자체의 결함보다 봉쇄(컨테인먼트) 및 모니터링 체계의 실패에 있다고 지적한다. 구체적인 세부 내용은 제공된 설명이 없어 추가 파악이 어렵다.",
+    "why_it_matters": "AI 보안 사고의 근본 원인을 인프라·운영 관리 측면에서 짚는다는 점에서 AI 시스템 안전 설계에 시사점을 준다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 10.756089225280867,
+    "published_at": "2026-10-14T17:45:23Z"
+  },
+  {
+    "id": "hn-50092664",
+    "section": "community",
+    "title_en": "Banks are now trying to offload the AI data center debt they just underwrote",
+    "title_ko": "은행들, 최근 인수한 AI 데이터센터 부채 매각 시도",
+    "url": "https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "은행들이 최근 인수한 AI 데이터센터 관련 부채를 시장에 매각하려는 움직임을 보이고 있다. 이는 AI 인프라 투자에 따른 리스크를 분산하려는 전략으로 풀이된다.",
+    "why_it_matters": "AI 데이터센터 투자 열풍의 금융 리스크가 가시화되고 있어 AI 인프라 시장의 지속 가능성에 의문이 제기된다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.20423744140167,
+    "published_at": "2026-10-14T18:32:52Z"
+  },
+  {
+    "id": "hn-50094694",
+    "section": "community",
+    "title_en": "Anthropic's Scion is heavily inspired by Mononoke",
+    "title_ko": "앤트로픽의 '사이온', 모노노케에서 강한 영감 받아",
+    "url": "https://sunshowers.io/posts/anthropic-mononoke/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "앤트로픽의 사이온(Scion)이 모노노케에서 강한 영감을 받았다는 소식이 화제다. 구체적인 내용은 공개된 설명이 없어 제목 기반으로만 확인된다.",
+    "why_it_matters": "AI 기업 앤트로픽의 새 프로젝트가 일본 문화 콘텐츠에서 영감을 받았다는 점에서 관심을 끈다.",
+    "tags": [],
+    "score": 8.709756864454164,
+    "published_at": "2026-10-14T20:30:54Z"
+  },
+  {
+    "id": "hn-50095353",
+    "section": "community",
+    "title_en": "We’re releasing Jev 1.14.0 along with experimental features for dreamers",
+    "title_ko": "Jev 1.14.0 출시 및 실험적 기능 공개",
+    "url": "https://typesafe.ai/blog/jev-1-14",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Jev 1.14.0 버전이 출시되었으며, 실험적 기능들도 함께 공개되었다. 구체적인 기능 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "Jev 프로젝트의 새 버전 출시로 관심 있는 개발자라면 변경 사항을 직접 확인할 필요가 있다.",
+    "tags": [],
+    "score": 8.005127317378392,
+    "published_at": "2026-10-14T21:11:03Z"
+  },
+  {
+    "id": "reddit-1x62zrz",
+    "section": "community",
+    "title_en": "Sabi-Noema: A capability and efficiency focused fine-tune of Qwen 3.8 27B",
+    "title_ko": "Sabi-Noema: Qwen 3.8 27B 기반 성능·효율성 특화 파인튜닝 모델 공개",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x62zrz/sabinoema_a_capability_and_efficiency_focused/",
+    "sources": [
+      "reddit"
+    ],
+    "summary_ko": "Qwen 3.8 27B를 기반으로 한 오픈소스 파인튜닝 모델 Sabi-Noema와 Sabi-Noema-MLA가 공개됐다. 코딩·에이전트·툴 호출 등에서 성능이 향상됐으며, 기존 Qwen 대비 응답 토큰 수를 최대 50% 줄여 추론 효율을 크게 개선했다. Sabi-Noema-MLA는 GQA 어텐션을 MLA 방식으로 변환해 KV 캐시를 최대 8.4배 압축하며, 24GB GPU(RTX 3090/4090)에서 약 53만 4천 토큰의 컨텍스트를 처리할 수 있다.",
+    "why_it_matters": "30B 미만 소형 모델의 성능 한계를 오픈소스 환경에서만으로도 GPT-6 Luna 수준으로 끌어올리면서 메모리 효율까지 대폭 향상시킨 점이 주목된다.",
+    "tags": [
+      "LLM",
+      "오픈소스",
+      "에이전트"
+    ],
+    "score": 0.8394394841269841,
+    "published_at": "2026-10-14T21:01:32Z"
+  },
+  {
+    "id": "youtube-C4Sq3Rot8FU",
+    "section": "video",
+    "title_en": "AI Labs Warn Race Makes Breach ‘Inevitable’",
+    "title_ko": "AI 연구소들, 경쟁으로 인한 보안 침해 '불가피' 경고",
+    "url": "https://www.youtube.com/watch?v=C4Sq3Rot8FU",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "샘 알트만을 비롯한 AI 연구소 리더들이 현재의 AI 개발 경쟁 속에서 보안 침해 사고가 불가피하다고 경고하고 있다. 소프트웨어 역공학 사례와 모델 백도어, 의도치 않은 모델 행동 등 다양한 위험 신호가 동시에 나타나고 있다. 영상은 현재 트렌드를 바탕으로 향후 18개월이 왜 예측하기 어려운지, 그리고 AI 레이스가 왜 멈추지 않는지를 분석한다.",
+    "why_it_matters": "주요 AI 연구소 수장들 스스로 사고 위험을 인정하고 있어, AI 안전성과 거버넌스 논의가 더욱 시급해지고 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.5647354497354498,
+    "published_at": "2026-10-12T22:52:31Z"
+  },
+  {
+    "id": "latent_space-crossing-the-threshold",
+    "section": "deepdive",
+    "title_en": "Crossing the Threshold: How OpenAI and Anthropic Approach Autonomy and Safety in Financial Agents",
+    "title_ko": "자율성과 안전성의 균형: OpenAI·Anthropic의 금융 에이전트 접근법",
+    "url": "https://www.latent.space/p/crossing-the-threshold",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "AI Engineer New York 행사에서 OpenAI와 Anthropic 등 최전선 AI 연구소와 금융 기업들이 에이전트에 유용한 자율성을 부여하면서도 중요한 결정을 통제하에 두는 방법을 논의했다. 금융 분야에서 에이전트가 실질적인 행동을 취할 수 있는 범위와 그 한계를 어떻게 설정할지가 핵심 주제였다.",
+    "why_it_matters": "금융처럼 고위험 도메인에서 AI 에이전트의 자율성과 안전성을 어떻게 균형 잡을지는 실제 프로덕션 배포의 핵심 과제다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.8433416005291006,
+    "published_at": "2026-10-14T21:40:52Z"
+  }
+]
