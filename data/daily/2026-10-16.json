@@ -1,0 +1,367 @@
+[
+  {
+    "id": "hf-2610.20399",
+    "section": "papers",
+    "title_en": "Cortex: Consolidating Context into Parametric Memory",
+    "title_ko": "Cortex: 컨텍스트를 파라메트릭 메모리로 통합하는 기억 강화 프레임워크",
+    "url": "https://huggingface.co/papers/2610.20399",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "컨텍스트를 제거하면 LLM 성능 향상이 사라지는 문제를 해결하기 위해, 생물학적 기억 강화에서 영감을 받은 'Memory Consolidation(MC)' 방법론과 이를 구현한 Cortex를 제안한다. Cortex는 컨텍스트 활용을 미리 예측하는 쿼리를 생성하고, 컨텍스트 조건부 출력을 병합 가능한 저랭크 또는 구조적 FFN 업데이트로 증류한다. 4B~120B 규모의 밀집 및 MoE 모델에서 검증했으며, 14B 모델에 50회 순차적 사실 편집 후 컨텍스트 유도 성능의 88.9%를 복원하면서 기존 성능의 99.8%를 유지했다.",
+    "why_it_matters": "컨텍스트 없이도 학습 효과를 모델 가중치에 영구적으로 내재화할 수 있어, RAG 의존도를 낮추고 효율적인 지속 학습이 가능해진다.",
+    "tags": [
+      "LLM",
+      "RAG"
+    ],
+    "score": 5.143134726391533,
+    "published_at": "2026-10-13T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.19698",
+    "section": "papers",
+    "title_en": "RuleTrek: Benchmarking Agentic Rule Reasoning in Complex Scenarios",
+    "title_ko": "RuleTrek: 복잡한 시나리오에서 에이전트의 규칙 추론 능력 벤치마크",
+    "url": "https://huggingface.co/papers/2610.19698",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "RuleTrek은 복잡한 실제 도메인에서 LLM 에이전트의 규칙 추론 능력을 평가하는 멀티 도메인 벤치마크다. 규칙 식별(RI), 규칙 연역(RD), 종단간 규칙 추론(E2E) 세 가지 역량을 인터랙티브 워크스페이스에서 평가한다. 11개의 최신 LLM을 대상으로 실험한 결과, RI와 RD 최고 점수가 각각 62.47%, 60.43%에 불과했으며 E2E 점수는 26.97%~55.29% 수준에 그쳤다. 코드와 데이터셋은 공개되어 있다.",
+    "why_it_matters": "현재 최고 성능 LLM 에이전트도 복잡한 시나리오에서의 도메인 규칙 추론에 뚜렷한 한계를 보임을 정량적으로 증명한 벤치마크다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.127134385045092,
+    "published_at": "2026-10-13T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.17771",
+    "section": "papers",
+    "title_en": "Many Right Answers, One Training Example: Removing Responder Noise from GRPO for LLM Recommenders",
+    "title_ko": "GRPO 기반 LLM 추천 시스템에서 응답자 노이즈를 제거하는 ReMaRk",
+    "url": "https://huggingface.co/papers/2610.17771",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Reddit 추천 스레드처럼 하나의 요청에 여러 정답이 존재하는 경우, 기존 Rank-GRPO는 학습 예제당 하나의 응답만 선택해 어드밴티지 분산의 85%가 '어떤 응답이 선택됐는가'에 의해 결정된다. 이를 해결하기 위해 제안된 ReMaRk는 모든 응답의 제목을 합집합으로 묶어 한 번에 평가하고, 각 요청을 동등하게 샘플링한다. 7개 백본·3개 데이터셋 실험에서 ReMaRk는 Rank-GRPO 대비 25~53% 수준의 RL 스텝만으로 동등한 검증 재현율에 도달했다. 동일한 방식이 ProtoQA에서도 효과적임을 확인해, 여러 유효한 정답이 존재하는 RL 학습에 대한 범용 원칙을 제시한다.",
+    "why_it_matters": "복수의 정답이 존재하는 RL 학습 환경에서 노이즈를 줄이고 GPU 비용을 절감하는 실용적인 접근법을 제시한다는 점에서 LLM 추천 시스템 연구에 중요하다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.663561646129646,
+    "published_at": "2026-10-12T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.15542",
+    "section": "papers",
+    "title_en": "Apertus 1.5: From Open Text Models to Open Multimodal Reasoners",
+    "title_ko": "Apertus 1.5: 오픈 텍스트 모델에서 오픈 멀티모달 추론 모델로",
+    "url": "https://huggingface.co/papers/2610.15542",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Apertus 1.5는 완전 공개(fully open) Apertus 패밀리를 텍스트에서 멀티모달 추론으로 확장한 모델입니다. 8B 모델에 4T 토큰, 70B 모델에 2T 토큰을 추가 사전학습해 이미지·오디오 이해와 262,144 토큰의 긴 컨텍스트 윈도우를 지원합니다. 강화학습(RLVR) 및 선호도 정렬을 포함한 파인튜닝으로 8B 모델의 수학적 추론이 최대 20점 향상됐으며, 완전 공개 모델 중 지식·명령어 수행·문화 벤치마크에서 선두를 기록했습니다. 모델 가중치, 데이터 준비 및 학습 레시피, 평가 도구를 모두 허용적 라이선스로 공개합니다.",
+    "why_it_matters": "공공 기관이 공개 데이터만으로 멀티모달 추론까지 가능한 완전 오픈 대형 모델을 구축해 소수 제공자 의존에서 벗어날 수 있는 실질적 대안을 제시했다는 점에서 중요합니다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 4.555348061489413,
+    "published_at": "2026-10-10T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.19128",
+    "section": "papers",
+    "title_en": "CLASHarness: Benchmarking Multi-Agent Conflict in Computer Use via a Controllable and Verifiable Generation Pipeline",
+    "title_ko": "CLASHarness: 컴퓨터 사용 환경에서 멀티 에이전트 충돌을 벤치마킹하는 프레임워크",
+    "url": "https://huggingface.co/papers/2610.19128",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "CLASHarness는 멀티 에이전트 시스템에서 발생하는 충돌(모순된 지시, 오래된 상태 정보, 공유 권한 경쟁 등)을 평가하기 위한 벤치마크 프레임워크다. 600개의 멀티 라운드 태스크로 구성되며, 8단계 검증 마이크로 파이프라인을 통해 모든 태스크가 풀 수 있음을 보장한다. 15개 최신 모델 평가 결과, 약한 모델은 잘못된 정보를 맹목적으로 따르고, 강한 모델은 시각적 증거로 검증하는 경향이 있었으며, 프론티어 모델조차 종료 액션의 58% 이상에서 실패하는 것으로 나타났다.",
+    "why_it_matters": "실제 멀티 에이전트 환경의 충돌 해소 능력을 체계적으로 측정할 수 있는 최초의 확장 가능한 검증 벤치마크로, 신뢰성 있는 에이전트 시스템 구축에 핵심 기준을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.258096538021482,
+    "published_at": "2026-10-12T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-introducing-the-rosalind-academic-plan",
+    "section": "releases",
+    "title_en": "Bringing GPT-Rosalind to academic research labs",
+    "title_ko": "학술 연구실을 위한 GPT-Rosalind 지원 프로그램 출시",
+    "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 Rosalind Academic Plan을 발표했다. 이 플랜은 자격을 갖춘 학술 연구실에 GPT-Rosalind와 관련 도구에 대한 스폰서 액세스를 제공하여 생명과학 연구를 지원한다.",
+    "why_it_matters": "생명과학 분야 학술 연구자들이 최신 AI 모델에 무료 또는 지원 방식으로 접근할 수 있게 되어 연구 가속화가 기대된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8273826058201058,
+    "published_at": "2026-10-15T19:00:00Z"
+  },
+  {
+    "id": "openai_blog-teaching-students-to-think-and-learn-through-questions",
+    "section": "releases",
+    "title_en": "Teaching students to think and learn through questions",
+    "title_ko": "질문을 통한 학습: 교육자를 위한 AI 스터디 모드 소개",
+    "url": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 교사의 날을 맞아 브라질 포르투갈어로 '교육자를 위한 AI' 서비스를 제공한다. 스터디 모드(Study Mode)는 학생들이 단계별로 능동적으로 학습할 수 있도록 교사를 지원하는 기능이다. 이를 통해 AI가 단순한 답 제공이 아닌 질문 중심의 사고를 유도하는 학습 도구로 활용될 수 있다.",
+    "why_it_matters": "AI가 정답 제공을 넘어 소크라테스식 질문 기반 학습을 지원하는 교육 도구로 진화하고 있음을 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7916683201058201,
+    "published_at": "2026-10-15T13:00:00Z"
+  },
+  {
+    "id": "github_trending-K-Dense-AI/scientific-agent-skills",
+    "section": "releases",
+    "title_en": "K-Dense-AI/scientific-agent-skills",
+    "title_ko": "AI 에이전트를 AI 과학자로 변환하는 177개 과학 스킬 라이브러리",
+    "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "K-Dense AI가 공개한 오픈소스 프로젝트로, AI 에이전트에 177개의 과학 연구 스킬을 추가할 수 있는 라이브러리다. 생물정보학, 신약 개발, 임상 연구, 재료과학, 천문학 등 22개 이상의 과학 도메인을 포괄하며, 100개 이상의 과학 데이터베이스 접근 스킬을 포함한다. Cursor, Claude Code, Codex, Google Antigravity 등 주요 AI 에이전트 플랫폼과 호환되며, MIT 라이선스로 무료 사용 가능하다.",
+    "why_it_matters": "과학 연구에 특화된 검증된 워크플로우와 데이터베이스 접근 스킬을 AI 에이전트에 즉시 추가할 수 있어, 연구자들이 복잡한 다단계 과학 분석 파이프라인을 자동화하는 데 걸리는 시간을 크게 단축할 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7466798941798942,
+    "published_at": "2026-10-15T05:26:31Z"
+  },
+  {
+    "id": "github_trending-ifixai-ai/iFixAi",
+    "section": "releases",
+    "title_en": "ifixai-ai/iFixAi",
+    "title_ko": "iFixAi: AI 에이전트 독립 감사 오픈소스 도구",
+    "url": "https://github.com/ifixai-ai/iFixAi",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "iFixAi는 AI 에이전트가 비즈니스 KPI와 조직 정책에 맞게 동작하는지 120초 이내에 독립적으로 감사할 수 있는 오픈소스 도구다. 권한 남용, 프롬프트 인젝션, 사용자 데이터 유출, 지시 이탈 등 60가지 항목을 점검하며 A~F 등급으로 채점한다. CLI, 플러그인(Claude Code·Codex), 스킬 방식 등 세 가지 실행 방법을 지원하며 Apache 2.0 라이선스로 무료 공개되어 있다.",
+    "why_it_matters": "기존 eval·관찰 도구가 기술 성능(지연, 토큰 효율)만 측정하는 반면, iFixAi는 에이전트가 실제 업무 맥락에서 올바르게 동작하는지 검증하는 비즈니스 정렬 감사 도구라는 점에서 차별화된다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7466798941798942,
+    "published_at": "2026-10-15T05:26:31Z"
+  },
+  {
+    "id": "openai_blog-amp-beyond-coding",
+    "section": "releases",
+    "title_en": "Amp puts AI agents to work beyond code with OpenAI models",
+    "title_ko": "Amp, OpenAI 모델로 코드를 넘어선 AI 에이전트 활용 사례 공개",
+    "url": "https://openai.com/index/amp-beyond-coding",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Amp는 OpenAI 모델을 활용해 코드 작성 이상의 영역에서 AI 에이전트를 실제 업무에 적용하는 사례를 선보였다. GPT-6 Astra, Ultrafast, GPT-Live-1, Sign in with ChatGPT 등 다양한 OpenAI 기술을 통합해 에이전트의 활용 범위를 확장하고 있다.",
+    "why_it_matters": "AI 에이전트가 개발 코드 영역을 넘어 실질적인 비즈니스 워크플로우에 적용되는 구체적 사례로, 에이전트 활용 가능성의 새로운 기준을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.6428587962962964,
+    "published_at": "2026-10-14T12:00:00Z"
+  },
+  {
+    "id": "openai_blog-sentinelone",
+    "section": "releases",
+    "title_en": "SentinelOne cuts malware analysis from weeks to hours",
+    "title_ko": "SentinelOne, OpenAI로 악성코드 분석 기간을 수주에서 수시간으로 단축",
+    "url": "https://openai.com/index/sentinelone",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "SentinelOne은 OpenAI의 Daybreak를 활용해 기존에 몇 주가 걸리던 악성코드 분석 작업을 수 시간으로 단축했다. 이를 통해 더 많은 위협을 조사할 수 있는 역량을 확보하게 되었다.",
+    "why_it_matters": "AI가 사이버 보안 분야에서 실질적인 운영 효율화를 이끌어낸 구체적 사례로, 보안 기업의 AI 도입 방향을 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6428587962962964,
+    "published_at": "2026-10-14T12:00:00Z"
+  },
+  {
+    "id": "openai_blog-third-moment-research",
+    "section": "releases",
+    "title_en": "How Third Moment Research runs 10,000 agents for 36+ hours",
+    "title_ko": "Third Moment Research, 36시간 이상 1만 개 에이전트 운영 방법 공개",
+    "url": "https://openai.com/index/third-moment-research",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "AI 연구소 Third Moment Research는 GPT-6 Astra, GPT-6.1 Sol, Codex, 사이버보안 특화 Daybreak 등을 활용해 수천 개의 에이전트를 36시간 이상 지속 운영하는 방법을 소개했다. 이 에이전트들은 며칠 동안 집중적으로 작동하며 사용할수록 성능이 향상되는 특성을 갖는다.",
+    "why_it_matters": "장시간 대규모 에이전트 운영의 실제 사례로, 자율 AI 시스템의 실용적 확장 가능성을 보여준다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.6130968915343915,
+    "published_at": "2026-10-14T07:00:00Z"
+  },
+  {
+    "id": "hn-50107379",
+    "section": "community",
+    "title_en": "Muse Spark Open",
+    "title_ko": "Muse Spark 오픈소스 공개",
+    "url": "https://research.meta.ai/blog/muse-spark-open",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Muse Spark가 오픈소스로 공개되었다. 상세한 설명이 제공되지 않아 구체적인 내용은 확인이 필요하다.",
+    "why_it_matters": "오픈소스 공개로 커뮤니티 활용 가능성이 열렸으나 세부 내용 확인이 필요하다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 10.269826593769084,
+    "published_at": "2026-10-15T17:47:39Z"
+  },
+  {
+    "id": "hn-50105647",
+    "section": "community",
+    "title_en": "Neural networks are clean",
+    "title_ko": "신경망은 깔끔하다",
+    "url": "https://already-clean.goodfire.com/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "신경망의 특성이나 구조에 관한 글로 보이나, 제공된 설명이 없어 구체적인 내용은 확인하기 어렵다.",
+    "why_it_matters": "신경망의 본질적 특성에 대한 새로운 시각을 제시할 수 있는 글일 수 있으나 내용 확인이 필요하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.765950398115788,
+    "published_at": "2026-10-15T16:04:01Z"
+  },
+  {
+    "id": "hn-50104654",
+    "section": "community",
+    "title_en": "Simons Foundation launches $15M effort to help mathematicians navigate AI era",
+    "title_ko": "사이먼스 재단, 수학자들의 AI 시대 적응 지원에 1,500만 달러 투자",
+    "url": "https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "사이먼스 재단이 수학자들이 AI 시대에 적응할 수 있도록 돕기 위한 1,500만 달러 규모의 프로젝트를 시작했다. 구체적인 내용은 공개된 설명이 없어 추가 세부사항은 확인이 필요하다.",
+    "why_it_matters": "대규모 재단이 수학과 AI의 교차점에 본격적으로 투자한다는 신호로, 학계의 AI 도입 방향에 영향을 미칠 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.020843478625132,
+    "published_at": "2026-10-15T14:58:48Z"
+  },
+  {
+    "id": "hn-50105648",
+    "section": "community",
+    "title_en": "Krea 3 – An image model built for editing at scale",
+    "title_ko": "Krea 3 – 대규모 편집에 최적화된 이미지 모델",
+    "url": "https://www.krea.ai/krea-3",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Krea가 새로운 이미지 모델인 Krea 3를 공개했다. 이 모델은 대규모 편집 작업에 특화되어 설계된 것으로 알려져 있다.",
+    "why_it_matters": "이미지 편집 특화 모델로, 대규모 작업 흐름에 적합한 새로운 선택지가 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.63576237979921,
+    "published_at": "2026-10-15T16:04:05Z"
+  },
+  {
+    "id": "hn-50108229",
+    "section": "community",
+    "title_en": "E Ink Kaleido 4",
+    "title_ko": "E Ink Kaleido 4 발표",
+    "url": "https://www.eink.com/news/detail/EInk-Launches-Latest-Version-of-Color-ePaper-Platform-E-Ink-Kaleido-4",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "E Ink의 새로운 컬러 전자잉크 기술인 Kaleido 4가 공개되었다. 상세 사양이나 성능 수치는 제공된 정보에 포함되어 있지 않다.",
+    "why_it_matters": "컬러 E Ink 디스플레이 기술의 차세대 버전으로, 전자책 리더 및 저전력 디스플레이 시장에 영향을 줄 수 있다.",
+    "tags": [],
+    "score": 7.894932245490345,
+    "published_at": "2026-10-15T18:38:16Z"
+  },
+  {
+    "id": "youtube-Y3Xz4C3kgBA",
+    "section": "video",
+    "title_en": "조코딩의 AI 리터러시 특강 3강 : 2026, AI 에이전트가 바꾼 우리의 업무",
+    "title_ko": "AI 에이전트가 바꾼 업무 방식 – 조코딩 AI 리터러시 특강 3강",
+    "url": "https://www.youtube.com/watch?v=Y3Xz4C3kgBA",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "챗봇→추론 모델→AI 에이전트로 이어지는 AI 발전 3단계를 소개하며, 목표만 주면 계획·도구 사용·결과 확인까지 스스로 처리하는 에이전트 시대를 설명한다. 광고 캠페인 집행, 3D 모델링, 메일·세금 처리, 매출 데이터 분석, AI 인플루언서 생성 등 실제 업무 적용 사례를 직접 시연한다. AI 성능이 7개월마다 두 배로 향상되는 흐름 속에서, 사람에게 남는 역할은 '무엇을 지시하고 무엇을 검토할 것인가'라고 강조한다.",
+    "why_it_matters": "AI 에이전트가 실무에 어떻게 투입되는지 구체적 사례로 보여줘, 업무 자동화를 준비하는 개발자·기획자 모두에게 실질적 인사이트를 제공한다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7847916666666667,
+    "published_at": "2026-10-15T11:50:41Z"
+  },
+  {
+    "id": "youtube-Mm0U7JGf184",
+    "section": "video",
+    "title_en": "Google AdMob의 새로운 광고 포맷 @AdMob",
+    "title_ko": "Google AdMob, 앱 사용 흐름을 덜 방해하는 새로운 광고 포맷 공개",
+    "url": "https://www.youtube.com/shorts/Mm0U7JGf184",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "Google AdMob이 새로운 광고 포맷과 출시 예정 포맷을 선보였습니다. 기존 광고보다 앱 사용 흐름을 덜 방해하는 방식으로 광고를 노출할 수 있다는 점이 특징입니다. 새 기능 관련 상세 링크는 Google Form 작성 후 확인 가능합니다.",
+    "why_it_matters": "앱 개발자가 수익화 전략을 개선할 수 있는 AdMob 신규 광고 포맷 동향을 파악할 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.7699338624338624,
+    "published_at": "2026-10-15T09:20:55Z"
+  },
+  {
+    "id": "youtube-9bbcj6vr8r4",
+    "section": "video",
+    "title_en": "AI한테 수정 맡기면 생기는 일",
+    "title_ko": "AI에게 코드 수정을 맡기면 어떤 일이 벌어질까?",
+    "url": "https://www.youtube.com/shorts/9bbcj6vr8r4",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 AI에게 코드 수정을 맡겼을 때 발생하는 상황을 다룬 영상이다. 바이브 코딩 및 1인 창업 관련 내용을 소개하며, AI를 활용한 개발 경험을 공유한다.",
+    "why_it_matters": "AI 코드 수정 자동화의 실제 사례와 주의점을 한국어로 접할 수 있는 실용적인 콘텐츠다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.75755291005291,
+    "published_at": "2026-10-15T07:16:07Z"
+  },
+  {
+    "id": "simon_willison-chirp-pong",
+    "section": "deepdive",
+    "title_en": "Chirp Pong",
+    "title_ko": "마이크 음향으로 통신하는 2인용 퐁 게임 'Chirp Pong'",
+    "url": "https://simonwillison.net/2026/Oct/15/chirp-pong/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Simon Willison이 Claude Code를 활용해 두 대의 스마트폰이 마이크로 주고받는 음향 신호(chirp)로 게임 상태를 동기화하는 2인용 퐁 게임을 제작했다. 별도 서버나 네트워크 인프라 없이 순수 정적 HTML과 Web Microphone API만으로 멀티플레이어 통신을 구현한 실험이다. Claude Opus 5.5를 활용해 기본 퐁보다 더 재미있는 그래픽·게임플레이 요소도 추가했다.",
+    "why_it_matters": "서버리스·P2P 방식으로 음향 신호만으로 실시간 멀티플레이어를 구현할 수 있다는 가능성을 LLM 코딩 도구로 빠르게 검증한 사례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.832131283068783,
+    "published_at": "2026-10-15T19:47:52Z"
+  }
+]
