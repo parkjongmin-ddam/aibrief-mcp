@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-10-17",
+    "total": 18,
+    "counts": {
+      "community": 5,
+      "deepdive": 1,
+      "papers": 5,
+      "releases": 7
+    }
+  },
+  {
     "date": "2026-10-16",
     "total": 21,
     "counts": {

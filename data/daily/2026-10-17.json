@@ -1,0 +1,325 @@
+[
+  {
+    "id": "hf-2610.21601",
+    "section": "papers",
+    "title_en": "Waypoint-OPD: Transferring RL-Induced Policy Shifts via Gated On-Policy Distillation",
+    "title_ko": "Waypoint-OPD: 게이팅 기반 온-폴리시 증류로 RL 정책 변화 전이",
+    "url": "https://huggingface.co/papers/2610.21601",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "강화학습(RL)으로 훈련된 교사 모델의 정책 변화를 학생 모델에 효과적으로 전이하는 새로운 증류 방법인 Waypoint-OPD를 제안한다. 기존 방식은 RL 전후의 최종 정책 차이만 활용했으나, 중간 체크포인트를 활용해 초기·후기 정책 변화의 방향 일치 여부를 측정하고, 반대 방향일 경우 신호를 억제하는 게이팅 메커니즘을 도입했다. Qwen3 계열 모델(8B, 14B, 30B-A3B)을 학생으로 사용한 수학·코드 추론 실험 6개 설정 모두에서 기존 증류 방법 대비 최고 성능을 달성했다.",
+    "why_it_matters": "RL 학습 과정의 내부 일관성을 활용해 지식 증류 품질을 높이는 실용적 접근으로, LLM 추론 능력의 소형 모델 전이 효율을 개선할 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 7.113682179832232,
+    "published_at": "2026-10-14T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.22200",
+    "section": "papers",
+    "title_en": "OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use",
+    "title_ko": "OpenGCUA: 범용 컴퓨터 사용 에이전트를 위한 완전 오픈 스택",
+    "url": "https://huggingface.co/papers/2610.22200",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "OpenGCUA는 GUI뿐 아니라 시각·프로그래밍 인터페이스를 통해 컴퓨터 작업을 수행하는 범용 컴퓨터 사용 에이전트(GCUA)의 완전 오픈 스택 프로젝트다. 코드 실행을 핵심 설계 요소로 삼아 중간 결과가 이후 작업을 결정하도록 하며, 고정된 하네스 규칙 대신 모델이 직접 관찰·태스크 상태 결정을 내리는 방식을 도입했다. OSWorld-v2 기준으로 GPT-6 Astra와 Claude Opus 5를 포함한 8개 모델 전반에서 평균 부분 점수 +19.6점 향상, 태스크당 단계 수 평균 53% 감소를 달성했다. 실제 기기 하네스와 크로스 디바이스 SDK도 함께 공개하며, 실기기 환경에서 모델 간 추론 토큰 효율 차이가 최대 19.4배에 달함을 확인했다.",
+    "why_it_matters": "폐쇄적인 프론티어 컴퓨터 사용 시스템의 대안으로, 전체 스택을 오픈소스로 공개해 범용 에이전트 연구의 재현성과 체계적 비교를 가능하게 한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 6.627621113690637,
+    "published_at": "2026-10-14T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.22350",
+    "section": "papers",
+    "title_en": "FDE-Gym: The Last Mile of AI Delivery",
+    "title_ko": "FDE-Gym: AI 실제 고객 납품의 마지막 과제",
+    "url": "https://huggingface.co/papers/2610.22350",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "FDE-Gym은 18개 산업 분야 20개 고객 시나리오에서 추출한 95개 엔드투엔드 납품 태스크로 구성된 벤치마크다. 기존 에이전트 벤치마크와 달리, 모호한 요구사항 명확화, 실제 운영 시스템 작업, 명시되지 않은 제약 조건 발굴 등 현실적 납품 상황을 평가한다. 최고 성능 모델 구성도 평균 점수 0.56에 그쳤으며, 95개 태스크 중 14개만 완전 해결해 잘 정의된 태스크와 실제 납품 간의 큰 격차를 드러냈다. 명시되지 않은 제약 조건 발굴이 주요 병목으로, 정보를 모두 확보한 태스크에서도 성능이 충분히 높지 않았다.",
+    "why_it_matters": "현실 고객 납품 시나리오에서 최신 AI 에이전트의 한계를 정량적으로 드러내, 실용적 AI 시스템 개발의 다음 과제를 명확히 제시한다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 6.442417710521793,
+    "published_at": "2026-10-14T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.17665",
+    "section": "papers",
+    "title_en": "RoTA-Bench: Evaluating 3D Spatial Reasoning through Interactive Projection Alignment",
+    "title_ko": "RoTA-Bench: 인터랙티브 투영 정렬로 평가하는 3D 공간 추론 벤치마크",
+    "url": "https://huggingface.co/papers/2610.17665",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "RoTA-Bench는 비전-언어 모델이 2D 관찰에서 3D 공간 이해를 도출하고 정밀한 행동을 수행할 수 있는지 평가하는 벤치마크다. 주어진 목표 실루엣에 맞춰 모델이 3D 객체를 단계적으로 회전시켜 투영을 일치시키는 과제로 구성되며, 674개의 태스크와 100개의 테스트 세트를 포함한다. 실험 결과, GPT-5.6-Sol은 17%의 성공률에 그쳤지만, 인간 참가자 20명은 동일 테스트를 100% 성공률로 완료해 상당한 인간-모델 격차가 확인되었다. 또한 인터랙션 이력을 제거하면 모델 행동의 96.8%가 30도 단위의 거친 동작으로 퇴화하며 성능이 급락한다.",
+    "why_it_matters": "현 최고 수준의 VLM조차 3D 공간 제어에서 인간과 큰 격차를 보임을 정량적으로 입증해, 에이전트의 공간 추론 한계를 명확히 드러낸다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 6.293304824724492,
+    "published_at": "2026-10-13T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.18813",
+    "section": "papers",
+    "title_en": "Self-Evolving Agent Harness",
+    "title_ko": "자기 진화 에이전트 하네스: 모델 가중치 고정 상태에서 스캐폴딩 자동 개선",
+    "url": "https://huggingface.co/papers/2610.18813",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Self-Evolving Agent Harness는 LLM 가중치를 변경하지 않고 프롬프트, 메모리, 워크플로우, 실행 컴포넌트 등 에이전트의 소프트웨어 스캐폴딩을 자동으로 개선하는 프레임워크다. 피드백 기반으로 수용된 수정 사항이 실행 간에 지속되며, 업데이트 대상과 제안·승인 메커니즘을 명확히 분리한다. PAC 학습 이론을 통해 일반화 경계와 보존 경계를 분석하고, 독립 검증 데이터를 활용한 고확률 승인 규칙을 제시한다. 과학적 신뢰성, 물리적 안전, 기관 책임 등 광범위한 영향도 함께 논의한다.",
+    "why_it_matters": "모델 재학습 없이 에이전트 스스로 운영 구조를 진화시키는 체계적 프레임워크로, 자율 에이전트의 신뢰 가능한 배포 기준을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 6.247024072160486,
+    "published_at": "2026-10-12T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-itau-generative-ai",
+    "section": "releases",
+    "title_en": "How Itaú is building generative AI for its entire customer base",
+    "title_ko": "브라질 최대 은행 Itaú, 전 고객 대상 생성형 AI 구축 사례",
+    "url": "https://openai.com/index/itau-generative-ai",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "브라질의 Itaú 은행은 'AI First' 전략의 일환으로 대화형 인터페이스 'ia.i'와 AI 거버넌스 플랫폼 'IARA'를 도입했다. 이를 통해 고객과 직원 모두를 대상으로 생성형 AI를 적용하고 있다. 이는 브라질에서 가장 규제가 엄격한 금융 섹터에서 이루어지는 대규모 AI 전환 사례다.",
+    "why_it_matters": "강도 높은 금융 규제 환경에서 대형 은행이 생성형 AI를 전사적으로 도입한 실제 사례로, AI 거버넌스 체계 구축 방식을 엿볼 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8273826058201058,
+    "published_at": "2026-10-16T19:00:00Z"
+  },
+  {
+    "id": "github_trending-anthropics/claude-plugins-official",
+    "section": "releases",
+    "title_en": "anthropics/claude-plugins-official",
+    "title_ko": "Anthropic, Claude Code 공식 플러그인 디렉토리 공개",
+    "url": "https://github.com/anthropics/claude-plugins-official",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 Claude Code용 고품질 플러그인을 모아놓은 공식 디렉토리를 GitHub에 공개했다. 내부(Anthropic 개발)와 외부(서드파티 파트너·커뮤니티) 플러그인으로 구성되며, `/plugin install` 명령어로 바로 설치할 수 있다. 외부 플러그인은 품질·보안 기준을 통과해야 등록되며, 플러그인은 MCP 서버 설정, 슬래시 커맨드, 에이전트 정의 등의 구조를 표준화하여 제공한다.",
+    "why_it_matters": "Claude Code 생태계의 공식 플러그인 마켓플레이스가 열리면서 개발자 도구 확장성이 본격화된다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7458664021164021,
+    "published_at": "2026-10-16T05:18:19Z"
+  },
+  {
+    "id": "github_trending-K-Dense-AI/scientific-agent-skills",
+    "section": "releases",
+    "title_en": "K-Dense-AI/scientific-agent-skills",
+    "title_ko": "AI 에이전트를 AI 과학자로: 177개 과학 스킬 라이브러리 공개",
+    "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "K-Dense AI가 AI 에이전트를 과학 연구에 특화된 'AI 과학자'로 전환하는 오픈소스 스킬 라이브러리를 공개했다. 생물정보학, 신약 개발, 임상 연구, 재료과학, 천문학 등 22개 이상의 도메인을 커버하는 177개의 검증된 스킬과 100개 이상의 과학 데이터베이스 접근 기능을 제공한다. Cursor, Claude Code, Codex, Google Antigravity 등 주요 AI 에이전트와 호환되며, MIT 라이선스로 무료 사용 가능하다. 전 세계 25만 명 이상의 과학자가 활용 중이라고 밝혔다.",
+    "why_it_matters": "과학 연구용 AI 에이전트의 실용성을 크게 높이는 표준화된 스킬 프레임워크로, 복잡한 멀티스텝 연구 워크플로우를 단일 프롬프트로 실행할 수 있어 연구 생산성 향상에 직접적으로 기여한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "RAG"
+    ],
+    "score": 0.7458664021164021,
+    "published_at": "2026-10-16T05:18:19Z"
+  },
+  {
+    "id": "openai_blog-stack-overflow-chatgpt-plugin",
+    "section": "releases",
+    "title_en": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+    "title_ko": "스택 오버플로우 에이전트용 플러그인, ChatGPT 연동으로 가입자 3배 급증",
+    "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "두 명의 엔지니어가 Codex를 활용해 수 주 만에 'Stack Overflow for Agents'를 개발했다. ChatGPT 플러그인 출시 후 가입자가 3배 증가했으며, 에이전트 생성 수는 최대 10배까지 성장했다. 소규모 팀도 AI 도구를 활용하면 빠르게 제품을 출시하고 폭발적인 성장을 이끌 수 있음을 보여주는 사례다.",
+    "why_it_matters": "Codex와 ChatGPT 플러그인의 결합이 소규모 팀의 제품 개발 속도와 사용자 확보에 미치는 실질적 효과를 입증한 실제 사례다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-10-16T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-introducing-the-rosalind-academic-plan",
+    "section": "releases",
+    "title_en": "Bringing GPT-Rosalind to academic research labs",
+    "title_ko": "학술 연구소를 위한 GPT-Rosalind 학술 플랜 출시",
+    "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 적격 학술 연구소를 대상으로 'Rosalind 학술 플랜'을 도입했다. 이 플랜은 생명과학 연구 발전을 위해 GPT-Rosalind와 관련 도구에 대한 스폰서 접근권을 제공한다.",
+    "why_it_matters": "생명과학 분야 학술 연구자들이 최신 AI 모델을 무료 또는 지원 형태로 활용할 수 있게 되어 연구 가속화 가능성이 높아진다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6845254629629629,
+    "published_at": "2026-10-15T19:00:00Z"
+  },
+  {
+    "id": "openai_blog-teaching-students-to-think-and-learn-through-questions",
+    "section": "releases",
+    "title_en": "Teaching students to think and learn through questions",
+    "title_ko": "질문을 통해 학생들의 사고력과 학습을 이끄는 AI 교육 도구",
+    "url": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 브라질 포르투갈어로 'AI for Educators'를 출시하며 교사의 날을 기념했다. Study Mode 기능을 통해 교사들이 학생들의 단계적이고 능동적인 학습을 지원할 수 있다. 이 도구는 학생들이 스스로 질문하고 생각하는 방식으로 학습할 수 있도록 설계되었다.",
+    "why_it_matters": "AI 기반 교육 도구가 브라질 등 비영어권 시장으로 확대되며 글로벌 교육 접근성이 높아지고 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6488111772486773,
+    "published_at": "2026-10-15T13:00:00Z"
+  },
+  {
+    "id": "openai_blog-sullivan-cromwell",
+    "section": "releases",
+    "title_en": "Sullivan & Cromwell brings legal expertise into agreement review",
+    "title_ko": "설리반 & 크롬웰, AI로 계약서 검토 자동화",
+    "url": "https://openai.com/index/sullivan-cromwell",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "글로벌 로펌 설리반 & 크롬웰이 OpenAI와 협력하여 계약 초안의 문제점을 식별하는 AI 도구 'Agreement Analyzer'를 개발했다. 이 도구는 법률 전문가의 노하우를 AI에 접목해 계약서 검토 프로세스를 지원한다.",
+    "why_it_matters": "대형 로펌이 OpenAI 기술을 실무에 직접 도입한 사례로, 법률 분야 AI 적용이 본격화되고 있음을 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.5714302248677249,
+    "published_at": "2026-10-15T00:00:00Z"
+  },
+  {
+    "id": "hn-50122800",
+    "section": "community",
+    "title_en": "Claude reveals ECDSA curve origins",
+    "title_ko": "Claude, ECDSA 곡선의 기원을 밝히다",
+    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI 어시스턴트 Claude가 ECDSA(타원 곡선 디지털 서명 알고리즘)에 사용된 곡선의 기원과 관련된 정보를 공개했다. 구체적인 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "암호화 표준의 기원에 대한 투명성은 보안 커뮤니티에서 오랫동안 민감한 주제였으며, LLM이 이를 분석·정리하는 역할을 할 수 있다는 점에서 주목된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.190626700726355,
+    "published_at": "2026-10-16T18:55:59Z"
+  },
+  {
+    "id": "hn-50121179",
+    "section": "community",
+    "title_en": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+    "title_ko": "AI 벤치마크가 커버하지 못하는 업무가 미국 근로시간의 90%",
+    "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "미국 근로자들이 실제 업무에 쓰는 시간의 약 90%가 현재 AI 벤치마크로는 제대로 평가되지 않는 작업들로 이루어져 있다는 주장이다. 이는 AI 성능 지표와 실제 업무 현장 간의 큰 괴리를 시사한다.",
+    "why_it_matters": "AI 벤치마크의 높은 점수가 실제 업무 자동화 가능성을 과대평가할 수 있음을 경고하는 중요한 시각이다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.823720357230917,
+    "published_at": "2026-10-16T17:08:38Z"
+  },
+  {
+    "id": "hn-50122951",
+    "section": "community",
+    "title_en": "How the Claude Code team does code review",
+    "title_ko": "Claude Code 팀의 코드 리뷰 방식",
+    "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Anthropic의 Claude Code 팀이 코드 리뷰를 어떻게 진행하는지 소개하는 글이다. 구체적인 내용은 제공되지 않았으나, AI 코딩 도구를 만드는 팀의 내부 개발 문화와 프로세스를 엿볼 수 있는 내용으로 보인다.",
+    "why_it_matters": "AI 코딩 도구 개발 팀의 실제 코드 리뷰 문화를 참고할 수 있는 실무 사례로 주목받고 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 8.976595409316577,
+    "published_at": "2026-10-16T19:04:47Z"
+  },
+  {
+    "id": "hn-50118320",
+    "section": "community",
+    "title_en": "Apple ML Research: Muse Spark Open with MLX on Mac Studio",
+    "title_ko": "Apple ML 연구: Mac Studio에서 MLX로 Muse Spark 오픈 소스 공개",
+    "url": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Apple ML 연구팀이 Mac Studio에서 MLX 프레임워크를 활용해 Muse Spark를 오픈소스로 공개했다. MLX는 Apple 실리콘에 최적화된 머신러닝 프레임워크로, Mac 환경에서 로컬 AI 모델 실행을 지원한다.",
+    "why_it_matters": "Apple 실리콘 Mac에서 직접 고성능 ML 모델을 실행할 수 있는 오픈소스 생태계가 확장되고 있음을 보여준다.",
+    "tags": [
+      "오픈소스",
+      "LLM",
+      "인프라"
+    ],
+    "score": 8.921542149076846,
+    "published_at": "2026-10-16T13:43:48Z"
+  },
+  {
+    "id": "hn-50118688",
+    "section": "community",
+    "title_en": "Show HN: Gemini 4 Argon plays StarCraft",
+    "title_ko": "Gemini 4 Argon이 스타크래프트를 플레이하다",
+    "url": "https://starskirmish.com/bench/v0-2/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Hacker News에 공유된 프로젝트로, Gemini 4 Argon 모델이 스타크래프트 게임을 플레이하는 모습을 보여준다. 상세한 설명은 제공되지 않았으나, LLM 기반 게임 플레이 에이전트 구현 사례로 보인다.",
+    "why_it_matters": "LLM이 복잡한 실시간 전략 게임을 직접 플레이할 수 있는지 가늠해볼 수 있는 실험적 사례다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 8.448154560080525,
+    "published_at": "2026-10-16T14:18:44Z"
+  },
+  {
+    "id": "simon_willison-code-review",
+    "section": "deepdive",
+    "title_en": "Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+    "title_ko": "Anthropic의 Claude Code 팀이 코드 리뷰를 하는 방법",
+    "url": "https://simonwillison.net/2026/Oct/16/code-review/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Anthropic의 Claude Code 팀은 '사람이 코드를 읽었는가?'라는 기준 대신 '이 변경에서 무엇이 잘못될 수 있고, 어떤 검사가 적합한가?'라는 질문으로 코드 리뷰 방식을 바꿨다. 리뷰는 PR 종료 시점의 게이트가 아니라, 마치 맞춤법 검사처럼 코드 작성 중 지속적으로 이루어진다. 대부분의 변경사항은 사람이 검토하기 전에 Claude가 먼저 리뷰하고 수정하며, 사람의 주의는 더 높은 수준의 문제에 집중된다.",
+    "why_it_matters": "AI 코드 리뷰를 실제 팀 워크플로우에 통합한 Anthropic의 실전 사례로, 에이전트 기반 개발 프로세스의 구체적인 방향을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.845896164021164,
+    "published_at": "2026-10-16T22:06:37Z"
+  }
+]
