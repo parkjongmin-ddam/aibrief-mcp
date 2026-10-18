@@ -1,0 +1,372 @@
+[
+  {
+    "id": "hf-2610.21601",
+    "section": "papers",
+    "title_en": "Waypoint-OPD: Transferring RL-Induced Policy Shifts via Gated On-Policy Distillation",
+    "title_ko": "Waypoint-OPD: 게이팅 기반 온-폴리시 증류로 RL 유도 정책 변화 전이",
+    "url": "https://huggingface.co/papers/2610.21601",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "강화학습(RL)으로 학습된 교사 모델의 정책 변화를 학생 모델에 증류할 때, 단순히 시작과 끝 지점의 정책 차이만 활용하면 학습 과정에서 발생한 방향 불일치 문제를 놓칠 수 있다. Waypoint-OPD는 중간 체크포인트를 추가로 활용해 초기와 후기 정책 변화 방향이 일치할 때만 해당 변화를 학생 학습에 반영하는 게이팅 메커니즘을 도입했다. Qwen3-4B 교사 모델과 Qwen3-8B·14B·30B-A3B 학생 모델을 대상으로 수학 및 코드 추론 6개 설정 모두에서 기존 증류 방법 대비 최고 성능을 달성했다.",
+    "why_it_matters": "RL 기반 LLM 증류의 품질을 추가 학습 없이 체크포인트 하나만으로 향상시킬 수 있어, 소형 모델의 추론 능력 제고에 실용적 의미가 크다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 7.501289670540389,
+    "published_at": "2026-10-14T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.22276",
+    "section": "papers",
+    "title_en": "MJev-Spatial: System One Spatial Intelligence via Native Attention Matching",
+    "title_ko": "MJev-Spatial: 단일 순전파로 공간 지능을 처리하는 System 1 멀티모달 모델",
+    "url": "https://huggingface.co/papers/2610.22276",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "MJev-Spatial은 공간 관계 판단, 거리 추정, 위치 예측 등 세 가지 공간 이해 태스크를 통합 분류 프레임워크로 처리하는 멀티모달 모델이다. 자동회귀 디코딩 없이 단일 순전파만으로 분류 결정을 내리며, 추가 파라미터 없이 백본의 사전학습된 쿼리·키 프로젝션을 활용한다. Qwen3.5-4B 기반으로 1,230만 개의 QA 쌍으로 학습했으며, 테스트한 8개 모델 중 전체 최고 점수(65.64%)를 기록하고 기반 모델 대비 5.6배 빠른 추론 속도를 달성했다.",
+    "why_it_matters": "자동회귀 생성 없이 공간 판단을 실시간 수준으로 처리해, 로봇·자율주행 등 인터랙션 속도가 중요한 에이전트 응용에 직접 적용 가능하다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 6.863631175598097,
+    "published_at": "2026-10-14T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.22200",
+    "section": "papers",
+    "title_en": "OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use",
+    "title_ko": "OpenGCUA: 범용 컴퓨터 사용 에이전트를 위한 완전 오픈 스택",
+    "url": "https://huggingface.co/papers/2610.22200",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "OpenGCUA는 GUI 전용 상호작용을 넘어 시각적·프로그래밍 인터페이스를 모두 활용하는 범용 컴퓨터 사용 에이전트(GCUA)의 풀 스택을 오픈소스로 개발하는 프로젝트다. 코드 실행을 핵심 설계 요소로 채택해 중간 결과가 후속 작업을 동적으로 결정할 수 있게 하며, OSWorld-v2에서 GPT-6 Astra·Claude Opus 5 등 8개 모델 평가 시 평균 부분 점수를 +19.6점 향상시키고 작업당 단계 수를 평균 53.0% 감소시켰다. 구현 코드·프롬프트·평가 궤적, 실제 기기 하네스, 크로스 디바이스 SDK를 함께 공개한다.",
+    "why_it_matters": "GPT-6 Astra 등 프론티어 모델 기반 컴퓨터 사용 시스템이 대부분 비공개인 상황에서, 완전 오픈 스택 공개는 커뮤니티의 체계적 연구와 재현을 가능하게 한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 6.755742213586912,
+    "published_at": "2026-10-14T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.22350",
+    "section": "papers",
+    "title_en": "FDE-Gym: The Last Mile of AI Delivery",
+    "title_ko": "FDE-Gym: AI 에이전트의 실제 고객 납품 능력을 평가하는 새 벤치마크",
+    "url": "https://huggingface.co/papers/2610.22350",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "FDE-Gym은 18개 산업 분야 20개 고객 시나리오에서 추출한 95개의 엔드투엔드 납품 태스크로 구성된 새로운 에이전트 벤치마크다. 기존 벤치마크와 달리, 모호한 요구사항 명확화·실제 시스템 운영·미명시 제약 발견 등 현장 엔지니어(FDE)가 직면하는 현실적 과제를 평가한다. 7개 제공사 13개 모델 구성을 테스트한 결과, 최고 성능 구성도 평균 점수 0.56에 그쳤으며 95개 태스크 중 14개만 완전 해결했다. 미명시 제약을 스스로 발견해야 하는 상황에서 성능이 급격히 하락하는 것이 주요 병목으로 확인됐다.",
+    "why_it_matters": "잘 정의된 태스크 해결 능력과 실제 고객 납품 능력 사이의 큰 격차를 정량적으로 드러내, 현재 AI 에이전트의 실용적 한계를 명확히 보여준다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 6.648974238161206,
+    "published_at": "2026-10-14T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.17665",
+    "section": "papers",
+    "title_en": "RoTA-Bench: Evaluating 3D Spatial Reasoning through Interactive Projection Alignment",
+    "title_ko": "RoTA-Bench: 3D 공간 추론 능력을 평가하는 새로운 인터랙티브 벤치마크",
+    "url": "https://huggingface.co/papers/2610.17665",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "RoTA-Bench는 비전-언어 모델이 2D 관찰을 3D 이해로 전환하고 정밀한 행동을 수행할 수 있는지 평가하는 벤치마크다. 주어진 목표 실루엣을 맞추기 위해 모델이 순차적으로 3D 객체를 회전시키는 방식으로 테스트가 진행된다. 실험 결과 GPT는 17% 성공률에 그친 반면, 사람은 100% 성공률을 기록해 인간-모델 간 큰 격차가 확인됐다. 또한 상호작용 이력이 제거되면 모델의 96.8%가 조잡한 30도 단위 동작에 머물러 성능이 급감했다.",
+    "why_it_matters": "현재 최고 수준의 VLM조차 3D 공간 추론과 정밀 제어에서 인간과 큰 격차를 보임을 정량적으로 입증해, 에이전트 및 로보틱스 연구의 핵심 한계를 드러낸다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 6.308267697401205,
+    "published_at": "2026-10-13T20:00:00Z"
+  },
+  {
+    "id": "github_trending-anthropics/claude-plugins-official",
+    "section": "releases",
+    "title_en": "anthropics/claude-plugins-official",
+    "title_ko": "Anthropic 공식 Claude Code 플러그인 디렉터리 공개",
+    "url": "https://github.com/anthropics/claude-plugins-official",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 Claude Code용 공식 플러그인 디렉터리를 GitHub에 공개했다. Anthropic이 직접 개발·관리하는 내부 플러그인과 서드파티 파트너·커뮤니티의 외부 플러그인으로 구성되며, `/plugin install {플러그인명}@claude-plugins-official` 명령으로 바로 설치할 수 있다. 각 플러그인은 MCP 서버 설정, 슬래시 커맨드, 에이전트 정의, 스킬 등 표준 구조를 따른다.",
+    "why_it_matters": "Claude Code 생태계의 공식 플러그인 마켓플레이스가 열려, 개발자들이 검증된 확장 기능을 손쉽게 발견·설치·기여할 수 있는 기반이 마련되었다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7454695767195767,
+    "published_at": "2026-10-17T05:14:19Z"
+  },
+  {
+    "id": "github_trending-K-Dense-AI/scientific-agent-skills",
+    "section": "releases",
+    "title_en": "K-Dense-AI/scientific-agent-skills",
+    "title_ko": "AI 에이전트를 과학자로 만드는 177개 스킬 라이브러리 'Scientific Agent Skills'",
+    "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "K-Dense가 공개한 오픈소스 라이브러리로, AI 에이전트에 177개의 과학 연구 스킬을 추가해 생물정보학, 신약 개발, 단백질 공학, 임상 연구 등 다양한 과학 도메인을 커버한다. Cursor, Claude Code, Codex, Gemini CLI 등 Agent Skills 표준을 지원하는 클라이언트와 호환되며, 100개 이상의 과학 데이터베이스 접근 및 70개 이상의 Python 패키지 최적화 워크플로를 포함한다. 전 세계 25만 명 이상의 과학자가 사용 중이며, MIT 라이선스로 무료 제공된다.",
+    "why_it_matters": "단일 명령어로 AI 코딩 에이전트를 다학제 AI 과학자로 전환할 수 있어, 연구자가 복잡한 다단계 과학 파이프라인을 프롬프트 하나로 실행할 수 있게 한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "RAG"
+    ],
+    "score": 0.7454695767195767,
+    "published_at": "2026-10-17T05:14:19Z"
+  },
+  {
+    "id": "github_trending-MadsLorentzen/ai-job-search",
+    "section": "releases",
+    "title_en": "MadsLorentzen/ai-job-search",
+    "title_ko": "AI 구직 자동화 프레임워크 - Claude Code 기반 이력서·커버레터 생성 도구",
+    "url": "https://github.com/MadsLorentzen/ai-job-search",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code를 기반으로 구직 전 과정을 자동화하는 오픈소스 프레임워크다. 채용 공고 적합도 평가, LaTeX 이력서·커버레터 맞춤 작성, ATS 텍스트 레이어 검증, 드래프터-리뷰어 이중 에이전트 파이프라인 등을 지원한다. 실제 개발자가 69건의 지원 끝에 취업에 성공한 실전 검증 도구이며, 덴마크 구인 포털 외에도 LinkedIn·freehire 등 글로벌 채용 사이트 연동을 기본 제공한다. MIT 라이선스로 공개되어 있으며, 포크 후 개인 프로필을 채워 바로 사용할 수 있다.",
+    "why_it_matters": "AI 에이전트로 구직 전 과정을 로컬에서 자동화한 실전 사례로, 채용 워크플로우에 LLM을 실용적으로 적용하는 구체적인 설계 패턴을 제시한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7454695767195767,
+    "published_at": "2026-10-17T05:14:19Z"
+  },
+  {
+    "id": "openai_blog-itau-generative-ai",
+    "section": "releases",
+    "title_en": "How Itaú is building generative AI for its entire customer base",
+    "title_ko": "이타우 은행, 전체 고객 대상 생성형 AI 구축 방법",
+    "url": "https://openai.com/index/itau-generative-ai",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "브라질 최대 은행 중 하나인 이타우(Itaú)는 대화형 인터페이스 'ia.i'와 AI 거버넌스 플랫폼 'IARA'를 통해 AI First 전략을 추진하고 있다. 이 시스템은 고객과 직원 모두를 대상으로 하며, 브라질 금융권의 엄격한 규제 환경 속에서 생성형 AI를 적용한 사례다.",
+    "why_it_matters": "고도로 규제된 금융 섹터에서 생성형 AI를 대규모 고객 기반에 적용한 실제 사례로, 금융 AI 거버넌스의 참고 모델이 될 수 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.6845254629629629,
+    "published_at": "2026-10-16T19:00:00Z"
+  },
+  {
+    "id": "openai_blog-benefit-street-partners",
+    "section": "releases",
+    "title_en": "Benefit Street Partners answers questions faster with Codex",
+    "title_ko": "Benefit Street Partners, Codex로 질문 응답 속도 향상",
+    "url": "https://openai.com/index/benefit-street-partners",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Benefit Street Partners의 Anant Kumar는 대출 가치 평가 비교 및 신용 계약 분석 도구를 개발하는 데 Codex를 활용하고 있다. 코드 리뷰와 후속 질문 처리 속도를 높이는 데 Codex가 핵심 역할을 하고 있다.",
+    "why_it_matters": "금융 분야에서 Codex를 활용한 실질적인 업무 자동화 사례로, LLM이 전문 금융 도구 개발에 어떻게 적용되는지 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.5714302248677249,
+    "published_at": "2026-10-16T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-stack-overflow-chatgpt-plugin",
+    "section": "releases",
+    "title_en": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+    "title_ko": "Stack Overflow for Agents, ChatGPT 플러그인으로 가입자 3배 증가",
+    "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "두 명의 엔지니어가 Codex를 활용해 불과 몇 주 만에 Stack Overflow for Agents를 개발했다. ChatGPT 플러그인 출시 이후 에이전트 생성 건수가 최대 10배까지 증가했으며, 전체 가입자 수도 3배 늘어났다.",
+    "why_it_matters": "소규모 팀이 AI 도구로 빠르게 제품을 출시하고 폭발적인 성장을 이끈 실제 사례로, 에이전트 생태계 확장 가능성을 보여준다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.5714302248677249,
+    "published_at": "2026-10-16T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-introducing-the-rosalind-academic-plan",
+    "section": "releases",
+    "title_en": "Bringing GPT-Rosalind to academic research labs",
+    "title_ko": "학술 연구실을 위한 GPT-Rosalind 도입",
+    "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 생명과학 연구 발전을 위해 자격을 갖춘 학술 연구실에 GPT-Rosalind 후원 접근권을 제공하는 'Rosalind Academic Plan'을 발표했다. 이 플랜은 학술 연구실이 GPT-Rosalind와 관련 도구를 활용할 수 있도록 지원한다.",
+    "why_it_matters": "생명과학 분야 학술 연구자들이 최신 AI 모델을 무료 또는 지원 방식으로 활용할 수 있어 연구 접근성이 크게 높아진다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.5416683201058201,
+    "published_at": "2026-10-15T19:00:00Z"
+  },
+  {
+    "id": "hn-50129045",
+    "section": "community",
+    "title_en": "DeepSeek-v4.1-Flash-1017",
+    "title_ko": "DeepSeek-v4.1-Flash-1017 공개",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "DeepSeek에서 v4.1-Flash-1017 모델을 공개했다. 상세한 설명은 제공되지 않았으나, Flash 계열의 경량·고속 추론 모델로 추정된다.",
+    "why_it_matters": "DeepSeek의 새로운 Flash 모델 출시 소식으로, 오픈소스 LLM 생태계의 변화를 주목할 필요가 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 10.682463741799687,
+    "published_at": "2026-10-17T08:21:25Z"
+  },
+  {
+    "id": "hn-50122878",
+    "section": "community",
+    "title_en": "You could have invented transformers from memory",
+    "title_ko": "트랜스포머 아키텍처, 처음부터 직접 유도할 수 있다",
+    "url": "https://alexwang.ai/posts/associative-memory/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "트랜스포머 아키텍처가 어떻게 설계되었는지를 기억과 논리만으로 재도출할 수 있다는 주제의 글이다. 복잡해 보이는 트랜스포머 구조도 핵심 원리를 이해하면 스스로 발명할 수 있음을 시사한다.",
+    "why_it_matters": "트랜스포머를 단순 암기가 아닌 원리 중심으로 이해하고자 하는 개발자에게 유용한 관점을 제공한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.587662894123806,
+    "published_at": "2026-10-16T19:01:17Z"
+  },
+  {
+    "id": "hn-50127979",
+    "section": "community",
+    "title_en": "Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware",
+    "title_ko": "Show HN: Llmspeed – 하드웨어 구매 전 로컬 LLM 속도를 미리 체험해보세요",
+    "url": "https://llmspeed.dev/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Llmspeed는 로컬 LLM을 실제 하드웨어 없이도 얼마나 빠르게 실행되는지 사전에 체감할 수 있게 해주는 도구다. 하드웨어 구매 결정 전에 LLM 추론 속도를 시뮬레이션하거나 시각적으로 느낄 수 있도록 돕는 것으로 보인다.",
+    "why_it_matters": "고가의 GPU·NPU 장비를 구입하기 전에 로컬 LLM 성능을 미리 확인할 수 있어 불필요한 지출을 줄일 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 8.675522638637998,
+    "published_at": "2026-10-17T04:36:53Z"
+  },
+  {
+    "id": "hn-50132193",
+    "section": "community",
+    "title_en": "Pele – Mermaid diagrams as themeable SVG",
+    "title_ko": "Pele – 테마 적용 가능한 SVG 형태의 Mermaid 다이어그램",
+    "url": "https://pele.run/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Pele는 Mermaid 다이어그램을 테마 적용이 가능한 SVG 형식으로 렌더링하는 도구다. 설명이 제공되지 않아 제목 기반으로만 요약한다.",
+    "why_it_matters": "다이어그램을 커스터마이징 가능한 SVG로 출력함으로써 문서나 UI에 더 유연하게 통합할 수 있다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 7.931361167138784,
+    "published_at": "2026-10-17T15:55:09Z"
+  },
+  {
+    "id": "reddit-1x8m0jj",
+    "section": "community",
+    "title_en": "Xolotl (Strata based) - DeepSeek-V4.1-Flash (552B) on a single 4090 at ~27 tok/s, Uncensored 1017 quant coming in a couple of days",
+    "title_ko": "RTX 4090 단일 GPU로 DeepSeek 552B 모델을 27 tok/s로 구동하는 Xolotl 추론 엔진",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8m0jj/xolotl_strata_based_deepseekv41flash_552b_on_a/",
+    "sources": [
+      "reddit"
+    ],
+    "summary_ko": "Strata 기반의 새로운 추론 엔진 Xolotl이 공개됐다. RTX 4090(24GB VRAM), 90GB DDR4, NVMe를 조합해 552B 규모의 DeepSeek-V4.1-Flash를 단일 게이밍 PC에서 27 tok/s 디코드, 최대 512K 컨텍스트로 실행한다. VRAM·핀드 RAM·NVMe에 가중치를 분산하고 실제 필요한 전문가(Expert)만 토큰별로 로드하는 방식이다. 검열 해제(uncensored) 양자화 버전과 신규 1017 업데이트 퀀트도 수일 내 공개 예정이다.",
+    "why_it_matters": "고가 서버 없이 일반 게이밍 PC 한 대로 500B급 MoE 모델을 실용적 속도로 로컬 구동할 수 있음을 보여준 사례로, 로컬 LLM 접근성을 크게 낮출 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.8433002645502645,
+    "published_at": "2026-10-17T21:40:27Z"
+  },
+  {
+    "id": "youtube--DA5ofg1YdE",
+    "section": "video",
+    "title_en": "🚨 이런 단순한 이유로 비밀번호가 털립니다 ㄷㄷ",
+    "title_ko": "이런 단순한 이유로 비밀번호가 털린다",
+    "url": "https://www.youtube.com/shorts/-DA5ofg1YdE",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 비밀번호가 유출되는 단순하지만 위험한 이유를 다루는 영상이다. 보안 취약점과 관련된 실용적인 정보를 제공하는 것으로 보인다.",
+    "why_it_matters": "개발자라면 기본 보안 습관을 점검하는 계기가 될 수 있다.",
+    "tags": [],
+    "score": 0.7500281084656084,
+    "published_at": "2026-10-17T06:00:16Z"
+  },
+  {
+    "id": "youtube-LKrwhjOI8Nc",
+    "section": "video",
+    "title_en": "There's never been a better time to go into math",
+    "title_ko": "AI 시대에 수학을 공부하기 가장 좋은 시기가 왔다",
+    "url": "https://www.youtube.com/watch?v=LKrwhjOI8Nc",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "3Blue1Brown이 AI가 수학에 미치는 영향과 수학의 미래에 대한 생각을 공유하는 영상이다. AI가 증명 기계, 추측 기계, 이론 기계로서 수학에 어떻게 활용될 수 있는지를 다룬다. AI가 모든 것을 더 잘하게 되는 상황에서도 수학을 공부하는 것이 왜 지금이 최적의 시기인지에 대한 관점을 제시한다.",
+    "why_it_matters": "AI와 수학의 관계에 대해 불안을 느끼는 수학 학습자 및 연구자들에게 현직 수학자들의 반응과 함께 균형 잡힌 시각을 제공한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6681894841269842,
+    "published_at": "2026-10-16T16:15:20Z"
+  },
+  {
+    "id": "youtube-T6rQgdseqBM",
+    "section": "video",
+    "title_en": "Google AdMob의 광고 검토 센터에 검색 조건 저장과 알림 기능이 추가 됩니다 @AdMob",
+    "title_ko": "Google AdMob 광고 검토 센터에 검색 조건 저장 및 알림 기능 추가",
+    "url": "https://www.youtube.com/shorts/T6rQgdseqBM",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "Google AdMob의 광고 검토 센터에 검색 조건 저장과 알림 기능이 새롭게 추가됩니다. 자주 반복해서 확인하는 검색 조건을 저장해두고, 관련 광고가 등록될 때 알림으로 받아볼 수 있습니다. 이를 통해 광고 품질 관리를 보다 효율적으로 수행할 수 있게 됩니다.",
+    "why_it_matters": "앱 개발자 및 퍼블리셔가 AdMob 광고 품질을 더 손쉽게 모니터링하고 관리할 수 있어 운영 효율이 높아진다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.6351438492063493,
+    "published_at": "2026-10-16T10:42:14Z"
+  },
+  {
+    "id": "latent_space-ainews-high-taste-testers-ep-1",
+    "section": "deepdive",
+    "title_en": "[AINews] High Taste Testers Ep. 1",
+    "title_ko": "[AI뉴스] 하이 테이스트 테스터즈 1화 파일럿 공개",
+    "url": "https://www.latent.space/p/ainews-high-taste-testers-ep-1",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "Latent Space에서 조용한 뉴스 데이에 새로운 쇼 '하이 테이스트 테스터즈'의 첫 번째 에피소드를 파일럿으로 선보였다. 구체적인 내용은 공개된 설명에서 확인되지 않으나, AI 분야의 큐레이션된 소식을 다루는 새로운 포맷의 시작을 알리는 에피소드다.",
+    "why_it_matters": "Latent Space가 새로운 AI 뉴스 큐레이션 쇼 포맷을 실험적으로 시작했다는 점에서 향후 콘텐츠 방향성을 가늠할 수 있다.",
+    "tags": [],
+    "score": 0.7606795634920636,
+    "published_at": "2026-10-17T07:47:38Z"
+  }
+]
