@@ -1,0 +1,375 @@
+[
+  {
+    "id": "hf-2610.21601",
+    "section": "papers",
+    "title_en": "Waypoint-OPD: Transferring RL-Induced Policy Shifts via Gated On-Policy Distillation",
+    "title_ko": "Waypoint-OPD: 강화학습 유도 정책 변화를 게이팅 기반 온-폴리시 증류로 전이",
+    "url": "https://huggingface.co/papers/2610.21601",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "강화학습(RL) 전후 교사 모델의 로그 확률 차이를 학생 모델 훈련에 활용하는 정책 변화 증류 방법론을 개선한 Waypoint-OPD를 제안한다. 중간 체크포인트를 활용해 초기와 후기 정책 변화 방향의 일치 여부를 비교하고, 방향이 상반될 경우 해당 신호를 억제하는 게이팅 메커니즘을 도입했다. Qwen3-4B 교사 모델과 Qwen3-8B, 14B, 30B-A3B 학생 모델 조합으로 수학 및 코드 추론 6개 도메인-학생 설정 모두에서 기존 증류 방법 대비 최고 성능을 달성했다.",
+    "why_it_matters": "RL 기반 교사 모델의 훈련 동역학을 추가 비용 최소화로 활용해 소형 학생 모델의 추론 능력을 더 효과적으로 향상시킬 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 7.505784060128229,
+    "published_at": "2026-10-14T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.22276",
+    "section": "papers",
+    "title_en": "MJev-Spatial: System One Spatial Intelligence via Native Attention Matching",
+    "title_ko": "MJev-Spatial: 네이티브 어텐션 매칭 기반 공간 지능 추론 모델",
+    "url": "https://huggingface.co/papers/2610.22276",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "MJev-Spatial은 공간적 관계 파악, 거리 추정, 위치 예측 등 세 가지 공간 이해 과제를 단일 분류 프레임워크로 처리하는 멀티모달 결정 모델이다. 자유 형식 텍스트 생성 대신 백본의 사전학습된 쿼리·키 프로젝션을 활용해 단일 순전파로 분류 결정을 내리며, 추가 파라미터 없이 동작한다. Qwen3.5-4B 기반으로 1,230만 개의 QA 쌍으로 학습되었으며, 12개 벤치마크 전체에서 기존 자기회귀 베이스 모델을 능가하고 가장 빠른 자기회귀 베이스라인 대비 2.5배, 베이스 모델 대비 5.6배 빠른 추론 속도를 달성했다.",
+    "why_it_matters": "공간 지능 추론에서 추가 파라미터 없이 속도와 정확도를 동시에 대폭 개선해 실시간 에이전트 응용에 실질적 돌파구를 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 6.872117789475416,
+    "published_at": "2026-10-14T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.22200",
+    "section": "papers",
+    "title_en": "OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use",
+    "title_ko": "OpenGCUA: 범용 컴퓨터 사용 에이전트를 위한 완전 오픈 스택",
+    "url": "https://huggingface.co/papers/2610.22200",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "OpenGCUA는 GUI 전용 상호작용을 넘어 시각적·프로그래밍 인터페이스를 통해 컴퓨터 작업을 수행하는 범용 컴퓨터 사용 에이전트(GCUA)의 완전 오픈 스택 프로젝트다. 코드 실행을 핵심 설계 요소로 채택해 중간 결과가 후속 작업을 결정하도록 하며, OSWorld-v2 벤치마크에서 GPT-6 Astra와 Claude Opus 5를 포함한 8개 모델 전반에 걸쳐 평균 부분 점수를 +19.6점 향상시키고 작업당 단계 수를 평균 53.0% 줄였다. 구현 코드, 프롬프트, 평가 궤적, 실제 기기 하네스 및 크로스 디바이스 SDK 예비 버전을 공개한다.",
+    "why_it_matters": "GPT-6 Astra 등 폐쇄적인 프론티어 컴퓨터 사용 시스템에 대한 오픈 대안을 제공해 에이전트 연구의 재현성과 커뮤니티 기여를 가능하게 한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 6.75890177387728,
+    "published_at": "2026-10-14T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.22350",
+    "section": "papers",
+    "title_en": "FDE-Gym: The Last Mile of AI Delivery",
+    "title_ko": "FDE-Gym: AI 에이전트의 실제 고객 납품 능력 평가 벤치마크",
+    "url": "https://huggingface.co/papers/2610.22350",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "FDE-Gym은 18개 산업 분야 20개 고객 시나리오에서 추출한 95개의 엔드-투-엔드 납품 태스크로 구성된 새로운 에이전트 벤치마크입니다. 기존 벤치마크와 달리, 모호한 요구사항 명확화·실제 시스템 운영·미명시 제약 조건 발굴 등 현실적인 고객 납품 상황을 시뮬레이션합니다. 7개 제공사의 13가지 모델 구성을 평가한 결과, 최고 성능 구성도 평균 점수 0.56에 그쳤고 95개 태스크 중 14개만 성공적으로 완료했습니다. 미명시 제약 조건 발굴이 핵심 병목으로 확인되었으며, 명확히 정의된 태스크 해결과 실제 고객 납품 사이의 큰 격차가 드러났습니다.",
+    "why_it_matters": "현실 고객 납품 시나리오에서 최신 AI 에이전트의 한계를 구체적으로 드러내, 실용적 에이전트 개발 방향을 제시하는 중요한 평가 기준이 됩니다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 6.655991810819852,
+    "published_at": "2026-10-14T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.17665",
+    "section": "papers",
+    "title_en": "RoTA-Bench: Evaluating 3D Spatial Reasoning through Interactive Projection Alignment",
+    "title_ko": "RoTA-Bench: 3D 공간 추론 능력을 평가하는 인터랙티브 프로젝션 정렬 벤치마크",
+    "url": "https://huggingface.co/papers/2610.17665",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "RoTA-Bench는 비전-언어 모델의 3D 공간 추론 능력을 평가하기 위한 새로운 벤치마크로, 모델이 타깃 실루엣을 보고 물체를 회전시켜 목표 투영을 재현하는 인터랙티브 과제를 제시한다. 674개 태스크와 100개 테스트 세트로 구성되며, GPT-4o 계열 최상위 모델도 성공률 17%에 그친 반면 대학생 참가자 20명은 100% 성공률을 기록했다. 또한 상호작용 이력을 제거하면 모델 행동의 96.8%가 조악한 30도 단위에 머물러 성능이 급감하는 것으로 나타났다.",
+    "why_it_matters": "현재 최강 비전-언어 모델도 인간 대비 3D 공간 제어 능력이 현저히 부족함을 정량적으로 드러내, 로봇·구현형 AI 연구의 핵심 과제를 명확히 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 6.313205979041787,
+    "published_at": "2026-10-13T20:00:00Z"
+  },
+  {
+    "id": "github_trending-anthropics/claude-plugins-official",
+    "section": "releases",
+    "title_en": "anthropics/claude-plugins-official",
+    "title_ko": "Anthropic 공식 Claude Code 플러그인 디렉터리 공개",
+    "url": "https://github.com/anthropics/claude-plugins-official",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 Claude Code용 공식 플러그인 디렉터리를 GitHub에 공개했다. Anthropic 내부 팀이 개발한 플러그인과 서드파티 커뮤니티 플러그인으로 구성되며, `/plugin install {플러그인명}@claude-plugins-official` 명령으로 설치할 수 있다. 각 플러그인은 MCP 서버 설정, 슬래시 커맨드, 에이전트 정의, 스킬 등의 표준 구조를 따른다.",
+    "why_it_matters": "Claude Code 생태계의 플러그인 마켓플레이스가 공식화됨에 따라 개발자들이 검증된 AI 코딩 도구를 체계적으로 확장·공유할 수 있는 기반이 마련된다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7458730158730158,
+    "published_at": "2026-10-18T05:18:23Z"
+  },
+  {
+    "id": "github_trending-MadsLorentzen/ai-job-search",
+    "section": "releases",
+    "title_en": "MadsLorentzen/ai-job-search",
+    "title_ko": "AI 취업 지원 자동화 프레임워크 - Claude Code 기반 오픈소스",
+    "url": "https://github.com/MadsLorentzen/ai-job-search",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code를 기반으로 구축된 AI 취업 지원 프레임워크로, 채용 공고 평가·CV 맞춤화·커버레터 작성·면접 준비를 자동화한다. `/scrape`, `/apply`, `/interview` 등의 명령어로 전체 지원 워크플로우를 로컬에서 실행하며, LaTeX 기반 PDF 컴파일 및 ATS 파싱 검증까지 포함한다. 제작자가 실제 구직 활동에 직접 사용해 69개 지원서·20회 1차 면접·1건의 계약 체결이라는 실적을 거뒀다고 밝히고 있다.",
+    "why_it_matters": "구직 전 과정을 AI 에이전트로 자동화하는 실전 검증된 오픈소스 도구로, 한국 개발자도 포털만 교체하면 즉시 활용 가능하다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7458730158730158,
+    "published_at": "2026-10-18T05:18:23Z"
+  },
+  {
+    "id": "github_trending-K-Dense-AI/scientific-agent-skills",
+    "section": "releases",
+    "title_en": "K-Dense-AI/scientific-agent-skills",
+    "title_ko": "과학 연구용 AI 에이전트 스킬 라이브러리 'Scientific Agent Skills'",
+    "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "K-Dense AI가 개발한 오픈소스 에이전트 스킬 라이브러리로, AI 에이전트를 'AI 과학자'로 전환시켜주는 177개의 검증된 스킬을 제공합니다. 생물정보학, 화학정보학, 임상 연구, 재료과학, 천문학 등 주요 과학 분야와 100개 이상의 과학 데이터베이스를 커버하며, Cursor·Claude Code·Codex·Google Antigravity 등 다양한 에이전트 호스트와 호환됩니다. MIT 라이선스 기반이며 전 세계 25만 명 이상의 과학자가 활용하고 있다고 밝히고 있습니다.",
+    "why_it_matters": "단일 명령어로 설치 가능한 오픈소스 과학 에이전트 스킬 표준으로, AI 에이전트를 활용한 연구 자동화·재현성 향상에 실질적으로 기여할 수 있는 포괄적 프레임워크입니다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7458730158730158,
+    "published_at": "2026-10-18T05:18:23Z"
+  },
+  {
+    "id": "github_trending-akitaonrails/ai-memory",
+    "section": "releases",
+    "title_en": "akitaonrails/ai-memory",
+    "title_ko": "ai-memory: AI 코딩 에이전트를 위한 크로스-에이전트 장기 기억 솔루션",
+    "url": "https://github.com/akitaonrails/ai-memory",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "ai-memory는 Claude Code, Codex, Cursor, Gemini CLI 등 20개 이상의 AI 코딩 에이전트 간 장기 기억을 공유할 수 있는 오픈소스 도구다. git 기반 마크다운 위키를 진실의 원천으로 삼아 LLM API 호출 없이도 세션 간 핸드오프·검색·메모리 관리가 작동한다. 하나의 Rust 바이너리로 배포되며, 팀 공유 서버, 멀티 머신, 멀티 에이전트 환경을 모두 지원한다.",
+    "why_it_matters": "에이전트를 바꾸거나 머신을 이동할 때마다 컨텍스트를 재설명해야 하는 문제를 해결하여, AI 코딩 워크플로우의 연속성을 보장한다.",
+    "tags": [
+      "에이전트",
+      "RAG",
+      "오픈소스"
+    ],
+    "score": 0.7458730158730158,
+    "published_at": "2026-10-18T05:18:23Z"
+  },
+  {
+    "id": "github_trending-stablyai/orca",
+    "section": "releases",
+    "title_en": "stablyai/orca",
+    "title_ko": "Orca: 여러 AI 코딩 에이전트를 한곳에서 관리하는 오케스트레이터",
+    "url": "https://github.com/stablyai/orca",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Orca는 Claude Code, Codex, Grok 등 다양한 CLI 코딩 에이전트를 병렬로 실행하고 한 화면에서 관리할 수 있는 오픈소스 데스크톱 앱이다. 각 에이전트를 독립된 git 워크트리에서 실행해 결과를 비교하고 병합할 수 있으며, iOS/Android 모바일 앱으로 원격 모니터링도 지원한다. macOS·Windows·Linux를 모두 지원하며 MIT 라이선스로 무료 제공된다.",
+    "why_it_matters": "여러 AI 코딩 에이전트를 동시에 병렬 실행·비교할 수 있어 개발 생산성을 크게 높일 수 있는 통합 플랫폼이다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7458730158730158,
+    "published_at": "2026-10-18T05:18:23Z"
+  },
+  {
+    "id": "github_trending-anthropics/claude-code",
+    "section": "releases",
+    "title_en": "anthropics/claude-code",
+    "title_ko": "Anthropic, 터미널 기반 AI 코딩 에이전트 'Claude Code' 공개",
+    "url": "https://github.com/anthropics/claude-code",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code는 터미널에서 직접 실행되는 에이전틱 코딩 도구로, 자연어 명령만으로 코드 설명, 반복 작업 자동화, Git 워크플로우 처리를 지원한다. macOS, Linux, Windows 모두 지원하며 Homebrew·WinGet·curl 스크립트 등 다양한 설치 방법을 제공한다. GitHub에서 @claude 태그로 호출하거나 IDE에서도 사용할 수 있으며, 플러그인으로 기능 확장도 가능하다.",
+    "why_it_matters": "Anthropic이 공식 오픈소스로 Claude Code를 공개함으로써 개발자가 터미널 환경에서 바로 Claude 기반 AI 코딩 에이전트를 활용할 수 있게 됐다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7458730158730158,
+    "published_at": "2026-10-18T05:18:23Z"
+  },
+  {
+    "id": "openai_blog-itau-generative-ai",
+    "section": "releases",
+    "title_en": "How Itaú is building generative AI for its entire customer base",
+    "title_ko": "브라질 최대 은행 이타우, 전체 고객 대상 생성형 AI 구축 전략 공개",
+    "url": "https://openai.com/index/itau-generative-ai",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "브라질 최대 은행 이타우(Itaú)는 대화형 인터페이스 'ia.i'와 AI 거버넌스 플랫폼 'IARA'를 통해 'AI First' 전략을 고객과 직원 모두에게 적용하고 있다. 이는 브라질에서 가장 엄격하게 규제되는 금융 섹터 내에서 추진되는 대규모 생성형 AI 도입 사례다.",
+    "why_it_matters": "강력한 금융 규제 환경에서도 대형 은행이 생성형 AI를 전사적으로 도입하는 구체적 방식을 보여주는 실제 사례로, 금융권 AI 도입을 검토하는 개발자와 기업에 중요한 참고 모델이 된다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.5416683201058201,
+    "published_at": "2026-10-16T19:00:00Z"
+  },
+  {
+    "id": "hn-50138531",
+    "section": "community",
+    "title_en": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
+    "title_ko": "DeepSeek, 검색 및 페치 기능 출시 — 1000건당 $0.75",
+    "url": "https://api-docs.deepseek.com/guides/search/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "DeepSeek이 검색 및 웹 페치 기능을 새롭게 제공하며, 성공적인 요청 1000건당 $0.75의 가격으로 책정했다. 구체적인 기술 세부사항은 확인되지 않는다.",
+    "why_it_matters": "DeepSeek의 저비용 전략이 검색 연동 AI 서비스 시장에도 확대되는지 주목할 필요가 있다.",
+    "tags": [
+      "LLM",
+      "RAG"
+    ],
+    "score": 10.053059466613455,
+    "published_at": "2026-10-18T06:50:36Z"
+  },
+  {
+    "id": "hn-50142866",
+    "section": "community",
+    "title_en": "Namecheap just seized and disabled all my domains",
+    "title_ko": "Namecheap, 이용자 도메인 전체 압류·비활성화",
+    "url": "https://www.reddit.com/r/sysadmin/comments/1x8cycd/namecheap_just_seized_and_disabled_all_my_domains/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "한 사용자가 Namecheap으로부터 아무런 사전 경고 없이 자신의 모든 도메인이 압류되고 비활성화되었다고 밝혔다. 구체적인 경위는 설명에 포함되지 않았으나, 도메인 레지스트라의 일방적 조치에 대한 우려를 제기하는 사례다.",
+    "why_it_matters": "도메인 레지스트라의 일방적 계정 동결은 서비스 전체 중단으로 이어질 수 있어 인프라 의존성 리스크를 환기시킨다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.637403888427476,
+    "published_at": "2026-10-18T16:56:56Z"
+  },
+  {
+    "id": "hn-50145337",
+    "section": "community",
+    "title_en": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+    "title_ko": "하이브리드 추론 에이전트: 잠재 공간에서 사고하고 텍스트로 행동하는 LLM 에이전트",
+    "url": "https://arxiv.org/abs/2610.18861",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "잠재 공간(latent space)에서 추론하고 텍스트를 통해 행동하는 하이브리드 방식의 LLM 에이전트 개념을 다루는 내용이다. 내부 표현과 외부 텍스트 행동을 결합한 새로운 에이전트 아키텍처로 보인다.",
+    "why_it_matters": "잠재 공간 추론과 텍스트 행동을 결합한 접근은 LLM 에이전트의 추론 효율과 표현력을 동시에 높일 수 있는 방향으로 주목할 만하다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 8.447263209037892,
+    "published_at": "2026-10-18T20:48:14Z"
+  },
+  {
+    "id": "hn-50118165",
+    "section": "community",
+    "title_en": "\"I'm on a war footing\": Terry Tao and the crisis in math",
+    "title_ko": "\"나는 전시 태세다\": 테리 타오와 수학의 위기",
+    "url": "https://www.nytimes.com/2026/10/16/us/math-ai-terence-tao.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "필즈상 수상자 테리 타오가 수학 분야의 위기 상황에 대해 강한 경각심을 표명했다. 제목만으로는 구체적인 내용을 파악하기 어려우나, 수학계가 직면한 심각한 도전을 다루는 내용으로 보인다.",
+    "why_it_matters": "세계 최고 수학자 중 한 명이 수학계의 위기를 언급했다는 점에서 학계와 기술계 모두의 주목을 받을 수 있다.",
+    "tags": [],
+    "score": 7.455954488603053,
+    "published_at": "2026-10-16T13:30:20Z"
+  },
+  {
+    "id": "reddit-1x8wmbp",
+    "section": "community",
+    "title_en": "told Qwen3.8 27b to hack my router",
+    "title_ko": "Qwen3 27B로 라우터 펌웨어를 OpenWrt로 교체한 사례",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8wmbp/told_qwen38_27b_to_hack_my_router/",
+    "sources": [
+      "reddit"
+    ],
+    "summary_ko": "한 사용자가 샤오미 라우터를 OpenWrt로 교체하려 했으나 Claude가 안전 정책으로 거부하자, 로컬에서 실행한 Qwen3 27B(비검열 버전 아님)를 사용해 성공했다. 모델은 OpenWrt 공식 가이드를 참고해 CGI 취약점을 이용한 SSH 활성화 및 펌웨어 플래시까지 수행했다. 사용자는 이것이 해킹이 아닌 공개된 가이드 기반 작업임을 강조하며, 향후 Qwen 모델에도 사이버 보안 관련 가드가 강화될지 의문을 제기했다.",
+    "why_it_matters": "로컬 LLM의 안전장치 수준이 상용 모델과 다를 수 있음을 보여주는 사례로, AI 모델의 사이버 보안 관련 콘텐츠 정책 논쟁에 시사점을 준다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.756167328042328,
+    "published_at": "2026-10-18T07:02:09Z"
+  },
+  {
+    "id": "youtube-xUrRNBz4j1I",
+    "section": "video",
+    "title_en": "IT뉴스 - 딥시크 미쳤다, Gemini 4, Muse Wonder, Spark Open, 오픈AI 스파이, GPT-Live-1.1, Fish Audio Drama 3, 테슬라 등",
+    "title_ko": "딥시크·Gemini 4·GPT-Live-1.1 등 AI 최신 소식 총정리",
+    "url": "https://www.youtube.com/watch?v=xUrRNBz4j1I",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "딥시크의 새로운 성과와 함께 Gemini 4, GPT-Live-1.1, Fish Audio Drama 3 등 다양한 AI 모델 및 서비스 업데이트 소식이 한 번에 소개된다. 오픈AI 관련 스파이 의혹, Muse Wonder, Spark Open 등 여러 AI 신규 서비스 소식도 포함되어 있다. 테슬라 관련 IT 뉴스도 함께 다뤄진다.",
+    "why_it_matters": "한 주간 쏟아진 주요 AI·IT 이슈를 한국어로 빠르게 파악할 수 있는 종합 뉴스 브리핑이다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7836871693121693,
+    "published_at": "2026-10-18T11:39:33Z"
+  },
+  {
+    "id": "youtube-StlLe-BDFoc",
+    "section": "video",
+    "title_en": "코드를 몰라도 프로그램 복제가 가능하다..?",
+    "title_ko": "코딩 몰라도 프로그램 복제? 바이브 코딩으로 리버스 엔지니어링 도전",
+    "url": "https://www.youtube.com/shorts/StlLe-BDFoc",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 코딩 지식 없이도 기존 프로그램을 복제하는 방법을 소개하는 영상이다. 바이브 코딩 기법을 활용해 비개발자도 소프트웨어를 분석·재현할 수 있는 가능성을 다룬다. 관련 도서 및 AX 컨설팅 서비스도 함께 소개되고 있다.",
+    "why_it_matters": "비개발자도 AI 기반 바이브 코딩으로 프로그램을 복제할 수 있다는 주제는 소프트웨어 개발 진입 장벽을 낮추는 트렌드를 잘 보여준다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7589434523809524,
+    "published_at": "2026-10-18T07:30:08Z"
+  },
+  {
+    "id": "youtube-UmC_NkTTdp4",
+    "section": "video",
+    "title_en": "배터리 1%가 유독 오래가는 이유",
+    "title_ko": "배터리 1%가 유독 오래가는 이유",
+    "url": "https://www.youtube.com/shorts/UmC_NkTTdp4",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 스마트폰 배터리 잔량이 1%일 때 유독 오래 지속되는 현상의 원리를 다룬 영상이다. AI 및 개발 관련 콘텐츠를 제공하는 조코딩의 교양 과학 주제 영상으로 보인다.",
+    "why_it_matters": "AI·개발 채널이 다루는 일상 속 기술 원리 콘텐츠로, 배터리 측정 방식에 대한 기초 이해를 돕는다.",
+    "tags": [],
+    "score": 0.7500595238095238,
+    "published_at": "2026-10-18T06:00:35Z"
+  },
+  {
+    "id": "simon_willison-llm-tools-datasette",
+    "section": "deepdive",
+    "title_en": "llm-tools-datasette 0.1.1",
+    "title_ko": "llm-tools-datasette 0.1.1 릴리스 - httpx 의존성 버그 수정",
+    "url": "https://simonwillison.net/2026/Oct/18/llm-tools-datasette/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "LLM 0.33에서 httpx2로 전환하면서 httpx를 직접 의존하지 않던 플러그인들이 동작하지 않는 문제가 발생했다. llm-tools-datasette도 영향을 받은 플러그인 중 하나였으며, 이번 0.1.1 버전에서 해당 문제가 수정되었다.",
+    "why_it_matters": "LLM 생태계의 플러그인을 사용 중이라면 httpx2 전환에 따른 의존성 문제가 없는지 확인이 필요하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8554728835978835,
+    "published_at": "2026-10-18T23:43:09Z"
+  }
+]
