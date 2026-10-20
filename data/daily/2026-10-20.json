@@ -1,0 +1,322 @@
+[
+  {
+    "id": "hf-2610.21783",
+    "section": "papers",
+    "title_en": "Learning to Think and Explore in 3D World",
+    "title_ko": "ACT3D: 강화학습으로 3D 공간을 탐색하며 사고하는 비전-언어 모델",
+    "url": "https://huggingface.co/papers/2610.21783",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "ACT3D는 VLM이 단일 이미지만 입력받아 행동(이동 등)을 통해 3D 환경을 능동적으로 탐색하며 질문에 답하는 방식을 연구한 모델이다. 초기 궤적 기반 파인튜닝 후 최종 답변 정확도를 보상으로 삼는 강화학습을 적용해, 어떤 시점을 방문할지는 별도로 지도하지 않고 모델 스스로 탐색 정책을 학습한다. 6개 3D 벤치마크에서 평균 53.2% 정확도를 달성해 기반 Qwen 모델 대비 22.0% 향상, 입력 프레임 50~70% 절감으로 기존 오픈소스 3D 방법론을 능가하며 Gemini 3.6 Flash도 뛰어넘었다. 초기 시점에서 답할 수 없는 질문일수록 성능 향상폭이 더 크게 나타나, 필요한 경우에만 탐색하는 적응적 행동을 보인다.",
+    "why_it_matters": "결과 기반 RL만으로 VLM이 3D 공간 탐색 전략을 스스로 습득할 수 있음을 입증해, 멀티뷰 입력 없이도 공간 추론 성능을 크게 높이는 새로운 방향을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 5.976733742420574,
+    "published_at": "2026-10-14T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.23121",
+    "section": "papers",
+    "title_en": "Scene-Designer: Learning Design Intelligence for Agentic 3D Scene Generation",
+    "title_ko": "Scene-Designer: 에이전틱 3D 실내 공간 생성을 위한 디자인 지능 학습",
+    "url": "https://huggingface.co/papers/2610.23121",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "자연어 입력만으로 완성도 높은 3D 실내 공간을 생성하기 위한 에이전틱 프레임워크 'Scene-Designer'가 소개됐다. 물리적 유효성, 기능적 정확성, 레이아웃 일관성 학습을 위해 Scene-OTA-35K와 Scene-OTC-15K 두 가지 데이터셋을 구축했으며, Critic 기반의 GRPO 프레임워크(Scene-GRPO)로 불필요한 시행착오를 줄였다. 실험 결과 Scene-Designer는 범용 모델 대비 장면 품질 비평과 생성 모두에서 우수한 성능을 보였으며, 디자인과 비평 능력이 상호 강화되는 경향도 확인됐다.",
+    "why_it_matters": "자연어 기반 3D 공간 자동 생성에서 설계·비평 지능을 함께 학습하는 에이전틱 접근법은 실내 디자인 자동화의 실용성을 크게 높일 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.912023005428146,
+    "published_at": "2026-10-15T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.21767",
+    "section": "papers",
+    "title_en": "From Research Goals to Scientific Closure: Evaluating Agents Through Evidence-Supported Physics Research",
+    "title_ko": "AI 에이전트의 물리학 연구 완결 능력 평가: PhysClosureBench",
+    "url": "https://huggingface.co/papers/2610.21767",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "AI 에이전트가 과학적 탐구를 완결된 결론까지 이끌 수 있는지 평가하는 PhysClosureBench 벤치마크가 공개됐다. 강전장·아토초 물리학 등 50개의 전문가 검증 연구 과제로 구성되며, 20개 기준의 원자 점수(Atomic Score)와 연구 완결도(RC0~RC4)를 측정한다. 7개 최신 LLM을 평가한 결과, 최고 성능인 Claude Opus 4도 RC4(완전 완결) 달성률은 32.7%에 그쳤다. 원자 점수 8점 이상을 받은 시도 중 36.2%가 여전히 RC4에 미달해, 국소적 성취와 완전한 연구 완결 사이의 간극이 뚜렷하게 드러났다.",
+    "why_it_matters": "현재 AI 에이전트가 개별 과학 과제는 잘 수행해도 완전한 연구 완결에는 체계적으로 실패함을 보여줌으로써, 과학 자동화의 실질적 한계를 구체적으로 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.610917912644224,
+    "published_at": "2026-10-14T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.22169",
+    "section": "papers",
+    "title_en": "Lexical Reference Frames: Interpreting LM Residual Streams in Native Semantics",
+    "title_ko": "어휘 기준 프레임: LLM 잔류 스트림을 고유 의미론으로 해석하기",
+    "url": "https://huggingface.co/papers/2610.22169",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "언어 모델의 숨겨진 상태(hidden state)를 해석하기 위한 새로운 방법인 '어휘 기준 프레임(Lexical Reference Frames)'을 제안한다. 기존의 고정 렌즈 방식과 달리, 모델 자체의 남은 레이어를 통해 각 숨겨진 상태를 모델이 읽는 방식 그대로 해석한다. SmolLM3-3B와 OLMo3-7B에서 기존 렌즈가 0.30~0.35의 일관성에 그치는 반면, 제안된 LexFrame[1]은 0.97에 달하며 모델 출력과 0.16 nats 이내의 근사를 달성했다. 또한 예측 귀인(attribution), 특정 토큰 조향(steering), 조기 종료(early exit) 등 다양한 활용 가능성을 보여준다.",
+    "why_it_matters": "LLM 내부 표현을 고신뢰도로 해석·제어할 수 있는 실용적 프레임워크로, 모델 해석가능성(interpretability) 연구에 실질적 돌파구를 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.49650756146648,
+    "published_at": "2026-10-14T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.23279",
+    "section": "papers",
+    "title_en": "Xiaomi-Lens-0 Technical Report",
+    "title_ko": "샤오미 Lens-0: 시각적 추론과 영역 분할을 결합한 4B 멀티모달 LLM",
+    "url": "https://huggingface.co/papers/2610.23279",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "샤오미가 Qwen3.5 기반의 4B 멀티모달 대형 언어 모델인 Xiaomi-Lens-0를 공개했다. 이 모델은 별도의 분할 인코더 없이 자체 시각 표현에서 마스크를 예측하며, RefCOCO/RefCOCO+/RefCOCOg 8개 분할 기준에서 Qwen3.5 대비 평균 5.6점 향상을 달성했다. 또한 비교 모델 중 가장 높은 분할 cIoU를 기록하며 전체 인식 벤치마크에서도 Qwen3.5를 능가한다.",
+    "why_it_matters": "이미지 전체가 아닌 특정 영역을 이해하며 추론하는 능력을 경량 구조로 구현해 세밀한 시각 이해의 새로운 기준을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.295836866004329,
+    "published_at": "2026-10-15T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-low-resource-programming-languages",
+    "section": "releases",
+    "title_en": "Advancing coding in low‑resource programming languages",
+    "title_ko": "저자원 프로그래밍 언어에서의 코딩 역량 향상",
+    "url": "https://openai.com/index/low-resource-programming-languages",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 ChatGPT의 저자원 프로그래밍 언어 지원을 개선하고 있다. 소프트웨어 엔지니어링, SQLite, COBOL 마이그레이션을 위한 새로운 평가 체계를 도입했다. 이를 통해 학습 데이터가 적은 언어에서도 코딩 성능을 높이는 것이 목표다.",
+    "why_it_matters": "COBOL 등 레거시 언어를 포함한 저자원 언어 지원 강화는 기업 시스템 현대화에 직접적인 영향을 미친다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7857159391534392,
+    "published_at": "2026-10-19T12:00:00Z"
+  },
+  {
+    "id": "github_trending-MadsLorentzen/ai-job-search",
+    "section": "releases",
+    "title_en": "MadsLorentzen/ai-job-search",
+    "title_ko": "AI 취업 지원 프레임워크: Claude Code 기반 자동화 구직 도구",
+    "url": "https://github.com/MadsLorentzen/ai-job-search",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code를 백엔드로 사용하는 오픈소스 취업 지원 자동화 프레임워크다. 채용공고 적합도 평가, 맞춤형 CV 작성(LaTeX), 자기소개서 생성, 면접 준비를 하나의 워크플로우로 처리한다. 제작자는 이 도구로 69건을 지원해 20번의 1차 면접을 거쳐 실제로 취업에 성공했다고 밝혔다. 드라프터-리뷰어 에이전트 분리, PDF 레이아웃 자동 검증, ATS 키워드 분석 등 실용적인 기능을 포함한다.",
+    "why_it_matters": "LLM 기반 에이전트를 실제 취업 파이프라인에 적용한 검증된 오픈소스 사례로, 에이전트 워크플로우 설계 패턴을 현실적인 맥락에서 참고할 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7471296296296297,
+    "published_at": "2026-10-19T05:31:03Z"
+  },
+  {
+    "id": "github_trending-anthropics/claude-plugins-official",
+    "section": "releases",
+    "title_en": "anthropics/claude-plugins-official",
+    "title_ko": "Anthropic 공식 Claude Code 플러그인 디렉토리 오픈",
+    "url": "https://github.com/anthropics/claude-plugins-official",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 Claude Code용 고품질 플러그인을 모아 놓은 공식 디렉토리를 GitHub에 공개했다. Anthropic 내부 팀이 개발한 플러그인과 서드파티 파트너·커뮤니티의 외부 플러그인으로 구성되며, `/plugin install` 명령어로 바로 설치할 수 있다. 외부 플러그인은 품질·보안 기준 심사를 통과해야 등록되며, MCP 서버·슬래시 커맨드·에이전트·스킬 등 다양한 구성 요소를 지원한다.",
+    "why_it_matters": "Claude Code 생태계의 공식 플러그인 마켓플레이스가 출범함으로써 개발자들이 검증된 확장 기능을 체계적으로 탐색하고 설치할 수 있는 기반이 마련됐다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7471296296296297,
+    "published_at": "2026-10-19T05:31:03Z"
+  },
+  {
+    "id": "github_trending-akitaonrails/ai-memory",
+    "section": "releases",
+    "title_en": "akitaonrails/ai-memory",
+    "title_ko": "ai-memory: 여러 AI 코딩 에이전트 간 장기 메모리 공유 오픈소스 도구",
+    "url": "https://github.com/akitaonrails/ai-memory",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "ai-memory는 Claude Code, Codex, Cursor, Gemini CLI 등 20개 이상의 AI 코딩 에이전트 간에 프로젝트 메모리를 공유할 수 있는 오픈소스 도구입니다. git 기반 마크다운 위키를 메모리 저장소로 사용하며, LLM API 호출 없이도 세션 캡처·검색·핸드오프가 작동합니다. 에이전트를 중간에 교체하거나 다른 머신으로 이동해도 이전 작업 맥락을 그대로 이어받을 수 있으며, 팀 단위 공유도 지원합니다.",
+    "why_it_matters": "특정 에이전트나 머신에 종속되지 않는 영속적 코딩 컨텍스트 관리가 가능해져, 멀티 에이전트 워크플로우의 핵심 인프라로 활용될 수 있습니다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.7471296296296297,
+    "published_at": "2026-10-19T05:31:03Z"
+  },
+  {
+    "id": "github_trending-stablyai/orca",
+    "section": "releases",
+    "title_en": "stablyai/orca",
+    "title_ko": "Orca: 여러 AI 코딩 에이전트를 동시에 실행하는 오픈소스 오케스트레이터",
+    "url": "https://github.com/stablyai/orca",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Orca는 Claude Code, Codex, Grok 등 다양한 CLI 기반 AI 코딩 에이전트를 병렬로 실행하고 관리할 수 있는 데스크톱·모바일 지원 오픈소스 도구다. 각 에이전트를 독립된 git 워크트리에서 실행해 결과를 비교하고 병합할 수 있으며, 모바일 앱으로 원격 모니터링도 가능하다. macOS·Windows·Linux를 모두 지원하며 MIT 라이선스로 무료 제공된다.",
+    "why_it_matters": "단일 에이전트 의존에서 벗어나 여러 AI 코딩 에이전트를 동시에 활용·비교할 수 있는 통합 환경을 오픈소스로 제공한다는 점에서 개발 워크플로우의 패러다임 전환을 가능하게 한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7471296296296297,
+    "published_at": "2026-10-19T05:31:03Z"
+  },
+  {
+    "id": "github_trending-mlabonne/llm-course",
+    "section": "releases",
+    "title_en": "mlabonne/llm-course",
+    "title_ko": "LLM 완전 정복 코스: 로드맵과 실습 노트북 모음",
+    "url": "https://github.com/mlabonne/llm-course",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "대규모 언어 모델(LLM)을 처음부터 배울 수 있는 무료 오픈소스 강좌로, LLM 기초, LLM 과학자(모델 구축), LLM 엔지니어(애플리케이션 개발 및 배포) 세 파트로 구성되어 있다. 파인튜닝, 양자화, RAG, 에이전트, 추론 최적화, 보안 등 실무에 필요한 주제를 Google Colab 노트북과 함께 제공한다. 본 코스를 바탕으로 집필된 'LLM Engineer's Handbook'도 함께 참고할 수 있다.",
+    "why_it_matters": "LLM 입문부터 프로덕션 배포까지 한 곳에서 로드맵·실습·참고자료를 무료로 제공해, 한국 개발자가 LLM 풀스택 역량을 체계적으로 쌓기에 최적의 출발점이다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "에이전트"
+    ],
+    "score": 0.7471296296296297,
+    "published_at": "2026-10-19T05:31:03Z"
+  },
+  {
+    "id": "openai_blog-itau-generative-ai",
+    "section": "releases",
+    "title_en": "How Itaú is building generative AI for its entire customer base",
+    "title_ko": "이타우 은행, 전체 고객 대상 생성형 AI 구축 방식 공개",
+    "url": "https://openai.com/index/itau-generative-ai",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "브라질 최대 은행 중 하나인 이타우(Itaú)는 대화형 인터페이스 'ia.i'와 AI 거버넌스 플랫폼 'IARA'를 통해 'AI First' 전략을 추진하고 있다. 이 전략은 고객과 임직원 모두를 대상으로 적용되며, 브라질 금융권의 엄격한 규제 환경 속에서 구현되고 있다.",
+    "why_it_matters": "고규제 금융 산업에서 생성형 AI를 전사적으로 도입한 사례로, 금융권 AI 거버넌스와 실제 적용 모델을 엿볼 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.3988111772486772,
+    "published_at": "2026-10-16T19:00:00Z"
+  },
+  {
+    "id": "hn-50150434",
+    "section": "community",
+    "title_en": "Timestral: Mistral's time-series foundation models",
+    "title_ko": "Timestral: Mistral의 시계열 파운데이션 모델",
+    "url": "https://mistral.ai/news/timestral/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Mistral이 시계열 데이터를 위한 파운데이션 모델인 Timestral을 공개했다. 상세한 설명은 제공되지 않았으나, Mistral의 LLM 기술력을 시계열 분야에 적용한 모델로 보인다.",
+    "why_it_matters": "LLM 강자 Mistral이 시계열 파운데이션 모델 시장에 진입했다는 점에서 주목할 만하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.58912989598378,
+    "published_at": "2026-10-19T09:59:32Z"
+  },
+  {
+    "id": "hn-50151036",
+    "section": "community",
+    "title_en": "Ask HN: How to deal with shipping AI-written code you don't understand?",
+    "title_ko": "AI가 작성한 코드, 이해 못한 채 배포해도 될까?",
+    "url": "https://news.ycombinator.com/item?id=50151036",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Hacker News에서 개발자들이 AI가 생성한 코드를 충분히 이해하지 못한 상태로 프로덕션에 배포하는 상황에 대해 논의하고 있다. 코드 품질, 유지보수성, 책임 소재 등 실무적 고민이 화두다.",
+    "why_it_matters": "AI 코드 생성이 일상화되면서 '이해 없는 배포'의 리스크와 개발자 책임에 대한 업계 공통 고민을 반영한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.421713412851425,
+    "published_at": "2026-10-19T11:24:34Z"
+  },
+  {
+    "id": "hn-50150809",
+    "section": "community",
+    "title_en": "Let's Encrypt is adding two additional remote perspectives for domain validation",
+    "title_ko": "Let's Encrypt, 도메인 검증을 위한 원격 관점 2개 추가",
+    "url": "https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Let's Encrypt가 도메인 유효성 검사 과정에 두 개의 추가적인 원격 관점(remote perspective)을 도입한다. 이는 도메인 검증의 보안성과 신뢰성을 높이기 위한 조치로 보인다.",
+    "why_it_matters": "인터넷 인프라의 핵심인 무료 TLS 인증 기관의 보안 강화는 전체 웹 생태계 신뢰성에 직접적인 영향을 미친다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 8.656699644417497,
+    "published_at": "2026-10-19T10:53:39Z"
+  },
+  {
+    "id": "hn-50155245",
+    "section": "community",
+    "title_en": "Mercury 3: Diffusion at scale",
+    "title_ko": "Mercury 3: 대규모 디퓨전 모델",
+    "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Mercury 3는 대규모 확산(Diffusion) 기반 모델에 관한 내용이다. 제목 외 구체적인 세부 정보는 제공되지 않았다.",
+    "why_it_matters": "디퓨전 방식의 대규모 언어·생성 모델 연구 동향을 파악하는 데 참고할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.596604035929325,
+    "published_at": "2026-10-19T17:27:11Z"
+  },
+  {
+    "id": "hn-50136126",
+    "section": "community",
+    "title_en": "RuneScape Bench: MMOs for Agents [video]",
+    "title_ko": "RuneScape 벤치: 에이전트를 위한 MMO 환경",
+    "url": "https://www.youtube.com/watch?v=cNm4zyUtWj0",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "RuneScape를 활용해 AI 에이전트를 평가하는 벤치마크에 관한 영상이다. MMO 게임 환경을 에이전트 테스트베드로 사용하는 접근 방식을 다루고 있다.",
+    "why_it_matters": "복잡한 MMO 게임 환경이 AI 에이전트의 장기 계획 및 상호작용 능력을 평가하는 새로운 벤치마크로 주목받고 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 7.984370264177182,
+    "published_at": "2026-10-17T23:24:05Z"
+  },
+  {
+    "id": "simon_willison-my-obituary-for-programming",
+    "section": "deepdive",
+    "title_en": "My obituary for programming",
+    "title_ko": "프로그래밍을 위한 부고문",
+    "url": "https://simonwillison.net/2026/Oct/19/my-obituary-for-programming/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Jeremy Scheff는 코딩 에이전트의 등장으로 프로그래머들이 겪는 핵심적인 상실감을 담담하게 포착한다. 과거 프로그래밍은 어려운 논리 퍼즐을 푸는 직업으로, 문제가 복잡할수록 더 높은 보상이 따랐다. LLM은 시스템 구축 자체를 즐기는 개발자에게는 축복이지만, 문제를 직접 풀어나가는 과정에서 보람을 찾던 개발자에게는 진정한 상실이다.",
+    "why_it_matters": "AI 코딩 도구가 보편화되면서 '퍼즐 풀기'를 직업적 정체성으로 삼아온 개발자들의 역할과 의미가 근본적으로 변화하고 있음을 시사한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8569874338624339,
+    "published_at": "2026-10-19T23:58:25Z"
+  }
+]
