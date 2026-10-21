@@ -1,0 +1,377 @@
+[
+  {
+    "id": "hf-2610.26802",
+    "section": "papers",
+    "title_en": "Scaling Parameter-Efficient Fine-Tuning for Brain Encoding",
+    "title_ko": "뇌 인코딩을 위한 파라미터 효율적 파인튜닝 스케일링 (BrainLoRA)",
+    "url": "https://huggingface.co/papers/2610.26802",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "신경 반응 예측(뇌 인코딩) 모델에 LoRA 기반 파라미터 효율적 파인튜닝(PEFT)을 적용해 최대 104B 파라미터의 대형 멀티모달 백본을 효율적으로 적응시키는 BrainLoRA를 제안했다. 인과적 구조를 활용해 단일 패스로 여러 시점을 예측함으로써 연산 비용을 크게 줄였으며, 200개 이상의 LoRA 앙상블로 Algonauts 2025 챌린지 공개 리더보드 1위를 달성했다. 또한 적응된 백본이 해석 가능성을 유지하며 감각 위상 지도(sensory topography)를 자동 복원함을 확인했다.",
+    "why_it_matters": "신경 데이터가 부족한 뇌과학 연구에서 PEFT가 초대형 멀티모달 모델을 실용적으로 활용할 수 있는 핵심 패러다임임을 실증적으로 입증했다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 6.455321115357702,
+    "published_at": "2026-10-18T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.26825",
+    "section": "papers",
+    "title_en": "MemT-1.0: Towards Memory-Native Evolution",
+    "title_ko": "MemT-1.0: 메모리를 내재화한 파운데이션 모델 아키텍처",
+    "url": "https://huggingface.co/papers/2610.26825",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "MemT-1.0은 메모리를 모델 연산의 일부로 내재화하는 새로운 파운데이션 모델 아키텍처입니다. Gated DeltaNet-2와 Mixture-of-Storage를 활용하며, 34B 토큰 학습 데이터 기반의 2단계 학습 파이프라인을 통해 MemT-1.0-Nano와 MemT-1.0-Flash 두 모델을 공개했습니다. 128K 토큰 히스토리 길이에서 MemT-1.0-Nano는 추론 속도 약 1.86배 향상, KV 캐시 대비 영구 스토리지 66배 절감을 달성했습니다. RAG 방식과 경쟁력을 유지하면서도 에이전틱 태스크 성공률을 개선했습니다.",
+    "why_it_matters": "외부 검색 없이 모델 자체가 메모리를 내재화함으로써 RAG 없이도 장기 문맥을 효율적으로 처리할 수 있는 새로운 패러다임을 제시한다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "에이전트"
+    ],
+    "score": 5.990432586778736,
+    "published_at": "2026-10-18T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.26549",
+    "section": "papers",
+    "title_en": "Holi-World: Building Holistic World Intelligence from Human-Ego Experience",
+    "title_ko": "Holi-World: 인간 1인칭 경험 기반 총체적 세계 이해 AI 생태계",
+    "url": "https://huggingface.co/papers/2610.26549",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "HOLI-WORLD는 인간의 1인칭(에고센트릭) 영상 경험을 활용해 장면 구조, 객체 의미론, 상호작용 이력을 연결하는 통합 AI 생태계다. 약 100개 장면에서 수집된 데이터와 약 8만 개의 QA 쌍으로 HOLIWORLD-VL-4B 모델을 학습시켰으며, ScanNet 등 주요 벤치마크에서 강력한 성능을 보였다. 수동 어노테이션 의존도를 줄이는 자동화된 데이터 구축 파이프라인(HOLIWORLD-Foundry)을 포함해 공간·시간적 추론 능력을 크게 향상시켰다.",
+    "why_it_matters": "1인칭 영상을 자동으로 학습 데이터화하는 파이프라인과 벤치마크를 동시에 제공해, 동적 세계 이해 AI 연구의 데이터 병목을 해소할 수 있는 실용적 기반을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.709530201312334,
+    "published_at": "2026-10-18T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.25736",
+    "section": "papers",
+    "title_en": "Learning from Fleet Experience: A Collective Learning Paradigm for Robots",
+    "title_ko": "로봇 군집 경험 공유를 통한 집단 학습 패러다임",
+    "url": "https://huggingface.co/papers/2610.25736",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "배포된 로봇들이 실행 경험을 공유해 공통 정책을 개선하는 집단 경험 학습(CEL) 패러다임을 소개한다. 핵심 기법인 FERT는 로봇 실패 맥락을 활용해 군집의 성공 경험에서 관련 궤적을 검색하고, 추가 전문가 시연 없이 정책을 업데이트한다. 5가지 실제 조작 작업에서 태스크당 120회 시험 기준 93.3~99.2%의 성공률을 달성했으며, 96대 로봇으로 학습 시 성공률이 79.2%에서 98.3%로 향상됐다.",
+    "why_it_matters": "전문가 개입 없이 로봇 대수가 늘수록 성능이 개선되는 확장 가능한 학습 방식으로, 대규모 로봇 플리트 운영의 현실적 대안을 제시한다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 5.68213122712422,
+    "published_at": "2026-10-18T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.26824",
+    "section": "papers",
+    "title_en": "SpecMRL: Redesign Matryoshka Representation Learning within Parametric Spectrum",
+    "title_ko": "SpecMRL: 파라메트릭 스펙트럼 기반의 마트로시카 표현 학습 재설계",
+    "url": "https://huggingface.co/papers/2610.26824",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "마트로시카 표현 학습(MRL)은 중첩된 프리픽스를 공동 최적화해 유연한 표현 크기를 지원하지만, 앞부분이 적절한 압축 인코딩을 제공하도록 강제하는 명시적 제약이 없다는 한계가 있다. SpecMRL은 파라미터에서 도출된 스펙트럴 기저를 특징 중요도 순으로 정렬해 피처 공간을 재구성하고, 학습된 스펙트럴 공간에서 프리픽스 읽기를 수행한다. MTEB 실험에서 SpecMRL은 평가된 모든 축소 차원에서 MRL을 능가했으며, 압축이 강할수록 더 큰 성능 향상을 보였다. 특히 임베딩 차원을 절반만 사용하면서도 전체 차원 MRL의 성능을 뛰어넘는 결과를 달성했다.",
+    "why_it_matters": "임베딩 차원을 절반으로 줄이면서도 기존 MRL 전체 성능을 초과해, RAG 등 대규모 벡터 검색 비용을 크게 절감할 수 있는 실용적 방법론이다.",
+    "tags": [
+      "RAG",
+      "LLM"
+    ],
+    "score": 5.406719247264253,
+    "published_at": "2026-10-18T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-ted-taylor-restaurant",
+    "section": "releases",
+    "title_en": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
+    "title_ko": "ChatGPT로 현금 정산 시간 94% 단축한 프랜차이즈 사례",
+    "url": "https://openai.com/index/ted-taylor-restaurant",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "슐로츠키스·시나본 독립 프랜차이즈 운영자가 ChatGPT를 활용해 현금 정산 시간을 94% 줄이는 데 성공했다. 메뉴 가격 재조정 시간도 95% 단축됐으며, 이를 통해 최대 10만 달러의 현금 흐름을 확보할 수 있는 워크플로를 구축했다.",
+    "why_it_matters": "LLM 기반 업무 자동화가 중소 프랜차이즈의 재무 운영 효율을 극적으로 개선할 수 있음을 실제 사례로 입증한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7738111772486773,
+    "published_at": "2026-10-20T10:00:00Z"
+  },
+  {
+    "id": "github_trending-MadsLorentzen/ai-job-search",
+    "section": "releases",
+    "title_en": "MadsLorentzen/ai-job-search",
+    "title_ko": "AI 취업 지원 프레임워크: Claude Code 기반 자동 이력서·커버레터 생성",
+    "url": "https://github.com/MadsLorentzen/ai-job-search",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code를 기반으로 구인 공고 평가, 이력서 맞춤 작성, 커버레터 생성, 면접 준비까지 전 과정을 자동화하는 오픈소스 취업 지원 프레임워크다. /scrape, /apply, /interview 등의 명령어로 구직 파이프라인을 구성하며, LaTeX PDF 컴파일과 ATS 파싱 검증까지 포함한다. 제작자가 직접 69건의 지원서를 보내 20번의 1차 면접과 채용 계약을 이끌어낸 실전 검증 도구이며, MIT 라이선스 오픈소스로 공개됐다.",
+    "why_it_matters": "AI 에이전트를 실제 취업 활동에 적용한 검증된 워크플로우로, 개발자가 자신의 구직 과정을 자동화·최적화하는 구체적 레퍼런스를 제공한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7473693783068783,
+    "published_at": "2026-10-20T05:33:28Z"
+  },
+  {
+    "id": "github_trending-akitaonrails/ai-memory",
+    "section": "releases",
+    "title_en": "akitaonrails/ai-memory",
+    "title_ko": "ai-memory: 여러 AI 코딩 에이전트 간 장기 메모리 공유 오픈소스 도구",
+    "url": "https://github.com/akitaonrails/ai-memory",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "ai-memory는 Claude Code, Codex, Cursor, Gemini CLI 등 20개 이상의 AI 코딩 에이전트 간에 장기 메모리를 공유할 수 있는 오픈소스 도구다. 메모리는 git으로 버전 관리되는 마크다운 파일로 저장되며, 기본적으로 LLM API 호출 없이 동작한다. 라이프사이클 훅이 세션 활동을 자동으로 캡처하고, 세션 종료 시 위키 페이지로 정리해 다음 에이전트가 어디서 작업이 끊겼는지 파악할 수 있도록 핸드오프를 제공한다. 팀 공유, 멀티머신 지원, 멀티유저 인증도 기본 내장되어 있다.",
+    "why_it_matters": "에이전트를 전환할 때마다 프로젝트 컨텍스트를 반복 설명해야 하는 문제를 해결하며, 특정 벤더 에이전트에 종속되지 않는 범용 장기 메모리 레이어를 제공한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "RAG"
+    ],
+    "score": 0.7473693783068783,
+    "published_at": "2026-10-20T05:33:28Z"
+  },
+  {
+    "id": "github_trending-stablyai/orca",
+    "section": "releases",
+    "title_en": "stablyai/orca",
+    "title_ko": "Orca: 여러 AI 코딩 에이전트를 한 곳에서 관리하는 오케스트레이터",
+    "url": "https://github.com/stablyai/orca",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Orca는 Claude Code, Codex, Grok 등 다양한 CLI 코딩 에이전트를 데스크톱·모바일·원격 환경에서 통합 관리할 수 있는 오픈소스 AI 오케스트레이터입니다. 하나의 프롬프트를 여러 에이전트에 동시에 실행하고 각자 독립된 git 워크트리에서 결과를 비교할 수 있습니다. macOS·Windows·Linux 데스크톱과 iOS·Android 모바일 앱을 지원하며, MIT 라이선스로 무료로 사용할 수 있습니다.",
+    "why_it_matters": "수십 종의 AI 코딩 에이전트를 병렬로 실행·비교·관리할 수 있어 개발 생산성을 크게 높일 수 있는 범용 에이전트 허브다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7473693783068783,
+    "published_at": "2026-10-20T05:33:28Z"
+  },
+  {
+    "id": "github_trending-headroomlabs-ai/headroom",
+    "section": "releases",
+    "title_en": "headroomlabs-ai/headroom",
+    "title_ko": "Headroom: LLM 전송 전 컨텍스트 압축 레이어",
+    "url": "https://github.com/headroomlabs-ai/headroom",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Headroom은 AI 에이전트의 툴 출력, 로그, RAG 청크, 파일 등을 LLM에 전달하기 전에 로컬에서 압축하는 오픈소스 도구입니다. JSON은 60~95%, 코딩 에이전트 프롬프트는 약 20%의 토큰을 절감하며 동일한 응답 품질을 유지합니다. 라이브러리, 프록시, MCP 서버 등 다양한 통합 방식을 지원하며 Claude, Codex, Cursor 등 주요 에이전트와 호환됩니다. 압축은 모두 로컬에서 실행되어 데이터가 외부로 전송되지 않습니다.",
+    "why_it_matters": "LLM API 비용의 핵심인 컨텍스트 토큰을 코드 변경 없이 대폭 절감할 수 있어, AI 에이전트를 운영하는 개발자에게 실질적인 비용 절감 수단이 된다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "에이전트"
+    ],
+    "score": 0.7473693783068783,
+    "published_at": "2026-10-20T05:33:28Z"
+  },
+  {
+    "id": "github_trending-anthropics/claude-code",
+    "section": "releases",
+    "title_en": "anthropics/claude-code",
+    "title_ko": "Anthropic의 Claude Code: 터미널 기반 AI 코딩 에이전트",
+    "url": "https://github.com/anthropics/claude-code",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code는 터미널에서 동작하는 Anthropic의 에이전트형 코딩 도구로, 자연어 명령만으로 코드 설명, 반복 작업 실행, Git 워크플로우 처리 등을 지원합니다. macOS, Linux, Windows 모두 지원하며, IDE 연동 및 GitHub에서 @claude 태그를 통한 사용도 가능합니다. npm 설치는 deprecated되어 공식 설치 스크립트나 패키지 매니저 사용이 권장됩니다.",
+    "why_it_matters": "Anthropic이 직접 공개한 오픈소스 코딩 에이전트로, 터미널·IDE·GitHub 등 다양한 환경에서 자연어 기반 개발 자동화를 실현할 수 있는 공식 도구다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7473693783068783,
+    "published_at": "2026-10-20T05:33:28Z"
+  },
+  {
+    "id": "openai_blog-openai-to-acquire-orchestra-bio",
+    "section": "releases",
+    "title_en": "OpenAI acquires Orchestra Bio",
+    "title_ko": "OpenAI, 오케스트라 바이오 인수…생명과학 R&D에 AI 적용",
+    "url": "https://openai.com/index/openai-to-acquire-orchestra-bio",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 Orchestra Bio를 인수했다. 이를 통해 AI 기반 운영 역량을 생명과학 연구개발 분야에 접목하고, 제약·바이오 기업들의 신약 개발을 가속화할 계획이다. 이번 인수는 OpenAI의 헬스케어 및 생명과학 분야 진출을 본격화하는 움직임으로 풀이된다.",
+    "why_it_matters": "OpenAI가 생명과학 R&D 영역으로 사업을 확장하며 AI 기반 신약 개발 경쟁이 한층 격화될 전망이다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-10-20T00:00:00Z"
+  },
+  {
+    "id": "hn-50163277",
+    "section": "community",
+    "title_en": "DeepInfer: High-performance inference framework for DeepSeek models",
+    "title_ko": "DeepInfer: DeepSeek 모델을 위한 고성능 추론 프레임워크",
+    "url": "https://github.com/deepseek-ai/DeepInfer",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "DeepInfer는 DeepSeek 모델에 특화된 고성능 추론 프레임워크다. 제목 외 세부 정보는 제공되지 않아 추가적인 내용은 확인이 필요하다.",
+    "why_it_matters": "DeepSeek 모델의 추론 성능 최적화에 관심 있는 개발자라면 주목할 만한 프로젝트다.",
+    "tags": [
+      "LLM",
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 12.009498514142724,
+    "published_at": "2026-10-20T09:08:54Z"
+  },
+  {
+    "id": "hn-50170593",
+    "section": "community",
+    "title_en": "SimCity, but with Permits",
+    "title_ko": "허가증이 있는 심시티",
+    "url": "https://permit.petercai.com/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "심시티에 실제 도시 건축 허가 시스템을 도입한 프로젝트로 보인다. 제목만으로는 구체적인 내용을 파악하기 어렵다.",
+    "why_it_matters": "도시 시뮬레이션에 현실적인 행정 절차를 결합한 실험적 시도일 수 있으나 상세 정보가 부족하다.",
+    "tags": [],
+    "score": 9.99051006876108,
+    "published_at": "2026-10-20T18:29:09Z"
+  },
+  {
+    "id": "hn-50167536",
+    "section": "community",
+    "title_en": "Facebook Pages require paid subscription to post more than two links per month",
+    "title_ko": "페이스북 페이지, 월 2개 초과 링크 게시 시 유료 구독 필요",
+    "url": "https://mastodon.gamedev.place/@AshleyGullen/117473851565913919",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "페이스북 페이지에서 한 달에 2개 이상의 링크를 게시하려면 유료 구독이 필요하게 되었다. 이는 페이스북 페이지를 운영하는 개인 및 조직에 직접적인 영향을 미치는 정책 변화다.",
+    "why_it_matters": "무료로 콘텐츠를 배포하던 커뮤니티·미디어·개발자 페이지 운영자들이 비용 부담을 안게 될 수 있다.",
+    "tags": [],
+    "score": 9.97094108414986,
+    "published_at": "2026-10-20T15:06:08Z"
+  },
+  {
+    "id": "hn-50168396",
+    "section": "community",
+    "title_en": "Voxtral 3",
+    "title_ko": "Voxtral 3 출시",
+    "url": "https://mistral.ai/news/voxtral-3/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Voxtral 3가 공개되었다. 상세 설명이 제공되지 않아 구체적인 기능이나 성능 정보는 확인되지 않는다.",
+    "why_it_matters": "Voxtral 3의 등장은 음성 AI 모델 분야의 새로운 경쟁작으로 주목할 필요가 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.660885205436717,
+    "published_at": "2026-10-20T16:02:07Z"
+  },
+  {
+    "id": "hn-50108717",
+    "section": "community",
+    "title_en": "SlopCodeBench 10/2026 – Opus 5.5, Astra wins overall, xhigh considered harmful",
+    "title_ko": "SlopCodeBench 10/2026 – Opus 5.5, Astra 종합 1위, xhigh 설정 주의",
+    "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-new-models-on-slop-code-bench.md",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "SlopCodeBench의 최신 벤치마크 결과로, Opus 5.5와 Astra 모델이 언급되며 Astra가 종합 1위를 차지한 것으로 보인다. xhigh 설정이 유해할 수 있다는 점도 주목된다. 상세 내용은 제공된 설명이 없어 제목 기반으로만 파악 가능하다.",
+    "why_it_matters": "코딩 벤치마크에서 모델 간 성능 비교와 특정 설정의 부작용을 다루는 실용적 정보를 제공한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.092778896474218,
+    "published_at": "2026-10-15T19:09:34Z"
+  },
+  {
+    "id": "youtube-CYS2LJWiQCQ",
+    "section": "video",
+    "title_en": "'로봇이 아닙니다' 를 증명하는 방법",
+    "title_ko": "'로봇이 아닙니다'를 증명하는 방법 (CAPTCHA 인증 원리)",
+    "url": "https://www.youtube.com/shorts/CYS2LJWiQCQ",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 CAPTCHA 인증, 즉 '로봇이 아닙니다'를 증명하는 방식에 대해 다룬 영상이다. AI 관련 주제를 쉽게 설명하는 콘텐츠로, 개발자와 일반인 모두를 대상으로 한다.",
+    "why_it_matters": "AI 시대에 봇과 인간을 구별하는 CAPTCHA 기술의 원리를 이해하는 것은 보안 설계에 필수적이다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.7887500000000001,
+    "published_at": "2026-10-20T12:30:35Z"
+  },
+  {
+    "id": "youtube-TSHtmp4gEHY",
+    "section": "video",
+    "title_en": "앤트로픽이 잘 쓰던 깃을 버린 이유",
+    "title_ko": "앤트로픽이 Git 대신 다른 방식을 택한 이유",
+    "url": "https://www.youtube.com/shorts/TSHtmp4gEHY",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 앤트로픽(Anthropic)이 기존에 사용하던 Git을 버린 배경과 이유를 다루는 영상이다. AI 개발 환경의 변화에 따라 코드 관리 방식도 달라지고 있음을 소개한다.",
+    "why_it_matters": "AI 기반 개발 워크플로우가 전통적인 버전 관리 도구까지 바꾸고 있다는 점에서 개발자들의 관심이 필요하다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7798181216931217,
+    "published_at": "2026-10-20T11:00:33Z"
+  },
+  {
+    "id": "youtube-FFfEr4vaIrQ",
+    "section": "video",
+    "title_en": "일레븐랩스 다 따라잡아버린 오픈소스 등장",
+    "title_ko": "일레븐랩스를 따라잡은 오픈소스 TTS 등장",
+    "url": "https://www.youtube.com/shorts/FFfEr4vaIrQ",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "유명 TTS 서비스인 일레븐랩스(ElevenLabs) 수준에 근접한 오픈소스 음성 합성 모델이 등장했다는 내용을 다루는 영상이다. 조코딩 채널에서 해당 오픈소스 TTS를 소개하고 있다. 구체적인 모델명이나 벤치마크 수치는 영상 설명에 명시되어 있지 않다.",
+    "why_it_matters": "고품질 TTS를 무료·오픈소스로 구현할 수 있다면 음성 AI 서비스 진입 장벽이 크게 낮아진다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 0.773832671957672,
+    "published_at": "2026-10-20T10:00:13Z"
+  },
+  {
+    "id": "simon_willison-emudhra-certificates",
+    "section": "deepdive",
+    "title_en": "eMudhra Intermediate CA Compromise",
+    "title_ko": "eMudhra 중간 CA 인증서 개인키 유출 사태",
+    "url": "https://simonwillison.net/2026/Oct/20/emudhra-certificates/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "eMudhra의 중간 CA 인증서 8개의 개인키가 유출됐으며, 해당 인증서는 Mozilla, Microsoft, Apple, Chrome 등 주요 루트 프로그램에서 신뢰하는 체인에 연결되어 있다. 신뢰 인증서 목록을 번들로 포함하는 모든 소프트웨어는 즉시 업데이트가 필요하며, Linux 배포판도 ca-certificates 패키지를 갱신해야 한다. Python 생태계에서는 uv 0.13.4, pip 26.2.2, certifi 2026.10.19가 업데이트된 인증서 목록을 포함해 배포됐다.",
+    "why_it_matters": "주요 OS 및 브라우저 루트 신뢰 체인에 연결된 CA 키 유출로 전 세계 HTTPS 보안 인프라에 광범위한 영향을 미치는 심각한 사건이다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.8561937830687831,
+    "published_at": "2026-10-20T23:50:25Z"
+  }
+]
