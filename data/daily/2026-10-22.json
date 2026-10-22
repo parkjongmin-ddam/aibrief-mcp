@@ -1,0 +1,319 @@
+[
+  {
+    "id": "hf-2610.27999",
+    "section": "papers",
+    "title_en": "Matrix-Game 4.0: Harnessing Video Models for Real-Time Playable Game Worlds",
+    "title_ko": "Matrix-Game 4.0: 비디오 모델로 구현하는 실시간 플레이어블 게임 월드",
+    "url": "https://huggingface.co/papers/2610.27999",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Matrix-Game 4.0은 경량 게임 엔진이 월드 상태를 유지하고 규칙을 실행하는 동안, 멀티모달 코딩 에이전트가 플레이어 아이디어를 게임 코드로 변환하고, 오토리그레시브 비디오 모델 기반 렌더러가 저폴리곤 프록시를 고화질 영상으로 변환하는 구조다. RTX5090 단일 GPU에서 480p 60FPS, 키 입력부터 화면 출력까지 112ms 레이턴시를 달성했다. 슈터·드라이빙 게임 데모와 함께 코드, 모델 가중치, 게임 에셋을 오픈소스로 공개한다.",
+    "why_it_matters": "비디오 생성 모델을 실시간 인터랙티브 게임 엔진과 결합한 최초 시스템으로, 소비자용 GPU에서 60FPS 플레이가 가능한 AI 게임 월드 생성의 실용화 가능성을 열었다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 6.204006687076795,
+    "published_at": "2026-10-19T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.26855",
+    "section": "papers",
+    "title_en": "Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience",
+    "title_ko": "Ropedia W0: 다양한 로봇 형태에 걸친 로코-매니퓰레이션 월드 모델 스케일링",
+    "url": "https://huggingface.co/papers/2610.26855",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Ropedia W0는 인간과 다양한 형태의 로봇을 아우르는 최초의 1인칭 시점 로코-매니퓰레이션 월드 파운데이션 모델이다. 인간 데이터 1만 시간과 로봇 데이터 3천 시간으로 구성된 Xp-Data를 구축하고, 카메라 포즈와 투영 스켈레톤을 통한 통합 운동학적 표현을 활용한다. 5개의 크로스-에머전스 벤치마크에서 최고 성능을 달성했으며, 증류 후 실시간 VR 인터랙션도 지원한다.",
+    "why_it_matters": "인간 경험 데이터를 대규모로 활용해 다양한 로봇 형태의 로코-매니퓰레이션을 하나의 모델로 통합함으로써, 범용 로봇 에이전트 개발의 핵심 과제를 직접 다룬다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 6.176149732573829,
+    "published_at": "2026-10-18T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.27628",
+    "section": "papers",
+    "title_en": "PAR: Progress-Aligned Recurrence for Length Generalization in State Tracking",
+    "title_ko": "PAR: 루프 언어 모델의 길이 일반화를 위한 진행 정렬 순환 기법",
+    "url": "https://huggingface.co/papers/2610.27628",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "PAR(Progress-Aligned Recurrence)는 루프 언어 모델이 더 긴 문제를 풀 수 있도록 각 반복 단계의 예측 목표를 해당 단계까지의 중간 상태에 맞추고, 반복 상태의 스케일을 첫 번째 반복 기준으로 재조정하는 기법이다. swap-S5 태스크에서 최대 32회 이동으로 학습한 Qwen2.5-0.5B 모델이 512회 이동(학습 길이의 16배)에서 95.5% 정확도를 달성했으며, 이는 기존 RLT(55.7%)와 명시적 사고 연쇄(0.8%)를 크게 상회한다. 중간 레이블이 없는 경우에는 짧은 문제 접두사만으로 대응 관계를 유도하는 접두사 자기증류(prefix self-distillation)를 적용할 수 있다.",
+    "why_it_matters": "테스트 시 반복 횟수를 늘려 학습 길이의 16배 문제까지 일반화하는 원리를 밝혀, 추론 시 계산량 확장의 효과적인 방향을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.997212273764115,
+    "published_at": "2026-10-19T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.28354",
+    "section": "papers",
+    "title_en": "S-Agent 2.0: Spatial Reasoning with a General Coding Agent",
+    "title_ko": "S-Agent 2.0: 일반 코딩 에이전트를 활용한 3D 공간 추론",
+    "url": "https://huggingface.co/papers/2610.28354",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "S-Agent 2.0은 범용 코딩 에이전트에 커맨드라인 3D 지각 툴킷을 결합한 공간 추론 에이전트로, 모델이 장면 증거를 수집·기억하고 이를 평이한 공간 언어로 해석하도록 설계되었다. MMSI-Bench와 ReVSI 벤치마크에서 Qwen3-27B 기준으로 각각 +13.9, +20.5점, Gemini Flash 기준으로 +11.2, +9.6점 향상을 달성했다. 오픈소스 백본으로 MMSI-Bench 66.5, ReVSI 82.3을 기록해 특화 시스템 SpatialClaw(62.6, 74.5)를 앞섰으며, Codex·Claude Code 등 다양한 코딩 에이전트 프레임워크에서도 동작한다.",
+    "why_it_matters": "특화 시스템 없이 범용 코딩 에이전트만으로 3D 공간 추론 최고 성능을 달성해, VLM의 공간 이해 한계를 실용적으로 극복할 수 있음을 보여준다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.5217885770490405,
+    "published_at": "2026-10-19T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.25078",
+    "section": "papers",
+    "title_en": "CoEvo-RSI: When Harnesses Evolve, Which Models Should Follow?",
+    "title_ko": "CoEvo-RSI: 에이전트 하네스와 모델의 공진화 프레임워크",
+    "url": "https://huggingface.co/papers/2610.25078",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "CoEvo-RSI는 재귀적 자기개선(RSI) 에이전트에서 '두뇌-신체 불일치' 문제를 해결하는 프레임워크다. 진화 아카이브와 실행 피드백을 기반으로 메타 에이전트가 하네스 설계와 모델 체크포인트 선택·병합·적응을 양방향으로 조율한다. SFT만으로 학습된 Qwen3.5-9B가 TraceElephant에서 DeepSeek-V4-Pro를 +14.16, HomeBench VM에서 GLM-5.3을 +4.90 성공률로 능가하는 성과를 보였다.",
+    "why_it_matters": "소형 모델도 하네스-모델 공진화 정렬만으로 대형 모델을 넘어설 수 있음을 실증해, 효율적인 에이전트 개발 패러다임에 새로운 방향을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.0943445622221,
+    "published_at": "2026-10-17T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-broad-access-through-consistent-standards",
+    "section": "releases",
+    "title_en": "Broad access through consistent standards",
+    "title_ko": "일관된 기준을 통한 광범위한 접근 보장",
+    "url": "https://openai.com/index/broad-access-through-consistent-standards",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI는 배포 파트너들과 협력하여 일관된 안전장치를 유지하고 책임 있는 접근을 지원하며 사용 정책에 대한 기대치를 명확히 하고 있다. 이를 통해 다양한 파트너 채널을 통해 OpenAI 기술이 배포될 때도 동일한 안전 기준이 적용되도록 하는 방식을 소개한다.",
+    "why_it_matters": "AI 기술이 다양한 파트너를 통해 확산될수록 일관된 사용 정책과 안전 기준의 적용이 신뢰할 수 있는 AI 생태계 구축의 핵심이 된다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.8392873677248678,
+    "published_at": "2026-10-21T21:00:00Z"
+  },
+  {
+    "id": "openai_blog-att-legal",
+    "section": "releases",
+    "title_en": "How AT&T is rethinking in-house legal work with OpenAI",
+    "title_ko": "AT&T, OpenAI로 사내 법무 업무 혁신 추진",
+    "url": "https://openai.com/index/att-legal",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "AT&T는 OpenAI와 협력하여 법무 지식 접근성을 높이는 작업을 진행 중이다. LegalEdge 팀을 중심으로 법무 요청 접수(intake) 프로세스를 재설계하고, 법적 판단을 조직 전반으로 확장하는 방안을 모색하고 있다. 이를 통해 사내 법무 업무의 효율성과 확장성을 동시에 확보하려는 시도다.",
+    "why_it_matters": "글로벌 대기업이 LLM을 사내 법무 프로세스 핵심에 도입한 실제 사례로, 기업 법무 AI 활용의 방향성을 가늠할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8154778439153438,
+    "published_at": "2026-10-21T17:00:00Z"
+  },
+  {
+    "id": "openai_blog-chatgpt-ads-expands-26-new-countries",
+    "section": "releases",
+    "title_en": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+    "title_ko": "ChatGPT 광고, 26개국 추가 확장…광고주 10만 명 돌파",
+    "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "ChatGPT 광고 플랫폼이 26개 신규 국가로 확대되며, 누적 광고주 수가 10만 명을 넘어섰다. 지역 소상공인부터 글로벌 브랜드까지 다양한 광고주들이 ChatGPT 내에서 사용자의 탐색·비교·구매 결정 과정에 광고를 노출할 수 있게 됐다.",
+    "why_it_matters": "ChatGPT가 단순 AI 어시스턴트를 넘어 광고 기반 커머스 플랫폼으로 빠르게 진화하고 있음을 보여주는 신호다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7916683201058201,
+    "published_at": "2026-10-21T13:00:00Z"
+  },
+  {
+    "id": "openai_blog-openai-models-google-cloud",
+    "section": "releases",
+    "title_en": "OpenAI models are coming to Google Cloud",
+    "title_ko": "OpenAI 모델, Google Cloud에 출시 예정",
+    "url": "https://openai.com/index/openai-models-google-cloud",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI와 Google Cloud가 협력하여 OpenAI의 최신 모델과 Codex 워크플로우를 Google Cloud의 Gemini Model Garden에서 제공한다. 이 서비스는 Google Cloud Marketplace를 통해 이용 가능하다.",
+    "why_it_matters": "경쟁 관계였던 OpenAI와 Google이 협력하며 클라우드 AI 생태계 판도가 크게 변화할 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.7857159391534392,
+    "published_at": "2026-10-21T12:00:00Z"
+  },
+  {
+    "id": "openai_blog-coordinated-disclosure-of-critical-vulnerabilities",
+    "section": "releases",
+    "title_en": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+    "title_ko": "Patch the Planet: 에이전트가 발견한 취약점에 대한 글로벌 대응 조율",
+    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Patch the Planet은 보안 연구자, 오픈소스 유지관리자, 인시던트 대응자를 연결해 오픈소스 전반의 심각한 취약점을 해결하는 프로젝트다. AI 에이전트를 활용해 취약점을 발견하고, 발견된 취약점에 대한 글로벌 대응을 조율하는 것을 목표로 한다. OpenAI가 주도하는 이 이니셔티브는 오픈소스 생태계의 보안 강화를 지원한다.",
+    "why_it_matters": "AI 에이전트가 오픈소스 취약점 탐지부터 글로벌 대응 조율까지 보안 워크플로우 전반에 실질적으로 활용되기 시작했음을 보여주는 사례다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7559540343915344,
+    "published_at": "2026-10-21T07:00:00Z"
+  },
+  {
+    "id": "openai_blog-building-chatgpt-ad-stack",
+    "section": "releases",
+    "title_en": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+    "title_ko": "OpenAI가 ChatGPT 광고 시스템을 구축한 방법",
+    "url": "https://openai.com/index/building-chatgpt-ad-stack",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI는 LLM 기반의 광고 스택을 ChatGPT에 구축했으며, 대화 맥락에서 사용자 의도를 파악해 관련성 높은 광고를 제공한다. 핵심 원칙은 광고와 실제 답변을 명확히 분리해 사용자 신뢰를 유지하는 것이다. 이 시스템은 대규모로 관련 광고를 제공할 수 있도록 설계되었다.",
+    "why_it_matters": "ChatGPT가 본격적인 광고 수익 모델을 도입함에 따라 AI 서비스의 상업화 방식과 사용자 경험 간의 균형이 업계 전반에 영향을 미칠 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7559540343915344,
+    "published_at": "2026-10-21T07:00:00Z"
+  },
+  {
+    "id": "github_trending-MadsLorentzen/ai-job-search",
+    "section": "releases",
+    "title_en": "MadsLorentzen/ai-job-search",
+    "title_ko": "AI 구직 자동화 프레임워크 - Claude Code 기반 이력서·커버레터·면접 준비",
+    "url": "https://github.com/MadsLorentzen/ai-job-search",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code를 기반으로 구직 활동 전 과정을 자동화하는 오픈소스 프레임워크입니다. 채용 공고 적합도 평가, LaTeX 이력서 및 커버레터 맞춤 작성, ATS 파싱 검증, 면접 준비까지 지원합니다. 개발자가 실제로 69개의 맞춤 지원서를 작성해 취업에 성공한 경험을 토대로 공개한 도구로, 덴마크 구직 포털 기본 지원과 함께 글로벌 확장도 가능합니다.",
+    "why_it_matters": "AI 에이전트를 활용한 구직 자동화의 실제 사례로, 이력서 레이아웃 검증·ATS 최적화·드래프터-리뷰어 이중 검증 등 실용적인 워크플로우 설계 패턴을 참고할 수 있습니다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7474206349206349,
+    "published_at": "2026-10-21T05:33:59Z"
+  },
+  {
+    "id": "hn-50181114",
+    "section": "community",
+    "title_en": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
+    "title_ko": "PyPI의 LiteLLM 1.107.0, 자격증명 탈취 및 백도어 악성코드 포함",
+    "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "PyPI에 배포된 LiteLLM 버전 1.107.0이 침해되어 자격증명 탈취 및 백도어 기능을 설치하는 악성코드가 포함된 것으로 확인됐다. 해당 패키지를 설치한 사용자는 즉시 조치가 필요하다.",
+    "why_it_matters": "LLM 개발에 널리 쓰이는 LiteLLM 패키지가 공급망 공격에 노출되어, AI 개발 환경의 보안 위협이 현실화된 사례다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 9.4816556725706,
+    "published_at": "2026-10-21T14:00:26Z"
+  },
+  {
+    "id": "hn-50186037",
+    "section": "community",
+    "title_en": "Claude Duet",
+    "title_ko": "Claude Duet",
+    "url": "https://claude.com/product/claude-duet",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "'Claude Duet'이라는 제목의 소식이 Hacker News에 공유되었으나, 구체적인 설명이 제공되지 않아 상세 내용을 확인하기 어렵다.",
+    "why_it_matters": "Anthropic의 Claude 관련 새로운 기능 또는 프로젝트일 가능성이 있으나, 추가 정보 확인이 필요하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.457054198687821,
+    "published_at": "2026-10-21T19:14:01Z"
+  },
+  {
+    "id": "hn-50181175",
+    "section": "community",
+    "title_en": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
+    "title_ko": "패치 더 플래닛: 에이전트가 취약점 발견 시 글로벌 대응 조율",
+    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI 에이전트가 취약점을 발견했을 때 전 세계적으로 어떻게 대응을 조율할 수 있는지를 다루는 주제다. 에이전트 기반 시스템이 보안 취약점 탐지 및 패치 배포에 활용되는 시나리오를 논의한다.",
+    "why_it_matters": "AI 에이전트가 보안 취약점 대응에 실질적으로 투입될 경우, 글로벌 조율 체계가 필수적으로 요구된다는 점에서 중요하다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 8.948940964250458,
+    "published_at": "2026-10-21T14:03:43Z"
+  },
+  {
+    "id": "hn-50188228",
+    "section": "community",
+    "title_en": "Railway Security Disclosure",
+    "title_ko": "Railway 보안 취약점 공개",
+    "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Railway 플랫폼과 관련된 보안 취약점이 공개되었다. 구체적인 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "클라우드 인프라 플랫폼의 보안 취약점 공개는 이를 사용하는 개발자와 팀에 직접적인 영향을 줄 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 8.898256013415429,
+    "published_at": "2026-10-21T21:58:03Z"
+  },
+  {
+    "id": "hn-50180079",
+    "section": "community",
+    "title_en": "OpenAI models are coming to Google Cloud",
+    "title_ko": "OpenAI 모델, 구글 클라우드에 출시 예정",
+    "url": "https://openai.com/index/openai-models-google-cloud/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "OpenAI 모델이 구글 클라우드 플랫폼을 통해 제공될 예정이다. 두 기업 간의 협력으로 구글 클라우드 사용자들이 OpenAI의 모델에 접근할 수 있게 될 것으로 보인다.",
+    "why_it_matters": "경쟁 관계였던 OpenAI와 구글 클라우드의 협력은 AI 클라우드 시장 구도에 큰 변화를 시사한다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 8.703455891456112,
+    "published_at": "2026-10-21T12:53:11Z"
+  },
+  {
+    "id": "simon_willison-php-security-release",
+    "section": "deepdive",
+    "title_en": "Today's PHP Security Release, and How We're Strengthening PHP Security",
+    "title_ko": "PHP 8.x 전 라인 긴급 보안 업데이트 - 원격 코드 실행 취약점 익스플로잇 유포 중",
+    "url": "https://simonwillison.net/2026/Oct/21/php-security-release/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "PHP 8.x 전 버전에서 원격 코드 실행(RCE) 취약점 두 건이 발견되어 긴급 패치가 배포됐다. 조율된 공개 절차 중 CVE ID가 사전 유출되었고, 보안 업체가 PoC 영상을 실수로 공개하면서 익스플로잇이 빠르게 확산됐다. Wiz Research가 AI 도구(Gemini 4 Argon, GPT-5.6 Sol)를 활용해 최초 취약점을 발견했으며, Drupal·WordPress 대상 비인증 RCE가 확인된 상태다. PHP를 운영 중이라면 즉시 업그레이드가 필수다.",
+    "why_it_matters": "PHP 8.x 전 라인에 걸친 RCE 취약점 익스플로잇이 이미 유포 중이며, AI 보조 취약점 발굴 사례로도 주목된다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 0.8255853174603175,
+    "published_at": "2026-10-21T18:41:53Z"
+  }
+]
