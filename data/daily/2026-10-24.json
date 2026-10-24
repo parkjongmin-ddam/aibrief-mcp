@@ -1,0 +1,370 @@
+[
+  {
+    "id": "hf-2610.31329",
+    "section": "papers",
+    "title_en": "WeVisOne-VL: Unified Visual Perception from Objects to Pixels",
+    "title_ko": "WeVisOne-VL: 객체부터 픽셀까지 통합 시각 인식 비전-언어 모델",
+    "url": "https://huggingface.co/papers/2610.31329",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "WeChat Vision 팀이 공개한 WeVisOne-VL은 객체 수준과 픽셀 수준의 시각 인식을 통합한 강력한 비전-언어 모델(VLM)이다. 객체 탐지, 참조 로컬라이제이션, 카운팅, OCR, 세그멘테이션, 매팅 등 다양한 시각 태스크를 지원하며, 포인트·박스·마스크·알파 매트 등 사용자 지정 세분화 수준으로 로컬라이제이션이 가능하다. 경량 픽셀 디코더를 특수 토큰으로 VLM에 통합하고, 3단계 커리큘럼 SFT와 혼합 태스크 RL로 학습하여 30개 이상의 벤치마크에서 우수한 성능을 보였다. 오픈소스로 공개되어 실제 배포 가능한 신뢰성 높은 인식 시스템 개발에 기여할 것으로 기대된다.",
+    "why_it_matters": "하나의 모델로 픽셀 수준까지 정밀한 시각 인식을 통합 처리하며 오픈소스로 공개돼, 실용적인 VLM 개발의 새로운 기준을 제시한다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 6.402677381872279,
+    "published_at": "2026-10-21T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.30926",
+    "section": "papers",
+    "title_en": "Making MLLM Latents Matter: Factor-Aware Predictive Learning for Cinematic Video Generation",
+    "title_ko": "MLLM 잠재 표현을 활용한 영화적 비디오 생성: Factor-Aware Predictive Learning",
+    "url": "https://huggingface.co/papers/2610.30926",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "영화적 비디오 생성을 위해 멀티모달 대형 언어 모델(MLLM)의 잠재 표현을 효과적으로 활용하는 FAPL(Factor-Aware Predictive Learning) 방법론을 제안한다. 이 방법은 캐릭터·장면·액션·카메라 등 요소별 제어와 제한된 입력에서의 시간적 추론 두 가지를 동시에 달성한다. Video Diffusion Transformer가 MLLM 표현을 우회하지 않도록 세 단계 학습 전략을 도입하며, 희소 입력→비디오 생성, 요소 인식 편집, 멀티샷 생성 세 가지 태스크에서 기존 베이스라인 대비 우수한 성능을 보였다.",
+    "why_it_matters": "MLLM의 사전 지식을 영화급 비디오 생성에 실질적으로 연결하는 체계적 학습 프레임워크를 제시해, 스파스 입력 기반 고품질 비디오 제작의 가능성을 높인다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 6.099866427824199,
+    "published_at": "2026-10-22T04:43:48Z"
+  },
+  {
+    "id": "hf-2610.30181",
+    "section": "papers",
+    "title_en": "Deep Search in Real-World Web Environments",
+    "title_ko": "실제 웹 환경에서의 딥 서치 에이전트 평가 벤치마크 'OpenDS-World'",
+    "url": "https://huggingface.co/papers/2610.30181",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "OpenDS-World는 실제 오픈 웹에서 에이전트의 멀티스텝 딥 서치 능력을 평가하는 벤치마크로, 200개의 난도 높은 태스크로 구성되어 있다. 다양한 정보 형식, 이종 파일 포맷, 상호작용 접근 요구사항을 포함하며 인간 검증을 통해 답의 유효성과 유일성을 보장했다. 12개의 최신 모델을 평가한 결과 최고 성능 모델이 39.0% 정확도를 기록했으며, 인간 평가는 21.1%에 그쳐 해당 태스크의 높은 난이도를 보여준다.",
+    "why_it_matters": "정적 검색 환경을 넘어 실제 웹에서 자율적으로 증거를 탐색·통합하는 에이전트 능력을 체계적으로 평가하는 최초의 실세계 딥 서치 벤치마크다.",
+    "tags": [
+      "에이전트",
+      "RAG"
+    ],
+    "score": 6.0238805208462765,
+    "published_at": "2026-10-18T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.30949",
+    "section": "papers",
+    "title_en": "IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems",
+    "title_ko": "IQuest-Q1: 에이전트 CLI 시스템을 위한 오픈소스 MoE 기반 모델 공개",
+    "url": "https://huggingface.co/papers/2610.30949",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "IQuest-Q1은 총 3,200억 파라미터(활성화 150억)의 희소 Mixture-of-Experts(MoE) 에이전트 파운데이션 모델이다. 사전학습, 미드트레이닝, 포스트트레이닝의 3단계 파이프라인을 통해 개발되었으며, SFT·도메인 특화 RL·MOPD를 결합한 멀티스캐폴드 포스트트레이닝으로 에이전트 코딩 역량을 강화했다. 모델 병합 기법으로 각 단계 체크포인트 간 파라미터 충돌을 완화하며, 코딩 및 범용 태스크 모두에서 성능을 발휘한다. 오픈소스로 공개되어 커뮤니티 연구에 활용 가능하다.",
+    "why_it_matters": "대규모 MoE 아키텍처와 에이전트 코딩 특화 훈련 기법을 결합한 오픈소스 모델로, CLI 기반 에이전트 시스템 연구의 새로운 기준점이 될 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 5.007333185232471,
+    "published_at": "2026-10-21T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.29677",
+    "section": "papers",
+    "title_en": "Toward Recursive Self-Improvement in Physical AI",
+    "title_ko": "물리적 AI의 재귀적 자기개선(RSI) 연구 동향",
+    "url": "https://huggingface.co/papers/2610.29677",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "재귀적 자기개선(RSI)은 시스템이 행동뿐만 아니라 개선 프로세스 자체를 향상시키는 개념이다. 이 논문은 RSI를 로봇 학습 맥락에 배치하고, 부분 관측, 비용이 큰 시행착오, 변화하는 운영 환경, 비가역적 결과 등 물리적 세계에서의 고유한 도전 과제를 분석한다. 주로 조작(manipulation) 분야의 기존 연구들이 행동 개선과 학습 절차 개선을 지원하지만, 재귀 자체에 기인한 성능 향상을 명확히 분리한 물리적 연구는 아직 없다. 저자들은 안전하고 지속 가능한 자기개선을 위한 평가 원칙과 연구 방향을 제시한다.",
+    "why_it_matters": "로봇이 스스로 학습 방식을 개선하는 RSI는 물리적 AI의 자율성과 적응력을 근본적으로 높일 수 있는 핵심 연구 방향이다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 4.850147601710058,
+    "published_at": "2026-10-20T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-scaling-storage-one-billion-users-part-two",
+    "section": "releases",
+    "title_en": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+    "title_ko": "ChatGPT 10억 사용자를 위한 온라인 스토리지 대규모 확장 (파트 II)",
+    "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 ChatGPT의 급격한 사용자 증가에 대응하기 위해 내부 스토리지 시스템 'Habitat'를 확장한 과정을 공개했다. 멀티테넌시 신뢰성 확보, 글로벌 캐싱, Azure Cosmos DB 도입을 통해 읽기 속도를 기존 대비 12배 향상시켰다. 이번 글은 대규모 AI 서비스 인프라 운영의 실제 사례를 상세히 다루고 있다.",
+    "why_it_matters": "10억 명 규모의 AI 서비스를 안정적으로 운영하기 위한 분산 스토리지 설계 전략을 실제 수치와 함께 확인할 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.8154778439153438,
+    "published_at": "2026-10-23T17:00:00Z"
+  },
+  {
+    "id": "openai_blog-securing-our-frontier-model-training-environment",
+    "section": "releases",
+    "title_en": "Securing our frontier model training environment",
+    "title_ko": "OpenAI, 최전선 모델 학습 환경 보안 강화 방안 공개",
+    "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 최전선 모델 학습 및 평가 환경의 보안 강화 조치를 공개했다. 오프라인 환경 구축과 대규모 컴퓨팅 자원을 활용한 레드팀 테스트 등 격리(containment) 강화 방안이 포함된다. 이는 AI 모델 개발 과정에서 발생할 수 있는 보안 위협에 선제적으로 대응하기 위한 노력의 일환이다.",
+    "why_it_matters": "최전선 AI 모델 학습 환경의 보안 체계를 구체적으로 공개함으로써, 업계 전반의 AI 안전·보안 기준 논의에 중요한 참고점이 된다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.7738111772486773,
+    "published_at": "2026-10-23T10:00:00Z"
+  },
+  {
+    "id": "github_trending-anthropics/knowledge-work-plugins",
+    "section": "releases",
+    "title_en": "anthropics/knowledge-work-plugins",
+    "title_ko": "Anthropic, Claude용 업무 역할별 플러그인 11종 오픈소스 공개",
+    "url": "https://github.com/anthropics/knowledge-work-plugins",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 Claude Cowork 및 Claude Code에서 사용할 수 있는 지식 근로자용 플러그인 11종을 오픈소스로 공개했다. 영업, 마케팅, 법무, 재무, 데이터 분석, 바이오 연구 등 직무별 플러그인이 포함되며, Slack·Jira·HubSpot·Snowflake 등 주요 업무 도구와 MCP 서버를 통해 연동된다. 각 플러그인은 마크다운과 JSON 파일로만 구성되어 코드 없이 커스터마이징이 가능하며, 팀 고유의 프로세스와 툴스택에 맞게 수정해 사용할 수 있다.",
+    "why_it_matters": "Anthropic이 직접 제작한 역할별 AI 플러그인을 오픈소스로 제공함으로써, 기업이 Claude를 자사 워크플로우에 빠르게 통합하고 커스터마이징할 수 있는 실용적 출발점이 생겼다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7476173941798943,
+    "published_at": "2026-10-23T05:35:58Z"
+  },
+  {
+    "id": "github_trending-DietrichGebert/ponytail",
+    "section": "releases",
+    "title_en": "DietrichGebert/ponytail",
+    "title_ko": "Ponytail: AI 에이전트를 '게으른 시니어 개발자'처럼 만드는 프롬프트 스킬",
+    "url": "https://github.com/DietrichGebert/ponytail",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Ponytail은 AI 코딩 에이전트가 꼭 필요한 코드만 작성하도록 유도하는 오픈소스 프롬프트 스킬입니다. Claude Code 벤치마크 기준으로 기존 대비 코드량 -53%, 비용 -26%, 토큰 -45%를 달성했으며, 리스크 있는 로직에 테스트가 포함되는 비율은 68%에서 98%로 높아졌습니다. `/ponytail-review`, `/ponytail-audit` 등의 명령어로 코드 리뷰와 전체 레포지토리 감사도 지원합니다.",
+    "why_it_matters": "AI 에이전트가 불필요하게 긴 코드를 생성하는 문제를 단순한 프롬프트 스킬로 해결해, 비용·품질·보안 모두를 개선할 수 있다는 점에서 실무 적용 가치가 높습니다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7476173941798943,
+    "published_at": "2026-10-23T05:35:58Z"
+  },
+  {
+    "id": "github_trending-luongnv89/claude-howto",
+    "section": "releases",
+    "title_en": "luongnv89/claude-howto",
+    "title_ko": "Claude Code 완전 정복 가이드 — 기초부터 고급 에이전트까지",
+    "url": "https://github.com/luongnv89/claude-howto",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "'claude-howto'는 Claude Code의 모든 기능을 시각적·예제 중심으로 다루는 오픈소스 학습 가이드다. 슬래시 커맨드, 메모리, 서브에이전트, MCP, 훅, 플러그인 등 10개 모듈을 단계별 학습 경로로 구성했으며, 즉시 복사해 쓸 수 있는 템플릿을 제공한다. MIT 라이선스로 무료 공개되어 있으며 GitHub 트렌딩 1위에 오른 프로젝트다.",
+    "why_it_matters": "공식 문서만으로는 파악하기 어려운 Claude Code의 기능 조합과 실무 워크플로우를 구조화된 학습 경로와 복붙 가능한 템플릿으로 빠르게 습득할 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7476173941798943,
+    "published_at": "2026-10-23T05:35:58Z"
+  },
+  {
+    "id": "openai_blog-openai-nask-ai-safety-security-partnership",
+    "section": "releases",
+    "title_en": "OpenAI and Poland’s NASK partner to advance AI safety and security",
+    "title_ko": "OpenAI, 폴란드 NASK와 AI 안전·보안 파트너십 체결",
+    "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI와 폴란드의 국가 사이버보안 연구기관 NASK가 AI 안전성, 보안 및 기술 연구 분야에서 협력하기로 했다. 이번 파트너십은 AI 안전장치를 강화하고 보다 탄력적인 디지털 생태계를 지원하는 것을 목표로 한다.",
+    "why_it_matters": "OpenAI가 유럽 국가 기관과 AI 안전·보안 협력을 확대하며 글로벌 AI 거버넌스 네트워크를 넓히고 있다는 점에서 주목된다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-10-23T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-decisions-api",
+    "section": "releases",
+    "title_en": "Build more responsive apps with the Decisions API",
+    "title_ko": "Decisions API로 더 빠른 앱을 만드세요",
+    "url": "https://openai.com/index/decisions-api",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 Decisions API를 공개했다. 빠르고 집중적이며 저렴한 비용으로 다양한 애플리케이션에서 결정을 내릴 수 있도록 설계된 API다.",
+    "why_it_matters": "저비용·고속 의사결정 API는 실시간 응답이 중요한 프로덕션 앱 개발에 새로운 선택지를 제공한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.6845254629629629,
+    "published_at": "2026-10-22T19:00:00Z"
+  },
+  {
+    "id": "hn-50212065",
+    "section": "community",
+    "title_en": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
+    "title_ko": "Kimi K3.1 Pro 및 K3.1 Pro Highspeed 출시",
+    "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Moonshot AI가 Kimi K3.1 Pro와 K3.1 Pro Highspeed 모델을 공개했다. 상세한 설명이 제공되지 않아 구체적인 성능 수치나 특징은 확인하기 어렵다.",
+    "why_it_matters": "중국 AI 스타트업 Moonshot AI의 새로운 모델 라인업으로, 글로벌 LLM 경쟁 동향을 파악하는 데 주목할 만하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.546605295216334,
+    "published_at": "2026-10-23T16:59:08Z"
+  },
+  {
+    "id": "hn-50214218",
+    "section": "community",
+    "title_en": "Now Google says it might use your Gmail and Google Photos data to target ads",
+    "title_ko": "구글, Gmail·Google Photos 데이터를 광고 타겟팅에 활용할 수 있다고 밝혀",
+    "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "구글이 Gmail과 Google Photos의 사용자 데이터를 광고 타겟팅에 활용할 가능성을 시사했다. 기존에는 개인 콘텐츠 서비스에서의 데이터 광고 활용에 대해 보다 제한적인 입장을 취해왔으나, 정책 변화가 예고되고 있다.",
+    "why_it_matters": "수십억 명이 사용하는 Gmail·Photos 데이터의 광고 활용은 개인정보 보호에 중대한 영향을 미칠 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 8.915309178768942,
+    "published_at": "2026-10-23T19:34:15Z"
+  },
+  {
+    "id": "hn-50213925",
+    "section": "community",
+    "title_en": "Dessa: the most authentic full-duplex speech model ever built",
+    "title_ko": "Dessa: 역대 가장 자연스러운 풀 듀플렉스 음성 모델",
+    "url": "https://block.xyz/dessa",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Dessa가 풀 듀플렉스(동시 양방향) 음성 모델을 공개했다. 제목에 따르면 지금까지 만들어진 것 중 가장 자연스러운 음성 모델이라고 주장한다. 상세 설명이 제공되지 않아 추가적인 기술 세부 사항은 확인이 어렵다.",
+    "why_it_matters": "풀 듀플렉스 음성 AI는 실시간 대화 품질을 크게 높일 수 있어, 음성 기반 AI 에이전트 분야에 직접적인 영향을 줄 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 8.500173206690501,
+    "published_at": "2026-10-23T19:09:54Z"
+  },
+  {
+    "id": "hn-50214416",
+    "section": "community",
+    "title_en": "Securing our frontier model training environment",
+    "title_ko": "프론티어 모델 학습 환경 보안 강화",
+    "url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "프론티어 AI 모델의 학습 환경 보안에 관한 내용을 다루고 있다. 제목만으로는 구체적인 세부 사항을 확인하기 어렵다.",
+    "why_it_matters": "대규모 AI 모델 학습 인프라의 보안은 AI 개발 전반의 안전성과 직결되는 핵심 과제다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 7.346289980822479,
+    "published_at": "2026-10-23T19:50:56Z"
+  },
+  {
+    "id": "hn-50212507",
+    "section": "community",
+    "title_en": "Air Purifiers as White Noise Machines",
+    "title_ko": "공기청정기를 백색소음 기계로 활용하기",
+    "url": "https://www.jefftk.com/p/air-purifiers-as-white-noise-machines",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "공기청정기가 백색소음 기계 역할을 할 수 있다는 내용을 다룬 글이다. 구체적인 설명은 제공되지 않았으나, 공기청정기의 팬 소음이 수면이나 집중에 도움이 되는 백색소음으로 기능할 수 있음을 시사한다.",
+    "why_it_matters": "별도 기기 없이 공기청정기 하나로 두 가지 효과를 얻을 수 있는 실용적인 아이디어다.",
+    "tags": [],
+    "score": 7.1920571114659815,
+    "published_at": "2026-10-23T17:28:36Z"
+  },
+  {
+    "id": "youtube-FiGKu8pdkW0",
+    "section": "video",
+    "title_en": "[LIVE] 어떤 AI가 가장 투자를 잘할까? | 6개 AI 모의 투자 라이브 실험",
+    "title_ko": "6개 AI 모의 투자 실험 라이브 – GPT, Claude, Gemini 등 비교",
+    "url": "https://www.youtube.com/watch?v=FiGKu8pdkW0",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 유튜브 채널에서 GPT, Claude, Gemini, Muse, Grok, DeepSeek 6개 AI 모델에게 각각 모의 투자를 시키는 프로그램을 라이브로 제작합니다. NH투자증권 Namuh PLUG를 활용해 각 AI가 종목 선정과 매매 규칙을 어떻게 결정하는지 살펴볼 예정입니다. 약 2주간 모의 운영 후 11월 6일 라이브에서 결과를 비교·분석합니다.",
+    "why_it_matters": "주요 LLM들의 실제 투자 판단 능력을 동일 조건에서 비교하는 실험으로, AI의 실용적 의사결정 성능 차이를 확인할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7941170634920636,
+    "published_at": "2026-10-23T13:24:41Z"
+  },
+  {
+    "id": "youtube-pdiiGVBF0ks",
+    "section": "video",
+    "title_en": "'ㅎㅏㄴㄱㅡㄹ.txt'의 정체",
+    "title_ko": "'ㅎㅏㄴㄱㅡㄹ.txt' 파일명 깨짐 현상의 정체",
+    "url": "https://www.youtube.com/shorts/pdiiGVBF0ks",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 맥과 윈도우 간 한글 파일명이 깨지는 현상을 다루는 영상이다. 'ㅎㅏㄴㄱㅡㄹ.txt'처럼 자모가 분리되어 표시되는 문제의 원인을 설명한다.",
+    "why_it_matters": "맥·윈도우 간 한글 파일명 인코딩 호환 문제는 국내 개발자가 자주 겪는 실전 이슈다.",
+    "tags": [],
+    "score": 0.7798015873015873,
+    "published_at": "2026-10-23T11:00:23Z"
+  },
+  {
+    "id": "youtube-wp-hrUFdMiU",
+    "section": "video",
+    "title_en": "스타트업을 또 잡아먹어버린 오픈AI",
+    "title_ko": "오픈AI, 또 스타트업 인수·흡수",
+    "url": "https://www.youtube.com/shorts/wp-hrUFdMiU",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "유튜브 채널 조코딩에서 오픈AI가 또 다른 스타트업을 인수한 소식을 다루고 있다. 영상은 AI 창업 및 바이브 코딩과 관련된 콘텐츠를 제공하는 채널의 일환으로 제작되었다.",
+    "why_it_matters": "오픈AI의 스타트업 인수 행보가 이어지면서 AI 생태계 내 경쟁 구도 변화에 주목할 필요가 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7678852513227513,
+    "published_at": "2026-10-23T09:00:16Z"
+  },
+  {
+    "id": "simon_willison-quick-study-painter",
+    "section": "deepdive",
+    "title_en": "Quick Study",
+    "title_ko": "Claude로 만든 사진 유화 변환 도구 'Quick Study'",
+    "url": "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Simon Willison이 Claude Opus 5.5에 단 한 줄의 프롬프트를 입력해 사진을 수초 내에 유화처럼 보이게 변환하는 웹 도구 'Quick Study'를 만들었다. 이 도구는 캔버스 요소와 Sobel 엣지 검출 알고리즘을 활용하며, 외부 라이브러리 없이 구현되었다. 이전에도 P5.js로 수채화 시뮬레이션을 실험한 바 있는 그의 LLM 기반 도구 제작 실험 중 하나다.",
+    "why_it_matters": "LLM에 간단한 프롬프트만으로 외부 라이브러리 없이 동작하는 창의적 웹 도구를 빠르게 생성할 수 있음을 보여주는 사례.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8427810846560846,
+    "published_at": "2026-10-23T21:35:13Z"
+  }
+]
