@@ -1,0 +1,320 @@
+[
+  {
+    "id": "hf-2610.31329",
+    "section": "papers",
+    "title_en": "WeVisOne-VL: Unified Visual Perception from Objects to Pixels",
+    "title_ko": "WeVisOne-VL: 객체부터 픽셀까지 통합 시각 인식 VLM",
+    "url": "https://huggingface.co/papers/2610.31329",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "WeChat Vision 팀이 공개한 WeVisOne-VL은 객체 수준과 픽셀 수준의 시각 인식을 단일 모델로 통합한 비전-언어 모델(VLM)입니다. 객체 탐지, 참조 로컬라이제이션, 카운팅, OCR, 세그멘테이션, 매팅 등 다양한 시각 태스크를 지원하며, 특수 <OBJ> 토큰을 통해 경량 픽셀 디코더를 VLM에 통합했습니다. 3단계 커리큘럼 SFT와 혼합 태스크 RL로 학습되었으며, 30개 이상의 벤치마크에서 우수한 성능을 보여줍니다. 오픈소스로 공개되어 실세계 배포에 신뢰성 있는 인식 시스템 개발에 기여하고자 합니다.",
+    "why_it_matters": "포인트·박스·마스크·알파매트 등 세밀한 시각 인식을 하나의 VLM으로 통합함으로써, 기존 모델의 파인그레인드 인식 한계를 극복하고 실용적인 배포 가능성을 높인다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 6.476463551931511,
+    "published_at": "2026-10-21T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.30926",
+    "section": "papers",
+    "title_en": "Making MLLM Latents Matter: Factor-Aware Predictive Learning for Cinematic Video Generation",
+    "title_ko": "MLLM 잠재 표현 활용 극대화: 영화적 비디오 생성을 위한 요소 인식 예측 학습(FAPL)",
+    "url": "https://huggingface.co/papers/2610.30926",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "영화적 비디오 생성에는 희소한 입력에서의 시간적 추론과 캐릭터·장면·동작·카메라 등 요소별 제어가 모두 필요하다. 본 연구는 MLLM의 잠재 표현을 Video DiT가 효과적으로 활용하도록 하는 Factor-Aware Predictive Learning(FAPL)을 제안한다. FAPL은 세 단계—잠재 전용 생성기 그라운딩, 요소 스팬 교체를 통한 요소 인식 제어, 제한 입력 기반 시간 추론—로 구성되며, 희소-투-비디오·요소 인식 편집·멀티샷 생성 세 가지 과제에서 기존 방법 대비 일관된 성능 향상을 보였다.",
+    "why_it_matters": "MLLM의 사전 지식을 영상 생성에 실질적으로 연결하는 체계적 학습 프레임워크를 제시해, 영화 제작 수준의 세밀한 비디오 제어 가능성을 높인다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 6.147494476813453,
+    "published_at": "2026-10-22T04:43:48Z"
+  },
+  {
+    "id": "hf-2610.30949",
+    "section": "papers",
+    "title_en": "IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems",
+    "title_ko": "IQuest-Q1: 에이전트 CLI 시스템을 위한 파운데이션 모델 공개",
+    "url": "https://huggingface.co/papers/2610.30949",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "IQuest-Q1은 총 3,200억 파라미터(활성화 150억)의 희소 MoE 기반 에이전트 파운데이션 모델이다. 사전학습, 미드트레이닝, 포스트트레이닝의 3단계 파이프라인을 통해 개발되었으며, SFT·도메인 특화 RL·MOPD를 결합한 멀티-스캐폴드 방식으로 에이전트 코딩 능력을 강화했다. 코딩 및 일반 태스크 모두에서 역량을 갖춘 이 모델은 오픈소스로 공개된다.",
+    "why_it_matters": "대규모 MoE 구조의 에이전트 코딩 특화 모델이 오픈소스로 공개됨으로써 CLI 에이전트 연구 및 개발 생태계 발전에 기여할 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 5.5217885770490405,
+    "published_at": "2026-10-21T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.29677",
+    "section": "papers",
+    "title_en": "Toward Recursive Self-Improvement in Physical AI",
+    "title_ko": "물리적 AI에서의 재귀적 자기개선(RSI) 연구 동향",
+    "url": "https://huggingface.co/papers/2610.29677",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "재귀적 자기개선(RSI)은 시스템이 행동뿐 아니라 개선 과정 자체를 향상시키는 개념이다. 이 논문은 RSI를 로봇 학습 맥락에 적용하며, 부분 관측·고비용 시행·변화하는 운영 조건·비가역적 결과 등 물리적 환경 특유의 어려움을 분석한다. 주로 매니퓰레이션 분야 연구들이 행동 개선과 학습 절차 개선을 지지하지만, 재귀로 인한 성능 향상을 명확히 분리한 물리 연구는 아직 없다. 저자들은 이를 바탕으로 안전하고 지속적인 자기개선 메커니즘을 위한 평가 원칙과 연구 방향을 제시한다.",
+    "why_it_matters": "로봇이 스스로 학습 방법을 개선하는 RSI 실현은 물리적 AI의 자율성과 적응력을 획기적으로 높일 수 있는 핵심 연구 방향이다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 5.04305126783455,
+    "published_at": "2026-10-20T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.28889",
+    "section": "papers",
+    "title_en": "Policy-Mask: Budget-Aware Adaptation of Diffusion Features to Discriminative Tasks",
+    "title_ko": "Policy-Mask: 예산 인식 기반 확산 모델 특징 선택 정책",
+    "url": "https://huggingface.co/papers/2610.28889",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "확산 모델(Diffusion Model)의 중간 특징을 판별 태스크에 활용할 때, 타임스텝·블록·채널을 동시에 최적화하는 'Policy-Mask'를 제안한다. 기존 방법은 이 선택을 수작업으로 고정하거나 일부 하이퍼파라미터만 조정했지만, Policy-Mask는 채널 예산 조건부 정책으로 세 요소를 함께 학습한다. ADE20K 세그멘테이션 38.9 mIoU, CIFAR-100 분류 75.4% top-1, SPair-71k 의미 대응 76.3 PCK@0.1 성능을 달성하며, PixArt-Σ·SD3.5 등 확산 트랜스포머에도 적용 가능하다.",
+    "why_it_matters": "생성형 확산 모델의 내부 표현을 판별 태스크에 효율적으로 재활용하는 체계적 방법을 제시해, 별도 지도학습 없이도 다양한 비전 태스크에 적용할 수 있는 가능성을 보여준다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 4.931825632724326,
+    "published_at": "2026-10-19T20:00:00Z"
+  },
+  {
+    "id": "github_trending-anthropics/knowledge-work-plugins",
+    "section": "releases",
+    "title_en": "anthropics/knowledge-work-plugins",
+    "title_ko": "Anthropic, Claude용 지식 업무 플러그인 11종 오픈소스 공개",
+    "url": "https://github.com/anthropics/knowledge-work-plugins",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 Claude Cowork 및 Claude Code에서 활용할 수 있는 업무 역할별 플러그인 11종을 오픈소스로 공개했다. 영업, 마케팅, 법무, 재무, 데이터, 고객지원, 바이오 연구 등 다양한 직군을 위한 플러그인이 포함되며, Slack·Notion·Jira·Snowflake 등 주요 업무 도구와 MCP 서버를 통해 연결된다. 각 플러그인은 마크다운과 JSON 파일로만 구성되어 코드나 빌드 과정 없이 조직 맞춤 커스터마이징이 가능하다.",
+    "why_it_matters": "Anthropic이 공식 오픈소스 플러그인 생태계를 구축함으로써, 기업이 Claude를 자사 워크플로우와 도구에 맞게 손쉽게 특화·확장할 수 있는 표준 방식이 제시됐다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7455919312169312,
+    "published_at": "2026-10-24T05:15:33Z"
+  },
+  {
+    "id": "github_trending-Renhuai123/ziwei-doushu",
+    "section": "releases",
+    "title_en": "Renhuai123/ziwei-doushu",
+    "title_ko": "자미두수 오픈소스 명반 엔진 — 67.5만 명반 × 13차원 해석 데이터셋 공개",
+    "url": "https://github.com/Renhuai123/ziwei-doushu",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "중국 전통 명리학인 자미두수(紫微斗數)의 완전 오픈소스 명반 엔진 프로젝트입니다. 니하이샤(倪海厦)의 《천기(天紀)》 체계를 기반으로 사화(四化) 시스템, 격국 지식 베이스, 고전 원문 데이터를 포함하며, MIT 라이선스로 공개됩니다. v4.0 해석 데이터셋으로 1950~2026년 674,976개 명반 × 13개 차원 = 877만여 단락의 해석문(압축 해제 후 56.6GB)을 CC BY 4.0으로 상업적 이용 가능하게 배포합니다. RAG 검색 소스나 소형 모델 파인튜닝 학습 데이터로 활용할 수 있는 대규모 구조화 데이터셋입니다.",
+    "why_it_matters": "전통 명리 알고리즘과 대규모 해석 데이터셋을 오픈소스로 공개함으로써, LLM 파인튜닝·RAG 파이프라인 구축에 즉시 활용 가능한 고품질 한자 문화권 도메인 데이터를 제공한다.",
+    "tags": [
+      "RAG",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7455919312169312,
+    "published_at": "2026-10-24T05:15:33Z"
+  },
+  {
+    "id": "github_trending-SnailSploit/Claude-Red",
+    "section": "releases",
+    "title_en": "SnailSploit/Claude-Red",
+    "title_ko": "Claude-Red: Claude를 레드팀 오퍼레이터로 변환하는 공격 보안 스킬 라이브러리",
+    "url": "https://github.com/SnailSploit/Claude-Red",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude-Red는 Claude의 스킬 시스템에 삽입하는 SKILL.md 파일 형태의 공격 보안 스킬 큐레이션 라이브러리다. SQLi, XSS, EDR 우회, 익스플로잇 개발, Active Directory 공격 등 23개 카테고리에 걸쳐 78개의 스킬을 제공한다. 각 스킬은 대화 트리거에 따라 자동 로드되며, 레드팀 교전·버그바운티·CTF 등 인가된 보안 연구 목적으로 설계되었다.",
+    "why_it_matters": "LLM을 도메인 특화 레드팀 전문가처럼 활용할 수 있는 구조화된 프레임워크로, AI 기반 공격 보안 연구의 새로운 방향성을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7455919312169312,
+    "published_at": "2026-10-24T05:15:33Z"
+  },
+  {
+    "id": "openai_blog-scaling-storage-one-billion-users-part-two",
+    "section": "releases",
+    "title_en": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+    "title_ko": "ChatGPT 10억 사용자를 위한 온라인 스토리지 대규모 확장기 (2부)",
+    "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 ChatGPT의 10억 명 이상 사용자를 지원하기 위해 내부 스토리지 시스템 'Habitat'를 어떻게 확장했는지 소개한다. 안정적인 멀티테넌시, 글로벌 캐싱, Azure Cosmos DB를 활용해 읽기 속도를 기존 대비 12배 향상시켰다. 이 글은 대규모 실사용 환경에서의 구체적인 인프라 확장 전략을 다루는 시리즈의 2부다.",
+    "why_it_matters": "10억 명 규모 서비스의 스토리지 아키텍처 실전 사례로, 대규모 인프라 설계에 직접적인 인사이트를 제공한다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.672620701058201,
+    "published_at": "2026-10-23T17:00:00Z"
+  },
+  {
+    "id": "openai_blog-securing-our-frontier-model-training-environment",
+    "section": "releases",
+    "title_en": "Securing our frontier model training environment",
+    "title_ko": "OpenAI, 프론티어 모델 학습 환경 보안 강화",
+    "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 프론티어 모델 학습 및 평가 환경의 보안을 강화했다고 밝혔다. 주요 조치로는 오프라인 격리 환경 구축과 고성능 컴퓨팅을 활용한 레드팀 테스트가 포함된다. 이를 통해 모델 학습 중 발생할 수 있는 보안 위협에 대한 봉쇄 능력을 높였다.",
+    "why_it_matters": "AI 안전성 확보를 위한 학습 환경 격리 및 레드팀 방법론이 업계 표준으로 자리잡을 수 있어 주목할 필요가 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.6309540343915344,
+    "published_at": "2026-10-23T10:00:00Z"
+  },
+  {
+    "id": "openai_blog-openai-nask-ai-safety-security-partnership",
+    "section": "releases",
+    "title_en": "OpenAI and Poland’s NASK partner to advance AI safety and security",
+    "title_ko": "OpenAI, 폴란드 NASK와 AI 안전·보안 파트너십 체결",
+    "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI와 폴란드 국립연구소 NASK가 AI 안전성 및 보안 분야에서 공식 파트너십을 맺었다. 양측은 기술 연구 협력을 통해 AI 안전장치를 강화하고 보다 견고한 디지털 생태계 구축을 목표로 한다.",
+    "why_it_matters": "OpenAI가 유럽 국가 기관과 AI 안전 연구 협력을 확대하는 흐름으로, 글로벌 AI 거버넌스 체계 형성에 영향을 줄 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.5714302248677249,
+    "published_at": "2026-10-23T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-decisions-api",
+    "section": "releases",
+    "title_en": "Build more responsive apps with the Decisions API",
+    "title_ko": "Decisions API로 더 반응성 높은 앱 구축하기",
+    "url": "https://openai.com/index/decisions-api",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 빠르고 집중적이며 저비용의 의사결정을 위한 Decisions API를 출시했다. 이 API는 모든 애플리케이션에서 신속한 판단이 필요한 작업에 특화되어 있다. 개발자들은 이를 통해 더 반응성 높은 앱을 구현할 수 있다.",
+    "why_it_matters": "저비용·고속 의사결정 API로 실시간 응답이 중요한 애플리케이션 개발에 새로운 선택지를 제공한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.5416683201058201,
+    "published_at": "2026-10-22T19:00:00Z"
+  },
+  {
+    "id": "hn-50224463",
+    "section": "community",
+    "title_en": "No signs of AI payoff outside the tech sector",
+    "title_ko": "기술 산업 외부에서 AI 투자 성과 없음",
+    "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI 투자에 대한 실질적인 경제적 성과가 기술 섹터 밖에서는 아직 나타나지 않고 있다는 주장이 제기됐다. 비기술 산업에서의 AI 도입이 확산되고 있음에도 불구하고, 생산성 향상 등 가시적인 효과는 확인되지 않는 상황이다.",
+    "why_it_matters": "AI의 경제적 파급 효과가 기술 업계에 국한될 가능성을 시사하며, 범산업적 AI 투자 전략에 재검토가 필요할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.160346904578933,
+    "published_at": "2026-10-24T19:47:19Z"
+  },
+  {
+    "id": "hn-50219177",
+    "section": "community",
+    "title_en": "Node2Shell evolves to HTTP2Shell, blast radius affects many HTTP libs and apps",
+    "title_ko": "Node2Shell이 HTTP2Shell로 진화, 다수의 HTTP 라이브러리 및 앱에 영향",
+    "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Node2Shell 취약점이 HTTP2Shell로 발전하여 광범위한 HTTP 라이브러리와 애플리케이션에 영향을 미치고 있다. 피해 범위(blast radius)가 넓어 다수의 HTTP 관련 생태계가 위험에 노출될 수 있다.",
+    "why_it_matters": "HTTP 라이브러리를 사용하는 광범위한 애플리케이션이 잠재적 보안 위협에 노출될 수 있어 즉각적인 확인이 필요하다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.062109283793763,
+    "published_at": "2026-10-24T08:06:39Z"
+  },
+  {
+    "id": "hn-50222133",
+    "section": "community",
+    "title_en": "FreeDNS",
+    "title_ko": "FreeDNS - 무료 DNS 서비스",
+    "url": "https://freedns.afraid.org/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "FreeDNS는 무료로 제공되는 DNS 서비스다. 제공된 정보가 제한적으로, 구체적인 기능이나 세부 사항은 확인하기 어렵다.",
+    "why_it_matters": "무료 DNS 서비스로 소규모 프로젝트나 개인 개발자에게 유용할 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 8.552504918679233,
+    "published_at": "2026-10-24T15:20:01Z"
+  },
+  {
+    "id": "hn-50219700",
+    "section": "community",
+    "title_en": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+    "title_ko": "GPU-unlock: 엔비디아 3000 시리즈 카드의 FP/BF16 명령어 발행률 분석",
+    "url": "https://github.com/Zagitta/gpu-unlock",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "엔비디아 3000 시리즈 GPU의 FP16 및 BF16 명령어 발행률에 관한 분석 내용을 다룬다. GPU 잠금 해제(GPU-unlock) 관련 기술적 논의로 보인다. 상세 설명이 제공되지 않아 추가 정보는 확인이 필요하다.",
+    "why_it_matters": "AI 연산에 핵심적인 FP16/BF16 성능을 소비자급 GPU에서 최대한 끌어내는 방법에 관심 있는 개발자에게 유용할 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 8.239716925096374,
+    "published_at": "2026-10-24T09:58:27Z"
+  },
+  {
+    "id": "hn-50222525",
+    "section": "community",
+    "title_en": "Neural chip decodes interactions between brain regions",
+    "title_ko": "신경 칩, 뇌 영역 간 상호작용 해독",
+    "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "뇌 영역 간의 상호작용을 해독할 수 있는 신경 칩이 개발되었다는 소식이다. 구체적인 세부 내용은 제공되지 않았으나, 뇌-컴퓨터 인터페이스 분야의 연구 성과로 보인다.",
+    "why_it_matters": "뇌 영역 간 신호 해독 기술은 AI 및 신경과학 연구에 새로운 가능성을 열 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 7.166506809485662,
+    "published_at": "2026-10-24T15:57:17Z"
+  },
+  {
+    "id": "latent_space-ainews-kimi-31",
+    "section": "deepdive",
+    "title_en": "[AINews] Kimi 3.1 Pro 104BA-2.8T: Fable-5.1-Class Open Weights narrows Closed-AI lead to 1 month... and Pro Highspeed API with 2-3× speed",
+    "title_ko": "Kimi 3.1 Pro, 오픈 웨이트로 클로즈드 AI와의 격차를 1개월로 좁히다",
+    "url": "https://latent.space/p/ainews-kimi-31/",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "Moonshot AI의 Kimi 3.1 Pro(104BA-2.8T)가 Fable-5.1급 성능을 오픈 웨이트 모델로 구현했다는 주장이 나왔다. 클로즈드 AI 모델과의 성능 격차가 약 1개월 수준으로 좁혀졌다고 평가된다. 또한 Pro Highspeed API를 통해 기존 대비 2~3배 빠른 추론 속도를 제공한다.",
+    "why_it_matters": "오픈 웨이트 모델이 최상위 클로즈드 모델 수준에 빠르게 근접하고 있어, 오픈소스 생태계의 경쟁력이 실질적으로 높아지고 있음을 보여준다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7577876984126984,
+    "published_at": "2026-10-24T07:18:29Z"
+  }
+]
