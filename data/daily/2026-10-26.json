@@ -1,0 +1,320 @@
+[
+  {
+    "id": "hf-2610.31329",
+    "section": "papers",
+    "title_en": "WeVisOne-VL: Unified Visual Perception from Objects to Pixels",
+    "title_ko": "WeVisOne-VL: 객체부터 픽셀까지 통합 시각 인식 VLM",
+    "url": "https://huggingface.co/papers/2610.31329",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "WeChat Vision 팀이 공개한 WeVisOne-VL은 객체 수준과 픽셀 수준의 시각 인식을 하나의 모델로 통합한 비전-언어 모델(VLM)이다. 객체 탐지, 참조 로컬라이제이션, 카운팅, OCR, 세그멘테이션, 매팅 등 다양한 시각 태스크를 지원하며, 포인트·박스·마스크·알파 매트 등 다양한 세분화 수준의 로컬라이제이션이 가능하다. 경량 픽셀 디코더를 특수 <OBJ> 토큰을 통해 VLM에 통합하고, 3단계 커리큘럼 SFT와 혼합 태스크 RL로 학습하였으며, 30개 이상의 벤치마크에서 우수한 성능을 입증했다. 오픈소스로 공개되어 실세계 배포에 적합한 신뢰성 높은 시각 인식 시스템 발전에 기여할 것으로 기대된다.",
+    "why_it_matters": "단일 VLM으로 픽셀 수준까지 세밀한 시각 인식을 통합 지원하며 오픈소스로 공개되어, 실용적인 비전-언어 애플리케이션 개발의 새로운 기준점이 될 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 6.497168225293202,
+    "published_at": "2026-10-21T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.30926",
+    "section": "papers",
+    "title_en": "Making MLLM Latents Matter: Factor-Aware Predictive Learning for Cinematic Video Generation",
+    "title_ko": "MLLM 잠재 표현을 활용한 영화적 비디오 생성: Factor-Aware Predictive Learning",
+    "url": "https://huggingface.co/papers/2610.30926",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "영화적 비디오 생성을 위해 멀티모달 대형 언어 모델(MLLM)의 잠재 표현을 효과적으로 활용하는 Factor-Aware Predictive Learning(FAPL) 기법을 제안한다. FAPL은 캐릭터·장면·액션·카메라 등 요소별 제어와 희소 입력으로부터의 시간적 추론이라는 두 가지 과제를 상호 보완적인 학습 신호로 동시에 해결한다. Video Diffusion Transformer(DiT)가 MLLM 잠재 표현을 우회하지 않도록 그라운딩 학습을 적용하고, 최종 단계에서는 DiT를 고정한 채 MLLM과 커넥터를 최적화하여 제한된 입력에서도 생성 호환 표현을 학습한다. 희소-비디오 변환, 요소 인식 편집, 멀티샷 생성 등 세 가지 과제에서 기존 기준 모델 대비 우수한 성능을 입증했다.",
+    "why_it_matters": "MLLM의 강력한 사전 지식을 영상 생성 모델에 실질적으로 연결하는 방법론을 제시해, 영화 제작 수준의 세밀한 비디오 제어 가능성을 높인다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 6.1647859739235145,
+    "published_at": "2026-10-22T04:43:48Z"
+  },
+  {
+    "id": "hf-2610.30949",
+    "section": "papers",
+    "title_en": "IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems",
+    "title_ko": "IQuest-Q1: 에이전트 CLI 시스템을 위한 320B MoE 파운데이션 모델 공개",
+    "url": "https://huggingface.co/papers/2610.30949",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "IQuest-Q1은 총 3,200억 파라미터(활성화 150억)의 희소 Mixture-of-Experts 에이전트 파운데이션 모델이다. 사전학습, 중간학습, 다중 스캐폴드 사후학습의 3단계 파이프라인을 통해 개발되었으며, SFT·도메인 특화 RL·MOPD를 결합해 에이전트 코딩 능력을 강화했다. 모델 머징을 통해 서로 다른 단계의 체크포인트 및 전문가 모듈을 통합하며, 오픈소스로 공개되어 커뮤니티 연구를 지원한다.",
+    "why_it_matters": "대규모 MoE 기반 에이전트 코딩 모델을 오픈소스로 공개함으로써, CLI 에이전트 연구 및 실무 적용의 진입 장벽을 낮춘다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 5.605170185988092,
+    "published_at": "2026-10-21T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.29677",
+    "section": "papers",
+    "title_en": "Toward Recursive Self-Improvement in Physical AI",
+    "title_ko": "물리적 AI에서의 재귀적 자기 개선을 향하여",
+    "url": "https://huggingface.co/papers/2610.29677",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "재귀적 자기 개선(RSI)은 시스템이 자신의 행동뿐 아니라 개선 과정 자체를 향상시키는 메커니즘을 말한다. 디지털 에이전트에서는 코드 재작성과 테스트로 이를 구현하지만, 물리적 로봇 환경에서는 부분 관측, 고비용 시행착오, 비가역적 결과 등 추가적인 어려움이 존재한다. 이 논문은 로봇 학습 맥락에서 RSI를 분석하고, 행동 개선에서 개선 프로세스 자체의 향상으로 나아가는 경로를 탐색한다. 현재 물리 환경 연구들은 주로 매니퓰레이션 분야에 집중되어 있으며, 재귀적 이득을 명확히 분리한 사례는 아직 없다고 밝힌다.",
+    "why_it_matters": "로봇이 스스로 학습 방식을 개선하는 RSI 실현 가능성과 안전 조건을 체계적으로 정리한 선도적 분석으로, 물리적 AI의 자율 발전 방향을 제시한다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 5.0943445622221,
+    "published_at": "2026-10-20T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.27851",
+    "section": "papers",
+    "title_en": "LaLa-World: Scaling Latent World Models with Natural Language Actions",
+    "title_ko": "LaLa-World: 자연어 행동으로 확장하는 잠재 세계 모델",
+    "url": "https://huggingface.co/papers/2610.27851",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LaLa-World는 JEPA 스타일의 잠재 세계 모델(LWM)에 언어 조건부 인터페이스를 결합해, 시뮬레이션·로봇 궤적·이미지·비디오 등 다양한 데이터를 통합 학습한다. 수치 행동과 시각적 변화를 모두 언어로 기술해 이종 데이터셋에서 단일 미래 예측기를 공동 학습하며, 언어 모델 기반 예측기로 미래 잠재 상태를 예측한다. 기존 LWM 대비 MPC 계획 성능이 높고, RAEv2 기반 비디오 생성 모델과 비교해 학습 비용은 6배, 계획 속도는 13.9배 빠르다. 파생된 LaLa-Policy는 LIBERO·RoboCasa 벤치마크에서 Cosmos Policy와 경쟁적 성능을 보이며 추론 속도는 최대 5.5배 빠르다.",
+    "why_it_matters": "단일 언어 조건부 잠재 세계 모델로 다양한 도메인을 통합하면서도 계획 효율과 로봇 정책 성능을 동시에 크게 향상시킨 점이 핵심이다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.663561646129646,
+    "published_at": "2026-10-20T20:00:00Z"
+  },
+  {
+    "id": "github_trending-aws/agent-toolkit-for-aws",
+    "section": "releases",
+    "title_en": "aws/agent-toolkit-for-aws",
+    "title_ko": "AWS, AI 코딩 에이전트용 공식 Agent Toolkit 출시",
+    "url": "https://github.com/aws/agent-toolkit-for-aws",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "AWS가 AI 코딩 에이전트가 AWS 서비스를 빌드·배포·관리할 수 있도록 돕는 공식 Agent Toolkit을 공개했다. Claude Code, Codex, Cursor, Devin, Kiro 등 주요 코딩 에이전트와 연동되며, MCP 서버·플러그인·스킬 형태로 제공된다. AWS MCP 서버는 300개 이상의 AWS 서비스에 대한 API 접근, 샌드박스 스크립트 실행, 실시간 문서 검색을 지원하며 IAM 조건 키와 CloudTrail 감사 로깅 같은 엔터프라이즈 보안 기능도 포함된다.",
+    "why_it_matters": "AWS가 직접 지원하는 공식 AI 에이전트 툴킷으로, 기존 AWS Labs MCP 서버의 후속작이며 주요 코딩 에이전트 전반에서 표준 AWS 연동 방식이 될 가능성이 높다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 0.7472023809523809,
+    "published_at": "2026-10-25T05:31:47Z"
+  },
+  {
+    "id": "github_trending-Nutlope/hallmark",
+    "section": "releases",
+    "title_en": "Nutlope/hallmark",
+    "title_ko": "Hallmark: AI 생성 티가 나지 않는 디자인 스킬 (Claude Code·Cursor·Codex 지원)",
+    "url": "https://github.com/Nutlope/hallmark",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Hallmark는 Claude Code, Cursor, Codex, OpenCode 등 AI 코딩 도구에서 사용할 수 있는 디자인 스킬로, AI가 만든 것처럼 보이는 뻔한 UI 패턴을 자동으로 감지하고 방지한다. 48개의 테마를 제공하며, 접근성·레이아웃·디자인 품질을 실제 브라우저에서 린트(lint)하는 다단계 검증 게이트를 적용한다. Together AI가 제작했으며 MIT 라이선스로 공개되어 있다.",
+    "why_it_matters": "AI 코딩 도구로 UI를 생성할 때 발생하는 '슬롭(slop)' 문제를 자동화된 디자인 규칙과 린터로 방지할 수 있어, AI 보조 개발의 품질 격차를 줄이는 실용적 도구다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7472023809523809,
+    "published_at": "2026-10-25T05:31:47Z"
+  },
+  {
+    "id": "github_trending-luongnv89/claude-howto",
+    "section": "releases",
+    "title_en": "luongnv89/claude-howto",
+    "title_ko": "Claude Code 완전 정복 가이드 — 기초부터 고급 에이전트까지",
+    "url": "https://github.com/luongnv89/claude-howto",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "'claude-howto'는 Claude Code의 슬래시 커맨드, 메모리, 서브에이전트, MCP, 훅, 플러그인 등 모든 기능을 시각적 튜토리얼과 복사·붙여넣기 템플릿으로 학습할 수 있는 오픈소스 가이드다. 초급부터 고급까지 10개 모듈, 총 11~13시간의 단계적 학습 경로를 제공하며 MIT 라이선스로 무료 공개되어 있다. 각 모듈 수료 후 `/lesson-quiz` 명령으로 이해도를 점검하는 자기 평가 기능도 포함되어 있다.",
+    "why_it_matters": "Claude Code를 설치만 해두고 제대로 활용하지 못하는 개발자에게, 기능을 조합해 실무 워크플로로 연결하는 구체적인 경로를 제시하는 실용 가이드다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7472023809523809,
+    "published_at": "2026-10-25T05:31:47Z"
+  },
+  {
+    "id": "github_trending-google-gemini/gemini-cli",
+    "section": "releases",
+    "title_en": "google-gemini/gemini-cli",
+    "title_ko": "Gemini CLI: 터미널에서 바로 쓰는 구글 Gemini 오픈소스 AI 에이전트",
+    "url": "https://github.com/google-gemini/gemini-cli",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Google이 공개한 오픈소스 AI 에이전트로, 터미널에서 Gemini 모델을 직접 활용할 수 있다. 코드 이해·생성, PR 자동화, MCP 서버 연동 등 다양한 기능을 지원하며 npm, Homebrew 등으로 간편하게 설치할 수 있다. Google 계정(OAuth), Gemini API 키, Vertex AI 등 다양한 인증 방식을 제공하며 Apache 2.0 라이선스로 완전 공개된다. 단, 최신 Gemini 모델에는 최적화되지 않았으며 이 경우 Antigravity CLI 사용이 권장된다.",
+    "why_it_matters": "구글이 직접 만든 터미널 기반 AI 코딩 에이전트로, 오픈소스로 공개되어 개발자가 자유롭게 확장·자동화 워크플로에 통합할 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7472023809523809,
+    "published_at": "2026-10-25T05:31:47Z"
+  },
+  {
+    "id": "openai_blog-scaling-storage-one-billion-users-part-two",
+    "section": "releases",
+    "title_en": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+    "title_ko": "ChatGPT 10억 사용자를 위한 온라인 스토리지 대규모 확장 (2부)",
+    "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI는 ChatGPT의 급증하는 사용자를 지원하기 위해 Habitat 스토리지 시스템을 확장했다. 안정적인 멀티테넌시, 글로벌 캐싱, Azure Cosmos DB를 도입해 읽기 속도를 12배 향상시켰다. 이번 2부에서는 대규모 트래픽을 처리하기 위한 구체적인 인프라 설계 전략을 다룬다.",
+    "why_it_matters": "10억 명 규모의 AI 서비스 인프라 설계 사례로, 대용량 스토리지 확장 전략의 실전 레퍼런스가 된다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.5297635582010582,
+    "published_at": "2026-10-23T17:00:00Z"
+  },
+  {
+    "id": "openai_blog-securing-our-frontier-model-training-environment",
+    "section": "releases",
+    "title_en": "Securing our frontier model training environment",
+    "title_ko": "OpenAI, 프론티어 모델 학습 환경 보안 강화",
+    "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 프론티어 모델 학습 및 평가 환경의 보안 강화 방식을 공개했다. 주요 조치로는 오프라인 환경 구축과 고성능 컴퓨팅을 활용한 레드팀 활동 등이 포함된다. 이를 통해 모델 학습 과정에서의 격리(containment)를 한층 높였다.",
+    "why_it_matters": "AI 안전성의 핵심인 프론티어 모델 학습 환경 보안을 OpenAI가 어떻게 구현하는지 구체적 방법론을 제시해 업계 표준에 영향을 줄 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.4880968915343915,
+    "published_at": "2026-10-23T10:00:00Z"
+  },
+  {
+    "id": "openai_blog-openai-nask-ai-safety-security-partnership",
+    "section": "releases",
+    "title_en": "OpenAI and Poland’s NASK partner to advance AI safety and security",
+    "title_ko": "OpenAI, 폴란드 NASK와 AI 안전·보안 파트너십 체결",
+    "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI와 폴란드의 국가 사이버보안 연구기관 NASK가 AI 안전성, 보안, 기술 연구 분야에서 파트너십을 맺었다. 이번 협력은 AI 관련 보안 장치를 강화하고 보다 탄력적인 디지털 생태계를 지원하는 것을 목표로 한다.",
+    "why_it_matters": "OpenAI가 유럽 정부 기관과 AI 안전 협력을 확대하며 글로벌 AI 거버넌스 네트워크를 넓히고 있다는 점에서 주목된다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.4285730820105821,
+    "published_at": "2026-10-23T00:00:00Z"
+  },
+  {
+    "id": "hn-50233779",
+    "section": "community",
+    "title_en": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+    "title_ko": "10년 된 CNN 모델이 최신 LLM보다 피부암 진단에서 우수한 성능",
+    "url": "https://lynchlab.net/llm-skin-cancer",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "10년 전에 개발된 CNN(합성곱 신경망) 모델이 현재의 최첨단 LLM보다 피부암 진단에서 더 나은 성능을 보인다는 연구 결과가 발표됐다. 이는 특정 의료 이미지 진단 분야에서 최신 대형 언어 모델이 기존의 특화된 모델을 반드시 능가하지는 않는다는 점을 시사한다.",
+    "why_it_matters": "도메인 특화 태스크에서 최신 LLM이 오래된 전문 모델보다 항상 우월하지 않다는 점을 실증적으로 보여주는 사례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.617709102903754,
+    "published_at": "2026-10-25T17:15:38Z"
+  },
+  {
+    "id": "hn-50233304",
+    "section": "community",
+    "title_en": "AI use leads UC Berkeley math professor to see 'no point' in grading homework",
+    "title_ko": "UC 버클리 수학 교수, AI 사용으로 숙제 채점 '의미 없다' 선언",
+    "url": "https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "UC 버클리의 한 수학 교수가 학생들의 AI 사용으로 인해 숙제 채점에 더 이상 의미가 없다고 밝혔다. AI가 학생 과제 수행 방식을 근본적으로 바꾸면서 전통적인 평가 방식에 의문이 제기되고 있다.",
+    "why_it_matters": "AI가 고등교육의 평가 체계 자체를 흔들고 있음을 보여주는 상징적 사례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.058183679160313,
+    "published_at": "2026-10-25T16:28:26Z"
+  },
+  {
+    "id": "hn-50233294",
+    "section": "community",
+    "title_en": "JetBrains Thinkrail",
+    "title_ko": "JetBrains Thinkrail",
+    "url": "https://github.com/JetBrains/thinkrail",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "JetBrains가 Thinkrail이라는 새로운 프로젝트 또는 도구를 공개했다. 상세 설명이 제공되지 않아 구체적인 기능은 확인이 어렵다.",
+    "why_it_matters": "JetBrains의 새로운 움직임으로 주목할 필요가 있으나, 현재 공개된 정보가 부족해 추가 확인이 필요하다.",
+    "tags": [],
+    "score": 8.512593532603445,
+    "published_at": "2026-10-25T16:27:12Z"
+  },
+  {
+    "id": "hn-50236102",
+    "section": "community",
+    "title_en": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+    "title_ko": "OpenAI·Anthropic, 수개월 만에 LLM 가격 최대 80% 인하… 이유는?",
+    "url": "https://minimaxir.com/2026/10/cheap-llms/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "OpenAI와 Anthropic이 불과 몇 달 사이에 LLM 가격을 최대 80%까지 대폭 인하했다. 이러한 급격한 가격 인하의 배경과 이유가 주목받고 있다.",
+    "why_it_matters": "주요 AI 기업들의 가격 경쟁이 심화되며 LLM 도입 비용 장벽이 빠르게 낮아지고 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.02331113946383,
+    "published_at": "2026-10-25T21:11:31Z"
+  },
+  {
+    "id": "hn-50227330",
+    "section": "community",
+    "title_en": "Show HN: Hurston-1 open source TTS that speak Southern American and Afro-English",
+    "title_ko": "Hurston-1: 미국 남부 방언과 아프리카계 영어를 지원하는 오픈소스 TTS",
+    "url": "https://huggingface.co/destined/hurston-1",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Hurston-1은 미국 남부 방언(Southern American English)과 아프리카계 영어(Afro-English)를 구사할 수 있는 오픈소스 텍스트 음성 변환(TTS) 모델이다. 기존 TTS 시스템이 표준 미국 영어에 치우쳐 있던 한계를 넘어 다양한 영어 방언을 지원하는 것이 특징이다.",
+    "why_it_matters": "주류 TTS가 소외해온 영어 방언을 오픈소스로 지원해 언어 다양성과 접근성을 높인다는 점에서 주목할 만하다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 6.305416726247943,
+    "published_at": "2026-10-25T01:30:13Z"
+  },
+  {
+    "id": "latent_space-ainews-kimi-31",
+    "section": "deepdive",
+    "title_en": "[AINews] Kimi 3.1 Pro 104BA-2.8T: Fable-5.1-Class Open Weights narrows Closed-AI lead to 1 month... and Pro Highspeed API with 2-3× speed",
+    "title_ko": "Kimi 3.1 Pro 104BA-2.8T: 오픈 웨이트 모델이 클로즈드 AI와의 격차를 1개월로 좁히다",
+    "url": "https://latent.space/p/ainews-kimi-31/",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "Kimi 3.1 Pro가 Fable-5.1급 성능을 갖춘 오픈 웨이트 모델로 등장했다. 이 모델은 클로즈드 AI 최상위 모델과의 성능 격차를 약 1개월 수준으로 좁혔다고 평가받고 있다. 또한 Pro Highspeed API를 통해 기존 대비 2~3배 빠른 추론 속도를 제공한다.",
+    "why_it_matters": "오픈 웨이트 모델이 최고 수준의 클로즈드 AI 성능에 근접함에 따라, 개발자들이 고성능 모델을 자체적으로 활용할 수 있는 가능성이 높아지고 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.6149305555555555,
+    "published_at": "2026-10-24T07:18:29Z"
+  }
+]
