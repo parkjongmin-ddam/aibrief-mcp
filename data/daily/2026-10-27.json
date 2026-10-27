@@ -1,0 +1,366 @@
+[
+  {
+    "id": "hf-2610.31668",
+    "section": "papers",
+    "title_en": "Reading, Writing, Sharing, and Interacting with the World through Video",
+    "title_ko": "비디오를 통한 세계 이해·생성·공유·상호작용: 비디오 파운데이션 모델 서베이",
+    "url": "https://huggingface.co/papers/2610.31668",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "비디오 파운데이션 모델과 비디오 월드 모델의 최신 발전을 '세계 모델링'이라는 통합적 관점에서 정리한 서베이다. 관측된 비디오를 잠재적 시간 세계의 부분적·손실적 투영으로 보고, 읽기(reading)·쓰기(writing)·공유(sharing)·상호작용(interacting)의 네 가지 핵심 연산으로 문헌을 분류한다. 클립 수준 인식과 지각적 충실도 중심에서 지속적 상태, 물리·인과적 타당성, 상호작용 기반 평가로의 패러다임 전환을 추적하며 미해결 과제를 정리한다.",
+    "why_it_matters": "비디오 이해와 생성을 하나의 프레임워크로 통합하는 이 서베이는 멀티모달 AI 및 에이전트 연구 방향을 조망하는 핵심 참고자료가 된다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 6.402677381872279,
+    "published_at": "2026-10-21T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.30932",
+    "section": "papers",
+    "title_en": "UserArena: Benchmarking Interactive User Simulation for Long-Horizon Shopping Agents",
+    "title_ko": "UserArena: 장기 쇼핑 에이전트를 위한 인터랙티브 사용자 시뮬레이션 벤치마크",
+    "url": "https://huggingface.co/papers/2610.30932",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "UserArena는 실제 이커머스 환경에서 수집한 1만 1천여 명의 사용자, 64만여 세션 궤적을 포함한 대규모 벤치마크다. 장기적 상호작용에서의 추천 정책 개발 및 평가를 지원하며, 실제 A/B 테스트 결과와의 오프라인 검증도 가능하다. 또한 On-Policy Trajectory Distillation(OPTD) 기법을 제안해 시뮬레이터의 사용자 행동 재현 충실도를 높였다.",
+    "why_it_matters": "실제 프로덕션 A/B 결과와 비교 가능한 오프라인 쇼핑 에이전트 평가 인프라를 제공해, 추천 에이전트 연구의 현실성과 신뢰성을 크게 높인다.",
+    "tags": [
+      "에이전트",
+      "RAG"
+    ],
+    "score": 4.871201010907891,
+    "published_at": "2026-10-21T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.31162",
+    "section": "papers",
+    "title_en": "HiSTEVE 1.0: Harnessing Human-Interface VLA Agents for Open-World Games",
+    "title_ko": "HiSTEVE 1.0: 오픈월드 게임을 위한 계층형 VLA 에이전트",
+    "url": "https://huggingface.co/papers/2610.31162",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "HiSTEVE는 마인크래프트 같은 오픈엔드 게임에서 인간 플레이어처럼 동작하는 계층형 비전-언어-액션(VLA) 에이전트다. 오케스트레이션 레벨에서는 VLM 플래너와 구조화된 메모리를 활용해 장기적 자율성을 확보하고, 컨트롤 레벨에서는 키보드·마우스 입력을 통한 네이티브 인터페이스 제어를 단일 VLA로 수행한다. MineStudio Bench에서 85.0%, OpenHA에서 평균 37.4% 성공률로 최신 성능을 달성하며, 맨손에서 철 곡괭이 제작 같은 장기 과제도 완수했다.",
+    "why_it_matters": "API 의존 없이 시각 정보와 네이티브 입력만으로 장기 게임 과제를 수행하는 에이전트 설계의 실용적 가능성을 보여줌.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.663561646129646,
+    "published_at": "2026-10-21T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.32253",
+    "section": "papers",
+    "title_en": "RSIHub: A Composable Framework for Agent-Evolution Methods",
+    "title_ko": "RSIHub: 에이전트 진화 방법론을 위한 조합 가능한 오픈소스 프레임워크",
+    "url": "https://huggingface.co/papers/2610.32253",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "RSIHub는 에이전트 진화 방법론(프롬프트·스킬·툴·오케스트레이션을 실행 피드백으로 개선하는 방식)을 구축·비교·확장하기 위한 오픈소스 프레임워크다. 레시피 기반으로 재사용 가능한 오퍼레이터를 조합하고, 실행·평가·복구·이력 관리를 공통 인프라로 제공한다. AHE, Hyperagents, A-Evolve, GEPA 등 4가지 방법론을 프레임워크 코어 수정 없이 구현했으며, Terminal Bench 2와 τ³ Banking 벤치마크에서 최대 13.5%p의 pass@1 향상을 관찰했다. 단, 방법론별 순위는 설정에 따라 달라지며 최적화 성과가 held-out 태스크에 항상 전이되지는 않았다.",
+    "why_it_matters": "에이전트 진화 연구의 중복 구현 문제를 해소하고 공정한 비교 기반을 제공해, 재현 가능한 에이전트 연구 생태계 구축에 기여한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 4.555348061489413,
+    "published_at": "2026-10-22T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.32965",
+    "section": "papers",
+    "title_en": "RynnUnify: Towards Unified Embodied Brain",
+    "title_ko": "RynnUnify: 통합 구현 AI 브레인을 향한 16B 멀티모달 모델",
+    "url": "https://huggingface.co/papers/2610.32965",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "RynnUnify는 공간 추론, 물리적 예측, 시각적 계획을 하나로 통합한 16B 파라미터의 구현 AI 모델이다. 장기 시각 계획 벤치마크 Rynn-VP에서 Cosmos 3 Nano 대비 9.75점 향상을 달성했으며, 에이전틱 확장 모듈은 Rynn-GEU 평균을 직접 추론 대비 6.0점 개선했다. 로봇 제어 실험에서는 RoboCasa365 복합 태스크 51.5%, 실제 로봇 태스크 평균 46.7% 성공률을 기록했다.",
+    "why_it_matters": "구현 이해·시각 계획·로봇 제어를 단일 모델로 통합해 범용 로봇 AI의 실현 가능성을 한 단계 끌어올렸다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.49650756146648,
+    "published_at": "2026-10-22T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-greptile-code-review-codex-astra",
+    "section": "releases",
+    "title_en": "Greptile takes bug detection beyond code review with GPT-6 Astra",
+    "title_ko": "Greptile, GPT-6 Astra로 코드 리뷰를 넘어선 버그 탐지 구현",
+    "url": "https://openai.com/index/greptile-code-review-codex-astra",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Greptile은 GPT-6 Astra를 활용해 단순 코드 리뷰를 넘어 실제 사용자 워크플로우를 테스트하는 버그 탐지 기능을 구현했다. 또한 Daybreak를 통해 보안을 강화하고, Codex를 활용해 재작업을 줄이는 방식을 채택했다.",
+    "why_it_matters": "OpenAI의 최신 모델군을 실제 개발 파이프라인에 결합해 코드 품질과 보안을 동시에 향상시키는 실용적 사례로 주목할 만하다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8452397486772487,
+    "published_at": "2026-10-26T22:00:00Z"
+  },
+  {
+    "id": "google_blog-ai-quests-polar-peaks",
+    "section": "releases",
+    "title_en": "Our newest AI Quest: Mapping the human brain",
+    "title_ko": "구글의 새로운 AI 퀘스트: 인간 뇌 매핑 프로젝트",
+    "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글이 'AI 퀘스트' 시리즈의 최신 프로젝트로 인간 뇌 매핑을 주제로 한 도전을 공개했다. 이 프로젝트는 AI 기술을 활용해 인간 뇌의 구조를 탐구하는 것을 목표로 한다.",
+    "why_it_matters": "AI를 뇌과학에 접목한 구글의 시도로, 신경과학과 AI 연구의 교차점에서 새로운 가능성을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8095254629629629,
+    "published_at": "2026-10-26T16:00:00Z"
+  },
+  {
+    "id": "openai_blog-building-scientific-understanding-with-academic-communities",
+    "section": "releases",
+    "title_en": "Working with academic communities to build scientific understanding",
+    "title_ko": "OpenAI, 학술 커뮤니티와 협력해 과학적 이해 구축",
+    "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 Kakeya 추측, 지수 시간 가설(ETH), 양자 색역학(QCD) 등 난제에 대한 모델 연구 결과를 공유했다. 연구자들이 이 결과를 직접 검증하고 발전시킬 수 있는 방법도 함께 제시했다. 이는 AI 모델이 순수 수학 및 물리학 분야의 첨단 연구에 기여할 수 있음을 보여주는 사례다.",
+    "why_it_matters": "AI가 해결되지 않은 수학·물리학 난제에 실질적 기여를 할 수 있다는 가능성을 학술적으로 검증하는 중요한 시도다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8005968915343915,
+    "published_at": "2026-10-26T14:30:00Z"
+  },
+  {
+    "id": "openai_blog-gpt-6-1-sol-coderabbit-code-security",
+    "section": "releases",
+    "title_en": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+    "title_ko": "GPT-4.1 Sol, CodeRabbit의 복잡한 코드베이스 보안 강화에 활용",
+    "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "CodeRabbit은 GPT-4.1 Sol을 활용해 복잡한 코드베이스 전반의 보안 위험을 조사한다. 보안 에이전트가 개발자들이 발견된 취약점과 제안된 수정 사항을 검토할 수 있도록 지원한다.",
+    "why_it_matters": "AI 에이전트가 코드 보안 리뷰를 자동화함으로써 개발자의 보안 취약점 대응 속도와 품질을 높일 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7961326058201058,
+    "published_at": "2026-10-26T13:45:00Z"
+  },
+  {
+    "id": "openai_blog-chatgpt-expanding-world-of-work",
+    "section": "releases",
+    "title_en": "ChatGPT’s expanding world of work",
+    "title_ko": "ChatGPT의 확장하는 업무 활용 세계",
+    "url": "https://openai.com/index/chatgpt-expanding-world-of-work",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 'Signals' 데이터를 공개하며 약 100개국에 걸친 165가지 업무 활동에서 ChatGPT가 어떻게 사용되는지 분석했다. 이 데이터는 사람들이 실제 업무에서 ChatGPT를 어떻게 활용하며 시간이 지남에 따라 사용 패턴이 어떻게 변화하는지를 보여준다.",
+    "why_it_matters": "글로벌 규모의 실제 업무 활용 데이터를 통해 AI가 직업 환경에 미치는 영향을 구체적으로 파악할 수 있는 중요한 근거 자료가 된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7738111772486773,
+    "published_at": "2026-10-26T10:00:00Z"
+  },
+  {
+    "id": "openai_blog-fanatics-streamline-fan-experience",
+    "section": "releases",
+    "title_en": "How Fanatics and OpenAI streamline the fan experience",
+    "title_ko": "Fanatics, OpenAI로 팬 쇼핑 경험 혁신 — MLB 상품 참여율 10% 향상",
+    "url": "https://openai.com/index/fanatics-streamline-fan-experience",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "스포츠 커머스 기업 Fanatics가 OpenAI를 활용해 'Shop the Look' 기능을 도입했다. 이 기능은 팬들이 경기 당일 코디를 완성할 수 있도록 돕는다. 약 3만 개의 MLB 상품을 대상으로 테스트한 결과, 참여율이 10% 향상된 것으로 나타났다.",
+    "why_it_matters": "AI 기반 상품 추천이 스포츠 이커머스에서 실질적인 참여율 향상으로 이어진 구체적 사례로, 리테일 AI 적용 가능성을 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7559540343915344,
+    "published_at": "2026-10-26T07:00:00Z"
+  },
+  {
+    "id": "openai_blog-openai-cut-incident-investigation",
+    "section": "releases",
+    "title_en": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
+    "title_ko": "OpenAI 엔지니어, Codex Ultrafast로 장애 조사 시간을 몇 시간에서 몇 분으로 단축",
+    "url": "https://openai.com/index/openai-cut-incident-investigation",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI 엔지니어들이 Codex Ultrafast를 활용해 인시던트 조사 시간을 대폭 줄이고 있다. 보안 분석, 코드 리팩토링, 일상적인 개발 워크플로우 전반에 걸쳐 속도 향상 효과가 나타나고 있다. 기존에 몇 시간씩 걸리던 장애 원인 파악 작업이 몇 분 안에 처리 가능해졌다.",
+    "why_it_matters": "AI 코딩 도구가 실제 운영 환경의 인시던트 대응 속도를 획기적으로 개선할 수 있음을 OpenAI 내부 사례로 입증했다는 점에서 주목할 만하다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7559540343915344,
+    "published_at": "2026-10-26T07:00:00Z"
+  },
+  {
+    "id": "hn-50242939",
+    "section": "community",
+    "title_en": "Anthropic S-1",
+    "title_ko": "Anthropic S-1 공개",
+    "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Anthropic이 S-1 문서를 공개했다. S-1은 기업이 미국 증권거래위원회(SEC)에 제출하는 기업공개(IPO) 신청 서류다.",
+    "why_it_matters": "Anthropic의 IPO 추진 가능성을 시사하며, AI 업계 최대 관심사 중 하나인 주요 AI 기업의 상장 동향을 가늠할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 11.902245809573127,
+    "published_at": "2026-10-26T13:04:50Z"
+  },
+  {
+    "id": "hn-50248124",
+    "section": "community",
+    "title_en": "GPT-6.1 Terra",
+    "title_ko": "GPT-6.1 Terra 공개",
+    "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GPT-6.1 Terra가 공개되었다. 상세한 설명은 제공되지 않았으며, 제목 외의 추가 정보는 확인되지 않는다.",
+    "why_it_matters": "OpenAI의 새로운 GPT 모델로 추정되나, 구체적인 정보가 없어 추가 확인이 필요하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.02107162326278,
+    "published_at": "2026-10-26T18:01:17Z"
+  },
+  {
+    "id": "hn-50215997",
+    "section": "community",
+    "title_en": "Birdwatching rewires the brain and slows cognitive decline",
+    "title_ko": "버드워칭이 뇌를 재편하고 인지 저하를 늦춘다",
+    "url": "https://www.bbc.com/future/article/20261019-birdwatching-rewires-the-brain-and-slows-cognitive-decline",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "새 관찰 활동이 뇌 구조에 긍정적인 변화를 주고 인지 기능 저하를 늦출 수 있다는 내용을 다루고 있다. 상세한 연구 내용이나 수치는 제공되지 않았다.",
+    "why_it_matters": "AI·개발 분야와 직접적인 연관은 낮으나, 뇌 가소성과 인지 건강에 관심 있는 독자에게 흥미로운 주제다.",
+    "tags": [],
+    "score": 9.854519249631403,
+    "published_at": "2026-10-23T22:04:55Z"
+  },
+  {
+    "id": "hn-50245138",
+    "section": "community",
+    "title_en": "Sebastian Raschka's from-scratch video course on building reasoning models",
+    "title_ko": "Sebastian Raschka의 추론 모델 처음부터 구축하기 영상 강좌",
+    "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "머신러닝 교육자로 유명한 Sebastian Raschka가 추론 모델을 처음부터 직접 구현하는 영상 강좌를 공개했다. 강좌는 코드 레벨에서 추론 모델의 동작 원리를 이해하는 데 초점을 맞추고 있다.",
+    "why_it_matters": "추론 모델(Reasoning Model)의 내부 구조를 처음부터 구현하며 배울 수 있는 실습 중심 강좌로, 개발자들의 심층 이해에 도움이 된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.460109601043202,
+    "published_at": "2026-10-26T15:11:59Z"
+  },
+  {
+    "id": "hn-50200152",
+    "section": "community",
+    "title_en": "Blaise Pascal invented fixed route public transport (2024)",
+    "title_ko": "블레즈 파스칼이 고정 노선 대중교통을 발명했다 (2024)",
+    "url": "https://humantransit.org/2024/12/one-of-the-greatest-inventions-in-the-history-of-human-transport.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "수학자·철학자로 유명한 블레즈 파스칼이 고정 노선 대중교통의 발명자라는 내용을 다룬 글이다. 상세한 설명은 제공되지 않아 추가적인 사실 확인이 필요하다.",
+    "why_it_matters": "AI와 직접적인 관련은 없으나, 역사적 혁신가의 의외의 업적을 재조명하는 흥미로운 역사 콘텐츠다.",
+    "tags": [],
+    "score": 9.009287027789643,
+    "published_at": "2026-10-22T19:52:50Z"
+  },
+  {
+    "id": "youtube-cvpNLI-O9PY",
+    "section": "video",
+    "title_en": "AI뉴스 - KIMI 미쳤다, 대규모 AI 해킹, GPU 해킹, Claude Duet, 스마트폰 Agent, 이미지, 영상 API 가격 경쟁, Dessa 등",
+    "title_ko": "AI 주간 뉴스: Kimi K3.1 Pro, 대규모 AI 해킹, Claude Duet, 스마트폰 에이전트, 이미지·영상 API 가격 경쟁 등",
+    "url": "https://www.youtube.com/watch?v=cvpNLI-O9PY",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "이번 주 AI 뉴스로 Kimi K3.1 Pro 공개, PHP·GitLab·Node.js 등을 대상으로 한 대규모 AI 해킹 사례, Claude Duet 출시, 스마트폰 에이전트(Phone Use) 동향이 소개됩니다. 이미지·영상 생성 API 가격 경쟁, Wan 3.0·FLUX 3 Max·로컬 오픈웨이트 모델 등 생성 AI 도구의 확산도 다룹니다. 음성 AI 분야에서는 대화만 듣고 학습한 실시간 음성 AI 'Dessa'와 오픈웨이트 TTS 모델 Ming 3.0 등도 소개됩니다.",
+    "why_it_matters": "한 주간 LLM·에이전트·보안·멀티모달 전 분야에서 굵직한 업데이트가 동시에 쏟아져, 국내 개발자가 빠르게 트렌드를 파악하기 좋은 종합 요약입니다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7946560846560846,
+    "published_at": "2026-10-26T13:30:07Z"
+  },
+  {
+    "id": "youtube-c7eoynzRGME",
+    "section": "video",
+    "title_en": "앱 만들기는 쉬워졌다, 이제 돈 버는 방법 | Google AdMob | Global App Summit 2026",
+    "title_ko": "앱 수익화의 모든 것: Google AdMob으로 1인 개발자가 돈 버는 법",
+    "url": "https://www.youtube.com/watch?v=c7eoynzRGME",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "바르셀로나에서 열린 Google Global App Summit 2026 현장에서 구글 코리아 앱 수익화 전문가들과 나눈 인터뷰 영상입니다. 결제 유저는 5% 미만이므로 광고와 인앱 결제를 결합한 하이브리드 수익화가 핵심 전략으로 소개됩니다. AdMob과 Firebase SDK 두 개로 시작할 수 있으며, PiP·스퀴즈백 같은 새 광고 포맷과 A/B 테스트를 통한 최적화 방법도 다룹니다.",
+    "why_it_matters": "바이브 코딩 등으로 앱 개발 진입 장벽이 낮아진 시대에, 1인 개발자가 실질적인 광고 수익화 전략을 구글 전문가에게 직접 들을 수 있는 실전 콘텐츠다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 0.7708862433862433,
+    "published_at": "2026-10-26T09:30:31Z"
+  },
+  {
+    "id": "youtube-Z0y6tlhLZAI",
+    "section": "video",
+    "title_en": "화상회의가 귀찮아서 AI 시킨 개발자의 최후",
+    "title_ko": "화상회의가 귀찮아서 AI에게 맡긴 개발자 이야기",
+    "url": "https://www.youtube.com/shorts/Z0y6tlhLZAI",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "개발자 유튜버 조코딩이 화상회의를 AI로 대체하는 경험을 다룬 영상이다. 바이브 코딩과 AI 활용 1인 창업을 주제로 한 책 출간 및 AX 컨설팅 활동도 소개한다.",
+    "why_it_matters": "AI를 업무 자동화에 실제로 적용하는 개발자 사례로, 일상적인 회의 대체 가능성에 대한 흥미로운 시각을 제공한다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7525396825396825,
+    "published_at": "2026-10-26T06:25:35Z"
+  },
+  {
+    "id": "simon_willison-gpt-61-terra",
+    "section": "deepdive",
+    "title_en": "GPT-6.1 Terra",
+    "title_ko": "OpenAI GPT-6.1 Terra 출시 – 시각 추론과 컴퓨터 사용에 특화된 중간급 모델",
+    "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "OpenAI가 GPT-6.1 Terra를 공개했다. 상세한 시각 추론과 컴퓨터 사용(computer use), 자연스러운 글쓰기를 강점으로 내세운 중간급 모델이다. 가격은 입력 토큰 100만 개당 $1, 출력 100만 개당 $5로, GPT-6.1 Sol과 GPT-5.6 Terra 대비 거의 절반 수준이다. OpenAI 내부 관계자에 따르면 기술적 커뮤니케이션과 속도 면에서 상위 모델보다 뛰어나지만, 그 외 영역에서는 다소 부족할 수 있다.",
+    "why_it_matters": "가격 경쟁력과 컴퓨터 사용 기능을 동시에 갖춘 중간급 모델로, API 개발자에게 Sol과 Luna 사이의 실용적 대안이 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8564616402116403,
+    "published_at": "2026-10-26T23:53:07Z"
+  }
+]
