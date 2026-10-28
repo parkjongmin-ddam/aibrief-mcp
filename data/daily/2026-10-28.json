@@ -1,0 +1,334 @@
+[
+  {
+    "id": "hf-2610.34467",
+    "section": "papers",
+    "title_en": "DynaFlow: Learning Free-Form Multi-Agent Orchestration",
+    "title_ko": "DynaFlow: 자유형식 멀티에이전트 오케스트레이션 학습 프레임워크",
+    "url": "https://huggingface.co/papers/2610.34467",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "DynaFlow는 메인 에이전트가 협업 필요 여부를 스스로 판단하고, 서브 에이전트들을 순차·병렬 실행으로 조율하는 태스크별 프로그램을 동적으로 생성하는 멀티에이전트 프레임워크다. 메인 에이전트만 지도 학습 및 필터링 기반 정제로 훈련하며, 서브 에이전트는 고정하여 오케스트레이션 학습과 실행 능력 개선을 분리했다. 수학 추론, 과학 QA, 멀티홉 검색 등 6개 벤치마크에서 Qwen3.5-27B 백본 기준 88.08% 정확도로 최강 베이스라인 대비 10.90%p 향상을 달성했다.",
+    "why_it_matters": "고정된 협업 구조 없이 태스크에 맞게 동적으로 워크플로우를 생성하는 접근법으로, 멀티에이전트 시스템의 유연성과 성능을 크게 높일 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 6.220355825078325,
+    "published_at": "2026-10-24T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.35845",
+    "section": "papers",
+    "title_en": "Work Agents: Systems, Capabilities, and Optimization",
+    "title_ko": "워크 에이전트: 시스템, 역량, 최적화를 위한 통합 프레임워크",
+    "url": "https://huggingface.co/papers/2610.35845",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "파운데이션 모델이 정보 생성을 넘어 실제 디지털 작업 수행으로 진화함에 따라, 이 논문은 '워크 에이전트'를 도구·앱·워크플로우에 걸쳐 복잡한 작업을 완수하는 시스템으로 정의하는 통합 관점을 제시한다. 작업 지속성과 작업 개방성이라는 두 가지 차원을 도입해 작업 조건을 분류하고, 신뢰할 수 있는 작업 수행에 필요한 다섯 가지 핵심 역량 군을 식별한다. 모델 최적화, 하네스 최적화, 그리고 이들의 공동 최적화 방법론과 함께 기존 평가 방법을 작업 결과 관점에서 분석한다.",
+    "why_it_matters": "에이전트 연구의 파편화된 시각을 통합하는 체계적 프레임워크를 제공해, 실용적이고 검증 가능한 AI 에이전트 시스템 개발의 이론적 토대를 마련한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.59511985013459,
+    "published_at": "2026-10-25T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.34415",
+    "section": "papers",
+    "title_en": "Spatial Audio Generation and Editing with Executable Plans and Self-Distilling Transfusion",
+    "title_ko": "AMBIT: 공간 오디오 생성 및 편집을 위한 통합 프레임워크",
+    "url": "https://huggingface.co/papers/2610.34415",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "AMBIT은 1차 암비소닉스(FOA) 기반의 공간 오디오 생성과 편집을 위한 통합 프레임워크다. 자기회귀 계획과 정류 흐름 렌더링을 결합한 Transfusion 백본, FOA 인식 연속 VAE, 그리고 온폴리시 자기증류(OPSD) 기법을 핵심 기술로 사용한다. 음성, 음악, 효과음 전반에서 공간 음질, 음향 충실도, 미편집 소스 보존 성능이 기존 대비 향상됐다.",
+    "why_it_matters": "3D 공간 오디오의 생성·편집을 하나의 프레임워크로 통합해 실감형 오디오 콘텐츠 제작 워크플로우를 크게 단순화할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.663561646129646,
+    "published_at": "2026-10-24T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.33413",
+    "section": "papers",
+    "title_en": "AV-FABLE: Audio-Visual Manipulation Forensics in Long-Form Videos",
+    "title_ko": "AV-FABLE: 장편 영상 속 오디오-비주얼 딥페이크 위치 탐지 벤치마크",
+    "url": "https://huggingface.co/papers/2610.33413",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "AV-FABLE은 장편 영상에서 발생하는 희소한 오디오·비주얼 조작을 탐지하기 위한 이중 타임라인 벤치마크로, 998시간 분량의 16,650쌍 원본-조작 영상 쌍을 포함한다. 기존 딥페이크 벤치마크가 짧은 토킹헤드 클립에 집중했던 한계를 극복하고, 오디오와 비주얼 타임라인을 분리해 각 모달리티별 시간적 위치 탐지를 지원한다. 제안된 NFSR 방법은 동결된 AV-LLM 특징을 분리된 오디오·비주얼 디코더로 읽어 인도메인 및 세 가지 분포 외 설정 모두에서 최고 성능을 달성했다.",
+    "why_it_matters": "장편 영상 속 부분적 AI 조작을 정밀하게 탐지·위치 특정하는 공개 벤치마크와 방법론을 제공해 영상 포렌식 연구의 새로운 기준을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.526360524616162,
+    "published_at": "2026-10-23T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.33512",
+    "section": "papers",
+    "title_en": "Eat Your Precision: Precision Objective Mitigates Reward Hacking in Rubric-based RL",
+    "title_ko": "정밀도 목표로 보상 해킹 방지: 루브릭 기반 강화학습의 FORK 보상",
+    "url": "https://huggingface.co/papers/2610.33512",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "루브릭 기반 보상으로 강화학습을 수행하면 모델이 재현율(recall) 최대화에 치우쳐 응답이 장황해지고 불필요하거나 사실과 다른 내용이 늘어나는 문제가 발생한다. 이를 해결하기 위해 FORK 보상을 제안하며, 재현율과 함께 '각 응답 단위의 필요성 및 사실 정확성'을 평가하는 정밀도 목표를 공동 최적화한다. 실험 결과 FORK는 루브릭 커버리지를 유지하면서도 응답 길이를 줄이고 정밀도를 크게 향상시켜, RubricHub-Medical에서 승률이 10.6%→68.0%, HealthBench에서 22.1%→74.1%로 대폭 개선됐다.",
+    "why_it_matters": "LLM 강화학습에서 흔히 발생하는 보상 해킹(장황한 응답·사실 오류)을 정밀도 목표 도입만으로 실질적으로 억제할 수 있음을 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.401197381662156,
+    "published_at": "2026-10-23T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-retell-ai",
+    "section": "releases",
+    "title_en": "Retell uses OpenAI models to help power 100M monthly calls",
+    "title_ko": "Retell, OpenAI 모델로 월 1억 건 통화 처리",
+    "url": "https://openai.com/index/retell-ai",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Retell은 OpenAI 모델을 활용해 월 1억 건의 통화를 처리하는 음성 에이전트 플랫폼을 운영하고 있다. GPT-4o Astra가 Retell의 음성 에이전트 벤치마크에서 최상위를 기록했으며, Codex 활용을 통해 직원 1인당 연간 160만 달러의 매출 런레이트를 달성했다.",
+    "why_it_matters": "OpenAI 모델이 실제 대규모 음성 에이전트 서비스에서 생산성과 성능 모두를 입증한 사례로, AI 기반 비즈니스 효율화의 가능성을 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.803573082010582,
+    "published_at": "2026-10-27T15:00:00Z"
+  },
+  {
+    "id": "openai_blog-oracle-apps-in-chatgpt",
+    "section": "releases",
+    "title_en": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+    "title_ko": "OpenAI, Oracle과 파트너십 확대해 ChatGPT에 비즈니스 앱 통합",
+    "url": "https://openai.com/index/oracle-apps-in-chatgpt",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI와 Oracle이 파트너십을 확대해 비즈니스 애플리케이션과 AI 에이전트를 ChatGPT에 통합한다. 또한 이번 협력을 통해 새로운 Oracle 서비스도 지원할 예정이다.",
+    "why_it_matters": "ChatGPT가 엔터프라이즈 비즈니스 앱과 연동되며 업무용 AI 플랫폼으로의 확장이 가속화된다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7559540343915344,
+    "published_at": "2026-10-27T07:00:00Z"
+  },
+  {
+    "id": "github_trending-Nutlope/hallmark",
+    "section": "releases",
+    "title_en": "Nutlope/hallmark",
+    "title_ko": "Hallmark: AI 생성 티 없는 디자인 스킬 (Claude Code·Cursor·Codex 지원)",
+    "url": "https://github.com/Nutlope/hallmark",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Hallmark는 Claude Code, Cursor, Codex 등 AI 코딩 도구에서 사용할 수 있는 디자인 스킬로, AI가 만든 것처럼 보이는 뻔한 UI 패턴을 자동으로 감지·차단합니다. 48개의 테마를 제공하며, 페이지 목적에 맞춘 레이아웃 구성과 실제 브라우저 기반의 'sloplint' 검사를 통해 완성도를 높입니다. Together AI가 제작했으며 MIT 라이선스로 오픈소스로 공개되어 있습니다.",
+    "why_it_matters": "AI 코딩 도구로 생성한 UI의 '기계적 느낌'을 자동으로 걸러주는 품질 게이트로, 개발자가 별도 디자인 작업 없이도 완성도 높은 결과물을 낼 수 있게 한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7492080026455026,
+    "published_at": "2026-10-27T05:52:00Z"
+  },
+  {
+    "id": "github_trending-TauricResearch/TradingAgents",
+    "section": "releases",
+    "title_en": "TauricResearch/TradingAgents",
+    "title_ko": "TradingAgents: 멀티 에이전트 LLM 금융 트레이딩 프레임워크",
+    "url": "https://github.com/TauricResearch/TradingAgents",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "TradingAgents는 실제 트레이딩 회사의 구조를 모방한 멀티 에이전트 LLM 금융 트레이딩 프레임워크로, 펀더멘털 분석가·감성 분석가·기술적 분석가·리스크 관리팀 등 전문화된 에이전트들이 협력하여 매매 결정을 내린다. OpenAI, Anthropic, Google, DeepSeek 등 다양한 LLM 프로바이더를 지원하며 CLI와 Python API를 통해 사용할 수 있다. 백테스팅, 체크포인트 재개, 메모리 로그 등의 기능도 갖추고 있으며 전체 오픈소스로 공개되었다.",
+    "why_it_matters": "LLM 기반 멀티 에이전트 시스템을 금융 트레이딩 도메인에 적용한 연구용 프레임워크로, 에이전트 협업 아키텍처의 실제 활용 사례를 탐구하는 개발자와 연구자에게 유용하다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7492080026455026,
+    "published_at": "2026-10-27T05:52:00Z"
+  },
+  {
+    "id": "github_trending-JetBrains/thinkrail",
+    "section": "releases",
+    "title_en": "JetBrains/thinkrail",
+    "title_ko": "JetBrains, 에이전트 기반 IDE 'ThinkRail' 오픈소스 공개",
+    "url": "https://github.com/JetBrains/thinkrail",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "JetBrains가 `pi` 코딩 에이전트를 중심으로 구축한 경량 에이전트 IDE 'ThinkRail'을 오픈소스로 공개했다. git worktree 기반 격리 워크스페이스, SPEC.md로 관리되는 프로젝트 지식 그래프, MCP 서버 연동, GitHub PR 통합 등 실용적인 기능을 갖춘 풀 IDE 환경을 제공한다. 데스크탑 앱과 CLI 두 가지 형태로 배포되며, JetBrains AI 또는 사용자 자신의 모델 프로바이더를 직접 연결해 사용할 수 있다. Apache 2.0 라이선스로 배포된다.",
+    "why_it_matters": "JetBrains가 에이전트 중심 개발 환경을 직접 오픈소스로 제시함으로써, AI 코딩 에이전트와 실제 IDE 워크플로우의 통합 방향성을 보여주는 레퍼런스가 될 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7492080026455026,
+    "published_at": "2026-10-27T05:52:00Z"
+  },
+  {
+    "id": "github_trending-Panniantong/Agent-Reach",
+    "section": "releases",
+    "title_en": "Panniantong/Agent-Reach",
+    "title_ko": "Agent Reach: AI 에이전트에게 인터넷 눈을 달아주는 오픈소스 CLI 도구",
+    "url": "https://github.com/Panniantong/Agent-Reach",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Agent Reach는 Claude Code, Codex 등 CLI 에이전트가 접근하기 어려운 플랫폼(트위터, 레딧, 유튜브, GitHub, 빌리빌리, 샤오홍수 등)을 하나의 CLI 명령으로 검색·읽기할 수 있게 해주는 오픈소스 도구다. API 비용 없이 로그인 필요 플랫폼, 동영상 자막, 중문 플랫폼, 구조화 데이터까지 에이전트가 활용할 수 있도록 지원한다. 모든 데이터는 사용자 컴퓨터 내 전용 브라우저에서만 동작하며, 읽기 전용으로 설계되어 게시·댓글 등의 쓰기 행위는 하지 않는다.",
+    "why_it_matters": "AI 에이전트가 로그인 벽·중문 플랫폼·동영상 콘텐츠 등 기존 도구로 접근 불가했던 인터넷 영역을 단일 CLI로 무료 접근할 수 있게 해 에이전트 활용 범위를 크게 넓힌다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7492080026455026,
+    "published_at": "2026-10-27T05:52:00Z"
+  },
+  {
+    "id": "github_trending-alchaincyf/huashu-design",
+    "section": "releases",
+    "title_en": "alchaincyf/huashu-design",
+    "title_ko": "Huashu Design 3.0 - 한 문장으로 완성하는 AI 디자인 에이전트 스킬",
+    "url": "https://github.com/alchaincyf/huashu-design",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Huashu Design은 Claude Code, Cursor, Codex 등 AI 에이전트에 설치해 한 문장 프롬프트만으로 웹페이지, 앱 프로토타입, 편집 가능한 PPTX, 애니메이션, 인포그래픽 등을 생성하는 오픈소스 디자인 스킬이다. 3.0 버전에서는 6개 후보 썸네일 중 3개 방향을 선택하는 방식, 84종 스타일 라이브러리(앱·중국/동아시아 분류 추가), 디자인 진단 및 외관 기록 기능이 추가됐다. 핵심 렌더링 파이프라인은 100% 로컬에서 실행되며, 2026년 5월 14일부터 MIT 라이선스로 전환해 상업적 사용도 무료로 허용된다.",
+    "why_it_matters": "GUI 없이 에이전트와의 대화만으로 납품 수준의 디자인 결과물을 자동 생성할 수 있어, AI 코딩 환경에서 디자인 워크플로우를 완전히 대체할 가능성을 보여준다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7492080026455026,
+    "published_at": "2026-10-27T05:52:00Z"
+  },
+  {
+    "id": "hn-50261319",
+    "section": "community",
+    "title_en": "Genie 4",
+    "title_ko": "Genie 4 출시",
+    "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Genie 4가 공개되었다. 상세한 설명이 제공되지 않아 추가적인 내용은 확인이 필요하다.",
+    "why_it_matters": "Genie 시리즈의 새 버전으로, 관련 커뮤니티의 주목을 받고 있다.",
+    "tags": [],
+    "score": 10.535541332518225,
+    "published_at": "2026-10-27T16:06:01Z"
+  },
+  {
+    "id": "hn-50257326",
+    "section": "community",
+    "title_en": "Wikipedia's Cleanup of AI-Generated Content",
+    "title_ko": "위키피디아의 AI 생성 콘텐츠 정리 작업",
+    "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "위키피디아가 AI로 생성된 콘텐츠를 정리하는 작업을 진행 중이다. 구체적인 세부 사항은 공개된 설명이 없으나, AI 작성 글의 품질 및 신뢰성 문제가 주요 배경으로 보인다.",
+    "why_it_matters": "오픈 지식 플랫폼에서 AI 생성 콘텐츠의 신뢰성 문제가 본격적으로 대두되고 있음을 보여주는 사례다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 9.729294697378572,
+    "published_at": "2026-10-27T11:08:15Z"
+  },
+  {
+    "id": "hn-50261589",
+    "section": "community",
+    "title_en": "Amazon Is Gutting Its AI Division After Sustained Failure",
+    "title_ko": "아마존, 지속적인 실패 끝에 AI 부문 대규모 구조조정",
+    "url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "아마존이 자사 AI 부문을 대폭 축소하는 구조조정을 단행하고 있다는 보도가 나왔다. 구체적인 원인은 알 수 없으나 제목에 따르면 지속적인 실패가 배경으로 지목된다.",
+    "why_it_matters": "빅테크의 AI 투자 전략이 재편될 수 있음을 시사하는 신호로 업계 전반에 파장이 예상된다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 8.88759227463267,
+    "published_at": "2026-10-27T16:25:30Z"
+  },
+  {
+    "id": "hn-50264857",
+    "section": "community",
+    "title_en": "Tailscale SSH: Investigation and remediation update",
+    "title_ko": "Tailscale SSH: 보안 사고 조사 및 대응 업데이트",
+    "url": "https://tailscale.com/ssh-investigation-update",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Tailscale이 SSH 관련 보안 사고의 조사 및 해결 과정에 대한 업데이트를 공개했다. 구체적인 내용은 공식 발표를 통해 확인할 수 있다.",
+    "why_it_matters": "Tailscale SSH를 사용 중인 팀이라면 보안 사고 내용과 권고 조치를 즉시 확인해야 한다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 8.44641078846622,
+    "published_at": "2026-10-27T19:55:21Z"
+  },
+  {
+    "id": "hn-50264853",
+    "section": "community",
+    "title_en": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+    "title_ko": "Survival LLM: 오프라인에서 실행되는 AI 긴급 생존 도우미",
+    "url": "https://www.brangus.io/survival-llm",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Survival LLM은 인터넷 연결 없이 자신의 컴퓨터에서 직접 실행되는 AI 어시스턴트 겸 비상 라이브러리다. 긴급 상황에서 필요한 정보를 로컬 LLM을 통해 제공하는 것을 목표로 한다.",
+    "why_it_matters": "인터넷이 끊긴 재난 상황에서도 AI 기반 정보 접근이 가능한 오프라인 LLM 활용 사례로 주목할 만하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.270246052522086,
+    "published_at": "2026-10-27T19:55:06Z"
+  },
+  {
+    "id": "youtube-V_uq3v6xK-4",
+    "section": "video",
+    "title_en": "The Sphere Intersection Puzzle",
+    "title_ko": "구 교차 퍼즐",
+    "url": "https://www.youtube.com/shorts/V_uq3v6xK-4",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "3Blue1Brown의 월간 퍼즐 시리즈 중 하나로, 구(sphere) 교차에 관한 수학 퍼즐을 다룬다. 다양한 풀이 방법을 멤버 전용 페이지에서 미리 확인할 수 있다.",
+    "why_it_matters": "수학적 사고력을 키우는 퍼즐 콘텐츠로, AI와 직접적인 관련은 없으나 수학 교육 콘텐츠로서의 참고 가치가 있다.",
+    "tags": [],
+    "score": 0.5149586640211641,
+    "published_at": "2026-10-25T14:30:46Z"
+  },
+  {
+    "id": "simon_willison-game-boy-color-on-my-conference-badge",
+    "section": "deepdive",
+    "title_en": "Game Boy Color on My Conference Badge",
+    "title_ko": "GitHub Universe 컨퍼런스 배지에서 게임보이 컬러 실행",
+    "url": "https://simonwillison.net/2026/Oct/27/game-boy-color-on-my-conference-badge/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "GitHub Universe 2025 컨퍼런스 배지는 컬러 스크린을 갖춘 소형 컴퓨터로, 개발자 Steve Francia가 Gemini의 도움을 받아 NES 에뮬레이터에 이어 게임보이 및 게임보이 컬러 에뮬레이터까지 배지에서 구동하는 데 성공했다. ROM을 구하면 배지에서 젤다의 전설: 꿈꾸는 섬을 풀 컬러로 플레이할 수 있다. 배지를 뒤집으면 터치 방식의 게임 컨트롤러 버튼도 사용할 수 있다.",
+    "why_it_matters": "LLM(Gemini)을 활용한 하드웨어 해킹의 가능성을 보여주는 흥미로운 사례로, AI 보조 개발이 임베디드·하드웨어 영역까지 확장됨을 시사한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8307853835978836,
+    "published_at": "2026-10-27T19:34:18Z"
+  }
+]
