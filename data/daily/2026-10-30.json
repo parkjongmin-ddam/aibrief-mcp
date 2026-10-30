@@ -1,0 +1,323 @@
+[
+  {
+    "id": "hf-2610.36077",
+    "section": "papers",
+    "title_en": "The Trinity:Capability-Driven Recursive Self-Improvement for Multimodal Agents",
+    "title_ko": "Trinity: 멀티모달 에이전트를 위한 능력 기반 재귀적 자기 개선 프레임워크",
+    "url": "https://huggingface.co/papers/2610.36077",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Trinity는 Creator·Explorer·Evolver 세 역할을 통해 멀티모달 에이전트의 세계 생성과 Harness 진화를 결합한 재귀적 자기 개선 프레임워크다. 태스크를 표면적 카테고리가 아닌 공통 능력 요구사항 기반으로 재조직하는 '능력 트리'를 도입하며, Real2Sim2Real 방식으로 검증 가능한 시뮬레이션 환경에서 능력을 학습한 후 실제 태스크로 전이한다. 실험 결과, 28개 학습 벤치마크에서 평균 34포인트, 18개 미학습 벤치마크에서 26포인트 성능 향상을 달성했다.",
+    "why_it_matters": "멀티모달 에이전트의 학습 비용과 다양성 확장 문제를 자기 개선 루프로 해결해, 실세계 구현 태스크까지 일반화 가능성을 보여준다는 점에서 주목할 만하다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 6.958424693029782,
+    "published_at": "2026-10-25T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.35013",
+    "section": "papers",
+    "title_en": "Multiscale Policy Optimization for Long-Horizon LLM Agents",
+    "title_ko": "장기 수행 LLM 에이전트를 위한 멀티스케일 정책 최적화(MPO)",
+    "url": "https://huggingface.co/papers/2610.35013",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "장기 수행 LLM 에이전트는 환경과 상호작용할 때 액션 토큰을 하나씩 생성하면서 전체 어시스턴트 턴 단위로 동작한다. 연구진은 크리틱 값이 주로 턴 간에 변동함을 발견하고, 턴 수준의 크레딧 할당을 정책 업데이트에 반영하는 멀티스케일 정책 최적화(MPO)를 제안했다. MPO는 멀티스케일 어드밴티지 추정(MAE)과 턴 레벨 중요도 샘플링을 결합하며, 4B 및 30B-A3B 모델로 검색·도구 사용·자동화 태스크에서 기존 강화학습 기준선 대비 일관된 성능 향상을 달성했다.",
+    "why_it_matters": "LLM 에이전트의 장기 태스크 수행 능력을 강화학습으로 개선하는 실용적 프레임워크로, 에이전트 훈련 효율성 향상에 직접적 기여 가능성이 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 6.942799375126701,
+    "published_at": "2026-10-25T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.34073",
+    "section": "papers",
+    "title_en": "Memory Tax: Dissecting the Net Value of Agent Memory",
+    "title_ko": "메모리 세금: 에이전트 메모리의 실질적 가치 분석",
+    "url": "https://huggingface.co/papers/2610.34073",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "장기 에이전트에서 메모리 시스템이 널리 사용되고 있지만, 원시 히스토리에서 직접 검색하는 방식(naive RAG) 대비 실질적 가치는 불분명했다. 대규모 벤치마크 평가 결과, 많은 전용 메모리 시스템이 naive RAG보다 오히려 성능이 낮은 경우가 많았다. 연구진은 이를 '메모리 혜택'과 '메모리 세금'으로 분리하여 분석했으며, 메모리가 정보를 재구성하는 과정에서 오히려 증거를 제거하거나 모호하게 만드는 부작용이 발생함을 밝혔다. 코드와 결과물은 오픈소스로 공개될 예정이다.",
+    "why_it_matters": "메모리 시스템의 절대 성능이 아닌 RAG 대비 순이득을 기준으로 평가해야 한다는 새로운 관점을 제시해, 에이전트 메모리 설계 방향에 근본적인 재검토를 촉구한다.",
+    "tags": [
+      "에이전트",
+      "RAG"
+    ],
+    "score": 6.0238805208462765,
+    "published_at": "2026-10-24T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.37381",
+    "section": "papers",
+    "title_en": "PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations",
+    "title_ko": "PDRVLA: 물리적 역학 표현을 갖춘 비전-언어-행동 모델",
+    "url": "https://huggingface.co/papers/2610.37381",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "PDRVLA는 로봇 제어를 위한 VLA 모델로, 온라인 비디오 생성 없이 물리적 역학 정보를 추출하는 경량 Physical Dynamics Module을 도입했습니다. 이 모듈은 미래의 RGB, 깊이(depth), 광학 흐름(optical flow) 특징을 직접 예측하며 학습하고, 동결된 사전 학습 비디오 월드 모델로 보조 감독을 수행합니다. LIBERO에서 99.3%, RoboTwin 2.0에서 93.6%, SimplerEnv에서 81.5% 등 4개 시뮬레이션 벤치마크에서 높은 성공률을 달성했습니다.",
+    "why_it_matters": "비디오 생성 없이 물리적 역학을 저지연으로 활용함으로써 실시간 로봇 제어의 실용성을 크게 높인 접근법이다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 6.003946305945459,
+    "published_at": "2026-10-26T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.35864",
+    "section": "papers",
+    "title_en": "VibeVideoBench: Evaluating Multimodal Agents on Code-Driven Video Generation",
+    "title_ko": "VibeVideoBench: 코드 기반 영상 생성 멀티모달 에이전트 평가 벤치마크",
+    "url": "https://huggingface.co/papers/2610.35864",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "VibeVideoBench는 이미지·영상 생성 모델 없이 코드만으로 영상을 제작하는 멀티모달 에이전트를 평가하는 벤치마크다. 영어·중국어로 구성된 239개 태스크가 데이터 스토리, 음악 기반 영상, 수업 강의 등 12개 카테고리를 포함하며, 에이전트는 1시간 내에 사운드가 포함된 MP4를 완성해야 한다. 9개 프론티어 에이전트 시스템을 대상으로 한 평가에서 GPT-6 Astra와 Claude Opus 5.5가 1·2위를 차지했으며, 최고 시스템도 핵심 요건을 76.3% 태스크에서만 충족했다. 영상 미제출 시 점수가 0점 처리되며, 미제출의 75%는 렌더링 시작 지연·속도 저하 등 시간 계획 실패가 원인으로 나타났다.",
+    "why_it_matters": "코드 기반 영상 생성 에이전트의 실질적 한계(시간 관리, 품질 일관성)를 체계적으로 측정하는 최초의 전용 벤치마크로, 에이전트 개발 방향 설정에 중요한 기준을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.499809670330265,
+    "published_at": "2026-10-26T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-updated-model-spec",
+    "section": "releases",
+    "title_en": "An updated Model Spec for more capable and beneficial AI",
+    "title_ko": "더 유능하고 유익한 AI를 위한 OpenAI 모델 스펙 업데이트",
+    "url": "https://openai.com/index/updated-model-spec",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 더 유능한 AI를 올바른 방향으로 이끌기 위한 업데이트된 모델 스펙을 공개했다. 이번 스펙은 건전한 판단력, 인간의 자율성 존중, 인간 의도에 대한 충실성을 포함한 5가지 핵심 가치를 중심으로 구성되어 있다. AI가 더욱 강력해질수록 이를 안내하는 원칙의 중요성도 커지고 있다.",
+    "why_it_matters": "OpenAI의 공식 AI 행동 지침이 업데이트됨으로써, 향후 모델 개발과 정책 방향에 직접적인 영향을 미친다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8154778439153438,
+    "published_at": "2026-10-29T17:00:00Z"
+  },
+  {
+    "id": "openai_blog-how-we-detect-frontier-model-misalignment",
+    "section": "releases",
+    "title_en": "How we detect frontier model misalignment",
+    "title_ko": "OpenAI, 프론티어 모델 정렬 이탈 탐지 방법 공개",
+    "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI는 프론티어 모델의 정렬 이탈 및 무단 에이전트 행동을 탐지하기 위해 다층적 모니터링 체계를 운영하고 있다. 이 시스템은 문제가 심각해지기 전에 담당자가 개입할 수 있도록 설계되어 있다.",
+    "why_it_matters": "AI 모델의 비정상 행동을 조기에 탐지하고 개입하는 체계는 에이전트 AI 안전성의 핵심 인프라로 주목된다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "인프라"
+    ],
+    "score": 0.7678587962962963,
+    "published_at": "2026-10-29T09:00:00Z"
+  },
+  {
+    "id": "openai_blog-ropes-gray-ai-diligence",
+    "section": "releases",
+    "title_en": "How Ropes & Gray is developing AI for transactional diligence",
+    "title_ko": "Ropes & Gray, OpenAI와 협력해 거래 실사용 AI 개발",
+    "url": "https://openai.com/index/ropes-gray-ai-diligence",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "글로벌 로펌 Ropes & Gray가 OpenAI와 협력하여 거래 실사(due diligence) 업무에 특화된 AI를 개발하고 있다. 이 시스템은 문서를 그룹화하고 요약·보고서를 생성하며, 변호사들은 이를 검토한 후 고객에게 자문을 제공한다.",
+    "why_it_matters": "대형 로펌이 OpenAI와 직접 협력해 법률 실사 워크플로우를 AI로 자동화하는 구체적 사례로, 리걸테크 분야의 AI 도입 가속화를 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7559540343915344,
+    "published_at": "2026-10-29T07:00:00Z"
+  },
+  {
+    "id": "github_trending-JetBrains/thinkrail",
+    "section": "releases",
+    "title_en": "JetBrains/thinkrail",
+    "title_ko": "JetBrains, 에이전트 기반 IDE 'ThinkRail' 오픈소스 공개",
+    "url": "https://github.com/JetBrains/thinkrail",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "JetBrains가 `pi` 코딩 에이전트를 중심으로 구축한 경량 에이전트 IDE 'ThinkRail'을 오픈소스로 공개했다. git worktree 기반의 격리된 워크스페이스, SPEC.md를 통한 프로젝트 지식 유지, MCP 서버 연동, 다중 모델 동시 채팅 등 다양한 기능을 제공한다. 데스크톱 앱과 CLI 두 가지 형태로 배포되며, JetBrains AI 또는 사용자 자체 모델 프로바이더를 연결해 사용할 수 있다. Apache 2.0 라이선스로 공개된 인큐베이터 프로젝트다.",
+    "why_it_matters": "JetBrains가 자체 에이전트 IDE를 오픈소스로 공개함으로써, 코드 에이전트 중심의 개발 환경 경쟁이 본격화되었음을 보여주는 신호탄이다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7539417989417989,
+    "published_at": "2026-10-29T06:39:43Z"
+  },
+  {
+    "id": "github_trending-elayadesign/ai-design-skills",
+    "section": "releases",
+    "title_en": "elayadesign/ai-design-skills",
+    "title_ko": "AI 코딩 도구를 위한 디자인 스킬 모음집",
+    "url": "https://github.com/elayadesign/ai-design-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code, Cursor, Codex, Windsurf 등 마크다운 규칙 파일을 읽는 AI 코딩 도구에 적용할 수 있는 디자인 스킬 컬렉션이다. 현재 랜딩 페이지를 처음부터 설계하는 `landing-page-design` 스킬이 포함되어 있으며, 각 스킬은 독립된 폴더로 필요한 것만 골라 설치할 수 있다. 폰트, 색상, 간격, 모션 등 디자인 값은 파일 하단 한 곳에 모아 두어 포크 후 수정하면 전체 스킬에 자동 반영된다.",
+    "why_it_matters": "AI 코딩 에이전트에 디자인 전문 지식을 주입하는 표준화된 방법을 제시해, 개발자가 별도 디자이너 없이도 일관된 품질의 UI를 생성할 수 있게 한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7539417989417989,
+    "published_at": "2026-10-29T06:39:43Z"
+  },
+  {
+    "id": "github_trending-Nutlope/hallmark",
+    "section": "releases",
+    "title_en": "Nutlope/hallmark",
+    "title_ko": "Hallmark: AI 코딩 도구용 안티-AI-슬롭 디자인 스킬",
+    "url": "https://github.com/Nutlope/hallmark",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Hallmark는 Claude Code, Cursor, Codex 등 AI 코딩 도구에서 사용할 수 있는 디자인 스킬로, AI가 생성한 티가 나는 뻔한 UI 패턴(모든 페이지의 뉴스레터 구독, 빈 프레임 남용 등)을 자동으로 검출하고 차단한다. 50개의 테마와 755장의 공개 라이선스 사진을 제공하며, 실제 브라우저에서 8개 해상도로 결과물을 검증한다. Together AI가 제작했으며 MIT 라이선스로 공개되어 있다.",
+    "why_it_matters": "AI 코딩 도구로 생성되는 UI의 품질 문제를 자동화된 lint 및 디자인 규칙으로 해결하는 오픈소스 접근법이라 실무 개발자에게 즉시 활용 가능하다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7539417989417989,
+    "published_at": "2026-10-29T06:39:43Z"
+  },
+  {
+    "id": "github_trending-togg53192-cmd/jailbreaks",
+    "section": "releases",
+    "title_en": "togg53192-cmd/jailbreaks",
+    "title_ko": "26개 이상 LLM 대상 탈옥 프롬프트 모음집",
+    "url": "https://github.com/togg53192-cmd/jailbreaks",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude, Gemini, Grok, DeepSeek, Qwen 등 26개 이상의 프론티어 및 오픈웨이트 모델을 대상으로 한 32개의 시스템 프롬프트·페르소나 정의·워크스페이스 정책·AGENTS.md 파일을 정리한 GitHub 저장소다. 각 파일은 바로 붙여넣기 가능한 완성본 형태로 제공되며, Ollama Modelfile 형식도 포함된다. 저장소 측은 연구·교육 목적으로 프롬프트 인젝션 저항성 연구에 활용할 수 있다고 밝히고 있다.",
+    "why_it_matters": "다양한 최신 LLM의 프롬프트 계층 구조와 보안 취약점을 한곳에서 파악할 수 있어 AI 시스템 강화 연구에 직접적인 참고 자료가 된다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7539417989417989,
+    "published_at": "2026-10-29T06:39:43Z"
+  },
+  {
+    "id": "hn-50289418",
+    "section": "community",
+    "title_en": "We're releasing the weights of Mistral Large 4",
+    "title_ko": "미스트랄, Mistral Large 4 가중치 공개",
+    "url": "https://mistral.ai/news/mistral-large-4-oss/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Mistral AI가 Mistral Large 4 모델의 가중치를 공개했다. 구체적인 성능 지표나 세부 사항은 별도로 제공되지 않았다.",
+    "why_it_matters": "대형 언어 모델의 가중치 오픈소스 공개는 연구 및 상업적 활용 가능성을 크게 넓힌다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 10.94901832245073,
+    "published_at": "2026-10-29T14:13:21Z"
+  },
+  {
+    "id": "hn-50290177",
+    "section": "community",
+    "title_en": "LLM Voice",
+    "title_ko": "LLM 보이스",
+    "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "'LLM Voice'라는 제목의 프로젝트 또는 서비스로, 상세한 설명은 제공되지 않았다.",
+    "why_it_matters": "LLM 기반 음성 관련 프로젝트로 추정되나 구체적인 정보가 없어 내용 확인이 필요하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.345807172031368,
+    "published_at": "2026-10-29T14:57:55Z"
+  },
+  {
+    "id": "hn-50286987",
+    "section": "community",
+    "title_en": "Chained PHP2Shell exploit roots 25 servers, including US Government servers",
+    "title_ko": "PHP2Shell 체인 익스플로잇, 미국 정부 서버 포함 25개 서버 루팅",
+    "url": "https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "PHP2Shell을 활용한 체인 익스플로잇이 미국 정부 서버를 포함한 25개 서버를 루팅하는 데 성공했다는 보고가 나왔다. 구체적인 공격 방식이나 피해 범위에 대한 상세 설명은 제공되지 않았다.",
+    "why_it_matters": "정부 기관 서버까지 침해된 사례로, PHP 기반 웹 서버의 보안 취약점에 대한 경각심이 필요하다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.076761560580634,
+    "published_at": "2026-10-29T10:42:41Z"
+  },
+  {
+    "id": "hn-50290283",
+    "section": "community",
+    "title_en": "Zombie stats: Where the numbers AI quotes come from",
+    "title_ko": "좀비 통계: AI가 인용하는 숫자들의 출처",
+    "url": "https://trakkr.ai/trakkr-research/zombie-stats",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI가 자주 인용하는 통계 수치들이 어디서 비롯되는지를 추적하는 내용이다. '좀비 통계'란 출처가 불분명하거나 왜곡되었음에도 계속 살아남아 반복 인용되는 숫자들을 가리킨다.",
+    "why_it_matters": "AI가 생성하는 통계 수치의 신뢰성과 출처 검증 문제를 직접적으로 다루어, LLM 할루시네이션 및 허위 정보 확산 이슈와 맞닿아 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 7.989910865217347,
+    "published_at": "2026-10-29T15:06:17Z"
+  },
+  {
+    "id": "hn-50292727",
+    "section": "community",
+    "title_en": "Claude Duet is the first personal-assistant-type harness that feels useful",
+    "title_ko": "Claude Duet, 실용적으로 느껴지는 첫 개인 비서형 AI 도구",
+    "url": "https://fig.blue/posts/duet-is-the-future/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Claude Duet은 개인 비서 형태의 AI 도구로, 실제로 유용하게 느껴지는 첫 번째 사례로 주목받고 있다. 구체적인 기능 설명은 제공되지 않았으나, Hacker News 커뮤니티에서 긍정적인 반응을 얻고 있다.",
+    "why_it_matters": "개인 비서형 AI 도구 중 실용성 면에서 처음으로 인정받는 사례로 언급되어 주목할 만하다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 7.746613689430225,
+    "published_at": "2026-10-29T17:24:25Z"
+  },
+  {
+    "id": "simon_willison-api-credits",
+    "section": "deepdive",
+    "title_en": "API credits benefit for eligible ChatGPT subscriptions",
+    "title_ko": "OpenAI, ChatGPT 유료 구독자에게 API 크레딧 혜택 제공",
+    "url": "https://simonwillison.net/2026/Oct/29/api-credits/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "OpenAI가 $100, $200, $500 ChatGPT 구독 플랜 사용자에게 동일 금액의 API 크레딧을 제공하는 혜택을 출시했다. 이는 Anthropic이 Max 및 Team 구독자에게 먼저 도입한 것과 거의 동일한 방식이다. 크레딧은 사용자의 API 조직 계정에 적용할 수 있으며, 기간 만료 조건이 있다.",
+    "why_it_matters": "구독료로 API 크레딧까지 커버되므로 개발자가 별도 API 비용 없이 프로토타입·데모를 빠르게 만들 수 있는 환경이 조성된다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.8500496031746032,
+    "published_at": "2026-10-29T22:48:29Z"
+  }
+]
