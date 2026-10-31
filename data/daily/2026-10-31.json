@@ -1,0 +1,321 @@
+[
+  {
+    "id": "hf-2610.39633",
+    "section": "papers",
+    "title_en": "Intrinsic Distribution Matching",
+    "title_ko": "IDM: 내재적 분포 매칭으로 고품질 텍스트-이미지 1~2단계 생성",
+    "url": "https://huggingface.co/papers/2610.39633",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "IDM(Intrinsic Distribution Matching)은 분포 매칭 증류(DMD)에 가우시안 모멘트 제약을 추가해 텍스트-이미지 생성 품질을 향상시키는 방법이다. 외부 특징 인코더 없이 생성기의 EMA 복사본을 활용해 특징 평균과 표준편차를 맞춘다. Z-Image-Turbo 6B와 Qwen-Image 20B에서 단 2회 네트워크 평가만으로 LongText-Bench 중국어 94.25%, 영어 90.20%를 달성해 비교 방법 중 최고 성능을 기록했다.",
+    "why_it_matters": "단 2스텝만으로 대형 텍스트-이미지 모델의 고품질 생성을 실현해 추론 비용을 크게 줄일 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 6.472270673671475,
+    "published_at": "2026-10-28T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.38568",
+    "section": "papers",
+    "title_en": "A-RSI: Adaptive Task Refresh for Zero-Data Multimodal Self-Improvement",
+    "title_ko": "A-RSI: 제로 데이터 멀티모달 자가 개선을 위한 적응형 태스크 갱신",
+    "url": "https://huggingface.co/papers/2610.38568",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "A-RSI는 외부 훈련 데이터나 인간 레이블 없이 모델 스스로 멀티모달 태스크를 생성·검증하며 성능을 향상시키는 재귀적 자가 개선 프레임워크다. 핵심 아이디어는 '어떤 경험을 생성할지'뿐 아니라 '언제 새로운 경험이 필요한지'를 훈련 로그의 보상 변화와 정확도를 모니터링해 자동으로 판단하는 것이다. 모델이 직접 작성한 프로그램 라이브러리로 질문과 정답을 생성·검증하며, 11개 벤치마크 평균 점수를 57.77에서 61.05로 끌어올렸다.",
+    "why_it_matters": "외부 데이터 없이 자체적으로 학습 포화를 감지하고 새로운 태스크를 도입하는 자가 개선 루프는 LLM의 지속적 자율 학습 가능성을 높이는 중요한 접근이다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 6.062595033026967,
+    "published_at": "2026-10-27T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.36671",
+    "section": "papers",
+    "title_en": "Look Only When Needed: Certificate-Guided Visual Routing for Efficient Diffusion VLMs",
+    "title_ko": "필요할 때만 이미지 보기: 효율적인 디퓨전 VLM을 위한 인증 기반 시각 라우팅",
+    "url": "https://huggingface.co/papers/2610.36671",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "디퓨전 비전-언어 모델(DVLM)은 모든 디노이징 단계에서 전체 입력을 처리하지만, 실제로 이미지가 필요한 단계는 평균 22.8%에 불과하다. LOWN은 매 디코딩 단계마다 이미지 처리 여부를 동적으로 결정하는 방법으로, 이전 이미지 조건부 예측과의 일치 여부를 '인증서'로 활용한다. 별도의 학습이나 임계값 튜닝 없이 LLaDA-V 성능의 99.6%를 유지하면서 평균 디코딩 FLOPs를 35.3%로 줄이는 데 성공했다.",
+    "why_it_matters": "훈련 없이 DVLM의 추론 비용을 약 65% 절감하면서도 성능 손실이 거의 없어, 효율적인 멀티모달 추론 연구에 실질적인 기여를 한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.5217885770490405,
+    "published_at": "2026-10-26T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.39301",
+    "section": "papers",
+    "title_en": "Youtu-Parsing-Omni: One Encoder, One Schema, All Modalities",
+    "title_ko": "Youtu-Parsing-Omni: 하나의 인코더와 스키마로 모든 모달리티 파싱",
+    "url": "https://huggingface.co/papers/2610.39301",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Youtu-Parsing-Omni는 문서, 이미지, 오디오, 비디오를 구조화된 레코드로 변환하는 옴니모달 파서입니다. 단일 인코더(Youtu-Omni-Encoder)로 모든 모달리티를 공유 가중치로 인코딩하고, OmniSchema로 10가지 파싱 태스크 출력을 통합합니다. 5B 파라미터 단일 체크포인트로 OmniDocBench v1.6에서 96.96, OmniParsingBench에서 75.08의 최고 성능을 달성했으며, 코드와 모델 가중치는 공개되어 있습니다.",
+    "why_it_matters": "단일 모델로 텍스트·오디오·비디오를 넘나드는 파싱을 SOTA 수준으로 처리해 멀티모달 에이전트의 인식 레이어 구축 부담을 크게 줄일 수 있습니다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 5.02535169073515,
+    "published_at": "2026-10-28T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.39302",
+    "section": "papers",
+    "title_en": "Proving and Improving the Platonic Representation Hypothesis with JEPAs",
+    "title_ko": "JEPA로 플라톤 표현 가설을 증명하고 개선하다",
+    "url": "https://huggingface.co/papers/2610.39302",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "서로 다른 모달리티로 학습된 모델이 동일한 세계 표현으로 수렴한다는 '플라톤 표현 가설'을 수학적 정리로 증명했습니다. Joint-Embedding Predictive Architecture(JEPA)가 '좋은 뷰(같은 장면의 두 관측)'를 사용할 때 모달리티에 관계없이 동일한 표현을 학습함을 보였으며, 반면 next-token prediction은 '나쁜 뷰'를 사용하는 비효율적인 방식임을 밝혔습니다. 109M 파라미터의 텍스트 JEPA가 최대 72B 파라미터 언어 모델보다 DINOv2·CLIP 이미지 인코더와 더 잘 정렬되었으며, 동일 코퍼스에서 next-token prediction 대비 42배 적은 샘플로 동등한 정렬을 달성했습니다.",
+    "why_it_matters": "스케일이 아닌 '좋은 뷰(긍정 쌍 설계)'가 멀티모달 표현 정렬의 핵심 레버임을 이론과 실험으로 동시에 입증해, 효율적인 멀티모달 AI 설계 원칙을 새롭게 제시한다.",
+    "tags": [
+      "LLM",
+      "RAG"
+    ],
+    "score": 4.970291913552122,
+    "published_at": "2026-10-28T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-helping-websites-express-ai-training-preferences",
+    "section": "releases",
+    "title_en": "Making it easier for websites to express AI training preferences",
+    "title_ko": "웹사이트의 AI 학습 거부 의사를 더 쉽게 표현할 수 있도록",
+    "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 웹사이트 운영자가 AI 학습에 대한 선호를 전달할 수 있도록 공통 robots.txt 신호를 준수하겠다고 발표했다. 이를 통해 웹사이트 운영자는 기존 robots.txt 파일을 활용해 AI 학습 데이터 사용 여부를 명확히 지정할 수 있게 된다. 참여 AI 공급자들이 이 신호를 함께 존중함으로써 업계 표준화를 목표로 한다.",
+    "why_it_matters": "웹 콘텐츠의 AI 학습 활용 여부를 둘러싼 권리 문제에서 사실상의 업계 표준이 형성될 수 있는 중요한 계기다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.7708349867724867,
+    "published_at": "2026-10-30T09:30:00Z"
+  },
+  {
+    "id": "openai_blog-community-safety-report-and-new-protections-for-teens",
+    "section": "releases",
+    "title_en": "Community safety report and new protections for teens",
+    "title_ko": "OpenAI, 청소년 보호 강화 및 커뮤니티 안전 보고서 발표",
+    "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 ChatGPT 내 폭력 예방을 강화하기 위해 안전장치를 확대하고 조기 개입 체계를 도입했다. 특히 청소년을 위한 새로운 보호 조치를 추가하고, 공공 안전에 관한 보고를 정기적으로 공개하겠다는 방침을 밝혔다.",
+    "why_it_matters": "AI 챗봇의 청소년 및 취약계층 보호 기준이 높아지는 만큼, 향후 AI 서비스 안전 정책의 업계 기준점이 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7678587962962963,
+    "published_at": "2026-10-30T09:00:00Z"
+  },
+  {
+    "id": "github_trending-JetBrains/thinkrail",
+    "section": "releases",
+    "title_en": "JetBrains/thinkrail",
+    "title_ko": "JetBrains ThinkRail: pi 코딩 에이전트 기반 에이전틱 IDE",
+    "url": "https://github.com/JetBrains/thinkrail",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "JetBrains가 오픈소스 에이전틱 IDE인 ThinkRail을 공개했다. `pi` 코딩 에이전트를 내장하고, git worktree 기반 격리 워크스페이스, 프로젝트 지식을 유지하는 SPEC.md 그래프, MCP 서버 연동, 다중 동시 에이전트 세션 등을 지원한다. 데스크톱 앱과 CLI 두 가지 형태로 제공되며, JetBrains AI 또는 자체 모델 프로바이더를 연결해 사용할 수 있다. Apache 2.0 라이선스로 공개된 인큐베이터 프로젝트다.",
+    "why_it_matters": "JetBrains가 에이전트 중심의 새로운 IDE 패러다임을 직접 구현해 공개한 것으로, 코딩 에이전트와 IDE의 통합 방향을 보여주는 실험적 레퍼런스가 된다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7538673941798941,
+    "published_at": "2026-10-30T06:38:58Z"
+  },
+  {
+    "id": "github_trending-elayadesign/ai-design-skills",
+    "section": "releases",
+    "title_en": "elayadesign/ai-design-skills",
+    "title_ko": "AI 코딩 도구용 디자인 스킬 모음 (Claude Code, Cursor, Codex 등 지원)",
+    "url": "https://github.com/elayadesign/ai-design-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "AI 코딩 도구(Claude Code, Cursor, Codex, Windsurf 등)에 마크다운 규칙 파일로 설치할 수 있는 디자인 스킬 컬렉션이다. 각 스킬은 독립된 폴더로 구성되며, 현재 랜딩 페이지를 처음부터 설계하는 `landing-page-design` 스킬이 포함되어 있다. 폰트, 색상, 간격, 모션 등 디자인 값은 파일 하단 한 섹션에서 일괄 수정 가능하며, MIT 라이선스로 자유롭게 활용할 수 있다.",
+    "why_it_matters": "AI 코딩 에이전트에 디자인 전문 지식을 주입하는 플러그인 방식의 스킬 시스템으로, 비디자이너 개발자도 고품질 UI를 생성할 수 있는 실용적 도구다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7538673941798941,
+    "published_at": "2026-10-30T06:38:58Z"
+  },
+  {
+    "id": "github_trending-thedotmack/claude-mem",
+    "section": "releases",
+    "title_en": "thedotmack/claude-mem",
+    "title_ko": "claude-mem: AI 에이전트를 위한 세션 간 영구 메모리 시스템",
+    "url": "https://github.com/thedotmack/claude-mem",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "claude-mem은 AI 에이전트가 세션 종료 후에도 컨텍스트를 유지할 수 있도록 세션 중 활동을 자동으로 캡처하고 AI로 압축해 다음 세션에 주입하는 오픈소스 도구다. Claude Code, Codex, Gemini, Copilot 등 다양한 IDE와 에이전트를 지원하며, SQLite와 Chroma 벡터 DB를 활용한 하이브리드 검색을 제공한다. MCP 도구를 통해 자연어로 과거 작업 기록을 조회할 수 있으며, Apache 2.0 라이선스로 공개됐다.",
+    "why_it_matters": "세션마다 컨텍스트가 초기화되는 AI 코딩 에이전트의 근본적 한계를 해결해 장기 프로젝트에서의 에이전트 활용도를 크게 높일 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7538673941798941,
+    "published_at": "2026-10-30T06:38:58Z"
+  },
+  {
+    "id": "github_trending-togg53192-cmd/jailbreaks",
+    "section": "releases",
+    "title_en": "togg53192-cmd/jailbreaks",
+    "title_ko": "26개 이상 AI 모델 대상 젤브레이크 프롬프트 모음집",
+    "url": "https://github.com/togg53192-cmd/jailbreaks",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude, Gemini, Grok, DeepSeek, Qwen 등 26개 이상의 프론티어·오픈웨이트 모델을 대상으로 한 32개의 시스템 프롬프트, 페르소나 잠금, 에이전트 운영 명세 등을 정리한 GitHub 저장소다. 각 파일은 즉시 붙여넣기 가능한 완성형으로 제공되며, Ollama Modelfile 및 AGENTS.md 형식도 포함된다. 저장소는 프롬프트 인젝션·명령 계층 충돌 등 LLM 보안 개념 연구 및 교육 목적을 표방하고 있다.",
+    "why_it_matters": "주요 LLM들의 시스템 프롬프트 취약점과 명령 계층 구조를 체계적으로 문서화해, AI 보안 연구자와 개발자가 모델 강화 방안을 연구하는 데 참고 자료가 될 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7538673941798941,
+    "published_at": "2026-10-30T06:38:58Z"
+  },
+  {
+    "id": "github_trending-Donchitos/Claude-Code-Game-Studios",
+    "section": "releases",
+    "title_en": "Donchitos/Claude-Code-Game-Studios",
+    "title_ko": "Claude Code를 완전한 게임 개발 스튜디오로 전환하는 오픈소스 템플릿",
+    "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code 세션 하나를 실제 게임 스튜디오 조직 구조로 확장하는 오픈소스 템플릿이다. 49개의 전문 AI 에이전트(디렉터·팀장·스페셜리스트 3계층), 74개의 슬래시 커맨드 스킬, 15개의 자동화 훅으로 구성된다. Godot 4, Unity, Unreal Engine 5를 지원하며, 설계 문서 작성부터 QA·릴리즈까지 전체 워크플로를 체계적으로 관리한다. 사용자가 모든 의사결정을 내리는 협업 구조를 유지하며, 에이전트가 자율적으로 행동하는 오토파일럿 방식이 아니다.",
+    "why_it_matters": "Claude Code를 활용한 솔로 게임 개발에 실제 스튜디오 수준의 구조와 품질 관리를 부여하여, 스파게티 코드와 설계 일관성 문제를 시스템적으로 방지할 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7538673941798941,
+    "published_at": "2026-10-30T06:38:58Z"
+  },
+  {
+    "id": "hn-50300683",
+    "section": "community",
+    "title_en": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+    "title_ko": "Cursor 마켓플레이스의 VS Code용 Claude Code 확장에서 백도어 발견",
+    "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Cursor 마켓플레이스에 등록된 VS Code용 Claude Code 확장 프로그램에서 백도어가 발견되었다. 해당 확장은 정상적인 Claude Code 도구로 위장한 악성 코드를 포함하고 있는 것으로 알려졌다.",
+    "why_it_matters": "AI 코딩 도구를 사칭한 악성 확장 프로그램이 개발자 환경을 직접 위협할 수 있다는 점에서 공급망 보안에 주의가 필요하다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 10.675513713241333,
+    "published_at": "2026-10-30T07:09:12Z"
+  },
+  {
+    "id": "hn-50305693",
+    "section": "community",
+    "title_en": "AI isn't replacing SREs, it's deskilling them",
+    "title_ko": "AI는 SRE를 대체하지 않는다, 하지만 역량을 약화시키고 있다",
+    "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI 도구가 SRE(사이트 신뢰성 엔지니어)의 업무를 자동화하면서 직접 대체보다는 실무 역량 저하가 더 큰 문제로 부각되고 있다. 반복적인 운영 작업을 AI가 처리함에 따라 엔지니어들이 깊은 기술적 판단력을 키울 기회가 줄어들고 있다는 우려다.",
+    "why_it_matters": "AI 자동화가 단순 대체를 넘어 엔지니어의 문제 해결 능력 자체를 서서히 약화시킬 수 있다는 경고는 현업 개발자와 조직 모두가 주목해야 할 장기적 리스크다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 10.129827854900888,
+    "published_at": "2026-10-30T15:52:18Z"
+  },
+  {
+    "id": "hn-50306442",
+    "section": "community",
+    "title_en": "Show HN: A working Nintendo in ~1GB of Qwen weights",
+    "title_ko": "Qwen 모델 약 1GB 가중치로 구현한 작동하는 닌텐도",
+    "url": "https://github.com/dbreunig/nesformer",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "약 1GB 분량의 Qwen 모델 가중치를 활용해 닌텐도를 동작시키는 프로젝트가 공개되었다. 상세한 설명은 제공되지 않았으나, 소형 언어 모델을 이용한 게임 에뮬레이션 또는 제어 실험으로 추정된다.",
+    "why_it_matters": "소형 LLM의 의외의 활용 가능성을 보여주는 실험적 프로젝트로, 모델 경량화 연구에 관심 있는 개발자에게 흥미로운 사례다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 8.5218236736884,
+    "published_at": "2026-10-30T16:40:22Z"
+  },
+  {
+    "id": "hn-50309647",
+    "section": "community",
+    "title_en": "Through Captain Jean-Luc Picard, Patrick Stewart taught us the measure of a man",
+    "title_ko": "패트릭 스튜어트가 장뤽 피카드 대령을 통해 가르쳐 준 인간의 척도",
+    "url": "https://www.bostonglobe.com/2026/10/29/metro/patrick-stewart-picard-star-trek-the-next-generation/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "패트릭 스튜어트가 연기한 스타트렉의 장뤽 피카드 대령 캐릭터에 관한 글로, 그 캐릭터가 인간의 품격과 가치에 대해 어떤 메시지를 전달했는지를 다루고 있다.",
+    "why_it_matters": "AI·기술과 직접적인 연관은 없으나, 인간성과 윤리에 대한 성찰을 담은 문화적 콘텐츠로 개발자 커뮤니티에서 화제가 된 글이다.",
+    "tags": [],
+    "score": 8.37342356567518,
+    "published_at": "2026-10-30T20:23:30Z"
+  },
+  {
+    "id": "hn-50296730",
+    "section": "community",
+    "title_en": "Building an AI-native engineering org",
+    "title_ko": "AI 네이티브 엔지니어링 조직 구축하기",
+    "url": "https://twitter.com/sgondala2/status/2115832070274723875",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI를 조직 운영의 핵심으로 삼는 엔지니어링 팀 구성 방법을 다룬 글이다. 상세 설명이 제공되지 않아 구체적인 내용은 확인이 필요하다.",
+    "why_it_matters": "AI 도입을 넘어 조직 구조 자체를 AI 중심으로 재설계하는 방법론에 관심 있는 개발자·리더에게 참고할 만한 주제다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 8.046571147281277,
+    "published_at": "2026-10-29T21:58:34Z"
+  },
+  {
+    "id": "simon_willison-nesformer",
+    "section": "deepdive",
+    "title_en": "dbreunig/nesformer",
+    "title_ko": "LLM 가중치 안에 NES 에뮬레이터를 구워 넣다 — nesformer",
+    "url": "https://simonwillison.net/2026/Oct/30/nesformer/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Drew Breunig이 Qwen3.5-4B 모델의 가중치 안에 Nintendo Entertainment System(NES)의 6502 CPU 에뮬레이터를 구현한 프로젝트 'nesformer'를 공개했다. 이는 Divyansh Agrawal의 qwenputer에서 영감을 받아 제작되었으며, 슈퍼 마리오브라더스 같은 NES ROM을 LLM 내부에서 실행할 수 있다(매우 느리지만). 프로젝트 구현에는 Claude Opus를 활용했으며, Opus가 15년 전 공개된 NES CPU 적합성 테스트를 스스로 찾아 활용했다.",
+    "why_it_matters": "LLM 가중치 자체를 연산 기판으로 활용하는 실험적 접근이 실제 레트로 게임 에뮬레이션으로 구현된 사례로, LLM의 새로운 활용 가능성을 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.845176917989418,
+    "published_at": "2026-10-30T21:59:22Z"
+  }
+]
