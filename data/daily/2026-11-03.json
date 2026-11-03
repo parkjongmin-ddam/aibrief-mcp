@@ -1,0 +1,336 @@
+[
+  {
+    "id": "hf-2610.42053",
+    "section": "papers",
+    "title_en": "REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control",
+    "title_ko": "REA: 비동기 뇌-소뇌 제어를 위한 라우팅 기반 구현 에이전트 런타임",
+    "url": "https://huggingface.co/papers/2610.42053",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "REA(Routed Embodied Agent)는 느리지만 고수준 추론이 가능한 파운데이션 모델(System 2)과 빠른 반응형 정책(System 0/1)을 비동기적으로 협력시키는 통합 런타임이다. 핵심 원칙은 '실행 중인 정책이 뇌(파운데이션 모델)를 기다리지 않는다'는 것으로, 라우트 메모리·경계 트리거 판단 게이트·에스컬레이션 사다리를 활용한다. LIBERO-Pro 60개 태스크 3,000 에피소드에서 95.9% 성공률을 기록하며 단일 에이전트 베이스라인(94.7%) 대비 제어 스텝 25%, 제어 시간 17% 절감을 달성했다. 실제 Unitree G1 휴머노이드 로봇에도 이전되어 비교 방법 중 최고 성공률을 보였다.",
+    "why_it_matters": "느린 LLM과 빠른 로봇 정책의 비동기 협력 문제를 실용적으로 해결해, 범용 구현 에이전트 설계의 새로운 기준을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.912654885736052,
+    "published_at": "2026-10-30T13:18:13Z"
+  },
+  {
+    "id": "hf-2610.39497",
+    "section": "papers",
+    "title_en": "Does Scaling Toward AGI Depend on What System-1 Lets System-2 Execute?",
+    "title_ko": "AGI 스케일링, System-1과 System-2의 협력 설계가 핵심인가?",
+    "url": "https://huggingface.co/papers/2610.39497",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "현재 AGI 발전은 대규모 모델·데이터·컴퓨팅을 활용하는 고비용 실행 시스템(System-2) 확장에 의존해왔다. 이 논문은 경량의 의미 인식 예측기인 System-1이 실행 가치 있는 상호작용만 선별해 System-2에 전달하는 '조건부 상호작용' 루프를 제안한다. 이 구조 하에서 실행 컴퓨팅은 유용한 상호작용 밀도(ρ_u)의 역수에 비례해 절감될 수 있으며, 총 컴퓨팅보다 '정보적 컴퓨팅'이 스케일링 효율의 더 나은 척도임을 주장한다.",
+    "why_it_matters": "단순 컴퓨팅 확장 대신 유용한 연산만 선택적으로 실행하는 프레임워크는 AGI 스케일링 전략의 패러다임 전환을 시사한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.127134385045092,
+    "published_at": "2026-10-28T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.40738",
+    "section": "papers",
+    "title_en": "Apriel Voice 27B Preview: An Open Model for Speech, Reasoning, and Tool Use",
+    "title_ko": "Apriel Voice 27B Preview: 추론·도구 사용이 가능한 오픈 음성-언어 모델",
+    "url": "https://huggingface.co/papers/2610.40738",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "ServiceNow가 공개한 Apriel Voice 27B Preview는 Gemma 4 26B-A4B 체크포인트를 기반으로 음성 입력을 직접 처리하고, 응답 생성과 도구 호출을 별도 대화 모델 없이 수행하는 오픈 음성-언어 모델이다. 2단계 학습 절차로 음성 인터페이스를 확립하고, 교사-학생 온라인 증류 및 다양한 손실 함수를 통해 효율적으로 학습되었다. 씽킹 모드에서 Big Bench Audio 98.90, Speech-BFCL 81.13, τ-Voice 태스크 성공률 65.51%를 기록했으며 평균 응답 지연은 1.91초다.",
+    "why_it_matters": "추론·도구 사용·대화를 단일 모델로 통합한 오픈 소스 음성-언어 모델이 공개됨으로써, 음성 에이전트 개발의 진입 장벽이 크게 낮아진다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 4.555348061489413,
+    "published_at": "2026-10-28T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.42149",
+    "section": "papers",
+    "title_en": "Latent Reasoning in Continuous Space for Unified Multimodal Models",
+    "title_ko": "연속 공간에서의 잠재 추론을 통한 통합 멀티모달 모델 개선",
+    "url": "https://huggingface.co/papers/2610.42149",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "통합 멀티모달 모델(UMM)은 이미지 생성 시 언어 기반 체인오브소트 추론을 효과적으로 활용하지 못하는 한계가 있었다. 이를 해결하기 위해 LARC(Latent Reasoning in Continuous Space) 프레임워크를 제안하며, 이산 토큰 공간 대신 연속 숨겨진 상태에서 추론을 수행한다. 커리큘럼 SFT와 정보 이득 강화학습(RL) 두 단계로 학습되며, GenEval 벤치마크에서 BAGEL 대비 7%p 향상된 최고 성능을 달성했다.",
+    "why_it_matters": "멀티모달 모델의 추론-생성 간 모달리티 불일치 문제를 연속 잠재 공간 추론으로 해결해 텍스트-이미지 생성의 품질과 테스트 타임 스케일링 가능성을 동시에 높인다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.367295829986475,
+    "published_at": "2026-10-29T20:00:00Z"
+  },
+  {
+    "id": "hf-2610.16927",
+    "section": "papers",
+    "title_en": "WeFair: Fidelity-Aware Alignment from Human Feedback for Personalized Query Rewriting in Short-Video Search",
+    "title_ko": "WeFair: 위챗 숏비디오 검색을 위한 충실도 기반 개인화 쿼리 재작성",
+    "url": "https://huggingface.co/papers/2610.16927",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "위챗 숏비디오 검색에서 사용자의 개인화 의도를 정확히 반영하는 쿼리 재작성 모델 WeFair를 제안한다. 기존 LLM 기반 방식이 소비 행동 피드백에 과도하게 의존해 의도 왜곡을 유발하는 문제를 해결하기 위해, 시연·선호·검증 단계로 이어지는 인간 피드백 충실도 체계를 도입했다. WeFair-2B는 오프라인 실험에서 기존 베이스라인을 능가했으며, 온라인 A/B 테스트에서 유효 영상 시청률 2.593% 향상, 쿼리 재작성률 2.350% 감소를 달성했다. 현재 하루 1억 건 이상의 쿼리를 처리하는 위챗 숏비디오 검색 시스템에 실제 배포 중이다.",
+    "why_it_matters": "소규모 2B 모델로 대규모 실서비스에서 검증된 개인화 쿼리 재작성 프레임워크로, RAG·검색 시스템 설계에 실질적 참고 사례가 된다.",
+    "tags": [
+      "LLM",
+      "RAG",
+      "에이전트"
+    ],
+    "score": 4.295836866004329,
+    "published_at": "2026-10-29T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-rewarding-defenders-with-bigger-bug-bounties",
+    "section": "releases",
+    "title_en": "Rewarding defenders with bigger bug bounties",
+    "title_ko": "OpenAI, 버그 바운티 보상 대폭 상향",
+    "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 보안 버그 바운티 프로그램의 보상금을 인상하고, 독립 보안 연구자들을 위한 리포트 품질 보너스, 충성도 보너스, 우선 캠페인 보너스를 새롭게 도입한다. 이는 외부 보안 연구자들의 기여를 더욱 적극적으로 장려하기 위한 조치다.",
+    "why_it_matters": "AI 시스템의 보안 취약점 발굴을 위한 외부 연구자 참여 인센티브가 강화되면서, OpenAI 플랫폼의 보안 생태계가 확대될 전망이다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.8214302248677249,
+    "published_at": "2026-11-02T18:00:00Z"
+  },
+  {
+    "id": "openai_blog-preparing-our-next-security-sprint-to-harden-openai",
+    "section": "releases",
+    "title_en": "Preparing our next security sprint to harden OpenAI",
+    "title_ko": "OpenAI, 내부 보안 강화를 위한 차기 보안 스프린트 준비",
+    "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 Cathedral Systems와 협력하여 다음 내부 보안 스프린트를 준비 중이다. 이번 스프린트는 AI를 활용해 자사의 보안 방어 체계를 테스트하고 강화하는 것을 목표로 한다.",
+    "why_it_matters": "AI 기업 스스로 AI를 활용해 내부 보안을 점검하는 접근 방식은 AI 보안 실천의 새로운 기준이 될 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.8214302248677249,
+    "published_at": "2026-11-02T18:00:00Z"
+  },
+  {
+    "id": "google_blog-google-ai-updates-october-2026",
+    "section": "releases",
+    "title_en": "The latest AI news we announced in October 2026",
+    "title_ko": "2026년 10월 구글 AI 주요 발표 모음",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글이 2026년 10월에 발표한 AI 관련 소식들을 한데 모아 정리한 콘텐츠다. 구체적인 내용은 이미지 캐러셀 형태로 제공되며, 세부 사항은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "구글의 월간 AI 동향을 한눈에 파악할 수 있는 요약 자료이나, 세부 내용 확인을 위해 원문 방문이 필요하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8199421296296296,
+    "published_at": "2026-11-02T17:45:00Z"
+  },
+  {
+    "id": "openai_blog-scaling-git-at-openai",
+    "section": "releases",
+    "title_en": "Scaling Git at OpenAI",
+    "title_ko": "OpenAI의 Git 대규모 확장: Pando 소개",
+    "url": "https://openai.com/index/scaling-git-at-openai",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI는 Codex가 가능하게 하는 대규모 개발 환경을 지원하기 위해 Git 호환 백엔드인 Pando를 자체 개발했다. Pando는 기존 Git의 확장성 한계를 극복하기 위해 설계된 시스템으로, OpenAI 내부 개발 규모에 맞게 구축되었다. Git과의 호환성을 유지하면서도 대규모 코드베이스 운영을 지원하는 것이 핵심 목표다.",
+    "why_it_matters": "AI 기반 대규모 코드 생성(Codex) 환경에서 기존 Git의 한계를 극복한 인프라 사례로, 유사한 확장성 문제를 다루는 개발팀에 중요한 참고가 된다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 0.8065492724867724,
+    "published_at": "2026-11-02T15:30:00Z"
+  },
+  {
+    "id": "openai_blog-grid-protectors-program",
+    "section": "releases",
+    "title_en": "Introducing the Grid Protectors Program",
+    "title_ko": "OpenAI, 그리드 프로텍터스 프로그램 출시",
+    "url": "https://openai.com/index/grid-protectors-program",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 전력 유틸리티 회사들과 협력하는 '그리드 프로텍터스 프로그램'을 발표했다. 이 프로그램은 미래의 컴퓨트 캠퍼스가 전력망 안정성을 지원하고 소비자 전기 요금을 보호하는 데 기여하는 것을 목표로 한다.",
+    "why_it_matters": "AI 데이터센터의 급증하는 전력 수요가 전력망과 전기 요금에 미치는 영향을 선제적으로 관리하려는 OpenAI의 인프라 전략으로 주목된다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.803573082010582,
+    "published_at": "2026-11-02T15:00:00Z"
+  },
+  {
+    "id": "openai_blog-lifeval",
+    "section": "releases",
+    "title_en": "LifeVal",
+    "title_ko": "LifeVal: 일상 업무 지원 능력을 측정하는 AI 벤치마크",
+    "url": "https://openai.com/index/lifeval",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 LifeVal을 공개했다. LifeVal은 AI가 육아 서비스 탐색, 재정 관리, 정부 서류 처리 등 실제 일상적인 업무를 얼마나 잘 지원하는지 측정하는 벤치마크다. 기존 벤치마크와 달리 실생활에서 사람들이 마주치는 구체적인 과제를 평가 기준으로 삼는다.",
+    "why_it_matters": "AI의 실질적인 생활 밀착형 유용성을 정량 평가하는 기준이 생김으로써, 모델 성능 비교의 실용적 척도가 마련된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7678587962962963,
+    "published_at": "2026-11-02T09:00:00Z"
+  },
+  {
+    "id": "github_trending-thedotmack/claude-mem",
+    "section": "releases",
+    "title_en": "thedotmack/claude-mem",
+    "title_ko": "claude-mem: AI 에이전트를 위한 세션 간 영구 메모리 시스템",
+    "url": "https://github.com/thedotmack/claude-mem",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "claude-mem은 AI 에이전트가 세션 종료 후에도 맥락을 유지할 수 있도록 설계된 오픈소스 플러그인이다. 세션 중 에이전트의 활동을 자동으로 캡처하고 AI로 압축한 뒤, 이후 세션에 관련 컨텍스트를 자동 주입한다. Claude Code, Codex, Gemini, Copilot, OpenCode 등 다양한 AI 코딩 도구를 지원하며, SQLite와 Chroma 벡터 DB를 활용한 하이브리드 검색 기능도 제공한다.",
+    "why_it_matters": "세션 단절로 인한 컨텍스트 소실 문제를 자동화된 메모리 압축·주입으로 해결해, 장기 프로젝트에서 AI 에이전트의 연속성을 실질적으로 높일 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7560830026455027,
+    "published_at": "2026-11-02T07:01:18Z"
+  },
+  {
+    "id": "hn-50341174",
+    "section": "community",
+    "title_en": "Astra can read and write weights to improve Qwen",
+    "title_ko": "Astra, Qwen 모델의 가중치를 읽고 쓰며 성능 개선 가능",
+    "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Astra가 Qwen 모델의 가중치를 직접 읽고 쓰는 방식으로 모델 성능을 향상시킬 수 있다는 내용이다. 구체적인 세부 사항은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "AI 에이전트가 LLM 가중치를 직접 수정해 모델을 개선하는 방향은 자동화된 모델 최적화의 새로운 가능성을 시사한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 12.005042499951252,
+    "published_at": "2026-11-02T18:21:28Z"
+  },
+  {
+    "id": "hn-50339397",
+    "section": "community",
+    "title_en": "US boy names that became girl names and vice versa",
+    "title_ko": "미국에서 성별이 바뀐 이름들",
+    "url": "https://namedaisy.com/blog/boy-names-that-became-girl-names",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "미국에서 역사적으로 남자 이름이었다가 여자 이름으로, 혹은 그 반대로 바뀐 사례를 다룬 글이다.",
+    "why_it_matters": "AI·개발과 직접적인 연관은 없으나, 언어와 사회 변화를 데이터로 분석하는 관점에서 흥미로운 인문학적 주제다.",
+    "tags": [],
+    "score": 9.728638510333964,
+    "published_at": "2026-11-02T16:34:36Z"
+  },
+  {
+    "id": "hn-50344919",
+    "section": "community",
+    "title_en": "The SEC Should Block Anthropic's IPO to Protect the Public",
+    "title_ko": "SEC가 공공 보호를 위해 Anthropic의 IPO를 막아야 한다는 주장",
+    "url": "https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Anthropic의 IPO를 SEC가 차단해야 한다는 주장을 담은 글이다. 구체적인 내용은 제공되지 않았으나, AI 기업의 상장과 관련된 공공 안전 및 규제 이슈를 다루는 것으로 보인다.",
+    "why_it_matters": "주요 AI 기업의 IPO와 금융 규제 당국의 역할에 관한 논쟁으로, AI 산업의 거버넌스 방향에 영향을 줄 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.259756020361515,
+    "published_at": "2026-11-02T22:30:47Z"
+  },
+  {
+    "id": "hn-50341736",
+    "section": "community",
+    "title_en": "Egoless Mathematics in the AI Era",
+    "title_ko": "AI 시대의 에고 없는 수학",
+    "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI 시대에 수학을 대하는 새로운 태도에 관한 글이다. 제목만으로는 구체적인 내용을 확인하기 어렵다.",
+    "why_it_matters": "AI가 수학적 추론에 관여하는 시대에 인간 수학자의 역할과 태도를 재고하는 논의로 보인다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.178954632312681,
+    "published_at": "2026-11-02T18:54:44Z"
+  },
+  {
+    "id": "hn-50339913",
+    "section": "community",
+    "title_en": "Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app",
+    "title_ko": "Momentic (YC W24) – 앱을 직접 사용해 버그를 잡는 AI 에이전트",
+    "url": "https://momentic.ai/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "YC W24 배치 스타트업 Momentic이 Hacker News에 공개됐다. 이 서비스는 AI 에이전트가 실제 앱을 직접 사용하며 버그를 탐지하는 방식을 제공한다.",
+    "why_it_matters": "에이전트 기반 자동 QA 테스트 분야의 새로운 접근으로, 개발자의 테스트 부담을 줄일 수 있는 가능성을 제시한다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 8.173549174260572,
+    "published_at": "2026-11-02T17:05:25Z"
+  },
+  {
+    "id": "youtube-0Kw6_DTZPrY",
+    "section": "video",
+    "title_en": "‘We may release models we can’t control’: Amodei, Altman … and Gemini Carbon",
+    "title_ko": "'통제 불가 모델 출시 가능성' - Amodei, Altman 그리고 Gemini 4 Carbon",
+    "url": "https://www.youtube.com/watch?v=0Kw6_DTZPrY",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "Anthropic의 Dario Amodei와 OpenAI의 Sam Altman이 행동을 완전히 검증할 수 없는 모델을 출시할 수 있다고 시사해 AI 안전성 논란이 불거졌다. Anthropic 직원 설문 결과와 책임 있는 확장 정책(RSP) v3.0도 공개되며 내부적 우려가 수면 위로 드러났다. 한편 Google의 Gemini 4 Carbon이 등장해 업계의 주목을 받았으며, AI 모델의 빠른 발전 속도와 안전성 간의 긴장감이 재부각됐다.",
+    "why_it_matters": "선도적 AI 기업 수장들이 스스로 통제할 수 없는 모델의 출시 가능성을 인정한 것은 AI 안전성 논의에서 중대한 전환점이 될 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8157027116402116,
+    "published_at": "2026-11-02T17:02:16Z"
+  },
+  {
+    "id": "simon_willison-llm",
+    "section": "deepdive",
+    "title_en": "llm 0.37",
+    "title_ko": "LLM CLI 도구 0.37 릴리스 — 새 모델 추가 및 임베딩 개선",
+    "url": "https://simonwillison.net/2026/Nov/2/llm/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Simon Willison의 LLM CLI 도구 및 Python 라이브러리 0.37 버전이 약 2개월치 기능과 수정 사항을 담아 출시됐다. 기본 모델이 `gpt-6-luna`로 변경되어 이전 기본값 대비 절반 가격으로 낮아졌으며, OpenAI 호환 엔드포인트를 쉽게 추가할 수 있는 `llm openai endpoint add` 명령도 추가됐다. 임베딩 기능도 개선되어 Gemini Embedding 2처럼 텍스트·오디오·이미지·동영상 등 다양한 콘텐츠 타입을 지원한다.",
+    "why_it_matters": "AI 보조 PR 관리 경험 공유와 함께 실용적인 LLM CLI 도구의 주요 업데이트가 이루어져, 개발자들의 로컬 LLM 활용 편의성이 크게 향상됐다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.856102843915344,
+    "published_at": "2026-11-02T23:49:30Z"
+  }
+]
