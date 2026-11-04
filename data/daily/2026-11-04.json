@@ -1,0 +1,324 @@
+[
+  {
+    "id": "hf-2611.01860",
+    "section": "papers",
+    "title_en": "Advances in Agentic Computer Graphics",
+    "title_ko": "에이전트 기반 컴퓨터 그래픽스의 발전",
+    "url": "https://huggingface.co/papers/2611.01860",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LLM 에이전트가 그래픽스 코드를 생성하고 반복적으로 개선할 수 있게 되면서, 에이전트 기반 컴퓨터 그래픽스라는 새로운 패러다임이 부상하고 있다. 이 보고서는 다양한 컴퓨터 그래픽스 태스크에 걸친 에이전트 시스템을 체계적으로 분류하는 통합 분류 체계를 제안한다. 또한 연구자들이 기존 및 신규 논문을 대규모로 분석할 수 있도록 돕는 에이전트 기반 문헌 시스템도 함께 개발했다. 장기 계획 수립, 인간-에이전트 협업 인터페이스 설계, 평가 방법론 등의 미해결 과제도 함께 논의한다.",
+    "why_it_matters": "LLM 에이전트가 그래픽스 알고리즘 개발 자체를 자동화하는 새로운 패러다임으로 이어질 수 있어, 그래픽스 연구 및 개발 방식에 근본적인 변화를 가져올 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.787491742782046,
+    "published_at": "2026-10-31T20:00:00Z"
+  },
+  {
+    "id": "hf-2611.03126",
+    "section": "papers",
+    "title_en": "CUA-Master: Scaling Computer-use Agents through Open-World Recursive Improvements",
+    "title_ko": "CUA-Master: 오픈월드 재귀적 개선을 통한 컴퓨터 사용 에이전트 확장",
+    "url": "https://huggingface.co/papers/2611.03126",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "CUA-Master는 컴퓨터 사용 에이전트(CUA)의 학습 데이터 다양성과 신뢰성 문제를 해결하기 위한 이중 루프 재귀적 개선 프레임워크다. 외부 루프는 오픈월드 코퍼스와 모델 약점을 활용해 데이터 구성을 반복 개선하고, 내부 루프는 교육용 동영상에서 실제 워크플로우를 채굴해 복잡한 작업으로 합성한다. CUA-Master-27B는 OSWorld Verified에서 80.2점, OSWorld 2.0에서 36.9점 등 주요 GUI 벤치마크에서 경쟁력 있는 성능을 달성했다.",
+    "why_it_matters": "오픈월드 데이터 기반의 재귀적 개선 방식으로 컴퓨터 사용 에이전트의 능력 한계를 돌파할 가능성을 제시한다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 5.564348191467836,
+    "published_at": "2026-11-02T08:41:14Z"
+  },
+  {
+    "id": "hf-2611.03178",
+    "section": "papers",
+    "title_en": "CoworkOS:Scaling Agent Coworkers for Real-world Automation",
+    "title_ko": "CoworkOS: 실세계 자동화를 위한 협업 에이전트 확장 프레임워크",
+    "url": "https://huggingface.co/papers/2611.03178",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "CoworkOS는 장기 작업을 위한 범용 에이전트 하네스로, 작업 전략과 실행 관리를 분리하는 3계층 아키텍처를 채택했습니다. 인간과 에이전트가 동일한 문서, 프레젠테이션, CAD 모델 등을 함께 검토·수정할 수 있으며, 계층적 워크스페이스와 영속적 시맨틱 메모리를 통해 세션 간 작업 연속성을 유지합니다. 12개 벤치마크와 6개 실세계 카테고리에서 Codex, DeepSeek Harness 등 최신 에이전트 애플리케이션과 경쟁력 있는 성능을 입증했으며, 자동화된 포스트 트레이닝 적용 시 5라운드 만에 평균 점수가 33.19에서 42.95로 향상됐습니다.",
+    "why_it_matters": "장기 복잡 작업에서 인간-AI 협업을 체계적으로 지원하는 범용 에이전트 운영체제로, 실무 자동화의 새로운 기준을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.499809670330265,
+    "published_at": "2026-11-02T09:15:11Z"
+  },
+  {
+    "id": "hf-2611.02074",
+    "section": "papers",
+    "title_en": "SWE-Trail: History-Guided Trajectory Collection for Coding Agent Training",
+    "title_ko": "SWE-Trail: 과거 궤적을 활용한 코딩 에이전트 훈련 데이터 수집 방법론",
+    "url": "https://huggingface.co/papers/2611.02074",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "코딩 에이전트는 저장소 이슈 해결을 위해 긴 탐색·편집·검증 과정을 거치며, 이 궤적 데이터가 모델 훈련에 사용된다. 기존 방식은 각 이슈마다 궤적을 독립적으로 샘플링하지만, 나중에 수집된 궤적이 중복될 가능성이 높다. SWE-Trail은 과거 궤적을 에이전트 컨텍스트 외부에서 활용해 새로운 수집 방향을 안내함으로써 훈련-테스트 불일치 문제를 피한다. 124B 학생 모델 기준으로 SWE-bench Multilingual에서 독립 샘플링 대비 2.33%p, SWE-bench Pro에서 1.60%p 해결률이 향상되었다.",
+    "why_it_matters": "코딩 에이전트 훈련 데이터 품질을 높이면서도 테스트 시 사용 불가능한 정보에 의존하는 문제를 구조적으로 해결한 접근법이다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.555348061489413,
+    "published_at": "2026-10-31T20:00:00Z"
+  },
+  {
+    "id": "hf-2611.03424",
+    "section": "papers",
+    "title_en": "IdeaTaste: Do LLMs Share the Research Taste of Human Researchers?",
+    "title_ko": "IdeaTaste: LLM은 인간 연구자의 연구 감각을 공유하는가?",
+    "url": "https://huggingface.co/papers/2611.03424",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "IdeaTaste는 LLM이 2025년 문헌 스냅샷을 기반으로 작성한 연구 제안이 2026년 실제 출판된 연구와 얼마나 일치하는지를 측정하는 벤치마크다. 6개의 최신 언어 모델을 대상으로 9만 건 이상의 제안을 분석한 결과, LLM은 인용 매칭에서 인간 수준의 약 26%, 아이디어 매칭에서는 약 18%에 그쳤다. LLM은 연구 방향과 방법론을 폭넓게 다루지만, 연구 커뮤니티가 실제로 추구하는 구체적인 접근법과 연구 계획에는 좀처럼 도달하지 못했다. 더 풍부한 맥락이나 더 많은 모델 집합으로도 이 격차는 크게 좁혀지지 않았다.",
+    "why_it_matters": "LLM 기반 AI 연구 자동화의 실질적 한계를 정량적으로 측정한 첫 체계적 벤치마크로, AI 연구 에이전트의 현주소와 과제를 명확히 드러낸다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.49650756146648,
+    "published_at": "2026-11-01T19:00:00Z"
+  },
+  {
+    "id": "openai_blog-accelerating-engineering-for-the-physical-world",
+    "section": "releases",
+    "title_en": "Accelerating engineering for the physical world",
+    "title_ko": "물리적 세계의 엔지니어링을 가속화하는 ChatGPT와 Codex",
+    "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI의 ChatGPT와 Codex가 CAD, PCB 설계, 시뮬레이션 등 물리적 세계의 다양한 엔지니어링 워크플로우를 가속화하는 데 활용되고 있다. 이를 통해 엔지니어들은 반복적인 설계 작업을 자동화하고 생산성을 높일 수 있다.",
+    "why_it_matters": "AI가 소프트웨어를 넘어 하드웨어·제조 분야 엔지니어링 실무에도 직접 적용되기 시작했음을 보여주는 사례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7857159391534392,
+    "published_at": "2026-11-03T12:00:00Z"
+  },
+  {
+    "id": "openai_blog-cisco-cyber",
+    "section": "releases",
+    "title_en": "How Cisco defends at machine speed with OpenAI",
+    "title_ko": "시스코, OpenAI 모델로 머신 속도의 보안 방어 체계 구축",
+    "url": "https://openai.com/index/cisco-cyber",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "시스코가 네트워크 인텔리전스와 OpenAI 모델을 결합해 엔터프라이즈 보안을 강화하고 있다. 이를 통해 사이버 위협에 더 빠르고 적응적으로 대응하는 방어 체계를 구축 중이다.",
+    "why_it_matters": "AI 기반 보안이 엔터프라이즈 네트워크 방어의 새로운 표준으로 자리잡을 가능성을 보여주는 사례다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7619064153439153,
+    "published_at": "2026-11-03T08:00:00Z"
+  },
+  {
+    "id": "openai_blog-heimstaden",
+    "section": "releases",
+    "title_en": "Heimstaden is changing residential real estate management with AI",
+    "title_ko": "하임스타덴, AI로 유럽 주거용 부동산 관리 혁신",
+    "url": "https://openai.com/index/heimstaden",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "유럽의 부동산 기업 하임스타덴(Heimstaden)이 OpenAI의 ChatGPT Enterprise와 Codex를 도입해 자산 관리 업무를 혁신하고 있다. AI를 활용해 비용을 절감하고 직원들의 업무 효율을 높이는 방식으로 전 유럽 사업장에 적용 중이다.",
+    "why_it_matters": "전통적인 부동산 관리 산업에서 LLM 기반 AI 도구가 실질적인 비용 절감과 업무 혁신을 이끄는 구체적 기업 사례로 주목할 만하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7619064153439153,
+    "published_at": "2026-11-03T08:00:00Z"
+  },
+  {
+    "id": "github_trending-vercel-labs/agent-desktop",
+    "section": "releases",
+    "title_en": "vercel-labs/agent-desktop",
+    "title_ko": "Vercel Labs의 AI 에이전트용 데스크탑 조작 CLI - agent-desktop",
+    "url": "https://github.com/vercel-labs/agent-desktop",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Vercel Labs가 공개한 `agent-desktop`은 AI 에이전트가 OS 접근성 트리를 통해 데스크탑 앱을 읽고 조작할 수 있게 해주는 CLI 도구다. macOS, Windows, Linux를 지원하며, 스냅샷으로 UI 요소를 JSON으로 반환하고 ref 기반으로 클릭·타이핑 등 56가지 명령을 실행한다. 픽셀 매칭 없이 접근성 API만 사용하며, npm으로 설치 가능하고 C 라이브러리(FFI)도 제공한다.",
+    "why_it_matters": "AI 에이전트가 웹이 아닌 네이티브 데스크탑 앱까지 자율적으로 조작할 수 있는 크로스플랫폼 표준 인터페이스를 오픈소스로 제공한다는 점에서 컴퓨터 사용(Computer Use) 에이전트 개발의 핵심 인프라가 될 수 있다.",
+    "tags": [
+      "에이전트",
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 0.7584292328042328,
+    "published_at": "2026-11-03T07:24:57Z"
+  },
+  {
+    "id": "github_trending-thedotmack/claude-mem",
+    "section": "releases",
+    "title_en": "thedotmack/claude-mem",
+    "title_ko": "claude-mem: 모든 AI 에이전트를 위한 세션 간 영구 메모리 시스템",
+    "url": "https://github.com/thedotmack/claude-mem",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "claude-mem은 AI 에이전트가 세션 중 수행한 작업을 자동으로 캡처하고, AI로 압축한 뒤 다음 세션에 관련 컨텍스트를 주입하는 오픈소스 영구 메모리 플러그인이다. Claude Code, Codex, Gemini, Copilot 등 다양한 AI 코딩 도구를 지원하며, SQLite와 Chroma 벡터 DB를 활용한 하이브리드 검색 기능도 제공한다. MCP 도구 기반의 3단계 워크플로우로 토큰 소비를 최소화하면서 프로젝트 히스토리를 자연어로 검색할 수 있다.",
+    "why_it_matters": "세션이 끊겨도 AI 에이전트가 프로젝트 맥락을 기억할 수 있게 해 개발 연속성 문제를 실용적으로 해결한다는 점에서 주목할 만하다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7584292328042328,
+    "published_at": "2026-11-03T07:24:57Z"
+  },
+  {
+    "id": "github_trending-Donchitos/Claude-Code-Game-Studios",
+    "section": "releases",
+    "title_en": "Donchitos/Claude-Code-Game-Studios",
+    "title_ko": "Claude Code를 완전한 게임 개발 스튜디오로 전환하는 AI 에이전트 프레임워크",
+    "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code 세션 하나를 49개의 전문 AI 에이전트로 구성된 가상 게임 개발 스튜디오로 변환하는 오픈소스 템플릿입니다. 디렉터·부서장·전문가 3계층 구조로 조직되며, 74개의 슬래시 커맨드와 15개의 자동화 훅을 통해 설계·개발·QA·출시까지 전 워크플로우를 지원합니다. Godot 4, Unity, Unreal Engine 5 세 가지 엔진을 지원하며, MIT 라이선스로 자유롭게 커스터마이징할 수 있습니다.",
+    "why_it_matters": "Claude Code를 단순 채팅 도우미가 아닌 실제 스튜디오 조직 체계를 갖춘 멀티 에이전트 개발 환경으로 활용하는 구체적인 레퍼런스 구현을 제공한다는 점에서, 솔로 게임 개발자나 소규모 팀에게 실질적인 AI 에이전트 오케스트레이션 사례로 주목할 만합니다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7584292328042328,
+    "published_at": "2026-11-03T07:24:57Z"
+  },
+  {
+    "id": "github_trending-paperclipai/paperclip",
+    "section": "releases",
+    "title_en": "paperclipai/paperclip",
+    "title_ko": "Paperclip: AI 에이전트 팀을 관리하는 오픈소스 오케스트레이션 플랫폼",
+    "url": "https://github.com/paperclipai/paperclip",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Paperclip은 여러 AI 에이전트(Claude Code, Codex, Cursor 등)를 하나의 조직처럼 운영할 수 있는 오픈소스 플랫폼입니다. 조직도, 예산 관리, 목표 정렬, 거버넌스 등 기업 운영에 필요한 기능을 갖춘 에이전트 오케스트레이션 도구로, Node.js 서버와 React UI로 구성됩니다. 태스크 매니저처럼 보이지만 내부적으로는 에이전트 간 역할 분담, 비용 추적, 승인 워크플로우 등을 처리합니다. MIT 라이선스로 셀프호스팅이 가능합니다.",
+    "why_it_matters": "단일 에이전트 도구를 넘어 다수의 AI 에이전트를 조직 단위로 체계적으로 운영·감독하려는 팀에게 실질적인 거버넌스 인프라를 제공한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.7584292328042328,
+    "published_at": "2026-11-03T07:24:57Z"
+  },
+  {
+    "id": "hn-50354960",
+    "section": "community",
+    "title_en": "Postman silently auto-installs AI plugins and attempts to share all API data",
+    "title_ko": "Postman, 사용자 동의 없이 AI 플러그인 자동 설치 및 API 데이터 공유 시도",
+    "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Postman이 사용자에게 명시적인 동의를 구하지 않고 AI 플러그인을 자동으로 설치하고, 모든 API 데이터를 외부와 공유하려 시도한 것으로 알려졌다. 이는 개발자 커뮤니티에서 개인정보 및 보안 우려를 불러일으키고 있다.",
+    "why_it_matters": "API 개발 도구가 민감한 API 키·엔드포인트 데이터를 무단으로 수집·공유할 경우 기업 보안에 심각한 위협이 될 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 10.975965697154319,
+    "published_at": "2026-11-03T17:22:37Z"
+  },
+  {
+    "id": "hn-50351111",
+    "section": "community",
+    "title_en": "The 'Astra can read and write weights to improve Qwen' post is misleading",
+    "title_ko": "'Astra가 Qwen 가중치를 읽고 쓸 수 있다'는 게시물은 오해를 일으킬 수 있음",
+    "url": "https://honnibal.dev/blog/astra-read-write-misleading",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Astra가 Qwen 모델의 가중치를 읽고 쓰며 개선할 수 있다는 주장이 담긴 게시물이 오해를 불러일으킨다는 지적이 제기되었다. 해당 제목만으로는 구체적인 내용을 확인하기 어렵다.",
+    "why_it_matters": "AI 모델 능력에 대한 과장·오해는 커뮤니티 내 혼란을 초래할 수 있어 사실 검증이 중요하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.480007065216338,
+    "published_at": "2026-11-03T12:21:17Z"
+  },
+  {
+    "id": "hn-50339288",
+    "section": "community",
+    "title_en": "Jailbreaking my car's navigation system just so I can change the time",
+    "title_ko": "자동차 내비게이션 시스템을 탈옥해서 시간을 변경한 사례",
+    "url": "https://blog.nns.ee/2026/11/02/renault-hack/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "자동차 내비게이션 시스템의 시간을 변경하기 위해 직접 시스템을 탈옥(jailbreak)한 경험을 다룬 글이다. 단순히 시간 설정 하나를 바꾸기 위해 시스템 해킹까지 감행한 사례로, 자동차 임베디드 시스템의 폐쇄성을 보여준다.",
+    "why_it_matters": "자동차 제조사의 폐쇄적인 임베디드 시스템이 사용자 경험을 얼마나 제한하는지를 단적으로 보여주는 사례다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 10.348337388304477,
+    "published_at": "2026-11-02T16:29:19Z"
+  },
+  {
+    "id": "hn-50355251",
+    "section": "community",
+    "title_en": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+    "title_ko": "Qwen 3.8 27B, 노트북에서 모델 가중치 해석 가능",
+    "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Qwen 3.8 27B 모델을 노트북에서 로컬로 실행하여 모델 가중치를 해석할 수 있다는 내용을 다루고 있다. 로컬 환경에서 대형 언어 모델을 활용해 모델 내부 가중치를 분석하는 시도로 보인다.",
+    "why_it_matters": "고성능 LLM을 로컬 노트북에서 실행해 모델 해석가능성(interpretability) 작업까지 수행할 수 있다는 점에서 온디바이스 AI 활용 가능성을 보여준다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 9.848295057485327,
+    "published_at": "2026-11-03T17:40:00Z"
+  },
+  {
+    "id": "hn-50336918",
+    "section": "community",
+    "title_en": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
+    "title_ko": "후지필름, AI 아카이빙 수요 급증으로 테이프 생산량 5배 확대",
+    "url": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "후지필름이 AI 관련 데이터 아카이빙 수요 증가에 대응하기 위해 테이프 생산량을 5배까지 늘릴 계획이다.",
+    "why_it_matters": "AI 데이터 폭증이 저비용·고용량 장기 보관 매체인 자기 테이프 시장을 되살리고 있음을 보여주는 사례다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.615927257780339,
+    "published_at": "2026-11-02T14:02:42Z"
+  },
+  {
+    "id": "simon_willison-qwen-can-interpret-model-weights",
+    "section": "deepdive",
+    "title_en": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+    "title_ko": "노트북의 Qwen 3.8 27B, 모델 가중치 해석 가능",
+    "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "'Weight-Space Programming' 논문은 GPT-6 Astra 같은 최신 LLM이 신경망의 원시 가중치(부동소수점 숫자)를 읽고 어떤 게임을 위해 훈련된 모델인지 도구 없이 추론할 수 있음을 보여줬다. Simon Willison은 이를 직접 재현해 로컬에서 실행한 Qwen 3.8 27B(17GB)가 Pac-Man, Pong, Breakout 가중치를 각각 46분~1시간여의 추론 끝에 올바르게 식별했다고 밝혔다. 단, Freeway처럼 덜 알려진 게임은 실패했으며, 일부 과장된 해석에는 비판적 시각을 유지했다.",
+    "why_it_matters": "프론티어 모델 전유물로 여겨졌던 가중치 공간 해석 능력이 로컬 소형 모델에서도 재현 가능함이 확인돼, LLM의 모델 내성(introspection) 가능성에 대한 논의가 본격화될 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8124818121693121,
+    "published_at": "2026-11-03T16:29:48Z"
+  }
+]
