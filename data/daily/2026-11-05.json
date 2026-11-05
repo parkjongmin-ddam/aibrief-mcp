@@ -1,0 +1,322 @@
+[
+  {
+    "id": "hf-2611.05275",
+    "section": "papers",
+    "title_en": "Route Anything: A Study of Model and Policy Routing for General-Purpose AI Systems",
+    "title_ko": "Route Anything: 범용 AI 시스템을 위한 모델 및 정책 라우팅 연구",
+    "url": "https://huggingface.co/papers/2611.05275",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "단일 모델 대신 특화된 모델·도구·정책을 동적으로 조율하는 라우팅 프레임워크 'Route Anything'을 제안합니다. 언어·이미지·비디오·음성·코딩·로봇 조작 등 25개 벤치마크, 374,401개 실행 결과를 포함한 옴니모달 궤적 매트릭스를 구축했습니다. 학습된 라우터는 최고 단일 후보 대비 최대 2.1포인트(비디오 생성) 성능을 높이고, 평균 8.82배의 효율성 향상을 달성했습니다.",
+    "why_it_matters": "단일 대형 모델 의존에서 벗어나 여러 전문 모델을 지능적으로 라우팅함으로써 성능과 비용을 동시에 최적화하는 실용적 AGI 경로를 제시한다는 점에서 중요합니다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.465908118654584,
+    "published_at": "2026-11-02T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.00617",
+    "section": "papers",
+    "title_en": "Words Caught in the Heart: Simulating Person-Specific Expression for Self-Opaque Clients in Psychotherapy",
+    "title_ko": "심리치료 내담자의 개인화된 표현 시뮬레이션 프레임워크 'Pandora'",
+    "url": "https://huggingface.co/papers/2611.00617",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "심리치료 내담자는 자신의 고통을 명확히 설명하기 어려운 경우가 많은데, 기존 LLM 기반 내담자 시뮬레이터는 임상적으로 정리된 케이스 설명에 의존해 실제보다 과도하게 명료한 표현을 생성하는 한계가 있다. 이를 해결하기 위해 제안된 Pandora는 심리적·관계적 상태를 치료사 개입에 맞게 동적으로 업데이트하고, 내담자의 실제 발화 패턴을 반영한 별도의 표현 계획 모듈을 통해 개인화된 언어를 생성한다. 4개 상담 데이터셋 115개 사례 평가에서 Pandora는 AI처럼 느껴진다는 판정을 7.2%만 받아, 베이스라인(43.3~67.2%) 대비 훨씬 자연스러운 내담자 표현을 구현했다.",
+    "why_it_matters": "LLM 기반 심리치료 훈련 시뮬레이터의 현실성을 크게 높여, 치료사 교육 및 연구에서의 활용 가능성을 확장한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.2626798770413155,
+    "published_at": "2026-10-30T20:00:00Z"
+  },
+  {
+    "id": "hf-2611.04814",
+    "section": "papers",
+    "title_en": "Think Less, Locally: Local Preference Learning for Reasoning Compression",
+    "title_ko": "LoCo: 로컬 선호 학습으로 추론 과정 압축하기",
+    "url": "https://huggingface.co/papers/2611.04814",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "대형 추론 모델은 충분한 정보를 얻은 후에도 불필요하게 추론을 이어가는 '과잉 사고(overthinking)' 문제가 있다. LoCo는 모델 자체 추론 트레이스에서 과잉 사고 구간을 탐지하고, 동일한 상태에서 더 짧은 검증된 연속 추론을 재생성해 DPO로 학습하는 로컬 선호 학습 방법이다. 수학 벤치마크에서 완성 길이를 최대 45.4%, 코드 생성에서 최대 36.3% 줄이면서도 정확도를 유지하거나 향상시켰다. 수학 데이터만으로 학습했음에도 코드 생성 태스크에 효과적으로 전이되는 크로스 도메인 일반화도 확인됐다.",
+    "why_it_matters": "추론 비용 절감이 LLM 실용화의 핵심 과제인 만큼, 정확도 손실 없이 추론 길이를 대폭 줄이는 LoCo의 접근법은 실제 서비스 운영 효율에 직결된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.189654742026425,
+    "published_at": "2026-11-02T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.05377",
+    "section": "papers",
+    "title_en": "DreamX: Video Diffusion Model is a Universal Latent Action Learner",
+    "title_ko": "DreamX: 비디오 확산 모델을 범용 잠재 행동 학습기로 활용",
+    "url": "https://huggingface.co/papers/2611.05377",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "DreamX는 사전 학습된 비디오 확산 모델을 재활용해 범용 잠재 행동 표현을 학습하는 프레임워크다. 각 잠재 비디오 프레임을 300배(1,200→4 토큰) 압축하면서도 시각적 외형과 무관한 행동 관련 역학을 포착한다. 이 잠재 공간은 인간·로봇 등 다양한 구현체와 환경에 걸쳐 공유 행동 인터페이스로 작동하며, LARY-Bench에서 잠재 행동 모델 중 최고 성능을 기록했다. 또한 제로샷 행동 전이와 비디오 기반 정책 학습의 연산 비용 절감도 가능하다.",
+    "why_it_matters": "하나의 잠재 공간으로 인간·로봇 등 이종 구현체 간 행동을 제로샷으로 전이할 수 있어 범용 로봇 정책 학습의 가능성을 크게 열어준다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 4.951243718581427,
+    "published_at": "2026-11-02T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.05193",
+    "section": "papers",
+    "title_en": "Factorized MLLM Embeddings for Composed Image Retrieval",
+    "title_ko": "구성 이미지 검색을 위한 팩터화된 MLLM 임베딩(FactEmbed)",
+    "url": "https://huggingface.co/papers/2611.05193",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "FactEmbed는 참조 이미지와 수정 텍스트를 조합해 목표 이미지를 검색하는 Composed Image Retrieval(CIR) 과제를 위한 새로운 방법론이다. 기존 MLLM 기반 접근법이 단순히 쿼리를 단일 임베딩으로 직접 매핑했던 한계를 극복하기 위해, 쿼리 이해와 판별적 임베딩 생성을 분리하는 팩터화된 잠재 표현을 도입했다. 중간 목표 시각화 목적 함수를 통해 의도된 시각적 수정을 시뮬레이션하고, 팩터 레벨 대조 손실과 주의 레이어 증류를 결합해 검색 성능을 높인다. CIR 벤치마크에서 기존 연구 대비 우수한 성능을 달성했다.",
+    "why_it_matters": "MLLM의 구성적 이해를 충분히 활용하는 새로운 임베딩 설계로 이미지+텍스트 복합 검색 성능을 한 단계 끌어올린 연구다.",
+    "tags": [
+      "LLM",
+      "RAG"
+    ],
+    "score": 4.80666248977032,
+    "published_at": "2026-11-02T19:00:00Z"
+  },
+  {
+    "id": "openai_blog-openai-to-acquire-pierre",
+    "section": "releases",
+    "title_en": "OpenAI to acquire Pierre Computer Company, Inc.",
+    "title_ko": "OpenAI, 피에르 컴퓨터 컴퍼니 인수 발표",
+    "url": "https://openai.com/index/openai-to-acquire-pierre",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 Pierre Computer Company, Inc.를 인수한다고 발표했다. 이번 인수를 통해 Codex의 코드 빌드, 이해, 리뷰 도구가 확장될 예정이다.",
+    "why_it_matters": "Codex 기반 코딩 도구 강화를 위한 전략적 인수로, AI 코드 어시스턴트 경쟁이 더욱 심화될 전망이다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8005968915343915,
+    "published_at": "2026-11-04T14:30:00Z"
+  },
+  {
+    "id": "openai_blog-a-thousand-fewer-paths-to-root",
+    "section": "releases",
+    "title_en": "A thousand fewer paths to root",
+    "title_ko": "자율 파이프라인으로 리눅스 커널 취약점 948개 패치 생성",
+    "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 리눅스 커널의 로컬 권한 상승(LPE) 취약점 948개를 자동으로 발견, 검증, 패치까지 생성하는 자율 파이프라인을 구축했다. 이 시스템은 사람의 개입 없이 취약점 탐지부터 수정안 작성까지 전 과정을 처리한다.",
+    "why_it_matters": "AI가 대규모 커널 보안 취약점을 자율적으로 패치할 수 있음을 실증한 사례로, 소프트웨어 보안 자동화의 가능성을 크게 끌어올렸다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7619064153439153,
+    "published_at": "2026-11-04T08:00:00Z"
+  },
+  {
+    "id": "github_trending-thedotmack/claude-mem",
+    "section": "releases",
+    "title_en": "thedotmack/claude-mem",
+    "title_ko": "claude-mem: AI 에이전트를 위한 세션 간 영구 메모리 시스템",
+    "url": "https://github.com/thedotmack/claude-mem",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "claude-mem은 AI 에이전트가 세션 중 수행한 작업을 자동으로 캡처하고, AI로 압축한 뒤 다음 세션에 관련 컨텍스트를 주입하는 오픈소스 영구 메모리 플러그인이다. Claude Code, Codex, Gemini, Copilot, OpenCode 등 다양한 AI 코딩 도구를 지원하며, SQLite와 Chroma 벡터 DB를 활용한 하이브리드 검색 기능을 제공한다. MCP 도구 기반의 3단계 워크플로로 토큰 비용을 약 10배 절감하는 효율적인 메모리 검색이 가능하다.",
+    "why_it_matters": "세션이 끊겨도 프로젝트 맥락을 유지하는 에이전트 메모리 인프라로, 반복 작업과 컨텍스트 손실 문제를 해결해 AI 코딩 에이전트의 실용성을 크게 높인다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.7566732804232804,
+    "published_at": "2026-11-04T07:07:15Z"
+  },
+  {
+    "id": "github_trending-vercel-labs/agent-desktop",
+    "section": "releases",
+    "title_en": "vercel-labs/agent-desktop",
+    "title_ko": "Vercel Labs, AI 에이전트용 데스크톱 컴퓨터 사용 CLI 'agent-desktop' 공개",
+    "url": "https://github.com/vercel-labs/agent-desktop",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Vercel Labs가 AI 에이전트가 macOS, Windows, Linux의 데스크톱 앱을 제어할 수 있는 CLI 도구 'agent-desktop'을 오픈소스로 공개했다. 스크린샷이나 픽셀 매칭 없이 OS 접근성 트리(AX API, UI Automation, AT-SPI)를 JSON으로 읽어 각 UI 요소에 ref를 부여하고, 에이전트가 클릭·타이핑 등의 액션을 수행할 수 있다. MCP 서버 모드도 지원하며 npm, Homebrew 등으로 설치 가능하다. 라이선스는 Apache-2.0이다.",
+    "why_it_matters": "스크린샷 기반의 비효율적인 컴퓨터 사용 방식을 탈피해 접근성 트리 기반으로 정확하고 경량화된 데스크톱 에이전트 자동화가 가능해진다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7566732804232804,
+    "published_at": "2026-11-04T07:07:15Z"
+  },
+  {
+    "id": "github_trending-spotify/portal-ai-plugins",
+    "section": "releases",
+    "title_en": "spotify/portal-ai-plugins",
+    "title_ko": "Spotify, AI 코딩 에이전트용 Portal 플러그인 오픈소스 공개",
+    "url": "https://github.com/spotify/portal-ai-plugins",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Spotify가 자사 개발자 포털인 Spotify Portal을 Claude Code, Codex, Cursor, pi 등 AI 코딩 에이전트와 연동하는 플러그인을 오픈소스로 공개했다. 이 플러그인은 소프트웨어 카탈로그 검색, 서비스 브리핑 생성, Portal 액션 실행, Fleetshift 관리 등의 워크플로를 자연어로 수행할 수 있게 해준다. 추가로 'shunt' 플러그인은 대용량 파일 읽기나 보일러플레이트 생성 같은 I/O 집약 작업을 저비용 워커 모델에 위임해 토큰 비용을 절감한다.",
+    "why_it_matters": "엔터프라이즈 개발 포털과 AI 코딩 에이전트를 직접 연동하는 실제 사례로, 대규모 조직의 내부 도구를 에이전트 워크플로에 통합하는 방식을 구체적으로 보여준다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7566732804232804,
+    "published_at": "2026-11-04T07:07:15Z"
+  },
+  {
+    "id": "github_trending-Usagi-org/ai-goofish-monitor",
+    "section": "releases",
+    "title_en": "Usagi-org/ai-goofish-monitor",
+    "title_ko": "AI 기반 중고거래 플랫폼 셴위(闲鱼) 실시간 모니터링 시스템",
+    "url": "https://github.com/Usagi-org/ai-goofish-monitor",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Playwright와 AI 멀티모달 모델을 활용해 중국 중고거래 플랫폼 셴위(闲鱼)의 상품을 실시간·정기 모니터링하는 오픈소스 프로젝트다. 자연어로 감시 조건을 설정하면 AI가 상품을 분석해 조건에 맞는 상품 발견 시 Telegram, 기업 위챗, Bark 등 다양한 채널로 알림을 발송한다. Docker 원클릭 배포를 지원하며 웹 기반 관리 UI, 멀티 계정·프록시 풀 로테이션 기능도 갖췄다.",
+    "why_it_matters": "LLM과 멀티모달 AI를 중고거래 자동화에 접목한 실용적 사례로, 유사한 커머스 모니터링 도구 개발에 참고할 수 있는 아키텍처를 제공한다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7566732804232804,
+    "published_at": "2026-11-04T07:07:15Z"
+  },
+  {
+    "id": "github_trending-Donchitos/Claude-Code-Game-Studios",
+    "section": "releases",
+    "title_en": "Donchitos/Claude-Code-Game-Studios",
+    "title_ko": "Claude Code를 완전한 게임 개발 스튜디오로 전환하는 AI 에이전트 프레임워크",
+    "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code 세션 하나를 49개의 전문 AI 에이전트, 74개의 슬래시 커맨드, 15개의 자동화 훅으로 구성된 실제 게임 스튜디오처럼 운영할 수 있는 오픈소스 템플릿이다. 디렉터→부서장→스페셜리스트의 3단계 계층 구조로 설계되어 디자인 검토, QA, 코드 리뷰 등을 체계적으로 수행한다. Godot 4, Unity, Unreal Engine 5를 모두 지원하며, modes.rigor 설정 하나로 프로세스 무게를 minimal부터 full까지 조절할 수 있다. MIT 라이선스로 공개된 커스터마이즈 가능한 템플릿이다.",
+    "why_it_matters": "혼자 AI로 게임을 개발할 때 발생하는 구조 부재 문제를 실제 스튜디오 위계를 모방한 멀티 에이전트 시스템으로 해결한 실용적 접근법이다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7566732804232804,
+    "published_at": "2026-11-04T07:07:15Z"
+  },
+  {
+    "id": "hn-50364336",
+    "section": "community",
+    "title_en": "AI is forcing us to pay off 40 years of technical debt",
+    "title_ko": "AI가 40년간 쌓인 기술 부채 청산을 강요하고 있다",
+    "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI 도입이 가속화되면서 수십 년간 미뤄온 기술 부채 문제가 수면 위로 떠오르고 있다는 주장을 담은 글이다. 레거시 시스템과 낡은 아키텍처가 AI 통합의 걸림돌이 되면서, 조직들이 오래된 부채를 더 이상 외면할 수 없게 됐다는 내용으로 보인다.",
+    "why_it_matters": "AI 도입을 고려하는 개발팀이라면 레거시 시스템 현대화가 선택이 아닌 필수임을 시사한다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 11.270268817941941,
+    "published_at": "2026-11-04T11:52:17Z"
+  },
+  {
+    "id": "hn-50366999",
+    "section": "community",
+    "title_en": "Kimi K3.1 Pro model weights are out",
+    "title_ko": "Kimi K3.1 Pro 모델 가중치 공개",
+    "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Kimi K3.1 Pro 모델의 가중치가 공개되었다. 상세한 설명은 제공되지 않았으나, 오픈소스 형태로 배포된 것으로 보인다.",
+    "why_it_matters": "Kimi 계열 모델의 가중치 공개는 오픈소스 AI 생태계에 새로운 선택지를 추가한다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 9.492123222063556,
+    "published_at": "2026-11-04T15:30:30Z"
+  },
+  {
+    "id": "hn-50366117",
+    "section": "community",
+    "title_en": "Ask HN: What's your current AI agentic setup?",
+    "title_ko": "HN 질문: 여러분의 현재 AI 에이전트 환경 구성은?",
+    "url": "https://news.ycombinator.com/item?id=50366117",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Hacker News 사용자들이 현재 사용 중인 AI 에이전트 셋업을 공유하는 토론 스레드다. 개발자들이 실무에서 어떤 도구와 워크플로우를 사용하는지 엿볼 수 있는 커뮤니티 토론이다.",
+    "why_it_matters": "실제 개발자들의 AI 에이전트 도입 현황과 실무 셋업을 파악할 수 있는 현장감 있는 정보 창구다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 9.001108001355142,
+    "published_at": "2026-11-04T14:37:22Z"
+  },
+  {
+    "id": "hn-50369925",
+    "section": "community",
+    "title_en": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+    "title_ko": "Ripple-65B 프리뷰: 에이전틱 코딩 분야 미국 오픈웨이트 최고 성능 모델",
+    "url": "https://www.ricursive.com/ripple",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Ripple-65B는 에이전틱 코딩 분야에서 미국 오픈웨이트 모델 중 최고 수준의 성능을 달성했다고 소개된 모델이다. 65B 파라미터 규모의 오픈웨이트 모델로, 코딩 에이전트 작업에 특화되어 있다.",
+    "why_it_matters": "오픈웨이트 모델이 에이전틱 코딩 분야에서 최고 성능을 주장하며 상용 모델과의 격차를 좁힐 가능성을 시사한다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 8.825414695847215,
+    "published_at": "2026-11-04T18:53:29Z"
+  },
+  {
+    "id": "hn-50372929",
+    "section": "community",
+    "title_en": "A thousand fewer paths to root",
+    "title_ko": "루트 권한으로 가는 수천 개의 경로를 차단하다",
+    "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "제목만으로는 구체적인 내용을 확인할 수 없으나, 시스템에서 루트 권한 획득으로 이어질 수 있는 경로를 대폭 줄이는 보안 관련 주제로 보인다. 상세 내용은 원문을 직접 확인하는 것을 권장한다.",
+    "why_it_matters": "시스템 보안 강화 측면에서 권한 상승 경로 축소는 공격 표면을 줄이는 핵심 과제다.",
+    "tags": [],
+    "score": 8.815721089581658,
+    "published_at": "2026-11-04T23:33:14Z"
+  },
+  {
+    "id": "latent_space-ainews-behind-latent-space-kill-my-saas-jev-ai-in-2026-aiei-shanghai",
+    "section": "deepdive",
+    "title_en": "[AINews] Behind Latent Space: Kill My SaaS, Jev & AI in 2026 | AIEi Shanghai",
+    "title_ko": "레이턴트 스페이스 비하인드: SaaS의 종말, Jev와 2026년 AI",
+    "url": "https://latent.space/p/ainews-behind-latent-space-kill-my-saas-jev-ai-in-2026-aiei-shanghai/",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "2026년 11월 3일, 레이턴트 스페이스 팀이 비하인드 스토리를 공개했다. 'Kill My SaaS'라는 주제와 함께 Jev, 그리고 2026년 AI 트렌드에 대한 이야기를 담고 있으며, AIEi 상하이 행사와도 연관된 내용이다.",
+    "why_it_matters": "AI 업계 내부자 시각에서 SaaS 비즈니스 모델의 변화와 2026년 AI 동향을 엿볼 수 있는 비하인드 콘텐츠다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8291187169312169,
+    "published_at": "2026-11-04T19:17:30Z"
+  }
+]
