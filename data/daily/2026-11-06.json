@@ -1,0 +1,316 @@
+[
+  {
+    "id": "hf-2611.06728",
+    "section": "papers",
+    "title_en": "Turns Matter: Advancing Streaming Video RL via Turn-Level Credit",
+    "title_ko": "TurnWise: 턴 수준 크레딧 할당으로 스트리밍 비디오 RL 성능 향상",
+    "url": "https://huggingface.co/papers/2611.06728",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "스트리밍 비디오 이해 모델은 매 순간 응답할지 계속 관찰할지 결정해야 한다. 기존 GRPO 기반 접근법은 궤적 전체에 단일 보상 신호를 적용해 중복 응답을 강화하거나 유용한 후속 응답을 억제하는 문제가 있었다. TurnWise는 턴별 크레딧 할당과 턴 평균 정책 최적화를 결합해 각 결정의 학습 신호를 분리하고, 별도의 비평 모델이나 추가 롤아웃 없이 스트리밍 정책 학습을 개선한다.",
+    "why_it_matters": "실시간 비디오 스트리밍 AI의 핵심 과제인 '언제 말할지' 결정 문제를 턴 단위로 정밀하게 학습시키는 새로운 RL 프레임워크를 제안해 실용적 가치가 높다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.836281906951478,
+    "published_at": "2026-11-03T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.06918",
+    "section": "papers",
+    "title_en": "From Pixels to Actions - Towards Native Vision-Language-Action Policies",
+    "title_ko": "픽셀에서 액션으로 - 인코더 없는 비전-언어-액션 정책 NEO-VLA",
+    "url": "https://huggingface.co/papers/2611.06918",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "기존 비전-언어-액션(VLA) 모델은 시각 인코더로 이미지를 압축한 뒤 행동 추론을 수행하지만, 이 과정에서 로컬 기하학·경계·깊이 등 조작에 중요한 시각 신호가 손실될 수 있다. NEO-VLA는 인코더 없이 경량 패치 컨볼루션으로 이미지를 토크나이징하고, 언어와 함께 백본 전체에서 시각 표현을 공동으로 발전시킨다. 실험 결과, 인코더 기반 모델 대비 일관되게 우수한 성능을 보였으며, 파인튜닝이나 모델 스케일 확대만으로는 이 격차를 완전히 메울 수 없었다. 레이어별 프로빙에서도 행동에 중요한 시각 신호는 최종 레이어가 아닌 중간 레이어에서 최고조에 달하는 것으로 나타났다.",
+    "why_it_matters": "로봇 조작 AI에서 시각 인코더 고정 출력 대신 계층적 시각 표현 전체를 활용하는 것이 성능과 견고성에 근본적으로 유리함을 실증적으로 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.04305126783455,
+    "published_at": "2026-11-04T13:59:58Z"
+  },
+  {
+    "id": "hf-2611.06910",
+    "section": "papers",
+    "title_en": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
+    "title_ko": "FrontierPhysics: AI 에이전트의 물리학 연구 역량 평가 벤치마크",
+    "url": "https://huggingface.co/papers/2611.06910",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "42명의 물리학자가 자신의 연구를 기반으로 56개 태스크를 설계한 엔드투엔드 물리학 벤치마크 'FrontierPhysics'가 공개됐다. 이론·계산·실험 물리학 9개 분야를 아우르며, 에이전트가 문헌 검토부터 연구 계획 수립, 실험 수행, 논문 작성까지 전 과정을 수행해야 한다. 22개 모델 26개 설정을 테스트한 결과, 어떤 구성도 168번의 롤아웃 중 46번 이상을 통과하지 못했으며, 주요 약점은 물리 지식 부족이 아닌 불충분한 추론 엄밀성과 전문가 직관의 한계로 나타났다.",
+    "why_it_matters": "기존 물리학 벤치마크의 한계를 넘어 연구 품질과 정확성을 동시에 평가함으로써, AI 에이전트의 실제 과학 연구 수행 능력의 현주소를 명확히 보여준다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 4.912023005428146,
+    "published_at": "2026-11-03T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.06483",
+    "section": "papers",
+    "title_en": "What Does Multi-Turn Reinforcement Learning Really Improve in LLM Agents?",
+    "title_ko": "멀티턴 강화학습은 LLM 에이전트의 무엇을 실제로 개선하는가?",
+    "url": "https://huggingface.co/papers/2611.06483",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "멀티턴 에이전트 강화학습(RL)은 장기 과제에서 뛰어난 성능을 보이지만, 상호작용 횟수(턴 예산)에 따라 성능 편차가 크다는 점이 밝혀졌다. Pass@(K,T) 평가 지표를 활용한 분석에서, 턴 예산이 줄어들면 RL의 이점이 크게 감소하며 단일 스텝 의사결정 품질을 일률적으로 높이지 않는다는 사실이 확인됐다. 이를 보완하기 위해 훈련 중 상호작용 예산을 다양하게 변화시키는 BudgetMix RL을 제안하며, 다양한 실행 환경에서 안정적인 성능을 달성함을 실험으로 입증했다.",
+    "why_it_matters": "에이전트 RL의 성능이 턴 예산에 크게 의존한다는 사실은 실제 배포 환경에서의 신뢰성 문제를 제기하며, BudgetMix RL은 이를 해결할 실용적 대안을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.58351893845611,
+    "published_at": "2026-11-04T08:24:54Z"
+  },
+  {
+    "id": "hf-2611.04408",
+    "section": "papers",
+    "title_en": "Halley: A Predictive Control Plane for Optical AI Data Center Networks",
+    "title_ko": "Halley: 광학 AI 데이터센터 네트워크를 위한 예측적 제어 플레인",
+    "url": "https://huggingface.co/papers/2611.04408",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Halley는 AI 학습용 광학 데이터센터 네트워크의 각 레이어(레이저, 스위치, 마이크로링, 모듈)에 예측 제어를 적용하는 종합 프레임워크다. 장애가 발생하기 전에 각 자원의 다음 상태를 읽고 선제적으로 대응하는 4가지 구성요소(LightReserve, FoldFit, ThermaLead, TriageGuard)로 이루어진다. 시뮬레이션 기준, 유효 굿풋이 65.2%에서 76.5%로 향상되며 메가와트당 최대 1.03~1.17배의 학습 처리량을 달성하고, 동일 학습량 대비 데이터센터 용량을 최대 14.7%까지 절감할 수 있다.",
+    "why_it_matters": "대규모 AI 학습 클러스터의 광학 네트워크 안정성과 효율을 예측 제어로 획기적으로 개선해 인프라 비용 절감과 가용성 향상에 직접적인 영향을 준다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 4.555348061489413,
+    "published_at": "2026-11-03T01:45:50Z"
+  },
+  {
+    "id": "openai_blog-cultfit-builds-with-codex",
+    "section": "releases",
+    "title_en": "Cult.fit builds operational muscle with Codex",
+    "title_ko": "Cult.fit, Codex로 운영 역량 강화",
+    "url": "https://openai.com/index/cultfit-builds-with-codex",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "인도의 헬스테크 기업 Cult.fit이 OpenAI의 Codex를 도입해 다양한 부서 팀들이 자체 도구를 구축하고 업무 속도를 높이고 있다. Codex를 통해 비개발 직군도 도구 개발에 참여하며 업무 방식 자체가 변화하고 있다.",
+    "why_it_matters": "Codex가 IT 부서 외 일반 비즈니스 팀의 도구 개발까지 확장되는 실제 엔터프라이즈 사례로, AI 기반 업무 혁신의 구체적 방향을 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8333349867724867,
+    "published_at": "2026-11-05T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-australian-universities-ai-native-graduates",
+    "section": "releases",
+    "title_en": "Australian universities are creating AI-native graduates",
+    "title_ko": "호주 대학들, AI 네이티브 졸업생 양성에 나서다",
+    "url": "https://openai.com/index/australian-universities-ai-native-graduates",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "호주 대학들이 ChatGPT 접근성을 확대하고 교육 과정에 AI를 도입하여 학생들이 AI 중심의 미래 직업 환경에 대비할 수 있도록 준비시키고 있다. 강의와 학습 전반에 AI를 통합함으로써 졸업생들이 AI 도구를 자연스럽게 활용하는 역량을 갖추도록 하는 것이 목표다.",
+    "why_it_matters": "대학 교육과 AI의 공식적 통합은 AI 활용 인재 양성의 새로운 표준을 제시하며, 글로벌 교육 패러다임 변화의 방향을 가늠할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8154778439153438,
+    "published_at": "2026-11-05T17:00:00Z"
+  },
+  {
+    "id": "google_blog-introducing-gemini-omni-1-2-flash",
+    "section": "releases",
+    "title_en": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+    "title_ko": "Gemini Omni 1.2 Flash: 더 빠르고 비용 효율적인 긴 영상 처리",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "Google이 Gemini Omni 1.2 Flash를 공개했다. 빠른 속도와 비용 효율성을 강조하며, 더 긴 영상 클립 처리를 지원하는 것이 특징이다. Flash 계열 모델답게 경량화와 실용성에 초점을 맞춘 것으로 보인다.",
+    "why_it_matters": "비용 대비 성능이 중요한 영상 처리 워크로드에서 Gemini 계열의 실용적인 선택지가 확장된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8154778439153438,
+    "published_at": "2026-11-05T17:00:00Z"
+  },
+  {
+    "id": "openai_blog-introducing-gpt-6-cyber",
+    "section": "releases",
+    "title_en": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+    "title_ko": "GPT-6 Cyber: OpenAI의 사이버보안 특화 에이전트 출시",
+    "url": "https://openai.com/index/introducing-gpt-6-cyber",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 사이버보안 전문 모델인 GPT-6 Cyber를 공개했다. 이 모델은 악용 가능한 취약점을 탐지하고 수정 방안을 개발하는 데 특화되어 있으며, 허가된 범위 내에서만 작동하도록 훈련되었다.",
+    "why_it_matters": "보안 취약점 탐지와 패치 개발을 자동화하는 정렬된 사이버보안 에이전트의 등장으로, 방어적 보안 실무에 큰 변화가 예상된다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7678587962962963,
+    "published_at": "2026-11-05T09:00:00Z"
+  },
+  {
+    "id": "openai_blog-merge-builds-with-openai",
+    "section": "releases",
+    "title_en": "Merge builds product and business tools with OpenAI technology",
+    "title_ko": "Merge, OpenAI 기술로 제품·비즈니스 도구 구축",
+    "url": "https://openai.com/index/merge-builds-with-openai",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Merge는 ChatGPT와 Codex를 활용해 제품 코드 리뷰와 마케팅 지원에 AI를 도입했다. 또한 임원 만찬 계획 수립과 영업 업데이트 준비 등 다양한 업무에도 AI를 적극 활용하고 있다.",
+    "why_it_matters": "OpenAI 기술이 개발부터 영업·마케팅까지 실제 기업 운영 전반에 통합되는 사례를 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7619064153439153,
+    "published_at": "2026-11-05T08:00:00Z"
+  },
+  {
+    "id": "github_trending-thedotmack/claude-mem",
+    "section": "releases",
+    "title_en": "thedotmack/claude-mem",
+    "title_ko": "claude-mem: AI 에이전트를 위한 세션 간 영구 메모리 시스템",
+    "url": "https://github.com/thedotmack/claude-mem",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "claude-mem은 AI 에이전트가 세션 중 수행한 모든 작업을 캡처하고, AI로 압축한 뒤 다음 세션에 관련 컨텍스트를 자동으로 주입하는 오픈소스 영구 메모리 플러그인이다. Claude Code, Codex, Gemini, Copilot, OpenCode 등 다양한 AI 코딩 도구와 호환되며, SQLite와 Chroma 벡터 DB를 활용한 하이브리드 검색을 지원한다. npx 한 줄 명령으로 설치할 수 있으며 Apache 2.0 라이선스로 공개되어 있다.",
+    "why_it_matters": "세션이 끊겨도 프로젝트 맥락을 잃지 않는 에이전트 메모리 레이어를 오픈소스로 제공해, AI 코딩 에이전트의 연속성 문제를 실용적으로 해결한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7593320105820106,
+    "published_at": "2026-11-05T07:34:03Z"
+  },
+  {
+    "id": "github_trending-vercel-labs/agent-desktop",
+    "section": "releases",
+    "title_en": "vercel-labs/agent-desktop",
+    "title_ko": "Vercel Labs, AI 에이전트용 데스크톱 컨트롤 CLI 'agent-desktop' 공개",
+    "url": "https://github.com/vercel-labs/agent-desktop",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Vercel Labs가 AI 에이전트가 macOS, Windows, Linux의 데스크톱 앱을 제어할 수 있는 오픈소스 CLI 도구 'agent-desktop'을 공개했다. 스크린샷이나 픽셀 매칭 없이 OS 접근성 트리(AX API, UI Automation, AT-SPI)를 읽어 JSON으로 반환하며, 에이전트가 ref를 통해 UI 요소를 클릭하거나 타이핑할 수 있다. MCP 서버 모드도 지원하며, C 라이브러리 형태로 프로세스 내에서 직접 호출도 가능하다. Apache-2.0 라이선스로 npm 및 Homebrew를 통해 설치할 수 있다.",
+    "why_it_matters": "스크린샷 없이 접근성 API 기반으로 데스크톱을 제어하는 경량 에이전트 인프라로, AI 에이전트의 컴퓨터 사용(Computer Use) 구현을 크로스플랫폼에서 실용적으로 가능하게 한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.7593320105820106,
+    "published_at": "2026-11-05T07:34:03Z"
+  },
+  {
+    "id": "hn-50385272",
+    "section": "community",
+    "title_en": "Claude Code sends your email address to websites",
+    "title_ko": "Claude Code가 방문 웹사이트에 사용자 이메일 주소를 전송",
+    "url": "https://github.com/anthropics/claude-code/issues/107757",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Claude Code가 사용자의 이메일 주소를 외부 웹사이트에 전송하는 것으로 알려졌다. 구체적인 경위나 범위는 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "AI 코딩 도구의 개인정보 유출 가능성은 개발자 신뢰와 보안에 직결되는 민감한 문제다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 10.393994374003915,
+    "published_at": "2026-11-05T22:17:15Z"
+  },
+  {
+    "id": "hn-50384233",
+    "section": "community",
+    "title_en": "MS Paint Remote Code Execution Vulnerability",
+    "title_ko": "MS 페인트 원격 코드 실행 취약점 발견",
+    "url": "https://www.cve.org/CVERecord?id=CVE-2026-83844",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "MS 페인트(Microsoft Paint)에서 원격 코드 실행(RCE) 취약점이 발견되었다. 해당 취약점은 공격자가 원격으로 임의의 코드를 실행할 수 있게 한다.",
+    "why_it_matters": "단순한 그림판 앱에서 RCE 취약점이 발견된 것은 예상치 못한 공격 표면이 될 수 있어 Windows 사용자라면 주의가 필요하다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.474102058290491,
+    "published_at": "2026-11-05T20:43:42Z"
+  },
+  {
+    "id": "hn-50379249",
+    "section": "community",
+    "title_en": "MCP Explained",
+    "title_ko": "MCP 완전 설명",
+    "url": "https://mcp-explained.com/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "MCP(Model Context Protocol)에 대해 설명하는 글이다. 상세 내용은 제공되지 않았으나, MCP의 개념과 동작 방식을 다루는 것으로 보인다.",
+    "why_it_matters": "MCP는 AI 에이전트와 외부 도구·데이터를 연결하는 핵심 프로토콜로, 개발자라면 반드시 이해해야 할 표준이다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 8.987461133112534,
+    "published_at": "2026-11-05T14:08:35Z"
+  },
+  {
+    "id": "hn-50383057",
+    "section": "community",
+    "title_en": "The Hackintosh Reborn",
+    "title_ko": "해킨토시의 부활",
+    "url": "https://www.naut.ca/blog/2026/11/05/the-hackintosh-reborn-with-ai/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "해킨토시(비공식 맥OS 설치)가 다시 주목받고 있다는 내용을 다루는 글이다. 구체적인 세부 사항은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "맥OS를 일반 PC에서 구동하려는 커뮤니티의 지속적인 관심을 보여준다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 8.963318397955302,
+    "published_at": "2026-11-05T19:08:22Z"
+  },
+  {
+    "id": "hn-50381383",
+    "section": "community",
+    "title_en": "Window Sweaters",
+    "title_ko": "Window Sweaters",
+    "url": "https://github.com/saragordic/window-sweaters",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "제목만 제공되어 있으며 추가적인 설명이 없어 구체적인 내용을 파악하기 어렵습니다.",
+    "why_it_matters": "정보가 부족하여 중요성을 판단하기 어렵습니다.",
+    "tags": [],
+    "score": 8.875830618975574,
+    "published_at": "2026-11-05T16:50:14Z"
+  },
+  {
+    "id": "simon_willison-paul-ford",
+    "section": "deepdive",
+    "title_en": "Quoting Paul Ford",
+    "title_ko": "폴 포드 인용: 웹은 충분하다",
+    "url": "https://simonwillison.net/2026/Nov/5/paul-ford/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "폴 포드는 웹 브라우저가 애플리케이션을 위한 매우 강력한 소프트웨어이며, 그 강력함에 접근하는 비용이 날이 갈수록 낮아지고 있다고 말한다. 이는 'The Web Is More Than Enough'라는 글에서 발췌한 내용이다.",
+    "why_it_matters": "웹 플랫폼의 접근성이 높아질수록 개발자들이 복잡한 인프라 없이도 강력한 앱을 구축할 수 있는 가능성이 커진다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.81885582010582,
+    "published_at": "2026-11-05T17:34:03Z"
+  }
+]
