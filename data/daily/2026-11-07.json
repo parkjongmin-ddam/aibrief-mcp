@@ -1,0 +1,320 @@
+[
+  {
+    "id": "hf-2611.08373",
+    "section": "papers",
+    "title_en": "SLA: Scaling Spatial-Language-Action Model via Continual Pre-training",
+    "title_ko": "SLA: 지속적 사전학습을 통한 공간-언어-행동 모델 스케일링",
+    "url": "https://huggingface.co/papers/2611.08373",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SLA는 로봇 조작의 신뢰성을 높이기 위해 2D 비전-언어 사전학습의 한계를 극복하고 3D 공간 이해를 지속적 사전학습 단계로 끌어올린 모델이다. pi05 정책을 기반으로 초기화하여 행동 예측과 동결된 3D 인식 모델의 공간 표현 간 정렬을 공동 최적화한다. 다양한 로봇 데이터셋을 통합하고, 특징 의존적 게이트와 확률적 상태 드롭아웃 등의 보조 구성요소를 학습 중에만 사용해 추론 시 원본 VLA 아키텍처를 그대로 유지한다.",
+    "why_it_matters": "기존 VLA 모델의 2D 편향을 사전학습 단계에서 교정함으로써, 별도의 추론 오버헤드 없이 로봇의 3D 공간 이해 능력을 범용 기반 모델 수준으로 끌어올릴 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.624972813284271,
+    "published_at": "2026-11-04T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.08449",
+    "section": "papers",
+    "title_en": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+    "title_ko": "VFlash: 플래시 프리미티브 디코딩을 통한 빠르고 정확한 비주얼 플래닝",
+    "url": "https://huggingface.co/papers/2611.08449",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "VFlash는 로보틱스·자율주행 등 물리적 AI 태스크에서 시각적 계획(점, 바운딩 박스, 궤적)을 생성하는 새로운 방법론이다. 기존 자기회귀 방식이 좌표 토큰을 하나씩 생성하는 것과 달리, VFlash는 경량 드래프터를 통해 하나의 포워드 패스로 전체 프리미티브를 예측한다. 3D 포인트 모션 예측에서 약 25배 빠른 생성 속도를 달성했으며, VFlash 계획을 조건으로 한 월드 액션 모델은 MolmoSpaces 태스크에서 베이스라인 62.6% 대비 70.2%의 성공률을 기록했다.",
+    "why_it_matters": "자기회귀 디코딩의 속도·정확도 한계를 동시에 극복해, 실시간성이 중요한 로보틱스·자율주행 AI에 직접 적용 가능한 돌파구를 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.574710978503383,
+    "published_at": "2026-11-04T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.04277",
+    "section": "papers",
+    "title_en": "Harness-S: Learning from Sibling Harnesses for Generalizable Agent Training",
+    "title_ko": "Harness-S: 형제 하네스를 활용한 범용 에이전트 학습",
+    "url": "https://huggingface.co/papers/2611.04277",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Harness-S는 기본 실행 시스템의 실패를 보완하기 위해 여러 '형제 하네스(sibling harness)'를 활용하는 에이전트 학습 프레임워크다. 기본 하네스에서 모든 시도가 실패할 경우에만 형제 하네스 풀을 가동해 궤적을 생성하고, 이를 강화학습에 활용하여 단일 정책에 역량을 통합한다. AppWorld, SWE-Gym, DBBench 등 벤치마크에서 기본 하네스로 돌아갔을 때도 기존 정책 단독 학습보다 성능이 크게 향상되었다.",
+    "why_it_matters": "다양한 실행 환경의 실패를 체계적으로 보완해 단일 정책의 범용성을 높이는 접근법으로, 복잡한 태스크를 수행하는 LLM 기반 에이전트의 강화학습 효율을 실질적으로 개선한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.02535169073515,
+    "published_at": "2026-11-02T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.07392",
+    "section": "papers",
+    "title_en": "WeLM-Image: A Unified Image Generation Model towards Visual Intelligence",
+    "title_ko": "WeLM-Image: 위챗이 공개한 통합 이미지 생성 파운데이션 모델",
+    "url": "https://huggingface.co/papers/2611.07392",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "텐센트 위챗이 텍스트-이미지 생성, 인스트럭션 기반 편집, 다중 참조 합성을 하나로 통합한 WeLM-Image를 발표했다. Mixture-of-Transformers(MoT)와 Mixture-of-Experts(MoE) 구조를 결합해 총 317억 파라미터 중 추론 시 약 54억만 활성화하며, 단일 GPU 환경에 최적화되어 있다. 증류 모델인 WeLM-Image-Turbo는 단일 NVIDIA H20 GPU에서 8스텝만으로 1024×1024 이미지를 4.98초 만에 생성하며, PRISM-Bench·Qwen-Image-Bench·UnicBench에서 오픈소스 모델 중 1위를 기록했다.",
+    "why_it_matters": "대규모 소비자 서비스(위챗)에 실제 배포된 단일 GPU 최적화 통합 이미지 모델로, 오픈소스 벤치마크 최상위 성능까지 갖춰 실용적 대안으로 주목된다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 4.688879454113936,
+    "published_at": "2026-11-04T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.04408",
+    "section": "papers",
+    "title_en": "Halley: A Predictive Control Plane for Optical AI Data Center Networks",
+    "title_ko": "Halley: 광학 AI 데이터센터 네트워크를 위한 예측적 제어 플레인",
+    "url": "https://huggingface.co/papers/2611.04408",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Halley는 AI 학습용 광학 데이터센터 네트워크의 각 계층(레이저, 스위치, 마이크로링, 모듈)에 예측적 컨트롤러를 적용하는 종합 프레임워크다. LightReserve, FoldFit, ThermaLead, TriageGuard 4개의 컴포넌트로 구성되며, 각각 공식적인 보장을 제공한다. 시뮬레이션 결과, 유효 굿풋이 65.2%에서 76.5%로 향상되고, 동일 학습량 대비 데이터센터 용량을 최대 14.7% 절감할 수 있음을 보였다. 폴백 회로는 형식 검증되었고 상용 FPGA에서 타이밍 검증까지 통과했다.",
+    "why_it_matters": "대규모 AI 학습 클러스터의 광학 네트워크 장애를 사전에 예측·대응해 인프라 효율을 크게 높이는 실질적 접근법이다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 4.688879454113936,
+    "published_at": "2026-11-03T01:45:50Z"
+  },
+  {
+    "id": "openai_blog-partnering-with-hacktron",
+    "section": "releases",
+    "title_en": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+    "title_ko": "OpenAI, Hacktron과 협력해 시스템 취약점 탐지 나서",
+    "url": "https://openai.com/index/partnering-with-hacktron",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 보안 전문 플랫폼 Hacktron과 파트너십을 맺고 자사 시스템의 취약점을 발굴한다. 서드파티 서비스와의 연결 지점을 테스트하고 최첨단 AI를 활용한 방어 체계를 강화하는 것이 목표다.",
+    "why_it_matters": "AI 시스템의 보안 취약점을 외부 전문가와 협력해 선제적으로 발굴한다는 점에서 AI 인프라 보안 강화의 중요한 사례다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.7619064153439153,
+    "published_at": "2026-11-06T08:00:00Z"
+  },
+  {
+    "id": "github_trending-Usagi-org/ai-goofish-monitor",
+    "section": "releases",
+    "title_en": "Usagi-org/ai-goofish-monitor",
+    "title_ko": "AI 기반 중국 중고거래 플랫폼 셴위(闲鱼) 실시간 모니터링 시스템",
+    "url": "https://github.com/Usagi-org/ai-goofish-monitor",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Playwright와 AI 멀티모달 모델을 활용해 중국 중고거래 플랫폼 셴위(闲鱼)의 상품을 실시간·정기적으로 모니터링하는 오픈소스 시스템이다. 자연어로 감시 조건을 설정하면 AI가 상품 이미지와 정보를 분석해 적합한 매물을 필터링하고, Telegram·Webhook 등 다양한 채널로 즉시 알림을 보낸다. Docker 원클릭 배포와 Web UI 기반 관리 대시보드를 제공하며, 멀티 계정·프록시 풀 로테이션도 지원한다.",
+    "why_it_matters": "멀티모달 LLM을 중고거래 가격 추적·이미지 분석에 실용적으로 적용한 사례로, 유사한 커머스 모니터링 자동화 프로젝트의 아키텍처 참고가 된다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7592046957671957,
+    "published_at": "2026-11-06T07:32:46Z"
+  },
+  {
+    "id": "github_trending-vercel-labs/agent-desktop",
+    "section": "releases",
+    "title_en": "vercel-labs/agent-desktop",
+    "title_ko": "Vercel Labs, AI 에이전트용 데스크톱 컴퓨터 사용 CLI 'agent-desktop' 공개",
+    "url": "https://github.com/vercel-labs/agent-desktop",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Vercel Labs가 AI 에이전트가 macOS, Windows, Linux 데스크톱 앱을 직접 조작할 수 있는 CLI 도구 'agent-desktop'을 오픈소스로 공개했다. 스크린샷이나 픽셀 매칭 없이 OS 접근성 트리(AX API, UI Automation, AT-SPI)를 JSON으로 읽어 에이전트가 UI 요소를 클릭·입력할 수 있게 한다. MCP 서버 모드도 지원하며, C 라이브러리(libagent_desktop_ffi)를 통해 프로세스 내 호출도 가능하다. Apache-2.0 라이선스로 npm 및 Homebrew를 통해 설치할 수 있다.",
+    "why_it_matters": "스크린샷 없이 접근성 트리 기반으로 데스크톱을 제어해 더 안정적이고 범용적인 컴퓨터 사용 에이전트 구축이 가능해진다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7592046957671957,
+    "published_at": "2026-11-06T07:32:46Z"
+  },
+  {
+    "id": "github_trending-vercel-labs/agent-browser",
+    "section": "releases",
+    "title_en": "vercel-labs/agent-browser",
+    "title_ko": "Vercel Labs, AI 에이전트용 브라우저 자동화 CLI 'agent-browser' 공개",
+    "url": "https://github.com/vercel-labs/agent-browser",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Vercel Labs가 AI 에이전트를 위한 브라우저 자동화 CLI 도구 'agent-browser'를 오픈소스로 공개했다. Rust로 작성된 네이티브 CLI로, 페이지를 접근성 트리(accessibility tree) 형태의 텍스트로 변환해 에이전트가 명령 한 줄씩 브라우저를 제어할 수 있도록 한다. MCP 서버 모드, 세션 관리, 스크린샷·PDF 캡처, 다양한 클라우드 브라우저 프로바이더 연동 등 광범위한 기능을 제공하며, Apache-2.0 라이선스로 배포된다.",
+    "why_it_matters": "AI 에이전트가 웹 브라우저를 셸 명령으로 직접 제어할 수 있는 표준화된 인터페이스를 제공해, 에이전트 기반 웹 자동화 개발의 진입 장벽을 크게 낮춘다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.7592046957671957,
+    "published_at": "2026-11-06T07:32:46Z"
+  },
+  {
+    "id": "openai_blog-measuring-how-ai-agents-handle-wet-lab-science",
+    "section": "releases",
+    "title_en": "Measuring how AI agents handle everyday wet-lab science",
+    "title_ko": "AI 에이전트의 실험실 과학 역량 측정: BioBasicsBench 공개",
+    "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 AI 에이전트의 실험실 과학 처리 능력을 평가하는 벤치마크 'BioBasicsBench'를 공개했다. 이 벤치마크는 100개의 태스크로 구성되어 있으며, AI가 실험 원시 데이터를 얼마나 잘 해석하고 일상적인 습식 실험실(wet-lab) 업무를 수행하는지 측정한다.",
+    "why_it_matters": "생물학 실험 현장에서의 AI 에이전트 실용성을 객관적으로 평가할 수 있는 기준이 생겨, 연구 자동화 가능성을 가늠하는 데 중요한 지표가 된다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-cultfit-builds-with-codex",
+    "section": "releases",
+    "title_en": "Cult.fit builds operational muscle with Codex",
+    "title_ko": "Cult.fit, Codex로 운영 역량 강화",
+    "url": "https://openai.com/index/cultfit-builds-with-codex",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "인도의 헬스테크 기업 Cult.fit이 OpenAI의 Codex를 도입해 다양한 부서 팀이 자체적으로 도구를 개발하고 업무 속도를 높이고 있다. Codex를 통해 비개발 직군도 필요한 툴을 직접 구축할 수 있게 되어 업무 방식 자체가 변화하고 있다.",
+    "why_it_matters": "Codex가 IT 조직 외 일반 비즈니스 팀의 도구 개발까지 가능하게 하는 실제 사례로, 기업 현장에서의 AI 코딩 에이전트 도입 가능성을 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.6904778439153438,
+    "published_at": "2026-11-05T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-australian-universities-ai-native-graduates",
+    "section": "releases",
+    "title_en": "Australian universities are creating AI-native graduates",
+    "title_ko": "호주 대학들, AI 네이티브 졸업생 양성에 나서다",
+    "url": "https://openai.com/index/australian-universities-ai-native-graduates",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "호주 여러 대학들이 ChatGPT 접근성을 확대하고 교육 현장에 AI를 통합하고 있다. 이는 학생들이 AI가 보편화된 미래 노동 시장에 대비할 수 있도록 준비시키기 위한 움직임이다.",
+    "why_it_matters": "대학 교육 단계부터 AI 활용 역량을 체계적으로 키우는 사례로, AI 인재 양성 방향의 글로벌 트렌드를 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.672620701058201,
+    "published_at": "2026-11-05T17:00:00Z"
+  },
+  {
+    "id": "hn-50394906",
+    "section": "community",
+    "title_en": "Anthropic IPO buyers see valuation as low as $1.1T",
+    "title_ko": "앤트로픽 IPO, 최저 기업가치 1.1조 달러 평가",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "앤트로픽의 IPO를 앞두고 일부 투자자들이 기업가치를 최저 1.1조 달러(약 1.1트릴리언 달러)로 평가하고 있다는 소식이 전해졌다. 세부 내용은 공개된 설명이 없어 추가적인 정보는 확인이 필요하다.",
+    "why_it_matters": "앤트로픽의 IPO 기업가치 평가는 AI 산업 전체의 투자 열기와 시장 규모를 가늠하는 중요한 지표다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.684703068269743,
+    "published_at": "2026-11-06T16:54:36Z"
+  },
+  {
+    "id": "hn-50388001",
+    "section": "community",
+    "title_en": "US FAA says it will phase out floppy disks from air traffic control by 2028",
+    "title_ko": "미국 FAA, 2028년까지 항공 교통 관제 플로피 디스크 단계적 폐지 예정",
+    "url": "https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "미국 연방항공청(FAA)이 항공 교통 관제 시스템에서 사용 중인 플로피 디스크를 2028년까지 단계적으로 퇴출하겠다고 밝혔다. 현재까지 구형 저장 매체가 실제 항공 관제 시스템에 활용되고 있었다는 사실이 주목받고 있다.",
+    "why_it_matters": "핵심 국가 인프라에 수십 년 된 레거시 기술이 여전히 운용 중이라는 점에서 인프라 현대화의 시급성을 보여주는 사례다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.459011130021471,
+    "published_at": "2026-11-06T04:00:28Z"
+  },
+  {
+    "id": "hn-50392118",
+    "section": "community",
+    "title_en": "Gemini Omni 1.2 Flash",
+    "title_ko": "Gemini 1.2 Flash Omni 출시",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Google의 Gemini 1.2 Flash Omni 모델이 공개되었다. 상세한 설명이 제공되지 않아 추가적인 정보는 확인이 필요하다.",
+    "why_it_matters": "Google Gemini 계열의 새로운 모델 업데이트로, AI 모델 동향 파악에 중요할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.431438473909715,
+    "published_at": "2026-11-06T13:35:27Z"
+  },
+  {
+    "id": "hn-50397429",
+    "section": "community",
+    "title_en": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
+    "title_ko": "Opus 수준의 정확도를 4배 낮은 비용으로 달성하는 Jev",
+    "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Opus에 도움을 요청할 수 있는 Jev를 활용하면 Opus 수준의 정확도를 4배 낮은 비용으로 구현할 수 있다는 내용이다. 설명이 제공되지 않아 제목 기반으로만 요약한다.",
+    "why_it_matters": "비용 효율적으로 고성능 AI 모델 수준의 결과를 얻는 접근법으로, 실용적인 LLM 비용 최적화에 시사점을 준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 9.207375967224468,
+    "published_at": "2026-11-06T19:48:51Z"
+  },
+  {
+    "id": "hn-50397994",
+    "section": "community",
+    "title_en": "AI is dramatically accelerating AI research",
+    "title_ko": "AI가 AI 연구 자체를 극적으로 가속화하고 있다",
+    "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI가 AI 연구의 속도를 크게 높이고 있다는 내용을 다루고 있다. 구체적인 세부 내용은 제공되지 않았다.",
+    "why_it_matters": "AI 연구의 자기가속(self-acceleration) 현상은 기술 발전 속도 예측과 개발 전략에 직접적인 영향을 미칠 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.078466895469909,
+    "published_at": "2026-11-06T20:27:23Z"
+  },
+  {
+    "id": "latent_space-ainews-anthropic-ipo-whither-now",
+    "section": "deepdive",
+    "title_en": "[AINews] Anthropic IPO: Whither Now?",
+    "title_ko": "Anthropic IPO: 앞으로의 행방은?",
+    "url": "https://latent.space/p/ainews-anthropic-ipo-whither-now/",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "2026년 11월 6일 AI 뉴스 roundup으로, ARC Prize에서 Inkling 2 Small 모델을 테스트했으며, Thinking Machines는 초기 체크포인트가 가드레일을 우회하는 현상을 어떻게 발견했는지 설명했다. Anthropic의 IPO 전망도 주요 화제로 다뤄졌다.",
+    "why_it_matters": "AI 안전성(가드레일 우회 탐지)과 주요 AI 기업의 IPO 동향이 동시에 조명되어 업계 흐름을 파악하는 데 중요하다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8754861111111111,
+    "published_at": "2026-11-07T03:04:53Z"
+  }
+]
