@@ -1,0 +1,312 @@
+[
+  {
+    "id": "hf-2611.08449",
+    "section": "papers",
+    "title_en": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+    "title_ko": "VFlash: 플래시 프리미티브 디코딩을 통한 빠르고 정확한 비주얼 플래닝",
+    "url": "https://huggingface.co/papers/2611.08449",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "VFlash는 로봇공학·자율주행 등 물리적 AI 작업을 위한 비주얼 플래닝 방법으로, 기존 자기회귀 방식이 좌표 토큰을 하나씩 생성하는 한계를 극복한다. 경량 드래프터가 한 번의 순전파로 포인트·바운딩박스·궤적 등 비주얼 프리미티브 전체를 한꺼번에 예측하는 '플래시 프리미티브 디코딩'을 도입했다. 3D 포인트 모션 예측에서 약 25배 빠른 생성 속도를 달성했으며, VFlash 플랜으로 조건화된 월드 액션 모델은 MolmoSpaces 4개 태스크 스위트에서 평균 70.2% 성공률을 기록해 베이스라인(62.6%) 대비 크게 향상되었다.",
+    "why_it_matters": "자기회귀 디코딩 대비 25배 속도 향상과 오류 감소를 동시에 달성해 실시간 로봇·자율주행 비주얼 플래닝의 실용적 배포 가능성을 높인다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.61512051684126,
+    "published_at": "2026-11-04T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.05376",
+    "section": "papers",
+    "title_en": "From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence",
+    "title_ko": "자율 에이전트에서 인지 공생체로: AI 증강 인간 지능을 향하여",
+    "url": "https://huggingface.co/papers/2611.05376",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "이 연구는 AI가 인간을 대신해 혼자 작업하는 '자율 에이전트' 패러다임을 넘어, 인간의 지능을 증강하는 '인지 공생체(cognitive symbiont)' 개념을 제안한다. 인지 공생체는 평생 동반자로서 실시간으로 사용자의 맥락을 감지·기억하고, 사고 과정에 적절히 개입하며, 사용자와 함께 성장하는 시스템이다. 연구는 인간이 상황에서 발휘할 수 있는 잠재 능력과 실제 작업 기억 사이의 '인지 격차'를 핵심 개념으로 삼고, 감지-기억-이해-동행-행동-성장의 공생 루프로 설계 공간을 구성한다. 동시에 시험 부정행위나 사회적 도입 압력 같은 새로운 위험도 함께 다룬다.",
+    "why_it_matters": "단순 자동화를 넘어 인간의 인지 능력 자체를 확장하는 AI 패러다임 전환을 체계적으로 정의한 첫 시도로, 에이전트 설계 방향에 중요한 시사점을 제공한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.465908118654584,
+    "published_at": "2026-11-03T13:59:52Z"
+  },
+  {
+    "id": "hf-2611.08373",
+    "section": "papers",
+    "title_en": "SLA: Scaling Spatial-Language-Action Model via Continual Pre-training",
+    "title_ko": "SLA: 지속적 사전학습을 통한 공간-언어-행동 모델 확장",
+    "url": "https://huggingface.co/papers/2611.08373",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SLA는 로봇 조작의 신뢰성을 높이기 위해 2D 비전-언어 사전학습에 편중된 기존 VLA 모델의 한계를 극복한 새로운 공간-언어-행동 모델이다. pi05 정책을 기반으로 초기화되며, 행동 예측과 3D 공간 표현 간의 정렬을 지속적 사전학습 단계에서 공동 최적화한다. 다양한 로봇 데이터셋을 통합하고, 특징 의존적 게이트와 확률적 상태 드롭아웃 등의 기법을 활용하며, 추론 시에는 원래 VLA 가중치를 그대로 재사용할 수 있다.",
+    "why_it_matters": "3D 공간 이해를 파운데이션 모델 수준의 범용 능력으로 끌어올려 다양한 로봇 환경에서의 조작 성능 향상 가능성을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.418840607796598,
+    "published_at": "2026-11-04T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.04277",
+    "section": "papers",
+    "title_en": "Harness-S: Learning from Sibling Harnesses for Generalizable Agent Training",
+    "title_ko": "Harness-S: 형제 하네스로부터 학습하는 범용 에이전트 훈련 기법",
+    "url": "https://huggingface.co/papers/2611.04277",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Harness-S는 기반 실행 시스템의 실패 사례를 보완하기 위해 '형제 하네스(Sibling Harness)'를 활용하는 에이전트 훈련 프레임워크다. 기반 하네스에서 모든 시도가 실패할 경우에만 보조 하네스 풀을 선택적으로 호출해 실패 궤적을 대체하고 강화학습에 활용한다. 여러 LLM의 투표와 하네스 행동 프로파일을 기반으로 한 적응형 라우터가 최적 변형을 선택하며, 훈련된 정책은 원래 기반 하네스 환경에서도 성능이 크게 향상됨을 AppWorld, SWE-Gym, DBBench에서 확인했다.",
+    "why_it_matters": "단일 하네스의 한계를 형제 하네스 협업으로 극복해 에이전트 정책의 일반화 능력을 높이는 새로운 훈련 패러다임을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.1588830833596715,
+    "published_at": "2026-11-02T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.07392",
+    "section": "papers",
+    "title_en": "WeLM-Image: A Unified Image Generation Model towards Visual Intelligence",
+    "title_ko": "WeLM-Image: 위챗이 공개한 통합 이미지 생성 파운데이션 모델",
+    "url": "https://huggingface.co/papers/2611.07392",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "텐센트 위챗이 개발한 WeLM-Image는 텍스트-이미지 생성, 지시 기반 편집, 다중 참조 이미지 합성을 하나의 모델로 통합한 이미지 파운데이션 모델이다. Mixture-of-Transformers(MoT)와 Mixture-of-Experts(MoE)를 결합해 총 317억 파라미터 중 추론 시 약 54억 개만 활성화하는 희소 구조를 채택했다. PRISM-Bench, Qwen-Image-Bench, UnicBench에서 평가된 오픈소스 모델 중 1위를 기록했으며, 경량화 버전인 WeLM-Image-Turbo는 단일 NVIDIA H20 GPU에서 1024×1024 이미지를 4.98초에 생성한다.",
+    "why_it_matters": "단일 GPU로 대규모 소비자 서비스에 배포 가능한 고성능 통합 이미지 모델로, 오픈소스 벤치마크 1위 성능이 실용적 가치를 입증한다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 4.761200115693562,
+    "published_at": "2026-11-04T19:00:00Z"
+  },
+  {
+    "id": "github_trending-rails/rails",
+    "section": "releases",
+    "title_en": "rails/rails",
+    "title_ko": "Ruby on Rails - 풀스택 웹 애플리케이션 프레임워크",
+    "url": "https://github.com/rails/rails",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Ruby on Rails는 MVC(모델-뷰-컨트롤러) 패턴을 기반으로 데이터베이스 연동 웹 애플리케이션을 구축하기 위한 풀스택 프레임워크다. Active Record, Action Pack, Action View 등 핵심 컴포넌트 외에도 이메일 처리, WebSocket, 파일 스토리지, 백그라운드 잡 등 다양한 기능을 내장하고 있다. MIT 라이선스로 공개된 오픈소스 프로젝트이며, 각 컴포넌트는 Rails 외부에서도 독립적으로 사용 가능하다.",
+    "why_it_matters": "수십 년간 검증된 대표적인 오픈소스 웹 프레임워크로, GitHub 트렌딩에 재등장하며 지속적인 개발자 관심을 받고 있다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 0.7544824735449736,
+    "published_at": "2026-11-07T06:45:10Z"
+  },
+  {
+    "id": "openai_blog-partnering-with-hacktron",
+    "section": "releases",
+    "title_en": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+    "title_ko": "OpenAI, Hacktron과 보안 취약점 발견 파트너십 체결",
+    "url": "https://openai.com/index/partnering-with-hacktron",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 보안 플랫폼 Hacktron과 파트너십을 맺고 자사 시스템의 취약점을 탐지하고 서드파티 서비스와의 연결을 테스트한다. 이를 통해 프론티어 AI 환경에서의 보안 방어력을 강화하는 것이 목표다.",
+    "why_it_matters": "AI 시스템의 보안 취약점을 외부 전문가와 협력해 선제적으로 발견·대응하려는 OpenAI의 움직임으로, AI 인프라 보안의 중요성이 높아지고 있음을 보여준다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.6190492724867724,
+    "published_at": "2026-11-06T08:00:00Z"
+  },
+  {
+    "id": "openai_blog-measuring-how-ai-agents-handle-wet-lab-science",
+    "section": "releases",
+    "title_en": "Measuring how AI agents handle everyday wet-lab science",
+    "title_ko": "AI 에이전트의 실험실 과학 처리 능력 측정: BioBasicsBench 공개",
+    "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 AI 에이전트의 실험실 과학 역량을 평가하는 벤치마크 'BioBasicsBench'를 공개했다. 이 벤치마크는 100개의 과제로 구성되며, AI가 실제 실험 데이터를 해석하고 일상적인 습식 실험실(wet-lab) 작업을 얼마나 잘 처리하는지 측정한다.",
+    "why_it_matters": "생물학 연구 자동화를 위한 AI 에이전트의 실질적 역량을 객관적으로 평가하는 기준이 생겼다는 점에서 과학 분야 AI 활용의 이정표가 된다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.5714302248677249,
+    "published_at": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-cultfit-builds-with-codex",
+    "section": "releases",
+    "title_en": "Cult.fit builds operational muscle with Codex",
+    "title_ko": "Cult.fit, Codex로 운영 역량 강화",
+    "url": "https://openai.com/index/cultfit-builds-with-codex",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "인도의 피트니스 플랫폼 Cult.fit이 OpenAI의 Codex를 활용해 다양한 팀이 자체적으로 도구를 개발하고 업무 속도를 높이고 있다. Codex 도입을 통해 개발 역량 없이도 팀들이 실질적인 업무 도구를 만들 수 있게 됐으며, 전반적인 업무 방식의 변화를 이끌고 있다.",
+    "why_it_matters": "비개발 팀도 Codex를 통해 직접 도구를 제작할 수 있다는 사례로, AI 코딩 에이전트의 현장 적용 가능성을 보여준다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.547620701058201,
+    "published_at": "2026-11-05T20:00:00Z"
+  },
+  {
+    "id": "openai_blog-australian-universities-ai-native-graduates",
+    "section": "releases",
+    "title_en": "Australian universities are creating AI-native graduates",
+    "title_ko": "호주 대학들, AI 네이티브 졸업생 양성에 나서다",
+    "url": "https://openai.com/index/australian-universities-ai-native-graduates",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "호주의 여러 대학들이 ChatGPT 접근성을 확대하고 교육 과정에 AI를 도입하고 있다. 이는 학생들이 AI 중심의 미래 직업 환경에 대비할 수 있도록 준비시키기 위한 움직임이다.",
+    "why_it_matters": "대학 교육 단계에서 AI 활용 역량을 체계적으로 키우는 사례로, 향후 글로벌 AI 인재 양성 방향의 기준점이 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.5297635582010582,
+    "published_at": "2026-11-05T17:00:00Z"
+  },
+  {
+    "id": "google_blog-introducing-gemini-omni-1-2-flash",
+    "section": "releases",
+    "title_en": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+    "title_ko": "Gemini 2.0 Flash: 더 긴 영상 클립을 빠르고 비용 효율적으로 처리",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "Google이 Gemini 2.0 Flash의 새로운 버전인 Gemini Omni 1.2 Flash를 발표했다. 더 긴 영상 클립 처리를 지원하며, 빠른 속도와 비용 효율성을 강점으로 내세운다. 멀티미디어 콘텐츠 처리 능력이 향상된 모델로 소개되고 있다.",
+    "why_it_matters": "비용 효율적이고 빠른 멀티모달 처리가 필요한 개발자에게 긴 영상 클립 지원은 실질적인 활용 범위를 넓혀준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.5297635582010582,
+    "published_at": "2026-11-05T17:00:00Z"
+  },
+  {
+    "id": "openai_blog-introducing-gpt-6-cyber",
+    "section": "releases",
+    "title_en": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+    "title_ko": "GPT-6 Cyber: OpenAI의 사이버보안 특화 에이전트 출시",
+    "url": "https://openai.com/index/introducing-gpt-6-cyber",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 사이버보안 전문 모델인 GPT-6 Cyber를 공개했다. 이 모델은 악용 가능한 취약점을 탐지하고 수정 방안을 개발하는 데 특화되어 있으며, 허가된 범위 내에서만 작동하도록 훈련되었다.",
+    "why_it_matters": "OpenAI가 사이버보안 도메인에 특화된 정렬(aligned) 에이전트를 공개함으로써, 보안 취약점 탐지 자동화의 새로운 기준을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.4821445105820106,
+    "published_at": "2026-11-05T09:00:00Z"
+  },
+  {
+    "id": "hn-50403097",
+    "section": "community",
+    "title_en": "Every Mac comes with an (undocumented) family member classifier",
+    "title_ko": "모든 Mac에 숨겨진 미문서 가족 구성원 분류기 내장",
+    "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "모든 Mac에 공식적으로 문서화되지 않은 가족 구성원 분류기가 내장되어 있다는 사실이 발견되었다. 해당 기능의 구체적인 동작 방식이나 목적은 제목만으로는 확인하기 어렵다.",
+    "why_it_matters": "Apple 기기에 비공개 분류 기능이 존재한다는 것은 프라이버시 및 보안 측면에서 개발자들의 주의가 필요하다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 10.409359920348493,
+    "published_at": "2026-11-07T09:46:03Z"
+  },
+  {
+    "id": "hn-50406563",
+    "section": "community",
+    "title_en": "The end of Microsoft Research's AI Frontiers group",
+    "title_ko": "마이크로소프트 리서치 AI 프론티어스 그룹 해체",
+    "url": "https://hunch.net/?p=13764006",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "마이크로소프트 리서치의 AI 프론티어스 그룹이 종료되었다. 구체적인 배경이나 세부 정보는 제공되지 않았다.",
+    "why_it_matters": "MS 내부 AI 연구 조직 개편은 빅테크의 AI 연구 전략 변화를 시사할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.80845990346431,
+    "published_at": "2026-11-07T18:02:17Z"
+  },
+  {
+    "id": "hn-50407882",
+    "section": "community",
+    "title_en": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+    "title_ko": "Claude Code의 '다시 묻지 않기' 기능, 공개 GitHub 파일 1,122개에 비밀번호 노출",
+    "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Claude Code의 '다시 묻지 않기(Don't Ask Again)' 기능이 보안 취약점을 일으켜 비밀번호 등 민감한 정보가 1,122개의 공개 GitHub 파일에 노출된 것으로 나타났다. 이는 개발자들이 해당 기능을 사용하는 과정에서 의도치 않게 자격증명 정보가 코드에 포함된 채 공개 저장소에 올라간 것으로 보인다.",
+    "why_it_matters": "AI 코딩 도구의 편의 기능이 실제 운영 환경에서 심각한 보안 사고로 이어질 수 있음을 보여주는 사례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.076304187914804,
+    "published_at": "2026-11-07T20:45:32Z"
+  },
+  {
+    "id": "hn-50406222",
+    "section": "community",
+    "title_en": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
+    "title_ko": "MaxxBench – \"DeepSWE 점수, 진짜인가?\"",
+    "url": "https://maxxbench.unlap.ai/research/why-maxxbench/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "MaxxBench는 DeepSWE 벤치마크 점수의 신뢰성에 의문을 제기하는 프로젝트 또는 논의다. 제목만으로는 구체적인 내용을 파악하기 어렵지만, AI 모델 벤치마크 결과의 진실성을 검증하려는 시도로 보인다.",
+    "why_it_matters": "AI 벤치마크 점수의 신뢰성 문제는 모델 선택과 평가 기준에 직접적인 영향을 미치는 핵심 이슈다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.560792306153754,
+    "published_at": "2026-11-07T17:19:00Z"
+  },
+  {
+    "id": "hn-50377661",
+    "section": "community",
+    "title_en": "Uranium cubes reveal why the German nuclear project failed",
+    "title_ko": "우라늄 큐브로 밝혀진 독일 핵 프로젝트 실패 원인",
+    "url": "https://arstechnica.com/science/2026/11/uranium-cubes-reveal-why-the-german-nuclear-project-failed/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "우라늄 큐브 분석을 통해 2차 세계대전 당시 독일 핵 개발 프로젝트가 실패한 이유가 밝혀졌다. 제목 외 추가 정보가 제공되지 않아 세부 내용은 확인하기 어렵다.",
+    "why_it_matters": "역사적 핵 개발 실패 원인 규명은 과학사 및 비확산 연구에 중요한 시사점을 제공한다.",
+    "tags": [],
+    "score": 7.484955627106326,
+    "published_at": "2026-11-05T10:52:04Z"
+  },
+  {
+    "id": "simon_willison-link-rel-next",
+    "section": "deepdive",
+    "title_en": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages",
+    "title_ko": "Datasette, Firefox HTML 페이지에 link: rel=next HTTP 헤더 미전송 처리",
+    "url": "https://simonwillison.net/2026/Nov/7/link-rel-next/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Datasette가 테이블 페이지에 `link: rel=\"next\"` HTTP 헤더를 제공하면, Firefox가 다음 페이지를 불필요하게 프리패치하는 문제가 발견됐다. 실제로 다음 페이지를 클릭하는 사용자는 극히 일부임에도 서버가 불필요한 페이지 렌더링을 수행하게 된다. 이 Firefox 프리패치 동작 관련 버그는 24년째 열려 있으며, Simon Willison 본인이 2002년에도 같은 문제를 블로그에서 지적했음이 확인됐다.",
+    "why_it_matters": "서버 불필요 렌더링과 대역폭 낭비를 유발하는 HTTP 헤더 설계 실수를 보여주는 실제 사례로, 웹 애플리케이션 성능 최적화 시 HTTP 헤더 관리의 중요성을 상기시킨다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.8569229497354498,
+    "published_at": "2026-11-07T23:57:46Z"
+  }
+]
