@@ -1,0 +1,317 @@
+[
+  {
+    "id": "hf-2611.05376",
+    "section": "papers",
+    "title_en": "From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence",
+    "title_ko": "자율 에이전트에서 인지 공생체로: AI 증강 인간 지능을 향하여",
+    "url": "https://huggingface.co/papers/2611.05376",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "이 연구는 AI가 인간을 대체하는 방향이 아닌, 인간의 지능을 증강하는 'AI 증강 인간 지능(AHI)' 패러다임을 제안한다. 핵심 개념은 '인지 공생체'로, 평생 함께하며 실시간으로 개인의 맥락을 감지·기억·이해하고 사고를 보조하는 시스템이다. 인간이 작업 기억의 한계로 놓치는 인지 격차를 메우는 것을 목표로 하며, 감지→기억→이해→동행→행동→성장으로 이어지는 공생 루프를 설계 프레임워크로 제시한다. 동시에 시험 중 은밀한 보조나 사회적 채택 압력 같은 거버넌스 문제도 패러다임의 일부로 다룬다.",
+    "why_it_matters": "로봇 중심의 Physical AI 담론에서 벗어나, 인간 개인을 증강하는 AI 공생체라는 새로운 설계 패러다임을 체계화해 향후 에이전트 연구 방향에 영향을 줄 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.787491742782046,
+    "published_at": "2026-11-03T13:59:52Z"
+  },
+  {
+    "id": "hf-2611.08449",
+    "section": "papers",
+    "title_en": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+    "title_ko": "VFlash: 플래시 프리미티브 디코딩을 통한 빠르고 정확한 비주얼 플래닝",
+    "url": "https://huggingface.co/papers/2611.08449",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "VFlash는 로봇공학·자율주행 등 물리적 AI 작업에서 포인트·바운딩 박스·궤적 같은 시각적 계획을 생성하는 새로운 방법이다. 기존 자기회귀 방식이 좌표 토큰을 하나씩 생성하는 것과 달리, VFlash는 경량 드래프터로 하나의 순전파(forward pass)에서 전체 프리미티브를 예측한다. 3D 포인트 모션 예측에서 약 25배 빠른 생성 속도를 보였으며, VFlash 계획을 활용한 월드 액션 모델은 MolmoSpaces 4개 태스크에서 평균 성공률 70.2%를 달성해 베이스라인(62.6%) 대비 개선됐다.",
+    "why_it_matters": "자기회귀 방식의 속도·비용 한계를 극복해 실시간 로봇·자율주행 비주얼 플래닝의 실용화 가능성을 높인다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.68213122712422,
+    "published_at": "2026-11-04T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.08373",
+    "section": "papers",
+    "title_en": "SLA: Scaling Spatial-Language-Action Model via Continual Pre-training",
+    "title_ko": "SLA: 지속적 사전학습을 통한 공간-언어-행동 모델 스케일링",
+    "url": "https://huggingface.co/papers/2611.08373",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SLA는 로봇 조작의 신뢰성을 높이기 위해 2D 비전-언어 사전학습의 한계를 극복하고 3D 공간 이해를 지속적 사전학습 단계에서 통합한 모델이다. 사전학습된 pi0.5 정책을 기반으로 행동 예측과 3D 공간 표현 간의 정렬을 공동 최적화하며, 다양한 로봇 데이터셋을 통합해 학습한다. 피처 의존적 게이트, 확률적 상태 드롭아웃 등 보조 구성요소는 훈련 시에만 사용되어 추론 시 기존 VLA 가중치를 그대로 재사용할 수 있다.",
+    "why_it_matters": "3D 공간 이해를 추론 구조 변경 없이 VLA 사전학습에 통합함으로써, 범용 로봇 기반 모델의 공간 추론 능력을 실용적으로 향상시키는 접근법을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.543294782270004,
+    "published_at": "2026-11-04T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.07392",
+    "section": "papers",
+    "title_en": "WeLM-Image: A Unified Image Generation Model towards Visual Intelligence",
+    "title_ko": "WeLM-Image: 위챗이 개발한 통합 이미지 생성 파운데이션 모델",
+    "url": "https://huggingface.co/papers/2611.07392",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "텐센트 위챗이 텍스트-이미지 생성, 지시 기반 편집, 다중 참조 합성을 하나로 통합한 이미지 파운데이션 모델 WeLM-Image를 공개했다. Mixture-of-Transformers(MoT) 백본에 Mixture-of-Experts(MoE)를 결합해 저장 파라미터 31.7B, 활성화 파라미터 약 5.4B 규모로 단일 GPU 배포를 지원한다. 1536 해상도 모델은 PRISM-Bench, Qwen-Image-Bench, UnicBench에서 평가된 오픈소스 모델 중 1위를 기록했으며, 경량 버전인 WeLM-Image-Turbo는 단일 H20 GPU에서 1024×1024 이미지를 4.98초 만에 생성한다.",
+    "why_it_matters": "대규모 소비자 서비스에 실제 배포 가능한 단일 GPU 기반 통합 이미지 모델로, 오픈소스 벤치마크 최상위 성능을 달성해 실용적 AI 이미지 생성의 새 기준을 제시한다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 4.850147601710058,
+    "published_at": "2026-11-04T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.06741",
+    "section": "papers",
+    "title_en": "TailSteer: Trajectory-Tail Steering for Drift-Resistant Multi-turn Image Editing",
+    "title_ko": "TailSteer: 멀티턴 이미지 편집에서 누적 드리프트를 방지하는 궤적 말단 조정 프레임워크",
+    "url": "https://huggingface.co/papers/2611.06741",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "멀티턴 이미지 편집에서 편집 결과를 반복 재사용하면 작은 오차가 누적되어 심각한 시각적 드리프트가 발생한다. TailSteer는 디노이징 궤적의 초기 단계는 베이스 모델에 가깝게 유지하고, 말단 단계에서만 보정을 집중하는 최종 단계 학습 프레임워크다. 별도의 정답 편집 쌍 없이 편집기 자체의 온폴리시 롤아웃으로 학습하며, FLUX·SenseNova·Qwen 계열 모델에서 15~20회 편집 턴에 걸쳐 누적 드리프트를 크게 줄이는 것을 실험으로 확인했다.",
+    "why_it_matters": "파운데이션 모델의 기존 능력을 재학습 없이 유지하면서 장기 멀티턴 편집 안정성을 확보할 수 있어, 실제 대화형 이미지 편집 서비스 적용 가능성을 높인다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.737669618283368,
+    "published_at": "2026-11-03T19:00:00Z"
+  },
+  {
+    "id": "github_trending-vercel-labs/agent-browser",
+    "section": "releases",
+    "title_en": "vercel-labs/agent-browser",
+    "title_ko": "Vercel Labs, AI 에이전트용 브라우저 자동화 CLI 'agent-browser' 공개",
+    "url": "https://github.com/vercel-labs/agent-browser",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Vercel Labs가 AI 에이전트를 위한 브라우저 자동화 CLI 도구 'agent-browser'를 오픈소스로 공개했다. Rust로 작성된 네이티브 CLI로, 페이지를 접근성 트리(accessibility tree) 형태의 텍스트로 읽고 ref(@e1 등)를 통해 요소를 조작하는 방식으로 동작한다. Chrome DevTools Protocol 기반의 백그라운드 데몬이 브라우저를 제어하며, MCP 서버 모드와 다양한 클라우드 브라우저 프로바이더도 지원한다. npm, Homebrew 등으로 설치할 수 있으며 Apache-2.0 라이선스로 공개됐다.",
+    "why_it_matters": "AI 에이전트가 셸 명령 한 줄씩으로 브라우저를 직접 제어할 수 있는 표준화된 인터페이스를 제공해, 에이전트 기반 웹 자동화 개발을 크게 단순화한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7551339285714286,
+    "published_at": "2026-11-08T06:51:44Z"
+  },
+  {
+    "id": "github_trending-anthropics/skills",
+    "section": "releases",
+    "title_en": "anthropics/skills",
+    "title_ko": "Anthropic, Claude용 Agent Skills 공개 저장소 오픈",
+    "url": "https://github.com/anthropics/skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 Claude의 'Agent Skills' 시스템을 위한 공개 GitHub 저장소를 공개했다. Skills는 명령어·스크립트·리소스를 담은 폴더로, Claude가 동적으로 로드하여 문서 작성, 데이터 분석, 웹 앱 테스트 등 특화 작업을 반복 가능한 방식으로 수행할 수 있게 한다. SKILL.md 파일에 YAML 프론트매터와 지침을 작성하는 방식으로 커스텀 스킬을 쉽게 제작할 수 있으며, Claude Code, Claude.ai, API 모두에서 사용 가능하다. docx·pdf·pptx·xlsx 문서 처리 스킬 등 프로덕션 환경에서 실제 사용 중인 스킬도 Apache 2.0 라이선스로 공개됐다.",
+    "why_it_matters": "Claude의 에이전트 역할을 커스텀 스킬로 확장·공유할 수 있는 표준 체계가 오픈소스로 공개되어, 기업·개발자가 Claude 기반 자동화 워크플로를 직접 구축·배포할 수 있게 된다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7551339285714286,
+    "published_at": "2026-11-08T06:51:44Z"
+  },
+  {
+    "id": "github_trending-tailwindlabs/tailwindcss",
+    "section": "releases",
+    "title_en": "tailwindlabs/tailwindcss",
+    "title_ko": "Tailwind CSS - 유틸리티 우선 CSS 프레임워크",
+    "url": "https://github.com/tailwindlabs/tailwindcss",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Tailwind CSS는 빠른 UI 개발을 위한 유틸리티 우선(utility-first) CSS 프레임워크다. 미리 정의된 클래스를 조합해 커스텀 사용자 인터페이스를 신속하게 구축할 수 있다. GitHub Discussions를 통한 커뮤니티 지원과 오픈소스 기여도 활발히 이루어지고 있다.",
+    "why_it_matters": "프론트엔드 개발 생산성을 크게 높여주는 대표적인 CSS 프레임워크로, AI 기반 UI 생성 도구와의 연계에서도 널리 활용된다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 0.7551339285714286,
+    "published_at": "2026-11-08T06:51:44Z"
+  },
+  {
+    "id": "github_trending-dsx-ai-factory/nvke",
+    "section": "releases",
+    "title_en": "dsx-ai-factory/nvke",
+    "title_ko": "NVIDIA Kubernetes Engine(NVKE) - 베어메탈 GPU 클러스터 관리 플랫폼 오픈소스 공개",
+    "url": "https://github.com/dsx-ai-factory/nvke",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "NVIDIA가 베어메탈 GPU 인프라 위에서 Kubernetes 클러스터를 생성·운영할 수 있는 관리 플레인 솔루션 NVKE를 오픈소스로 공개했다. 플랫폼 팀이 NVKE 관리 클러스터를 설치하면, 고객은 독립된 워크로드 클러스터를 Kubernetes API와 kubectl로 사용할 수 있다. 현재 프리뷰 단계로 프로덕션 사용은 권장되지 않으며, 인프라 프로바이더로는 NVIDIA Infra Controller(NICo)만 지원된다. Apache 2.0 라이선스로 공개되었다.",
+    "why_it_matters": "NVIDIA가 자사 GPU 인프라에 특화된 관리형 Kubernetes 엔진을 오픈소스로 제공함으로써, 온프레미스 GPU 클러스터 운영의 복잡성을 크게 낮출 수 있다.",
+    "tags": [
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 0.7551339285714286,
+    "published_at": "2026-11-08T06:51:44Z"
+  },
+  {
+    "id": "openai_blog-partnering-with-hacktron",
+    "section": "releases",
+    "title_en": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+    "title_ko": "OpenAI, Hacktron과 협력해 시스템 취약점 탐색",
+    "url": "https://openai.com/index/partnering-with-hacktron",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 Hacktron과 파트너십을 맺고 자사 시스템의 취약점을 발견하고, 서드파티 서비스와의 연결을 테스트하며 보안 방어를 강화한다. 이번 협력은 프론티어 AI 기술을 활용한 보안 강화를 목표로 한다.",
+    "why_it_matters": "AI 선도 기업 OpenAI가 외부 보안 전문가와 협력해 취약점을 선제적으로 찾는 것은 AI 시스템 보안 신뢰성 확보에 중요한 움직임이다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.47619212962962965,
+    "published_at": "2026-11-06T08:00:00Z"
+  },
+  {
+    "id": "openai_blog-measuring-how-ai-agents-handle-wet-lab-science",
+    "section": "releases",
+    "title_en": "Measuring how AI agents handle everyday wet-lab science",
+    "title_ko": "AI 에이전트의 실험실 과학 역량 측정: BioBasicsBench 공개",
+    "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 AI 에이전트의 실험실 과학 역량을 평가하는 벤치마크 'BioBasicsBench'를 공개했다. 이 벤치마크는 100개의 과제로 구성되며, AI가 실제 실험 데이터를 해석하고 일상적인 습식 실험실(wet-lab) 작업을 얼마나 잘 수행하는지 측정한다.",
+    "why_it_matters": "생명과학 분야 AI 에이전트의 실질적 실험 역량을 체계적으로 평가할 수 있는 첫 전문 벤치마크로, 과학 AI의 실용화 수준을 가늠하는 기준이 될 수 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.4285730820105821,
+    "published_at": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-cultfit-builds-with-codex",
+    "section": "releases",
+    "title_en": "Cult.fit builds operational muscle with Codex",
+    "title_ko": "Cult.fit, Codex로 운영 역량 강화",
+    "url": "https://openai.com/index/cultfit-builds-with-codex",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "인도의 헬스테크 기업 Cult.fit이 OpenAI의 Codex를 활용해 다양한 팀이 자체 도구를 구축하고 업무 속도를 높이고 있다. Codex 도입을 통해 팀 간 협업 방식과 업무 프로세스 자체가 변화하고 있다.",
+    "why_it_matters": "비개발 직군을 포함한 여러 팀이 Codex로 직접 도구를 만드는 사례는 AI 기반 업무 자동화의 실질적 확산을 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.40476355820105814,
+    "published_at": "2026-11-05T20:00:00Z"
+  },
+  {
+    "id": "hn-50410107",
+    "section": "community",
+    "title_en": "Goodbye Claude, hello Pi",
+    "title_ko": "Claude에서 Pi로 갈아탄 사용자의 경험담",
+    "url": "https://caleb.software/posts/claude-to-pi.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "한 사용자가 Claude AI 대신 Pi AI를 주요 AI 어시스턴트로 전환한 경험을 공유한 글이다. 제목 외 구체적인 내용은 확인되지 않는다.",
+    "why_it_matters": "AI 어시스턴트 선택지가 다양해지면서 사용자들의 플랫폼 이동 사례가 늘고 있음을 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.625235316609652,
+    "published_at": "2026-11-08T03:11:48Z"
+  },
+  {
+    "id": "hn-50415628",
+    "section": "community",
+    "title_en": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+    "title_ko": "골드만삭스, 직원들에게서 Claude Code 사용 중단",
+    "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "골드만삭스가 은행원과 트레이더들로부터 AI 코딩 도구인 Claude Code를 회수하고 있다. 구체적인 이유는 알려지지 않았으나, 금융 대형 기관의 AI 도구 도입 정책 변화로 주목받고 있다.",
+    "why_it_matters": "대형 금융사가 AI 코딩 도구 사용을 철회한다는 것은 기업 현장에서의 AI 도입 및 보안·규제 리스크 논의에 중요한 시사점을 준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.4799880166883,
+    "published_at": "2026-11-08T18:16:07Z"
+  },
+  {
+    "id": "hn-50418016",
+    "section": "community",
+    "title_en": "Nvidia CEO Jensen Huang's letter to staff about affair",
+    "title_ko": "엔비디아 CEO 젠슨 황, 직원들에게 보낸 서한 논란",
+    "url": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "엔비디아 CEO 젠슨 황이 직원들에게 보낸 서한이 화제가 되고 있다. 구체적인 내용은 확인된 정보가 없어 추가적인 설명은 생략한다.",
+    "why_it_matters": "엔비디아는 현재 AI 반도체 시장의 핵심 기업으로, CEO 관련 이슈는 회사 전반에 영향을 미칠 수 있다.",
+    "tags": [],
+    "score": 10.119871614465286,
+    "published_at": "2026-11-08T22:20:09Z"
+  },
+  {
+    "id": "hn-50411961",
+    "section": "community",
+    "title_en": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+    "title_ko": "Llama-modchip: 64GB RAM과 GPU 없이 2840억 파라미터 DeepSeek 실행",
+    "url": "https://github.com/synchopate/llama-modchip",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Llama-modchip 프로젝트는 GPU 없이 64GB RAM만으로 2840억(284B) 파라미터 규모의 DeepSeek 모델을 실행하는 방법을 제시한다. CPU만으로 초대형 LLM을 구동하는 사례로 주목받고 있다.",
+    "why_it_matters": "GPU 없이 소비자급 RAM만으로 초대형 모델 실행 가능성을 보여줘, 고비용 인프라 없는 LLM 접근성 확대에 의미 있는 사례다.",
+    "tags": [
+      "LLM",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 9.548821341137522,
+    "published_at": "2026-11-08T10:22:04Z"
+  },
+  {
+    "id": "hn-50416158",
+    "section": "community",
+    "title_en": "Outlook.com Is Quietly Rejecting Email from Domains Without DMARC",
+    "title_ko": "Outlook.com, DMARC 없는 도메인의 이메일 조용히 차단 중",
+    "url": "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Outlook.com이 DMARC 레코드가 설정되지 않은 도메인에서 발송된 이메일을 별도 안내 없이 거부하고 있다는 사실이 알려졌다. 이는 이메일 발신자 인증 정책이 점점 엄격해지는 추세를 반영한다.",
+    "why_it_matters": "자체 도메인으로 이메일을 발송하는 개발자·운영자라면 DMARC 설정 여부를 즉시 점검해야 메일 유실을 막을 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.406028849711609,
+    "published_at": "2026-11-08T19:20:32Z"
+  },
+  {
+    "id": "simon_willison-details-summary",
+    "section": "deepdive",
+    "title_en": "Hide your slop PR descriptions behind <details><summary>",
+    "title_ko": "AI가 작성한 PR 설명, HTML <details>로 깔끔하게 숨기기",
+    "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Claude Code나 Codex 같은 코딩 에이전트가 작성한 PR 설명은 정확하고 상세하지만, 오히려 너무 길어서 읽기 싫어지는 문제가 있다. Simon Willison은 GitHub Markdown에서 지원되는 HTML `<details><summary>` 태그를 활용해, 사람이 직접 작성한 짧은 요약은 상단에 노출하고 AI가 생성한 긴 설명은 접힌 상태로 숨기는 방식을 제안한다. 이렇게 하면 핵심 내용은 즉시 파악할 수 있고, 상세 내용은 필요할 때만 펼쳐볼 수 있어 PR 가독성이 크게 개선된다.",
+    "why_it_matters": "AI 보조 개발이 일상화되면서 에이전트 생성 텍스트의 가독성 문제를 실용적으로 해결하는 워크플로우 팁으로, 코딩 에이전트를 쓰는 개발자라면 바로 적용할 수 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.8834424603174603,
+    "published_at": "2026-11-09T04:25:05Z"
+  }
+]
