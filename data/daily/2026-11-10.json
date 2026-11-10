@@ -1,0 +1,323 @@
+[
+  {
+    "id": "hf-2611.08264",
+    "section": "papers",
+    "title_en": "SplatAnything: Gaussian Spacing Normalization for Feed-forward 3DGS across Arbitrary Scenes",
+    "title_ko": "SplatAnything: 임의 장면에 대한 피드포워드 3D 가우시안 스플래팅을 위한 가우시안 간격 정규화",
+    "url": "https://huggingface.co/papers/2611.08264",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "기존 피드포워드 3DGS 방법은 인접 가우시안 중심 간의 간격이 장면 스케일과 카메라 구성에 따라 크게 달라져 감독 신호에 모호성이 발생하는 한계가 있다. 이를 해결하기 위해 SplatAnything은 가우시안 간격의 장면 수준 통계를 정규화하는 GSNorm 기법을 제안한다. 다양한 데이터셋, 입력 희소성 수준, 외삽 뷰포인트를 포함한 체계적인 벤치마크에서 최첨단 성능을 달성했으며, 특히 장면 스케일과 시점 변화가 큰 환경에서 두드러진 성능 향상을 보인다.",
+    "why_it_matters": "장면 스케일에 무관하게 일관된 3D 가우시안 스플래팅 예측이 가능해져 범용 3D 재구성 모델 개발에 중요한 진전을 제공한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.174387269895637,
+    "published_at": "2026-11-05T11:37:29Z"
+  },
+  {
+    "id": "hf-2611.06043",
+    "section": "papers",
+    "title_en": "Confucius4-R2T2: A Stable-Prefix Streaming ASR Model for Real Real-Time Transcription",
+    "title_ko": "Confucius4-R2T2: 실시간 스트리밍 음성 인식을 위한 안정 프리픽스 ASR 모델",
+    "url": "https://huggingface.co/papers/2611.06043",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Confucius4-R2T2는 한 번 출력한 텍스트를 절대 수정하지 않는 안정 프리픽스 스트리밍 ASR 모델이다. Qwen3-ASR-1.7B를 기반으로 중국어·영어 오디오 1,500시간으로 추가 학습하였으며, '최장 안정 프리픽스(LSP)'라는 새로운 개념을 도입해 아키텍처 변경 없이 풀컨텍스트 모델을 스트리밍 모델로 전환한다. 평가 결과, 낮은 출력 지연을 유지하면서도 풀컨텍스트 모델에 근접한 인식 정확도를 달성했으며, 학습 언어 외 다국어에서도 성능 향상이 확인됐다. 모델 가중치와 코드는 오픈소스로 공개됐다.",
+    "why_it_matters": "번역기·음성 에이전트 등 기계가 토큰 단위로 즉각 반응하는 환경에서, 출력을 번복하지 않는 안정 스트리밍 ASR은 낭비 연산과 오동작을 원천 차단할 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 5.0943445622221,
+    "published_at": "2026-11-04T01:46:50Z"
+  },
+  {
+    "id": "hf-2611.08175",
+    "section": "papers",
+    "title_en": "PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?",
+    "title_ko": "PCBRouteAgent: LLM 에이전트가 PCB 라우팅 엔지니어에 얼마나 가까워졌나?",
+    "url": "https://huggingface.co/papers/2611.08175",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "PCBRouteAgent는 인간 엔지니어의 작업 방식에서 영감을 받아 전역 라우팅 계획과 세부 실행을 조율하는 멀티모달 PCB 라우팅 에이전트다. 전역 라우팅 플래너가 보드 이미지와 전기·기하 정보를 결합해 연결 위상 및 라우팅 순서를 결정하고, 세부 실행기가 KiCad 네이티브 엔진으로 이를 구현한다. 247개의 합성 및 실제 보드 벤치마크에서 최대 100% 클린 패스율을 달성하며 기존 최고 대비 최대 36%p 향상된 성능을 보였다.",
+    "why_it_matters": "LLM 기반 에이전트가 고난도 하드웨어 설계 자동화 영역인 PCB 라우팅에서 실질적 성능을 입증하며 EDA 자동화의 가능성을 넓혔다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.58351893845611,
+    "published_at": "2026-11-05T10:31:15Z"
+  },
+  {
+    "id": "hf-2611.09124",
+    "section": "papers",
+    "title_en": "Toward the Era of Agentic Embodied Intelligence",
+    "title_ko": "에이전틱 구현 지능 시대를 향해: A2-MEAS 멀티에이전트 로봇 프레임워크",
+    "url": "https://huggingface.co/papers/2611.09124",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "A2-MEAS는 코드를 스케일링 인터페이스로 활용하는 구현 멀티에이전트 프레임워크로, 로봇의 자율 행동과 실패 복구를 개선한다. BEHAVIOR 2026 공개 벤치마크 50개 태스크에서 Q-score 0.5755를 기록해 2025년 우승자 대비 2.21배 성능을 달성했으며, 실제 로봇 12개 태스크에서 평균 57.92% 성공률로 pi0.5(26.67%)를 크게 앞섰다. 훈련 인프라는 pi0.5 참조 구현 대비 4.03배 처리량을 제공하며, 시스템·모델·학습 스크립트 전체를 공개할 예정이다.",
+    "why_it_matters": "파운데이션 모델 기반 로봇 제어에서 실패 복구와 장기 태스크 수행 능력을 대폭 향상시킨 오픈소스 프레임워크로, 실용적 로봇 자율성 연구의 새로운 기준점이 될 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 4.465735902799727,
+    "published_at": "2026-11-05T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.07025",
+    "section": "papers",
+    "title_en": "LowRAM: Low-Rank Keys and Amortised Values for Composable KV Cache Compression at Test-Time",
+    "title_ko": "LowRAM: 테스트 타임에 KV 캐시를 최대 26.9배 압축하는 저랭크 키·상각 값 기법",
+    "url": "https://huggingface.co/papers/2611.07025",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LowRAM은 어텐션 헤드 내에서 값(value)이 키(key)로부터 예측 가능하다는 점을 활용해, 경량 예측기로 값 캐시를 압축하고 재구성이 어려운 토큰의 잔차만 저장하는 방식을 제안한다. 여기에 레이어 간 저랭크 키 압축을 결합한 비대칭 파이프라인 LowRAM은 세 가지 모델 패밀리에서 무손실에 가까운 성능을 유지한다. 양자화 및 이빅션 기법과도 결합해 긴 컨텍스트에서 베이스라인 대비 94.5% 성능을 보존하면서 최대 26.9배 압축, 최대 5배 디코딩 처리량 향상을 달성했다.",
+    "why_it_matters": "KV 캐시 메모리 병목을 훈련 없이 테스트 타임에만 해결하면서도 기존 압축 기법들과 조합 가능해, 대형 모델의 긴 컨텍스트 추론 비용을 크게 낮출 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 4.433987204485146,
+    "published_at": "2026-11-04T14:00:06Z"
+  },
+  {
+    "id": "github_trending-anthropics/skills",
+    "section": "releases",
+    "title_en": "anthropics/skills",
+    "title_ko": "Anthropic, Claude용 Agent Skills 공개 저장소 오픈",
+    "url": "https://github.com/anthropics/skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 Claude의 'Skills' 시스템을 위한 공식 공개 저장소를 GitHub에 공개했다. Skills는 명령어·스크립트·리소스로 구성된 폴더 단위 모듈로, Claude가 동적으로 로드해 특정 작업(문서 생성, 데이터 분석, 웹 앱 테스트 등)을 반복 가능한 방식으로 수행하도록 돕는다. 창작·디자인부터 엔터프라이즈 워크플로우까지 다양한 예제 스킬이 Apache 2.0 라이선스로 제공되며, Claude Code, Claude.ai, Claude API를 통해 사용할 수 있다. SKILL.md 파일 하나로 커스텀 스킬을 직접 제작할 수도 있다.",
+    "why_it_matters": "LLM 에이전트의 전문 태스크 수행 능력을 모듈화·공유 가능한 형태로 표준화하려는 시도로, 개발자가 Claude의 동작을 체계적으로 확장·재사용할 수 있는 생태계를 형성할 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.860745701058201,
+    "published_at": "2026-11-10T00:36:18Z"
+  },
+  {
+    "id": "github_trending-google-deepmind/mujoco",
+    "section": "releases",
+    "title_en": "google-deepmind/mujoco",
+    "title_ko": "Google DeepMind의 범용 물리 시뮬레이터 MuJoCo",
+    "url": "https://github.com/google-deepmind/mujoco",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "MuJoCo(Multi-Joint dynamics with Contact)는 Google DeepMind가 관리하는 오픈소스 범용 물리 엔진으로, 로보틱스·생체역학·머신러닝 등 다양한 분야의 연구 및 개발을 지원합니다. C API를 기반으로 하며 Python 바인딩, Unity 플러그인, WebAssembly 버전도 제공합니다. JAX 기반의 MuJoCo XLA(MJX)와 미분 가능 물리 기능도 포함되어 있어 강화학습 정책 학습에도 활용됩니다.",
+    "why_it_matters": "AI 에이전트 및 로봇 강화학습 연구의 핵심 시뮬레이션 인프라로, 미분 가능 물리와 JAX 연동을 통해 차세대 학습 파이프라인 구축에 직접적으로 활용된다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.860745701058201,
+    "published_at": "2026-11-10T00:36:18Z"
+  },
+  {
+    "id": "github_trending-anthropics/claude-quickstarts",
+    "section": "releases",
+    "title_en": "anthropics/claude-quickstarts",
+    "title_ko": "Anthropic 공식 Claude API 퀵스타트 모음",
+    "url": "https://github.com/anthropics/claude-quickstarts",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 Claude API를 활용한 다양한 애플리케이션 예제 모음을 공개했다. 고객 지원 에이전트, 금융 데이터 분석기, 컴퓨터/브라우저 제어 데모, 자율 코딩 에이전트, Slack/Linear 연동 Managed Agent 등 15개 이상의 실전 예제를 포함한다. 각 프로젝트는 독립적인 README와 설정 가이드를 제공하며, Claude API 키만 있으면 바로 실행 가능하다.",
+    "why_it_matters": "Anthropic이 직접 제공하는 공식 레퍼런스 구현체로, 에이전트·컴퓨터 사용·MCP 등 최신 Claude 기능을 실제 코드로 빠르게 익힐 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.860745701058201,
+    "published_at": "2026-11-10T00:36:18Z"
+  },
+  {
+    "id": "github_trending-garrytan/gbrain",
+    "section": "releases",
+    "title_en": "garrytan/gbrain",
+    "title_ko": "GBrain: AI 에이전트를 위한 자체 호스팅 가능한 메모리 레이어",
+    "url": "https://github.com/garrytan/gbrain",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Y Combinator CEO 개리 탄이 공개한 오픈소스 에이전트 메모리 시스템입니다. 키워드·시맨틱 검색, 타입드 지식 그래프, 인용 출처가 포함된 답변 합성 기능을 제공하며, Claude Code·Codex·ChatGPT 등 주요 AI 클라이언트와 MCP를 통해 연동됩니다. 개인 브레인은 PGLite(최대 약 5만 페이지), 팀 브레인은 Postgres+pgvector로 운영할 수 있으며 MIT 라이선스로 셀프호스팅이 가능합니다. 실제로 15만 5천여 페이지, 2만 4천여 명의 인물 데이터를 처리하는 프로덕션 환경에서 사용 중입니다.",
+    "why_it_matters": "여러 AI 에이전트에 걸쳐 통제 가능한 영구 메모리를 부여하는 실전 검증된 오픈소스 프레임워크로, 에이전트 기반 워크플로우의 컨텍스트 단절 문제를 해결한다.",
+    "tags": [
+      "에이전트",
+      "RAG",
+      "오픈소스"
+    ],
+    "score": 0.860745701058201,
+    "published_at": "2026-11-10T00:36:18Z"
+  },
+  {
+    "id": "github_trending-vercel-labs/agent-browser",
+    "section": "releases",
+    "title_en": "vercel-labs/agent-browser",
+    "title_ko": "Vercel Labs, AI 에이전트용 브라우저 자동화 CLI 'agent-browser' 공개",
+    "url": "https://github.com/vercel-labs/agent-browser",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Vercel Labs가 AI 에이전트를 위한 브라우저 자동화 CLI 도구 'agent-browser'를 오픈소스로 공개했다. Rust로 작성된 네이티브 CLI로, 페이지를 접근성 트리(accessibility tree) 형태의 텍스트로 읽고 ref(@e1 등)를 통해 요소를 조작할 수 있다. MCP 서버 모드를 지원하며, Browserbase·Browserless 등 클라우드 브라우저 프로바이더와도 연동된다. npm, Homebrew 등으로 설치 가능하며 Apache-2.0 라이선스로 제공된다.",
+    "why_it_matters": "AI 에이전트가 셸 명령 한 줄씩 브라우저를 제어할 수 있는 경량 CLI를 제공함으로써, 에이전트 기반 웹 자동화 개발 진입 장벽을 크게 낮춘다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.860745701058201,
+    "published_at": "2026-11-10T00:36:18Z"
+  },
+  {
+    "id": "github_trending-ZhuLinsen/daily_stock_analysis",
+    "section": "releases",
+    "title_en": "ZhuLinsen/daily_stock_analysis",
+    "title_ko": "LLM 기반 멀티마켓 주식 자동 분석 시스템 - daily_stock_analysis",
+    "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "LLM을 활용해 A주, 홍콩, 미국, 일본, 한국, 대만 주식을 매일 자동 분석하고 결정 대시보드를 생성하는 오픈소스 프로젝트입니다. 실시간 뉴스, 기술적 지표, 펀더멘털 데이터를 종합해 매수·관망·매도 의견과 리스크 경보를 제공합니다. GitHub Actions를 통해 서버 없이 무료로 매일 자동 실행되며, 기업 위챗·슬랙·텔레그램·이메일 등 다양한 채널로 결과를 푸시합니다.",
+    "why_it_matters": "서버 비용 없이 GPT·Claude·DeepSeek 등 다양한 LLM을 연결해 다국 주식 분석을 완전 자동화할 수 있는 실용적인 오픈소스 솔루션이다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.860745701058201,
+    "published_at": "2026-11-10T00:36:18Z"
+  },
+  {
+    "id": "github_trending-homeassistant-ai/ha-mcp",
+    "section": "releases",
+    "title_en": "homeassistant-ai/ha-mcp",
+    "title_ko": "HA-MCP: Claude·ChatGPT로 Home Assistant를 AI로 제어하는 MCP 서버",
+    "url": "https://github.com/homeassistant-ai/ha-mcp",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "HA-MCP는 Claude, ChatGPT 등 AI 어시스턴트를 통해 Home Assistant를 설정·자동화·디버깅할 수 있는 MCP(Model Context Protocol) 서버다. 87개의 도구를 제공하며, 자동화 생성·대시보드 편집·기기 제어·시스템 백업 등 Home Assistant의 거의 모든 기능을 자연어 명령으로 처리할 수 있다. HACS 또는 Docker, PyPI 등 다양한 설치 방법을 지원하며, Home Assistant 내장 MCP 서버와 달리 설정·빌드·디버깅까지 포괄적으로 지원하는 것이 특징이다.",
+    "why_it_matters": "스마트홈 플랫폼 Home Assistant를 AI 에이전트로 완전 제어·구성할 수 있게 해줘, MCP 기반 에이전트 활용의 실용적 사례를 보여준다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.860745701058201,
+    "published_at": "2026-11-10T00:36:18Z"
+  },
+  {
+    "id": "hn-50424581",
+    "section": "community",
+    "title_en": "Foldable Flight: The Best Paper Airplanes",
+    "title_ko": "종이비행기 최강 모델 모음: 접이식 비행의 세계",
+    "url": "https://www.foldableflight.com/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "종이비행기의 베스트 모델들을 소개하는 콘텐츠로 보인다. 설명이 없어 구체적인 내용은 확인할 수 없다.",
+    "why_it_matters": "AI와 직접적인 관련이 없는 취미·공예 주제로, 개발자 커뮤니티 HN에서 화제가 된 가벼운 읽을거리다.",
+    "tags": [],
+    "score": 10.322475610024124,
+    "published_at": "2026-11-09T12:19:22Z"
+  },
+  {
+    "id": "hn-50429068",
+    "section": "community",
+    "title_en": "Claude Fable 5.2 and Mythos 5.2",
+    "title_ko": "Claude Fable 5.2 및 Mythos 5.2 출시",
+    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Claude Fable 5.2와 Mythos 5.2가 공개되었다. 제공된 설명이 없어 구체적인 세부 사항은 확인되지 않는다.",
+    "why_it_matters": "Claude 계열 모델의 새 버전 업데이트 소식으로, 관련 커뮤니티의 관심이 높다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.27189348645423,
+    "published_at": "2026-11-09T18:01:10Z"
+  },
+  {
+    "id": "hn-50427362",
+    "section": "community",
+    "title_en": "Payments Canada announces launch of Canada's Real-Time Rail (RTR) payment system",
+    "title_ko": "캐나다, 실시간 결제 시스템 'RTR' 공식 출시",
+    "url": "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Payments Canada가 캐나다의 실시간 결제 시스템인 RTR(Real-Time Rail)의 출시를 공식 발표했다. RTR은 캐나다 내 실시간 자금 이체를 가능하게 하는 새로운 결제 인프라다.",
+    "why_it_matters": "캐나다 금융 인프라의 핵심 업그레이드로, 실시간 결제 생태계 변화에 관심 있는 핀테크·개발자에게 중요한 소식이다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 10.032410676537047,
+    "published_at": "2026-11-09T16:00:45Z"
+  },
+  {
+    "id": "hn-50429426",
+    "section": "community",
+    "title_en": "Google Gemini routes personal Drive files and emails to human annotators",
+    "title_ko": "구글 제미나이, 개인 드라이브 파일·이메일을 인간 주석자에게 전달",
+    "url": "https://github.com/thisisme6598/gemini_files/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "구글 제미나이가 사용자의 개인 드라이브 파일과 이메일을 인간 주석자(human annotator)에게 라우팅하는 것으로 알려졌다. 이는 AI 학습 및 품질 개선 목적으로 추정되나, 개인 데이터 프라이버시에 대한 심각한 우려를 제기한다.",
+    "why_it_matters": "개인 클라우드 파일과 이메일이 인간 검토자에게 노출될 수 있다는 사실은 AI 서비스 이용 시 데이터 프라이버시 위험을 직접적으로 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.605306099144366,
+    "published_at": "2026-11-09T18:24:38Z"
+  },
+  {
+    "id": "hn-50431144",
+    "section": "community",
+    "title_en": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
+    "title_ko": "Claude Fable 5.2, Artificial Analysis 벤치마크에서 65점 기록 — 역대 최고",
+    "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Claude Fable 5.2가 Artificial Analysis 벤치마크에서 65점을 기록하며 현재까지 가장 높은 점수를 달성했다. 상세한 평가 항목이나 비교 모델에 대한 추가 정보는 제공되지 않았다.",
+    "why_it_matters": "벤치마크 최고점 경신은 LLM 성능 경쟁의 현황을 가늠하는 지표가 된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.50626274257518,
+    "published_at": "2026-11-09T20:04:55Z"
+  },
+  {
+    "id": "simon_willison-prompting-claude-fable-52",
+    "section": "deepdive",
+    "title_en": "Quoting Prompting Claude Fable 5.2",
+    "title_ko": "Claude Fable 5.2 프롬프팅 팁: 코드 소유권을 명시하라",
+    "url": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Anthropic 공식 문서에 따르면, Claude Fable 5.2는 프롬프트에서 코드 소유권을 어떻게 표현하느냐에 따라 행동이 달라진다. 소유권을 명시하지 않으면 모델은 기존 구조에 단순히 추가하는 경향이 있고, 중복 코드가 생기기도 한다. '이 코드베이스는 네 것이다'라는 문장을 추가하면, Anthropic 테스트 기준으로 약 절반의 시도에서 중복 코드를 병합하는 반면, 해당 문장 없이는 10% 미만에서만 그런 행동을 보였다.",
+    "why_it_matters": "단 한 문장의 소유권 표현이 모델의 코드 리팩토링 행동을 크게 바꿀 수 있다는 점에서, 프롬프트 엔지니어링의 미묘한 영향력을 잘 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8903025793650794,
+    "published_at": "2026-11-10T05:34:14Z"
+  }
+]
