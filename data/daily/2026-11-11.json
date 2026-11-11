@@ -1,0 +1,318 @@
+[
+  {
+    "id": "hf-2611.12806",
+    "section": "papers",
+    "title_en": "Learning Heterogeneous Tactile Representation for General Dexterous Manipulation",
+    "title_ko": "이기종 촉각 센서를 통합하는 범용 로봇 조작용 촉각 기반 모델 LingBot-Touch",
+    "url": "https://huggingface.co/papers/2611.12806",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LingBot-Touch는 압저항, 자기, 비주오택타일 등 서로 다른 종류의 촉각 센서 데이터를 하나의 통합된 표현으로 학습하는 촉각 파운데이션 모델이다. 생성된 촉각 토큰은 플러그앤플레이 방식으로 디퓨전 정책부터 VLA 모델(π₀.₅, LingBot-VLA)까지 다양한 정책 모델에 seamlessly 통합된다. 시뮬레이션 및 실제 로봇 환경에서의 광범위한 실험을 통해 복잡한 조작 작업 성능을 높이면서도 연산 효율성을 유지함을 검증했다.",
+    "why_it_matters": "센서 종류에 종속되지 않는 범용 촉각 표현을 제공함으로써, 다양한 하드웨어 플랫폼에서 촉각 데이터를 확장 학습할 수 있는 가능성을 열었다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 5.553876891600541,
+    "published_at": "2026-11-08T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.12762",
+    "section": "papers",
+    "title_en": "Sage-Taiyi: A Metacognitive Architecture for Scientific Discovery",
+    "title_ko": "Sage-Taiyi: 과학적 발견을 위한 메타인지 아키텍처",
+    "url": "https://huggingface.co/papers/2611.12762",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Sage-Taiyi는 메타인지에서 영감을 받은 AI 과학 연구 아키텍처로, 축적된 과학적 이해를 바탕으로 연구 방향과 방법을 스스로 조정합니다. 265개 태스크로 구성된 Taiyi-Bench에서 8개 전 지표 1위를 달성했으며, 종합 점수 54.0으로 차세대 최강 베이스라인 AI Scientist-v2(47.9)를 앞섰습니다. 화학 분야에서는 코발트 촉매 카르보닐화 반응의 수율을 미량에서 84%로, 광촉매 알릴 아민화 반응을 13%에서 69%로 향상시키는 실험적 성과도 확인되었습니다.",
+    "why_it_matters": "AI가 단순 아이디어 제안을 넘어 실제 실험 검증까지 연결되는 과학적 발견 자동화의 새로운 가능성을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.007333185232471,
+    "published_at": "2026-11-08T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.10771",
+    "section": "papers",
+    "title_en": "WorldFoundry: Towards Unified Infrastructure for World Intelligence",
+    "title_ko": "WorldFoundry: 세계 지능을 위한 통합 오픈소스 인프라",
+    "url": "https://huggingface.co/papers/2611.10771",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "WorldFoundry는 비디오, 3D/4D, 구현형 액션, 인터랙티브 월드 시스템 등 다양한 생성 세계 모델을 재현 가능하게 추론·평가할 수 있는 오픈소스 인프라다. 단순한 시각적 그럴듯함을 넘어 지속적 상태 유지, 물리 역학, 인과적 일관성을 갖춘 진정한 세계 모델을 정의하고 측정하는 프레임워크를 제시한다. 현재 270개 모델, 74개 벤치마크, 62개 메트릭이 등록되어 있으며 실행 준비 상태와 평가 근거를 분리해 추적 가능성을 보장한다.",
+    "why_it_matters": "이질적인 세계 모델들을 단일 인프라에서 재현 가능하게 비교·평가할 수 있어, 단순 생성 모델에서 측정 가능한 세계 지능으로의 연구 전환을 가속화한다.",
+    "tags": [
+      "오픈소스",
+      "에이전트"
+    ],
+    "score": 5.007333185232471,
+    "published_at": "2026-11-07T09:59:22Z"
+  },
+  {
+    "id": "hf-2611.12886",
+    "section": "papers",
+    "title_en": "Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning",
+    "title_ko": "Reframe: 시각적 에이전트를 위한 관찰 정렬 기반 다중 교사 온-정책 증류 프레임워크",
+    "url": "https://huggingface.co/papers/2611.12886",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Reframe은 시각적 에이전트의 포스트 트레이닝을 위한 프레임워크로, 출력 분포가 아닌 관찰 상태(observation state)를 정렬 대상으로 삼는다. GD-GRPO는 증거 인식 보상과 원본 시각 입력의 확률적 제거를 통해 공간·시간 전문가 모델을 훈련시키고, OG-MOPD는 롤아웃 중간에 결함 있는 툴 액션을 수정하여 증류를 이어나간다. 14개의 이미지·비디오 벤치마크 실험에서 Mix-RL 및 일반 MOPD 대비 우수한 성능을 보였으며, 태스크별 SFT 콜드 스타트 없이도 동작한다.",
+    "why_it_matters": "툴 반환 관찰값을 효과적으로 활용하지 못하는 시각 에이전트의 고질적 한계를 구조적으로 해결하는 새로운 훈련 패러다임을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.663561646129646,
+    "published_at": "2026-11-08T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.08452",
+    "section": "papers",
+    "title_en": "ReproBridge: Building Reproducibility into ML Research Artifacts",
+    "title_ko": "ReproBridge: ML 실험 재현성을 높이는 에이전트 워크플로우",
+    "url": "https://huggingface.co/papers/2611.08452",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "머신러닝 실험 재현은 논문·코드·아티팩트에 흩어진 정보를 취합해야 하는 어려움이 있다. ReproBridge는 정제된 코드베이스, 환경 설정, 실험 런처, 재현 가이드로 구성된 표준화 아티팩트를 자동 구축하는 에이전트 워크플로우다. 36편의 논문, 387개 실험, 1,029개 태스크로 구성된 ReproBridge-Bench 벤치마크에서 평가한 결과, 정제된 아티팩트 사용 시 평균 재현 성공률이 76.4%에서 92.6%로 향상되고 API 비용도 평균 19.7% 절감됐다. 모델 간 성공률 편차도 21.6%p에서 3.9%p로 크게 줄어 모든 모델이 90% 이상의 성공률을 달성했다.",
+    "why_it_matters": "ML 연구의 재현성 문제를 에이전트 기반으로 체계적으로 해결하며, 비용 절감과 모델 간 편차 감소까지 입증한 실용적 접근법이다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.433987204485146,
+    "published_at": "2026-11-05T13:45:36Z"
+  },
+  {
+    "id": "openai_blog-gilbert-tobin-sam-nickless",
+    "section": "releases",
+    "title_en": "Gilbert + Tobin rethinks the business of law with AI",
+    "title_ko": "Gilbert + Tobin, AI로 법률 비즈니스 재편",
+    "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "호주 법률 회사 Gilbert + Tobin의 CEO 샘 닉클레스와의 대화를 담은 콘텐츠로, AI를 활용해 법률 업무 방식을 혁신하는 사례를 소개한다. OpenAI 블로그에 게재된 인터뷰 형식의 글로, 법률 업계에서의 AI 도입 경험과 비전을 다룬다.",
+    "why_it_matters": "전통적인 법률 업계에서 AI를 실제 도입한 선도 사례로, 전문직 서비스 분야의 AI 활용 방향을 가늠할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 1.0,
+    "published_at": "2026-11-12T00:00:00Z"
+  },
+  {
+    "id": "google_blog-gemini-intelligence-november-features-devices",
+    "section": "releases",
+    "title_en": "Gemini Intelligence: New features, on more devices",
+    "title_ko": "Gemini 인텔리전스: 더 많은 기기에서 새로운 기능 제공",
+    "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "Google이 Gemini 인텔리전스의 새로운 기능을 더 다양한 기기에서 이용할 수 있도록 확대한다고 발표했다. 사용자는 스마트폰 등 여러 기기에서 Gemini의 AI 기능을 활용할 수 있게 된다.",
+    "why_it_matters": "Google Gemini AI가 더 많은 기기로 확장되면서 일반 사용자의 AI 접근성이 높아질 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8273826058201058,
+    "published_at": "2026-11-10T19:00:00Z"
+  },
+  {
+    "id": "google_blog-gemini-for-healthcare",
+    "section": "releases",
+    "title_en": "Google Cloud launches Gemini for healthcare.",
+    "title_ko": "구글 클라우드, 헬스케어 특화 Gemini 출시",
+    "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글 클라우드가 의료 분야를 위한 'Gemini for Healthcare'를 출시했다. 이 솔루션은 임상 데이터를 통합하고 의료 워크플로우를 자동화하는 것을 목표로 한다. 또한 의료진의 행정 업무 부담을 줄이는 데 초점을 맞추고 있다.",
+    "why_it_matters": "대형 AI 기업이 의료 현장의 실질적 문제인 행정 번아웃과 데이터 분산을 해결하는 헬스케어 특화 AI 플랫폼을 본격 출시함으로써, 의료 AI 상용화가 한층 가속화될 전망이다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7916683201058201,
+    "published_at": "2026-11-10T13:00:00Z"
+  },
+  {
+    "id": "openai_blog-helping-caregivers-use-ai-in-everyday-life",
+    "section": "releases",
+    "title_en": "Helping caregivers use AI in everyday life",
+    "title_ko": "OpenAI, 미국 5개 도시 돌봄 종사자 대상 무료 ChatGPT 워크숍 개최",
+    "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI Academy가 미국 5개 도시의 돌봄 종사자(케어기버)를 위한 무료 ChatGPT 실습 워크숍을 운영한다. 이 프로그램은 일상 생활에서 AI를 실질적으로 활용할 수 있는 기술을 습득할 수 있도록 돕는 것을 목표로 한다.",
+    "why_it_matters": "AI 접근성을 디지털 취약계층인 돌봄 종사자에게까지 확대하려는 OpenAI의 사회적 포용 노력을 보여주는 사례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7857159391534392,
+    "published_at": "2026-11-10T12:00:00Z"
+  },
+  {
+    "id": "openai_blog-introducing-businesses-chatgpt",
+    "section": "releases",
+    "title_en": "Introducing Businesses in ChatGPT",
+    "title_ko": "ChatGPT에 비즈니스 프로필 기능 도입",
+    "url": "https://openai.com/index/introducing-businesses-chatgpt",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 ChatGPT에 '비즈니스' 기능을 새롭게 선보였다. 사업자는 비즈니스 정보를 직접 관리하고, ChatGPT 내에서 자신의 비즈니스가 어떻게 노출되는지 인사이트를 확인할 수 있다. 또한 사용자의 관심을 실제 행동으로 전환할 수 있는 기능도 제공된다.",
+    "why_it_matters": "ChatGPT가 단순 AI 어시스턴트를 넘어 비즈니스 검색·홍보 플랫폼으로 확장됨에 따라 기업의 AI 채널 전략이 중요해진다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7738111772486773,
+    "published_at": "2026-11-10T10:00:00Z"
+  },
+  {
+    "id": "openai_blog-closing-ai-guidance-gap-education",
+    "section": "releases",
+    "title_en": "Closing the AI guidance gap in education",
+    "title_ko": "교육 현장의 AI 활용 격차 해소",
+    "url": "https://openai.com/index/closing-ai-guidance-gap-education",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 EMEA 지역 교육 파트너십을 통해 교사 지원, AI 리터러시 향상, 자기주도 학습 강화를 위한 연구와 사례를 공유했다. ThinkYoung의 신규 연구를 바탕으로 교육 현장에서 AI 가이던스가 부족한 현실을 진단하고 개선 방향을 제시한다.",
+    "why_it_matters": "교육 분야에서 AI 도입이 가속화되는 가운데, 교사와 학생 모두를 위한 체계적인 AI 활용 지침 마련이 시급한 과제로 부상하고 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7678587962962963,
+    "published_at": "2026-11-10T09:00:00Z"
+  },
+  {
+    "id": "github_trending-anthropics/skills",
+    "section": "releases",
+    "title_en": "anthropics/skills",
+    "title_ko": "Anthropic, Claude용 에이전트 스킬 공개 저장소 오픈",
+    "url": "https://github.com/anthropics/skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 Claude의 'Agent Skills' 시스템을 위한 공식 공개 저장소를 GitHub에 공개했다. 스킬은 지시사항·스크립트·리소스를 담은 폴더 구조로, Claude가 특정 작업(문서 생성, 데이터 분석, 워크플로우 자동화 등)을 반복 가능한 방식으로 수행하도록 동적으로 로드된다. docx·pdf·pptx·xlsx 등 문서 처리 스킬은 Apache 2.0 라이선스로 공개되며, Claude.ai 유료 플랜, Claude Code, API를 통해 사용할 수 있다.",
+    "why_it_matters": "Anthropic이 에이전트 커스터마이징의 표준 단위로 '스킬'을 공식화함으로써, 개발자와 기업이 Claude의 행동을 모듈 방식으로 확장·공유할 수 있는 생태계가 본격화된다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7614715608465609,
+    "published_at": "2026-11-10T07:55:37Z"
+  },
+  {
+    "id": "hn-50438318",
+    "section": "community",
+    "title_en": "AI usage generates a fragile codebase",
+    "title_ko": "AI 활용이 취약한 코드베이스를 만든다",
+    "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI를 활용한 코드 생성이 코드베이스를 취약하게 만들 수 있다는 주장을 담은 글이다. 구체적인 내용은 제공되지 않았으나, AI가 생성한 코드의 품질과 유지보수성에 대한 우려를 다루는 것으로 보인다.",
+    "why_it_matters": "AI 코드 생성 도구 도입이 늘어나는 가운데, 장기적인 코드 품질과 유지보수성에 대한 비판적 시각을 제공한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.114125091458643,
+    "published_at": "2026-11-10T10:25:58Z"
+  },
+  {
+    "id": "hn-50439193",
+    "section": "community",
+    "title_en": "AlphaProof Code",
+    "title_ko": "AlphaProof 코드 공개",
+    "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AlphaProof 관련 코드가 공개되었다. 상세한 설명은 제공되지 않았으나, DeepMind의 수학 증명 AI 시스템인 AlphaProof와 관련된 코드로 보인다.",
+    "why_it_matters": "수학 자동 증명 분야의 핵심 AI 시스템 코드에 접근할 수 있다면 연구자들에게 중요한 자료가 될 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 9.981672824442832,
+    "published_at": "2026-11-10T12:11:12Z"
+  },
+  {
+    "id": "hn-50443824",
+    "section": "community",
+    "title_en": "Synaptics patent claims stop work on DisplayLink drivers",
+    "title_ko": "Synaptics 특허 주장으로 DisplayLink 드라이버 개발 중단",
+    "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Synaptics의 특허 주장으로 인해 DisplayLink 드라이버 관련 작업이 중단되었다. 구체적인 내용은 확인되지 않으나, 특허 분쟁이 오픈소스 드라이버 개발에 영향을 미친 것으로 보인다.",
+    "why_it_matters": "특허 문제가 오픈소스 하드웨어 드라이버 생태계에 직접적인 타격을 줄 수 있음을 보여주는 사례다.",
+    "tags": [
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 9.434615472753139,
+    "published_at": "2026-11-10T18:02:02Z"
+  },
+  {
+    "id": "hn-50447074",
+    "section": "community",
+    "title_en": "After 7 months, Glasswing overwelms maintainers with underwhelming findings",
+    "title_ko": "7개월 만에 Glasswing, 실망스러운 결과로 메인테이너들 압도",
+    "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Glasswing 프로젝트가 7개월간의 운영 끝에 메인테이너들을 압도했으나, 그 결과는 기대에 미치지 못한 것으로 나타났다. 구체적인 세부 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "오픈소스 프로젝트의 유지보수 부담과 성과 간의 괴리를 보여주는 사례로 주목된다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 9.38636943871591,
+    "published_at": "2026-11-10T22:17:56Z"
+  },
+  {
+    "id": "hn-50443812",
+    "section": "community",
+    "title_en": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+    "title_ko": "코딩 에이전트를 2019년식 JS에서 현대 웹 표준으로 업그레이드하기",
+    "url": "https://github.com/GoogleChrome/modern-web-guidance",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "코딩 에이전트가 구식 JavaScript 패턴을 사용하는 문제를 해결하기 위한 프로젝트를 소개하는 글이다. 현대적인 웹 표준과 네이티브 브라우저 기능을 활용하도록 에이전트를 유도하는 것을 목표로 한다.",
+    "why_it_matters": "LLM 기반 코딩 에이전트가 최신 웹 API 대신 구식 코드를 생성하는 한계를 직접 겨냥한 실용적 시도다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 9.003786193387468,
+    "published_at": "2026-11-10T18:01:15Z"
+  },
+  {
+    "id": "simon_willison-llm-gemini",
+    "section": "deepdive",
+    "title_en": "llm-gemini 0.36",
+    "title_ko": "Google Gemini 4 Carbon 일반 공개 및 llm-gemini 0.36 릴리스",
+    "url": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Google의 최신 모델 Gemini 4 Carbon이 일부 사이버 보안 전문가 대상 출시 이후 전체 사용자에게 공개되었다. 입력 $2/백만 토큰, 출력 $10/백만 토큰으로 출시되며, 2026년 12월 1일부터 각각 $4/$20으로 가격이 두 배 인상될 예정이다. Simon Willison은 llm-gemini 0.36 플러그인을 통해 낮음·중간·높음 세 가지 사고 강도 옵션을 지원하며, Google의 Antigravity IDE와 연계한 3D 애니메이션 생성 테스트 결과도 공유했다.",
+    "why_it_matters": "Google 역대 최고 성능의 Gemini 모델이 일반 공개되어 경쟁 최상위 모델(Claude Sonnet 5.5, GPT-6.1 Sol 수준)과 직접 비교 가능해진 시점이므로 LLM 선택 전략에 영향을 줄 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8343005952380953,
+    "published_at": "2026-11-10T20:09:44Z"
+  }
+]
