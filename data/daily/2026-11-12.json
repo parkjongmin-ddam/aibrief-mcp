@@ -1,0 +1,318 @@
+[
+  {
+    "id": "hf-2611.14033",
+    "section": "papers",
+    "title_en": "Few-Step Streaming Video Generation via Condition Shifting",
+    "title_ko": "조건 이동(Condition Shifting)을 활용한 소수 단계 스트리밍 비디오 생성 기법 APEX",
+    "url": "https://huggingface.co/papers/2611.14033",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "APEX는 스트리밍 비디오 생성의 비용을 줄이기 위해 별도의 가짜 스코어 네트워크 없이 조건 이동(condition shifting)으로 생성 분포의 속도 필드를 추정하는 방식을 제안한다. 기존 DMD 대비 GPU 피크 메모리를 4.4%, 반복 시간을 9.2% 단축했다. S2-Avatar와 비교한 180초 영상 실험에서 명령 이행(+30.0% 선호), 시각적 미학 점수 등에서 우위를 보였다.",
+    "why_it_matters": "별도 fake 네트워크 없이 메모리·연산 효율을 높이면서도 영상 품질을 개선해, 장시간 스트리밍 비디오 생성의 실용성을 한층 높인다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.3694478524670215,
+    "published_at": "2026-11-09T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.14210",
+    "section": "papers",
+    "title_en": "Tree-Ising: Repairing Language Models with Bit-Level Ising Edits",
+    "title_ko": "Tree-Ising: 비트 수준 이징 편집으로 언어 모델 가중치 수리",
+    "url": "https://huggingface.co/papers/2611.14210",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Tree-Ising은 LLM의 BF16 가중치를 그래디언트 없이 수리하는 희소 이산 최적화 방법으로, 가중치의 부호 반전과 지수 이동만으로 모델의 추론 오류를 교정한다. MATH-500 벤치마크에서 54.6%를 달성해 GPT-6 Astra 에이전트 편집(51.7%)을 상회했으며, Qwen3.5-2B의 GSM8K 정확도를 21.6%에서 69.4%로 끌어올렸다. 에이전트 대비 LLM 토큰 사용량 0개, 포워드 패스 4회, 약 $0.90의 GPU 비용만으로 더 나은 성능을 구현했다.",
+    "why_it_matters": "그래디언트·LLM 호출 없이 가중치를 직접 수술하는 비트 수준 최적화가 고비용 에이전트 편집을 능가함으로써, 소형 모델 성능 개선의 새로운 패러다임을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.356708826689592,
+    "published_at": "2026-11-09T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.12885",
+    "section": "papers",
+    "title_en": "World In-Context Learning for Agentic Robot Manipulation",
+    "title_ko": "로봇 조작을 위한 월드 인-컨텍스트 러닝(WICL)",
+    "url": "https://huggingface.co/papers/2611.12885",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "기존 로봇 조작 정책은 학습 데이터 분포에 종속되는 한계가 있었으나, WICL은 시뮬레이터에서 시연을 리허설하고 그 피드백을 모델 가중치가 아닌 컨텍스트에 기록하는 새로운 패러다임을 제안한다. 이를 구현한 RoboScript는 단 하나의 시연과 기울기 업데이트 없이 RoboTwin 2.0의 50개 태스크에서 평균 83.4% 성공률을 달성했으며, 이는 최강 훈련 정책보다 20포인트 이상 높은 수치다. 학습된 지식은 'Task Memory'로 고정되어 실제 듀얼암 로봇에도 전이 가능하며, 코드는 공개되어 있다.",
+    "why_it_matters": "그래디언트 업데이트 없이 단일 시연만으로 강력한 로봇 조작 성능을 달성해, 로봇 학습의 데이터 효율성과 범용성을 크게 높일 수 있는 접근법이다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 5.204692619390966,
+    "published_at": "2026-11-08T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.14320",
+    "section": "papers",
+    "title_en": "Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents",
+    "title_ko": "기억만 믿지 마라: 증거 연결 메모리로 LLM 에이전트의 메모리 유발 성능 저하 방지",
+    "url": "https://huggingface.co/papers/2611.14320",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "외부 메모리는 LLM 에이전트가 과거 경험에서 교훈을 추출해 새 작업에 활용하도록 돕지만, 잘못된 교훈을 그대로 따르거나 오적용해 오히려 성능이 떨어지는 '메모리 유발 저하' 현상이 발생할 수 있다. 이를 해결하기 위해 연구진은 WikiTrace를 제안했다. WikiTrace는 각 교훈을 원본 궤적(trajectory) 요약 및 raw 데이터와 연결해 저장하고, 에이전트가 교훈의 신뢰성이 의심될 때 원본 증거를 직접 확인·수정할 수 있게 한다. 다섯 가지 에이전트 벤치마크에서 기존 메모리 방식 대비 일관되게 높은 성능을 보이며 메모리 유발 저하도 줄였다.",
+    "why_it_matters": "메모리 기반 LLM 에이전트의 고질적 문제인 '잘못된 기억으로 인한 성능 역전'을 증거 연결 구조로 체계적으로 해결한 첫 접근으로, 실용적 에이전트 신뢰성 향상에 직접 기여한다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "RAG"
+    ],
+    "score": 5.0943445622221,
+    "published_at": "2026-11-09T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.11995",
+    "section": "papers",
+    "title_en": "Infrathon: Benchmarking Language Agents for Real-World, Long-Horizon AI Infra Optimization",
+    "title_ko": "Infrathon: 실제 AI 인프라 최적화를 위한 장기 에이전트 벤치마크",
+    "url": "https://huggingface.co/papers/2611.11995",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Infrathon은 AI 인프라 최적화를 위한 장기 수행 벤치마크로, 6개 모델을 150회 실행(총 10,000+ GPU 시간)으로 평가했다. 평가 기간이 길어질수록 모델 순위가 달라지며, 150회 중 135회는 후반부에도 추가 성능 향상이 나타났다. 특히 Claude Opus 5.5는 KV-캐시 압축률을 사람이 설계한 베이스라인의 6.82%에서 19.86%로 크게 끌어올렸다. 짧은 평가로는 최적화 성과와 모델 간 상대적 성능 변화를 놓칠 수 있음을 시사한다.",
+    "why_it_matters": "AI 에이전트가 사람이 설계한 인프라 솔루션을 능가할 수 있음을 실증하며, 장기 수행 벤치마크의 필요성을 부각시킨다.",
+    "tags": [
+      "에이전트",
+      "인프라",
+      "LLM"
+    ],
+    "score": 4.58351893845611,
+    "published_at": "2026-11-08T19:00:00Z"
+  },
+  {
+    "id": "openai_blog-gilbert-tobin-sam-nickless",
+    "section": "releases",
+    "title_en": "Gilbert + Tobin rethinks the business of law with AI",
+    "title_ko": "Gilbert + Tobin, AI로 법률 비즈니스를 재편하다",
+    "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "호주 법률회사 Gilbert + Tobin의 CEO 샘 닉클레스와의 대화를 통해 AI가 법률 업무 방식을 어떻게 변화시키고 있는지를 조명한다. 법률 분야에서의 AI 도입 전략과 실무 적용 사례를 다루는 내용으로 구성되어 있다.",
+    "why_it_matters": "법률 업계의 AI 도입 사례는 전통적인 전문직 서비스 산업 전반의 AI 전환 방향을 가늠하는 중요한 지표가 된다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8571445105820106,
+    "published_at": "2026-11-12T00:00:00Z"
+  },
+  {
+    "id": "google_blog-gemini-decisions-api",
+    "section": "releases",
+    "title_en": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+    "title_ko": "Gemini Decisions API: 빠르고 정교한 멀티모달 의사결정",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "Google이 Gemini Decisions API를 공개했다. 최신 모델인 Gemini Decision을 기반으로 빠르고 보정된(calibrated) 멀티모달 의사결정을 지원한다. 텍스트·이미지 등 다양한 입력을 처리해 신뢰도 높은 판단을 제공하는 것이 핵심이다.",
+    "why_it_matters": "Google의 멀티모달 의사결정 전용 API로, 복잡한 판단이 필요한 AI 서비스 개발에 직접 활용할 수 있는 새로운 선택지가 생겼다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8214302248677249,
+    "published_at": "2026-11-11T18:00:00Z"
+  },
+  {
+    "id": "google_blog-tabletop",
+    "section": "releases",
+    "title_en": "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together.",
+    "title_ko": "구글 테이블탑: 그룹 협업을 위한 맞춤형 인터랙티브 공간",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글 Labs가 그룹 협업을 위한 새로운 실험적 서비스 '테이블탑(Tabletop)'을 공개했다. 팀과 함께 인터랙티브 일정표, 투표, 대진표 등을 만들고 계획할 수 있는 협업 공간을 제공한다. 현재 대기자 명단을 통해 사전 신청이 가능하다.",
+    "why_it_matters": "구글이 그룹 플래닝과 협업에 특화된 새로운 형태의 협업 도구를 실험적으로 선보이며, 기존 협업 툴 시장에 새로운 경쟁자로 등장할 가능성이 있다.",
+    "tags": [],
+    "score": 0.8095254629629629,
+    "published_at": "2026-11-11T16:00:00Z"
+  },
+  {
+    "id": "openai_blog-chatgpt-plus-for-veterans",
+    "section": "releases",
+    "title_en": "ChatGPT Plus for veterans and servicemembers",
+    "title_ko": "참전용사·현역 군인을 위한 ChatGPT Plus 무료 제공",
+    "url": "https://openai.com/index/chatgpt-plus-for-veterans",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 미국 참전용사와 전역 예정 군인을 대상으로 ChatGPT Plus 1년 무료 이용권을 제공하고 있으며, 이미 2만 명 이상이 혜택을 신청했다. 이들은 주로 민간 직업으로의 전환을 준비하는 데 ChatGPT Plus를 활용하고 있다.",
+    "why_it_matters": "AI 도구가 군 출신 인력의 사회 재진입과 커리어 전환을 지원하는 실질적 사례로, AI의 사회적 활용 가능성을 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7619064153439153,
+    "published_at": "2026-11-11T08:00:00Z"
+  },
+  {
+    "id": "github_trending-anthropics/skills",
+    "section": "releases",
+    "title_en": "anthropics/skills",
+    "title_ko": "Anthropic, Claude용 에이전트 스킬 공개 저장소 오픈",
+    "url": "https://github.com/anthropics/skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 Claude의 'Agent Skills' 시스템을 위한 공식 GitHub 저장소를 공개했다. 스킬은 지시문·스크립트·리소스를 담은 폴더 구조로, Claude가 특정 작업(문서 생성, 데이터 분석, 웹앱 테스트 등)을 반복 가능한 방식으로 수행하도록 동적으로 로드된다. docx·pdf·pptx·xlsx 문서 처리 스킬 등 프로덕션에서 실제 사용 중인 구현체도 Apache 2.0 라이선스로 함께 공개됐다. Claude Code 플러그인, Claude.ai(유료 플랜), Claude API를 통해 사용하거나 커스텀 스킬을 직접 제작할 수 있다.",
+    "why_it_matters": "개발자가 Claude의 동작을 도메인별로 확장·커스터마이징할 수 있는 표준화된 스킬 체계가 오픈소스로 공개되어 에이전트 개발 생태계 확산이 기대된다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7582671957671958,
+    "published_at": "2026-11-11T07:23:19Z"
+  },
+  {
+    "id": "github_trending-addyosmani/agent-skills",
+    "section": "releases",
+    "title_en": "addyosmani/agent-skills",
+    "title_ko": "AI 코딩 에이전트를 위한 프로덕션급 엔지니어링 스킬 모음 'Agent Skills'",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "'Agent Skills'는 AI 코딩 에이전트가 소프트웨어 개발 전 주기(정의→계획→빌드→검증→리뷰→배포)에 걸쳐 시니어 엔지니어 수준의 워크플로우를 일관되게 따르도록 돕는 25개 스킬 모음입니다. `/spec`, `/plan`, `/build`, `/test`, `/review`, `/ship` 등 9개 슬래시 명령어로 각 단계를 활성화하며, Claude Code·Cursor·Codex·Copilot 등 70개 이상의 에이전트에 `npx skills add` 한 줄로 설치할 수 있습니다. Google의 소프트웨어 엔지니어링 문화(Hyrum's Law, Beyonce Rule, Shift Left 등)에서 검증된 모범 사례가 각 스킬 워크플로우에 직접 내장되어 있습니다.",
+    "why_it_matters": "AI 에이전트가 스펙·테스트·보안 검토를 건너뛰는 '최단 경로 편향'을 구조적으로 차단해, 프로토타입이 아닌 프로덕션 품질의 코드를 생성하도록 강제할 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7582671957671958,
+    "published_at": "2026-11-11T07:23:19Z"
+  },
+  {
+    "id": "github_trending-anthropics/claude-quickstarts",
+    "section": "releases",
+    "title_en": "anthropics/claude-quickstarts",
+    "title_ko": "Anthropic 공식 Claude API 퀵스타트 모음",
+    "url": "https://github.com/anthropics/claude-quickstarts",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Anthropic이 Claude API를 활용한 다양한 애플리케이션 예제를 담은 공식 퀵스타트 저장소를 공개했다. 고객 지원 에이전트, 금융 데이터 분석기, 컴퓨터 사용 데모, 브라우저 자동화, 자율 코딩 에이전트, Slack/Linear 연동 등 다양한 실전 예제를 제공한다. Managed Agents 기반의 멀티에이전트 패턴, MCP 서버 연동, AG-UI 프로토콜 등 최신 아키텍처도 포함되어 있다.",
+    "why_it_matters": "Claude API로 실제 배포 가능한 에이전트 앱을 빠르게 구축하려는 개발자에게 Anthropic 공식 레퍼런스 구현체가 제공된다는 점에서 실질적인 출발점이 된다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7582671957671958,
+    "published_at": "2026-11-11T07:23:19Z"
+  },
+  {
+    "id": "hn-50452455",
+    "section": "community",
+    "title_en": "My AI agents found an unmapped Maya site?",
+    "title_ko": "내 AI 에이전트가 미발견 마야 유적지를 찾았다?",
+    "url": "https://pietromiotti.com/latest/maya-site",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "제목만으로는 구체적인 내용을 확인하기 어렵지만, AI 에이전트를 활용해 기존에 지도화되지 않은 마야 문명 유적지를 발견했을 가능성을 시사하는 글이다. 상세한 방법론이나 검증 결과는 본문을 직접 확인해야 한다.",
+    "why_it_matters": "AI 에이전트가 고고학적 탐사에 실질적으로 기여할 수 있음을 보여주는 사례로 주목받고 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 10.796284186616372,
+    "published_at": "2026-11-11T12:05:22Z"
+  },
+  {
+    "id": "hn-50458900",
+    "section": "community",
+    "title_en": "United Airlines bans AI agents from booking flights on behalf of travelers",
+    "title_ko": "유나이티드 항공, AI 에이전트의 항공권 예약 대행 금지",
+    "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "유나이티드 항공이 AI 에이전트가 여행자를 대신해 항공권을 예약하는 행위를 금지했다. 구체적인 사유는 공개되지 않았으나, AI 자동화 예약에 대한 항공사 차원의 공식 제한 조치다.",
+    "why_it_matters": "주요 항공사가 AI 에이전트의 자율 예약을 명시적으로 차단하면서, 에이전트 기반 자동화의 현실적 수용 한계가 드러났다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 10.280136118509628,
+    "published_at": "2026-11-11T21:24:35Z"
+  },
+  {
+    "id": "hn-50459321",
+    "section": "community",
+    "title_en": "Jensen Huang said to have had relationship with executive who reports to him",
+    "title_ko": "젠슨 황, 직속 부하 임원과 부적절한 관계 보도",
+    "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "엔비디아 CEO 젠슨 황이 자신에게 보고하는 임원과 관계를 가졌다는 보도가 나왔다. 세부 사항은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "엔비디아 최고 경영진의 윤리 문제는 회사 거버넌스와 AI 산업 전반에 영향을 줄 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.737563716854021,
+    "published_at": "2026-11-11T22:03:58Z"
+  },
+  {
+    "id": "hn-50456791",
+    "section": "community",
+    "title_en": "Gemini Decisions API",
+    "title_ko": "Gemini Decisions API 공개",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Google이 Gemini Decisions API를 공개했다. 상세한 설명은 제공되지 않았으나, Gemini 모델 기반의 의사결정 관련 API로 추정된다.",
+    "why_it_matters": "Gemini 기반 API 생태계 확장 동향을 주목할 필요가 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 9.197876420889045,
+    "published_at": "2026-11-11T18:32:42Z"
+  },
+  {
+    "id": "hn-50459745",
+    "section": "community",
+    "title_en": "93% of paint splatters are valid Perl programs (2019)",
+    "title_ko": "페인트 얼룩의 93%가 유효한 Perl 프로그램이다 (2019)",
+    "url": "https://www.mcmillen.dev/sigbovik/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "2019년에 작성된 흥미로운 글로, 무작위 페인트 얼룩 이미지를 텍스트로 변환했을 때 93%가 유효한 Perl 코드로 파싱된다는 내용을 다룬다. 이는 Perl 언어의 문법이 매우 유연하고 광범위하다는 점을 역설적으로 보여준다.",
+    "why_it_matters": "Perl의 문법적 관용성을 극단적인 방식으로 증명한 사례로, 프로그래밍 언어 설계의 복잡성과 trade-off를 생각하게 만든다.",
+    "tags": [],
+    "score": 8.534799181381029,
+    "published_at": "2026-11-11T22:34:23Z"
+  },
+  {
+    "id": "latent_space-ainews-d-day-decision-models-day",
+    "section": "deepdive",
+    "title_en": "[AINews] D-Day (Decision Models Day)",
+    "title_ko": "[AI 뉴스] 결정 모델의 날 (Decision Models Day)",
+    "url": "https://latent.space/p/ainews-d-day-decision-models-day/",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "구글이 결정 모델(Decision Model) 시장에 진입했다. AI Engineer 행사에서 Cloudflare는 분류기(classifier)가 빌드 실패의 어떤 부분을 처리할 수 있는지 시연했으며, TypeSafe AI는 실제 프로덕션 고객 사례를 공개했다. 결정 모델이 AI 업계의 새로운 화두로 떠오르고 있음을 보여준다.",
+    "why_it_matters": "구글을 비롯한 주요 기업들이 결정 모델 시장에 뛰어들면서, 에이전트 및 자동화 워크플로우의 핵심 구성 요소로 결정 모델이 부상하고 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8895750661375661,
+    "published_at": "2026-11-12T05:26:54Z"
+  }
+]
