@@ -1,0 +1,320 @@
+[
+  {
+    "id": "hf-2611.14320",
+    "section": "papers",
+    "title_en": "Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents",
+    "title_ko": "기억을 맹신하지 마라: 증거 연결 메모리로 LLM 에이전트의 기억 유도 성능 저하 해결",
+    "url": "https://huggingface.co/papers/2611.14320",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LLM 에이전트는 과거 작업 경험을 교훈으로 압축해 새 작업에 활용하지만, 잘못된 교훈을 따르거나 오해석하는 '기억 유도 성능 저하' 문제가 발생한다. 이를 해결하기 위해 WikiTrace는 각 교훈을 원본 궤적(trajectory) 요약 및 실제 데이터와 연결해 저장하는 증거 연결 메모리 시스템을 제안한다. 에이전트는 새 작업 시 교훈의 세부 정보가 부족하거나 충돌이 발생하면 연결된 원본 궤적을 탐색해 교훈을 검증·수정한 후 행동한다. 5개의 에이전트 벤치마크에서 기존 메모리 방식을 일관되게 능가하며 성능 저하도 줄이는 것으로 검증되었다.",
+    "why_it_matters": "LLM 에이전트가 경험 기반 학습 시 발생하는 메모리 오류 문제를 근본적으로 줄여, 실제 운영 환경에서의 신뢰성을 높일 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.219507705176107,
+    "published_at": "2026-11-09T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.13001",
+    "section": "papers",
+    "title_en": "One Table, Many Queries: Benchmarking Generalist Tabular Models Across Generation, Imputation, and Prediction",
+    "title_ko": "하나의 테이블, 다양한 쿼리: 생성·보간·예측을 아우르는 범용 테이블형 모델 벤치마크",
+    "url": "https://huggingface.co/papers/2611.13001",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "이 연구는 테이블형 데이터의 생성(Generation), 결측치 보간(Imputation), 예측(Prediction)이라는 세 가지 작업을 통합 평가하는 One Table Benchmark(OTB)를 소개한다. 56개 데이터셋, 46개 등록 방법론, 20개 능력 축을 포함하며 동일한 데이터 분할 조건에서 비교한다. 실험 결과, 범용 모델 일부는 유틸리티 측면에서 전문화된 모델 포트폴리오를 능가하지만, 분포 충실도(fidelity)는 여전히 전문화 모델이 우세한 것으로 나타났다. 프리징된 파운데이션 모델은 예측과 수치형 보간에서 강점을 보이며 세 작업 모두에서 가능성을 시사한다.",
+    "why_it_matters": "테이블형 데이터의 세 핵심 작업을 통합 벤치마크로 비교함으로써, 범용 테이블 모델 개발의 방향성과 목표 함수 조합의 효과를 체계적으로 파악할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.713572066704308,
+    "published_at": "2026-11-07T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.13410",
+    "section": "papers",
+    "title_en": "SteerDistill: Quantizing LLM Agents via Closed-Loop Teacher Steering",
+    "title_ko": "SteerDistill: 폐쇄 루프 교사 스티어링을 통한 LLM 에이전트 양자화",
+    "url": "https://huggingface.co/papers/2611.13410",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "저비트 양자화는 LLM 에이전트의 추론 비용을 줄이지만 작업 성공률을 떨어뜨리는 문제가 있다. SteerDistill은 전정밀도(full-precision) 교사 모델이 학생 모델의 실패한 응답을 수정하고, 학생 실행 피드백을 통해 지도를 반복적으로 개선하는 양자화 인식 증류 방법이다. 5개의 에이전트 벤치마크와 3개의 모델에서 W4A16 기준 가장 강력한 양자화 베이스라인보다 평균 1.67~2.18점 높은 성능을 보이며, BF16 대비 1점 이내 차이를 유지한다. τ²-Bench에서는 QeRL보다 성공률이 1.84%p 높고 학습 GPU 시간을 67% 절감했다.",
+    "why_it_matters": "LLM 에이전트를 저비트 양자화해도 전정밀도에 근접한 성능을 유지할 수 있어, 추론 비용 절감과 성능 사이의 트레이드오프를 실질적으로 해소한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.49650756146648,
+    "published_at": "2026-11-09T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.12177",
+    "section": "papers",
+    "title_en": "Embodied First Exam",
+    "title_ko": "구현화 첫 번째 시험(Embodied First Exam): 코딩 에이전트의 로봇 제어 평가 프레임워크",
+    "url": "https://huggingface.co/papers/2611.12177",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "코딩 에이전트가 로봇을 제어할 수 있는지 평가하는 통합 벤치마크 'Embodied First Exam'이 공개됐다. 47종의 로봇, 35개 테스트 스위트, 1,156개 태스크로 구성되며, 공간 퍼즐·정교한 조작·다중 로봇 상호작용 등 기존 픽앤플레이스를 넘는 9개의 새로운 스위트를 포함한다. 에이전트는 직접 제어, 코드 제어, 정책 학습 중 원하는 방식을 선택할 수 있으며, 최강 에이전트인 GPT-6 Astra(Codex)도 표준 설정에서 성공률 34%에 그쳐 개선 여지가 크다.",
+    "why_it_matters": "코딩 에이전트의 현실 세계 로봇 제어 가능성을 체계적으로 측정하는 첫 통합 평가 기준으로, 에이전트 로보틱스 연구의 방향을 제시한다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 4.332204510175204,
+    "published_at": "2026-11-08T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.14815",
+    "section": "papers",
+    "title_en": "BirdDreams: Joint Perspective and BEV Video Generation for a Plausible, Reactive Driving World Model",
+    "title_ko": "BirdDreams: 조감도(BEV)와 퍼스펙티브 영상을 동시에 생성하는 자율주행 월드 모델",
+    "url": "https://huggingface.co/papers/2611.14815",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "BirdDreams는 자율주행 시뮬레이션을 위해 퍼스펙티브 비디오와 조감도(BEV) 비디오를 함께 자동회귀 방식으로 생성하는 월드 모델이다. BEV는 차량 위치와 움직임을 단순 도형으로 표현해 가림 현상을 줄이고, 퍼스펙티브 영상은 신호등·외관 같은 세부 정보를 보완한다. 두 스트림은 각각의 비디오 디퓨전 트랜스포머가 상호 어텐션으로 서로 정보를 교환하며, 추론 시 HD맵이나 차량 상태 입력 없이 단일 카메라 이미지만으로 동작한다. PhysicalAI-AV 및 nuScenes 벤치마크에서 기존 모델보다 자아 궤적 추종 정확도와 주변 차량 거동 현실성이 개선됨을 확인했다.",
+    "why_it_matters": "HD맵·차량 상태 없이 단일 이미지로 현실적 주행 시뮬레이션이 가능해 자율주행 데이터 증강 및 테스트 비용을 크게 낮출 수 있다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 3.9444389791664403,
+    "published_at": "2026-11-09T19:00:00Z"
+  },
+  {
+    "id": "openai_blog-amplitude",
+    "section": "releases",
+    "title_en": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+    "title_ko": "Amplitude, OpenAI로 1~2일 만에 제품 개선 출시",
+    "url": "https://openai.com/business/customer-stories/amplitude",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Amplitude는 OpenAI 모델 기반의 프로액티브 제품 에이전트 'Wave'를 구축했다. Wave는 무엇을 개발할지 파악하고, 코딩 에이전트를 통해 팀이 변경 사항을 배포하도록 지원하며, 그 영향을 측정한다. 이를 통해 Amplitude는 제품 개선을 1~2일 만에 출시할 수 있게 되었다.",
+    "why_it_matters": "AI 에이전트가 기획-개발-측정 전 주기를 자동화해 제품 출시 속도를 획기적으로 단축한 실제 사례로, 개발팀의 워크플로우 혁신 가능성을 보여준다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.8333349867724867,
+    "published_at": "2026-11-12T20:00:00Z"
+  },
+  {
+    "id": "google_blog-gemini-4-hydrogen-search-upgrade",
+    "section": "releases",
+    "title_en": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+    "title_ko": "구글 검색, Gemini 4 Hydrogen으로 대규모 업그레이드",
+    "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글이 최신 AI 모델인 Gemini 4 Hydrogen을 구글 검색에 통합한다고 발표했다. 구글 검색 UI 예시와 함께 해당 업그레이드가 공개되었다.",
+    "why_it_matters": "세계 최대 검색 엔진에 최신 Gemini 모델이 적용되어 검색 경험이 크게 변화할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8214302248677249,
+    "published_at": "2026-11-12T18:00:00Z"
+  },
+  {
+    "id": "openai_blog-gondola",
+    "section": "releases",
+    "title_en": "Gondola doubles revenue as its team builds more with Codex",
+    "title_ko": "Gondola, Codex 도입으로 매출 2배 달성",
+    "url": "https://openai.com/business/customer-stories/gondola",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "크리에이터의 취업과 수익 창출을 돕는 플랫폼 Gondola가 OpenAI의 Codex를 도입한 이후 매출이 두 배로 증가했다. Codex를 활용한 결과 수석 엔지니어의 생산성이 50% 향상되었으며, ChatGPT는 팀의 일상적인 업무 효율화에도 기여하고 있다.",
+    "why_it_matters": "Codex가 소규모 팀의 엔지니어링 생산성을 실질적으로 끌어올려 비즈니스 성장으로 이어진 실제 사례로, AI 코딩 도구의 ROI를 가늠할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7857159391534392,
+    "published_at": "2026-11-12T12:00:00Z"
+  },
+  {
+    "id": "openai_blog-holidays-extras-codex",
+    "section": "releases",
+    "title_en": "Holiday Extras is rethinking what it can build with Codex",
+    "title_ko": "Holiday Extras, Codex로 앱 개발 방식을 재정의하다",
+    "url": "https://openai.com/business/customer-stories/holidays-extras-codex",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "여행 부가서비스 기업 Holiday Extras는 OpenAI의 Codex를 도입해 고객 전문성을 앱 개발에 직접 활용하고 있다. 이를 통해 예약 전환율을 높이고 새로운 성장 가능성을 모색하고 있다. Codex가 개발 프로세스를 변화시켜 더 나은 앱 구축을 가능하게 했다는 것이 핵심이다.",
+    "why_it_matters": "Codex가 비개발 부서의 도메인 지식을 직접 소프트웨어 개발에 연결하는 실제 비즈니스 사례로 주목할 만하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7708349867724867,
+    "published_at": "2026-11-12T09:30:00Z"
+  },
+  {
+    "id": "github_trending-ZhuLinsen/daily_stock_analysis",
+    "section": "releases",
+    "title_en": "ZhuLinsen/daily_stock_analysis",
+    "title_ko": "LLM 기반 멀티마켓 주식 자동 분석 시스템 - daily_stock_analysis",
+    "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "LLM을 활용해 A주, 홍콩, 미국, 일본, 한국, 대만 주식을 매일 자동 분석하고 결정 대시보드를 생성하는 오픈소스 시스템입니다. 실시간 뉴스, 기술 지표, 기초체력 데이터를 종합해 매수·관망·매도 의견과 위험 경고를 제공합니다. GitHub Actions를 통해 서버 없이 무료로 스케줄 실행이 가능하며, 기업 위챗·슬랙·텔레그램·이메일 등 다양한 채널로 결과를 자동 푸시합니다.",
+    "why_it_matters": "LLM과 다중 데이터 소스를 결합해 개인 투자자도 무료로 멀티마켓 주식 분석을 자동화할 수 있는 실용적인 오픈소스 솔루션이다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.761453373015873,
+    "published_at": "2026-11-12T07:55:26Z"
+  },
+  {
+    "id": "github_trending-addyosmani/agent-skills",
+    "section": "releases",
+    "title_en": "addyosmani/agent-skills",
+    "title_ko": "AI 코딩 에이전트를 위한 프로덕션 급 엔지니어링 스킬 모음 'Agent Skills'",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Addy Osmani가 공개한 'Agent Skills'는 AI 코딩 에이전트가 소프트웨어 개발 전 주기(정의→계획→구현→검증→리뷰→배포)에 걸쳐 시니어 엔지니어 수준의 품질 기준을 일관되게 따르도록 하는 25개의 구조화된 워크플로우 모음이다. `/spec`, `/plan`, `/build`, `/test`, `/review`, `/ship` 등 9개의 슬래시 커맨드를 제공하며, Claude Code·Cursor·Codex·Copilot 등 70개 이상의 AI 에이전트에 `npx skills add` 한 줄로 설치할 수 있다. 각 스킬은 Google의 엔지니어링 문화(Hyrum's Law, Beyonce Rule, 트렁크 기반 개발 등)를 반영한 단계별 워크플로우, 검증 게이트, 안티-합리화 테이블로 구성되어 있다. MIT 라이선스로 오픈소스로 제공된다.",
+    "why_it_matters": "AI 에이전트가 스펙·테스트·보안 리뷰를 건너뛰는 '최단 경로' 문제를 프로덕션 급 엔지니어링 프로세스로 체계적으로 해결하는 실용적 프레임워크다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.761453373015873,
+    "published_at": "2026-11-12T07:55:26Z"
+  },
+  {
+    "id": "github_trending-vercel-labs/agent-browser",
+    "section": "releases",
+    "title_en": "vercel-labs/agent-browser",
+    "title_ko": "Vercel Labs의 AI 에이전트용 브라우저 자동화 CLI - agent-browser",
+    "url": "https://github.com/vercel-labs/agent-browser",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Vercel Labs가 AI 에이전트를 위한 브라우저 자동화 CLI 도구 `agent-browser`를 오픈소스로 공개했다. Rust로 작성된 이 CLI는 페이지를 접근성 트리(텍스트) 형태의 스냅샷으로 반환하고, 각 요소에 ref(`@e1` 등)를 부여해 에이전트가 명령 하나씩 브라우저를 제어할 수 있도록 한다. Chrome DevTools Protocol 기반의 백그라운드 데몬이 세션을 유지하며, MCP 서버 모드와 다양한 클라우드 브라우저 프로바이더도 지원한다. npm, Homebrew 등으로 설치할 수 있으며 Apache-2.0 라이선스로 배포된다.",
+    "why_it_matters": "AI 에이전트가 웹 브라우저를 셸 명령만으로 직접 제어할 수 있는 표준화된 CLI 인터페이스를 Vercel이 제시함으로써, 에이전트 기반 웹 자동화 개발의 진입장벽을 크게 낮출 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.761453373015873,
+    "published_at": "2026-11-12T07:55:26Z"
+  },
+  {
+    "id": "hn-50465829",
+    "section": "community",
+    "title_en": "Anthropic IPO",
+    "title_ko": "Anthropic IPO 추진",
+    "url": "https://ipo.anthropic.com/us/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Anthropic이 기업공개(IPO)를 추진한다는 소식이 전해졌다. 구체적인 일정이나 세부 내용은 공개된 정보가 없다.",
+    "why_it_matters": "주요 AI 기업의 IPO는 AI 산업 전반의 투자 및 시장 지형에 큰 영향을 미칠 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 11.122285619199378,
+    "published_at": "2026-11-12T11:46:41Z"
+  },
+  {
+    "id": "hn-50471431",
+    "section": "community",
+    "title_en": "Gemini 4 Hydrogen",
+    "title_ko": "Gemini 4 Hydrogen 공개",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Gemini 4 Hydrogen이 발표되었다. 상세한 설명은 제공되지 않았으나, Google의 Gemini 모델 라인업의 새로운 버전으로 보인다.",
+    "why_it_matters": "Google Gemini 시리즈의 신규 모델 출시 소식으로, LLM 경쟁 구도에 영향을 줄 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.080406623981379,
+    "published_at": "2026-11-12T18:01:48Z"
+  },
+  {
+    "id": "hn-50472260",
+    "section": "community",
+    "title_en": "Gemini 4 Hydrogen and Orchestrator",
+    "title_ko": "Gemini 4 Hydrogen 및 Orchestrator 공개",
+    "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Google이 Gemini 4 Hydrogen과 Orchestrator를 발표했다. 상세 내용은 별도 설명이 제공되지 않아 추가 정보는 공식 발표를 확인해야 한다.",
+    "why_it_matters": "Google Gemini 신규 모델 및 오케스트레이터 출시 소식으로, AI 에이전트·인프라 분야에 영향을 줄 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 9.132433614600867,
+    "published_at": "2026-11-12T18:52:01Z"
+  },
+  {
+    "id": "hn-50468888",
+    "section": "community",
+    "title_en": "I'm making LLMs work on small and old devices",
+    "title_ko": "소형·구형 기기에서 LLM 구동하기",
+    "url": "https://github.com/hyperionaidev/smolmaxxing/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "개발자가 소형 및 구형 디바이스에서 LLM을 동작시키는 프로젝트를 진행 중이다. 제목 외 구체적인 세부 정보는 제공되지 않았다.",
+    "why_it_matters": "엣지 디바이스와 레거시 하드웨어에서 LLM을 실행하는 시도는 AI 접근성 확대와 경량화 연구 측면에서 주목할 만하다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 9.055536726468432,
+    "published_at": "2026-11-12T15:23:10Z"
+  },
+  {
+    "id": "hn-50474883",
+    "section": "community",
+    "title_en": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+    "title_ko": "중국 프론티어 AI 모델, 수출 통제 GPU 사용 흔적 발견",
+    "url": "https://unemploymentlabs.com/checkpoint-forensics",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "중국의 최첨단 AI 모델들이 미국의 수출 통제 대상인 GPU로 훈련된 흔적을 담고 있다는 내용이다. 이는 중국이 제재에도 불구하고 고성능 GPU를 획득하거나 활용하고 있을 가능성을 시사한다.",
+    "why_it_matters": "AI 패권 경쟁에서 수출 통제 실효성에 의문을 제기하는 중요한 사안으로, 반도체 규제 정책 전반에 영향을 미칠 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 8.46327268331547,
+    "published_at": "2026-11-12T21:56:11Z"
+  },
+  {
+    "id": "latent_space-artcraft",
+    "section": "deepdive",
+    "title_en": "AI Ambition: ArtCraft Cloned Photoshop and Now Wants to \"Rebuild Everything\"",
+    "title_ko": "AI로 포토샵을 클론한 ArtCraft, 이제 '모든 것을 재건'하겠다",
+    "url": "https://latent.space/p/artcraft/",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "ArtCraft는 AI를 활용해 포토샵을 오픈소스 소프트웨어로 재작성하는 데 성공했다. CEO 브랜든 토마스는 이에 그치지 않고 인터넷 전체를 되찾겠다는 더 큰 비전을 품고 있다. AI를 통해 기존 독점 소프트웨어를 오픈소스로 대체하려는 시도가 본격화되고 있다.",
+    "why_it_matters": "AI를 이용해 상용 소프트웨어를 오픈소스로 대체하는 사례가 가능해지면서, 소프트웨어 산업의 판도가 근본적으로 바뀔 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8826818783068783,
+    "published_at": "2026-11-13T04:17:25Z"
+  }
+]
