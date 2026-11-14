@@ -1,0 +1,317 @@
+[
+  {
+    "id": "hf-2611.15777",
+    "section": "papers",
+    "title_en": "SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models",
+    "title_ko": "SO-Arena: 시스템 원(System One) 모델의 능력 스펙트럼과 신뢰성 벤치마크",
+    "url": "https://huggingface.co/papers/2611.15777",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SO-Arena는 빠른 범용 의사결정을 목표로 하는 System One 모델을 11개 도메인, 5개 능력군에 걸쳐 평가하는 새로운 벤치마크다. 단순 정확도 외에도 옵션 세트 변경 시 결정 안정성과 유효한 답이 없을 때의 인식 능력을 통해 의사결정 신뢰성을 측정한다. 21개 모델 평가 결과, 전체 성능이 높은 모델이 반드시 신뢰도가 높지 않았으며, 최고 성능 모델이 신뢰성 순위에서는 7위에 그쳤다. 이는 능력 스펙트럼과 신뢰성이 상호 보완적인 평가 차원임을 보여준다.",
+    "why_it_matters": "LLM 성능 순위만으로 실제 신뢰성을 판단할 수 없다는 점을 실증적으로 보여주며, 모델 선택 기준에 신뢰성 지표 추가의 필요성을 제기한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.418840607796598,
+    "published_at": "2026-11-10T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.14815",
+    "section": "papers",
+    "title_en": "BirdDreams: Joint Perspective and BEV Video Generation for a Plausible, Reactive Driving World Model",
+    "title_ko": "BirdDreams: 조감도(BEV) 영상 공동 생성을 통한 자율주행 월드 모델",
+    "url": "https://huggingface.co/papers/2611.14815",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "BirdDreams는 1인칭 퍼스펙티브 영상과 조감도(BEV) 영상을 동시에 생성하는 자율주행 월드 모델입니다. BEV는 도로와 차량을 단순한 형태로 표현해 차량 위치·움직임을 명확히 파악하게 하고, 두 스트림 간 상호 어텐션을 통해 서로 정보를 보완합니다. HD 맵이나 차량 상태 입력 없이 단일 카메라 이미지만으로 추론하며, PhysicalAI-AV 및 nuScenes 벤치마크에서 기존 모델 대비 자아 궤적 추종 정확도와 주변 차량 거동 현실성이 향상되었음을 확인했습니다.",
+    "why_it_matters": "HD 맵·미래 궤적 레이블 없이도 현실적인 자율주행 시뮬레이션이 가능해져 데이터 효율적인 월드 모델 개발에 새로운 방향을 제시합니다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 4.850147601710058,
+    "published_at": "2026-11-09T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.16748",
+    "section": "papers",
+    "title_en": "PhysLoop: Harnessing LLMs' Physics Awareness for Self-Improving Video Generation Models",
+    "title_ko": "PhysLoop: LLM의 물리 지식을 활용한 비디오 생성 모델 자가 개선 프레임워크",
+    "url": "https://huggingface.co/papers/2611.16748",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "PhysLoop는 LLM이 보유한 물리 지식을 비디오 생성 모델의 자가 개선에 활용하는 통합 프레임워크다. 비디오 생성·선택·수정 전 과정에서 LLM을 가이드하여 물리적으로 일관된 학습 데이터를 구성하고, 추론 시점에 비디오 오류를 탐지·수정하는 기능도 지원한다. 연구팀은 다양한 실내외 장면을 담은 10만 개의 비디오와 PhysLoop-Gen·PhysLoop-Repair 두 개의 평가 데이터셋, 그리고 생성 도구를 함께 공개했다.",
+    "why_it_matters": "LLM의 물리 추론 능력을 비디오 생성 모델의 재귀적 자가 개선(RSI)에 연결하는 구체적 방법론을 제시해, 물리적으로 올바른 영상 생성 연구에 새로운 방향을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.761200115693562,
+    "published_at": "2026-11-11T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.15131",
+    "section": "papers",
+    "title_en": "Duo: A Reciprocal World Model for Full-Duplex Interaction",
+    "title_ko": "Duo v1: 풀 듀플렉스 실시간 상호작용을 위한 상호적 세계 모델",
+    "url": "https://huggingface.co/papers/2611.15131",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Hugging Face에서 소개된 Duo v1은 '상호적 세계 모델(RWM)' 기반의 풀 듀플렉스 AI로, 오디오·비디오·텍스트를 실시간으로 동시에 인식하고 응답합니다. RWM은 지능(Intent)과 물리적 현실(Realization)을 세계의 동등한 구성 요소로 보며, 오토회귀 모델링으로 연속적 상호작용 추론을 수행합니다. 사용자는 마우스나 키보드 없이 실물 객체 공유, 가상 장면 조작, 대화 중 자유로운 끼어들기 등 다양한 멀티모달 상호작용이 가능합니다.",
+    "why_it_matters": "LLM 외부에 별도 제어 모듈을 두지 않고 인지와 행동 생성을 하나의 세계 모델 안에 통합한 새로운 풀 듀플렉스 아키텍처로, 실시간 멀티모달 AI 인터랙션의 패러다임을 바꿀 수 있습니다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.637586159726386,
+    "published_at": "2026-11-10T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.13410",
+    "section": "papers",
+    "title_en": "SteerDistill: Quantizing LLM Agents via Closed-Loop Teacher Steering",
+    "title_ko": "SteerDistill: 클로즈드 루프 교사 스티어링을 통한 LLM 에이전트 양자화",
+    "url": "https://huggingface.co/papers/2611.13410",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SteerDistill은 LLM 에이전트의 저비트 양자화 시 발생하는 성능 저하 문제를 해결하는 양자화 인식 증류 방법이다. 전정밀도(full-precision) 교사 모델이 학생 모델의 실패한 응답을 수정하고, 학생 실행 피드백을 통해 반복적으로 가이던스를 개선하는 클로즈드 루프 방식을 사용한다. 5개의 에이전트 벤치마크와 3개의 모델에서 W4A16 기준 최강 양자화 베이스라인 대비 평균 1.67~2.18점 초과 성능을 달성했으며, τ²-Bench에서는 QeRL 대비 GPU 학습 시간을 67% 절감하면서 성공률을 1.84%p 개선했다.",
+    "why_it_matters": "LLM 에이전트를 BF16 수준의 성능을 유지하면서 저비트 양자화할 수 있다면, 추론 비용을 대폭 줄이면서도 실제 에이전트 태스크에 활용 가능한 실용적인 경량화 경로가 열린다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.58351893845611,
+    "published_at": "2026-11-09T19:00:00Z"
+  },
+  {
+    "id": "openai_blog-introducing-chatgpt-wallet",
+    "section": "releases",
+    "title_en": "Introducing ChatGPT Wallet",
+    "title_ko": "ChatGPT 월렛 출시",
+    "url": "https://openai.com/index/introducing-chatgpt-wallet",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 ChatGPT 월렛을 공개했다. 이는 ChatGPT Work, Codex, dots 등의 에이전트가 사용자 승인 하에 구매를 완료할 수 있도록 지원하는 안전한 결제 수단이다. 기존 카드 보호 기능도 그대로 적용된다.",
+    "why_it_matters": "AI 에이전트가 실제 금융 거래를 직접 수행할 수 있게 되어, 에이전트의 실용적 자율성이 한 단계 높아진다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.803573082010582,
+    "published_at": "2026-11-13T15:00:00Z"
+  },
+  {
+    "id": "openai_blog-shield",
+    "section": "releases",
+    "title_en": "Shield helps technicians hand off legacy portal work with OpenAI",
+    "title_ko": "Shield, OpenAI로 레거시 포털 업무를 자동화해 IT 기술자 지원",
+    "url": "https://openai.com/business/customer-stories/shield",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Shield는 OpenAI를 활용해 IT 기술자들이 레거시 포털에서 반복적인 업무를 자동화할 수 있도록 돕는다. Forge 에이전트가 레거시 시스템을 직접 탐색·처리함으로써 기술자들은 판단이 필요한 핵심 업무에 집중할 수 있다.",
+    "why_it_matters": "레거시 시스템 운영 부담을 AI 에이전트로 줄여 IT 인력의 생산성을 높일 수 있는 실제 적용 사례다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7619064153439153,
+    "published_at": "2026-11-13T08:00:00Z"
+  },
+  {
+    "id": "github_trending-openai/codex-security",
+    "section": "releases",
+    "title_en": "openai/codex-security",
+    "title_ko": "OpenAI Codex Security: 코드 보안 취약점 탐지·수정 CLI 및 TypeScript SDK",
+    "url": "https://github.com/openai/codex-security",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "OpenAI가 코드 저장소의 보안 취약점을 찾고, 검증하고, 수정하는 `@openai/codex-security` CLI 및 TypeScript SDK를 공개했다. 저장소 전체 또는 특정 경로·Git 변경분을 스캔하고, 패치 생성·SARIF 내보내기·GitHub Actions 연동 등 다양한 자동화 기능을 지원한다. Linear, Jira, GitHub 이슈 트래킹과 연동되며, Amazon Bedrock·OpenRouter 등 여러 AI 공급자도 지원한다.",
+    "why_it_matters": "OpenAI가 직접 제공하는 보안 스캔 도구로, CI/CD 파이프라인에 AI 기반 취약점 탐지를 손쉽게 통합할 수 있어 개발 보안 워크플로우를 크게 자동화할 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7590972222222222,
+    "published_at": "2026-11-13T07:31:41Z"
+  },
+  {
+    "id": "github_trending-QwenLM/qwen-code",
+    "section": "releases",
+    "title_en": "QwenLM/qwen-code",
+    "title_ko": "QwenLM/Qwen Code: 터미널용 오픈소스 AI 코딩 에이전트",
+    "url": "https://github.com/QwenLM/qwen-code",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Qwen Code는 터미널, IDE, 데스크탑, 웹, 채팅앱(텔레그램·위챗 등) 등 다양한 환경에서 동작하는 오픈소스 AI 코딩 에이전트다. OpenAI, Anthropic, Gemini, Qwen API 등 멀티 프로토콜을 지원하며 로컬 모델(Ollama/vLLM)도 사용 가능하다. SWE-bench Verified 기준 76~77%대 점수를 기록했으며, Claude Code 대비 오픈소스·멀티 프로토콜·데몬 모드·IM 채널 연동 등 추가 기능을 제공한다. Google Gemini CLI를 기반으로 시작했으나 v0.1부터 독립적으로 개발 중이다.",
+    "why_it_matters": "Claude Code의 기능 대부분을 갖추면서 완전 오픈소스·멀티 프로바이더를 지원해 벤더 락인 없이 쓸 수 있는 실용적 대안이다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7590972222222222,
+    "published_at": "2026-11-13T07:31:41Z"
+  },
+  {
+    "id": "github_trending-addyosmani/agent-skills",
+    "section": "releases",
+    "title_en": "addyosmani/agent-skills",
+    "title_ko": "AI 코딩 에이전트를 위한 프로덕션급 엔지니어링 스킬 모음 - agent-skills",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Addy Osmani가 만든 `agent-skills`는 AI 코딩 에이전트가 시니어 엔지니어처럼 작업할 수 있도록 25개의 구조화된 워크플로우 스킬을 제공하는 오픈소스 프로젝트다. /spec, /plan, /build, /test, /review, /ship 등 9개의 슬래시 커맨드로 개발 라이프사이클 전 단계를 커버하며, 스펙 작성부터 프로덕션 배포까지 각 단계에 품질 게이트와 검증 절차를 강제한다. Claude Code, Cursor, Codex, GitHub Copilot 등 70개 이상의 AI 개발 도구에 `npx skills add` 한 줄로 설치할 수 있으며, Google 엔지니어링 문화(SWE at Google)에서 검증된 베스트 프랙티스를 담고 있다.",
+    "why_it_matters": "AI 에이전트가 테스트·보안 리뷰·스펙 작성을 건너뛰는 고질적 문제를 구조화된 강제 워크플로우로 해결해, 프로토타입 수준에 그치던 AI 생성 코드를 프로덕션 품질로 끌어올릴 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7590972222222222,
+    "published_at": "2026-11-13T07:31:41Z"
+  },
+  {
+    "id": "github_trending-Alishahryar1/free-claude-code",
+    "section": "releases",
+    "title_en": "Alishahryar1/free-claude-code",
+    "title_ko": "Free Claude Code: 무료 토큰으로 Claude Code 등 12개 코딩 에이전트 사용하기",
+    "url": "https://github.com/Alishahryar1/free-claude-code",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "터미널, IDE, 앱, 브라우저에서 Claude Code·Codex·Aider 등 12개 코딩 에이전트를 61개 프로바이더의 무료 토큰(월 13억 토큰 이상)으로 사용할 수 있는 오픈소스 프록시 도구다. NVIDIA NIM, OpenRouter, Groq, GitHub Copilot 등 다양한 프로바이더를 지원하며, 자동 재시도·폴백·속도 제한 등 안정성 기능도 갖추고 있다. Discord·Telegram 봇 연동과 Whisper 기반 음성 입력도 지원한다.",
+    "why_it_matters": "유료 API 없이도 Claude Code 등 주요 코딩 에이전트를 무료로 활용할 수 있어, 개인 개발자의 AI 코딩 도구 접근 비용을 크게 낮출 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7590972222222222,
+    "published_at": "2026-11-13T07:31:41Z"
+  },
+  {
+    "id": "github_trending-ggml-org/llama.cpp",
+    "section": "releases",
+    "title_en": "ggml-org/llama.cpp",
+    "title_ko": "llama.cpp - C/C++ 기반 LLM 추론 엔진",
+    "url": "https://github.com/ggml-org/llama.cpp",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "llama.cpp는 C/C++로 작성된 경량 LLM 추론 라이브러리로, 최소한의 설정으로 로컬 및 클라우드 환경에서 고성능 추론을 지원한다. NVIDIA CUDA, AMD HIP, Apple Metal, Vulkan 등 다양한 백엔드를 지원하며, 1.5비트~8비트 양자화를 통해 메모리 사용량을 줄일 수 있다. OpenAI 호환 API 서버 기능과 내장 웹 UI도 제공하며, Hugging Face에서 직접 모델을 다운로드해 실행할 수 있다.",
+    "why_it_matters": "외부 의존성 없이 다양한 하드웨어에서 LLM을 로컬 실행할 수 있는 사실상의 표준 오픈소스 추론 엔진으로, 엣지·온프레미스 AI 배포의 핵심 도구다.",
+    "tags": [
+      "LLM",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.7590972222222222,
+    "published_at": "2026-11-13T07:31:41Z"
+  },
+  {
+    "id": "hn-50474959",
+    "section": "community",
+    "title_en": "Reverse engineering my Coway air purifier to ditch the cloud",
+    "title_ko": "Coway 공기청정기 클라우드 의존성 제거를 위한 리버스 엔지니어링",
+    "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Coway 공기청정기의 클라우드 의존 기능을 제거하기 위해 리버스 엔지니어링을 시도한 프로젝트다. 클라우드 없이 로컬에서 직접 기기를 제어하는 방식을 탐구한 내용으로 보인다.",
+    "why_it_matters": "IoT 기기의 클라우드 의존성을 제거하고 로컬 제어로 전환하는 실용적인 사례로, 프라이버시와 기기 수명 연장에 관심 있는 개발자에게 참고가 된다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 10.225732426725349,
+    "published_at": "2026-11-12T22:03:09Z"
+  },
+  {
+    "id": "hn-50484658",
+    "section": "community",
+    "title_en": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
+    "title_ko": "조나단 블로우 – AI가 코딩을 해결했다면, 왜 내 소프트웨어는 그대로인가?",
+    "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "게임 개발자 조나단 블로우가 AI가 코딩 문제를 해결했다는 주장에 의문을 제기하는 영상이다. AI 코딩 도구의 과대 선전에도 불구하고 실제 소프트웨어 품질이나 생산성이 체감될 만큼 달라지지 않았다는 시각을 담고 있다. 구체적인 내용은 영상을 통해 확인해야 한다.",
+    "why_it_matters": "AI 코딩 도구의 실질적 효과에 대한 비판적 시각을 제시해, 과대 선전과 현실 사이의 간극을 짚는다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.684589111011263,
+    "published_at": "2026-11-13T15:08:44Z"
+  },
+  {
+    "id": "hn-50490593",
+    "section": "community",
+    "title_en": "Live airband on all frequencies from KORS. Victoria, CA also ground stopped",
+    "title_ko": "KORS 공항 전 주파수 실시간 항공 무선 및 빅토리아 지상 대기 중단",
+    "url": "https://orcasairband.com/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "KORS 공항의 모든 주파수에서 항공 무선 통신이 실시간으로 송출되고 있으며, 캐나다 빅토리아 공항도 지상 대기(Ground Stop) 상태에 들어갔다는 소식이다. 추가적인 상세 내용은 제공되지 않았다.",
+    "why_it_matters": "항공 운항에 직접적인 영향을 미치는 실시간 상황으로, 관련 여행자나 항공 종사자에게 즉각적인 정보가 필요할 수 있다.",
+    "tags": [],
+    "score": 8.480130144547747,
+    "published_at": "2026-11-13T22:04:24Z"
+  },
+  {
+    "id": "hn-50487185",
+    "section": "community",
+    "title_en": "After 600 experiments, here's what I discovered about JEPA world models",
+    "title_ko": "600번의 실험으로 발견한 JEPA 월드 모델의 진실",
+    "url": "https://haddyalchaer.com/jepa",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "600번의 실험을 통해 JEPA(Joint-Embedding Predictive Architecture) 월드 모델에 대한 심층적인 연구 결과를 공유한 글이다. 제목만으로는 구체적인 내용을 확인할 수 없으나, 대규모 실험을 통한 실증적 인사이트를 담고 있는 것으로 보인다.",
+    "why_it_matters": "대규모 반복 실험을 통한 JEPA 월드 모델의 실용적 한계와 가능성을 탐구한 드문 실증 연구다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.261210790384986,
+    "published_at": "2026-11-13T17:55:28Z"
+  },
+  {
+    "id": "hn-50489652",
+    "section": "community",
+    "title_en": "All US airports are currently ground stopped",
+    "title_ko": "미국 전 공항 지상 대기 명령 발령",
+    "url": "https://twitter.com/flightradar24/status/2121347654714077605",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "미국의 모든 공항에 현재 지상 대기(Ground Stop) 명령이 내려졌다. 자세한 원인이나 경위는 제공된 정보만으로는 확인할 수 없다.",
+    "why_it_matters": "AI·기술 뉴스와 직접적인 관련성이 낮으며, 추가 정보 없이 구체적 내용을 파악하기 어렵다.",
+    "tags": [],
+    "score": 7.978116019917067,
+    "published_at": "2026-11-13T21:06:52Z"
+  },
+  {
+    "id": "simon_willison-datasette-cluster-map",
+    "section": "deepdive",
+    "title_en": "datasette-cluster-map 0.19",
+    "title_ko": "datasette-cluster-map 0.19 릴리스",
+    "url": "https://simonwillison.net/2026/Nov/13/datasette-cluster-map/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Datasette의 오래된 플러그인 중 하나인 datasette-cluster-map이 0.19 버전으로 업데이트됐다. Datasette 1.0a42와 호환되며, OpenStreetMap 타일 요청 시 referrer 헤더를 올바르게 전송하기 위해 새로운 datasette-leaflet 플러그인에 의존한다. 지도 위에 클러스터 마커로 데이터를 시각화하며, Datasette의 개편된 패싯(facets) UI와 함께 사용할 수 있다.",
+    "why_it_matters": "지리 데이터를 Datasette에서 시각적으로 탐색하려는 개발자에게 최신 Datasette 버전 호환성이 확보된 점이 실용적으로 중요하다.",
+    "tags": [
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 0.8514649470899471,
+    "published_at": "2026-11-13T23:02:45Z"
+  }
+]
