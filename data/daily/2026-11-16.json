@@ -1,0 +1,311 @@
+[
+  {
+    "id": "hf-2611.15777",
+    "section": "papers",
+    "title_en": "SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models",
+    "title_ko": "SO-Arena: 시스템 원 모델의 능력 스펙트럼과 의사결정 신뢰성 벤치마크",
+    "url": "https://huggingface.co/papers/2611.15777",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SO-Arena는 빠른 범용 의사결정을 목표로 하는 '시스템 원' 모델을 11개 도메인, 5개 능력 군에 걸쳐 평가하는 새로운 벤치마크다. 단순 정확도를 넘어 옵션 세트 변화에 따른 결정 안정성과 유효한 답이 없을 때의 인식 능력 등 의사결정 신뢰성을 함께 측정한다. 21개 모델 평가 결과, 전반적 성능이 높다고 해서 신뢰성이 높은 것은 아니며, 최고 성능 모델이 신뢰성 순위에서는 7위에 그치는 것으로 나타났다.",
+    "why_it_matters": "LLM 성능 순위만으로는 실제 운용 신뢰성을 판단할 수 없음을 정량적으로 입증한 벤치마크로, 모델 선택 기준에 새로운 차원을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.9344739331306915,
+    "published_at": "2026-11-10T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.16748",
+    "section": "papers",
+    "title_en": "PhysLoop: Harnessing LLMs' Physics Awareness for Self-Improving Video Generation Models",
+    "title_ko": "PhysLoop: LLM의 물리 지식을 활용한 비디오 생성 모델 자기 개선 프레임워크",
+    "url": "https://huggingface.co/papers/2611.16748",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "비디오 생성 모델은 시각적 사실성은 높지만 물리적 역학과 인과 일관성에서 여전히 부족함을 보인다. PhysLoop는 LLM의 물리 지식을 활용해 비디오 생성·선택·교정 과정을 안내하고, 물리적으로 일관된 학습 데이터를 자동으로 구성하는 통합 프레임워크다. 10만 개의 실내외 영상 데이터셋과 PhysLoop-Gen, PhysLoop-Repair 두 가지 평가 데이터셋을 공개하며, Physics-IQ Verified 벤치마크로 물리 행동을 평가한다.",
+    "why_it_matters": "LLM의 물리 지식을 비디오 생성 모델의 재귀적 자기 개선(RSI)에 연결하는 첫 통합 프레임워크로, 인간 개입 없이 물리적으로 올바른 영상 생성을 가능케 하는 방향을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.850147601710058,
+    "published_at": "2026-11-11T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.15131",
+    "section": "papers",
+    "title_en": "Duo: A Reciprocal World Model for Full-Duplex Interaction",
+    "title_ko": "Duo v1: 풀 듀플렉스 실시간 상호작용을 위한 상호적 세계 모델",
+    "url": "https://huggingface.co/papers/2611.15131",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Hugging Face에서 공개된 Duo v1은 '상호적 세계 모델(RWM)' 개념을 기반으로 한 풀 듀플렉스 AI 시스템이다. 오디오·비디오·텍스트를 실시간으로 동시에 인식하고 응답하며, 자발적 대화 시작과 사용자 인터럽트를 지원한다. 핵심 설계로는 자기회귀 모델 기반의 연속 추론, Intent와 Realization 모듈 간 동기화 토큰, 그리고 분포 이동 완화를 위한 듀얼 롤아웃 증류가 포함된다. 대화를 넘어 실제 사물 공유, 가상 장면 편집, 마우스·키보드 없는 게임 등 다양한 멀티모달 인터랙션을 지원한다.",
+    "why_it_matters": "LLM 기반 추론을 세계 시뮬레이션에 내재화한 풀 듀플렉스 멀티모달 모델로, 실시간 인간-AI 상호작용의 새로운 패러다임을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.7841896339182615,
+    "published_at": "2026-11-10T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.15844",
+    "section": "papers",
+    "title_en": "Open Vision Banana: A Fully Open Recipe for Generative Visual Perception",
+    "title_ko": "Open Vision Banana: 생성형 비전 모델을 멀티태스크 인식 시스템으로 변환하는 완전 공개 레시피",
+    "url": "https://huggingface.co/papers/2611.15844",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "사전 학습된 이미지 생성 모델을 조건부 이미지 편집 방식으로 활용해 다양한 비전 태스크를 수행하는 Open Vision Banana(OVB)를 공개했습니다. 4B·9B 파라미터 오픈 모델과 공개 데이터셋 210만~380만 쌍을 사용해 Cityscapes 제로샷 성능(73.9 mIoU)에서 원본 Vision Banana(69.9)를 능가했습니다. 테스트 타임 스케일링 기법인 '레전드 앙상블'을 도입해 재학습 없이 Cityscapes에서 최대 8.7포인트, COCO-Object에서 15.0포인트 mIoU를 향상시켰습니다. 데이터 파이프라인, 학습·평가 코드, 모델 체크포인트 등 전체 구현을 완전 공개합니다.",
+    "why_it_matters": "비공개로 남아 있던 Vision Banana의 완전 재현 가능한 오픈소스 대안을 제시해, 생성 모델 기반 통합 비전 인식 연구의 접근성을 크게 높입니다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 4.637586159726386,
+    "published_at": "2026-11-10T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.17167",
+    "section": "papers",
+    "title_en": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
+    "title_ko": "액터, 판사, 교사? 장기 에이전트에서 의사결정 모델의 역할 이해",
+    "url": "https://huggingface.co/papers/2611.17167",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "의사결정 모델은 에이전트의 행동 선택(액터), 행동 평가(판사), 강화학습 정책 학습(교사)의 세 가지 역할을 수행할 수 있다. 연구진은 액터로서 성능이 낮은 모델도 교사로서는 효과적일 수 있는지를 ALFWorld와 WebShop 환경에서 실험했다. JEV를 교사로 활용했을 때 Qwen2.5-1.5B 정책의 ALFWorld 성공률이 72.8%에서 82.9%로, WebShop은 56.8%에서 71.4%로 향상됐다. 에피소드 종료 후 행동을 평가하면 액터가 사전에 예측해야 할 결과를 더 잘 드러내기 때문에 성능이 낮은 액터도 좋은 교사가 될 수 있다는 점을 시사한다.",
+    "why_it_matters": "액터 성능이 낮은 LLM도 강화학습 교사로 효과적으로 활용할 수 있다는 발견은 에이전트 학습 파이프라인 설계에 새로운 가능성을 열어준다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.58351893845611,
+    "published_at": "2026-11-11T19:00:00Z"
+  },
+  {
+    "id": "openai_blog-step-toward-defining-the-standard-model",
+    "section": "releases",
+    "title_en": "A step toward defining the Standard Model on a lattice",
+    "title_ko": "격자 위에서 표준 모형을 정의하는 한 걸음",
+    "url": "https://openai.com/index/step-toward-defining-the-standard-model",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 표준 모형(Standard Model)의 비섭동적 격자 정의 후보를 탐구하는 연구를 발표했다. GPT-6 Astra가 이 아이디어를 상세한 증명으로 발전시키는 데 기여했다. 이는 AI가 고난도 이론물리학 연구에 실질적으로 활용된 사례다.",
+    "why_it_matters": "LLM이 최첨단 이론물리학 증명 작업에 직접 기여할 수 있음을 보여주는 중요한 선례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8452414021164021,
+    "published_at": "2026-11-15T22:00:01Z"
+  },
+  {
+    "id": "openai_blog-our-new-blog-for-science",
+    "section": "releases",
+    "title_en": "Our new blog for science",
+    "title_ko": "OpenAI, 과학 연구를 위한 새 블로그 개설",
+    "url": "https://openai.com/index/our-new-blog-for-science",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 과학 분야에 특화된 새 블로그를 공개했다. 이 블로그는 AI를 활용한 과학적 발견을 위한 새로운 연구 결과, 실용적인 방법론, 그리고 연구자들의 현장 경험을 공유하는 공간이다.",
+    "why_it_matters": "OpenAI가 AI와 과학 연구의 접목을 공식 채널로 확대하며 연구 커뮤니티와의 소통을 강화한다는 신호다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8452397486772487,
+    "published_at": "2026-11-15T22:00:00Z"
+  },
+  {
+    "id": "github_trending-tradermonty/claude-trading-skills",
+    "section": "releases",
+    "title_en": "tradermonty/claude-trading-skills",
+    "title_ko": "Claude AI를 활용한 주식 트레이딩 워크플로우 툴킷 오픈소스 공개",
+    "url": "https://github.com/tradermonty/claude-trading-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "개인 투자자와 트레이더를 위한 Claude 기반 트레이딩 스킬 모음 프로젝트다. 시장 분석, 기술적 차트, 경제 캘린더, 스크리너, 트레이딩 전략 개발 등 다양한 영역을 커버하며, AI에게 매수·매도 결정을 위임하는 것이 아니라 시장 리뷰, 리스크 관리, 트레이드 계획, 저널링 등 의사결정 프로세스를 구조화하는 것이 목적이다. VCP 스크리너, CANSLIM, 배당 모니터링, 백테스트 등 40개 이상의 스킬이 포함되어 있으며, 일부 기능은 유료 API 없이도 사용 가능하다. MIT 라이선스 하에 오픈소스로 공개되었다.",
+    "why_it_matters": "Claude의 Skills 기능을 실전 트레이딩 워크플로우에 체계적으로 적용한 오픈소스 레퍼런스로, AI 에이전트를 금융 도메인에 활용하려는 개발자에게 실질적인 구현 사례를 제공한다.",
+    "tags": [
+      "에이전트",
+      "오픈소스",
+      "LLM"
+    ],
+    "score": 0.7582275132275133,
+    "published_at": "2026-11-15T07:22:55Z"
+  },
+  {
+    "id": "github_trending-QwenLM/qwen-code",
+    "section": "releases",
+    "title_en": "QwenLM/qwen-code",
+    "title_ko": "QwenLM/qwen-code: 터미널에서 동작하는 오픈소스 AI 코딩 에이전트",
+    "url": "https://github.com/QwenLM/qwen-code",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Qwen Code는 터미널, IDE, 데스크톱, 웹, 채팅(카카오톡 계열 포함) 등 다양한 환경에서 동작하는 오픈소스 AI 코딩 에이전트입니다. OpenAI, Anthropic, Gemini, Qwen API 및 Ollama/vLLM 등 로컬 모델까지 지원하며 런타임에 전환이 가능합니다. 멀티 에이전트 오케스트레이션, 자동 메모리, MCP 연동, 샌드박스 등 풍부한 에이전트 기능을 기본 탑재하고 있으며, SWE-bench Verified에서 76.40%~77.80% 수준의 성능을 기록했습니다.",
+    "why_it_matters": "Google Gemini CLI를 기반으로 독자 개발된 완전 오픈소스 코딩 에이전트로, 벤더 종속 없이 다양한 LLM과 플랫폼을 지원해 실용적 대안이 될 수 있습니다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7582275132275133,
+    "published_at": "2026-11-15T07:22:55Z"
+  },
+  {
+    "id": "github_trending-martin-olivier/airgorah",
+    "section": "releases",
+    "title_en": "martin-olivier/airgorah",
+    "title_ko": "Airgorah: Rust로 작성된 WiFi 보안 감사 소프트웨어",
+    "url": "https://github.com/martin-olivier/airgorah",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Airgorah는 주변 WiFi 트래픽 캡처, 연결된 클라이언트 탐색, 비인증 공격 수행, 핸드셰이크 및 PMKID 캡처, 액세스 포인트 비밀번호 크래킹 기능을 갖춘 WiFi 보안 감사 도구다. Rust로 작성되었으며 GTK4 기반 GUI를 제공하고 Linux에서만 동작한다. 모니터 모드와 패킷 인젝션을 지원하는 무선 네트워크 카드가 필요하며, MIT 라이선스로 오픈소스로 공개되어 있다.",
+    "why_it_matters": "Rust 기반의 GUI를 갖춘 WiFi 보안 감사 도구로, 네트워크 취약점 테스트를 쉽게 수행할 수 있어 보안 연구자와 네트워크 관리자에게 유용하다.",
+    "tags": [
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.7582275132275133,
+    "published_at": "2026-11-15T07:22:55Z"
+  },
+  {
+    "id": "openai_blog-introducing-chatgpt-wallet",
+    "section": "releases",
+    "title_en": "Introducing ChatGPT Wallet",
+    "title_ko": "ChatGPT 월렛 출시",
+    "url": "https://openai.com/index/introducing-chatgpt-wallet",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 ChatGPT 월렛을 공개했다. 이는 ChatGPT Work, Codex, dots 등의 에이전트가 사용자 승인과 기존 카드 보호 기능을 활용해 안전하게 구매를 완료할 수 있도록 지원하는 기능이다.",
+    "why_it_matters": "AI 에이전트가 직접 결제까지 처리하는 시대가 열리며, 에이전트의 실용적 자율성이 한 단계 확장된다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.5178587962962964,
+    "published_at": "2026-11-13T15:00:00Z"
+  },
+  {
+    "id": "openai_blog-shield",
+    "section": "releases",
+    "title_en": "Shield helps technicians hand off legacy portal work with OpenAI",
+    "title_ko": "Shield, OpenAI로 레거시 포털 업무 인수인계 지원",
+    "url": "https://openai.com/business/customer-stories/shield",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Shield는 OpenAI를 활용해 IT 기술자들이 레거시 포털에서의 업무를 더 효율적으로 인수인계할 수 있도록 돕는다. Forge 에이전트가 레거시 시스템을 직접 탐색하고 처리함으로써, 기술자들은 자신의 판단이 필요한 핵심 업무에 집중할 수 있다.",
+    "why_it_matters": "AI 에이전트가 레거시 IT 시스템의 반복적 운영 부담을 대체함으로써 현장 기술 인력의 생산성을 실질적으로 높일 수 있음을 보여준다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.47619212962962965,
+    "published_at": "2026-11-13T08:00:00Z"
+  },
+  {
+    "id": "hn-50463399",
+    "section": "community",
+    "title_en": "Claude Code and Codex reverse engineered my 1994 Jeep's ECU over a $3 Arduino [video]",
+    "title_ko": "Claude Code와 Codex로 1994년 지프 ECU를 3달러짜리 아두이노로 역공학 분석 [영상]",
+    "url": "https://www.youtube.com/watch?v=WPj3aQ-xxpI",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "개발자가 Claude Code와 OpenAI Codex를 활용해 1994년식 지프 차량의 ECU(엔진 제어 장치)를 단 3달러짜리 아두이노로 역공학 분석하는 과정을 담은 영상이다. 설명이 제공되지 않아 세부 내용은 확인하기 어렵지만, LLM 기반 코딩 도구를 실제 하드웨어 해킹에 적용한 사례로 주목받고 있다.",
+    "why_it_matters": "LLM 코딩 에이전트가 저가 하드웨어와 결합해 복잡한 임베디드 시스템 역공학까지 가능함을 보여주는 실용적 사례다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 9.56623929007203,
+    "published_at": "2026-11-12T05:29:24Z"
+  },
+  {
+    "id": "hn-50509023",
+    "section": "community",
+    "title_en": "Crows make decisions faster than we can",
+    "title_ko": "까마귀, 인간보다 빠르게 의사결정 한다",
+    "url": "https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "까마귀가 인간보다 더 빠르게 의사결정을 내린다는 연구 결과가 주목받고 있다. 제목 외 상세 내용은 제공되지 않았다.",
+    "why_it_matters": "동물 인지 능력 연구는 AI 의사결정 메커니즘 설계에 영감을 줄 수 있다.",
+    "tags": [],
+    "score": 8.754421873693701,
+    "published_at": "2026-11-15T17:53:31Z"
+  },
+  {
+    "id": "hn-50507553",
+    "section": "community",
+    "title_en": "Emacs Is My Browser",
+    "title_ko": "Emacs를 브라우저로 사용하기",
+    "url": "https://joshblais.com/blog/emacs-as-my-browser/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "이 글은 Emacs를 웹 브라우저 대신 사용하는 접근 방식을 다룬다. 제목만으로는 구체적인 내용을 확인할 수 없어 추가 세부 사항은 제공하기 어렵다.",
+    "why_it_matters": "Emacs의 활용 범위를 브라우저 영역까지 확장하는 색다른 개발자 워크플로우 사례로 주목할 만하다.",
+    "tags": [],
+    "score": 8.611522863694177,
+    "published_at": "2026-11-15T15:21:21Z"
+  },
+  {
+    "id": "hn-50509308",
+    "section": "community",
+    "title_en": "A short explainer on how El Niño works [video]",
+    "title_ko": "엘니뇨 작동 원리 짧은 설명 [영상]",
+    "url": "https://www.youtube.com/watch?v=7_JF3etiAv8",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "엘니뇨의 작동 원리를 짧은 영상으로 설명하는 콘텐츠다. 구체적인 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "기후 현상 이해를 돕는 교육 콘텐츠로, AI와의 직접적 연관성은 불분명하다.",
+    "tags": [],
+    "score": 8.53698577378714,
+    "published_at": "2026-11-15T18:23:21Z"
+  },
+  {
+    "id": "hn-50513215",
+    "section": "community",
+    "title_en": "Qwen4-Max",
+    "title_ko": "Qwen4-Max 공개",
+    "url": "https://qwen.ai/blog?id=qwen4-max",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Alibaba의 Qwen 시리즈 최신 모델인 Qwen4-Max가 공개되었다. 상세한 설명은 제공되지 않았으나, Qwen 시리즈의 차기 대형 언어 모델로 추정된다.",
+    "why_it_matters": "Alibaba의 최신 LLM 라인업 확장으로, 오픈소스 AI 모델 경쟁에 영향을 줄 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.49695060583909,
+    "published_at": "2026-11-16T02:14:44Z"
+  },
+  {
+    "id": "simon_willison-datasette-maplibre",
+    "section": "deepdive",
+    "title_en": "datasette-maplibre 0.1a0",
+    "title_ko": "datasette-maplibre 0.1a0 — MapLibre GL과 OpenFreeMap을 결합한 Datasette 지리공간 플러그인",
+    "url": "https://simonwillison.net/2026/Nov/15/datasette-maplibre/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Simon Willison이 Datasette용 새 지리공간 플러그인 datasette-maplibre 0.1a0을 공개했다. MapLibre GL과 무료 벡터 맵 서버 OpenFreeMap을 결합했으며, 대부분의 코드를 Claude Fable 5.2에 단일 프롬프트로 생성했다. 주요 기능으로는 GeoJSON 도형의 SVG 미리보기, 뷰포트 진입 시 WebGL 로드, 클러스터링, 대륙별 색상 구분 등이 있다. Datasette Lite에서 Pyodide와 WebAssembly를 통해 브라우저에서 바로 체험할 수 있다.",
+    "why_it_matters": "LLM 단일 프롬프트로 완성도 높은 오픈소스 플러그인을 구축한 실제 사례로, AI 보조 개발의 현재 가능성을 잘 보여준다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8570056216931217,
+    "published_at": "2026-11-15T23:58:36Z"
+  }
+]
