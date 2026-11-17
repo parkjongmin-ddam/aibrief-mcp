@@ -1,0 +1,360 @@
+[
+  {
+    "id": "hf-2611.18359",
+    "section": "papers",
+    "title_en": "Envisioning Agentic Robotics: A New Era of Robotic Systems",
+    "title_ko": "에이전틱 로보틱스의 미래: 새로운 로봇 시스템 패러다임",
+    "url": "https://huggingface.co/papers/2611.18359",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "GPT-6 Astra 출시를 계기로 태스크별 전용 정책 없이 파운데이션 모델을 활용해 개방형 환경에서 작동하는 '에이전틱 로보틱스'라는 새로운 패러다임이 등장했다. 이 시스템은 환경 관찰, 의도 해석, 추론, 스킬 호출, 결과 검증, 전략 조정을 클로즈드 루프로 수행한다. 본 논문은 Embodied System 2 개념을 중심으로 평가 프레임워크와 연구 로드맵을 제안하며, 반응 시간 제한·비가역적 결과 등 물리적 제약 하에서의 신뢰할 수 있는 자율성 달성을 핵심 과제로 제시한다.",
+    "why_it_matters": "LLM 기반 에이전트를 물리 세계로 확장하는 에이전틱 로보틱스의 정의·평가·로드맵을 처음으로 체계화한 시도로, 로봇 AI 연구 방향 설정에 중요한 기준점이 된다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.770684624465665,
+    "published_at": "2026-11-12T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.18397",
+    "section": "papers",
+    "title_en": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
+    "title_ko": "Gamer: 장기 실시간 게임을 위한 범용 비전-언어-행동 기반 모델",
+    "url": "https://huggingface.co/papers/2611.18397",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Gamer는 복잡한 인터랙티브 환경에서 장기 과제를 수행하는 범용 에이전트 프레임워크입니다. 수만 시간의 키보드·마우스 상호작용 데이터로 사전학습하고, Sparse-thinking 명령 튜닝과 멀티턴 강화학습으로 복잡한 의사결정 능력을 갖췄습니다. 2D/3D 게임 환경 모두에서 숙련 플레이어 수준의 성능을 보이며, 클라우드-엣지 추론 엔진으로 실시간 저지연 실행을 지원합니다.",
+    "why_it_matters": "단순 키보드·마우스 궤적 데이터의 대규모 학습만으로도 2D·3D 게임 환경을 아우르는 범용 에이전트 개발이 가능함을 입증한 사례다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 5.61512051684126,
+    "published_at": "2026-11-12T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.18482",
+    "section": "papers",
+    "title_en": "MMFlash: Faster Speculative Decoding for Vision-Language Models",
+    "title_ko": "MMFlash: 비전-언어 모델을 위한 고속 추측 디코딩 프레임워크",
+    "url": "https://huggingface.co/papers/2611.18482",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "MMFlash은 비전-언어 모델(VLM)의 추측 디코딩을 가속화하는 프레임워크다. 시각적 의존도가 높은 토큰일수록 수용률이 낮아지는 문제(46% → 22%)를 발견하고, 이를 해결하기 위해 시각 의존 토큰에 가중치를 적응적으로 높이는 방식을 도입했다. 긴 영상 입력에는 희소 어텐션을 추가 적용해 불필요한 연산을 줄였으며, 멀티모달 벤치마크에서 최대 3.58배의 무손실 속도 향상을 달성해 EAGLE-3 및 DFlash를 각각 최대 195.4%, 17.1% 상회했다.",
+    "why_it_matters": "멀티모달 추론 가속화가 실질적으로 어려운 이유를 분석하고 구체적 해법을 제시해, VLM 서빙 효율을 크게 높일 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.58351893845611,
+    "published_at": "2026-11-12T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.17831",
+    "section": "papers",
+    "title_en": "V-JEPA-LM: Video-Language Models That Read Dynamics Beyond Static, Text-Aligned Representations",
+    "title_ko": "V-JEPA-LM: 정적 표현을 넘어 영상 동역학을 이해하는 비디오-언어 모델",
+    "url": "https://huggingface.co/papers/2611.17831",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "V-JEPA와 같은 월드 모델 비디오 인코더는 장면의 변화(방향, 속도, 순서, 상태)를 학습하지만, 기존 VLM은 이를 활용하지 못하고 텍스트 속성만 검색하는 수준에 그쳤다. 연구팀은 반사실적(counterfactual) 지도학습을 통해 언어 모델이 인코더의 동역학 정보를 실제로 읽도록 유도했다. 단일 스테이지 학습으로 4.53M 공개 샘플만 사용하여, 1B~8B 규모의 V-JEPA-LM 모델이 11개 비디오 벤치마크 평균에서 동급 최강 성능을 달성했으며, 4B 모델이 72.1점으로 최고 오픈 8B 모델(64.8점)을 능가했다.",
+    "why_it_matters": "영상의 동역학 정보를 언어 모델이 실질적으로 활용하게 만든 반사실적 지도학습 방법이 비디오 이해 성능을 크게 끌어올려, 적은 데이터와 토큰으로도 오픈소스 최고 수준을 달성했다는 점에서 주목할 만하다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 4.258096538021482,
+    "published_at": "2026-11-12T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.17878",
+    "section": "papers",
+    "title_en": "DySENSE: Dynamic Spatiotemporal ENergy Synthesis and Emulation with Satellite Imagery",
+    "title_ko": "DySENSE: 위성 이미지 기반 도시 에너지 동적 합성 및 시뮬레이션 프레임워크",
+    "url": "https://huggingface.co/papers/2611.17878",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "DySENSE는 도시 위성 이미지와 월별 건물 에너지 소비 맵을 함께 생성하는 멀티모달 생성 AI 프레임워크다. 정적 도시 형태(토지 이용)와 동적 에너지 소비를 분리하여 조건부 생성이 가능하며, 뉴욕·워싱턴·노퍽·부산 4개 도시 실험에서 25% 미만의 레이블 데이터만으로 예측 성능을 8% mIoU 향상시켰다. 기존 방법 대비 예측 정확도 8.7% 개선, 예측 오차 9~18% 감소(CVRMSE 기준)를 달성했다.",
+    "why_it_matters": "희소한 에너지 레이블 데이터 문제를 생성 AI로 극복해, 2050 탄소중립을 위한 도시 에너지 계획·건물 성능 시뮬레이션에 실질적 기여 가능성을 보여준다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 4.13549421592915,
+    "published_at": "2026-11-12T19:00:00Z"
+  },
+  {
+    "id": "openai_blog-expanding-chatgpt-for-academic-researchers",
+    "section": "releases",
+    "title_en": "Broadening access to AI for scientists",
+    "title_ko": "과학자를 위한 AI 접근성 확대",
+    "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 학술 연구자 대상 ChatGPT 프로그램을 확장하여 전 세계 20만 명의 연구자에게 최신 프론티어 모델을 무료로 제공한다. 이번 조치는 AI를 활용한 과학 연구의 저변을 넓히기 위한 목적으로 추진된다.",
+    "why_it_matters": "전 세계 연구자 20만 명이 최첨단 AI 모델을 무료로 활용할 수 있게 되어 학술 연구 전반의 AI 도입이 크게 가속화될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8154778439153438,
+    "published_at": "2026-11-16T17:00:00Z"
+  },
+  {
+    "id": "openai_blog-strengthening-online-child-safety",
+    "section": "releases",
+    "title_en": "Strengthening the fight against online child sexual abuse with new tools and support",
+    "title_ko": "온라인 아동 성착취 대응을 위한 새로운 도구 및 지원 강화",
+    "url": "https://openai.com/index/strengthening-online-child-safety",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 온라인 아동 성착취 및 학대(CSEA) 방지를 위한 새로운 도구, 실용적 가이드, 파트너십을 발표했다. 이를 통해 아동 성착취 콘텐츠의 예방, 탐지, 대응 역량을 강화하는 것이 목표다.",
+    "why_it_matters": "AI 기술이 아동 온라인 안전 보호에 실질적으로 활용될 수 있음을 보여주는 사례로, AI 윤리 및 안전 분야에서 중요한 의미를 갖는다.",
+    "tags": [],
+    "score": 0.8154778439153438,
+    "published_at": "2026-11-16T17:00:00Z"
+  },
+  {
+    "id": "openai_blog-science-at-the-frontier",
+    "section": "releases",
+    "title_en": "Science at the Frontier: How scientists use ChatGPT",
+    "title_ko": "첨단 과학의 현장: 과학자들은 ChatGPT를 어떻게 활용하는가",
+    "url": "https://openai.com/index/science-at-the-frontier",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "1,800명 이상의 과학자들이 연구에서 ChatGPT를 활용하는 방식을 조사한 결과를 공개했다. 일상적인 연구 워크플로우, 생산성 향상 효과, 그리고 과학적 발견에 대한 기대 등의 내용이 담겨 있다.",
+    "why_it_matters": "대규모 과학자 집단의 실제 LLM 활용 사례를 데이터로 확인할 수 있어, AI가 연구 현장에 미치는 실질적 영향을 가늠할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7857159391534392,
+    "published_at": "2026-11-16T12:00:00Z"
+  },
+  {
+    "id": "openai_blog-revolut",
+    "section": "releases",
+    "title_en": "How Revolut raises ambition without lowering the bar",
+    "title_ko": "Revolut, OpenAI Codex로 코딩 시간 30~60% 단축 및 금융 범죄 수사 확대",
+    "url": "https://openai.com/business/customer-stories/revolut",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "핀테크 기업 Revolut은 OpenAI 모델과 Codex를 활용해 개발 코딩 시간을 30~60% 줄이는 성과를 거뒀다. 또한 AI를 금융 범죄 수사 업무에 도입해 조사 규모를 확장했으며, 보안 수준을 유지하면서도 혁신 속도를 높이는 균형을 달성했다고 밝혔다.",
+    "why_it_matters": "금융 보안이 중요한 핀테크 환경에서 AI 코딩 도구로 생산성과 보안을 동시에 향상시킨 실제 사례로, 엔터프라이즈 AI 도입 전략에 참고할 만하다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7708349867724867,
+    "published_at": "2026-11-16T09:30:00Z"
+  },
+  {
+    "id": "openai_blog-lvmh-media-division-partnership",
+    "section": "releases",
+    "title_en": "LVMH’s Media Division announces strategic partnership with OpenAI",
+    "title_ko": "LVMH 미디어 부문, OpenAI와 전략적 파트너십 체결",
+    "url": "https://openai.com/index/lvmh-media-division-partnership",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "LVMH 미디어 부문과 OpenAI가 전략적 파트너십을 발표했다. 이번 협력은 AI를 활용해 저널리즘을 지원하고, LVMH의 출판물을 ChatGPT를 통해 더 쉽게 접근할 수 있도록 하는 것을 목표로 한다.",
+    "why_it_matters": "미디어·패션 대기업 LVMH가 OpenAI와 손잡음으로써 AI 기반 저널리즘과 콘텐츠 접근성 혁신의 새로운 사례가 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7678587962962963,
+    "published_at": "2026-11-16T09:00:00Z"
+  },
+  {
+    "id": "openai_blog-our-first-phase-of-embedded-assessments",
+    "section": "releases",
+    "title_en": "Our first phase of embedded assessments",
+    "title_ko": "OpenAI, 임베디드 평가 1단계 시작",
+    "url": "https://openai.com/index/our-first-phase-of-embedded-assessments",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 Apollo Research, METR, Transluce, Goodfire와 함께 임베디드 평가 1단계를 시작했다. 이 평가는 모델의 정렬(alignment), 안전장치, 모니터링 시스템을 독립적으로 검증하는 것을 목표로 한다. 외부 연구 기관들이 직접 참여해 OpenAI 모델의 안전성을 독립적으로 평가하는 구조다.",
+    "why_it_matters": "AI 안전성 검증을 외부 독립 기관에 맡기는 임베디드 평가 체계는 모델 신뢰성 확보의 새로운 업계 기준이 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7619064153439153,
+    "published_at": "2026-11-16T08:00:00Z"
+  },
+  {
+    "id": "github_trending-elementalsouls/Claude-BugHunter",
+    "section": "releases",
+    "title_en": "elementalsouls/Claude-BugHunter",
+    "title_ko": "Claude-BugHunter: Claude용 버그 헌팅 & 레드팀 스킬 번들",
+    "url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code에 설치하는 보안 스킬 번들로, 83개 스킬, 15개 슬래시 커맨드, HackerOne 공개 보고서 681건에서 추출한 취약점 패턴을 24개 취약점 클래스에 걸쳐 제공한다. 웹앱 버그 바운티부터 M365/Entra, Okta, vCenter 등 엔터프라이즈 플랫폼 외부 레드팀 작업까지 지원하며, Burp MCP 연동과 보고서 작성 자동화도 포함한다. 테스트 대상을 평문으로 설명하면 관련 스킬이 자동으로 로드되며, Claude Code 플러그인 또는 직접 설치 방식을 모두 지원한다.",
+    "why_it_matters": "Claude를 단순 챗봇이 아닌 실전 버그 헌팅·레드팀 오퍼레이터 수준으로 끌어올리는 오픈소스 스킬셋으로, 보안 연구자의 AI 활용 방식을 구조화할 수 있다.",
+    "tags": [
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7590095899470899,
+    "published_at": "2026-11-16T07:30:48Z"
+  },
+  {
+    "id": "hn-50524736",
+    "section": "community",
+    "title_en": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
+    "title_ko": "윈도우 11, 사용 중인 코딩 에이전트 및 개발자 도구 데이터 수집",
+    "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Windows 11이 사용자가 어떤 코딩 에이전트와 개발자 도구를 사용하는지에 대한 데이터를 수집하고 있는 것으로 알려졌다. 개발자 환경에서의 프라이버시 우려가 제기되고 있다.",
+    "why_it_matters": "Microsoft가 개발자 도구 사용 현황을 운영체제 수준에서 수집한다는 점은 개발자 프라이버시와 기업 보안 정책에 직접적인 영향을 미친다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 9.946895523888447,
+    "published_at": "2026-11-16T22:58:20Z"
+  },
+  {
+    "id": "hn-50520182",
+    "section": "community",
+    "title_en": "Grazing sheep in fields with solar arrays",
+    "title_ko": "태양광 패널 설치 들판에서 양 방목하기",
+    "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "태양광 패널이 설치된 농지에서 양을 방목하는 사례를 다룬 글이다. 태양광 발전과 축산업을 동시에 활용하는 방식으로, 토지의 이중 활용 가능성을 탐색한다.",
+    "why_it_matters": "재생에너지 인프라와 농업의 공존 가능성을 보여주는 사례로, 토지 활용 효율화 측면에서 주목할 만하다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.279920210397794,
+    "published_at": "2026-11-16T17:27:46Z"
+  },
+  {
+    "id": "hn-50517321",
+    "section": "community",
+    "title_en": "Microsoft blames monster email outage on software defect introduced in July fix",
+    "title_ko": "마이크로소프트, 7월 패치로 인한 대규모 이메일 장애 원인 밝혀",
+    "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "마이크로소프트가 대규모 이메일 서비스 장애의 원인이 7월에 배포된 소프트웨어 수정 패치에서 도입된 결함 때문이라고 밝혔다. 해당 결함이 심각한 서비스 중단으로 이어진 것으로 보인다.",
+    "why_it_matters": "대형 클라우드 서비스의 패치 품질 관리 실패가 얼마나 광범위한 장애로 이어질 수 있는지를 보여주는 사례다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 9.271754629037904,
+    "published_at": "2026-11-16T13:18:22Z"
+  },
+  {
+    "id": "hn-50523459",
+    "section": "community",
+    "title_en": "OpenCode Browse",
+    "title_ko": "OpenCode Browse",
+    "url": "https://opencode.ai/product/browse",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "OpenCode Browse에 관한 소식이 Hacker News에 공유되었다. 상세 설명이 제공되지 않아 구체적인 내용은 확인이 어렵다.",
+    "why_it_matters": "오픈소스 코드 탐색 도구일 가능성이 있으나, 추가 정보 없이는 판단이 어렵다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 8.605475483095908,
+    "published_at": "2026-11-16T21:20:37Z"
+  },
+  {
+    "id": "hn-50523784",
+    "section": "community",
+    "title_en": "Spamhaus new email sender requirements in November",
+    "title_ko": "Spamhaus, 11월 신규 이메일 발신자 요건 발표",
+    "url": "https://www.spamhaus.org/sender-guidelines/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Spamhaus가 11월부터 적용되는 새로운 이메일 발신자 요건을 발표했다. 이메일 발송자는 변경된 기준을 충족해야 스팸 차단 목록 등재를 피할 수 있을 것으로 보인다.",
+    "why_it_matters": "이메일 기반 서비스나 마케팅을 운영하는 개발자라면 발신자 요건 변경에 미리 대비해야 한다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 7.7692852910221974,
+    "published_at": "2026-11-16T21:47:19Z"
+  },
+  {
+    "id": "youtube-pST7ArQkHC8",
+    "section": "video",
+    "title_en": "AI안경이 불러온 전문직의 종말? ㄷㄷ",
+    "title_ko": "AI 안경이 불러올 전문직의 종말?",
+    "url": "https://www.youtube.com/shorts/pST7ArQkHC8",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 AI 안경 기술이 전문직에 미치는 파급력을 다룬 영상이다. AI가 탑재된 안경 형태의 웨어러블 기기가 전문직 업무를 대체할 가능성에 대해 논의한다.",
+    "why_it_matters": "AI 웨어러블 기기의 확산이 전문직 종사자들의 역할 변화를 가속화할 수 있어 주목된다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.892880291005291,
+    "published_at": "2026-11-17T06:00:13Z"
+  },
+  {
+    "id": "youtube-ZKKP6jbdNbg",
+    "section": "video",
+    "title_en": "AI뉴스 - AI 부정행위 못 잡는다, 전문직 종말, Fable 5.2, MS365, GPT-6.2 Astra, 젠슨 황 사임, Gemini 4 Carbon & Hydrogen 등",
+    "title_ko": "AI 부정행위 적발 한계·전문직 위기, Gemini 4·GPT-6.2 유출, 젠슨 황 사임설 등 주간 AI 뉴스",
+    "url": "https://www.youtube.com/watch?v=ZKKP6jbdNbg",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "세무사 시험 수석 합격자의 AI 부정행위 사건을 계기로 전문직 종말 우려가 커지고 있으며, AI 감지 기술의 한계가 부각됐다. Anthropic은 Claude Fable 5.2·Mythos 5.2를 공개하고 나스닥 IPO 로드쇼를 진행 중이며, Google은 Gemini 4 Carbon·Hydrogen 전체 공개 및 구글 글래스 신제품을 발표했다. GPT-6.2 Astra 유출 정보와 OpenAI의 미공개 사이버 모델 관련 소식도 전해졌고, 엔비디아 젠슨 황 CEO 사임설도 언급됐다. 그 외 ElevenLabs Scribe V3, Meta Muse Ember, AI 가수 멜론 차트 1위 등 다양한 AI 신규 모델·서비스 소식이 포함됐다.",
+    "why_it_matters": "Gemini 4·GPT-6.2 등 최신 모델 경쟁과 AI 부정행위 문제가 동시에 부상하며, AI가 전문직과 보안 영역 모두에 미치는 충격이 현실화되고 있음을 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7916782407407408,
+    "published_at": "2026-11-16T13:00:06Z"
+  },
+  {
+    "id": "youtube-1hg9POiarjE",
+    "section": "video",
+    "title_en": "NULL 번호판을 쓴 사람의 최후",
+    "title_ko": "'NULL' 번호판을 등록한 사람에게 벌어진 일",
+    "url": "https://www.youtube.com/shorts/1hg9POiarjE",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "자동차 번호판에 'NULL'이라는 문자를 등록한 사람이 겪은 황당한 사연을 다룬 영상입니다. 시스템이 NULL 값을 인식하는 방식 때문에 예상치 못한 문제가 발생한 것으로 보입니다. 조코딩 채널에서 소개한 흥미로운 IT 관련 에피소드입니다.",
+    "why_it_matters": "NULL 같은 예약어를 실생활 데이터로 사용할 때 시스템 오류가 발생할 수 있다는 점을 실제 사례로 보여줍니다.",
+    "tags": [],
+    "score": 0.7500611772486773,
+    "published_at": "2026-11-16T06:00:36Z"
+  },
+  {
+    "id": "simon_willison-go-proverbs",
+    "section": "deepdive",
+    "title_en": "Quoting Go Proverbs",
+    "title_ko": "Go 격언: 약간의 복사가 약간의 의존성보다 낫다",
+    "url": "https://simonwillison.net/2026/Nov/17/go-proverbs/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Go 언어 커뮤니티의 격언 중 하나로, '약간의 복사가 약간의 의존성보다 낫다'는 내용을 소개한다. 불필요한 외부 의존성을 추가하는 것보다 코드를 직접 복사하는 것이 더 나을 수 있다는 실용적인 관점을 담고 있다.",
+    "why_it_matters": "의존성 관리의 복잡성을 줄이는 실용적 개발 철학으로, Go뿐 아니라 소프트웨어 개발 전반에 적용 가능한 원칙이다.",
+    "tags": [],
+    "score": 0.8944890873015873,
+    "published_at": "2026-11-17T06:16:26Z"
+  }
+]
