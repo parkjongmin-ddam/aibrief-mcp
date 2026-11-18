@@ -1,0 +1,371 @@
+[
+  {
+    "id": "hf-2611.21072",
+    "section": "papers",
+    "title_en": "Sage S2.1 Flash Technical Report",
+    "title_ko": "Sage S2.1 Flash 기술 보고서: 3200억 파라미터 과학 특화 MoE 모델",
+    "url": "https://huggingface.co/papers/2611.21072",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Sage S1.5 Flash는 3200억 파라미터 규모의 범용 혼합 전문가(MoE) 모델로, 과학적 증거를 추론하고 대화형 환경에서 행동할 수 있도록 설계되었습니다. 분자 그래프와 생물학적 시퀀스 전용 인코더를 갖추고 있으며, 도구 사용·검색·코딩·머신러닝 실험 등을 위한 검증 가능한 환경에서 에이전트 능력을 개발했습니다. 33개 벤치마크, 7개 도메인에서 평가한 결과 OfficeQA Pro(72.2), MLE-bench Lite(90.3 HumanRank) 등에서 1위를 기록했습니다.",
+    "why_it_matters": "과학 도메인 특화 멀티모달 추론과 에이전트 능력을 결합한 대규모 MoE 모델이 주요 벤치마크에서 최상위 성능을 보여 AI 과학 자동화 분야에 중요한 이정표가 됩니다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 5.532599493153256,
+    "published_at": "2026-11-15T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.21218",
+    "section": "papers",
+    "title_en": "InclusionMed: Benchmarking AI for Inclusive Healthcare",
+    "title_ko": "InclusionMed: 포용적 의료를 위한 AI 벤치마크 이니셔티브",
+    "url": "https://huggingface.co/papers/2611.21218",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "InclusionMed는 다양한 의료 역할·작업·환경을 포괄하는 의료 AI 평가 이니셔티브로, 388개 후보 중 선별된 공개 벤치마크 4종과 자체 개발한 비공개 진단 추론 벤치마크(InclusionMed-DxFiles)로 구성된다. 주요 프론티어 LLM을 평가한 결과, 100점 만점 기준 종합 점수가 17.5~49.1점에 분포했다. 상위 10개 모델 모두 임상 의사결정보다 환자 커뮤니케이션에서 더 높은 점수를 기록했으며, 유사한 점수의 모델 간에도 추론 비용 차이가 크게 나타났다. 이는 의료 맥락별 모델 선택의 중요성과 더 다양한 의료 요구를 반영한 평가 체계의 필요성을 강조한다.",
+    "why_it_matters": "의료 AI 평가가 특정 역할이나 능력에 편중되어 있음을 실증적으로 드러내고, 전 세계 다양한 의료 환경에 맞는 포용적 벤치마크 기준을 제시한다는 점에서 중요하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.394449154672439,
+    "published_at": "2026-11-15T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.22115",
+    "section": "papers",
+    "title_en": "TeleChat to Xing4: Advancing Frontier Agentic Models on Domestic Chips and Frameworks",
+    "title_ko": "TeleChat에서 Xing4로: 국산 칩·프레임워크 기반 프론티어 에이전트 모델 개발",
+    "url": "https://huggingface.co/papers/2611.22115",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "중국 통신 계열의 TeleChat을 계승한 Xing 4 대형 언어 모델 시리즈를 소개한다. 285B 파라미터 모델을 Ascend 910C 카드 8,192장으로 사전학습하며, MindSpore HyperParallel 기반의 토폴로지 인식 하이브리드 샤딩과 분산 옵티마이저를 활용한다. 에이전트 포스트트레이닝을 위해 실행·평가·궤적 생성을 정책 최적화와 연결하는 통합 플랫폼 TeleGym을 도입했다.",
+    "why_it_matters": "NVIDIA 의존 없이 Ascend 칩과 MindSpore 프레임워크만으로 285B급 프론티어 에이전트 모델을 구축한 사례로, 국산 AI 인프라의 실제 가능성을 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "인프라"
+    ],
+    "score": 5.23410650459726,
+    "published_at": "2026-11-16T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.17621",
+    "section": "papers",
+    "title_en": "AscendGYM: A Cost-Aware Kernel Optimization Benchmark for Real-World Workloads on Ascend NPUs",
+    "title_ko": "AscendGYM: Ascend NPU 실제 워크로드 기반 커널 최적화 벤치마크",
+    "url": "https://huggingface.co/papers/2611.17621",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "AscendGYM은 Ascend NPU에서 LLM 학습 및 추론을 위한 커널 최적화 능력을 평가하는 벤치마크로, 3가지 난이도 수준의 커널 48개로 구성됩니다. 각 커널은 실제 학습·추론 워크로드에서 수집한 데이터 타입 및 텐서 형상의 테스트 케이스와 쌍을 이룹니다. 모델 평가와 커스텀 에이전트 평가를 모두 지원하며, 성능 향상과 토큰 비용을 함께 고려하는 새로운 지표인 Speedup-Token Score(STS)를 제안합니다.",
+    "why_it_matters": "Ascend NPU 환경에서 실제 워크로드 기반 커널 최적화 성능을 비용까지 고려해 측정할 수 있는 최초의 체계적 벤치마크로, 에이전트 기반 최적화 연구의 기준점이 될 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "인프라"
+    ],
+    "score": 4.912023005428146,
+    "published_at": "2026-11-12T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.20218",
+    "section": "papers",
+    "title_en": "SWE-CoWork: Benchmarking Coding Agents as Digital Employees in Organizations",
+    "title_ko": "SWE-CoWork: 조직 내 디지털 직원으로서 코딩 에이전트 벤치마크",
+    "url": "https://huggingface.co/papers/2611.20218",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "SWE-CoWork는 101개 실제 저장소, 11개 프로그래밍 언어, 12개 애플리케이션 도메인에 걸친 101개 개발 과제로 구성된 벤치마크로, 코딩 에이전트가 26명의 가상 동료와 협업하며 요구사항을 수집·구현·검증하는 능력을 평가한다. 평가된 11개 모델 중 상위 2개 모델은 F2P 테스트의 약 63%를 통과하지만 전체 과제 완료율은 8% 미만에 그쳤다. 요구사항을 사전에 완전히 제공해도 전체 과제 성공률은 개선되지 않았으며, 요구사항 추적·미완성 구현·검증 실패가 주요 병목으로 확인됐다.",
+    "why_it_matters": "단순 코드 생성을 넘어 조직 내 협업·요구사항 추적·검증까지 포함한 실제 소프트웨어 엔지니어링 역량을 측정하는 새로운 기준을 제시해, 현 LLM 에이전트의 한계를 명확히 드러낸다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.871201010907891,
+    "published_at": "2026-11-14T19:00:00Z"
+  },
+  {
+    "id": "openai_blog-introducing-gpt-6-2-astra-sol",
+    "section": "releases",
+    "title_en": "Introducing GPT-6.2 Astra and Sol",
+    "title_ko": "GPT-6.2 Astra와 Sol 공개",
+    "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 GPT-6.2 Astra와 Sol을 발표했습니다. 두 모델은 전문적인 출력, 코딩, 컴퓨터 사용 능력이 향상되었으며, 더 낮은 비용으로 높은 효율을 제공합니다. ChatGPT Work, Codex, API 전반에 걸쳐 적용됩니다.",
+    "why_it_matters": "GPT-6.2 계열 모델이 성능 향상과 비용 절감을 동시에 달성해 개발자 및 기업 사용자의 활용 범위가 크게 넓어질 수 있습니다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8199421296296296,
+    "published_at": "2026-11-17T17:45:00Z"
+  },
+  {
+    "id": "google_blog-tasks-in-gemini-free-new-features",
+    "section": "releases",
+    "title_en": "Put Gemini to work for you",
+    "title_ko": "Gemini를 나를 위해 활용하기",
+    "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "Google이 Gemini를 통해 사용자가 다양한 작업을 직접 처리할 수 있는 기능을 소개하고 있다. 프롬프트 입력 방식으로 원하는 작업을 설명하면 Gemini가 이를 수행해준다.",
+    "why_it_matters": "Google Gemini의 사용자 중심 에이전트 기능 확장 방향을 보여주는 사례로, 일반 사용자의 AI 활용 접근성 향상에 주목할 필요가 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8154778439153438,
+    "published_at": "2026-11-17T17:00:00Z"
+  },
+  {
+    "id": "github_trending-tradermonty/claude-trading-skills",
+    "section": "releases",
+    "title_en": "tradermonty/claude-trading-skills",
+    "title_ko": "Claude AI 기반 주식 투자·트레이딩 워크플로 툴킷 오픈소스 공개",
+    "url": "https://github.com/tradermonty/claude-trading-skills",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "개인 투자자와 트레이더를 위한 Claude Skills 기반 트레이딩 워크플로 툴킷이 오픈소스로 공개되었다. 시장 분석, 기술적 차트, 경제 캘린더, 스크리너, 전략 개발 등 다양한 스킬을 포함하며, 매수·매도 결정을 AI에 위임하는 것이 아니라 시장 리뷰·리스크 관리·거래 계획·저널링 등 의사결정 프로세스 구조화를 목표로 한다. 무료 공개 CSV 데이터를 활용하는 API 키 없는 시작 경로도 제공한다.",
+    "why_it_matters": "Claude의 Skills 기능을 실전 투자 워크플로에 적용한 구체적 사례로, AI를 트레이딩 의사결정 보조 도구로 활용하는 오픈소스 레퍼런스 구현체다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.7662020502645502,
+    "published_at": "2026-11-17T08:43:18Z"
+  },
+  {
+    "id": "github_trending-elementalsouls/Claude-BugHunter",
+    "section": "releases",
+    "title_en": "elementalsouls/Claude-BugHunter",
+    "title_ko": "Claude-BugHunter: Claude Code용 버그 헌팅 스킬 번들",
+    "url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code에 설치하는 버그 헌팅·레드팀 특화 스킬 번들로, 83개 스킬, 15개 슬래시 명령어, HackerOne 공개 보고서 681건에서 추출한 취약점 패턴을 포함한다. XSS, SQLi, SSRF, IDOR 등 24개 취약점 클래스와 M365/Entra, Okta, vCenter 등 엔터프라이즈 플랫폼 공격 체인도 커버한다. 주제를 평문 영어로 설명하면 관련 스킬이 자동으로 로드되며, Burp Suite MCP 연동도 지원한다. Claude Code 외에 OpenCode, OpenAI Codex CLI, Hermes Agent 등 다양한 에이전트 하네스에서도 동작한다.",
+    "why_it_matters": "Claude를 단순 챗봇이 아닌 버그 헌팅·레드팀 오퍼레이터 수준으로 끌어올리는 실전 검증 스킬 번들로, 허가된 보안 평가 작업의 생산성을 크게 높일 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7662020502645502,
+    "published_at": "2026-11-17T08:43:18Z"
+  },
+  {
+    "id": "openai_blog-introducing-chatgpt-for-sales",
+    "section": "releases",
+    "title_en": "Introducing ChatGPT for Sales",
+    "title_ko": "영업을 위한 ChatGPT 출시",
+    "url": "https://openai.com/index/introducing-chatgpt-for-sales",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 ChatGPT for Sales를 공개했다. 새로운 Sales 플러그인과 30개 이상의 신규·확장 파트너 플러그인을 통해 잠재 고객 리서치, 영업 피치 준비, CRM 업데이트, 딜 진행 등 영업 전반을 지원한다.",
+    "why_it_matters": "ChatGPT가 영업 워크플로우에 직접 통합되면서 세일즈 자동화 시장에 미치는 파급력이 클 것으로 예상된다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7619064153439153,
+    "published_at": "2026-11-17T08:00:00Z"
+  },
+  {
+    "id": "openai_blog-strengthening-nato-allied-cyber-defences-ai",
+    "section": "releases",
+    "title_en": "Strengthening NATO and allied cyber defenses with AI",
+    "title_ko": "OpenAI, NATO와 협력해 AI 기반 사이버 방어 강화",
+    "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 NATO 및 동맹국 사이버 기관들과 협력하여 AI를 활용한 사이버 방어 역량을 강화하고 있다. 이 협력은 신뢰할 수 있는 방어자들이 취약점을 발견하고, 수정 사항을 테스트하며, 핵심 시스템을 보호하는 데 초점을 맞춘다.",
+    "why_it_matters": "OpenAI의 기술이 국가 안보 및 군사 동맹 사이버 방어에 직접 적용되는 첫 공식 사례로, AI의 안보 분야 역할 확대를 의미한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-11-17T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-astra-law-6-2",
+    "section": "releases",
+    "title_en": "Astra for Law leads in legal intelligence",
+    "title_ko": "Astra for Law, 법률 AI 평가에서 1위 달성",
+    "url": "https://openai.com/index/astra-law-6-2",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Astra for Law가 24개 법률 분야를 아우르는 출시 평가에서 1위를 차지했다. 현재 모든 ChatGPT Enterprise 고객은 접근 권한을 신청할 수 있다.",
+    "why_it_matters": "법률 특화 AI 도구가 엔터프라이즈 수준으로 공개되며, 법률 업무 자동화 경쟁이 본격화되는 신호탄이 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-11-17T00:00:00Z"
+  },
+  {
+    "id": "hn-50535230",
+    "section": "community",
+    "title_en": "GPT‑6.2 Astra and Sol",
+    "title_ko": "GPT-6.2 아스트라와 솔 공개",
+    "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GPT-6.2 Astra와 Sol에 관한 소식이 Hacker News에 올라왔다. 제공된 정보가 제한적이어서 세부 내용은 확인되지 않는다.",
+    "why_it_matters": "OpenAI의 차세대 모델 라인업 동향으로 주목받고 있으나 공식 세부 정보 확인이 필요하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 11.386718609112371,
+    "published_at": "2026-11-17T17:46:43Z"
+  },
+  {
+    "id": "hn-50532191",
+    "section": "community",
+    "title_en": "What is the best harness for each model?",
+    "title_ko": "각 AI 모델에 가장 적합한 하네스는 무엇인가?",
+    "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "각 AI 모델에 최적화된 평가 하네스(harness)에 대한 논의를 다루는 글이다. 설명이 제공되지 않아 구체적인 내용은 확인하기 어렵다.",
+    "why_it_matters": "모델 평가 도구 선택은 벤치마크 결과의 신뢰성에 직접 영향을 미친다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.289087599503182,
+    "published_at": "2026-11-17T14:53:43Z"
+  },
+  {
+    "id": "hn-50535885",
+    "section": "community",
+    "title_en": "MAI Code 2 and Code 2 Flash",
+    "title_ko": "MAI Code 2 및 Code 2 Flash 출시",
+    "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Microsoft의 MAI Code 2와 Code 2 Flash 모델이 공개되었다. 상세한 설명이 제공되지 않아 추가적인 사양은 확인이 필요하다.",
+    "why_it_matters": "Microsoft가 코드 생성 특화 AI 모델 라인업을 확장하고 있어 개발자 도구 시장에 영향을 줄 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.266019194432943,
+    "published_at": "2026-11-17T18:25:13Z"
+  },
+  {
+    "id": "hn-50540178",
+    "section": "community",
+    "title_en": "Google's AI answers reducing search traffic by 40%",
+    "title_ko": "구글 AI 답변, 검색 트래픽 최대 40% 감소시켜",
+    "url": "https://revscope.co/blog/search-seo-geo-2026/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "구글의 AI 기반 검색 답변 기능이 외부 웹사이트로의 검색 트래픽을 최대 40%까지 줄이고 있다는 보고가 나왔다. 사용자가 검색 결과 페이지를 벗어나지 않고도 AI가 직접 답변을 제공하면서 웹사이트 방문자 수가 크게 감소하는 추세다.",
+    "why_it_matters": "AI 검색이 웹 생태계 트래픽 구조 자체를 뒤흔들며 콘텐츠 제작자와 퍼블리셔에게 심각한 비즈니스 위협이 되고 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.122576264537612,
+    "published_at": "2026-11-18T00:17:58Z"
+  },
+  {
+    "id": "hn-50538303",
+    "section": "community",
+    "title_en": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+    "title_ko": "하버드 연구진, AI 코딩 에이전트가 코드 리뷰를 새로운 병목으로 만들었다고 밝혀",
+    "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "하버드 연구진이 AI 코딩 에이전트 도입 후 코드 작성 속도는 빨라졌지만, 그 결과로 코드 리뷰 단계가 새로운 병목 구간으로 떠올랐다는 연구 결과를 발표했다. AI가 코드 생성 속도를 높일수록 리뷰해야 할 코드량도 함께 증가하는 구조적 문제가 드러난 것이다.",
+    "why_it_matters": "AI 코딩 도구 도입 시 단순 생산성 향상을 넘어 리뷰 프로세스 재설계까지 고려해야 함을 시사한다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 8.447887270648586,
+    "published_at": "2026-11-17T21:16:12Z"
+  },
+  {
+    "id": "youtube-qbsb9DpdZ6s",
+    "section": "video",
+    "title_en": "How to compress text to 1 bit per character | Compression is Intelligence Part 3",
+    "title_ko": "텍스트를 1비트/문자로 압축하는 방법 | 압축은 곧 지능이다 3부",
+    "url": "https://www.youtube.com/watch?v=qbsb9DpdZ6s",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "3Blue1Brown의 '압축은 지능이다' 시리즈 3부로, 산술 코드(Arithmetic Codes)를 통해 텍스트를 극한까지 압축하는 원리를 다룬다. 샤넌의 엔트로피 한계와 압축이 어떻게 지능과 연결되는지를 수학적으로 설명하며, LLM 사전학습(pretraining)을 압축 관점에서 재해석한다. 비대칭 수 체계(ANS) 등 최신 압축 기법도 소개한다.",
+    "why_it_matters": "압축과 지능의 관계를 수학적으로 풀어냄으로써 LLM 사전학습의 본질을 새로운 시각으로 이해할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8138177910052911,
+    "published_at": "2026-11-17T16:43:16Z"
+  },
+  {
+    "id": "youtube-0IZcjWtWmDA",
+    "section": "video",
+    "title_en": "Encoding the encyclopedia on a rod",
+    "title_ko": "막대 하나에 백과사전 인코딩하기",
+    "url": "https://www.youtube.com/shorts/0IZcjWtWmDA",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "막대 위에 백과사전 수준의 정보를 인코딩하는 개념을 다루는 영상의 짧은 클립이다. 전체 영상 링크가 제공되어 있으며, 구체적인 기술 내용은 본편에서 확인할 수 있다.",
+    "why_it_matters": "물리적 매체를 이용한 고밀도 정보 저장 방식에 대한 흥미로운 아이디어를 소개한다.",
+    "tags": [],
+    "score": 0.8137962962962964,
+    "published_at": "2026-11-17T16:43:03Z"
+  },
+  {
+    "id": "youtube-iU4K3mN817I",
+    "section": "video",
+    "title_en": "한국인이 설립해 구글, 메타와 경쟁하는 글로벌 유니콘 기업 몰로코 안익진 CEO, 전동환 CTO 인터뷰",
+    "title_ko": "구글·메타와 경쟁하는 AI 광고 유니콘 '몰로코' CEO·CTO 인터뷰",
+    "url": "https://www.youtube.com/watch?v=iU4K3mN817I",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "한국인이 창립한 글로벌 AI 광고 기업 몰로코(Moloco)의 안익진 CEO와 전동환 CTO 인터뷰입니다. 하루 1조 건 이상의 광고 기회를 100ms 이내에 판단하는 AI 작동 원리와, 여러 AI가 역할을 분담하는 자체 구조 'CARA'를 소개합니다. AI 에이전트 시대의 광고 변화, 실리콘밸리 창업 경험, 개발자와 창업자를 위한 조언도 담겨 있습니다.",
+    "why_it_matters": "초저지연 AI 광고 추론 시스템과 멀티에이전트 구조를 실제 프로덕션 규모에서 운영하는 사례를 한국어로 접할 수 있는 드문 인터뷰다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7797900132275133,
+    "published_at": "2026-11-17T11:00:16Z"
+  },
+  {
+    "id": "simon_willison-external-sandboxes-for-coding-agents",
+    "section": "deepdive",
+    "title_en": "External sandboxes for coding agents",
+    "title_ko": "코딩 에이전트를 위한 외부 샌드박스 패턴 소개",
+    "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Simon Willison이 Prime Radiant와 협력해 코딩 에이전트가 실행하는 코드를 안전하게 격리하는 '외부 샌드박스' 패턴을 공개했다. 에이전트 자체는 샌드박스 밖에 위치하고, 실행 코드만 격리된 환경(WebAssembly 기반 Alpine Linux, Apple Containers, Microsoft Quicksand/QEMU 등)에서 돌아가는 방식이다. 세 가지 오픈소스 샌드박스 서버 구현체를 제공하며, Claude Code·Codex·Pi 등과 연동 가능한 공통 localhost API를 갖추고 있다. HTTP/HTTPS 허용 목록 프록시와 자격증명 교체 기능도 포함해 네트워크 접근까지 세밀하게 제어할 수 있다.",
+    "why_it_matters": "프롬프트 인젝션 공격이나 로컬 모델 오작동으로 인한 피해를 막을 수 있는 실용적인 에이전트 보안 아키텍처 패턴을 오픈소스로 제시했다는 점에서 중요하다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.8504464285714286,
+    "published_at": "2026-11-17T22:52:29Z"
+  }
+]
