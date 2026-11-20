@@ -1,20 +1,20 @@
 {
-  "total_days": 151,
-  "total_items": 3050,
+  "total_days": 152,
+  "total_items": 3071,
   "earliest": "2026-06-22",
-  "latest": "2026-11-19",
+  "latest": "2026-11-20",
   "by_section": {
-    "community": 750,
-    "deepdive": 150,
-    "papers": 750,
-    "releases": 1050,
-    "video": 350
+    "community": 755,
+    "deepdive": 151,
+    "papers": 755,
+    "releases": 1057,
+    "video": 353
   },
   "by_tag": {
-    "LLM": 2138,
-    "에이전트": 1416,
-    "오픈소스": 911,
-    "인프라": 480,
-    "RAG": 157
+    "LLM": 2150,
+    "에이전트": 1426,
+    "오픈소스": 912,
+    "인프라": 481,
+    "RAG": 158
   }
 }

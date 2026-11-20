@@ -1,0 +1,360 @@
+[
+  {
+    "id": "hf-2611.24654",
+    "section": "papers",
+    "title_en": "CurvDelta: Low-Curvature Delta Modeling For Surgical Learning and Unlearning",
+    "title_ko": "CurvDelta: LLM 파인튜닝 시 기존 능력 보존을 위한 저곡률 델타 모델링",
+    "url": "https://huggingface.co/papers/2611.24654",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "LLM을 특정 목적에 맞게 적응시킬 때 기존 범용 능력이 저하되는 문제를 해결하기 위해 CurvDelta 프레임워크를 제안한다. 모델 업데이트의 파라미터화에 보존 제약을 통합하고, K-FAC 기반의 저곡률 공간에서 파라미터를 업데이트해 기존 능력 손실을 최소화한다. 경량 변형인 CurvLoRA도 함께 소개하며, 수학적 추론·코드 생성·지식 언러닝 벤치마크에서 기존 방법 대비 더 나은 습득-보존 균형을 달성했다.",
+    "why_it_matters": "파인튜닝으로 인한 기존 능력 망각 문제를 기하학적 접근으로 해결해, 실용적인 LLM 적응 및 선택적 언러닝에 직접 적용 가능하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.13549421592915,
+    "published_at": "2026-11-17T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.24789",
+    "section": "papers",
+    "title_en": "HINT-WAM: Hindsight-Informed Training for World Action Models",
+    "title_ko": "HINT-WAM: 힌드사이트 기반 월드 액션 모델 온폴리시 자기 증류 프레임워크",
+    "url": "https://huggingface.co/papers/2611.24789",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "HINT-WAM은 로봇 조작을 위한 월드 액션 모델(WAM)의 태스크 실행 신뢰성을 높이는 첫 번째 온폴리시 자기 증류 프레임워크입니다. 학생 모델이 자체 디노이징 궤적으로 액션을 생성하면, 동일 모델이 미래 비디오(힌드사이트)를 조건으로 교사 역할을 수행해 밀집된 액션 분포를 훈련 타겟으로 제공합니다. 환경 보상이나 시뮬레이터 상호작용 없이 플로우 매칭 액션 전문가를 에너지 스코어 기반 분포 수준 목표로 증류합니다.",
+    "why_it_matters": "환경 보상이나 시뮬레이터 없이 로봇 조작 모델을 온폴리시로 개선할 수 있어, 실제 배포 환경에서의 활용 가능성을 높인다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 4.13549421592915,
+    "published_at": "2026-11-17T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.24869",
+    "section": "papers",
+    "title_en": "WorldRuler: Interactive World Modeling under Configurable Rules",
+    "title_ko": "WorldRuler: 사용자 정의 규칙 기반 인터랙티브 월드 모델링",
+    "url": "https://huggingface.co/papers/2611.24869",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "WorldRuler는 플레이어가 정의한 규칙에 따라 인터랙티브 세계를 생성하는 생성형 월드 모델이다. 규칙 정의·의존성·객체 상태를 실행 가능한 3D 규칙 그래프로 구성하여 저장·복원 시에도 규칙이 일관되게 유지된다. GTA-V와 Habitat을 활용한 자동 데이터 수집 파이프라인으로 규칙 기반 상호작용 데이터셋 RuleVerse를 구축하였으며, 반사실적 재구성 훈련을 통해 지정 객체의 속성 변화를 정확히 시각화한다.",
+    "why_it_matters": "사용자 정의 규칙을 영상 생성과 긴밀히 연동한 최초 수준의 월드 모델 프레임워크로, 게임 AI 및 시뮬레이션 분야에 실질적 응용 가능성을 제시한다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 4.044522437723423,
+    "published_at": "2026-11-17T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.21373",
+    "section": "papers",
+    "title_en": "WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection",
+    "title_ko": "WeVisForensics: AI 생성 영상 탐지를 위한 자기진화형 에이전트 프레임워크",
+    "url": "https://huggingface.co/papers/2611.21373",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "WeVisForensics는 AI가 생성한 영상의 위변조를 탐지하기 위한 에이전트 기반 프레임워크로, 메인 조사관 에이전트가 시각·음성 단서를 분석하는 여러 포렌식 서브에이전트를 조율한다. 이중 타임스케일 정책 최적화(DTPO)를 통해 조사관과 세부 검사 에이전트를 각각 다른 속도로 학습시키며, 30K 규모의 역할별 포렌식 주석 데이터셋 ForenCue-30K도 함께 공개했다. 실험 결과, 도메인 내외 및 에이전트 벤치마크 전반에 걸쳐 평균 95.2%의 탐지 정확도를 기록하며 기존 최강 탐지기 대비 9.0%p 향상됐다.",
+    "why_it_matters": "영상 생성 AI의 급속한 발전으로 딥페이크 탐지가 시급해진 가운데, 에이전트 기반 자기진화 구조로 기존 단일 패스 방식의 한계를 넘어 실질적인 포렌식 근거 기반 탐지를 가능하게 한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 3.8903717578961645,
+    "published_at": "2026-11-15T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.24408",
+    "section": "papers",
+    "title_en": "StrideWorld: Benchmarking Scene Rigidity and Action Consistency in Interactive Video World Model",
+    "title_ko": "StrideWorld: 인터랙티브 비디오 월드 모델의 장면 강성 및 액션 일관성 벤치마크",
+    "url": "https://huggingface.co/papers/2611.24408",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "StrideWorld는 인터랙티브 비디오 월드 모델이 카메라 이동 시 3D 장면 구조를 유지하는지(장면 강성)와 각 액션의 효과가 일관되는지(액션 일관성)를 평가하는 새로운 벤치마크다. 기존 벤치마크는 테스트 영상에서 역으로 맞춘 참조값을 사용해 점진적인 오류를 감지하지 못하는 문제가 있었으나, StrideWorld는 모션 이전에 고정된 참조값을 사용해 이를 해결한다. 140개의 시작 뷰에서 생성된 영상을 평가한 결과, 대부분의 모델이 카메라 이동 시 장면 변형을 일으키며, 추정된 장면 깊이로 명령을 스케일링하는 모델만이 경로 일관성을 유지하는 것으로 나타났다. 코드·데이터·리더보드는 GitHub에 공개되어 있다.",
+    "why_it_matters": "비디오 월드 모델의 숨겨진 장면 변형 오류를 탐지할 수 있는 엄격한 평가 기준을 제시해, 보다 신뢰성 높은 모델 개발에 중요한 기준점이 된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 3.70805020110221,
+    "published_at": "2026-11-17T19:00:00Z"
+  },
+  {
+    "id": "google_blog-gemini-api-tool-retrieval",
+    "section": "releases",
+    "title_en": "Introducing Tool Retrieval in the Gemini API",
+    "title_ko": "Gemini API에 툴 검색(Tool Retrieval) 기능 도입",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "Google이 Gemini API에 툴 검색(Tool Retrieval) 기능을 새롭게 도입했다. 이 기능은 에이전트가 많은 수의 툴 중에서 필요한 툴을 효율적으로 찾아 사용할 수 있도록 지원한다.",
+    "why_it_matters": "대규모 툴 환경에서 AI 에이전트의 도구 선택 효율을 높여 복잡한 자동화 워크플로우 구현이 용이해진다.",
+    "tags": [
+      "에이전트",
+      "RAG",
+      "LLM"
+    ],
+    "score": 0.8214302248677249,
+    "published_at": "2026-11-19T18:00:00Z"
+  },
+  {
+    "id": "google_blog-dialogues-walter-isaacson",
+    "section": "releases",
+    "title_en": "Walter Isaacson on curiosity and creativity in the AI age.",
+    "title_ko": "월터 아이작슨이 말하는 AI 시대의 호기심과 창의성",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "전기 작가 월터 아이작슨이 구글과 함께 역사상 가장 위대한 혁신가들이 AI 시대의 창의성과 인간적 판단력에 어떤 영감을 주는지 논의했다. 이번 대담에서는 AI 시대에도 여전히 중요한 인간 고유의 창의성과 호기심을 주제로 다룬다.",
+    "why_it_matters": "AI가 확산되는 시대에 인간의 창의성과 판단력이 왜 여전히 핵심인지를 역사적 혁신가들의 사례를 통해 조명한다는 점에서 의미 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8154778439153438,
+    "published_at": "2026-11-19T17:00:00Z"
+  },
+  {
+    "id": "openai_blog-how-openai-performance-factory-keeps-chatgpt-fast",
+    "section": "releases",
+    "title_en": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+    "title_ko": "OpenAI의 'Performance Factory': ChatGPT를 빠르게 유지하는 방법",
+    "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI는 ChatGPT의 성능 문제를 탐지하고 수정하는 자동화 시스템인 'Performance Factory'를 구축했다. 이 시스템은 Codex 기반의 워크플로우를 활용해 성능 이슈를 자동으로 찾아내고 해결한다. 이를 통해 ChatGPT의 응답 속도와 안정성을 지속적으로 유지하고 있다.",
+    "why_it_matters": "AI 코딩 에이전트(Codex)를 실제 프로덕션 성능 최적화에 적용한 사례로, 에이전트 기반 엔지니어링 자동화의 실용적 가능성을 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7619064153439153,
+    "published_at": "2026-11-19T08:00:00Z"
+  },
+  {
+    "id": "openai_blog-deploying-daybreak-red",
+    "section": "releases",
+    "title_en": "Deploying Daybreak Red",
+    "title_ko": "Daybreak Red를 활용한 보안 조사 레퍼런스 아키텍처 공개",
+    "url": "https://openai.com/business/learn/deploying-daybreak-red",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 Daybreak Red를 활용한 감독형 보안 조사를 위한 레퍼런스 아키텍처를 공개했다. 안전 제어, 설정, 모니터링 방법 등을 포함한 가이드라인을 제공한다. 보안 팀이 AI를 활용한 조사 워크플로우를 안전하게 구축할 수 있도록 돕는다.",
+    "why_it_matters": "AI 기반 보안 조사 시스템을 안전하게 배포하기 위한 실용적인 아키텍처 가이드로, 보안 실무자들에게 직접적인 참고 자료가 된다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-11-19T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-pr-scans-demo",
+    "section": "releases",
+    "title_en": "See PR scans in action",
+    "title_ko": "PR 스캔 기능 실제 동작 영상 공개",
+    "url": "https://openai.com/business/learn/pr-scans-demo",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 PR(풀 리퀘스트) 스캔 기능의 실제 작동 방식을 보여주는 워크스루 영상을 공개했다. 영상에서는 풀 리퀘스트 워크플로우 내에서 스캔 결과를 검토하는 과정을 직접 시연한다.",
+    "why_it_matters": "코드 리뷰 자동화에 AI 스캔을 접목하는 실제 사례를 확인할 수 있어 개발 워크플로우 개선에 참고가 된다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-11-19T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-codex-security-plugin-demo",
+    "section": "releases",
+    "title_en": "Explore the Codex Security Plugin",
+    "title_ko": "Codex 보안 플러그인 살펴보기",
+    "url": "https://openai.com/business/learn/codex-security-plugin-demo",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 Codex 보안 플러그인 데모를 공개했다. 시작 방법부터 결과 검토까지 전체 워크플로우를 영상으로 확인할 수 있다.",
+    "why_it_matters": "코드 보안 취약점 탐지를 Codex 기반으로 자동화하는 흐름을 직접 확인할 수 있어 개발자에게 실용적이다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-11-19T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-daybreak-blue-onboarding-demo",
+    "section": "releases",
+    "title_en": "Get started with Daybreak Blue",
+    "title_ko": "Daybreak Blue 시작하기",
+    "url": "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 Daybreak Blue 온보딩 과정을 소개하는 안내 영상을 공개했다. 설정 경험과 시작 방법을 단계별로 살펴볼 수 있다.",
+    "why_it_matters": "OpenAI의 새로운 서비스 또는 제품인 Daybreak Blue의 초기 설정 과정을 공식적으로 안내하는 콘텐츠다.",
+    "tags": [],
+    "score": 0.7142873677248678,
+    "published_at": "2026-11-19T00:00:00Z"
+  },
+  {
+    "id": "hn-50562754",
+    "section": "community",
+    "title_en": "Anthropic’s Nasdaq debut",
+    "title_ko": "Anthropic, 나스닥 상장 데뷔",
+    "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Anthropic이 나스닥에 상장 데뷔했다. 구체적인 상장 조건이나 공모가 등의 세부 정보는 제공되지 않았다.",
+    "why_it_matters": "주요 AI 기업인 Anthropic의 나스닥 상장은 AI 산업의 자본시장 진입을 알리는 중요한 이정표가 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 11.735907120195083,
+    "published_at": "2026-11-19T17:02:40Z"
+  },
+  {
+    "id": "hn-50519231",
+    "section": "community",
+    "title_en": "Garage Door Spam",
+    "title_ko": "차고 문 스팸",
+    "url": "https://blog.harrison.page/garage-door-spam/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "'Garage Door Spam'이라는 제목의 글이 Hacker News에 공유되었으나 상세 설명이 제공되지 않았습니다.",
+    "why_it_matters": "내용 정보가 부족하여 구체적인 중요도를 판단하기 어렵습니다.",
+    "tags": [],
+    "score": 10.600883742594744,
+    "published_at": "2026-11-16T16:13:36Z"
+  },
+  {
+    "id": "hn-50563148",
+    "section": "community",
+    "title_en": "Claude solves two open problems in the physics of black holes",
+    "title_ko": "Claude, 블랙홀 물리학의 두 가지 미해결 문제를 풀다",
+    "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Anthropic의 AI 모델 Claude가 블랙홀 물리학 분야의 두 가지 미해결 문제를 해결했다는 소식이다. 구체적인 문제와 풀이 방법에 대한 세부 정보는 제공되지 않았다.",
+    "why_it_matters": "LLM이 단순 보조 도구를 넘어 실제 과학적 난제를 해결하는 수준에 도달했음을 시사한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.761823941589268,
+    "published_at": "2026-11-19T17:30:44Z"
+  },
+  {
+    "id": "hn-50564159",
+    "section": "community",
+    "title_en": "The 98% Slot Machine: How Paid Advertising Became an Extraction Tax",
+    "title_ko": "98% 슬롯머신: 유료 광고가 착취세가 된 방법",
+    "url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "유료 광고 시스템이 광고주에게 불리한 구조로 변질되었다는 주장을 담은 글이다. 제목의 '98% 슬롯머신'은 광고 비용 대비 수익 회수율이 낮음을 비유적으로 표현한 것으로 보인다.",
+    "why_it_matters": "디지털 광고 생태계의 구조적 불균형을 비판하는 시각으로, 마케팅 예산을 운용하는 개발자·사업자에게 시사점이 있다.",
+    "tags": [],
+    "score": 8.949388886208574,
+    "published_at": "2026-11-19T18:35:17Z"
+  },
+  {
+    "id": "hn-50564366",
+    "section": "community",
+    "title_en": "Should governments slow frontier AI? Jacob Coxon and Robin Hanson debate [video]",
+    "title_ko": "정부는 프론티어 AI를 규제해야 하는가? Jacob Coxon과 Robin Hanson의 토론",
+    "url": "https://www.youtube.com/watch?v=lwfewYL7X0o",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Jacob Coxon과 Robin Hanson이 정부가 최첨단 AI 개발 속도를 늦춰야 하는지를 주제로 토론한 영상이다. 설명이 제공되지 않아 세부 내용은 확인하기 어렵다.",
+    "why_it_matters": "AI 규제와 개발 속도 조절에 관한 정책 논의는 전 세계 AI 거버넌스 방향에 직접적인 영향을 미친다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.129077918598362,
+    "published_at": "2026-11-19T18:47:16Z"
+  },
+  {
+    "id": "youtube-KGA7B_c_S4s",
+    "section": "video",
+    "title_en": "Anthropic IPOs, GPT 6.2 Astra Arrives, But There’s a Bigger Story",
+    "title_ko": "Anthropic IPO, GPT-6.2 Astra 출시, 그리고 더 큰 이야기",
+    "url": "https://www.youtube.com/watch?v=KGA7B_c_S4s",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "OpenAI가 GPT-6.2 Astra를 공개하고 Anthropic이 IPO를 추진하는 가운데, Google의 Gemini 4 Carbon·Neon도 빠르게 경쟁력을 높이고 있다. 이 영상은 단순한 모델 출시 소식을 넘어 AI 발전을 이끄는 요인, AI가 AI 연구를 얼마나 가속화하고 있는지, 그리고 모델 모니터링이 왜 점점 어려워지는지를 다룬다. 또한 Dario Amodei가 약속한 '선의의 경쟁(race to the top)'이 실제로 이루어지고 있는지도 짚는다.",
+    "why_it_matters": "AI 자체가 AI 연구를 가속화하는 RSI(재귀적 자기개선) 가능성과 투명성·안전성 문제가 본격적으로 수면 위로 떠오르고 있다는 점에서 업계 전반의 방향성을 가늠할 수 있다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.8336491402116402,
+    "published_at": "2026-11-19T20:03:10Z"
+  },
+  {
+    "id": "youtube-7J6YWt5umI4",
+    "section": "video",
+    "title_en": "컴퓨터에서 키울 수 있는 귀염뽀짝(?) 반려동물",
+    "title_ko": "데스크톱에서 키우는 귀여운 가상 반려동물 (오픈소스)",
+    "url": "https://www.youtube.com/shorts/7J6YWt5umI4",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "GitHub 저장소 'desktop-fly'를 소개하는 영상으로, 컴퓨터 화면 위에서 돌아다니는 귀여운 가상 반려동물(초파리)을 구현한 오픈소스 프로젝트입니다. 조코딩 채널에서 해당 프로젝트를 소개하며 바이브 코딩 관련 콘텐츠와 함께 다루고 있습니다.",
+    "why_it_matters": "데스크톱 환경에서 동작하는 귀여운 오픈소스 프로젝트로, 가볍게 참고할 수 있는 창의적인 개인 프로젝트 아이디어를 제공합니다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 0.785719246031746,
+    "published_at": "2026-11-19T12:00:02Z"
+  },
+  {
+    "id": "youtube-H5BSEsTFADI",
+    "section": "video",
+    "title_en": "맥도날드 AI 주문 부활하나..?",
+    "title_ko": "맥도날드 AI 주문 시스템 부활 가능성",
+    "url": "https://www.youtube.com/shorts/H5BSEsTFADI",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "맥도날드의 AI 기반 주문 시스템 재도입 가능성을 다루는 영상이다. 조코딩 채널에서 AI 관련 최신 동향을 소개하는 콘텐츠로, 드라이브스루 AI 주문과 관련된 내용을 다루고 있다.",
+    "why_it_matters": "글로벌 패스트푸드 기업의 AI 주문 시스템 도입 동향은 AI의 실생활 서비스 적용 가능성을 가늠하는 중요한 사례다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7767956349206349,
+    "published_at": "2026-11-19T10:30:05Z"
+  },
+  {
+    "id": "simon_willison-token-fraud-is-here-and-its-bad",
+    "section": "deepdive",
+    "title_en": "Token fraud is here and it’s BAD (YouTube)",
+    "title_ko": "토큰 사기의 실태: AI 플랫폼 무료 체험 악용 사례",
+    "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "AI 제품 관리 플랫폼 ChatPRD의 운영자 Claire Vo가 무료 체험을 조직적으로 악용하는 '토큰 사기' 피해를 공개했다. 사기 그룹들은 무료 체험과 프로모션 코드를 반복 사용해 AI 토큰을 착취하거나, 이를 재판매하거나 로블록스·포트나이트 맵 제작 같은 상업적 목적에 활용했다. 일부 사기범들은 'SVG 자전거 타는 펠리컨' 같은 특정 프롬프트를 통해 내부에서 사용 중인 AI 모델을 역추적하려 한 정황도 포착됐다. 결국 Claire는 무료 체험 서비스를 전면 중단하기로 결정했다.",
+    "why_it_matters": "AI SaaS 서비스의 무료 체험 기능이 조직적 토큰 착취의 표적이 될 수 있음을 보여주는 실제 사례로, 개발자와 운영자 모두 보안 설계에 주의가 필요하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8740046296296297,
+    "published_at": "2026-11-20T02:49:57Z"
+  }
+]
