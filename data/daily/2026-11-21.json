@@ -1,0 +1,362 @@
+[
+  {
+    "id": "hf-2611.21373",
+    "section": "papers",
+    "title_en": "WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection",
+    "title_ko": "WeVisForensics: AI 생성 영상 탐지를 위한 자기진화형 에이전트 프레임워크",
+    "url": "https://huggingface.co/papers/2611.21373",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "WeVisForensics는 AI 생성 영상을 탐지하기 위한 에이전트 기반 프레임워크로, 메인 조사관 에이전트가 시각·음성 단서를 분석하는 여러 포렌식 서브에이전트를 조율한다. 이중 타임스케일 정책 최적화 전략(DTPO)을 통해 조사관의 빠른 강화학습과 인스펙터의 점진적 개선을 동시에 수행한다. 30K 규모의 ForenCue-30K 데이터셋도 함께 공개하며, 도메인 내외 및 에이전트 벤치마크에서 평균 95.2%의 탐지 정확도로 기존 최강 모델 대비 9.0%p 향상된 성능을 보였다.",
+    "why_it_matters": "영상 생성 AI의 고도화로 딥페이크 탐지의 정확성과 근거 제시 능력이 갈수록 중요해지는 가운데, 에이전트 기반 자기진화 접근법이 기존 한계를 크게 뛰어넘는 성능을 입증했다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.931825632724326,
+    "published_at": "2026-11-15T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.26444",
+    "section": "papers",
+    "title_en": "Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation",
+    "title_ko": "Mind2Act World: 로봇 조작의 인지·행동·통합 능력을 진단하는 벤치마크",
+    "url": "https://huggingface.co/papers/2611.26444",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Mind2Act World는 로봇 조작 과제에서 인지 추론(Mind), 물리적 실행(Act), 그리고 두 능력의 통합(Mind2Act)을 별도로 진단할 수 있는 벤치마크다. 5개 실제 응용 도메인에서 30개의 시뮬레이션 태스크를 3개 난이도·2개 환경 설정으로 구성해 총 180개 구성을 제공한다. 최강의 에이전트조차 Mind에서 52.7%, Act에서 39.0%의 성공률을 보이면서도 Mind2Act 통합 과제에서는 12.0%에 그쳐, 개별 능력 보유가 통합 능력으로 이어지지 않음을 실증했다.",
+    "why_it_matters": "로봇 AI의 실패 원인이 추론·실행·통합 중 어디에 있는지 명확히 진단할 수 있어, 차세대 구현 지능 연구 방향을 구체적으로 제시한다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 4.850147601710058,
+    "published_at": "2026-11-18T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.26590",
+    "section": "papers",
+    "title_en": "Probing the \"Conscious\" Mind: Selective Access and Global Workspace in Vision-Language Models",
+    "title_ko": "비전-언어 모델의 '의식적' 정보 처리 탐구: 전역 작업공간 이론 적용",
+    "url": "https://huggingface.co/papers/2611.26590",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "연구팀은 멀티모달 야코비안 렌즈인 MC-Lens를 개발해 비전-언어 모델(VLM) 내부의 개념 표현 방식을 분석했다. 전역 작업공간 이론(GWT)을 기반으로 모델이 시각·언어 정보를 어떻게 선택적으로 접근하고 통합하는지 조사했으며, 개념 정보가 모델의 하위 추론 과정에 실제로 참여함을 확인했다. 또한 모달리티 간 정렬 발달을 추적하는 두 가지 J-공간 지표를 제시하고, 선택적 접근 능력이 개념 접근성보다 늦게 발달한다는 점을 밝혔다.",
+    "why_it_matters": "VLM 내부의 개념 처리 메커니즘을 해석 가능하게 분석하는 프레임워크를 제공함으로써, 멀티모달 모델의 정렬 개선과 해석 가능성 연구에 실험적 기반을 마련한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.737669618283368,
+    "published_at": "2026-11-18T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.26409",
+    "section": "papers",
+    "title_en": "WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding",
+    "title_ko": "WeMM-Video: 오픈소스 옴니모달 영상 이해 모델 공개",
+    "url": "https://huggingface.co/papers/2611.26409",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "WeMM-Video는 2B~35B 규모의 중영문 이중언어 옴니모달 파운데이션 모델 패밀리로, 텍스트·이미지·오디오·비디오를 통합 처리한다. 약 1.2조 토큰 규모의 멀티모달 코퍼스로 사전학습되었으며, 120개 이상의 벤치마크에서 평가되었다. 플래그십 모델 WeMM-Video-35B-A3B는 Qwen3.5-Omni-Flash, Seed2.0-Mini-0428 등 상용 모델을 크게 앞서며, 경량 9B 모델은 더 큰 오픈소스 모델인 Qwen3-Omni-30B-A3B-Instruct를 능가한다. 모델 전체와 평가 파이프라인이 오픈소스로 공개된다.",
+    "why_it_matters": "오디오-비주얼 통합 이해에서 오픈소스 최고 성능을 달성하며 Gemini-3.0-Flash 수준에 근접, 멀티모달 연구 접근성을 크게 높인다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 4.713572066704308,
+    "published_at": "2026-11-18T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.26629",
+    "section": "papers",
+    "title_en": "Posterior Matching Distillation",
+    "title_ko": "사후 분포 매칭 증류(PMD): 고품질 이미지 생성을 위한 새로운 디퓨전 증류 기법",
+    "url": "https://huggingface.co/papers/2611.26629",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "PMD(Posterior Matching Distillation)는 디퓨전 모델의 반복적 샘플링 과정을 소수의 네트워크 평가로 압축하는 새로운 증류 기법입니다. 기존의 역방향-KL 목적 함수가 가진 최빈값 편향 문제를 해결하기 위해, 모드 커버링 사후 샘플링과 임의 스텝 생성을 결합하였습니다. SDXL과 FLUX.2 4B 모델 실험에서 4-스텝 방법 중 최고 FID를 달성하면서도 프롬프트 정렬 및 지각적 품질 지표에서도 경쟁력 있는 성능을 보였습니다.",
+    "why_it_matters": "보조 네트워크 없이 전체 조건부 분포를 감독할 수 있어, 빠르고 다양성 높은 이미지·영상 생성 모델 개발에 실질적 돌파구가 될 수 있습니다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.555348061489413,
+    "published_at": "2026-11-18T19:00:00Z"
+  },
+  {
+    "id": "openai_blog-combatting-adversarial-distillation",
+    "section": "releases",
+    "title_en": "Combatting adversarial distillation",
+    "title_ko": "적대적 증류 대응: OpenAI의 다층 방어 전략",
+    "url": "https://openai.com/index/combatting-adversarial-distillation",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 적대적 증류(adversarial distillation), 즉 모델의 핵심 능력을 무단으로 추출하려는 시도에 대응하기 위한 다층적 접근법을 공개했다. 이 전략은 모델 훈련, 안전장치, 탐지, 그리고 정책 집행을 결합한 방식으로 구성된다. 이를 통해 OpenAI는 자사 모델의 능력이 악의적으로 복제되거나 추출되는 것을 방지하고자 한다.",
+    "why_it_matters": "AI 모델 능력의 무단 추출은 안전·보안·지식재산 측면에서 심각한 위협이며, OpenAI의 대응 전략은 업계 표준에 영향을 줄 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7738111772486773,
+    "published_at": "2026-11-20T10:00:00Z"
+  },
+  {
+    "id": "github_trending-elementalsouls/Claude-BugHunter",
+    "section": "releases",
+    "title_en": "elementalsouls/Claude-BugHunter",
+    "title_ko": "Claude-BugHunter: Claude Code용 버그 헌팅 스킬 번들",
+    "url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code에 설치하는 버그 헌팅 및 외부 레드팀 작업 전용 스킬 번들로, 83개의 스킬과 15개의 슬래시 커맨드, 24개 취약점 클래스에 걸친 681개의 공개 보고서 패턴을 포함한다. XSS, SQLi, SSRF, IDOR 등 웹앱 취약점부터 M365/Entra, Okta, vCenter 등 엔터프라이즈 플랫폼 공격 체인까지 외부 공격 표면 전반을 커버한다. Claude Code 플러그인으로 한 번에 설치하거나 직접 클론해 사용할 수 있으며, OpenCode, OpenAI Codex CLI 등 다양한 에이전트 하네스도 지원한다. 인가된 버그 바운티·펜테스트 환경 전용으로 설계되었다.",
+    "why_it_matters": "Claude를 단순 챗봇이 아닌 실전 버그 헌터처럼 동작하게 만드는 구조화된 스킬 번들로, 반복적인 취약점 조사 작업을 AI 에이전트로 체계화할 수 있다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7617311507936508,
+    "published_at": "2026-11-20T07:58:14Z"
+  },
+  {
+    "id": "openai_blog-hebbia",
+    "section": "releases",
+    "title_en": "Hebbia sees improvements in financial research with GPT-6 Astra",
+    "title_ko": "Hebbia, GPT-6 Astra로 금융 리서치 성능 향상 확인",
+    "url": "https://openai.com/business/customer-stories/hebbia",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Hebbia가 GPT-6 Astra를 금융 리서치에 테스트한 결과, 출시 전 평가에서 소스 커버리지, 인용 관련성, 발표 품질 등에서 개선 효과를 확인했다. 이는 GPT-6 Astra가 실제 금융 업무 환경에서 유의미한 성능 향상을 제공할 수 있음을 시사한다.",
+    "why_it_matters": "GPT-6 Astra가 금융 리서치 실무에서 구체적인 성능 개선을 보여줌으로써 LLM의 전문 도메인 적용 가능성을 높이는 사례가 된다.",
+    "tags": [
+      "LLM",
+      "RAG"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-11-20T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-introducing-medchembench",
+    "section": "releases",
+    "title_en": "Can AI help scientists identify promising drug candidates?",
+    "title_ko": "AI가 유망한 신약 후보 물질 발굴을 도울 수 있을까?",
+    "url": "https://openai.com/index/introducing-medchembench",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "MedChemBench는 AI 모델이 분자 구조를 해석하고 실험 근거를 바탕으로 추론하며 초기 신약 개발 단계에서 화합물을 선택하는 능력을 평가하는 벤치마크다. 이를 통해 AI 모델이 신약 개발 초기 단계에서 얼마나 효과적으로 활용될 수 있는지를 측정한다.",
+    "why_it_matters": "신약 개발의 초기 단계에서 AI 모델의 성능을 객관적으로 평가할 수 있는 기준이 마련됨으로써, 제약·바이오 연구에서의 AI 활용 가능성을 가늠할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7142873677248678,
+    "published_at": "2026-11-20T00:00:00Z"
+  },
+  {
+    "id": "google_blog-gemini-api-tool-retrieval",
+    "section": "releases",
+    "title_en": "Introducing Tool Retrieval in the Gemini API",
+    "title_ko": "Gemini API에 툴 검색(Tool Retrieval) 기능 도입",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "Google이 Gemini API에 툴 검색(Tool Retrieval) 기능을 새롭게 도입했다. 이 기능은 에이전트가 많은 수의 도구 중에서 적합한 도구를 동적으로 검색하고 선택할 수 있도록 지원한다.",
+    "why_it_matters": "대규모 툴셋을 활용하는 AI 에이전트 개발 시, 적절한 도구를 효율적으로 찾아 호출할 수 있어 에이전트의 확장성과 성능이 크게 향상된다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "RAG"
+    ],
+    "score": 0.678573082010582,
+    "published_at": "2026-11-19T18:00:00Z"
+  },
+  {
+    "id": "google_blog-dialogues-walter-isaacson",
+    "section": "releases",
+    "title_en": "Walter Isaacson on curiosity and creativity in the AI age.",
+    "title_ko": "월터 아이작슨, AI 시대의 호기심과 창의성을 말하다",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "전기 작가 월터 아이작슨이 구글과 함께 AI 시대의 창의성과 인간적 판단력에 대해 논의했다. 역사상 위대한 혁신가들이 어떻게 오늘날의 AI 시대에 영감을 줄 수 있는지를 주제로 대담을 나눴다.",
+    "why_it_matters": "AI 시대에 인간의 창의성과 판단력이 어떤 역할을 해야 하는지에 대한 인문학적 시각을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.672620701058201,
+    "published_at": "2026-11-19T17:00:00Z"
+  },
+  {
+    "id": "openai_blog-how-openai-performance-factory-keeps-chatgpt-fast",
+    "section": "releases",
+    "title_en": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+    "title_ko": "OpenAI의 'Performance Factory'가 ChatGPT를 빠르게 유지하는 방법",
+    "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI는 ChatGPT의 성능 문제를 자동으로 발견하고 수정하는 시스템인 'Performance Factory'를 구축했다. 이 시스템은 Codex 기반의 워크플로우를 활용하여 성능 이슈를 탐지하고 해결한다. 이를 통해 ChatGPT의 응답 속도와 안정성을 지속적으로 유지할 수 있다.",
+    "why_it_matters": "Codex를 활용한 자동화된 성능 최적화 파이프라인은 대규모 AI 서비스 운영의 새로운 접근 방식을 제시한다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.6190492724867724,
+    "published_at": "2026-11-19T08:00:00Z"
+  },
+  {
+    "id": "hn-50574968",
+    "section": "community",
+    "title_en": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
+    "title_ko": "레번트 알푀게, 일반 리만 가설 증명 주장",
+    "url": "https://alpo.ge/remark.pdf",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "레번트 알푀게가 일반 리만 가설(Generalized Riemann Hypothesis)의 증명을 주장하는 논문을 공개했다. 일반 리만 가설은 수학에서 가장 중요한 미해결 난제 중 하나로, 이 증명이 검증된다면 수학사에 획기적인 사건이 된다.",
+    "why_it_matters": "일반 리만 가설은 정수론 및 암호학 등 다양한 분야의 근간이 되는 난제로, 증명 여부에 따라 광범위한 파급 효과가 예상된다.",
+    "tags": [],
+    "score": 12.538541308440156,
+    "published_at": "2026-11-20T14:16:21Z"
+  },
+  {
+    "id": "hn-50581260",
+    "section": "community",
+    "title_en": "Inkling 2 Mini",
+    "title_ko": "Inkling 2 Mini 출시",
+    "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Inkling 2 Mini가 공개되었다. 상세한 설명은 제공되지 않아 구체적인 사양이나 기능은 알 수 없다.",
+    "why_it_matters": "추가 정보 없이 제품명만 확인 가능한 상태로, 상세 내용 확인이 필요하다.",
+    "tags": [],
+    "score": 10.244654274405303,
+    "published_at": "2026-11-20T20:12:19Z"
+  },
+  {
+    "id": "hn-50579331",
+    "section": "community",
+    "title_en": "We promoted developers into architects without informing them",
+    "title_ko": "개발자를 아키텍트로 승진시키면서 정작 본인에게 알리지 않았다",
+    "url": "https://manidoraisamy.com/developer-to-architect.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "개발자들이 아키텍트 역할로 승진했지만, 그 사실을 본인에게 제대로 알리지 않은 조직 내 문제를 다루는 글이다. 역할 변화에 따른 기대치와 책임이 명확히 전달되지 않아 혼란이 발생할 수 있음을 시사한다.",
+    "why_it_matters": "기술 조직에서 역할 전환 시 커뮤니케이션 부재가 개인과 팀 모두에 미치는 영향을 짚는다.",
+    "tags": [],
+    "score": 9.561615525824285,
+    "published_at": "2026-11-20T18:17:51Z"
+  },
+  {
+    "id": "hn-50574383",
+    "section": "community",
+    "title_en": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
+    "title_ko": "AI 매도세로 나스닥 2026년 상승분 전부 반납, 앤트로픽 2일 연속 하락",
+    "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI 관련 주식의 매도세가 이어지면서 나스닥 지수가 2026년 들어 쌓아온 상승분을 모두 반납했다. 앤트로픽은 이틀 연속 주가 하락을 기록했다.",
+    "why_it_matters": "AI 투자 심리 악화가 시장 전반에 미치는 영향력을 보여주는 신호로, AI 섹터 전반의 밸류에이션 조정 가능성을 시사한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.395379353527817,
+    "published_at": "2026-11-20T13:29:59Z"
+  },
+  {
+    "id": "hn-50577265",
+    "section": "community",
+    "title_en": "Language Models Can Rewrite Their Own Weights",
+    "title_ko": "언어 모델이 자신의 가중치를 스스로 재작성할 수 있다",
+    "url": "https://arxiv.org/abs/2611.21885",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "언어 모델이 외부 개입 없이 자체적으로 가중치를 수정할 수 있다는 연구가 발표되었다. 제목만으로는 구체적인 방법론이나 성능 수치를 확인할 수 없어 추가 정보가 필요하다.",
+    "why_it_matters": "모델이 스스로 가중치를 재작성할 수 있다면 파인튜닝·지속 학습 패러다임 자체가 근본적으로 바뀔 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.291883611439406,
+    "published_at": "2026-11-20T16:29:06Z"
+  },
+  {
+    "id": "youtube-YDST35uuLHY",
+    "section": "video",
+    "title_en": "Google AdMob AI 기능 데모: 앱 광고 연동과 수익화 관리",
+    "title_ko": "Google AdMob AI 기능 데모: 앱 광고 연동과 수익화 관리 자동화",
+    "url": "https://www.youtube.com/shorts/YDST35uuLHY",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "Google AdMob의 AI 기능 데모를 소개하는 영상으로, AI를 활용해 앱에 광고를 연동하고 수익화 관리 작업을 지원하는 흐름을 보여줍니다. 영상에서 소개된 AdMob MCP 서버는 아직 출시 예정(Coming soon) 기능으로, 현재 일반 사용자가 이용할 수 있는 상태는 아닙니다. 구글의 지원을 받아 제작된 콘텐츠입니다.",
+    "why_it_matters": "앱 개발자의 광고 수익화 워크플로우에 AI·MCP 서버가 결합될 경우 관리 자동화 가능성이 열린다는 점에서 주목할 만하다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 0.7751967592592592,
+    "published_at": "2026-11-20T10:13:58Z"
+  },
+  {
+    "id": "youtube-LwSECD5SGAI",
+    "section": "video",
+    "title_en": "50번만에 사람의 정밀함을 따라잡는 로봇 ㄷㄷ",
+    "title_ko": "50번 만에 사람 수준의 정밀함을 따라잡는 로봇",
+    "url": "https://www.youtube.com/shorts/LwSECD5SGAI",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "로봇이 단 50번의 학습만으로 사람의 정밀한 동작을 모방하는 수준에 도달하는 내용을 다룬 영상이다. 조코딩 채널에서 AI와 로봇 학습 관련 소식을 소개하고 있다.",
+    "why_it_matters": "적은 반복 학습만으로 인간 수준의 정밀 동작을 구현하는 로봇 기술의 빠른 발전을 보여준다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7678736772486773,
+    "published_at": "2026-11-20T09:00:09Z"
+  },
+  {
+    "id": "youtube-FJJWq0qUrZs",
+    "section": "video",
+    "title_en": "쿠팡이 지도를 나누는 방법 - hex map",
+    "title_ko": "쿠팡이 지도를 나누는 방법 - 헥스 맵(Hex Map) 알고리즘",
+    "url": "https://www.youtube.com/shorts/FJJWq0qUrZs",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "쿠팡이 배송 지역을 효율적으로 분할하기 위해 사용하는 헥스 맵(Hex Map) 방식을 소개하는 영상이다. 조코딩 채널에서 해당 알고리즘 개념을 설명하며, 지리 공간을 육각형 격자로 나누는 방법을 다룬다.",
+    "why_it_matters": "물류·배송 서비스에서 공간 분할 알고리즘이 어떻게 활용되는지 실사례로 이해할 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.7589500661375661,
+    "published_at": "2026-11-20T07:30:12Z"
+  },
+  {
+    "id": "latent_space-ainews-riemann-hypothesis-proved-twice-independently",
+    "section": "deepdive",
+    "title_en": "[AINews] Riemann Hypothesis proved...twice independently",
+    "title_ko": "리만 가설, 독립적으로 두 번 증명되다",
+    "url": "https://latent.space/p/ainews-riemann-hypothesis-proved-twice-independently/",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "2026년 11월 20일자 AI 뉴스로, 리만 가설이 독립적으로 두 차례 증명되었다는 소식이다. 구체적인 세부 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "수학 역사상 가장 오래된 미해결 난제 중 하나인 리만 가설의 증명은 수학 및 암호학 등 여러 분야에 큰 파급 효과를 가질 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8871263227513227,
+    "published_at": "2026-11-21T05:02:13Z"
+  }
+]
