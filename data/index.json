@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-11-22",
+    "total": 20,
+    "counts": {
+      "community": 4,
+      "deepdive": 1,
+      "papers": 5,
+      "releases": 7,
+      "video": 3
+    }
+  },
+  {
     "date": "2026-11-21",
     "total": 21,
     "counts": {

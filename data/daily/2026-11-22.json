@@ -1,0 +1,348 @@
+[
+  {
+    "id": "hf-2611.26444",
+    "section": "papers",
+    "title_en": "Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation",
+    "title_ko": "Mind2Act World: 로봇 조작의 인지·행동·합성 능력을 진단하는 벤치마크",
+    "url": "https://huggingface.co/papers/2611.26444",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Mind2Act World는 로봇 조작 능력을 '인지(Mind)', '행동(Act)', '인지-행동 합성(Mind2Act)' 세 가지 관점으로 나누어 평가하는 진단 벤치마크다. 5개 실제 응용 도메인에서 30개 시뮬레이션 태스크, 180개 구성을 제공하며, 실패 원인이 추론·실행·합성 중 어디에 있는지 체계적으로 진단할 수 있다. 가장 강력한 에이전트조차 Mind에서 52.7%, Act에서 39.0%의 성공률을 보이면서도 Mind2Act에서는 12.0%에 그쳐, 환경 피드백을 통한 추론과 실행의 합성이 핵심 미해결 과제임을 보여준다.",
+    "why_it_matters": "단일 능력 평가만으로는 드러나지 않는 로봇 지능의 합성 실패 원인을 체계적으로 진단할 수 있어, 구체화된 AI 연구 방향 설정에 중요한 기준점이 된다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.951243718581427,
+    "published_at": "2026-11-18T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.26409",
+    "section": "papers",
+    "title_en": "WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding",
+    "title_ko": "WeMM-Video: 오픈소스 옴니모달 비디오 이해 최전선",
+    "url": "https://huggingface.co/papers/2611.26409",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "WeMM-Video는 2B·4B·9B·35B-A3B 규모의 중영문 이중언어 옴니모달 파운데이션 모델 패밀리로, 텍스트·이미지·오디오·비디오를 통합 처리합니다. 약 1.2조 토큰의 멀티모달 코퍼스로 학습되었으며, 120개 이상의 벤치마크에서 평가되었습니다. 플래그십 모델 WeMM-Video-35B-A3B는 Qwen3.5-Omni-Flash, Seed2.0-Mini-0428 등 독점 모델을 능가하고 Gemini-3.0-Flash와의 격차를 좁혔으며, 소형 모델 WeMM-Video-9B는 더 큰 오픈소스 모델인 Qwen3-Omni-30B-A3B-Instruct를 뛰어넘었습니다. 모델 패밀리 전체와 평가 파이프라인이 오픈소스로 공개됩니다.",
+    "why_it_matters": "오픈소스 옴니모달 비디오 이해 분야에서 독점 대형 모델에 필적하는 성능을 소형 파라미터로 달성해, 오픈소스 커뮤니티의 멀티모달 AI 연구 기준선을 크게 끌어올린다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 4.80666248977032,
+    "published_at": "2026-11-18T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.26590",
+    "section": "papers",
+    "title_en": "Probing the \"Conscious\" Mind: Selective Access and Global Workspace in Vision-Language Models",
+    "title_ko": "비전-언어 모델의 '의식적' 정보 처리 탐구: 전역 작업공간 이론 적용",
+    "url": "https://huggingface.co/papers/2611.26590",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "이 연구는 전역 작업공간 이론(GWT)을 비전-언어 모델(VLM)에 적용해 내부 개념 표현을 분석하는 'MC-Lens' 프레임워크를 제안한다. MC-Lens는 멀티모달 야코비안 렌즈를 활용해 시각·언어 인코더의 중간 상태를 공유 의미 공간에 매핑하고 개념 접근성을 비교한다. 실험 결과, VLM은 태스크에 따라 개념 정보를 선택적으로 접근하며, 이 정보가 하위 추론에 실제로 참여함을 반사실적 실험으로 확인했다. 또한 선택적 접근 능력은 단순 개념 접근성보다 훈련 후반에 발달한다는 점도 밝혔다.",
+    "why_it_matters": "VLM 내부에서 개념이 어떻게 표현·선택·전달되는지를 측정 가능한 메트릭으로 분석함으로써, 멀티모달 정렬 개선과 모델 해석 가능성 연구에 새로운 실험적 기반을 제공한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.761200115693562,
+    "published_at": "2026-11-18T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.26629",
+    "section": "papers",
+    "title_en": "Posterior Matching Distillation",
+    "title_ko": "사후 매칭 증류(PMD): 확산 모델 가속화를 위한 새로운 분포 기반 증류 기법",
+    "url": "https://huggingface.co/papers/2611.26629",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "PMD(Posterior Matching Distillation)는 확산 모델의 반복 샘플링 과정을 소수의 네트워크 평가로 압축하는 새로운 증류 기법이다. 기존 reverse-KL 기반 방식의 모드 편향 문제를 해결하기 위해 모드 커버링 사후 샘플링을 활용하며, 추가 학습 없이 다양한 스텝 수를 지원한다. SDXL과 FLUX.2 4B 모델 실험에서 4-스텝 방식 중 최고 FID를 달성했으며, 프롬프트 정렬 및 지각 품질 지표에서도 경쟁력 있는 성능을 보인다.",
+    "why_it_matters": "이미지·영상 생성 모델의 추론 속도를 크게 높이면서도 다양성 손실 없이 고품질 출력을 유지할 수 있어 실용적 배포에 직결된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.637586159726386,
+    "published_at": "2026-11-18T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.26595",
+    "section": "papers",
+    "title_en": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
+    "title_ko": "Coda-DaVinci: 코드 기반 3D 프록시로 영상 생성 재정의",
+    "url": "https://huggingface.co/papers/2611.26595",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Code2Video는 에이전트가 생성한 3D 프록시를 활용해 영상의 구조와 동역학을 명시적으로 제어하는 패러다임이다. 연구팀은 프록시 세밀도, 물리 시뮬레이션, 프롬프팅 방식을 체계적으로 실험하여 거친 프록시는 자연스러운 움직임에, 중간 세밀도 프록시는 일관성에 유리하다는 등의 트레이드오프를 밝혔다. 이를 바탕으로 Coda-DaVinci는 태스크에 따라 프록시 기반 생성과 직접 생성을 선택하고, 멀티 에이전트 하네스로 시각 검사 및 독립 검수를 통해 장면을 수정하는 적응형 프레임워크를 제안한다. VTR 지시 따르기와 R2M 장면 일관성에서 선도적 성능을 보였으나, 장기 영상에서 전환 안정성과 장면 설정 준수에는 한계가 남아 있다.",
+    "why_it_matters": "3D 프록시와 물리 시뮬레이션을 에이전트 기반으로 결합해 영상 생성의 구조적 제어 가능성을 크게 높인 새로운 패러다임을 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.58351893845611,
+    "published_at": "2026-11-18T19:00:00Z"
+  },
+  {
+    "id": "github_trending-elementalsouls/Claude-BugHunter",
+    "section": "releases",
+    "title_en": "elementalsouls/Claude-BugHunter",
+    "title_ko": "Claude-BugHunter: Claude Code용 버그헌팅·레드팀 스킬 번들",
+    "url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code 스킬 시스템에 설치하는 버그헌팅·외부 레드팀 전용 번들로, 83개 스킬, 15개 슬래시 커맨드, HackerOne 공개 보고서 681건에서 추출한 취약점 패턴을 24개 취약점 클래스에 걸쳐 제공한다. 웹앱 취약점 헌팅부터 M365/Entra, Okta, vCenter 등 엔터프라이즈 플랫폼 공격 체인, 클라우드 미스컨피그, OSINT 리콘까지 외부 공격 표면 전반을 커버한다. 평문 영어로 테스트 대상을 설명하면 관련 스킬이 자동 로드되며, Burp Suite MCP 연동과 HackerOne MCP도 지원한다.",
+    "why_it_matters": "Claude를 범용 챗봇이 아닌 실전 레드팀 오퍼레이터로 전환하는 구조화된 스킬 번들로, 버그헌터·펜테스터가 반복 작업을 자동화하고 실제 공개 취약점 패턴을 즉시 활용할 수 있게 한다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7611226851851851,
+    "published_at": "2026-11-21T07:52:06Z"
+  },
+  {
+    "id": "openai_blog-combatting-adversarial-distillation",
+    "section": "releases",
+    "title_en": "Combatting adversarial distillation",
+    "title_ko": "적대적 증류 공격 대응 전략 공개",
+    "url": "https://openai.com/index/combatting-adversarial-distillation",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 적대적 증류(adversarial distillation)에 대응하기 위한 다층적 접근법을 공개했다. 모델 학습, 보안 장치, 탐지, 그리고 정책 집행을 결합하여 모델 능력 추출을 방지하는 전략이다. 이를 통해 외부에서 OpenAI 모델의 능력을 무단으로 복제하거나 추출하려는 시도를 차단하고자 한다.",
+    "why_it_matters": "AI 모델의 능력이 무단 증류를 통해 유출되는 것은 안전성과 지적재산 모두에 위협이 되며, OpenAI의 대응 체계는 업계 표준이 될 수 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.6309540343915344,
+    "published_at": "2026-11-20T10:00:00Z"
+  },
+  {
+    "id": "openai_blog-hebbia",
+    "section": "releases",
+    "title_en": "Hebbia sees improvements in financial research with GPT-6 Astra",
+    "title_ko": "Hebbia, GPT-6 Astra로 금융 리서치 성능 향상 확인",
+    "url": "https://openai.com/business/customer-stories/hebbia",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Hebbia는 GPT-6 Astra를 금융 리서치에 테스트한 결과, 출처 커버리지, 인용 관련성, 발표 품질 등에서 개선을 확인했다. 이는 공식 출시 전 사전 평가에서 얻은 결과다.",
+    "why_it_matters": "GPT-6 Astra가 실제 금융 리서치 워크플로에서 측정 가능한 성능 향상을 보여줌으로써 LLM의 전문 도메인 활용 가능성을 입증했다.",
+    "tags": [
+      "LLM",
+      "RAG"
+    ],
+    "score": 0.5714302248677249,
+    "published_at": "2026-11-20T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-introducing-medchembench",
+    "section": "releases",
+    "title_en": "Can AI help scientists identify promising drug candidates?",
+    "title_ko": "AI가 유망한 신약 후보 물질을 발굴할 수 있을까?",
+    "url": "https://openai.com/index/introducing-medchembench",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "MedChemBench는 AI 모델이 분자 구조를 해석하고 실험적 근거를 바탕으로 추론하며 초기 신약 개발 단계에서 화합물을 선별하는 능력을 평가하는 벤치마크다. 이를 통해 AI가 의약화학 분야에서 얼마나 실질적인 역할을 할 수 있는지 측정할 수 있다.",
+    "why_it_matters": "신약 개발 초기 단계에서 AI의 실질적 활용 가능성을 체계적으로 평가하는 기준이 마련됨으로써, AI 모델의 과학적 추론 능력 발전 방향을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.5714302248677249,
+    "published_at": "2026-11-20T00:00:00Z"
+  },
+  {
+    "id": "google_blog-gemini-api-tool-retrieval",
+    "section": "releases",
+    "title_en": "Introducing Tool Retrieval in the Gemini API",
+    "title_ko": "Gemini API에 툴 검색(Tool Retrieval) 기능 도입",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "Google이 Gemini API에 툴 검색(Tool Retrieval) 기능을 새롭게 도입했다. 이 기능은 에이전트가 많은 수의 툴 중에서 현재 작업에 적합한 툴을 자동으로 검색·선택할 수 있도록 지원한다. 대규모 툴 환경에서도 효율적인 에이전트 운용이 가능해진다.",
+    "why_it_matters": "수백 개 이상의 툴을 다루는 AI 에이전트 구축 시, 적절한 툴을 자동으로 찾아주는 RAG 방식의 툴 검색은 성능과 확장성을 크게 높인다.",
+    "tags": [
+      "RAG",
+      "에이전트",
+      "LLM"
+    ],
+    "score": 0.5357159391534392,
+    "published_at": "2026-11-19T18:00:00Z"
+  },
+  {
+    "id": "google_blog-dialogues-walter-isaacson",
+    "section": "releases",
+    "title_en": "Walter Isaacson on curiosity and creativity in the AI age.",
+    "title_ko": "월터 아이작슨이 말하는 AI 시대의 호기심과 창의성",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "전기 작가 월터 아이작슨이 구글과 함께 AI 시대에 역사상 위대한 혁신가들이 어떻게 창의성과 인간적 판단력에 영감을 주는지 논의했다. 이번 대화에서는 AI 시대를 맞아 호기심과 창의적 사고의 중요성을 조명한다.",
+    "why_it_matters": "AI가 확산되는 시대에 인간 고유의 창의성과 판단력이 왜 여전히 중요한지를 역사적 혁신가들의 사례를 통해 성찰할 수 있는 기회를 제공한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.5297635582010582,
+    "published_at": "2026-11-19T17:00:00Z"
+  },
+  {
+    "id": "openai_blog-how-openai-performance-factory-keeps-chatgpt-fast",
+    "section": "releases",
+    "title_en": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+    "title_ko": "OpenAI의 'Performance Factory'가 ChatGPT를 빠르게 유지하는 방법",
+    "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI는 ChatGPT의 성능 문제를 탐지하고 수정하기 위해 'Performance Factory'라는 시스템을 구축했다. 이 시스템은 Codex 기반의 워크플로우를 활용해 성능 이슈를 자동으로 찾아내고 해결한다. 이를 통해 ChatGPT의 응답 속도와 안정성을 지속적으로 유지할 수 있다.",
+    "why_it_matters": "Codex를 활용한 자동화된 성능 최적화 파이프라인은 대규모 AI 서비스 운영의 새로운 접근 방식을 제시한다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "인프라"
+    ],
+    "score": 0.47619212962962965,
+    "published_at": "2026-11-19T08:00:00Z"
+  },
+  {
+    "id": "hn-50582069",
+    "section": "community",
+    "title_en": "Pill to treat pancreatic cancer hailed as 'biggest breakthrough in decades'",
+    "title_ko": "췌장암 치료 알약, '수십 년 만의 최대 혁신'으로 주목",
+    "url": "https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "췌장암을 치료하는 새로운 알약이 수십 년 만의 최대 의학적 돌파구로 평가받고 있다. 구체적인 임상 결과나 약물명 등 세부 정보는 제공된 내용에 포함되지 않았다.",
+    "why_it_matters": "AI·테크와 직접적인 연관성은 불분명하나, 의료 혁신 소식으로 관심을 끌 수 있다.",
+    "tags": [],
+    "score": 10.31295725003645,
+    "published_at": "2026-11-20T21:03:12Z"
+  },
+  {
+    "id": "hn-50546587",
+    "section": "community",
+    "title_en": "LLMs can read and write executables byte by byte from a hex dump",
+    "title_ko": "LLM, 헥스 덤프로 실행 파일을 바이트 단위로 읽고 쓸 수 있다",
+    "url": "https://sgiannopoulos.github.io/blog/machine-code-programming/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "LLM이 헥스 덤프 형식을 통해 실행 파일을 바이트 단위로 읽고 쓸 수 있다는 내용을 다룬다. 이는 LLM이 바이너리 데이터를 직접 처리할 수 있는 능력을 보여주는 사례다.",
+    "why_it_matters": "LLM의 바이너리 파일 직접 조작 가능성은 보안 및 리버스 엔지니어링 분야에 새로운 시사점을 제공한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.848121905367691,
+    "published_at": "2026-11-18T14:15:58Z"
+  },
+  {
+    "id": "hn-50587208",
+    "section": "community",
+    "title_en": "RCE in Gnupg",
+    "title_ko": "GnuPG에서 원격 코드 실행(RCE) 취약점 발견",
+    "url": "https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GnuPG에서 원격 코드 실행(RCE) 취약점이 발견되었다. 상세 내용은 제공되지 않았으나, GnuPG는 광범위하게 사용되는 암호화 도구인 만큼 보안에 미치는 영향이 클 수 있다.",
+    "why_it_matters": "GnuPG는 이메일 서명·암호화 등 보안 인프라의 핵심 도구로, RCE 취약점은 즉각적인 패치 적용이 필요한 심각한 위협이다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 8.806948261695272,
+    "published_at": "2026-11-21T08:32:58Z"
+  },
+  {
+    "id": "hn-50592097",
+    "section": "community",
+    "title_en": "Upload2Shell (CVE-2026-125396)",
+    "title_ko": "Upload2Shell (CVE-2026-125396) 취약점 공개",
+    "url": "https://pwn.ai/upload2shell",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Upload2Shell과 관련된 CVE-2026-125396 취약점이 공개되었다. 상세 설명이 제공되지 않아 추가적인 내용은 확인이 필요하다.",
+    "why_it_matters": "파일 업로드를 통한 셸 실행 가능성이 있는 취약점으로, 보안 담당자의 주의가 필요하다.",
+    "tags": [],
+    "score": 7.443545787645067,
+    "published_at": "2026-11-21T18:29:29Z"
+  },
+  {
+    "id": "youtube-zqzk43bSdDI",
+    "section": "video",
+    "title_en": "Since last year, we asked: “What if AI solved the Riemann Hypothesis?”",
+    "title_ko": "리만 가설, 가설에서 현실로 — 3Blue1Brown의 발표",
+    "url": "https://www.youtube.com/watch?v=zqzk43bSdDI",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "3Blue1Brown 채널이 리만 가설 증명에 관한 영상을 공개했다. Levent Alpöge의 발표와 Alessandro Masullo의 인간에 의한 증명 발표가 함께 소개되었다. 채널은 수학 애니메이션으로 유명하며, 이번 영상도 Python 라이브러리 manim으로 제작되었다.",
+    "why_it_matters": "수학 역사상 가장 유명한 미해결 난제인 리만 가설의 증명 발표가 나왔다면, 수학과 AI 연구 전반에 큰 파장을 미칠 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8692675264550265,
+    "published_at": "2026-11-22T02:02:12Z"
+  },
+  {
+    "id": "youtube-GCl2EJuspuM",
+    "section": "video",
+    "title_en": "버튜버 트래킹이 가능한 의외의 기기;;;",
+    "title_ko": "의외의 기기로 버튜버 트래킹하기",
+    "url": "https://www.youtube.com/shorts/GCl2EJuspuM",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 버튜버 트래킹에 활용할 수 있는 의외의 기기를 소개하는 영상이다. 구체적인 기기명이나 기술 세부 사항은 설명에 명시되어 있지 않다.",
+    "why_it_matters": "버튜버 제작에 관심 있는 개발자·크리에이터에게 저비용 트래킹 솔루션 힌트를 줄 수 있다.",
+    "tags": [],
+    "score": 0.7500512566137566,
+    "published_at": "2026-11-21T06:00:30Z"
+  },
+  {
+    "id": "youtube-YDST35uuLHY",
+    "section": "video",
+    "title_en": "Google AdMob AI 기능 데모: 앱 광고 연동과 수익화 관리",
+    "title_ko": "Google AdMob AI 기능 데모: 앱 광고 연동과 수익화 관리",
+    "url": "https://www.youtube.com/shorts/YDST35uuLHY",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "Google AdMob의 AI 기능 데모를 소개하는 영상으로, AI를 활용해 앱에 광고를 연동하고 수익화 관리 작업을 지원하는 흐름을 보여줍니다. 영상에서 소개된 AdMob MCP 서버는 아직 출시 예정(Coming soon) 기능으로, 현재 일반 사용자가 이용할 수 있는 단계는 아닙니다. 구글의 지원을 받아 제작된 콘텐츠입니다.",
+    "why_it_matters": "앱 개발자의 광고 수익화 워크플로우에 AI·MCP 서버를 접목하려는 Google AdMob의 방향성을 엿볼 수 있어, 모바일 앱 수익화 전략 수립에 참고할 만하다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.6323396164021164,
+    "published_at": "2026-11-20T10:13:58Z"
+  },
+  {
+    "id": "simon_willison-muru",
+    "section": "deepdive",
+    "title_en": "Muru",
+    "title_ko": "Muru: mod_wsgi 창시자가 만든 AI 보조 Rust 기반 Python 웹 서버",
+    "url": "https://simonwillison.net/2026/Nov/21/muru/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "mod_wsgi를 20년 전 만든 Graham Dumpleton이 새로운 프로젝트 Muru를 공개했다. Muru는 Rust로 작성된 AI 보조 서버로, ASGI와 WSGI Python 앱을 개발·운영 환경 모두에서 최적으로 실행하는 것을 목표로 한다. Dumpleton은 3주 만에 18편의 상세한 개발 과정 블로그 포스트를 연재하며, AI를 개발 도구로 적극 활용하면서도 20년 경험을 바탕으로 품질 판단은 직접 내린다고 밝혔다.",
+    "why_it_matters": "mod_wsgi 전문가가 AI 보조 개발 방식으로 Rust 기반 차세대 Python 서버를 구축하는 과정을 투명하게 공개해, AI 활용 시스템 소프트웨어 개발의 실제 사례를 보여준다.",
+    "tags": [
+      "LLM",
+      "인프라",
+      "오픈소스"
+    ],
+    "score": 0.8567939814814816,
+    "published_at": "2026-11-21T23:56:28Z"
+  }
+]
