@@ -1,0 +1,366 @@
+[
+  {
+    "id": "hf-2611.29897",
+    "section": "papers",
+    "title_en": "Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control",
+    "title_ko": "Motion Mamba 2.0: 장기 휴머노이드 제어를 위한 자기회귀 확산 맘바 모델",
+    "url": "https://huggingface.co/papers/2611.29897",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Motion Mamba 2.0은 Mamba 기반의 루트-바디 확산 아키텍처로, 로컬 어텐션·재개 가능한 순환 상태·지속 콘텐츠 메모리(PCM)를 통합해 장기간 제어 가능한 모션 생성을 구현한다. CUDA Graph 재생, 퓨즈드 커널, 실행 흐름 단순화를 적용한 최적화 추론으로 RTX 4090에서 중앙값 완전 윈도우 지연을 1685ms에서 276ms로 약 6.1배 단축했다. 최대 39.52초 롤아웃에서 정확한 단말 제어를 달성했으며, Unitree G1 로봇에서 텍스트 기반 동작 구성, 키보드·마우스 대화형 보행 제어도 실증했다.",
+    "why_it_matters": "휴머노이드 로봇의 실시간 장기 모션 제어와 텍스트 조건부 동작 합성을 대폭 가속해 실제 로봇 적용 가능성을 크게 높인다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 5.465908118654584,
+    "published_at": "2026-11-22T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.26954",
+    "section": "papers",
+    "title_en": "Learning Video Foresight Reasoning from Unlabeled Videos via On-Policy Self-Distillation",
+    "title_ko": "레이블 없는 비디오로 미래 예측 추론 학습하는 Future-OPSD 프레임워크",
+    "url": "https://huggingface.co/papers/2611.26954",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Future-OPSD는 비전-언어 모델이 현재 관찰된 영상에서 미래 사건이나 다음 행동을 예측하는 능력을 외부 어노테이션이나 대형 LLM 없이 학습하는 온-폴리시 자기증류 프레임워크다. 과거-미래 비디오 쌍을 자연스러운 자기지도 신호로 활용하며, '선견 점수(foresight score)'를 정의해 미래 클립 중 가장 가치 있는 정보에 집중하도록 모델을 유도한다. 개방형 예측과 폐쇄형 계획 태스크에서 베이스 모델 대비 각각 최대 14.2점, 15.9점 향상을 달성했으며 일반 영상 이해 성능은 유지했다.",
+    "why_it_matters": "어노테이션이나 외부 LLM 없이 비디오 미래 추론 능력을 대규모로 확장할 수 있는 자기지도 학습 방법을 제시해 실용적 확장성이 높다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.761200115693562,
+    "published_at": "2026-11-19T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.30013",
+    "section": "papers",
+    "title_en": "3AGameFactory-Motion: Agentic Rigging and Reliable Complex Motion Generation for Diverse 3D Assets",
+    "title_ko": "3AGameFactory-Motion: 다양한 3D 에셋을 위한 에이전틱 리깅 및 복합 모션 생성",
+    "url": "https://huggingface.co/papers/2611.30013",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "임의의 3D 에셋에 애니메이션을 적용하려면 구조 추론과 모션 제어가 모두 필요하다. 연구팀은 6가지 형태 카테고리에 걸쳐 리깅과 모션 생성을 평가하는 벤치마크 DivDynBench를 도입하고, LLM 기반의 세 가지 패러다임(특화 모션 생성, 비디오 생성 후 모션 복원, 에이전트 직접 생성)을 비교 분석했다. 이를 바탕으로 에이전트가 간결한 파라메트릭 스켈레톤 및 모션 프로그램을 작성하고 결정론적 실행기가 리깅·키네마틱 풀이·기하 보정을 수행하는 Agentic Motion Framework를 제안한다.",
+    "why_it_matters": "인간·동물에 편향된 기존 모션 벤치마크의 한계를 넘어 다양한 형태의 3D 에셋에 복합 동작을 안정적으로 적용할 수 있는 실용적 프레임워크를 제시한다는 점에서 주목할 만하다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 4.688879454113936,
+    "published_at": "2026-11-22T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.28202",
+    "section": "papers",
+    "title_en": "AutoPILOT: A Visual Agent Harness for Real-Time Gameplay",
+    "title_ko": "AutoPILOT: 실시간 게임 플레이를 위한 비주얼 에이전트 하네스",
+    "url": "https://huggingface.co/papers/2611.28202",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "멀티모달 파운데이션 모델은 게임이 멈춰 기다려줄 때는 잘 작동하지만, 실시간으로 진행되면 성능이 급락한다. AutoPILOT은 모델 호출 시 단순 액션 외에도 오픈루프 매크로나 클로즈드루프 컨트롤러를 실행할 수 있게 해 모델 호출 없이도 게임을 지속할 수 있다. GPT-4.1 기반 테스트에서 AutoPILOT은 실시간 성공률 68.6%를 기록해 기존 VISTA의 38.3%를 크게 앞질렀으며, API 비용은 1/5 수준이다. 평가를 위해 120개의 브라우저 게임으로 구성된 AFK-Bench도 함께 공개했다.",
+    "why_it_matters": "실시간 환경에서 에이전트 성능을 결정하는 '하네스 설계'의 중요성을 입증하며, 저비용으로 대폭 향상된 실시간 게임 에이전트 프레임워크를 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.295836866004329,
+    "published_at": "2026-11-19T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.26516",
+    "section": "papers",
+    "title_en": "Plan4D: Generative Plannable 4D Worlds",
+    "title_ko": "Plan4D: 생성 가능한 계획형 4D 월드 모델",
+    "url": "https://huggingface.co/papers/2611.26516",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Plan4D는 관찰된 장면과 텍스트로 지정된 행동으로부터 RGB 비디오와 함께 깊이, 카메라, 포인트 클라우드, 씬 플로우 등 밀집 4D 기하 정보를 예측하는 생성형 4D 월드 모델이다. 기존 월드 모델들이 시각적 품질에만 집중하고 물리적 일관성이 부족한 문제를 해결하기 위해, Depth Anything 3와 LongCat-Video를 결합한 모델 스티칭 아키텍처를 제안한다. 합성 및 실제 데이터셋 실험에서 4D 생성 모델링 분야 최고 성능을 달성했다고 보고한다.",
+    "why_it_matters": "시각적 품질을 넘어 물리·기하 일관성까지 갖춘 4D 월드 모델은 로봇 계획, 자율주행 등 실세계 AI 에이전트 응용에 직접적인 돌파구가 될 수 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 4.295836866004329,
+    "published_at": "2026-11-18T19:00:00Z"
+  },
+  {
+    "id": "openai_blog-introducing-shirudo",
+    "section": "releases",
+    "title_en": "OpenAI and Cisco introduce Shirudo",
+    "title_ko": "OpenAI와 Cisco, 오픈소스 런타임 보안 도구 'Shirudo' 발표",
+    "url": "https://openai.com/index/introducing-shirudo",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI와 Cisco가 Linux용 오픈소스 런타임인 Shirudo를 공개했다. Shirudo는 팀이 패치를 배포하는 동안 실행 중인 시스템을 보호하는 데 도움을 준다.",
+    "why_it_matters": "패치 배포 공백 기간 동안 Linux 시스템을 보호할 수 있는 오픈소스 런타임 보안 솔루션으로, 보안 실무자들에게 직접적인 활용 가치가 있다.",
+    "tags": [
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 0.8412714947089948,
+    "published_at": "2026-11-23T21:20:00Z"
+  },
+  {
+    "id": "google_blog-google-search-personal-intelligence-apps",
+    "section": "releases",
+    "title_en": "A more tailored Google Search that’s uniquely yours",
+    "title_ko": "개인 맞춤형 구글 검색 '퍼스널 인텔리전스' 출시",
+    "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글이 Google Wallet, Drive, Gmail, Photos, Calendar 등 개인 앱 데이터를 연동해 사용자 맞춤형 검색 경험을 제공하는 'Personal Intelligence' 기능을 발표했다. 개인 데이터를 활용해 검색 결과를 더욱 개인화하는 방향으로 Google Search를 발전시키는 것이 핵심이다.",
+    "why_it_matters": "구글 생태계 앱 데이터를 검색에 통합함으로써 AI 기반 개인화 검색의 새로운 기준을 제시할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8154778439153438,
+    "published_at": "2026-11-23T17:00:00Z"
+  },
+  {
+    "id": "github_trending-elementalsouls/Claude-BugHunter",
+    "section": "releases",
+    "title_en": "elementalsouls/Claude-BugHunter",
+    "title_ko": "Claude-BugHunter: Claude Code용 버그 헌팅 스킬 번들",
+    "url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code 스킬 시스템에 설치하는 버그 헌팅·레드팀 전용 스킬 번들로, 83개 스킬과 15개 슬래시 명령어, HackerOne 공개 보고서 681건에서 추출한 취약점 패턴을 24개 취약점 클래스에 걸쳐 제공한다. 웹앱 취약점(XSS, SQLi, SSRF, IDOR 등)부터 M365/Entra, Okta, vCenter, SSL VPN 등 엔터프라이즈 플랫폼 공격 체인까지 외부 공격 표면을 광범위하게 커버한다. 평문 영어로 테스트 대상을 설명하면 관련 스킬이 자동으로 로드되며, Burp MCP 연동과 HackerOne MCP 통합도 지원한다.",
+    "why_it_matters": "Claude를 단순 챗봇이 아닌 시니어 버그 헌터·레드팀 오퍼레이터처럼 동작하게 만드는 실전 검증 스킬 번들로, AI 에이전트 기반 보안 연구의 가능성을 보여준다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7647106481481482,
+    "published_at": "2026-11-23T08:28:16Z"
+  },
+  {
+    "id": "openai_blog-connected-intelligence-for-in-house-legal",
+    "section": "releases",
+    "title_en": "Connected intelligence for in-house legal",
+    "title_ko": "사내 법무팀을 위한 연결된 AI 인텔리전스",
+    "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI의 Stacey Wang, Craig Bruney와 법률 전문가들이 AI가 사내 법무팀에 어떻게 도움을 줄 수 있는지 논의했다. 비즈니스 맥락 연결, 재사용 가능한 워크플로우 구축, 외부 법률 자문 활용 극대화 방안이 주요 주제로 다뤄졌다.",
+    "why_it_matters": "OpenAI가 법률 분야 AI 도입 사례를 직접 소개함으로써 엔터프라이즈 AI 활용의 구체적 방향을 제시한다는 점에서 주목할 만하다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7619064153439153,
+    "published_at": "2026-11-23T08:00:00Z"
+  },
+  {
+    "id": "openai_blog-richpanel-ai-customer-support",
+    "section": "releases",
+    "title_en": "Richpanel helps companies automate 50% of support in 30 days",
+    "title_ko": "Richpanel, 30일 만에 고객 지원 50% 자동화 달성",
+    "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Richpanel은 OpenAI의 GPT-4o 및 관련 모델을 활용해 AI 고객 지원 에이전트를 구축했다. 이 에이전트에 도구와 절차를 갖춰 기업이 30일 내에 지원 업무의 50%를 자동화할 수 있도록 돕는다.",
+    "why_it_matters": "OpenAI 최신 모델을 활용한 실제 고객 지원 자동화 사례로, AI 에이전트의 실용적 비즈니스 적용 가능성을 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7619064153439153,
+    "published_at": "2026-11-23T08:00:00Z"
+  },
+  {
+    "id": "openai_blog-perplexity-and-intelligence",
+    "section": "releases",
+    "title_en": "Perplexity and Intelligence",
+    "title_ko": "혼란도(Perplexity)와 지능: AI 모델 평가의 공통 기준",
+    "url": "https://openai.com/index/perplexity-and-intelligence",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "이 글은 퍼플렉시티(perplexity)가 AI 모델의 발전을 측정하는 지표로서 어떻게 활용되는지를 설명한다. 퍼플렉시티는 언어 모델이 텍스트를 얼마나 잘 예측하는지를 나타내는 척도로, 개발자들이 모델의 성능을 비교하는 데 유용하다. OpenAI는 이 지표를 통해 개발자들이 신흥 AI 역량을 평가하는 공통된 접근법을 마련할 수 있다고 제안한다.",
+    "why_it_matters": "AI 모델 평가의 표준화된 지표 논의는 개발자 커뮤니티 전반의 비교 가능성과 신뢰성을 높이는 데 직결된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.5714302248677249,
+    "published_at": "2026-11-22T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-combatting-adversarial-distillation",
+    "section": "releases",
+    "title_en": "Combatting adversarial distillation",
+    "title_ko": "적대적 증류 공격에 대응하는 OpenAI의 다층 방어 전략",
+    "url": "https://openai.com/index/combatting-adversarial-distillation",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "OpenAI가 적대적 증류(adversarial distillation) 공격에 대응하기 위한 다층적 접근 방식을 공개했다. 모델 훈련, 안전장치, 탐지, 그리고 정책 집행을 결합하여 모델의 핵심 능력이 무단으로 추출되는 것을 방지한다. 이는 외부 공격자가 API 등을 통해 고성능 모델의 능력을 복제하려는 시도를 차단하기 위한 전략이다.",
+    "why_it_matters": "AI 모델의 능력 무단 추출을 막기 위한 OpenAI의 공식 방어 체계로, 모델 보안과 IP 보호 측면에서 업계 표준이 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.3452397486772486,
+    "published_at": "2026-11-20T10:00:00Z"
+  },
+  {
+    "id": "hn-50615308",
+    "section": "community",
+    "title_en": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
+    "title_ko": "\"다리오는 오픈소스 모델을 불법화해 주도권을 유지하려 위험을 과장하고 있다\"",
+    "url": "https://twitter.com/ylecun/status/2124550037912920090",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Hacker News에 올라온 이 글은 Anthropic CEO 다리오 아모데이가 AI 위험성을 과장해 오픈소스 AI 모델의 규제 또는 금지를 유도하고, 자사의 독점적 지위를 공고히 하려 한다는 주장을 담고 있다. 구체적인 근거나 설명은 제공되지 않았다.",
+    "why_it_matters": "AI 안전 담론이 특정 기업의 이해관계에 의해 왜곡될 수 있다는 비판적 시각을 보여주는 논쟁적 주제다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 11.770039656842577,
+    "published_at": "2026-11-23T17:07:26Z"
+  },
+  {
+    "id": "hn-50609685",
+    "section": "community",
+    "title_en": "GLM-5.4: Toward generalized coding with our first loop transformer",
+    "title_ko": "GLM-5.4: 첫 번째 루프 트랜스포머로 범용 코딩을 향해",
+    "url": "https://z.ai/blog/glm-5.4",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GLM-5.4는 루프 트랜스포머 아키텍처를 처음 도입한 모델로, 범용 코딩 능력 향상을 목표로 한다. 제목 외 구체적인 세부 정보는 제공되지 않았다.",
+    "why_it_matters": "루프 트랜스포머라는 새로운 아키텍처를 코딩 특화 LLM에 적용한 시도로 주목할 만하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 10.96015139965367,
+    "published_at": "2026-11-23T10:06:43Z"
+  },
+  {
+    "id": "hn-50615481",
+    "section": "community",
+    "title_en": "Kagi Mail (public beta)",
+    "title_ko": "Kagi 메일 공개 베타 출시",
+    "url": "https://blog.kagi.com/kagi-mail-public-beta",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Kagi가 메일 서비스의 공개 베타를 시작했다. 검색 엔진으로 알려진 Kagi의 새로운 이메일 서비스다.",
+    "why_it_matters": "프라이버시 중심 검색엔진 Kagi가 이메일 영역으로 확장하는 움직임으로 주목할 만하다.",
+    "tags": [],
+    "score": 9.91447204003288,
+    "published_at": "2026-11-23T17:17:01Z"
+  },
+  {
+    "id": "hn-50619103",
+    "section": "community",
+    "title_en": "GPUI is getting its own repository",
+    "title_ko": "GPUI, 독립 저장소로 분리된다",
+    "url": "https://github.com/zed-industries/gpui",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GPUI가 별도의 독립 저장소를 갖게 된다는 소식이다. 구체적인 세부 내용은 공개된 설명이 없어 추가 정보는 확인이 필요하다.",
+    "why_it_matters": "Zed 에디터의 GPU 기반 UI 프레임워크인 GPUI가 독립 프로젝트로 분리될 경우, 더 넓은 생태계에서 활용될 가능성이 열린다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 8.749832014681207,
+    "published_at": "2026-11-23T20:52:54Z"
+  },
+  {
+    "id": "hn-50600838",
+    "section": "community",
+    "title_en": "C++26 is done (again): ISO C++ meeting trip report",
+    "title_ko": "C++26 표준 완성: ISO C++ 회의 출장 보고",
+    "url": "https://herbsutter.com/2026/11/21/c26-is-done-again-trip-report-november-2026-iso-c-standards-meeting-buzios-brazil/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "ISO C++ 위원회 회의에서 C++26 표준이 최종 확정되었다. 이번 출장 보고서는 해당 회의의 진행 상황과 결과를 담고 있다.",
+    "why_it_matters": "C++26 표준 확정은 시스템 프로그래밍 생태계 전반에 영향을 미치는 중요한 이정표다.",
+    "tags": [],
+    "score": 8.26403014289953,
+    "published_at": "2026-11-22T15:59:59Z"
+  },
+  {
+    "id": "youtube-wJ4HIEdQlDM",
+    "section": "video",
+    "title_en": "AI가 난제를 해결하면 비트코인이 털릴 수 있다?",
+    "title_ko": "AI가 수학 난제를 풀면 비트코인 암호화가 위협받을 수 있다?",
+    "url": "https://www.youtube.com/shorts/wJ4HIEdQlDM",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "AI가 7대 수학 난제 등 복잡한 문제를 해결할 가능성이 거론되면서, 비트코인을 비롯한 암호화폐 보안에 미칠 영향이 화제가 되고 있다. 조코딩 채널에서 해당 주제를 다루며 AI와 암호화 기술의 연관성을 소개한다.",
+    "why_it_matters": "AI의 수학적 추론 능력 발전이 현재 암호화 인프라의 근본적 안전성에 의문을 제기할 수 있다는 점에서 주목할 필요가 있다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 0.9018320105820106,
+    "published_at": "2026-11-24T07:30:27Z"
+  },
+  {
+    "id": "youtube-VSQqNw-Z-bY",
+    "section": "video",
+    "title_en": "수학자들도 못 푼 리만가설을 해결한 클로드;;;",
+    "title_ko": "클로드가 리만 가설을 풀었다? 조코딩의 AI 실험",
+    "url": "https://www.youtube.com/shorts/VSQqNw-Z-bY",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "유튜버 조코딩이 AI 모델 클로드를 활용해 수학계의 난제인 리만 가설에 도전하는 영상이다. 리만 가설은 수학자들도 아직 풀지 못한 7대 난제 중 하나로 유명하다. 영상은 AI가 이 문제에 어떻게 접근하는지를 흥미롭게 다루고 있다.",
+    "why_it_matters": "LLM이 미해결 수학 난제에 도전하는 실험적 시도로, AI의 수학적 추론 능력의 현주소와 한계를 체감할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.8928918650793651,
+    "published_at": "2026-11-24T06:00:20Z"
+  },
+  {
+    "id": "youtube-K8y9zyC-jeY",
+    "section": "video",
+    "title_en": "AI뉴스 - 리만가설 증명됐다, FSD v15, GPT-6.2 Astra, Gemini 4 Neon, Inkling 2 Mini, Qwen4-Max 등",
+    "title_ko": "이번 주 AI 뉴스 총정리: 리만가설 증명 시도, FSD v15, GPT-6.2, Gemini 4 Neon 등",
+    "url": "https://www.youtube.com/watch?v=K8y9zyC-jeY",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "Claude를 활용해 167년 난제인 리만가설을 6주 만에 풀었다는 주장이 화제가 됐으며, GPT-6.2 Astra·Sol 출시와 Gemini 4 Neon 공개 등 주요 모델 업데이트가 잇따랐다. OpenAI는 API 백그라운드 모드(최대 40% 할인)를 발표했고, Microsoft도 새 AI 모델 7종을 공개했다. 테슬라 FSD v15 '리얼리티 뷰' 공개, 소니 탁구 로봇의 세계 26위 프로 선수 격파 등 AI 응용 사례도 주목받았다.",
+    "why_it_matters": "한 주간 LLM 신모델 출시, 수학 난제 도전, 자율주행·로보틱스까지 AI 전 분야에서 굵직한 소식이 동시에 쏟아져 개발자·연구자 모두 빠르게 파악해야 할 변화가 많다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.7991087962962963,
+    "published_at": "2026-11-23T14:15:00Z"
+  },
+  {
+    "id": "simon_willison-datasette-charts",
+    "section": "deepdive",
+    "title_en": "datasette-charts 0.2a0",
+    "title_ko": "datasette-charts 0.2a0 — Datasette Agent와 차트 생성 통합",
+    "url": "https://simonwillison.net/2026/Nov/24/datasette-charts/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "Datasette용 차트 플러그인 datasette-charts 0.2a0이 출시됐다. 이번 버전에서는 Datasette Agent와 통합되어, 채팅으로 차트 생성을 요청하면 에이전트가 자동으로 차트를 만들어준다. agent.datasette.io에서 GitHub 로그인으로 직접 체험할 수 있다.",
+    "why_it_matters": "자연어 채팅으로 데이터 시각화 차트를 즉시 생성할 수 있어, 비개발자도 Datasette 데이터를 손쉽게 탐색할 수 있게 된다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.8833829365079365,
+    "published_at": "2026-11-24T04:24:29Z"
+  }
+]
