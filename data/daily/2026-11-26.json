@@ -1,0 +1,365 @@
+[
+  {
+    "id": "hf-2611.31358",
+    "section": "papers",
+    "title_en": "Nemotron-Labs-VisualCreation: Pixel as Code for Agentic Visual Creation",
+    "title_ko": "Nemotron-Labs-VisualCreation: 코드로 픽셀을 다루는 에이전틱 비주얼 생성 프레임워크",
+    "url": "https://huggingface.co/papers/2611.31358",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "NVIDIA가 'Pixel as Code' 개념을 기반으로 한 에이전틱 비주얼 생성 프레임워크 Nemotron-Labs-VisualCreation을 공개했다. 래스터 이미지는 학습된 이산 시각 토큰으로, 벡터 그래픽·웹페이지·문서 등 구조적 결과물은 명시적 프로그램으로 표현하며 단일 인터페이스로 통합한다. 자체 개발한 이미지 토크나이저는 Emu3.5 IBQ 대비 PSNR을 26.08→29.57dB로 개선하고, 인코딩 7.13배·디코딩 10.93배 속도 향상을 달성했다. 시스템 수준에서 GenEval2 Soft-TIFA GM 점수를 31.71에서 52.56으로 끌어올리며 GPT Image 2와 경쟁하는 성능을 보였다.",
+    "why_it_matters": "이미지 생성·구조적 코드 생성·에이전틱 계획을 하나의 프레임워크로 통합해 비주얼 AI 에이전트의 실용적 적용 범위를 크게 넓힌다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 5.418840607796598,
+    "published_at": "2026-11-22T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.33144",
+    "section": "papers",
+    "title_en": "PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents",
+    "title_ko": "PyRUA-Dex: 코딩 에이전트로 양손 정밀 조작 정책 학습",
+    "url": "https://huggingface.co/papers/2611.33144",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "PyRUA-Dex는 시연 데이터 없이 코딩 에이전트를 활용해 로봇의 정밀 양손 조작 정책을 프로그래밍 방식으로 개발하는 프레임워크다. 탐색 단계에서 여러 에이전트가 병렬로 태스크 스킬을 탐색하고, 정제 단계에서 무작위 레이아웃으로 프로그램의 견고성을 높인다. 시뮬레이션에서 Bench2Dex 72.9점, DexJoCo 81.0% 성공률로 기존 훈련 정책을 모두 앞섰으며, 실제 22-DoF 양손 플랫폼에서 피아노 연주·캘리그래피 등을 최소 30분 만에 학습한다.",
+    "why_it_matters": "시연 데이터 수집의 고비용·저품질 문제를 코딩 에이전트 기반 프로그래매틱 정책으로 대체해, 정밀 로봇 조작 학습의 확장성을 크게 높인다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 4.465735902799727,
+    "published_at": "2026-11-23T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.34575",
+    "section": "papers",
+    "title_en": "Sage-Med: Scaling Medical Multimodal Intelligence",
+    "title_ko": "Sage-Med: 의료 멀티모달 대형 언어 모델의 스케일링 법칙 탐구",
+    "url": "https://huggingface.co/papers/2611.34575",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Sage-Med-Preview는 350억 파라미터(활성화 30억)의 의료 특화 멀티모달 모델로, 3억 2270만 건의 의료 데이터를 단계별로 학습시켜 개발됐다. 61개 공개·13개 비공개 멀티센터 벤치마크, 238개 임상 과제에서 77개 경쟁 모델과 비교해 31개 공개 멀티모달 벤치마크 평균 58.26%를 기록했다. 오픈소스 최강인 Hulu-Med-235B(50.99%)와 Intern-S2-Preview(52.24%)를 모두 능가하며 GPT-6.2-Sol 수준에 근접했다. 단, 복잡한 의료 추론과 다단계 임상 워크플로우에서는 여전히 개선 여지가 남아 있다.",
+    "why_it_matters": "의료 멀티모달 AI의 스케일링 한계를 체계적으로 분석하고, 실용적인 데이터 레시피·학습 커리큘럼·벤치마크를 공개해 의료 AI 연구의 재현성과 발전에 기여한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.433987204485146,
+    "published_at": "2026-11-24T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.34237",
+    "section": "papers",
+    "title_en": "VibeVideoAgent: Closing the Perceptual Loop for Code-Driven Video Generation",
+    "title_ko": "VibeVideoAgent: 코드 기반 영상 생성을 위한 지각적 피드백 루프 프레임워크",
+    "url": "https://huggingface.co/papers/2611.34237",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "VibeVideoAgent는 코딩 에이전트가 영상 제작 중 초안을 직접 검토할 수 있도록 돕는 학습 불필요(training-free) 프레임워크다. 렌더링된 프레임과 오디오를 짧은 컨텍스트에서 별도로 분석해 겹치는 자막, 오디오 싱크 오류 등 런타임 에러로 감지되지 않는 시각·청각적 문제를 발견한다. VibeVideoBench의 239개 태스크에서 Claude Opus 5.5 기준 전체 오디오비주얼 품질이 4.03에서 4.43으로 향상되었으며, 오디오-비주얼 동기화에서 최대 +0.56의 개선 효과를 보였다.",
+    "why_it_matters": "코드로 영상을 생성하는 에이전트가 런타임 오류 없이도 발생하는 지각적 품질 문제를 스스로 감지·수정할 수 있게 되어, 자율적 멀티모달 콘텐츠 제작의 신뢰도를 크게 높인다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.367295829986475,
+    "published_at": "2026-11-24T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.32649",
+    "section": "papers",
+    "title_en": "ICLWorld: Benchmarking In-Context Learning of Agents from Digital to Physical Worlds",
+    "title_ko": "ICLWorld: 디지털에서 물리 세계까지 AI 에이전트의 인컨텍스트 학습 벤치마크",
+    "url": "https://huggingface.co/papers/2611.32649",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "ICLWorld는 컴퓨터 사용과 로봇 사용을 아우르는 온라인 벤치마크로, AI 에이전트의 인컨텍스트 학습(ICL) 능력을 평가한다. 30개 환경, 630개 데모 영상, 160개 과제로 구성되며 텍스트 또는 영상 형태의 규칙을 제공한다. 최강 모델인 Claude Opus 5.5와 GPT-6 Astra도 컴퓨터 사용에서는 82%/76% 성공률을 보이지만, 로봇 사용에서는 27%/26%에 그쳤다. 규칙을 98% 정확히 이해해도 실제 로봇 과제 완수율은 20%에 불과해 '규칙 이해'와 '행동 실행' 사이의 큰 간극이 드러났다.",
+    "why_it_matters": "프런티어 AI 에이전트가 규칙을 알아도 물리 세계에서 실행하지 못하는 한계를 체계적으로 측정함으로써, 로봇 AI 연구의 핵심 과제를 명확히 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM"
+    ],
+    "score": 4.044522437723423,
+    "published_at": "2026-11-23T19:00:00Z"
+  },
+  {
+    "id": "google_blog-gemini-golden-state",
+    "section": "releases",
+    "title_en": "How Gemini is changing the game for Golden State's organization and fans.",
+    "title_ko": "Gemini, 골든스테이트 워리어스와 파트너십… 팬 경험·비즈니스 운영 혁신",
+    "url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "Google Gemini가 골든스테이트 워리어스, 발키리스, 체이스 센터와 파트너십을 체결했다. 이를 통해 팬 경험 향상과 구단 비즈니스 운영 전반에 Gemini AI를 활용할 예정이다.",
+    "why_it_matters": "스포츠 엔터테인먼트 분야에서 LLM 기반 AI가 실제 팬 서비스와 운영에 적용되는 구체적 사례로 주목할 만하다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6666683201058201,
+    "published_at": "2026-11-24T16:00:00Z"
+  },
+  {
+    "id": "openai_blog-gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+    "section": "releases",
+    "title_en": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+    "title_ko": "GPT-6 모델, 단백질 설계 능력 자체적으로 보유",
+    "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "GPT-6 모델이 추론과 코드 실행을 활용해 단백질 구조 및 서열을 설계하는 능력을 갖춘 것으로 나타났다. 실험실 테스트 결과, 5가지 타겟에서 결합(binding) 증거가 확인되었다. 이는 AI가 생물학 연구 영역에서 실질적인 역할을 수행할 수 있음을 보여준다.",
+    "why_it_matters": "GPT-6가 단백질 설계에서 실험적으로 검증된 결과를 냈다는 점은 AI의 과학 연구 활용 가능성을 한 단계 높이는 중요한 이정표다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6488111772486773,
+    "published_at": "2026-11-24T13:00:00Z"
+  },
+  {
+    "id": "openai_blog-searching-for-distant-planets-with-astra",
+    "section": "releases",
+    "title_en": "Searching for distant planets with Astra",
+    "title_ko": "Astra로 외계 행성 탐색하기",
+    "url": "https://openai.com/index/searching-for-distant-planets-with-astra",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "두 명의 아마추어 천문학자가 OpenAI의 Codex와 Astra를 활용해 NASA의 케플러(Kepler) 및 TESS 우주 망원경의 공개 데이터에서 잠재적인 외계 행성을 발견했다. 이 사례는 AI 도구가 전문 연구자가 아닌 일반인도 대규모 과학 데이터를 분석할 수 있도록 돕는다는 것을 보여준다.",
+    "why_it_matters": "AI 코딩 도구가 아마추어도 NASA급 공개 데이터를 분석해 과학적 발견에 기여할 수 있는 시대가 열렸음을 보여주는 실제 사례다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.6369064153439153,
+    "published_at": "2026-11-24T11:00:00Z"
+  },
+  {
+    "id": "github_trending-elementalsouls/Claude-BugHunter",
+    "section": "releases",
+    "title_en": "elementalsouls/Claude-BugHunter",
+    "title_ko": "Claude-BugHunter: 버그 헌팅 및 레드팀용 Claude 스킬 번들",
+    "url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code에 설치하는 버그 헌팅·외부 레드팀 전용 스킬 번들로, 84개의 스킬, 15개의 슬래시 명령어, HackerOne 공개 보고서 681건에서 추출한 취약점 패턴을 24개 취약점 클래스에 걸쳐 제공한다. 웹앱 취약점(XSS, SQLi, SSRF 등), 엔터프라이즈 플랫폼 공격(M365/Entra, Okta, vCenter 등), 클라우드 설정 오류, OSINT 등 외부 공격 표면을 광범위하게 커버한다. Claude Code 플러그인으로 한 번 설치하면 테스트 대상을 평문 영어로 설명하는 것만으로 관련 스킬이 자동 로드되며, Burp Suite MCP 연동도 지원한다.",
+    "why_it_matters": "LLM을 단순 챗봇이 아닌 실전 버그 헌팅 연구원 수준의 오퍼레이터로 활용할 수 있는 체계적인 오픈소스 프레임워크로, 보안 연구자들의 AI 활용 방식을 구체화한 사례다.",
+    "tags": [
+      "LLM",
+      "에이전트",
+      "오픈소스"
+    ],
+    "score": 0.6345453042328042,
+    "published_at": "2026-11-24T10:36:12Z"
+  },
+  {
+    "id": "openai_blog-intentful-dots",
+    "section": "releases",
+    "title_en": "How Intentful uses dots to make more time for growth",
+    "title_ko": "Intentful, 닷(dot)으로 비즈니스 성장 시간 확보",
+    "url": "https://openai.com/business/customer-stories/intentful-dots",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Intentful의 Marina Petrova는 OpenAI 기반 닷(dot) 'Aria'를 활용해 웹사이트 조사와 제안서 작성을 자동화하고 있다. Aria는 메시지를 선제적으로 플래그 처리하고 문제를 해결하는 역할도 수행한다. 이를 통해 반복적인 업무 시간을 줄이고 비즈니스 성장에 집중할 수 있게 됐다.",
+    "why_it_matters": "AI 에이전트가 실제 소규모 비즈니스 운영에서 리서치·제안서·커뮤니케이션 관리를 대체하는 구체적 사례를 보여준다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.5714302248677249,
+    "published_at": "2026-11-24T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-ifood",
+    "section": "releases",
+    "title_en": "How iFood scales coding agents across 15,000 repositories",
+    "title_ko": "iFood, 1만 5천 개 저장소에 코딩 에이전트를 대규모 적용한 방법",
+    "url": "https://openai.com/business/customer-stories/ifood",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "iFood가 15,000개의 코드 저장소 전반에 걸쳐 코딩 에이전트를 확장 운용한 사례를 소개한 OpenAI 블로그 게시물이다. 대규모 엔터프라이즈 환경에서 AI 코딩 에이전트를 실제로 어떻게 도입·운영하는지를 다루고 있다.",
+    "why_it_matters": "대규모 실제 엔터프라이즈 환경에서 AI 코딩 에이전트를 성공적으로 확장한 구체적 사례로, 유사한 도입을 고려하는 개발 조직에 중요한 참고가 된다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.5714302248677249,
+    "published_at": "2026-11-24T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-clay-plugins-openai",
+    "section": "releases",
+    "title_en": "Clay helps sales teams win with Codex and ChatGPT",
+    "title_ko": "Clay, Codex와 ChatGPT로 영업팀 지원 강화",
+    "url": "https://openai.com/business/customer-stories/clay-plugins-openai",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Clay는 ChatGPT와 Codex를 통합해 영업팀이 딜 리서치를 수행하고 데이터를 고투마켓 전략으로 전환할 수 있도록 지원한다. GPT-6 모델이 추론 작업을 담당하며 영업 워크플로우 전반을 자동화한다.",
+    "why_it_matters": "LLM 기반 영업 자동화의 실제 도입 사례로, AI가 B2B 고투마켓 실무에 깊숙이 통합되고 있음을 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.5714302248677249,
+    "published_at": "2026-11-24T00:00:00Z"
+  },
+  {
+    "id": "hn-50648050",
+    "section": "community",
+    "title_en": "Much shorter version of GRH Lean verification from Anthropic",
+    "title_ko": "Anthropic의 GRH Lean 검증 단축 버전 공개",
+    "url": "https://github.com/lsernau/grh-lean",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Anthropic이 발표한 GRH(일반화된 리만 가설) Lean 형식 검증의 훨씬 짧아진 버전이 공개되었다. 원본 검증 코드보다 간결하게 압축된 형태로, Lean 정리 증명 커뮤니티에서 주목받고 있다.",
+    "why_it_matters": "AI를 활용한 수학 정리의 형식 검증이 더 간결해질수록, 복잡한 수학 문제 자동화 증명의 실용성이 높아진다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.645598395808584,
+    "published_at": "2026-11-25T21:48:10Z"
+  },
+  {
+    "id": "hn-50647673",
+    "section": "community",
+    "title_en": "The New York Times warns photographers not to update Photoshop over AI features",
+    "title_ko": "뉴욕타임스, AI 기능 우려로 사진기자들에게 포토샵 업데이트 자제 권고",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "뉴욕타임스가 소속 사진기자들에게 Adobe Photoshop을 업데이트하지 말 것을 경고했다. AI 관련 기능에 대한 우려가 그 배경으로 알려져 있다.",
+    "why_it_matters": "언론사가 AI 이미지 편집 기능을 저널리즘 윤리 측면에서 공식 제한하기 시작했다는 신호탄이 될 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.524203437388117,
+    "published_at": "2026-11-25T21:18:02Z"
+  },
+  {
+    "id": "hn-50601280",
+    "section": "community",
+    "title_en": "GPT-6.2 Astra is the first model to beat Googlers' code golf records",
+    "title_ko": "GPT-6.2 Astra, 구글 직원들의 코드 골프 기록 최초 돌파",
+    "url": "https://bjin.github.io/go-codegolf-benchmark/#leaderboard",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "GPT-6.2 Astra 모델이 구글 직원들이 보유하던 코드 골프 기록을 처음으로 넘어섰다고 보고되었다. 구체적인 세부 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "LLM이 전문 개발자의 고도화된 코딩 챌린지 기록을 경신했다는 점에서 AI 코딩 능력의 새로운 이정표로 주목된다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 9.101535945897918,
+    "published_at": "2026-11-22T16:44:48Z"
+  },
+  {
+    "id": "hn-50649864",
+    "section": "community",
+    "title_en": "Tell HN: Lots of Ask HNs again",
+    "title_ko": "HN에 Ask HN 게시물 다시 급증",
+    "url": "https://news.ycombinator.com/item?id=50649864",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Hacker News에 Ask HN 형식의 게시물이 다시 많아지고 있다는 사용자 제보다. 별도의 상세 설명은 제공되지 않았다.",
+    "why_it_matters": "AI 기술 동향과 직접적인 연관성이 낮은 커뮤니티 메타 이슈다.",
+    "tags": [],
+    "score": 8.56320059235807,
+    "published_at": "2026-11-26T00:43:34Z"
+  },
+  {
+    "id": "hn-50651117",
+    "section": "community",
+    "title_en": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+    "title_ko": "OpenAI, GPT-6.2 사용량 제한 강화 — Astra 40%, Sol 25% 더 빠르게 한도 도달",
+    "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "OpenAI가 GPT-6.2의 사용량 제한을 강화하면서 Astra 사용자는 기존보다 40% 빠르게, Sol 사용자는 25% 빠르게 사용 한도에 도달하게 됐다. 구체적인 배경이나 이유는 제공된 정보에 포함되지 않았다.",
+    "why_it_matters": "OpenAI의 사용량 제한 강화는 GPT-6.2 기반 서비스 운영 비용 및 접근성에 직접적인 영향을 미칠 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 8.07201347243021,
+    "published_at": "2026-11-26T03:36:58Z"
+  },
+  {
+    "id": "youtube-zJ9rlVhnDAw",
+    "section": "video",
+    "title_en": "더 자연스러워져서 돌아온 공짜 립싱크 AI",
+    "title_ko": "더 자연스러워진 무료 립싱크 AI 도구 소개",
+    "url": "https://www.youtube.com/shorts/zJ9rlVhnDAw",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 무료로 사용할 수 있는 립싱크 AI 도구를 소개하는 영상이다. 이전보다 더 자연스러운 립싱크 품질을 제공한다는 점이 주요 업데이트 포인트로 언급된다. 영상 내에서 실제 사용법을 시연하는 것으로 보인다.",
+    "why_it_matters": "비용 없이 활용 가능한 립싱크 AI의 품질이 향상되어, 콘텐츠 크리에이터나 개발자가 영상 제작에 바로 적용할 수 있다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.7738227513227514,
+    "published_at": "2026-11-25T10:00:07Z"
+  },
+  {
+    "id": "youtube-_CGK_5e7BqE",
+    "section": "video",
+    "title_en": "오픈AI 전 CTO가 만든 레전드 로컬 AI 등장",
+    "title_ko": "오픈AI 전 CTO가 만든 레전드 로컬 AI 등장",
+    "url": "https://www.youtube.com/shorts/_CGK_5e7BqE",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "오픈AI 전 CTO가 개발에 참여한 로컬 AI가 등장했다는 내용을 다루는 영상이다. 구체적인 모델명이나 벤치마크 수치 등 상세 정보는 제공된 설명에 포함되어 있지 않다. 오픈소스 및 로컬 실행 AI에 관심 있는 개발자들을 위한 소개 콘텐츠로 보인다.",
+    "why_it_matters": "오픈AI 핵심 인력 출신이 만든 로컬 오픈소스 AI는 국내 개발자들의 프라이버시·비용 문제 해결에 관심을 모을 수 있다.",
+    "tags": [
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7679050925925925,
+    "published_at": "2026-11-25T09:00:28Z"
+  },
+  {
+    "id": "youtube-ZbdVArZ_USc",
+    "section": "video",
+    "title_en": "기초적인 임플란트로 GTA6 즐기는 방법",
+    "title_ko": "기초적인 임플란트로 GTA6 즐기는 방법",
+    "url": "https://www.youtube.com/shorts/ZbdVArZ_USc",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 뇌-컴퓨터 인터페이스(임플란트)를 활용해 GTA6를 즐기는 방법을 소개하는 영상이다. 뉴럴링크 등 관련 기술을 주제로 다루는 것으로 보인다.",
+    "why_it_matters": "뇌-컴퓨터 인터페이스와 게임의 결합 가능성을 한국어로 소개하는 콘텐츠로, AI·BCI 기술에 관심 있는 개발자에게 흥미로운 주제다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.7589748677248678,
+    "published_at": "2026-11-25T07:30:27Z"
+  },
+  {
+    "id": "simon_willison-sqlite3-rsync",
+    "section": "deepdive",
+    "title_en": "sqlite3_rsync: Database Remote-Copy Tool For SQLite",
+    "title_ko": "sqlite3_rsync: SQLite 데이터베이스 원격 복사 도구",
+    "url": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync/",
+    "sources": [
+      "simon_willison"
+    ],
+    "summary_ko": "sqlite3_rsync는 SQLite 데이터베이스를 SSH를 통해 원격으로 복사할 수 있는 도구로, 2024년 10월 SQLite 3.47.0에서 실험적 기능으로 추가되어 2025년 5월 3.50.0에서 개선되었다. 기존의 백업 API나 VACUUM INTO 방식과 달리, 로컬에 전체 복사본을 먼저 만들 필요 없이 스냅샷을 원격으로 전송할 수 있다. 일반 rsync처럼 변경된 페이지만 전송하는 방식으로 네트워크 대역폭도 절약할 수 있다.",
+    "why_it_matters": "디스크 여유 공간이 부족한 소규모 인스턴스에서도 SQLite 데이터베이스를 안전하게 원격 백업·동기화할 수 있어 실용성이 높다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.8936937830687831,
+    "published_at": "2026-11-26T06:08:25Z"
+  }
+]
