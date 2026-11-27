@@ -1,0 +1,369 @@
+[
+  {
+    "id": "hf-2611.34051",
+    "section": "papers",
+    "title_en": "Stable Gated DeltaNet-2: Understanding and Mitigating Recurrent State Instability",
+    "title_ko": "Stable Gated DeltaNet-2: 순환 상태 불안정성 이해 및 해결",
+    "url": "https://huggingface.co/papers/2611.34051",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "선형 어텐션 기반의 Gated DeltaNet-2(GDN-2)는 장문 컨텍스트 학습 중 훈련 실패 문제를 겪었는데, 이는 소거(erasure) 과정의 비대칭성으로 인해 상태 값이 지수적으로 폭발하는 것이 원인이었다. 이를 해결하기 위해 대칭 소거(symmetric erasure)와 감쇠 조절 잔차 쓰기(decay-regulated residual writing)를 적용한 Stable GDN-2를 제안한다. 약 16억 파라미터 모델 실험에서 128K RULER 점수를 6.80포인트, 9개 다운스트림 태스크 평균 정확도를 0.62포인트 향상시켰으며, 이론적으로 순환 상태 성장의 O(T) 상한을 보장한다.",
+    "why_it_matters": "장문 컨텍스트 처리를 위한 선형 어텐션 모델의 훈련 불안정 문제를 이론적·실험적으로 해결해 실용적인 대규모 배포 가능성을 높인다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.304065093204169,
+    "published_at": "2026-11-24T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.34923",
+    "section": "papers",
+    "title_en": "Mixture-of-Loops Transformer",
+    "title_ko": "Mixture-of-Loops Transformer(MoLT): 루프 재사용으로 표현력과 효율성 동시 개선",
+    "url": "https://huggingface.co/papers/2611.34923",
+    "sources": [
+      "hf",
+      "arxiv"
+    ],
+    "summary_ko": "MoLT는 Looped Transformer의 표현력-효율성 트레이드오프를 개선하기 위해 Mixture-of-Loops Attention(MoLA)을 도입, 키-값(KV)을 메모리로 활용해 루프 간 선택적 재사용을 가능하게 한다. U자형 구조인 U-MoLT는 메모리 구성과 예측 출력을 분리해 불필요한 디코더 순회를 건너뜀으로써 효율을 높인다. 400B 토큰 사전학습에서 OLMo3 대비 700M 모델 기준 1.7배의 검증 CE 토큰 효율을 달성했으며, 추론 시에도 비루프 OLMo3와 유사한 레이턴시를 유지했다. 코드는 GitHub에 공개되어 있다.",
+    "why_it_matters": "루프 기반 Transformer의 고질적인 효율 문제를 구조적으로 해결하면서 성능까지 끌어올려, 경량·고성능 LLM 설계의 새로운 방향을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 5.23410650459726,
+    "published_at": "2026-11-24T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.34232",
+    "section": "papers",
+    "title_en": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
+    "title_ko": "OS-Omni: 멀티 플랫폼 장기 워크플로우 AI 에이전트 벤치마크",
+    "url": "https://huggingface.co/papers/2611.34232",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "OS-Omni는 Windows, Ubuntu, macOS, iOS, Android, 웹 등 6개 플랫폼에서 컴퓨터 사용 에이전트를 평가하는 크로스 플랫폼 벤치마크다. 첫 번째 릴리스(v1)는 플랫폼당 48개, 총 300개 태스크로 구성되며, 평균 67.54번의 상호작용 단계가 필요해 기존 OSWorld(15단계)보다 훨씬 복잡하다. 가장 강력한 평가 모델인 Claude Opus 5.5는 평균 68.5% 성공률을 기록했으나, 인간 기준치 77.3%에 8.8포인트 뒤처졌고, 특히 iOS와 macOS에서는 25포인트 이상 격차가 벌어졌다.",
+    "why_it_matters": "현재 AI 에이전트가 플랫폼 간 장기 워크플로우에서 얼마나 취약한지를 정량적으로 드러내는 현실적인 벤치마크로, 에이전트 연구의 방향을 제시한다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 5.1588830833596715,
+    "published_at": "2026-11-24T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.34457",
+    "section": "papers",
+    "title_en": "ProxyGenBench: Benchmarking Proxy-Guided Video Generation",
+    "title_ko": "ProxyGenBench: 프록시 기반 비디오 생성 벤치마크 소개",
+    "url": "https://huggingface.co/papers/2611.34457",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "프록시 기반 비디오 생성(3D 블록아웃 등 구조적 프록시를 활용한 영상 생성)을 평가하기 위한 ProxyGenBench가 공개됐다. 60개 장면, 312개 평가 케이스로 구성되며, 구조 보존·누락 콘텐츠 완성·텍스트·이미지·오디오 조건 바인딩 등 세 가지 핵심 요건을 측정한다. 5개 비디오 생성 모델을 평가한 결과, 프록시가 시공간 제어를 개선하지만 프록시 디테일이 높아질수록 콘텐츠 완성도가 오히려 낮아질 수 있음이 확인됐다.",
+    "why_it_matters": "영상 생성에서 구조 제어와 콘텐츠 완성 간의 트레이드오프를 체계적으로 측정하는 첫 전용 벤치마크로, 제어 가능한 비디오 생성 연구 방향을 제시한다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 4.58351893845611,
+    "published_at": "2026-11-24T19:00:00Z"
+  },
+  {
+    "id": "hf-2611.28732",
+    "section": "papers",
+    "title_en": "Entangle: Scaling Human-Video In-Context World-Action Models across Unseen Tasks and Contexts",
+    "title_ko": "Entangle: 인간 비디오 기반 인컨텍스트 로봇 조작 모델의 확장",
+    "url": "https://huggingface.co/papers/2611.28732",
+    "sources": [
+      "hf"
+    ],
+    "summary_ko": "Entangle은 단일 인간 비디오와 현재 로봇 관측값을 입력받아 미래 시각 상태와 실행 가능한 행동을 출력하는 인컨텍스트 월드-액션 모델이다. 로봇 영상을 비디오-투-비디오 생성 방식으로 인간 컨텍스트로 변환해 시간 정렬된 학습 데이터를 확보하고, 태스크 동일성 단축키 문제를 방지하는 인트라-태스크 대조 목적 함수를 적용했다. 태스크별 파인튜닝 없이 Astribot S1 로봇에서 6개 미학습 태스크 평균 83.5/100, RoboTwin 7개 태스크에서 평균 69.5% 성공률을 달성하며 Zero-WAM 대비 22.6%p 향상을 보였다.",
+    "why_it_matters": "파인튜닝 없이 인간 시연 영상만으로 새로운 로봇 조작 태스크를 일반화할 수 있어 로봇 학습 데이터 수집 비용을 대폭 낮출 수 있다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 4.332204510175204,
+    "published_at": "2026-11-24T19:00:00Z"
+  },
+  {
+    "id": "github_trending-elementalsouls/Claude-BugHunter",
+    "section": "releases",
+    "title_en": "elementalsouls/Claude-BugHunter",
+    "title_ko": "Claude-BugHunter: 버그 헌팅 및 레드팀용 Claude 스킬 번들",
+    "url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "sources": [
+      "github_trending"
+    ],
+    "summary_ko": "Claude Code에 설치하는 버그 헌팅·외부 레드팀 전용 스킬 번들로, 85개 스킬, 16개 슬래시 커맨드, 681개의 HackerOne 공개 보고서 패턴을 24개 취약점 클래스에 걸쳐 제공한다. 웹 앱 취약점(XSS, SQLi, SSRF, IDOR 등)부터 M365/Entra, Okta, vCenter 등 엔터프라이즈 플랫폼 공격 체인까지 커버하며, Claude Code 플러그인 또는 직접 복사 설치 방식을 모두 지원한다. 주제를 평문 영어로 설명하면 관련 스킬이 자동으로 로드되며, Burp Suite MCP 연동도 지원한다.",
+    "why_it_matters": "Claude를 단순 챗봇이 아닌 실전 버그 헌터·레드팀 오퍼레이터 수준으로 끌어올리는 구조화된 스킬 번들로, AI 에이전트 기반 보안 작업 자동화의 실용적 사례를 제시한다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "오픈소스"
+    ],
+    "score": 0.7683498677248677,
+    "published_at": "2026-11-26T09:04:57Z"
+  },
+  {
+    "id": "google_blog-gemini-golden-state",
+    "section": "releases",
+    "title_en": "How Gemini is changing the game for Golden State's organization and fans.",
+    "title_ko": "구글 제미나이, 골든스테이트 워리어스와 팬 경험 혁신을 위한 파트너십 체결",
+    "url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/",
+    "sources": [
+      "google_blog"
+    ],
+    "summary_ko": "구글 제미나이가 골든스테이트 워리어스, 발키리스, 체이스 센터와 파트너십을 맺었다. 이를 통해 팬 경험 향상과 비즈니스 운영 전반에 AI를 적용한다.",
+    "why_it_matters": "스포츠 엔터테인먼트 분야에서 LLM 기반 AI가 실제 팬 서비스와 조직 운영에 직접 도입되는 사례로, AI의 산업 적용 범위 확장을 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.5238111772486773,
+    "published_at": "2026-11-24T16:00:00Z"
+  },
+  {
+    "id": "openai_blog-gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+    "section": "releases",
+    "title_en": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+    "title_ko": "GPT-6 모델, 단백질 설계 능력 입증",
+    "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "GPT-6 모델이 추론 및 코드 실행을 활용해 단백질 구조와 서열을 설계할 수 있음이 확인됐다. 실험실 테스트에서 5개 타겟에 대한 결합 증거가 발견됐다. 이는 GPT-6가 별도의 특수 도구 없이도 단백질 설계 역량을 내재적으로 보유하고 있음을 시사한다.",
+    "why_it_matters": "LLM이 생명과학 분야의 핵심 과제인 단백질 설계를 직접 수행할 수 있다는 점에서, AI의 과학적 응용 범위가 획기적으로 확장될 가능성을 보여준다.",
+    "tags": [
+      "LLM"
+    ],
+    "score": 0.5059540343915344,
+    "published_at": "2026-11-24T13:00:00Z"
+  },
+  {
+    "id": "openai_blog-searching-for-distant-planets-with-astra",
+    "section": "releases",
+    "title_en": "Searching for distant planets with Astra",
+    "title_ko": "Astra로 외계행성 탐색하기",
+    "url": "https://openai.com/index/searching-for-distant-planets-with-astra",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "두 명의 아마추어 천문학자가 OpenAI의 Codex와 Astra를 활용해 NASA의 케플러(Kepler) 및 TESS 우주망원경의 공개 데이터에서 잠재적 외계행성을 발견했다. 이 사례는 AI 도구가 전문 연구자가 아닌 일반인도 대규모 과학 데이터를 분석할 수 있도록 돕는 가능성을 보여준다.",
+    "why_it_matters": "AI 코딩 도구가 아마추어 과학자도 NASA급 데이터를 분석해 실질적인 과학적 발견에 기여할 수 있음을 입증한 사례다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.49404927248677244,
+    "published_at": "2026-11-24T11:00:00Z"
+  },
+  {
+    "id": "openai_blog-intentful-dots",
+    "section": "releases",
+    "title_en": "How Intentful uses dots to make more time for growth",
+    "title_ko": "Intentful, OpenAI 닷(dot)으로 비즈니스 성장 시간 확보",
+    "url": "https://openai.com/business/customer-stories/intentful-dots",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Intentful의 Marina Petrova는 OpenAI의 dot 'Aria'를 활용해 웹사이트 리서치와 제안서 작성을 자동화하고 있다. Aria는 메시지를 선제적으로 플래그 처리하고 이슈를 해결하는 등 적극적인 업무 보조 역할을 수행한다. 이를 통해 반복 업무에 소요되는 시간을 줄이고 비즈니스 성장에 집중할 수 있게 되었다.",
+    "why_it_matters": "OpenAI dot 에이전트가 실제 비즈니스 현장에서 리서치·제안서 작성 등 실질적인 업무 자동화에 활용되는 구체적 사례를 보여준다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.4285730820105821,
+    "published_at": "2026-11-24T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-ifood",
+    "section": "releases",
+    "title_en": "How iFood scales coding agents across 15,000 repositories",
+    "title_ko": "iFood, 1만 5천 개 저장소에 코딩 에이전트를 대규모 적용하는 방법",
+    "url": "https://openai.com/business/customer-stories/ifood",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "브라질 푸드테크 기업 iFood가 15,000개의 코드 저장소 전반에 걸쳐 코딩 에이전트를 확장 적용하는 사례를 소개한다. OpenAI 블로그에 게재된 내용으로, 대규모 엔지니어링 조직에서 AI 코딩 에이전트를 실질적으로 운영하는 방식을 다룬다.",
+    "why_it_matters": "수만 개 저장소 규모의 실제 기업 환경에서 코딩 에이전트를 운영하는 구체적 사례로, 에이전트 도입을 고려하는 개발 조직에 실질적 참고가 된다.",
+    "tags": [
+      "에이전트"
+    ],
+    "score": 0.4285730820105821,
+    "published_at": "2026-11-24T00:00:00Z"
+  },
+  {
+    "id": "openai_blog-clay-plugins-openai",
+    "section": "releases",
+    "title_en": "Clay helps sales teams win with Codex and ChatGPT",
+    "title_ko": "Clay, Codex와 ChatGPT로 영업팀 지원 강화",
+    "url": "https://openai.com/business/customer-stories/clay-plugins-openai",
+    "sources": [
+      "openai_blog"
+    ],
+    "summary_ko": "Clay는 ChatGPT와 Codex를 통합하여 영업팀이 딜 리서치를 수행하고 데이터를 고투마켓 전략으로 전환할 수 있도록 지원한다. GPT-6 모델이 추론 작업을 담당하며 영업 워크플로우 전반을 자동화한다.",
+    "why_it_matters": "LLM 기반 영업 자동화의 실제 도입 사례로, AI가 B2B 세일즈 파이프라인에 직접 통합되는 트렌드를 보여준다.",
+    "tags": [
+      "LLM",
+      "에이전트"
+    ],
+    "score": 0.4285730820105821,
+    "published_at": "2026-11-24T00:00:00Z"
+  },
+  {
+    "id": "hn-50660180",
+    "section": "community",
+    "title_en": "AI made self-hosting fun again",
+    "title_ko": "AI가 셀프 호스팅을 다시 즐겁게 만들다",
+    "url": "https://janlukas.blog/posts/ai-self-hosting",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AI의 도움으로 셀프 호스팅 환경 구축이 더 쉽고 재미있어졌다는 내용을 다루고 있다. 구체적인 세부 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "AI 도구가 개인 인프라 운영의 진입 장벽을 낮추는 흐름을 보여준다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 10.085131736552675,
+    "published_at": "2026-11-26T21:47:45Z"
+  },
+  {
+    "id": "hn-50653477",
+    "section": "community",
+    "title_en": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+    "title_ko": "구글, AI 에이전트에 MCP 서버 적용 — 단, Gmail MCP는 이메일 전송 불가",
+    "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "구글이 AI 에이전트에 자사 MCP(Model Context Protocol) 서버를 활용하도록 할 계획이지만, Gmail용 MCP 서버는 이메일 전송 기능을 지원하지 않는 제한이 있다. 읽기 전용 등의 제약이 존재하는 것으로 알려져 있다.",
+    "why_it_matters": "구글의 MCP 도입 방향이 에이전트 생태계에 큰 영향을 줄 수 있지만, 핵심 기능의 제한이 실용성에 의문을 남긴다.",
+    "tags": [
+      "에이전트",
+      "LLM",
+      "인프라"
+    ],
+    "score": 9.519418292986629,
+    "published_at": "2026-11-26T09:44:23Z"
+  },
+  {
+    "id": "hn-50649040",
+    "section": "community",
+    "title_en": "The USAID Files",
+    "title_ko": "USAID 파일 공개",
+    "url": "https://reclaimthenet.org/usaid-files",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "USAID 관련 파일이 공개된 것으로 보인다. 상세한 내용은 제공된 정보만으로는 확인하기 어렵다.",
+    "why_it_matters": "AI·기술과의 직접적 연관성이 불분명하여 추가 맥락 확인이 필요하다.",
+    "tags": [],
+    "score": 9.195518391318672,
+    "published_at": "2026-11-25T23:15:52Z"
+  },
+  {
+    "id": "hn-50652184",
+    "section": "community",
+    "title_en": "Moat: OpenRouter replacement",
+    "title_ko": "Moat: OpenRouter 대체 서비스",
+    "url": "https://commandcode.ai/moat",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "Moat는 OpenRouter를 대체하는 서비스로 소개되었습니다. 구체적인 기능이나 세부 정보는 제공되지 않았습니다.",
+    "why_it_matters": "LLM API 라우팅 시장에 새로운 대안이 등장했다는 점에서 주목할 만하다.",
+    "tags": [
+      "LLM",
+      "인프라"
+    ],
+    "score": 9.132341126140288,
+    "published_at": "2026-11-26T06:32:48Z"
+  },
+  {
+    "id": "hn-50657265",
+    "section": "community",
+    "title_en": "AMD-specific fork of llama.cpp",
+    "title_ko": "AMD GPU 특화 llama.cpp 포크 등장",
+    "url": "https://devnull.land/amd-specific-llama-cpp",
+    "sources": [
+      "hn"
+    ],
+    "summary_ko": "AMD GPU에 최적화된 llama.cpp의 별도 포크가 공개되었다. 기존 llama.cpp가 주로 NVIDIA CUDA 환경에 최적화된 것과 달리, AMD 하드웨어에서의 성능 향상을 목표로 한다.",
+    "why_it_matters": "NVIDIA 대신 AMD GPU를 사용하는 개발자들에게 LLM 로컬 실행 성능 개선의 가능성을 열어준다.",
+    "tags": [
+      "LLM",
+      "오픈소스",
+      "인프라"
+    ],
+    "score": 9.002452278092653,
+    "published_at": "2026-11-26T17:11:29Z"
+  },
+  {
+    "id": "youtube-dCWD1aTnIIs",
+    "section": "video",
+    "title_en": "너무 다양하게 발전하고있는 로봇 기술 근황;;;",
+    "title_ko": "빠르게 발전하는 로봇 기술 최신 근황",
+    "url": "https://www.youtube.com/shorts/dCWD1aTnIIs",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "조코딩 채널에서 최근 다양하게 발전하고 있는 로봇 기술 동향을 소개하는 영상이다. 휴머노이드를 포함한 로봇 분야의 급격한 기술 발전을 다루고 있다. 구체적인 기술 세부 사항은 영상 본문을 통해 확인할 수 있다.",
+    "why_it_matters": "휴머노이드 로봇 기술이 빠르게 발전하면서 AI와 로봇의 융합이 현실화되고 있는 흐름을 파악할 수 있다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 0.892906746031746,
+    "published_at": "2026-11-27T06:00:29Z"
+  },
+  {
+    "id": "youtube-iudeU2FuW7o",
+    "section": "video",
+    "title_en": "아이디 하나로 계정 400개를 찾아낸 오픈소스",
+    "title_ko": "아이디 하나로 계정 400개를 찾아내는 오픈소스 'Sherlock'",
+    "url": "https://www.youtube.com/shorts/iudeU2FuW7o",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "하나의 사용자 아이디(username)로 400개 이상의 플랫폼에서 해당 계정을 자동으로 탐색해주는 오픈소스 도구 'Sherlock'을 소개하는 영상이다. GitHub에 공개되어 있으며 누구나 직접 활용할 수 있다.",
+    "why_it_matters": "OSINT(공개 출처 정보 수집) 및 보안 조사 목적으로 활용 가능한 강력한 계정 추적 도구로, 개인 정보 보호와 보안 인식에 중요한 시사점을 준다.",
+    "tags": [
+      "오픈소스"
+    ],
+    "score": 0.8869196428571429,
+    "published_at": "2026-11-27T05:00:08Z"
+  },
+  {
+    "id": "youtube-dihZHI7UqMc",
+    "section": "video",
+    "title_en": "입모양에 진심인 대기업의 미친 특허",
+    "title_ko": "입 모양으로 소리를 인식하는 대기업의 놀라운 특허",
+    "url": "https://www.youtube.com/shorts/dihZHI7UqMc",
+    "sources": [
+      "youtube"
+    ],
+    "summary_ko": "애플이 에어팟 관련 입 모양 인식 기술 특허를 출원한 내용을 다룬 영상이다. 조코딩 채널에서 해당 특허의 기술적 개요와 가능성을 소개한다. 구체적인 특허 세부 내용은 영상을 통해 확인할 수 있다.",
+    "why_it_matters": "웨어러블 기기에서 입 모양 기반 입력 인식 기술이 실용화되면 소음 환경에서의 음성 인식 한계를 극복하는 새로운 HCI 패러다임이 될 수 있다.",
+    "tags": [
+      "인프라"
+    ],
+    "score": 0.7857490079365079,
+    "published_at": "2026-11-26T12:00:20Z"
+  },
+  {
+    "id": "latent_space-how-clay-builds-gtm-agents-jeff-barg-head-of-ai",
+    "section": "deepdive",
+    "title_en": "How Clay Builds GTM Agents — Jeff Barg, Head of AI",
+    "title_ko": "Clay가 GTM 에이전트를 구축하는 방법 — AI 책임자 Jeff Barg",
+    "url": "https://latent.space/p/how-clay-builds-gtm-agents-jeff-barg-head-of-ai/",
+    "sources": [
+      "latent_space"
+    ],
+    "summary_ko": "Clay의 AI 책임자 Jeff Barg가 자사의 고객 발굴(Go-To-Market) 에이전트 구축 방식을 소개한다. 단 $1,500으로 전 세계 모든 기업을 대상으로 잠재 고객 자격 심사를 자동화할 수 있다는 사례를 제시하며, 모델 선택 기능이 오히려 고객 경험을 해친다는 인사이트도 공유한다. Clay는 모든 에이전트를 위한 GTM 인프라로 자리잡는 것을 목표로 하고 있다.",
+    "why_it_matters": "영업·마케팅 자동화 분야에서 에이전트 기반 GTM 인프라가 어떻게 실제 비즈니스 가치를 만들어내는지 구체적인 사례로 확인할 수 있다.",
+    "tags": [
+      "에이전트",
+      "인프라"
+    ],
+    "score": 0.8514699074074075,
+    "published_at": "2026-11-26T23:02:48Z"
+  }
+]
